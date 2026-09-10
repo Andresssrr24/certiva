@@ -34,7 +34,7 @@ npm install
 node node_modules/electron/install.js   # si npm install no bajó el binario de Electron (pasa en redes lentas)
 npm run modelos            # descarga los modelos a ~/.qvac/models (una vez, con internet)
 npm run datos              # genera los mensajes sintéticos y renderiza las capturas
-npm run prueba             # apaga el Wi-Fi primero: captura -> extracción -> reglas -> veredicto
+npm run prueba             # apaga el Wi-Fi primero: captura -> VisionPsy -> reglas -> veredicto de Qwen3
 npm start                  # la app
 npm run eval               # métricas sobre el set sintético -> eval/results.md
 node eval/reglas-check.js  # chequeo de las reglas sin modelos
@@ -44,10 +44,25 @@ Después de descargar los modelos, todo funciona sin red. El registro de rendimi
 
 ## Cómo funciona
 
-1. La captura de pantalla entra a **VisionPsy** con un esquema JSON obligatorio: canal, remitente, texto, enlaces, teléfonos, montos, si pide datos sensibles, urgencia.
-2. **Reglas deterministas** (`lib/reglas.js`) producen evidencias en texto: dominio parecido al oficial, acortador, IP literal, punycode, número no oficial, petición de clave o código, presión de tiempo, pago a terceros.
-3. **Qwen3 4B** recibe la extracción y las evidencias y redacta el veredicto con un segundo esquema: fraude, sospechoso, sin señales o no legible, con confianza, señales, acción y canal oficial. Nunca dice «seguro».
-4. **(pendiente)** Modo llamada con transcripción local en vivo, RAG sobre la política anti-fraude, indicadores compartidos por pares con Hyperswarm y radar para el equipo de fraude.
+1. **VisionPsy transcribe la captura** (`lib/analizar.js`, `extraerConVision`). Es el único modelo que mira la imagen. Se le pide una transcripción libre, línea por línea, que es lo que hace bien; no se le pide que rellene un esquema.
+2. **Reglas deterministas derivan los campos** de esa transcripción (`lib/lector.js`, `derivar`): canal, remitente, enlaces, teléfonos y montos por expresiones regulares y posición, con reparación de enlaces partidos por el salto de línea.
+3. **Reglas de fraude** (`lib/reglas.js`) producen evidencias en texto: dominio parecido al oficial, acortador, IP literal, punycode, número no oficial, petición de clave o código, presión de tiempo, pago a terceros.
+4. **Qwen3 4B** recibe la extracción y las evidencias y redacta el veredicto con un esquema JSON obligatorio: fraude, sospechoso, sin señales o no legible, con confianza, señales, acción y canal oficial. Nunca dice «seguro».
+5. **(pendiente)** Modo llamada con transcripción local en vivo, RAG sobre la política anti-fraude, indicadores compartidos por pares con Hyperswarm y radar para el equipo de fraude.
+
+### La decisión sobre el lector, con evidencia
+
+Se probaron tres lectores sobre las mismas capturas sintéticas (`scripts/experimento-*.js`, `scripts/prueba-vision.js`, `scripts/prueba-lector.js`):
+
+| Lector | Qué pasó | Tiempo por captura en el M4 |
+|---|---|---|
+| VisionPsy Flash con esquema JSON de ocho campos | Respeta la forma pero inventa el contenido: listas de enlaces con basura, «pide datos» casi siempre en true, texto parcial | 2 a 4 s |
+| VisionPsy Flash en transcripción libre + reglas | Transcripción casi literal, remitentes y enlaces correctos, 15 de 15 veredictos por reglas en la muestra | TTFT 1,3 s · total 1,8 s |
+| OCR clásico del SDK (latin_g2 + CRAFT) + reglas | Texto casi literal pero ensucia los enlaces («https:Il», «comlverificar») y tarda demasiado | 15 a 18 s |
+
+Se eligió VisionPsy en transcripción libre. El OCR y la variante con esquema quedan disponibles con `LECTOR=ocr` y `LECTOR=visionpsy-esquema` para reproducir la comparación con `npm run eval`.
+
+Una trampa que costó una hora y conviene contar: Electron recuerda el zoom por origen entre ejecuciones, y la segunda renderización de las capturas salió cortada por la mitad a la derecha. Los dos lectores «perdían el final de cada línea» y parecía culpa de los modelos. `data/render.js` fija el zoom en 1.
 
 ## Datos
 
