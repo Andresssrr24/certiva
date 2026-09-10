@@ -2,6 +2,7 @@
 :root{--bg:#0f1514;--panel:#161f1d;--panel2:#1c2725;--ink:#e7edeb;--muted:#9da9a5;--line:#2b3734;--accent:#63c4be;--accent-ink:#0f1716;
   --ok:#7ed3a2;--ok-soft:#173427;--warn:#e3b65b;--warn-soft:#3a2e12;--bad:#f19c96;--bad-soft:#42201e;--unk:#a7adb2;--unk-soft:#2a2f33}
 *{box-sizing:border-box}
+[hidden]{display:none !important}
 html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
 h2,h3{font-weight:600;letter-spacing:-.01em}
@@ -29,8 +30,8 @@ button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outlin
 .demo{display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--muted)}
 .fila{display:flex;gap:.5rem}.fila select{flex:1}
 select{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:.5rem;font-size:.9rem}
-.vista{margin:0;min-height:0;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:#000;align-self:flex-start;max-height:52vh}
-.vista img{display:block;max-width:100%;max-height:52vh;object-fit:contain}
+.vista{margin:0;flex:1;min-height:12rem;border-radius:12px;border:1px solid var(--line);background:#000;display:flex;align-items:flex-start;justify-content:center;overflow:hidden}
+.vista img{display:block;height:100%;max-height:56vh;width:auto;max-width:100%;object-fit:contain}
 .der{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.6rem;overflow:auto;display:flex;flex-direction:column;gap:1rem}
 .der.ancho{gap:.75rem}
 .vacio{color:var(--muted);max-width:52ch}
