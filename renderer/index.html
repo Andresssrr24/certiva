@@ -9,66 +9,93 @@
 <body>
   <header class="barra">
     <div class="marca">Anti-fraude <span>QVAC</span></div>
-    <div class="tabs" role="tablist">
-      <button type="button" class="tab activa" data-tab="cliente" role="tab">Cliente</button>
-      <button type="button" class="tab" data-tab="llamada" role="tab">Llamada</button>
-      <button type="button" class="tab" data-tab="banco" role="tab">Modo banco</button>
+    <div class="tabs" role="tablist" aria-label="Vistas">
+      <button type="button" class="tab activa" data-tab="cliente" role="tab" aria-selected="true">Cliente</button>
+      <button type="button" class="tab" data-tab="banco" role="tab" aria-selected="false">Modo banco</button>
     </div>
     <div class="red" id="red" title="Conexiones TCP establecidas del proceso y sus hijos, medidas con lsof"><span class="punto"></span>Conexiones a la nube: <b id="redNube">…</b></div>
-    <div class="estado" id="estado">listo</div>
+    <div class="estado" id="estado" aria-live="polite">listo</div>
   </header>
 
-  <main class="cuerpo" id="vistaCliente">
-    <section class="izq">
-      <div class="zona" id="zona">
-        <p class="grande">Arrastra la captura de un mensaje sospechoso</p>
-        <p class="mini">o</p>
-        <button type="button" id="elegir">Elegir captura…</button>
-        <p class="mini">Se analiza en este equipo. La captura no se guarda ni sale de aquí.</p>
-      </div>
-      <div class="demo">
-        <label for="demoSel">Capturas de la demo · banco ficticio</label>
-        <div class="fila">
-          <select id="demoSel"><option value="">— elegir —</option></select>
-          <button type="button" id="demoBtn" class="sec">Analizar</button>
+  <main class="cuerpo cliente" id="vistaCliente">
+    <section class="escenario" id="escenario" aria-label="Lo que ve el cliente en su teléfono">
+      <div class="marco" id="marco" role="img" aria-label="Simulación del teléfono del cliente">
+        <div class="telefono" id="telefono">
+          <div class="pantalla">
+            <div class="tstatus"><span>10:24</span><span>●●● ▲ ▮</span></div>
+            <div class="app">
+
+              <section class="p" data-p="inicio">
+                <div class="tcab"><span class="tlogo">B</span><span>Banco Demo · Protección</span></div>
+                <h1>¿Te llegó algo raro?</h1>
+                <p class="lead">Revísalo aquí antes de hacer nada. Todo se analiza en tu teléfono: nadie ve tu mensaje.</p>
+                <button type="button" class="tbtn" id="tVerificarMensaje">Verificar un mensaje</button>
+                <button type="button" class="tbtn sec" id="tVerificarLlamada">Verificar una llamada</button>
+                <div class="regla-oro"><b>Regla de oro.</b> El banco nunca te pide tu clave ni el código que te llega por SMS. Nunca.</div>
+              </section>
+
+              <section class="p" data-p="analizando" hidden>
+                <h2>Revisando el mensaje…</h2>
+                <ol class="pasos" id="tPasos">
+                  <li data-paso="vision"><span class="marca-paso"></span><span>Leyendo la captura</span><em></em></li>
+                  <li data-paso="reglas"><span class="marca-paso"></span><span>Buscando señales de estafa</span><em></em></li>
+                  <li data-paso="veredicto"><span class="marca-paso"></span><span>Preparando el consejo</span><em></em></li>
+                </ol>
+                <p class="mini">Tarda unos segundos. Nada sale de tu teléfono.</p>
+              </section>
+
+              <section class="p" data-p="veredicto" hidden>
+                <div class="tchip" id="tChip"></div>
+                <p class="tresumen" id="tResumen"></p>
+                <ul class="razones" id="tRazones"></ul>
+                <div class="consejo" id="tConsejo"></div>
+                <button type="button" class="tbtn" id="tLlamar">Llamar al banco · 800-1234</button>
+                <button type="button" class="tbtn sec" id="tReportar">Reportar este mensaje</button>
+                <button type="button" class="tenlace" id="tVolver">Volver al inicio</button>
+              </section>
+
+              <section class="p" data-p="llamada" hidden>
+                <div class="tcab"><span class="tlogo">B</span><span>Llamada en curso</span></div>
+                <div class="tbanner" id="tBanner" hidden></div>
+                <ol class="ttranscripcion" id="tTranscripcion" aria-live="polite"></ol>
+              </section>
+
+              <section class="p" data-p="fin-llamada" hidden>
+                <div class="tchip" id="tChipLlamada"></div>
+                <p class="tresumen" id="tResumenLlamada"></p>
+                <div class="consejo" id="tConsejoLlamada"></div>
+                <button type="button" class="tbtn" id="tLlamar2">Llamar al banco · 800-1234</button>
+                <button type="button" class="tenlace" id="tVolver2">Volver al inicio</button>
+              </section>
+
+              <div class="cuelga" id="tCuelga" role="alert" hidden>
+                <div class="cuelga-titulo">Cuelga</div>
+                <p class="cuelga-texto" id="tCuelgaTexto"></p>
+                <button type="button" class="tbtn claro" id="tCuelgaOk">Entendido</button>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-      <figure class="vista" id="figura" hidden><img id="vista" alt="Captura analizada"></figure>
+      <p class="pie-escenario">Así se ve en el teléfono del cliente. La demo corre en este MacBook con los mismos modelos.</p>
     </section>
 
-    <section class="der">
-      <div id="resultado"><div class="vacio">
-        <p class="grande">El veredicto aparece aquí, con sus razones y qué hacer.</p>
-        <p>Primero un modelo de visión de 460 millones de parámetros lee la captura. Luego las reglas del banco buscan señales. Al final un modelo de texto explica el veredicto. Todo aquí, sin internet.</p>
-      </div></div>
+    <section class="der detras" aria-label="Detrás de escena">
+      <h3 class="rotulo">Prueba con un ejemplo</h3>
+      <div class="ejemplos" id="ejemplos"></div>
+      <section class="zona" id="zona" aria-label="Zona para soltar una captura de pantalla">
+        <p><strong>Arrastra tu propia captura</strong> o</p>
+        <div class="fila"><button type="button" id="elegir" class="sec">Elegir captura…</button><button type="button" id="llamadaDemo" class="sec">Simular llamada de vishing</button></div>
+      </section>
+      <audio id="audio" controls preload="auto" hidden></audio>
+
+      <h3 class="rotulo">Detrás de escena</h3>
+      <div class="tecnico" id="tecnico"><p class="vacio">Aquí se ve lo que hacen los modelos: pasos, tiempos, señales de las reglas y el JSON completo.</p></div>
       <div class="historial" id="historial" hidden>
-        <h3>Analizados en esta sesión</h3>
+        <h3 class="rotulo">Analizados en esta sesión</h3>
         <ul id="historialLista"></ul>
       </div>
-    </section>
-  </main>
-
-  <main class="cuerpo llamada" id="vistaLlamada" hidden>
-    <section class="izq">
-      <div class="zona quieta">
-        <p class="grande">Modo llamada</p>
-        <p class="mini">La llamada se transcribe en este equipo por lotes de cinco segundos. Las reglas del banco avisan en cuanto aparece una señal: pedir el código, pedir la clave, presionar con el tiempo.</p>
-        <div class="fila">
-          <button type="button" id="llamadaDemo">Simular llamada de vishing</button>
-          <button type="button" id="llamadaArchivo" class="sec">Cargar audio…</button>
-        </div>
-        <p class="mini">El audio de la demo es sintético, generado con voces del sistema. Nadie fue grabado.</p>
-      </div>
-      <audio id="audio" controls preload="auto"></audio>
-      <div class="alerta" id="alerta" hidden>
-        <div class="alerta-titulo">Cuelga</div>
-        <div class="alerta-texto" id="alertaTexto"></div>
-      </div>
-    </section>
-    <section class="der">
-      <div id="llamadaVacio" class="vacio"><p class="grande">La transcripción aparece aquí mientras suena la llamada.</p><p>Cada aviso llega en el momento en que el estafador pide algo que el banco nunca pide.</p></div>
-      <ol class="transcripcion" id="transcripcion"></ol>
-      <div id="resumenLlamada" hidden></div>
     </section>
   </main>
 

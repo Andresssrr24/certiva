@@ -40,6 +40,6 @@ console.log(
 );
 if (fallos.length) {
   console.log("Fallos:");
-  fallos.forEach((f) => console.log("  " + f));
+  for (const f of fallos) console.log(`  ${f}`);
   process.exit(1);
 }
