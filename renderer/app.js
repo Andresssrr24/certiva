@@ -84,14 +84,25 @@ function pasosReset() {
   for (const li of document.querySelectorAll("#tPasos li")) {
     li.className = "";
     li.querySelector("em").textContent = "";
+    if (li.dataset.paso === "ocr") li.hidden = true;
   }
   tecnico.innerHTML = `<ul class="etapas">${PASOS.map((p) => `<li data-paso="${p}"><b>…</b>${NOMBRE_PASO[p]}</li>`).join("")}</ul>`;
 }
 function paso(e) {
   const li = document.querySelector(`#tPasos li[data-paso="${e.etapa}"]`);
-  const tec = document.querySelector(`.etapas li[data-paso="${e.etapa}"]`);
   if (!li) return;
+  let tec = document.querySelector(`.etapas li[data-paso="${e.etapa}"]`);
+  if (!tec && e.etapa === "ocr") {
+    const ul = document.querySelector(".etapas");
+    if (ul) {
+      tec = document.createElement("li");
+      tec.dataset.paso = "ocr";
+      tec.innerHTML = "<b>…</b>Contraste con OCR";
+      ul.insertBefore(tec, ul.querySelector('[data-paso="veredicto"]'));
+    }
+  }
   if (e.estado === "inicio") {
+    li.hidden = false;
     li.className = "activo";
     if (tec) tec.classList.add("activo");
   } else {
@@ -157,7 +168,10 @@ function pintaTecnico(r) {
   const pasosHtml = r.tiempos
     ? `<ul class="etapas"><li><b>${r.tiempos.extraccion_ms} ms</b>VisionPsy · primer token ${r.tiempos.extraccion_ttft_ms ?? "—"} ms</li><li><b>&lt; 1 ms</b>Reglas del banco</li><li><b>${r.tiempos.veredicto_ms} ms</b>Qwen3 · primer token ${r.tiempos.veredicto_ttft_ms ?? "—"} ms</li></ul>`
     : "";
-  tecnico.innerHTML = `${pasosHtml}
+  const contrasteHtml = r.contraste?.usado
+    ? `<p class="mini">Contraste con OCR (${r.contraste.ms} ms): ${r.contraste.correcciones.length ? r.contraste.correcciones.map((c) => `${esc(c.de)} era en realidad ${esc(c.a)}`).join("; ") : `el OCR también lee ${esc(r.contraste.dominios_sospechosos.join(", "))}: la señal se mantiene`}</p>`
+    : "";
+  tecnico.innerHTML = `${pasosHtml}${contrasteHtml}
     <div><span class="chip ${esc(v.veredicto || r.veredicto_reglas || "no_legible")}">${esc(ETIQUETA_CORTA[v.veredicto || r.veredicto_reglas] || "—")}</span> <span class="mini">confianza ${conf} · reglas: ${esc(r.veredicto_reglas || "—")} · ${esc((r.modelos && r.modelos.vision) || "")} + ${esc((r.modelos && r.modelos.texto) || "")}</span></div>
     ${senales.length ? `<ul class="senales">${senales.map((s) => `<li><b>${esc(s.tipo)}</b><span>${esc(s.evidencia)}</span></li>`).join("")}</ul>` : `<p class="mini">Sin señales por reglas.</p>`}
     ${r.captura ? `<p class="leido"><b>${esc(r.captura.canal)}</b> · de <b>${esc(r.captura.remitente || "remitente no identificado")}</b>\n${esc(r.captura.texto)}</p>` : ""}

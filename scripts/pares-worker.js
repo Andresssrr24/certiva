@@ -19,4 +19,6 @@ process.on("message", (m) => {
   if (process.env.PARES_DIRECTO) pares.conectarDirecto(process.env.PARES_DIRECTO);
   if (process.env.PARES_SWARM !== "0") await pares.iniciarSwarm();
   process.send && process.send({ tipo: "estado", estado: pares.estado() });
-})().catch((e) => { process.send && process.send({ tipo: "log", linea: `error: ${e.message}` }); });
+})().catch((e) => {
+  process.send && process.send({ tipo: "log", linea: `error: ${e.message}` });
+});
