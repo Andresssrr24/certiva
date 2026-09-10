@@ -102,9 +102,10 @@ document.querySelectorAll(".tab").forEach((t) => t.onclick = () => {
   window.escudo.on("ocupado", (v) => { ocupado = v; $("#elegir").disabled = v; $("#demoBtn").disabled = v; });
   window.escudo.on("progreso-modelo", (p) => pon(`cargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("progreso-descarga", (p) => pon(`descargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
-  window.escudo.on("demo-auto", (ruta) => analizar(ruta));
   const st = await window.escudo.estado();
   $("#modelos").textContent = `VisionPsy Nano 460M Flash · Qwen3 4B · SDK ${st.sdk} · ${st.hardware.cpu}, ${st.hardware.ram_gb} GB · inferencia local`;
   pintaBanco(st.reportes || []);
   medirRed(); setInterval(medirRed, 3000);
+  const auto = await window.escudo.demoAuto();
+  if (auto) analizar(auto);
 })();

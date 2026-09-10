@@ -12,6 +12,7 @@ contextBridge.exposeInMainWorld("escudo", {
   reportar: (captura) => ipcRenderer.invoke("reportar", { captura }),
   liberarModelos: () => ipcRenderer.invoke("descargar-modelos-memoria"),
   red: () => ipcRenderer.invoke("red"),
+  demoAuto: () => ipcRenderer.invoke("demo-auto"),
   rutaDeArchivo: (file) => { try { return webUtils.getPathForFile(file); } catch { return null; } },
   on: (canal, cb) => {
     const permitidos = ["ocupado", "progreso-modelo", "progreso-descarga", "demo-auto"];

@@ -90,13 +90,11 @@ ipcMain.handle("reportar", (_e, { captura }) => {
 // Conexiones salientes del árbol de procesos: la prueba de que nada va a la nube.
 ipcMain.handle("red", () => red.conexiones(process.pid));
 
-// Para verificar la interfaz sin manos: con DEMO_AUTO=<id> analiza esa captura al abrir y guarda una imagen de la ventana.
+// Para verificar la interfaz sin manos: con DEMO_AUTO=<id> el renderer pide la captura al iniciar y la analiza;
+// con DEMO_CAPTURA=<ruta> se guarda una imagen de la ventana pasados DEMO_ESPERA_MS.
+ipcMain.handle("demo-auto", () => process.env.DEMO_AUTO ? path.join(__dirname, "data", "capturas", `${process.env.DEMO_AUTO}.png`) : null);
 async function demoAutomatica() {
-  const id = process.env.DEMO_AUTO;
-  if (!id || !win) return;
-  const ruta = path.join(__dirname, "data", "capturas", `${id}.png`);
-  await new Promise((r) => setTimeout(r, 1500));
-  win.webContents.send("demo-auto", ruta);
+  if (!process.env.DEMO_AUTO || !win) return;
   const salida = process.env.DEMO_CAPTURA;
   if (salida) {
     await new Promise((r) => setTimeout(r, Number(process.env.DEMO_ESPERA_MS || 25000)));
