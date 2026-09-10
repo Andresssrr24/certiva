@@ -2,7 +2,7 @@
 
 > Nombre del proyecto pendiente. Repositorio provisional: https://github.com/Andresssrr24/antifraude-qvac (privado hasta la entrega).
 
-Lee capturas de mensajes sospechosos y llamadas en vivo **en el teléfono del cliente**, con modelos locales de QVAC, y dice si es fraude, por qué y qué hacer. Ni el mensaje ni la llamada salen del dispositivo. Los indicadores confirmados se comparten entre pares sin servidor.
+Prototipo Electron en Mac que lee capturas de mensajes sospechosos y simula el análisis de llamadas con audio sintético, con modelos locales de QVAC, y dice si es fraude, por qué y qué hacer. La inferencia corre localmente; la integración en teléfonos es trabajo futuro. Los indicadores reportados, no verificados, se comparten entre pares sin servidor.
 
 Tracks en los que compite: **Desafío General**, **Caja de Ahorros**, **QVAC Psy**.
 
@@ -42,7 +42,7 @@ npm run eval               # métricas sobre el set sintético -> eval/results.m
 node eval/reglas-check.js  # chequeo de las reglas sin modelos
 ```
 
-Después de descargar los modelos, todo funciona sin red. El registro de rendimiento se escribe en `eval/perf.jsonl`.
+Después de descargar los modelos, la inferencia puede funcionar sin internet; P2P requiere conectividad entre equipos. La evaluación nueva guarda el rendimiento dentro del directorio de su corrida.
 
 ## Cómo funciona
 
@@ -100,15 +100,15 @@ Ningún dato real. El audio de la llamada de vishing de la demo, `data/audio/lla
 
 **Lo local como ventaja, no como restricción.** Los mensajes y las llamadas privadas del cliente nunca llegan al banco ni a un proveedor, así que el banco no se vuelve custodio de datos que no quiere tener. El costo de inferencia por verificación es cero a cualquier escala. Funciona sin plan de datos, que es la realidad de muchos clientes. Y la trazabilidad que pide el regulador sale de los reportes, no de los mensajes.
 
-**Demostración.** Cuatro ejemplos con un clic, la llamada con el «Cuelga» en vivo, el reporte que llega a otro equipo por pares, y el contador de conexiones a la nube en cero durante toda la demo.
+**Demostración.** Cuatro ejemplos con un clic, la simulación de llamada con el aviso «Cuelga», el reporte que llega a otro equipo por pares, y el contador de conexiones a la nube en cero durante toda la demo.
 
 **Piloto propuesto.** Noventa días con el equipo de fraude y un grupo de clientes, midiendo tres cosas: mensajes verificados, campañas detectadas antes que el centro de llamadas, y llamadas al centro evitadas.
 
 ## Para el reto QVAC Psy
 
-**Por qué VisionPsy es central por necesidad.** Ninguna app puede leer los SMS o el WhatsApp de otra: la captura de pantalla es la única entrada universal a los mensajes, y leerla en el teléfono exige un modelo de visión que quepa en un teléfono de gama media. VisionPsy Nano 460M Flash es el único modelo que mira la imagen en este flujo.
+**Por qué VisionPsy es central por necesidad.** La captura de pantalla permite al usuario aportar mensajes de distintas aplicaciones sin integrar cada servicio, y leerla en el teléfono exige un modelo de visión que quepa en un teléfono de gama media. VisionPsy Nano 460M Flash es el único modelo que mira la imagen en este flujo.
 
-**Calidad medida sobre el set sintético** (`npm run eval`, 120 capturas, resultados completos en `eval/results.md`, registro por llamada en `eval/perf.jsonl`):
+**Resultados históricos anteriores a la segunda lectura; deben repetirse para esta rama. Calidad medida sobre el set sintético** (`npm run eval`, 120 capturas, resultados completos en `eval/results.md`, registro por llamada en `eval/perf.jsonl`):
 
 | Métrica | Valor |
 |---|---|
@@ -140,16 +140,16 @@ Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Ce
 
 **Problema.** Según los reportes de los bancos a la Superintendencia de Bancos de Panamá, en 2025 hubo intentos de fraude por canales electrónicos por unos 150 millones de dólares y fraudes materializados por unos 21 millones; el sector habla de siete panameños estafados al día, y el regulador alertó sobre esquemas que usan el nombre y el logo de los bancos. La víctima típica es una persona mayor con un mensaje o una llamada que la presiona.
 
-**Por qué en el dispositivo.** La nube no debería llegar a los mensajes privados de nadie. La captura de pantalla es la única entrada universal a los mensajes de otras apps, y leerla exige un modelo de visión que quepa en un teléfono: VisionPsy Nano 460M. Todo lo demás, reglas, veredicto, transcripción de llamadas y política del banco, corre en el mismo equipo.
+**Por qué en el dispositivo.** La nube no debería llegar a los mensajes privados de nadie. La captura de pantalla es una entrada compartida para mensajes de distintas apps, y leerla exige un modelo de visión que quepa en un teléfono: VisionPsy Nano 460M. Todo lo demás, reglas, veredicto, transcripción de llamadas y política del banco, corre en el mismo equipo.
 
-**Innovación.** La detección en vivo dentro de una llamada, con el aviso en el instante en que el estafador pide el código. Y la inmunidad colectiva por pares: un cliente reporta y los demás lo saben sin servidor, con Hyperswarm, el enjambre de Pear.
+**Innovación.** El prototipo simula alertas durante una llamada procesada por lotes. Comparte indicadores reportados entre pares mediante Hyperswarm; su autenticidad requiere revisión y no demuestra inmunidad colectiva.
 
 **Evidencia.** Evaluación reproducible sobre 120 capturas sintéticas con verdad conocida, registro de rendimiento por llamada al modelo, y una comparación honesta de tres lectores que dejó a VisionPsy transcribiendo y a las reglas derivando los campos.
 
 ## Seguridad y límites
 
 - La app nunca dice «seguro». Dice «no encontré señales» y repite que el banco nunca pide claves ni códigos.
-- Nada se guarda ni sale del teléfono salvo que el usuario reporte, y el reporte lleva indicadores, no el mensaje.
+- La demo corre en escritorio. Los reportes transmiten hashes de indicadores, tipo, hora e identificador de nodo; no el mensaje. La interfaz y los registros locales deben revisarse antes de usar datos reales.
 - Puede fallar con tácticas nuevas. Ante la duda, llamar al número oficial impreso en la tarjeta.
 
 ## Modelo de negocio
@@ -163,3 +163,11 @@ Precios de partida, sin validar: para un banco, un pago inicial de integración 
 ## Licencia
 
 Apache-2.0. Ver `LICENSE` y `NOTICE`.
+
+## Cambios de fiabilidad y alcance de la demo
+
+La ausencia de señales en VisionPsy activa una segunda lectura OCR local. Si recupera una señal se usa para el veredicto; si falla, el texto es demasiado corto o los lectores discrepan, se pide revisión con `no_legible`. El generador no puede rebajar una alerta determinista. El umbral es heurístico, no una garantía: dos lectores pueden omitir la misma frase. Se añade latencia y debe medirse de nuevo.
+
+`npm test` verifica estos flujos con dobles de los modelos. No sustituye la evaluación real. Ver [protocolo externo](docs/EVALUACION-INDEPENDIENTE.md) y [guion de entrega](docs/guion-video.md).
+
+El radar marca reportes para investigación durante la sesión; no confirma fraude, no acredita usuarios únicos y no bloquea clientes. Los hashes sin secreto pueden compararse por enumeración y no son anonimización. El transporte directo TCP es únicamente para demostración con datos sintéticos en una red de confianza. El contador muestra conexiones TCP observadas, excluye UDP y no demuestra ausencia total de tráfico. Un fallo de medición se muestra como no disponible.

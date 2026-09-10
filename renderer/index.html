@@ -28,7 +28,7 @@
               <section class="p" data-p="inicio">
                 <div class="tcab"><span class="tlogo">B</span><span>Banco Demo · Protección</span></div>
                 <h1>¿Te llegó algo raro?</h1>
-                <p class="lead">Revísalo aquí antes de hacer nada. Todo se analiza en tu teléfono: nadie ve tu mensaje.</p>
+                <p class="lead">Revísalo aquí antes de hacer nada. El análisis se ejecuta en este equipo. Puedes revisar el texto antes de actuar.</p>
                 <button type="button" class="tbtn" id="tVerificarMensaje">Verificar un mensaje</button>
                 <button type="button" class="tbtn sec" id="tVerificarLlamada">Verificar una llamada</button>
                 <div class="regla-oro"><b>Regla de oro.</b> El banco nunca te pide tu clave ni el código que te llega por SMS. Nunca.</div>
@@ -42,7 +42,7 @@
                   <li data-paso="ocr" hidden><span class="marca-paso"></span><span>Confirmando la dirección web con OCR</span><em></em></li>
                   <li data-paso="veredicto"><span class="marca-paso"></span><span>Preparando el consejo</span><em></em></li>
                 </ol>
-                <p class="mini">Tarda unos segundos. Nada sale de tu teléfono.</p>
+                <p class="mini">Tarda unos segundos. La inferencia se ejecuta localmente.</p>
               </section>
 
               <section class="p" data-p="veredicto" hidden>
@@ -80,7 +80,7 @@
           </div>
         </div>
       </div>
-      <p class="pie-escenario">Así se ve en el teléfono del cliente. La demo corre en este MacBook con los mismos modelos.</p>
+      <p class="pie-escenario">Prototipo de interfaz móvil ejecutado en MacBook. No es todavía una app de teléfono.</p>
     </section>
 
     <section class="der detras" aria-label="Detrás de escena">
@@ -107,7 +107,7 @@
       <p class="mini">Indicadores reportados por los clientes de este equipo y de los pares conectados. Solo viajan hashes del remitente, del número o del dominio: nunca el mensaje.</p>
       <div class="pares-estado" id="paresEstado"></div>
       <div class="kpis" id="kpis"></div>
-      <div class="table-wrap"><table id="tablaReportes" aria-live="polite"><thead><tr><th>Cuándo</th><th>Tipo</th><th>Indicador (hash)</th><th>Origen</th></tr></thead><tbody></tbody></table></div>
+      <p class="mini">Reportes no verificados: no prueban fraude ni usuarios independientes. Los hashes son seudónimos, no datos anónimos. Revisar antes de actuar; nunca bloquear automáticamente.</p><div class="table-wrap"><table id="tablaReportes" aria-live="polite"><thead><tr><th>Cuándo</th><th>Tipo</th><th>Indicador (hash)</th><th>Origen</th><th>Revisión del operador</th></tr></thead><tbody></tbody></table></div>
       <details class="pares-log"><summary>Registro de la capa de pares</summary><pre id="paresLog"></pre></details>
     </section>
   </main>

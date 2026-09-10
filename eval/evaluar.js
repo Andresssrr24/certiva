@@ -5,7 +5,15 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { Motor } = require("../lib/analizar");
-const verdad = require("../data/verdad.json");
+const crypto = require("node:crypto");
+const externo = process.env.EVAL_DATASET ? path.resolve(process.env.EVAL_DATASET) : null;
+const dirDatos = externo || path.join(__dirname, "..", "data");
+const verdad = JSON.parse(fs.readFileSync(path.join(dirDatos, "verdad.json"), "utf8"));
+const salida = process.env.EVAL_OUTPUT
+  ? path.resolve(process.env.EVAL_OUTPUT)
+  : path.join(__dirname, "runs", new Date().toISOString().replace(/[:.]/g, "-"));
+fs.mkdirSync(salida, { recursive: true });
+process.env.PERF_LOG = path.join(salida, "perf.jsonl");
 
 const norm = (s) =>
   String(s || "")
@@ -33,7 +41,7 @@ function cer(a, b) {
   // --solo <texto> evalúa solo las capturas cuyo id contiene ese texto, para corridas cortas de una clase.
   const soloI = process.argv.indexOf("--solo");
   const solo = soloI >= 0 ? process.argv[soloI + 1] : null;
-  const dir = path.join(__dirname, "..", "data", "capturas");
+  const dir = path.join(dirDatos, "capturas");
   const ids = fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".png"))
@@ -42,6 +50,36 @@ function cer(a, b) {
     .sort()
     .slice(0, max);
   if (!ids.length) throw new Error("No hay capturas con verdad. Corre: npm run datos");
+  const archivos = ["verdad.json", ...ids.map((id) => `capturas/${id}.png`)];
+  fs.writeFileSync(
+    path.join(salida, "manifest.json"),
+    JSON.stringify(
+      {
+        fecha: new Date().toISOString(),
+        dataset: dirDatos,
+        externo: !!externo,
+        nota: "Externo no implica independiente: declarar autor y si se usó para ajustar reglas.",
+        commit: require("node:child_process")
+          .execFileSync("git", ["rev-parse", "HEAD"], { cwd: path.join(__dirname, "..") })
+          .toString()
+          .trim(),
+        cambios: require("node:child_process")
+          .execFileSync("git", ["status", "--porcelain"], { cwd: path.join(__dirname, "..") })
+          .toString(),
+        archivos: Object.fromEntries(
+          archivos.map((f) => [
+            f,
+            crypto
+              .createHash("sha256")
+              .update(fs.readFileSync(path.join(dirDatos, f)))
+              .digest("hex"),
+          ]),
+        ),
+      },
+      null,
+      2,
+    ),
+  );
   const motor = new Motor();
   const filas = [];
   const campos = { canal: 0, remitente: 0, enlaces: 0, telefonos: 0, pide_datos_sensibles: 0, urgencia: 0 };
@@ -71,17 +109,13 @@ function cer(a, b) {
       legibles++;
       const c = r.captura;
       if (norm(c.canal) === norm(v.canal)) campos.canal++;
-      if (
-        norm(c.remitente).includes(norm(v.remitente).slice(0, 8)) ||
-        norm(v.remitente).includes(norm(c.remitente).slice(0, 8))
-      )
-        campos.remitente++;
+      if (norm(c.remitente) === norm(v.remitente)) campos.remitente++;
       const dv = new Set((v.enlaces || []).map(dominio)),
         dc = new Set((c.enlaces || []).map(dominio));
       if ([...dv].every((d) => dc.has(d)) && dc.size === dv.size) campos.enlaces++;
       const tv = new Set((v.telefonos || []).map((t) => String(t).replace(/\D/g, ""))),
         tc = new Set((c.telefonos || []).map((t) => String(t).replace(/\D/g, "")));
-      if ([...tv].every((t) => tc.has(t))) campos.telefonos++;
+      if (tv.size === tc.size && [...tv].every((t) => tc.has(t))) campos.telefonos++;
       if (!!c.pide_datos_sensibles === !!v.pide_datos_sensibles) campos.pide_datos_sensibles++;
       if (!!c.urgencia === !!v.urgencia) campos.urgencia++;
       cerTotal += cer(c.texto, v.texto);
@@ -93,6 +127,8 @@ function cer(a, b) {
       ok: obt === esp,
       ttft_vision: r.tiempos && r.tiempos.extraccion_ttft_ms,
       ms_vision: r.tiempos && r.tiempos.extraccion_ms,
+      total_ms: r.tiempos && r.tiempos.total_ms,
+      revision: r.revision,
       ttft_texto: r.tiempos && r.tiempos.veredicto_ttft_ms,
       ms_texto: r.tiempos && r.tiempos.veredicto_ms,
     });
@@ -117,11 +153,17 @@ function cer(a, b) {
   };
   const pct = (x, t) => (t ? `${((100 * x) / t).toFixed(1)}%` : "—");
   const md = [
-    `# Resultados sobre el set sintético`,
+    `# Resultados sobre ${externo ? "dataset externo (procedencia declarada en manifest)" : "set sintético de desarrollo"}`,
     ``,
     `Fecha: ${new Date().toISOString()} · Capturas: ${n} · Tiempo total: ${Math.round((Date.now() - t0) / 1000)} s`,
     ``,
     `## Veredicto`,
+    ``,
+    `Falsos negativos de fraude (incluye abstenciones): ${fraudeEsp.filter((f) => f.obtenido !== "fraude").length}/${fraudeEsp.length}.`,
+    `Fraudes mostrados sin señales: ${fraudeEsp.filter((f) => f.obtenido === "sin_senales").length}.`,
+    `Falsos positivos (no fraude clasificado fraude): ${fraudeObt.filter((f) => f.esperado !== "fraude").length}.`,
+    `Abstenciones: ${filas.filter((f) => f.obtenido === "no_legible").length}/${n}.`,
+    `Latencia total mediana: ${med("total_ms")} ms. Incluye cargas, RAG y segunda lectura.`,
     ``,
     `| Métrica | Valor |`,
     `|---|---|`,
@@ -156,10 +198,10 @@ function cer(a, b) {
     ``,
     ...errores.map((e) => `- ${e.id}: ${e.error}`),
   ].join("\n");
-  fs.writeFileSync(path.join(__dirname, "results.md"), md);
-  fs.writeFileSync(path.join(__dirname, "results.json"), JSON.stringify(filas, null, 2));
+  fs.writeFileSync(path.join(salida, "results.md"), md);
+  fs.writeFileSync(path.join(salida, "results.json"), JSON.stringify(filas, null, 2));
   console.log(
-    `\nExactitud ${pct(aciertos, n)} · precisión fraude ${(100 * precision).toFixed(1)}% · exhaustividad fraude ${(100 * recall).toFixed(1)}% -> eval/results.md`,
+    `\nExactitud ${pct(aciertos, n)} · precisión fraude ${(100 * precision).toFixed(1)}% · exhaustividad fraude ${(100 * recall).toFixed(1)}% -> ${salida}/results.md`,
   );
   process.exit(0);
 })().catch((e) => {
