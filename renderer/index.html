@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; style-src 'self' 'unsafe-inline'">
+  <title>Anti-fraude QVAC</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="marca">Anti-fraude <span>QVAC</span></div>
+    <div class="red" id="red">Conexiones salientes: <b>0</b> · inferencia local</div>
+    <div class="estado" id="estado">listo</div>
+  </header>
+  <main class="cuerpo">
+    <section class="izq">
+      <div class="zona" id="zona">
+        <p><strong>Arrastra una captura</strong> de un mensaje sospechoso, o</p>
+        <button id="elegir">Elegir captura…</button>
+        <p class="mini">Nada sale de este equipo. La captura se analiza aquí y no se guarda.</p>
+      </div>
+      <div class="demo">
+        <label for="demoSel">Capturas de la demo (banco ficticio)</label>
+        <select id="demoSel"><option value="">— elegir —</option></select>
+        <button id="demoBtn" class="sec">Analizar</button>
+      </div>
+      <img id="vista" alt="" hidden>
+    </section>
+    <section class="der" id="resultado">
+      <div class="vacio">El veredicto aparece aquí, con sus razones y qué hacer.</div>
+    </section>
+  </main>
+  <footer class="pie">
+    <span id="modelos">VisionPsy Nano 460M Flash · Qwen3 4B · local</span>
+    <span id="tiempos"></span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

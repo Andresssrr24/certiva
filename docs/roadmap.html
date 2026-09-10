@@ -1,0 +1,425 @@
+<title>Roadmap Anti-Fraude QVAC</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#F3F5F4; --surface:#FFFFFF; --ink:#17201F; --muted:#5B6764; --line:#D3DAD7;
+    --accent:#0E5E63; --accent-ink:#FFFFFF; --accent-soft:#DCEBEA; --code-bg:#E7ECEA;
+    --ok:#1E7A4B; --ok-soft:#DDF0E4;
+    --info:#2C5C9E; --info-soft:#DCE7F5;
+    --warn:#8A5D0C; --warn-soft:#F6EBD0;
+    --bad:#A3302A; --bad-soft:#F7DEDC;
+    --unk:#5F6569; --unk-soft:#E6E8EA;
+    --now:#0E5E63;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#111716; --surface:#182120; --ink:#E7EDEB; --muted:#9DA9A5; --line:#2B3734;
+      --accent:#63C4BE; --accent-ink:#0F1716; --accent-soft:#1C3735; --code-bg:#22302D;
+      --ok:#7ED3A2; --ok-soft:#173427;
+      --info:#8FB4E8; --info-soft:#1B2C44;
+      --warn:#E3B65B; --warn-soft:#3A2E12;
+      --bad:#F19C96; --bad-soft:#42201E;
+      --unk:#A7ADB2; --unk-soft:#2A2F33;
+      --now:#63C4BE;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#111716; --surface:#182120; --ink:#E7EDEB; --muted:#9DA9A5; --line:#2B3734;
+    --accent:#63C4BE; --accent-ink:#0F1716; --accent-soft:#1C3735; --code-bg:#22302D;
+    --ok:#7ED3A2; --ok-soft:#173427;
+    --info:#8FB4E8; --info-soft:#1B2C44;
+    --warn:#E3B65B; --warn-soft:#3A2E12;
+    --bad:#F19C96; --bad-soft:#42201E;
+    --unk:#A7ADB2; --unk-soft:#2A2F33;
+    --now:#63C4BE;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{ background:var(--bg); color:var(--ink); font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .page{ max-width:50rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; display:flex; flex-direction:column; gap:2.5rem; }
+
+  .eyebrow{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0; }
+  h1{ font-family:"Familjen Grotesk", "IBM Plex Sans", sans-serif; font-weight:700; font-size:clamp(2rem, 5vw, 2.75rem); line-height:1.05; letter-spacing:-.01em; margin:0; text-wrap:balance; }
+  h2{ font-family:"Familjen Grotesk", "IBM Plex Sans", sans-serif; font-weight:600; font-size:1.375rem; line-height:1.2; letter-spacing:-.005em; margin:0 0 .75rem; text-wrap:balance; }
+  h3{ font-family:"IBM Plex Sans", sans-serif; font-weight:600; font-size:1rem; margin:1.1rem 0 .4rem; }
+  p{ margin:0 0 .75rem; max-width:68ch; text-wrap:pretty; }
+  p:last-child{ margin-bottom:0; }
+  strong{ font-weight:600; }
+  a{ color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px; }
+  a:focus-visible, input:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  code{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.875em; background:var(--code-bg); padding:.1em .35em; border-radius:3px; }
+  pre{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.8125rem; line-height:1.5; background:var(--code-bg); padding:.9rem 1rem; border-radius:6px; overflow-x:auto; margin:.5rem 0 1rem; }
+  pre code{ background:none; padding:0; font-size:inherit; }
+
+  .masthead{ display:flex; flex-direction:column; gap:.75rem; padding-bottom:1.5rem; border-bottom:1px solid var(--line); }
+  .lede{ font-size:1.125rem; color:var(--muted); max-width:62ch; }
+  .facts{ display:grid; grid-template-columns:repeat(auto-fit, minmax(11rem, 1fr)); gap:1rem 1.5rem; margin:.75rem 0 0; }
+  .facts div{ display:flex; flex-direction:column; gap:.15rem; }
+  .facts dt{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+  .facts dd{ margin:0; font-family:"Familjen Grotesk", "IBM Plex Sans", sans-serif; font-weight:600; font-size:1.25rem; line-height:1.2; font-variant-numeric:tabular-nums; }
+  .facts dd .sub{ display:block; font-family:"IBM Plex Sans", sans-serif; font-weight:400; font-size:.8125rem; color:var(--muted); margin-top:.1rem; }
+
+  .table-wrap{ overflow-x:auto; }
+  table{ border-collapse:collapse; width:100%; font-size:.9375rem; }
+  th{ text-align:left; font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-weight:500; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding:.4rem .75rem .5rem 0; border-bottom:1px solid var(--ink); }
+  td{ padding:.6rem .75rem .6rem 0; border-bottom:1px solid var(--line); vertical-align:top; }
+  td.mono{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.875rem; white-space:nowrap; color:var(--accent); font-weight:500; }
+
+  .tag{ display:inline-block; padding:0 .5em; border-radius:999px; font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.7rem; letter-spacing:.04em; text-transform:uppercase; line-height:1.7; white-space:nowrap; vertical-align:middle; margin-right:.4rem; }
+  .tag.m{ background:var(--info-soft); color:var(--info); }
+  .tag.a{ background:var(--accent-soft); color:var(--accent); }
+  .tag.d{ background:var(--warn-soft); color:var(--warn); }
+  .tag.x{ background:var(--unk-soft); color:var(--unk); }
+  .tag.t{ background:var(--ok-soft); color:var(--ok); }
+
+  .phase{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:1.25rem 1.5rem; }
+  .phase.now{ border-color:var(--now); box-shadow:0 0 0 2px var(--accent-soft) inset; }
+  .phase-head{ display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:.5rem 1rem; margin-bottom:.5rem; }
+  .phase-head h2{ margin:0; }
+  .when{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.8125rem; color:var(--accent); font-weight:500; white-space:nowrap; }
+  .now-badge{ display:none; font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); background:var(--accent); padding:.1em .6em; border-radius:999px; margin-left:.5rem; }
+  .phase.now .now-badge{ display:inline-block; }
+  .goal{ color:var(--muted); margin-bottom:.75rem; }
+  .progress{ height:6px; background:var(--line); border-radius:999px; overflow:hidden; margin:.25rem 0 .9rem; }
+  .progress > i{ display:block; height:100%; width:0; background:var(--accent); transition:width .2s ease; }
+  @media (prefers-reduced-motion: reduce){ .progress > i{ transition:none; } }
+  .count{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.75rem; color:var(--muted); }
+
+  ul.tasks{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5rem; }
+  ul.tasks li{ display:grid; grid-template-columns:1.4rem 1fr; gap:.5rem; align-items:start; max-width:70ch; }
+  ul.tasks input{ width:1.05rem; height:1.05rem; margin:.3rem 0 0; accent-color:var(--accent); cursor:pointer; }
+  ul.tasks label{ cursor:pointer; }
+  ul.tasks li.done label{ color:var(--muted); text-decoration:line-through; text-decoration-color:var(--line); }
+  .done-when{ margin-top:.9rem; padding:.7rem .9rem; background:var(--ok-soft); color:var(--ok); border-radius:4px; font-size:.9375rem; }
+  .cut{ margin-top:.5rem; padding:.7rem .9rem; background:var(--warn-soft); color:var(--warn); border-radius:4px; font-size:.9375rem; }
+  .done-when strong, .cut strong{ font-weight:600; }
+
+  ul.plain{ margin:0 0 .75rem; padding-left:1.25rem; max-width:68ch; }
+  ul.plain li{ margin:.25rem 0; }
+  .legend{ display:flex; flex-wrap:wrap; gap:.4rem .9rem; align-items:center; font-size:.875rem; color:var(--muted); margin:.5rem 0 0; }
+  footer{ border-top:1px solid var(--line); padding-top:1.25rem; font-size:.875rem; color:var(--muted); }
+  .sources{ list-style:none; margin:.5rem 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.35rem 1.1rem; }
+</style>
+
+<main class="page">
+  <header class="masthead">
+    <p class="eyebrow">Hackatón QVAC · ISD Summit · cierre jueves 11 de septiembre, 8:00 Panamá</p>
+    <h1>Roadmap Anti-Fraude QVAC</h1>
+    <p class="lede">Del cero a la entrega en cinco fases. Las casillas se guardan solo en este navegador: cada quien marca lo suyo y se cotejan en voz alta al cierre de cada fase.</p>
+    <dl class="facts">
+      <div><dt>Faltan</dt><dd id="countdown">—<span class="sub">hasta el cierre en Dojo</span></dd></div>
+      <div><dt>Avance en este navegador</dt><dd id="total">0 de 0<span class="sub">tareas marcadas</span></dd></div>
+      <div><dt>Tracks a marcar en Dojo</dt><dd>General · Caja · Psy<span class="sub">una sola entrega por equipo</span></dd></div>
+      <div><dt>Objetivo del video</dt><dd>4:30<span class="sub">máximo permitido 5:00</span></dd></div>
+    </dl>
+  </header>
+
+  <section>
+    <h2>Quién hace qué</h2>
+    <p>Tres roles cubren el núcleo. La cuarta persona, si existe, va al Android o a Ovnicom, nunca a las dos cosas.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Rol</th><th>Dueño de</th><th>Su entregable del día</th></tr></thead>
+        <tbody>
+          <tr><td><span class="tag m">Modelos</span></td><td>Integración del SDK: VisionPsy, Qwen3, transcripción, RAG, pares, registro de rendimiento</td><td>El pipeline completo corriendo sin red</td></tr>
+          <tr><td><span class="tag a">App</span></td><td>Electron y la interfaz, el puente IPC, el modo banco, la grabación del video</td><td>La demo que se ve en el video</td></tr>
+          <tr><td><span class="tag d">Datos</span></td><td>Generador sintético, reglas deterministas, script de evaluación, README</td><td>La evidencia reproducible</td></tr>
+          <tr><td><span class="tag x">Extra</span></td><td>Android con Expo, o el módulo Ovnicom si tiene perfil de infraestructura</td><td>Una captura leída en un teléfono real</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="legend"><span class="tag t">Todos</span> son decisiones de equipo que se toman juntos y se anotan en el README.</p>
+  </section>
+
+  <section class="phase" id="p0" data-start="2026-09-10T03:30:00Z" data-end="2026-09-10T07:00:00Z">
+    <div class="phase-head"><h2>Fase 0 · Cimientos<span class="now-badge">ahora</span></h2><span class="when">9 sep · 23:00 → 02:00</span></div>
+    <p class="goal">Que mañana a las 8:00 nadie espere descargas ni discuta esquemas.</p>
+    <div class="progress"><i></i></div>
+    <ul class="tasks">
+      <li><input type="checkbox" id="p0-1"><label for="p0-1"><span class="tag t">Todos</span>Registrar el equipo y el proyecto en Dojo con capitán definido. Elegir nombre. Marcar los tracks General, Caja y Psy.</label></li>
+      <li><input type="checkbox" id="p0-2"><label for="p0-2"><span class="tag a">App</span>Crear el repo en GitHub con licencia Apache-2.0 o MIT y un README que ya tenga la sección «Base preexistente» con los ejemplos de QVAC que se copian.</label></li>
+      <li><input type="checkbox" id="p0-3"><label for="p0-3"><span class="tag m">Modelos</span>En cada máquina: Node 22.17 o más, <code>npx -y @qvac/cli doctor</code>, y descargar los cuatro modelos de abajo con buen Wi-Fi. Probar una inferencia con el Wi-Fi apagado.</label></li>
+      <li><input type="checkbox" id="p0-4"><label for="p0-4"><span class="tag a">App</span>Copiar el andamiaje del ejemplo de facturas: Electron, modelo en el proceso principal, puente IPC y su <code>lib/models.js</code>. Borrar lo que no aplica.</label></li>
+      <li><input type="checkbox" id="p0-5"><label for="p0-5"><span class="tag d">Datos</span>Generador sintético v1: mensajes de fraude y legítimos en español panameño, tres plantillas visuales, SMS, WhatsApp y correo, renderizadas a PNG con su verdad en JSON.</label></li>
+      <li><input type="checkbox" id="p0-6"><label for="p0-6"><span class="tag d">Datos</span>Listas ficticias del banco de la demo: dominios y números oficiales, y los dominios parecidos que las reglas deben atrapar.</label></li>
+      <li><input type="checkbox" id="p0-7"><label for="p0-7"><span class="tag t">Todos</span>Fijar los dos esquemas JSON y el guion del video de seis pasos. Después de esta noche no se cambian sin avisar al grupo.</label></li>
+    </ul>
+    <p class="done-when"><strong>Listo cuando:</strong> los cuatro modelos cargan en la máquina de la demo, el generador produce diez capturas y el repo existe con README y licencia.</p>
+    <p class="cut"><strong>Línea de corte:</strong> si a las 02:00 VisionPsy no carga, se sigue con Qwen3-VL 2B para extraer y se reintenta VisionPsy a primera hora. Dormir cinco horas mínimo. Un equipo sin dormir entrega peor que uno con menos funciones.</p>
+  </section>
+
+  <section class="phase" id="p1" data-start="2026-09-10T13:00:00Z" data-end="2026-09-10T18:00:00Z">
+    <div class="phase-head"><h2>Fase 1 · Punta a punta mínimo<span class="now-badge">ahora</span></h2><span class="when">10 sep · 08:00 → 13:00</span></div>
+    <p class="goal">Una captura entra y sale un veredicto con razones. Nada más, pero eso completo.</p>
+    <div class="progress"><i></i></div>
+    <ul class="tasks">
+      <li><input type="checkbox" id="p1-1"><label for="p1-1"><span class="tag m">Modelos</span>Captura → VisionPsy Flash con esquema de extracción → JSON: canal, remitente, texto, enlaces, teléfonos, montos, si pide datos sensibles.</label></li>
+      <li><input type="checkbox" id="p1-2"><label for="p1-2"><span class="tag d">Datos</span>Motor de reglas v1 sobre ese JSON. Cada regla devuelve una evidencia en texto, nunca solo un booleano.</label></li>
+      <li><input type="checkbox" id="p1-3"><label for="p1-3"><span class="tag m">Modelos</span>Veredicto con Qwen3 4B y esquema de veredicto. Prompt en español con la política «nunca decir seguro» y las evidencias de las reglas como entrada.</label></li>
+      <li><input type="checkbox" id="p1-4"><label for="p1-4"><span class="tag a">App</span>Pantalla de veredicto: chip, evidencias, qué hacer, canal oficial y el tiempo al primer token visible. Botón «reportar» aunque todavía no haga nada.</label></li>
+      <li><input type="checkbox" id="p1-5"><label for="p1-5"><span class="tag a">App</span>Indicador de red en la barra: contador de conexiones salientes que debe decir cero durante la demo.</label></li>
+    </ul>
+    <p class="done-when"><strong>Listo cuando:</strong> cinco capturas de fraude y cinco legítimas pasan por la interfaz con veredicto correcto en menos de diez segundos cada una.</p>
+    <p class="cut"><strong>Decisión a las 11:00:</strong> si VisionPsy falla en más de tres de diez capturas, VisionPsy se queda con una tarea corta que sí haga bien, clasificar el canal y sacar remitente y enlace, y Qwen3-VL 2B lee el texto. Se cuenta tal cual en el README: el reto Psy premia la honestidad sobre el modelo.</p>
+  </section>
+
+  <section class="phase" id="p2" data-start="2026-09-10T18:00:00Z" data-end="2026-09-11T00:00:00Z">
+    <div class="phase-head"><h2>Fase 2 · Lo que gana puntos<span class="now-badge">ahora</span></h2><span class="when">10 sep · 13:00 → 19:00</span></div>
+    <p class="goal">Las piezas que suben Technical e Innovation y la evidencia que pide Psy.</p>
+    <div class="progress"><i></i></div>
+    <ul class="tasks">
+      <li><input type="checkbox" id="p2-1"><label for="p2-1"><span class="tag m">Modelos</span>Modo llamada: <code>transcribeStream()</code> con Parakeet TDT multilingüe o Whisper, ventana deslizante de veinte segundos y clasificación incremental con esquema cada cinco segundos. Aviso en pantalla.</label></li>
+      <li><input type="checkbox" id="p2-2"><label for="p2-2"><span class="tag d">Datos</span>Guion y audio de la llamada de vishing, grabado por alguien del equipo con su propia voz. Sin nombres ni números reales.</label></li>
+      <li><input type="checkbox" id="p2-3"><label for="p2-3"><span class="tag m">Modelos</span>RAG local con <code>ragIngest()</code> y <code>ragSearch()</code> sobre la política anti-fraude sintética del banco, para redactar «qué hacer» y el canal oficial.</label></li>
+      <li><input type="checkbox" id="p2-4"><label for="p2-4"><span class="tag d">Datos</span>Script de evaluación: corre el pipeline sobre todas las capturas y escribe precisión por campo, precisión y exhaustividad del veredicto, TTFT y tokens por segundo en <code>eval/results.md</code>.</label></li>
+      <li><input type="checkbox" id="p2-5"><label for="p2-5"><span class="tag m">Modelos</span>Registro de rendimiento: <code>subscribeServerLogs()</code> volcado a <code>eval/perf.jsonl</code> con carga de modelo, prompt, tokens, TTFT y throughput por llamada.</label></li>
+      <li><input type="checkbox" id="p2-6"><label for="p2-6"><span class="tag a">App</span>Modo banco: tabla de indicadores reportados, conteo por hora y campañas. Al principio con datos locales.</label></li>
+      <li><input type="checkbox" id="p2-7"><label for="p2-7"><span class="tag x">Extra</span>Android: app Expo mínima que elige una captura, la pasa por VisionPsy y muestra el JSON y el TTFT. Tope de cuatro horas.</label></li>
+    </ul>
+    <p class="done-when"><strong>Listo cuando:</strong> los seis pasos del video se pueden hacer en vivo, salvo el de pares.</p>
+    <p class="cut"><strong>Línea de corte:</strong> si a las 17:00 el modo llamada no funciona en vivo, se procesa el audio por lotes con <code>transcribe()</code> y el video dice que es por lotes. Si el Android no compila a las cuatro horas, se declara el MacBook y se citan los benchmarks del fabricante como suyos.</p>
+  </section>
+
+  <section class="phase" id="p3" data-start="2026-09-11T00:00:00Z" data-end="2026-09-11T06:00:00Z">
+    <div class="phase-head"><h2>Fase 3 · Pares, evidencia y video v1<span class="now-badge">ahora</span></h2><span class="when">10 sep · 19:00 → 01:00</span></div>
+    <p class="goal">Lo que nadie más va a tener, y un video subido aunque sea imperfecto.</p>
+    <div class="progress"><i></i></div>
+    <ul class="tasks">
+      <li><input type="checkbox" id="p3-1"><label for="p3-1"><span class="tag m">Modelos</span>Hyperswarm: tema fijo, mensaje de indicador con hash del remitente o dominio, tipo, marca de tiempo y origen. Fusión local y badge «vecinos ya reportaron». Dos laptops en la misma red para la demo.</label></li>
+      <li><input type="checkbox" id="p3-2"><label for="p3-2"><span class="tag a">App</span>Nodo radar: un script que se une al enjambre y alimenta el modo banco con lo que llega.</label></li>
+      <li><input type="checkbox" id="p3-3"><label for="p3-3"><span class="tag d">Datos</span>README v1 completo: una sección por jurado, hardware declarado, modelos con cuantización, cómo reproducir, base preexistente, métricas, limitaciones y modelo de negocio.</label></li>
+      <li><input type="checkbox" id="p3-4"><label for="p3-4"><span class="tag a">App</span>Grabar el video v1 siguiendo el guion, subirlo sin listar y abrir el enlace en una ventana de incógnito.</label></li>
+      <li><input type="checkbox" id="p3-5"><label for="p3-5"><span class="tag t">Todos</span>Congelar funciones a la 01:00. Desde ahí solo arreglos y video.</label></li>
+    </ul>
+    <p class="done-when"><strong>Listo cuando:</strong> el video v1 está subido y el README v1 está en el repo.</p>
+    <p class="cut"><strong>Línea de corte:</strong> si a las 23:00 los pares no conectan entre máquinas, se demuestra con dos procesos en una sola máquina y se dice. Si tampoco, se corta la escena del video y el README lo lista como siguiente paso.</p>
+  </section>
+
+  <section class="phase" id="p4" data-start="2026-09-11T06:00:00Z" data-end="2026-09-11T13:00:00Z">
+    <div class="phase-head"><h2>Fase 4 · Cierre<span class="now-badge">ahora</span></h2><span class="when">11 sep · 01:00 → 07:00</span></div>
+    <p class="goal">Entregar con una hora de margen. Nada nuevo entra.</p>
+    <div class="progress"><i></i></div>
+    <ul class="tasks">
+      <li><input type="checkbox" id="p4-1"><label for="p4-1"><span class="tag a">App</span>Regrabar solo las escenas que mejoraron. Video final por debajo de cinco minutos, con el gancho de veinte segundos al inicio.</label></li>
+      <li><input type="checkbox" id="p4-2"><label for="p4-2"><span class="tag d">Datos</span>Métricas y registro de rendimiento finales en el README. Archivo LICENSE presente. Etiqueta <code>v1.0-hackathon</code>.</label></li>
+      <li><input type="checkbox" id="p4-3"><label for="p4-3"><span class="tag t">Todos</span>Repo público. Enlace del video sin credenciales. Ningún secreto en el repo. Buscar en el código cualquier llamada a una API en la nube y borrarla.</label></li>
+      <li><input type="checkbox" id="p4-4"><label for="p4-4"><span class="tag t">Todos</span>El capitán entrega en Dojo antes de las 07:00 con los tres tracks marcados y guarda una captura de la confirmación.</label></li>
+    </ul>
+    <p class="done-when"><strong>Listo cuando:</strong> la entrega aparece en Dojo y el capitán tiene la captura.</p>
+  </section>
+
+  <section>
+    <h2>Lo que se fija esta noche</h2>
+    <p>Estos dos esquemas y esta lista de reglas son el contrato entre los tres roles. La gramática del SDK obliga al modelo a respetarlos, así que el resto del código puede confiar en la forma.</p>
+
+    <h3>Esquema de extracción de la captura</h3>
+<pre><code>{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["canal", "remitente", "texto", "enlaces", "telefonos", "montos", "pide_datos_sensibles", "urgencia"],
+  "properties": {
+    "canal": { "type": "string", "enum": ["sms", "whatsapp", "correo", "otro"] },
+    "remitente": { "type": "string" },
+    "texto": { "type": "string" },
+    "enlaces": { "type": "array", "items": { "type": "string" } },
+    "telefonos": { "type": "array", "items": { "type": "string" } },
+    "montos": { "type": "array", "items": { "type": "string" } },
+    "pide_datos_sensibles": { "type": "boolean" },
+    "urgencia": { "type": "boolean" }
+  }
+}</code></pre>
+
+    <h3>Esquema de veredicto</h3>
+<pre><code>{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["veredicto", "confianza", "senales", "accion", "canal_oficial"],
+  "properties": {
+    "veredicto": { "type": "string", "enum": ["fraude", "sospechoso", "sin_senales", "no_legible"] },
+    "confianza": { "type": "number", "minimum": 0, "maximum": 1 },
+    "senales": { "type": "array", "items": { "type": "object", "additionalProperties": false,
+      "required": ["tipo", "evidencia"],
+      "properties": { "tipo": { "type": "string" }, "evidencia": { "type": "string" } } } },
+    "accion": { "type": "string" },
+    "canal_oficial": { "type": "string" }
+  }
+}</code></pre>
+
+    <h3>Reglas deterministas v1</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Regla</th><th>Evidencia que produce</th></tr></thead>
+        <tbody>
+          <tr><td>Dominio parecido a uno oficial</td><td>Distancia de edición o token de marca dentro de un dominio que no está en la lista oficial</td></tr>
+          <tr><td>Acortador, IP literal o punycode en el enlace</td><td>El enlace tal cual y el motivo</td></tr>
+          <tr><td>Número fuera de la lista oficial</td><td>El número y que no coincide con los canales del banco</td></tr>
+          <tr><td>Pide clave, PIN, código de verificación o datos de tarjeta</td><td>La frase exacta del mensaje</td></tr>
+          <tr><td>Presión de tiempo o amenaza de bloqueo</td><td>La frase exacta</td></tr>
+          <tr><td>Pago a cuenta de terceros o por Yappy a un particular</td><td>El monto y el destino</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Mensaje entre pares</h3>
+<pre><code>{ "v": 1, "tipo": "dominio" | "numero" | "plantilla", "hash": "sha256 del indicador normalizado",
+  "veredicto": "fraude", "ts": 1757548800, "origen": "id anónimo del nodo" }</code></pre>
+    <p>Nunca viaja el mensaje ni la captura. Solo el hash, el tipo y el veredicto.</p>
+
+    <h3>Registro de rendimiento por llamada</h3>
+    <p><code>modelo</code>, <code>cuantizacion</code>, <code>hardware</code>, <code>tarea</code>, <code>prompt_tokens</code>, <code>output_tokens</code>, <code>ttft_ms</code>, <code>tokens_por_segundo</code>, <code>carga_modelo_ms</code>, <code>ts</code>. Una línea JSON por llamada en <code>eval/perf.jsonl</code>.</p>
+
+    <h3>Estructura del repo</h3>
+<pre><code>app/            Electron: main.js, preload.js, renderer/
+lib/            models.js, extract.js, rules.js, verdict.js, call.js, rag.js, peers.js, perf.js
+data/           generador sintético, plantillas, capturas/, verdad.json, politica-antifraude.md
+eval/           evaluar.js, results.md, perf.jsonl
+mobile/         app Expo (si la cuarta persona llega)
+README.md       secciones: General · Caja · Psy · Reproducir · Base preexistente · Modelo de negocio · Límites
+LICENSE</code></pre>
+  </section>
+
+  <section>
+    <h2>Modelos y llamadas exactas</h2>
+    <p>Nombres verificados en el SDK 0.19 y en los ejemplos oficiales. Si una constante no existe al importar, buscarla con <code>modelRegistrySearch()</code> antes de improvisar.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tarea</th><th>Constante</th><th>Nota</th></tr></thead>
+        <tbody>
+          <tr><td>Leer la captura</td><td class="mono">VISIONPSY_NANO_460M_MULTIMODAL_Q8_0</td><td>Flash. Va con su proyección <code>MMPROJ_VISIONPSY_NANO_460M_MULTIMODAL_Q8_0</code> y <code>image_no_upscale: 'on'</code></td></tr>
+          <tr><td>Respaldo de visión</td><td class="mono">QWEN3VL_2B_MULTIMODAL_Q4_K</td><td>Con <code>MMPROJ_QWEN3VL_2B_MULTIMODAL_Q4_K</code>. Es el que usa el ejemplo de facturas</td></tr>
+          <tr><td>Veredicto y explicación</td><td class="mono">QWEN3_4B_INST_Q4_K_M</td><td>Unos 2,5 GB. Para hablar de teléfono, <code>QWEN3_1_7B_INST_Q4</code></td></tr>
+          <tr><td>Transcripción en vivo</td><td class="mono">PARAKEET_TDT_0_6B_V3_Q8_0</td><td>Multilingüe. Alternativa: Whisper con el plugin <code>whispercpp-transcription</code>, como el ejemplo de voz</td></tr>
+          <tr><td>Embeddings y RAG</td><td class="mono">EmbeddingGemma</td><td>La constante exacta está en el ejemplo <code>qvac-desk-tidy-demo</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Cargar VisionPsy y extraer con esquema</h3>
+<pre><code>import { loadModel, completion, VISIONPSY_NANO_460M_MULTIMODAL_Q8_0,
+         MMPROJ_VISIONPSY_NANO_460M_MULTIMODAL_Q8_0 } from '@qvac/sdk'
+
+const vision = await loadModel({
+  modelSrc: VISIONPSY_NANO_460M_MULTIMODAL_Q8_0,
+  modelConfig: { ctx_size: 4096, device: 'gpu',
+    projectionModelSrc: MMPROJ_VISIONPSY_NANO_460M_MULTIMODAL_Q8_0,
+    image_no_upscale: 'on' }
+})
+
+const run = completion({
+  modelId: vision, stream: true,
+  history: [{ role: 'user', content: PROMPT_CAPTURA, attachments: [{ path: rutaPng }] }],
+  responseFormat: { type: 'json_schema', json_schema: { name: 'captura', schema: ESQUEMA_CAPTURA } }
+})
+const t0 = Date.now(); let ttft = null
+for await (const ev of run.events) { if (ev.type === 'contentDelta' &amp;&amp; ttft === null) ttft = Date.now() - t0 }
+const captura = JSON.parse((await run.final).contentText)</code></pre>
+
+    <h3>Preparar el entorno</h3>
+<pre><code>node -v                      # 22.17 o más
+npx -y @qvac/cli doctor      # GPU, memoria y disco
+npm i @qvac/sdk hyperswarm
+npm i -D electron</code></pre>
+
+    <h3>Android con Expo, solo la cuarta persona</h3>
+<pre><code>npx create-expo-app@latest escudo-mobile --template blank-typescript@sdk-54
+cd escudo-mobile
+npm i @qvac/sdk bare-rpc react-native-bare-kit &amp;&amp; npm i -D bare-pack
+npx expo install expo-file-system expo-build-properties expo-device
+# app.json → plugins: ["expo-build-properties", { android: { minSdkVersion: 29 } }], "@qvac/sdk/expo-plugin"
+# qvac.config.json → { "plugins": ["@qvac/sdk/llamacpp-completion/plugin"] }
+npx expo prebuild
+npx expo run:android --device   # solo dispositivo físico, no emulador</code></pre>
+  </section>
+
+  <section>
+    <h2>Riesgos y plan B</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Riesgo</th><th>Plan B</th></tr></thead>
+        <tbody>
+          <tr><td>Descargas lentas en el venue</td><td>Descargar esta noche. La caché <code>~/.qvac/models</code> se copia por USB entre máquinas.</td></tr>
+          <tr><td>Cuatro modelos no caben en memoria a la vez</td><td>Cargar y descargar por paso. <code>assessModelFit()</code> antes de cargar. La demo corre en la máquina con más RAM.</td></tr>
+          <tr><td>VisionPsy no extrae bien</td><td>Decisión de las 11:00 en la Fase 1. Honestidad en el README antes que forzar el modelo.</td></tr>
+          <tr><td>Los pares no conectan entre redes</td><td>Misma Wi-Fi para la demo. Si no, dos procesos en una máquina y decirlo.</td></tr>
+          <tr><td>El SDK genera tráfico saliente al arrancar</td><td>Modelos cacheados antes, contador de conexiones visible en la demo, <code>suspend()</code> de la capa P2P del SDK cuando no se usa.</td></tr>
+          <tr><td>El video se pasa de cinco minutos</td><td>Guion cronometrado por escena. Objetivo 4:30. Se corta antes de descartar la entrega.</td></tr>
+          <tr><td>Alguien deja una clave o una llamada a la nube en el repo</td><td>Revisión de las 06:00: buscar secretos y llamadas externas en todo el código.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Guion del video, seis escenas</h2>
+    <ul class="plain">
+      <li><strong>0:00</strong> Gancho: siete panameños al día caen en estafas. Wi-Fi apagado en pantalla. Un jubilado recibe un SMS y hace captura.</li>
+      <li><strong>0:30</strong> VisionPsy lee la captura en el dispositivo. Aparece el tiempo al primer token.</li>
+      <li><strong>1:10</strong> Veredicto con razones y qué hacer. Luego un mensaje legítimo: «sin señales», nunca «seguro».</li>
+      <li><strong>2:00</strong> Modo llamada: suena el audio de vishing y salta el aviso en vivo.</li>
+      <li><strong>3:00</strong> Un usuario reporta. En la segunda máquina aparece «vecinos ya reportaron». El radar del banco muestra la campaña.</li>
+      <li><strong>4:00</strong> Cierre: cero llamadas de red, modelos con nombre y cuantización, métricas del set sintético, modelo de negocio en una lámina.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p class="eyebrow">Referencias</p>
+    <ul class="sources">
+      <li><a href="https://www.trydojo.io/hackathons/decentralized-ai-hackathon">Hackatón en Dojo</a></li>
+      <li><a href="https://docs.qvac.tether.io/js-ts-sdk/">SDK JS/TS</a></li>
+      <li><a href="https://docs.qvac.tether.io/ai-capabilities/multimodal/">Modelos de visión</a></li>
+      <li><a href="https://docs.qvac.tether.io/ai-capabilities/transcription/">Transcripción</a></li>
+      <li><a href="https://docs.qvac.tether.io/tutorials/expo/">Expo</a></li>
+      <li><a href="https://github.com/tetherto/qvac-examples">qvac-examples</a></li>
+      <li><a href="https://claude.ai/code/artifact/2dee0e4f-68c9-4b81-8f36-ee5e3c80475e">Plan ISD Summit 2026</a></li>
+    </ul>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var KEY = 'roadmap-antifraude-qvac-v1';
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { state = {}; }
+
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('ul.tasks input[type=checkbox]'));
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+  function paint(){
+    var total = 0, done = 0;
+    document.querySelectorAll('.phase').forEach(function(ph){
+      var list = ph.querySelectorAll('ul.tasks input[type=checkbox]');
+      var d = 0;
+      list.forEach(function(b){ b.parentNode.classList.toggle('done', b.checked); if (b.checked) d++; });
+      total += list.length; done += d;
+      var bar = ph.querySelector('.progress > i');
+      if (bar) bar.style.width = (list.length ? Math.round(d * 100 / list.length) : 0) + '%';
+    });
+    var t = document.getElementById('total');
+    if (t) t.firstChild.nodeValue = done + ' de ' + total;
+  }
+  boxes.forEach(function(b){
+    if (state[b.id]) b.checked = true;
+    b.addEventListener('change', function(){ state[b.id] = b.checked; if (!b.checked) delete state[b.id]; save(); paint(); });
+  });
+  paint();
+
+  var deadline = Date.UTC(2026, 8, 11, 13, 0, 0);
+  function tick(){
+    var now = Date.now();
+    var el = document.getElementById('countdown');
+    if (el) {
+      var ms = deadline - now;
+      if (ms <= 0) { el.firstChild.nodeValue = 'Cerrado'; }
+      else {
+        var h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000);
+        el.firstChild.nodeValue = h + ' h ' + (m < 10 ? '0' + m : m) + ' min';
+      }
+    }
+    document.querySelectorAll('.phase').forEach(function(ph){
+      var s = Date.parse(ph.getAttribute('data-start')), e = Date.parse(ph.getAttribute('data-end'));
+      ph.classList.toggle('now', now >= s && now < e);
+    });
+  }
+  tick();
+  setInterval(tick, 30000);
+})();
+</script>

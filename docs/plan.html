@@ -1,0 +1,272 @@
+<title>Plan ISD Summit 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#F3F5F4; --surface:#FFFFFF; --ink:#17201F; --muted:#5B6764; --line:#D3DAD7;
+    --accent:#0E5E63; --accent-ink:#FFFFFF; --accent-soft:#DCEBEA; --code-bg:#E7ECEA;
+    --ok:#1E7A4B; --ok-soft:#DDF0E4;
+    --info:#2C5C9E; --info-soft:#DCE7F5;
+    --warn:#8A5D0C; --warn-soft:#F6EBD0;
+    --bad:#A3302A; --bad-soft:#F7DEDC;
+    --unk:#5F6569; --unk-soft:#E6E8EA;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#111716; --surface:#182120; --ink:#E7EDEB; --muted:#9DA9A5; --line:#2B3734;
+      --accent:#63C4BE; --accent-ink:#0F1716; --accent-soft:#1C3735; --code-bg:#22302D;
+      --ok:#7ED3A2; --ok-soft:#173427;
+      --info:#8FB4E8; --info-soft:#1B2C44;
+      --warn:#E3B65B; --warn-soft:#3A2E12;
+      --bad:#F19C96; --bad-soft:#42201E;
+      --unk:#A7ADB2; --unk-soft:#2A2F33;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#111716; --surface:#182120; --ink:#E7EDEB; --muted:#9DA9A5; --line:#2B3734;
+    --accent:#63C4BE; --accent-ink:#0F1716; --accent-soft:#1C3735; --code-bg:#22302D;
+    --ok:#7ED3A2; --ok-soft:#173427;
+    --info:#8FB4E8; --info-soft:#1B2C44;
+    --warn:#E3B65B; --warn-soft:#3A2E12;
+    --bad:#F19C96; --bad-soft:#42201E;
+    --unk:#A7ADB2; --unk-soft:#2A2F33;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .page{ max-width:46rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; display:flex; flex-direction:column; gap:2.75rem; }
+
+  .eyebrow{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0; }
+  h1{ font-family:"Familjen Grotesk", "IBM Plex Sans", sans-serif; font-weight:700; font-size:clamp(2rem, 5vw, 2.75rem); line-height:1.05; letter-spacing:-.01em; margin:0; text-wrap:balance; }
+  h2{ font-family:"Familjen Grotesk", "IBM Plex Sans", sans-serif; font-weight:600; font-size:1.375rem; line-height:1.2; letter-spacing:-.005em; margin:0 0 .85rem; text-wrap:balance; }
+  h3{ font-family:"IBM Plex Sans", sans-serif; font-weight:600; font-size:1rem; margin:1.1rem 0 .35rem; }
+  p{ margin:0 0 .75rem; max-width:66ch; text-wrap:pretty; }
+  p:last-child{ margin-bottom:0; }
+  strong{ font-weight:600; }
+  a{ color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px; }
+  a:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  code{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.875em; background:var(--code-bg); padding:.1em .35em; border-radius:3px; }
+
+  .masthead{ display:flex; flex-direction:column; gap:.75rem; padding-bottom:1.5rem; border-bottom:1px solid var(--line); }
+  .lede{ font-size:1.125rem; color:var(--muted); max-width:60ch; }
+  .facts{ display:grid; grid-template-columns:repeat(auto-fit, minmax(11rem, 1fr)); gap:1rem 1.5rem; margin:.75rem 0 0; }
+  .facts div{ display:flex; flex-direction:column; gap:.15rem; }
+  .facts dt{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+  .facts dd{ margin:0; font-family:"Familjen Grotesk", "IBM Plex Sans", sans-serif; font-weight:600; font-size:1.25rem; line-height:1.2; font-variant-numeric:tabular-nums; }
+  .facts dd.small{ font-family:"IBM Plex Sans", sans-serif; font-weight:500; font-size:.9375rem; line-height:1.4; }
+  .facts dd .sub{ display:block; font-family:"IBM Plex Sans", sans-serif; font-weight:400; font-size:.8125rem; color:var(--muted); margin-top:.1rem; }
+
+  .decision, .callout{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:1.35rem 1.5rem; }
+  .decision h2{ color:var(--accent); }
+  .decision .lead{ font-size:1.0625rem; }
+
+  .table-wrap{ overflow-x:auto; }
+  table{ border-collapse:collapse; width:100%; font-size:.9375rem; }
+  th{ text-align:left; font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-weight:500; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding:.4rem .75rem .5rem 0; border-bottom:1px solid var(--ink); }
+  td{ padding:.65rem .75rem .65rem 0; border-bottom:1px solid var(--line); vertical-align:top; }
+  td.num, th.num{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap; }
+  tr.pick td{ background:var(--accent-soft); }
+  tr.pick td:first-child{ font-weight:600; }
+  tr.dim td{ color:var(--muted); }
+  .note{ font-size:.9375rem; color:var(--muted); margin-top:.75rem; }
+
+  ol.script{ margin:0; padding-left:1.6rem; display:flex; flex-direction:column; gap:.6rem; }
+  ol.script li{ padding-left:.25rem; max-width:64ch; }
+  ol.script li::marker{ color:var(--accent); font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-weight:500; }
+  .chip{ display:inline-block; padding:0 .55em; border-radius:999px; font-size:.8em; font-weight:600; line-height:1.55; white-space:nowrap; vertical-align:baseline; }
+  .chip.ok{ background:var(--ok-soft); color:var(--ok); }
+  .chip.info{ background:var(--info-soft); color:var(--info); }
+  .chip.warn{ background:var(--warn-soft); color:var(--warn); }
+  .chip.bad{ background:var(--bad-soft); color:var(--bad); }
+  .chip.unk{ background:var(--unk-soft); color:var(--unk); }
+  .legend{ display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; margin-top:1rem; font-size:.875rem; color:var(--muted); }
+  q{ quotes:"«" "»"; }
+
+  dl.build{ display:grid; grid-template-columns:11rem 1fr; gap:.7rem 1.25rem; margin:0; }
+  dl.build div{ display:contents; }
+  dl.build dt{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); padding-top:.25rem; }
+  dl.build dd{ margin:0; max-width:60ch; }
+  @media (max-width:600px){
+    dl.build{ grid-template-columns:1fr; gap:.25rem; }
+    dl.build dd{ margin-bottom:.6rem; }
+  }
+
+  ul.plain{ margin:0 0 .75rem; padding-left:1.25rem; max-width:64ch; }
+  ul.plain li{ margin:.25rem 0; }
+  ul.check{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.55rem; }
+  ul.check li{ position:relative; padding-left:1.7rem; max-width:64ch; }
+  ul.check li::before{ content:""; position:absolute; left:0; top:.42em; width:.85em; height:.85em; border:1.5px solid var(--accent); border-radius:2px; }
+
+  table.timeline td:first-child{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.875rem; font-weight:500; color:var(--accent); white-space:nowrap; }
+
+  .alt{ border-top:1px solid var(--line); padding-top:1.5rem; }
+  footer{ border-top:1px solid var(--line); padding-top:1.25rem; font-size:.875rem; color:var(--muted); }
+  .sources{ list-style:none; margin:.5rem 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.35rem 1.1rem; }
+</style>
+
+<main class="page">
+  <header class="masthead">
+    <p class="eyebrow">ISD Summit · Hackatón QVAC · Panamá · v3 · 9 sep 2026</p>
+    <h1>Plan ISD Summit 2026</h1>
+    <p class="lede">Con la Caja de Ahorros como reto principal: qué presentamos, por qué, y qué tiene que estar listo antes del jueves 11 a las 8:00.</p>
+    <dl class="facts">
+      <div><dt>Premio general</dt><dd>3.000 / 2.000 / 1.000<span class="sub">primero, segundo y tercero</span></dd></div>
+      <div><dt>Techo por proyecto</dt><dd>6.000 USDT<span class="sub">7.500 sumando Ovnicom con una cuarta persona de infraestructura</span></dd></div>
+      <div><dt>Cierre</dt><dd>Jue 11 · 8:00<span class="sub">una sola entrega por equipo, inscrita en varios tracks</span></dd></div>
+      <div><dt>Competencia</dt><dd>272 inscritos<span class="sub">equipos de 1 a 4, formato híbrido</span></dd></div>
+    </dl>
+  </header>
+
+  <section class="decision">
+    <h2>La decisión</h2>
+    <p class="lead"><strong>Un solo proyecto con la Caja como núcleo: protección contra fraude que corre en el teléfono del cliente.</strong> Compite a la vez por el desafío general, por la Caja de Ahorros y por el reto Psy.</p>
+    <p>El cliente recibe un mensaje o una llamada sospechosa. Hace una captura de pantalla o activa el modo llamada, y la app le dice en segundos si es fraude, por qué, y qué hacer. Ni el mensaje ni la llamada salen del teléfono. VisionPsy lee la captura, un modelo local clasifica con reglas explicables, y los indicadores confirmados se comparten entre pares sin servidor.</p>
+    <p><strong>Por qué la Caja como núcleo y no como piel.</strong> Es el único reto donde la propiedad intelectual queda en el equipo y cualquier acuerdo posterior se negocia directo con el banco. Ganar ahí abre una conversación comercial, no solo un premio.</p>
+    <p>Quedan menos de dos días: el guion del video se escribe antes que el código.</p>
+  </section>
+
+  <section>
+    <h2>Qué se puede apilar con la Caja adentro</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Combinación</th><th class="num">Techo USDT</th><th>Qué es</th><th>Lectura</th></tr>
+        </thead>
+        <tbody>
+          <tr class="pick"><td>Caja + Psy + General</td><td class="num">6.000</td><td>Anti-fraude en el dispositivo</td><td>Recomendado: diferenciado, demo clara, Psy central por necesidad</td></tr>
+          <tr><td>Caja + Psy + General + Ovnicom</td><td class="num">7.500</td><td>Anti-fraude más Sentinel-DNS: el mismo typosquatting visto desde la red del banco</td><td>Solo con una persona de infraestructura dedicada desde el primer día</td></tr>
+          <tr><td>Caja + Psy + General</td><td class="num">6.000</td><td>Expediente de crédito en el dispositivo</td><td>Alternativa sólida, pero es lo que harán varios equipos</td></tr>
+          <tr><td>Caja + Psy + General + Philips</td><td class="num">7.500</td><td>Motor de captura de campo con dos verticales</td><td>Cada jurado corporativo pide sus extras y el video se parte en dos</td></tr>
+          <tr class="dim"><td>Todo</td><td class="num">9.000</td><td>No existe para un solo proyecto</td><td>Ningún modelo Psy sirve para DNS</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Una sola entrega por equipo, inscrita en todos los tracks donde compite. El general paga tres puestos, así que el proyecto se diseña para la rúbrica del general y suma los retos que le caben. Con la Caja adentro, los 7.500 solo aparecen cargando un segundo reto corporativo completo, y ninguno es gratis.</p>
+  </section>
+
+  <section>
+    <h2>Qué ve el jurado en cinco minutos</h2>
+    <ol class="script">
+      <li><strong>Un jubilado recibe un SMS.</strong> <q>Su cuenta será bloqueada, verifique en caja-ahorros-pa…</q>. Hace captura. Wi-Fi apagado en pantalla.</li>
+      <li><strong>VisionPsy lee la captura</strong> en el dispositivo: remitente, texto, enlace, monto. Aparece el tiempo al primer token.</li>
+      <li><strong>Veredicto con razones.</strong> <span class="chip bad">Fraude</span>: dominio parecido al oficial, urgencia, pide la clave. Debajo, qué hacer y el canal oficial. En el caso legítimo la app no dice <q>seguro</q>: dice <span class="chip ok">Sin señales</span> y repite la regla.</li>
+      <li><strong>Modo llamada.</strong> Suena una llamada grabada de vishing. La transcripción corre en vivo y a los pocos segundos salta el aviso: <q>te están pidiendo el código que te llegó por SMS. El banco nunca lo pide. Cuelga</q>.</li>
+      <li><strong>Inmunidad colectiva.</strong> El usuario marca el número como fraude. En el segundo equipo aparece <q>vecinos ya reportaron este número</q>, sin servidor, por pares. En la pantalla del banco, el radar muestra la campaña creciendo por hora.</li>
+      <li><strong>Cierre.</strong> Cero llamadas de red, modelos y cuantizaciones con nombre, precisión medida sobre el set sintético, registro de rendimiento.</li>
+    </ol>
+    <p class="legend">Veredictos: <span class="chip bad">Fraude</span> <span class="chip warn">Sospechoso</span> <span class="chip ok">Sin señales</span> <span class="chip unk">No pude leerlo</span></p>
+  </section>
+
+  <section>
+    <h2>Cómo se arma</h2>
+    <dl class="build">
+      <div><dt>Andamiaje</dt><dd>Los ejemplos oficiales <code>qvac-invoice-manager-demo</code>, imagen a JSON con esquema, y <code>qvac-voice-relay</code>, Whisper en el SDK. Electron con el modelo en el proceso principal. Se declara en el README.</dd></div>
+      <div><dt>Lectura de la captura</dt><dd>VisionPsy-Nano-460M-Flash con <code>responseFormat: json_schema</code>: canal, remitente, texto, enlaces, teléfonos, montos y si pide datos sensibles. Una sola llamada por captura.</dd></div>
+      <div><dt>Veredicto</dt><dd>Reglas deterministas primero: distancia del dominio a los oficiales, acortadores, IP literal, punycode, números fuera de la lista oficial, petición de clave u OTP, presión de tiempo, pago a terceros. Luego Qwen3 4B con esquema para la semántica y la explicación en español. Las reglas ponen la evidencia; el modelo, el relato.</dd></div>
+      <div><dt>Qué hacer</dt><dd>RAG local sobre una política anti-fraude sintética del banco, <q>el banco nunca pide…</q>, para redactar la acción y el canal oficial.</dd></div>
+      <div><dt>Modo llamada</dt><dd><code>transcribeStream()</code> con Whisper o Parakeet, ventana deslizante de los últimos segundos y clasificación incremental con esquema.</dd></div>
+      <div><dt>Pares</dt><dd>Hyperswarm con un tema de indicadores. Se comparte el hash del remitente o del dominio y el tipo, nunca el mensaje. Un nodo <q>radar</q> para el equipo de fraude del banco agrega por hora. Solo si el núcleo está cerrado.</dd></div>
+      <div><dt>Medición</dt><dd>Generador de mensajes sintéticos en estilo SMS, WhatsApp y correo, renderizados a capturas con verdad conocida. Un script mide precisión de campos, precisión y exhaustividad del veredicto, TTFT y tokens por segundo.</dd></div>
+      <div><dt>Registro de rendimiento</dt><dd><code>subscribeServerLogs()</code> volcado a un JSONL con carga, prompts, tokens, TTFT y throughput. Obligatorio en Psy y suma en Technical.</dd></div>
+      <div><dt>Hardware</dt><dd>El relato es <q>en el bolsillo del cliente</q>. Si alguien domina Expo y tiene un Android, la captura en el teléfono es la pantalla más valiosa. Si no, Electron en el MacBook declarado, y los benchmarks de teléfono de VisionPsy citados como del fabricante del modelo, no como nuestros.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Por qué gana en cada mesa</h2>
+    <h3>Caja de Ahorros</h3>
+    <p>Aplicable tal cual como función de la app del banco y como modo sucursal para el cajero que recibe <q>¿este correo es de ustedes?</q>. El radar le da algo al equipo de fraude. La ejecución local es la ventaja y no la restricción: el banco nunca ve los mensajes ni las llamadas del cliente, y funciona sin plan de datos. El jubilado que cobra en la Caja es el más atacado y el que mejor entiende la demo.</p>
+    <h3>Reto Psy</h3>
+    <p>VisionPsy es central por necesidad: ninguna app puede leer los SMS o el WhatsApp de otra, la captura es la única entrada universal, y leerla exige un modelo de visión que quepa en un teléfono de gama media. La calidad se mide con el set sintético, con precisión por campo y por veredicto.</p>
+    <h3>Desafío general</h3>
+    <p>La nube no debería llegar a los mensajes privados de nadie. Pipeline de visión, lenguaje, voz en vivo y pares. La innovación está en el modo llamada y en la inmunidad colectiva. Lo que otros equipos van a presentar en la Caja: chat sobre la base de datos, RAG de procedimientos y lectura de documentos, porque los ejemplos oficiales lo regalan.</p>
+  </section>
+
+  <section>
+    <h2>Lo que decide la victoria</h2>
+    <p>La rúbrica del general es Technical 35, Innovation 25, Impact 20, Design 10 y Completion 10, con desempate por Technical y luego por Impact. Con tres puestos pagados, cada punto de Technical vale dinero. Estas seis cosas son las que mueven la nota:</p>
+    <ul class="check">
+      <li><strong>VisionPsy leyendo la captura en un Android real con Expo.</strong> Es lo que asegura Psy y lo que convierte el relato del teléfono en hecho. Sin Android, MacBook declarado y benchmarks del fabricante citados como tales.</li>
+      <li><strong>Indicadores compartidos por pares con Hyperswarm.</strong> Es el uso de Pears que el general valora aparte, y la pieza que ningún otro equipo va a tener.</li>
+      <li><strong>Set sintético con verdad conocida y registro de rendimiento.</strong> Precisión por campo y por veredicto, TTFT y tokens por segundo. Evidencia reproducible para Psy y para Technical.</li>
+      <li><strong>Modo llamada con transcripción en vivo.</strong> El momento del video y el punto de innovación más claro.</li>
+      <li><strong>Los primeros veinte segundos del video.</strong> Las cifras de la SBP, el Wi-Fi apagado y la captura. El jurado ve decenas de videos y decide temprano.</li>
+      <li><strong>Un README por jurado.</strong> Secciones para la Caja, Psy y el general, con la base preexistente declarada y el modelo de negocio.</li>
+    </ul>
+    <div class="table-wrap" style="margin-top:1rem">
+      <table>
+        <thead><tr><th>Equipo</th><th>Camino que aguanta</th></tr></thead>
+        <tbody>
+          <tr><td>Tres personas</td><td>El núcleo completo: Caja, Psy y general. Nada más.</td></tr>
+          <tr><td>Cuatro, con alguien que ya operó Kafka, ClickHouse o Wazuh</td><td>Sumar el módulo Ovnicom, con esa persona dedicada desde hoy y sin tocar la app.</td></tr>
+          <tr><td>Cuatro, sin perfil de infraestructura</td><td>La cuarta persona va al Android con Expo y al video. No abrir un segundo reto.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="callout">
+    <h2>Seguridad y límites</h2>
+    <ul class="check">
+      <li>La app nunca dice <q>seguro</q>. Dice <q>no encontré señales</q> y repite la regla de oro.</li>
+      <li>Muestra la confianza y la evidencia. Ante la duda, llamar al número oficial impreso en la tarjeta.</li>
+      <li>Nada se guarda ni sale del teléfono salvo que el usuario reporte, y el reporte lleva indicadores, no el mensaje.</li>
+      <li>Mensajes, números y dominios de la demo son sintéticos y marcados como tales. Ningún dato real de clientes de ninguna entidad.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Descalifica o resta</h2>
+    <ul class="check">
+      <li>Cero inferencia en la nube, ni como respaldo. Ninguna clave de API en el repo.</li>
+      <li>Declarar la base preexistente en el README, con el nombre de los ejemplos usados. Omitirlo descalifica.</li>
+      <li>Video de máximo cinco minutos, enlace sin credenciales. Grabar la noche del 10 y regrabar el 11 solo si sobra tiempo.</li>
+      <li>Para Psy: licencia permisiva, registro de rendimiento estructurado, hardware declarado, nombres de modelo y cuantización honestos, APIs remotas divulgadas.</li>
+      <li>Repositorio accesible al jurado durante toda la evaluación.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Preguntar hoy a la organización</h2>
+    <ul class="plain">
+      <li>¿El bono Psy se acumula con los retos corporativos? El texto solo lo confirma con el general.</li>
+      <li>Al inscribir el proyecto en Dojo, marcar todos los tracks donde compite. La plataforma lo permite y la entrega es una sola por equipo, así que no hay segundo proyecto posible.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>El reloj</h2>
+    <div class="table-wrap">
+      <table class="timeline">
+        <thead><tr><th>Cuándo</th><th>Qué debe estar cerrado</th></tr></thead>
+        <tbody>
+          <tr><td>9 · noche</td><td>Decisión, guion del video, generador de mensajes sintéticos con verdad conocida, lista de dominios y números oficiales ficticios, andamiaje de los ejemplos, modelos descargados con buen Wi-Fi.</td></tr>
+          <tr><td>10 · mediodía</td><td>Prototipo mínimo de punta a punta: captura, VisionPsy, reglas más modelo, veredicto con razones y qué hacer en pantalla.</td></tr>
+          <tr><td>10 · tarde</td><td>Modo llamada con transcripción en vivo, script de medición, RAG de la política anti-fraude.</td></tr>
+          <tr><td>10 · noche</td><td>Registro de rendimiento, README, video versión 1. Pares y radar solo si todo lo anterior está.</td></tr>
+          <tr><td>11 · antes de 7:00</td><td>Entrega, con una hora de margen.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="alt">
+    <h2>Plan B: expediente de crédito en el dispositivo</h2>
+    <p>El oficial fotografía cédula, talonario y carta de trabajo en una feria de vivienda sin señal. VisionPsy extrae, la app cruza los documentos entre sí, corre las reglas de precalificación del banco y pide el único dato que falta. Misma pila técnica y menos diferenciación: es lo que harán los equipos que partan del ejemplo de facturas. Se apila con Philips si el motor es por esquemas, pero cada jurado corporativo pide sus extras y el video de cinco minutos se parte en dos.</p>
+  </section>
+
+  <footer>
+    <p class="eyebrow">Fuentes</p>
+    <ul class="sources">
+      <li><a href="https://qvac.tether.io/models/">Catálogo de modelos QVAC</a></li>
+      <li><a href="https://huggingface.co/blog/qvac/visionpsy">VisionPsy-Nano</a></li>
+      <li><a href="https://docs.qvac.tether.io/js-ts-sdk/">Docs del SDK JS/TS</a></li>
+      <li><a href="https://docs.qvac.tether.io/ai-capabilities/transcription/">Transcripción en vivo</a></li>
+      <li><a href="https://docs.qvac.tether.io/p2p-capabilities/blind-relays/">Relés P2P</a></li>
+      <li><a href="https://github.com/tetherto/qvac-examples">qvac-examples</a></li>
+    </ul>
+  </footer>
+</main>

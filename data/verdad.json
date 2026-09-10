@@ -1,0 +1,2127 @@
+{
+  "fraude-bloqueo_enlace-01": {
+    "canal": "sms",
+    "remitente": "+507 6053-3977",
+    "texto": "Estimado cliente de Banco Demo, detectamos un acceso desde otro dispositivo. Para evitar el bloqueo de su cuenta confirme sus datos hoy mismo en https://bancodemo-pa.app/seguridad",
+    "enlaces": [
+      "https://bancodemo-pa.app/seguridad"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-bloqueo_enlace-02": {
+    "canal": "sms",
+    "remitente": "+507 6904-5397",
+    "texto": "Banco Demo: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad en https://bancodem0.com/verificar antes de 24 horas o será cancelada.",
+    "enlaces": [
+      "https://bancodem0.com/verificar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-bloqueo_enlace-03": {
+    "canal": "whatsapp",
+    "remitente": "+1 (469) 133-3027",
+    "texto": "Banco Demo: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad en https://banco-demo-pa.com/verificar antes de 24 horas o será cancelada.",
+    "enlaces": [
+      "https://banco-demo-pa.com/verificar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-bloqueo_enlace-04": {
+    "canal": "whatsapp",
+    "remitente": "ALERTA-BANCO",
+    "texto": "Banco Demo: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad en https://seguridad-bancodemo.com/verificar antes de 24 horas o será cancelada.",
+    "enlaces": [
+      "https://seguridad-bancodemo.com/verificar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-bloqueo_enlace-05": {
+    "canal": "sms",
+    "remitente": "+507 6277-5474",
+    "texto": "Estimado cliente de Banco Demo, detectamos un acceso desde otro dispositivo. Para evitar el bloqueo de su cuenta confirme sus datos hoy mismo en https://banco-demo-pa.com/seguridad",
+    "enlaces": [
+      "https://banco-demo-pa.com/seguridad"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-bloqueo_enlace-06": {
+    "canal": "sms",
+    "remitente": "+1 (506) 559-3828",
+    "texto": "BANCO DEMO - AVISO URGENTE: su tarjeta será suspendida. Reactívela de inmediato en https://app-bancodemo.co/reactivar",
+    "enlaces": [
+      "https://app-bancodemo.co/reactivar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-bloqueo_enlace-07": {
+    "canal": "sms",
+    "remitente": "+1 (159) 536-4080",
+    "texto": "BANCO DEMO - AVISO URGENTE: su tarjeta será suspendida. Reactívela de inmediato en https://app-bancodemo.co/reactivar",
+    "enlaces": [
+      "https://app-bancodemo.co/reactivar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-bloqueo_enlace-08": {
+    "canal": "whatsapp",
+    "remitente": "+1 (030) 932-2922",
+    "texto": "BANCO DEMO - AVISO URGENTE: su tarjeta será suspendida. Reactívela de inmediato en https://bancodemo-seguro.com/reactivar",
+    "enlaces": [
+      "https://bancodemo-seguro.com/reactivar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-01": {
+    "canal": "whatsapp",
+    "remitente": "+507 6678-8428",
+    "texto": "Banco Demo: tiene un reembolso de B/. 441.99 pendiente por cobro duplicado. Reclámelo aquí: https://bit.ly/24Bz20",
+    "enlaces": [
+      "https://bit.ly/24Bz20"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 441.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-02": {
+    "canal": "sms",
+    "remitente": "+507 6122-4320",
+    "texto": "Su bono de fidelidad de B/. 791.99 está listo. Actívelo en https://rb.gy/03Lm34",
+    "enlaces": [
+      "https://rb.gy/03Lm34"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 791.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-03": {
+    "canal": "sms",
+    "remitente": "PROMO",
+    "texto": "Su bono de fidelidad de B/. 361.00 está listo. Actívelo en https://tinyurl.com/65xQ67",
+    "enlaces": [
+      "https://tinyurl.com/65xQ67"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 361.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-04": {
+    "canal": "whatsapp",
+    "remitente": "PROMO",
+    "texto": "Su bono de fidelidad de B/. 894.75 está listo. Actívelo en https://is.gd/95xQ54",
+    "enlaces": [
+      "https://is.gd/95xQ54"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 894.75"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-05": {
+    "canal": "sms",
+    "remitente": "PROMO",
+    "texto": "Felicidades, usted fue seleccionado para una devolución de B/. 740.25 de Banco Demo. Solicítela en https://acortar.link/61Lm67 antes de que expire.",
+    "enlaces": [
+      "https://acortar.link/61Lm67"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 740.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-06": {
+    "canal": "sms",
+    "remitente": "+507 6893-9503",
+    "texto": "Banco Demo: tiene un reembolso de B/. 248.99 pendiente por cobro duplicado. Reclámelo aquí: https://cutt.ly/40xQ72",
+    "enlaces": [
+      "https://cutt.ly/40xQ72"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 248.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-07": {
+    "canal": "whatsapp",
+    "remitente": "+507 6395-8498",
+    "texto": "Banco Demo: tiene un reembolso de B/. 477.00 pendiente por cobro duplicado. Reclámelo aquí: https://acortar.link/98Bz13",
+    "enlaces": [
+      "https://acortar.link/98Bz13"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 477.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador"
+      ]
+    }
+  },
+  "fraude-reembolso_acortador-08": {
+    "canal": "whatsapp",
+    "remitente": "+507 6205-5862",
+    "texto": "Su bono de fidelidad de B/. 397.75 está listo. Actívelo en https://bit.ly/33Lm44",
+    "enlaces": [
+      "https://bit.ly/33Lm44"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 397.75"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "acortador"
+      ]
+    }
+  },
+  "fraude-pide_codigo-01": {
+    "canal": "whatsapp",
+    "remitente": "BANC0DEMO",
+    "texto": "Para activar la nueva tarjeta indique el PIN actual y los últimos 4 dígitos de la tarjeta respondiendo a este mensaje.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-pide_codigo-02": {
+    "canal": "whatsapp",
+    "remitente": "BANC0DEMO",
+    "texto": "Seguridad Banco Demo: confirme su identidad enviando su clave de banca en línea y el código que recibirá por SMS. De lo contrario su cuenta quedará suspendida.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pide_codigo-03": {
+    "canal": "sms",
+    "remitente": "BANC0DEMO",
+    "texto": "Banco Demo: hemos detectado un intento de acceso a su cuenta. Para cancelarlo responda a este mensaje con el código de 6 dígitos que le acabamos de enviar.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pide_codigo-04": {
+    "canal": "sms",
+    "remitente": "+507 6714-3737",
+    "texto": "Banco Demo: hemos detectado un intento de acceso a su cuenta. Para cancelarlo responda a este mensaje con el código de 6 dígitos que le acabamos de enviar.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pide_codigo-05": {
+    "canal": "sms",
+    "remitente": "BANC0DEMO",
+    "texto": "Banco Demo: hemos detectado un intento de acceso a su cuenta. Para cancelarlo responda a este mensaje con el código de 6 dígitos que le acabamos de enviar.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pide_codigo-06": {
+    "canal": "whatsapp",
+    "remitente": "+507 6036-4400",
+    "texto": "Banco Demo: hemos detectado un intento de acceso a su cuenta. Para cancelarlo responda a este mensaje con el código de 6 dígitos que le acabamos de enviar.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pide_codigo-07": {
+    "canal": "sms",
+    "remitente": "+507 6885-1955",
+    "texto": "Banco Demo: hemos detectado un intento de acceso a su cuenta. Para cancelarlo responda a este mensaje con el código de 6 dígitos que le acabamos de enviar.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pide_codigo-08": {
+    "canal": "sms",
+    "remitente": "+507 6166-2901",
+    "texto": "Banco Demo: hemos detectado un intento de acceso a su cuenta. Para cancelarlo responda a este mensaje con el código de 6 dígitos que le acabamos de enviar.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-01": {
+    "canal": "whatsapp",
+    "remitente": "COBROS",
+    "texto": "Banco Demo: su cuota del préstamo está vencida. Para evitar cargos realice el pago de B/. 844.50 por Yappy al 6380-9726 hoy mismo.",
+    "enlaces": [],
+    "telefonos": [
+      "6380-9726"
+    ],
+    "montos": [
+      "B/. 844.50"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-02": {
+    "canal": "whatsapp",
+    "remitente": "COBROS",
+    "texto": "Aviso: pago pendiente de B/. 94.50. Envíe el monto por Yappy al 6357-2245 para evitar la suspensión del servicio.",
+    "enlaces": [],
+    "telefonos": [
+      "6357-2245"
+    ],
+    "montos": [
+      "B/. 94.50"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-03": {
+    "canal": "whatsapp",
+    "remitente": "COBROS",
+    "texto": "Cobros Banco Demo: regularice su tarjeta transfiriendo B/. 813.25 a la cuenta de nuestro gestor, Luis Batista, al 6831-9851 antes de las 5 p.m.",
+    "enlaces": [],
+    "telefonos": [
+      "6831-9851"
+    ],
+    "montos": [
+      "B/. 813.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-04": {
+    "canal": "sms",
+    "remitente": "COBROS",
+    "texto": "Banco Demo: su cuota del préstamo está vencida. Para evitar cargos realice el pago de B/. 649.75 por Yappy al 6106-0165 hoy mismo.",
+    "enlaces": [],
+    "telefonos": [
+      "6106-0165"
+    ],
+    "montos": [
+      "B/. 649.75"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-05": {
+    "canal": "whatsapp",
+    "remitente": "+507 6471-1715",
+    "texto": "Cobros Banco Demo: regularice su tarjeta transfiriendo B/. 291.00 a la cuenta de nuestro gestor, María Rodríguez, al 6495-4257 antes de las 5 p.m.",
+    "enlaces": [],
+    "telefonos": [
+      "6495-4257"
+    ],
+    "montos": [
+      "B/. 291.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-06": {
+    "canal": "whatsapp",
+    "remitente": "COBROS",
+    "texto": "Cobros Banco Demo: regularice su tarjeta transfiriendo B/. 308.25 a la cuenta de nuestro gestor, Luis Batista, al 6838-6421 antes de las 5 p.m.",
+    "enlaces": [],
+    "telefonos": [
+      "6838-6421"
+    ],
+    "montos": [
+      "B/. 308.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-07": {
+    "canal": "whatsapp",
+    "remitente": "+507 6652-7033",
+    "texto": "Aviso: pago pendiente de B/. 272.50. Envíe el monto por Yappy al 6543-7486 para evitar la suspensión del servicio.",
+    "enlaces": [],
+    "telefonos": [
+      "6543-7486"
+    ],
+    "montos": [
+      "B/. 272.50"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-pago_yappy-08": {
+    "canal": "sms",
+    "remitente": "+507 6994-7407",
+    "texto": "Aviso: pago pendiente de B/. 500.99. Envíe el monto por Yappy al 6312-9590 para evitar la suspensión del servicio.",
+    "enlaces": [],
+    "telefonos": [
+      "6312-9590"
+    ],
+    "montos": [
+      "B/. 500.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pago_terceros",
+        "numero_no_oficial",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-01": {
+    "canal": "correo",
+    "remitente": "notificaciones@seguridad-bancodemo.com",
+    "texto": "Hola,\n\nSu estado de cuenta presenta una inconsistencia. Para revisarla confirme su número de tarjeta y clave en https://seguridad-bancodemo.com/revision. Si no lo hace en 48 horas la cuenta será limitada.\n\nServicio al cliente",
+    "enlaces": [
+      "https://seguridad-bancodemo.com/revision"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-02": {
+    "canal": "correo",
+    "remitente": "seguridad@banco-demo-pa.com",
+    "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 10 de septiembre. Ingrese con su usuario y clave en https://banco-demo-pa.com/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
+    "enlaces": [
+      "https://banco-demo-pa.com/actualizar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-03": {
+    "canal": "correo",
+    "remitente": "seguridad@bancodemo.com-verificar.net",
+    "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 3 de septiembre. Ingrese con su usuario y clave en https://bancodemo.com-verificar.net/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
+    "enlaces": [
+      "https://bancodemo.com-verificar.net/actualizar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-04": {
+    "canal": "correo",
+    "remitente": "seguridad@bancodemo.com-verificar.net",
+    "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 12 de septiembre. Ingrese con su usuario y clave en https://bancodemo.com-verificar.net/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
+    "enlaces": [
+      "https://bancodemo.com-verificar.net/actualizar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-05": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com-verificar.net",
+    "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 12 de septiembre. Ingrese con su usuario y clave en https://bancodemo.com-verificar.net/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
+    "enlaces": [
+      "https://bancodemo.com-verificar.net/actualizar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-06": {
+    "canal": "correo",
+    "remitente": "seguridad@bancodemo-seguro.com",
+    "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 10 de septiembre. Ingrese con su usuario y clave en https://bancodemo-seguro.com/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
+    "enlaces": [
+      "https://bancodemo-seguro.com/actualizar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-07": {
+    "canal": "correo",
+    "remitente": "seguridad@banco-demo-pa.com",
+    "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 9 de septiembre. Ingrese con su usuario y clave en https://banco-demo-pa.com/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
+    "enlaces": [
+      "https://banco-demo-pa.com/actualizar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-correo_actualizacion-08": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com-verificar.net",
+    "texto": "Hola,\n\nSu estado de cuenta presenta una inconsistencia. Para revisarla confirme su número de tarjeta y clave en https://bancodemo.com-verificar.net/revision. Si no lo hace en 48 horas la cuenta será limitada.\n\nServicio al cliente",
+    "enlaces": [
+      "https://bancodemo.com-verificar.net/revision"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "pide_datos_sensibles",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-01": {
+    "canal": "whatsapp",
+    "remitente": "+507 6623-6356",
+    "texto": "Hola, soy Katherine De León del departamento de tarjetas de Banco Demo. Vamos a bloquear un cargo sospechoso, dígame por favor el código de verificación que acaba de recibir.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-02": {
+    "canal": "whatsapp",
+    "remitente": "+507 6497-7214",
+    "texto": "Buenos días, le habla Yaritza Moreno, ejecutivo de Banco Demo. Para activar el beneficio de su cuenta necesito que me confirme su clave de banca en línea y el código que le llegará por SMS.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-03": {
+    "canal": "whatsapp",
+    "remitente": "+507 6025-9137",
+    "texto": "Saludos, María Rodríguez de Banco Demo. Tenemos una promoción exclusiva, para aplicarla comparta su usuario, clave y el número completo de su tarjeta.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-04": {
+    "canal": "whatsapp",
+    "remitente": "+507 6260-0777",
+    "texto": "Buenos días, le habla María Rodríguez, ejecutivo de Banco Demo. Para activar el beneficio de su cuenta necesito que me confirme su clave de banca en línea y el código que le llegará por SMS.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-05": {
+    "canal": "whatsapp",
+    "remitente": "+507 6844-3598",
+    "texto": "Hola, soy José Castillo del departamento de tarjetas de Banco Demo. Vamos a bloquear un cargo sospechoso, dígame por favor el código de verificación que acaba de recibir.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-06": {
+    "canal": "whatsapp",
+    "remitente": "+507 6461-7704",
+    "texto": "Buenos días, le habla Ana Gómez, ejecutivo de Banco Demo. Para activar el beneficio de su cuenta necesito que me confirme su clave de banca en línea y el código que le llegará por SMS.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-07": {
+    "canal": "whatsapp",
+    "remitente": "+507 6788-8190",
+    "texto": "Saludos, Yaritza Moreno de Banco Demo. Tenemos una promoción exclusiva, para aplicarla comparta su usuario, clave y el número completo de su tarjeta.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-ejecutivo_whatsapp-08": {
+    "canal": "whatsapp",
+    "remitente": "+507 6030-0962",
+    "texto": "Buenos días, le habla Ana Gómez, ejecutivo de Banco Demo. Para activar el beneficio de su cuenta necesito que me confirme su clave de banca en línea y el código que le llegará por SMS.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": true,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "pide_datos_sensibles"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-01": {
+    "canal": "sms",
+    "remitente": "+507 6951-7088",
+    "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 820.50 en PriceSmart. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodemo-clientes.info/bloqueo",
+    "enlaces": [
+      "https://bancodemo-clientes.info/bloqueo"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 820.50"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-02": {
+    "canal": "sms",
+    "remitente": "+507 6415-7034",
+    "texto": "Banco Demo: compra por B/. 120.00 en Netflix. Si NO reconoce esta transacción cancélela de inmediato en https://bancodemo-clientes.info/cancelar",
+    "enlaces": [
+      "https://bancodemo-clientes.info/cancelar"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 120.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-03": {
+    "canal": "sms",
+    "remitente": "+507 6827-6626",
+    "texto": "Banco Demo: compra por B/. 208.25 en Netflix. Si NO reconoce esta transacción cancélela de inmediato en https://bancodemo-clientes.info/cancelar",
+    "enlaces": [
+      "https://bancodemo-clientes.info/cancelar"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 208.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-04": {
+    "canal": "sms",
+    "remitente": "+507 6490-8829",
+    "texto": "Banco Demo: compra por B/. 190.99 en PriceSmart. Si NO reconoce esta transacción cancélela de inmediato en https://seguridad-bancodemo.com/cancelar",
+    "enlaces": [
+      "https://seguridad-bancodemo.com/cancelar"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 190.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-05": {
+    "canal": "sms",
+    "remitente": "ALERTAS",
+    "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 441.99 en Uber. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodem0.com/bloqueo",
+    "enlaces": [
+      "https://bancodem0.com/bloqueo"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 441.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-06": {
+    "canal": "sms",
+    "remitente": "ALERTAS",
+    "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 207.00 en Super 99. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodem0.com/bloqueo",
+    "enlaces": [
+      "https://bancodem0.com/bloqueo"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 207.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-07": {
+    "canal": "sms",
+    "remitente": "ALERTAS",
+    "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 824.75 en Super 99. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodemo-clientes.info/bloqueo",
+    "enlaces": [
+      "https://bancodemo-clientes.info/bloqueo"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 824.75"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-compra_no_reconocida-08": {
+    "canal": "sms",
+    "remitente": "+507 6469-1049",
+    "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 186.25 en Riba Smith. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodemo-pa.app/bloqueo",
+    "enlaces": [
+      "https://bancodemo-pa.app/bloqueo"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 186.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "dominio_parecido",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-ip_literal-01": {
+    "canal": "sms",
+    "remitente": "SEGURIDAD",
+    "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://186.85.411.76/bancodemo/verificar",
+    "enlaces": [
+      "http://186.85.411.76/bancodemo/verificar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-ip_literal-02": {
+    "canal": "sms",
+    "remitente": "+507 6884-3576",
+    "texto": "Banco Demo: actualice su token de seguridad en http://181.91.938.05/bancodemo/seguridad para seguir usando la banca en línea.",
+    "enlaces": [
+      "http://181.91.938.05/bancodemo/seguridad"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal"
+      ]
+    }
+  },
+  "fraude-ip_literal-03": {
+    "canal": "whatsapp",
+    "remitente": "SEGURIDAD",
+    "texto": "Banco Demo: actualice su token de seguridad en http://181.42.908.18/bancodemo/verificar para seguir usando la banca en línea.",
+    "enlaces": [
+      "http://181.42.908.18/bancodemo/verificar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal"
+      ]
+    }
+  },
+  "fraude-ip_literal-04": {
+    "canal": "sms",
+    "remitente": "+507 6114-8926",
+    "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://181.69.147.68/bancodemo/verificar",
+    "enlaces": [
+      "http://181.69.147.68/bancodemo/verificar"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-ip_literal-05": {
+    "canal": "whatsapp",
+    "remitente": "SEGURIDAD",
+    "texto": "Banco Demo: actualice su token de seguridad en http://186.11.492.35/bancodemo/seguridad para seguir usando la banca en línea.",
+    "enlaces": [
+      "http://186.11.492.35/bancodemo/seguridad"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal"
+      ]
+    }
+  },
+  "fraude-ip_literal-06": {
+    "canal": "sms",
+    "remitente": "+507 6800-7248",
+    "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://181.42.683.52/bancodemo/seguridad",
+    "enlaces": [
+      "http://181.42.683.52/bancodemo/seguridad"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-ip_literal-07": {
+    "canal": "sms",
+    "remitente": "SEGURIDAD",
+    "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://190.82.856.32/bancodemo/acceso",
+    "enlaces": [
+      "http://190.82.856.32/bancodemo/acceso"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal",
+        "urgencia"
+      ]
+    }
+  },
+  "fraude-ip_literal-08": {
+    "canal": "sms",
+    "remitente": "SEGURIDAD",
+    "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://200.41.768.47/bancodemo/seguridad",
+    "enlaces": [
+      "http://200.41.768.47/bancodemo/seguridad"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "fraude",
+      "senales": [
+        "ip_literal",
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-alerta_transaccion-01": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: compra aprobada por B/. 74.00 en Riba Smith. Consultas al 300-1234.",
+    "enlaces": [],
+    "telefonos": [
+      "300-1234"
+    ],
+    "montos": [
+      "B/. 74.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-alerta_transaccion-02": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: retiro por B/. 451.75 en ATM Penonomé el 10 de septiembre a las 8:48. Si no fue usted, llame al 800-1234.",
+    "enlaces": [],
+    "telefonos": [
+      "800-1234"
+    ],
+    "montos": [
+      "B/. 451.75"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-alerta_transaccion-03": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: compra aprobada por B/. 597.25 en El Machetazo. Consultas al 800-1234.",
+    "enlaces": [],
+    "telefonos": [
+      "800-1234"
+    ],
+    "montos": [
+      "B/. 597.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-alerta_transaccion-04": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: se acreditó un depósito de B/. 160.50 en su cuenta de ahorros. Saldo disponible en la app oficial.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [
+      "B/. 160.50"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-alerta_transaccion-05": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: compra aprobada por B/. 167.25 en Netflix. Consultas al +507 300-1234.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [
+      "B/. 167.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-alerta_transaccion-06": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: retiro por B/. 546.75 en ATM David el 12 de septiembre a las 3:12. Si no fue usted, llame al 800-1234.",
+    "enlaces": [],
+    "telefonos": [
+      "800-1234"
+    ],
+    "montos": [
+      "B/. 546.75"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-alerta_transaccion-07": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: se acreditó un depósito de B/. 901.25 en su cuenta de ahorros. Saldo disponible en la app oficial.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [
+      "B/. 901.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-alerta_transaccion-08": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: compra aprobada por B/. 606.99 en Riba Smith. Consultas al 800-1234.",
+    "enlaces": [],
+    "telefonos": [
+      "800-1234"
+    ],
+    "montos": [
+      "B/. 606.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-01": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "771700 es su código para ingresar a la banca en línea de Banco Demo. Vence en 5 minutos. Nunca lo compartas.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-02": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: su código de verificación es 630331. No lo comparta con nadie, ni siquiera con el banco.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-03": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "093298 es su código para ingresar a la banca en línea de Banco Demo. Vence en 5 minutos. Nunca lo compartas.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-04": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "586890 es su código para ingresar a la banca en línea de Banco Demo. Vence en 5 minutos. Nunca lo compartas.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-05": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "134303 es su código para ingresar a la banca en línea de Banco Demo. Vence en 5 minutos. Nunca lo compartas.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-06": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "724961 es su código para ingresar a la banca en línea de Banco Demo. Vence en 5 minutos. Nunca lo compartas.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-07": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "766883 es su código para ingresar a la banca en línea de Banco Demo. Vence en 5 minutos. Nunca lo compartas.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-otp_legitimo-08": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "017893 es su código para ingresar a la banca en línea de Banco Demo. Vence en 5 minutos. Nunca lo compartas.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-01": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 690.99 vence el 10 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 690.99"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-02": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 637.00 vence el 10 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 637.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-03": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 451.25 y vence el 10 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 451.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-04": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 224.25 vence el 5 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 224.25"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-05": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 223.50 y vence el 12 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 223.50"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-06": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 103.50 y vence el 9 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 103.50"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-07": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 117.00 vence el 9 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 117.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-recordatorio_pago-08": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 883.00 y vence el 15 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [
+      "B/. 883.00"
+    ],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-01": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Estimado cliente,\n\nLe informamos que el 3 de septiembre nuestras sucursales de Costa del Este atenderán en horario reducido. La app y https://app.bancodemo.com.pa funcionan con normalidad.\n\nBanco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-02": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Hola,\n\nSu estado de cuenta de julio ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-03": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Estimado cliente,\n\nLe informamos que el 3 de septiembre nuestras sucursales de Costa del Este atenderán en horario reducido. La app y https://app.bancodemo.com.pa funcionan con normalidad.\n\nBanco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-04": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Estimado cliente,\n\nLe informamos que el 8 de septiembre nuestras sucursales de Multiplaza atenderán en horario reducido. La app y https://app.bancodemo.com.pa funcionan con normalidad.\n\nBanco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-05": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Hola,\n\nSu estado de cuenta de agosto ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-06": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Hola,\n\nSu estado de cuenta de junio ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-07": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Hola,\n\nSu estado de cuenta de agosto ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-correo_estado_cuenta-08": {
+    "canal": "correo",
+    "remitente": "notificaciones@bancodemo.com.pa",
+    "texto": "Hola,\n\nSu estado de cuenta de julio ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-01": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Banco Demo informa: ya está disponible la nueva versión de la app en las tiendas oficiales. No la descargue desde enlaces de mensajes.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-02": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Hola, le saluda Banco Demo. Le recordamos que el 15 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-03": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Hola, le saluda Banco Demo. Le recordamos que el 10 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-04": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Banco Demo informa: ya está disponible la nueva versión de la app en las tiendas oficiales. No la descargue desde enlaces de mensajes.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-05": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Hola, le saluda Banco Demo. Le recordamos que el 5 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-06": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Hola, le saluda Banco Demo. Le recordamos que el 8 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-07": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Hola, le saluda Banco Demo. Le recordamos que el 12 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-whatsapp_oficial-08": {
+    "canal": "whatsapp",
+    "remitente": "Banco Demo +507 300-1234",
+    "texto": "Hola, le saluda Banco Demo. Le recordamos que el 5 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
+    "enlaces": [],
+    "telefonos": [
+      "+507 300-1234"
+    ],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-01": {
+    "canal": "whatsapp",
+    "remitente": "José Castillo",
+    "texto": "Hola, su paquete llegará hoy entre 2 y 5 p.m. Gracias por su compra.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-02": {
+    "canal": "whatsapp",
+    "remitente": "ENVIOS",
+    "texto": "Super 99: este fin de semana 20% de descuento en toda la tienda.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-03": {
+    "canal": "sms",
+    "remitente": "ENVIOS",
+    "texto": "Mami, ya llegué a casa. Te llamo más tarde.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-04": {
+    "canal": "sms",
+    "remitente": "ENVIOS",
+    "texto": "El Machetazo: este fin de semana 20% de descuento en toda la tienda.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-05": {
+    "canal": "sms",
+    "remitente": "+507 6938-4710",
+    "texto": "Hola, su paquete llegará hoy entre 2 y 5 p.m. Gracias por su compra.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-06": {
+    "canal": "whatsapp",
+    "remitente": "+507 6071-9554",
+    "texto": "Hola, su paquete llegará hoy entre 2 y 5 p.m. Gracias por su compra.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-07": {
+    "canal": "whatsapp",
+    "remitente": "+507 6326-4315",
+    "texto": "Hola, su paquete llegará hoy entre 2 y 5 p.m. Gracias por su compra.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-neutral-08": {
+    "canal": "whatsapp",
+    "remitente": "+507 6494-3048",
+    "texto": "Recordatorio: cita odontológica el 10 de septiembre a las 8:48 en Colón. Confirme respondiendo SI.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": false,
+    "esperado": {
+      "veredicto": "sin_senales",
+      "senales": []
+    }
+  },
+  "legitimo-oficial_con_urgencia-01": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: último aviso, su tarjeta de débito vence el 12 de septiembre. Retire la nueva en su sucursal.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-oficial_con_urgencia-02": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: último aviso, su tarjeta de débito vence el 5 de septiembre. Retire la nueva en su sucursal.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-oficial_con_urgencia-03": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: actualice su app hoy mismo para seguir usando la banca en línea. Descárguela en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-oficial_con_urgencia-04": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: último aviso, su tarjeta de débito vence el 3 de septiembre. Retire la nueva en su sucursal.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-oficial_con_urgencia-05": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: último aviso, su tarjeta de débito vence el 8 de septiembre. Retire la nueva en su sucursal.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-oficial_con_urgencia-06": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: actualice su app hoy mismo para seguir usando la banca en línea. Descárguela en https://app.bancodemo.com.pa",
+    "enlaces": [
+      "https://app.bancodemo.com.pa"
+    ],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-oficial_con_urgencia-07": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: último aviso, su tarjeta de débito vence el 12 de septiembre. Retire la nueva en su sucursal.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  },
+  "legitimo-oficial_con_urgencia-08": {
+    "canal": "sms",
+    "remitente": "BANCODEMO",
+    "texto": "Banco Demo: último aviso, su tarjeta de débito vence el 9 de septiembre. Retire la nueva en su sucursal.",
+    "enlaces": [],
+    "telefonos": [],
+    "montos": [],
+    "pide_datos_sensibles": false,
+    "urgencia": true,
+    "esperado": {
+      "veredicto": "sospechoso",
+      "senales": [
+        "urgencia"
+      ]
+    }
+  }
+}

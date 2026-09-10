@@ -1,0 +1,9 @@
+Anti-fraude QVAC — Hackatón ISD Summit 2026
+Licencia Apache-2.0.
+
+Base preexistente (declarada también en README.md):
+- Andamiaje de Electron, puente IPC, catálogo de modelos y patrón de extracción con esquema JSON
+  tomados de qvac-invoice-manager-demo (https://github.com/tetherto/qvac-examples), Apache-2.0,
+  © QVAC by Tether. Adaptados y recortados para este proyecto.
+- Patrones de transcripción y embeddings consultados en qvac-voice-relay y qvac-desk-tidy-demo
+  del mismo repositorio.

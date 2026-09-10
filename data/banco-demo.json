@@ -1,0 +1,20 @@
+{
+  "nombre": "Banco Demo",
+  "descripcion": "Banco ficticio para la demo. Los dominios, números y mensajes son sintéticos. Para un banco real se reemplaza este archivo por sus canales oficiales.",
+  "dominios_oficiales": ["bancodemo.com.pa", "app.bancodemo.com.pa", "www.bancodemo.com.pa"],
+  "telefonos_oficiales": ["800-1234", "+507 300-1234", "300-1234"],
+  "remitentes_oficiales": ["BANCODEMO", "Banco Demo", "notificaciones@bancodemo.com.pa", "+507 300-1234"],
+  "canal_oficial": "Llama al 800-1234 o entra a app.bancodemo.com.pa escribiendo la dirección tú mismo. Nunca por enlaces de mensajes.",
+  "dominios_parecidos": [
+    "banco-demo-pa.com",
+    "bancodem0.com",
+    "bancodemo-seguro.com",
+    "bancodemo.com-verificar.net",
+    "bancodemo-pa.app",
+    "seguridad-bancodemo.com",
+    "bancodemo-clientes.info",
+    "app-bancodemo.co"
+  ],
+  "acortadores": ["bit.ly", "tinyurl.com", "t.co", "cutt.ly", "is.gd", "rb.gy", "short.io", "acortar.link"],
+  "terceros_pago": ["Yappy", "ACH", "Nequi"]
+}
