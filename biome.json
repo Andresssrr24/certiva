@@ -1,26 +1,43 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
-  "files": {
-    "includes": [
-      "**",
-      "!data/html/**",
-      "!data/capturas/**",
-      "!docs/**",
-      "!eval/*.json",
-      "!eval/*.jsonl",
-      "!vendor-notice/**"
-    ]
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
   },
-  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2, "lineWidth": 120 },
-  "javascript": { "formatter": { "quoteStyle": "double", "semicolons": "always", "trailingCommas": "all" } },
+  "files": {
+    "includes": ["**", "!data/html", "!data/capturas", "!docs", "!eval/*.json", "!eval/*.jsonl", "!vendor-notice"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
-      "suspicious": { "noControlCharactersInRegex": "off" },
-      "complexity": { "useLiteralKeys": "off" },
-      "style": { "useTemplate": "off", "noUselessElse": "off" }
+      "suspicious": {
+        "noControlCharactersInRegex": "off"
+      },
+      "complexity": {
+        "useLiteralKeys": "off"
+      },
+      "style": {
+        "useTemplate": "off",
+        "noUselessElse": "off"
+      },
+      "a11y": {
+        "useMediaCaption": "off"
+      }
     }
   }
 }

@@ -6,6 +6,7 @@ const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 const { Motor } = require("./lib/analizar");
+const { Llamada } = require("./lib/llamada");
 const modelos = require("./lib/modelos");
 const reglas = require("./lib/reglas");
 const perf = require("./lib/perf");
@@ -18,6 +19,8 @@ if (!app.requestSingleInstanceLock()) app.exit(0);
 let win = null;
 let ocupado = false;
 const motor = new Motor();
+const llamada = new Llamada({ motor });
+let llamadaEnCurso = false;
 const historial = []; // veredictos de esta sesión, en memoria: el mensaje nunca se guarda en disco
 let reportes = []; // indicadores reportados por el usuario (hash, tipo, ts). Solo hashes, nunca el mensaje.
 
@@ -161,16 +164,58 @@ ipcMain.handle("reportar", (_e, { captura }) => {
   return reportes;
 });
 
+// ---------------------------------------------------------------- modo llamada
+ipcMain.handle("llamada-demo", () => path.join(__dirname, "data", "audio", "llamada-vishing.wav"));
+
+ipcMain.handle("elegir-audio", async () => {
+  const r = await dialog.showOpenDialog(win, {
+    title: "Elige una grabación de llamada",
+    properties: ["openFile"],
+    filters: [{ name: "Audio", extensions: ["wav", "m4a", "mp3", "aiff", "caf"] }],
+  });
+  return r.canceled ? null : r.filePaths[0];
+});
+
+// Procesa el audio por lotes y va avisando al renderer; devuelve al final la transcripción y el resumen.
+ipcMain.handle("llamada-iniciar", async (_e, ruta) => {
+  if (ocupado || llamadaEnCurso) throw new Error("Ya hay un análisis en curso");
+  if (!ruta || !fs.existsSync(ruta)) throw new Error("No encuentro el audio");
+  llamadaEnCurso = true;
+  ocupado = true;
+  enviar("ocupado", true);
+  try {
+    const r = await llamada.procesarArchivo(ruta, {
+      onSegmento: (s) => enviar("llamada-segmento", s),
+      onAlerta: (a) => enviar("llamada-alerta", a),
+    });
+    enviar("llamada-transcrita", { duracion_s: r.duracion_s, alertas: r.alertas.length });
+    const resumen = await llamada.resumir(r);
+    const salida = { ...r, resumen, ts: Date.now() };
+    enviar("llamada-fin", salida);
+    return salida;
+  } finally {
+    llamadaEnCurso = false;
+    ocupado = false;
+    enviar("ocupado", false);
+  }
+});
+
+ipcMain.handle("llamada-detener", () => {
+  llamada.detener = true;
+  return true;
+});
+
 // Conexiones salientes del árbol de procesos: la prueba de que nada va a la nube.
 ipcMain.handle("red", () => red.conexiones(process.pid));
 
 // Para verificar la interfaz sin manos: con DEMO_AUTO=<id> el renderer pide la captura al iniciar y la analiza;
 // con DEMO_CAPTURA=<ruta> se guarda una imagen de la ventana pasados DEMO_ESPERA_MS.
-ipcMain.handle("demo-auto", () =>
-  process.env.DEMO_AUTO ? path.join(__dirname, "data", "capturas", `${process.env.DEMO_AUTO}.png`) : null,
-);
+ipcMain.handle("demo-auto", () => ({
+  captura: process.env.DEMO_AUTO ? path.join(__dirname, "data", "capturas", `${process.env.DEMO_AUTO}.png`) : null,
+  llamada: process.env.DEMO_LLAMADA ? path.join(__dirname, "data", "audio", "llamada-vishing.wav") : null,
+}));
 async function demoAutomatica() {
-  if (!process.env.DEMO_AUTO || !win) return;
+  if ((!process.env.DEMO_AUTO && !process.env.DEMO_LLAMADA) || !win) return;
   const salida = process.env.DEMO_CAPTURA;
   if (salida) {
     await new Promise((r) => setTimeout(r, Number(process.env.DEMO_ESPERA_MS || 25000)));
@@ -202,6 +247,7 @@ app.whenReady().then(() => {
 });
 app.on("window-all-closed", async () => {
   try {
+    await llamada.descargar();
     await motor.descargarTodo();
   } catch {
     /* */

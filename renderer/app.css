@@ -482,3 +482,108 @@ td {
     animation: none;
   }
 }
+
+/* modo llamada */
+.zona.quieta {
+  border-style: solid;
+  text-align: left;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.zona.quieta .fila {
+  margin-top: 0.3rem;
+}
+#audio {
+  width: 100%;
+  filter: invert(0.9) hue-rotate(160deg);
+  border-radius: 999px;
+}
+.alerta {
+  background: var(--bad-soft);
+  border: 1px solid var(--bad);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  color: var(--ink);
+  animation: latido 1.2s ease-in-out 3;
+}
+.alerta-titulo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--bad);
+  letter-spacing: -0.02em;
+}
+.alerta-texto {
+  font-size: 1.05rem;
+  margin-top: 0.25rem;
+}
+@keyframes latido {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(241, 156, 150, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(241, 156, 150, 0.25);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .alerta {
+    animation: none;
+  }
+}
+.transcripcion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.transcripcion li {
+  display: grid;
+  grid-template-columns: 3.6rem 1fr;
+  gap: 0.6rem;
+  align-items: baseline;
+  font-size: 1.02rem;
+}
+.transcripcion .t {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.transcripcion li.marcada span {
+  color: var(--bad);
+}
+.transcripcion li.aviso {
+  grid-template-columns: 1fr;
+  background: var(--bad-soft);
+  border-left: 3px solid var(--bad);
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.resumen {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ico {
+  vertical-align: -3px;
+  margin-right: 0.3rem;
+  color: var(--bad);
+}
+button,
+.tab,
+select,
+summary,
+.historial li {
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+button:hover:not(:disabled) {
+  filter: brightness(1.08);
+}

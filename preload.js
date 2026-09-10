@@ -13,6 +13,10 @@ contextBridge.exposeInMainWorld("escudo", {
   liberarModelos: () => ipcRenderer.invoke("descargar-modelos-memoria"),
   red: () => ipcRenderer.invoke("red"),
   demoAuto: () => ipcRenderer.invoke("demo-auto"),
+  llamadaDemo: () => ipcRenderer.invoke("llamada-demo"),
+  elegirAudio: () => ipcRenderer.invoke("elegir-audio"),
+  llamadaIniciar: (ruta) => ipcRenderer.invoke("llamada-iniciar", ruta),
+  llamadaDetener: () => ipcRenderer.invoke("llamada-detener"),
   rutaDeArchivo: (file) => {
     try {
       return webUtils.getPathForFile(file);
@@ -21,7 +25,15 @@ contextBridge.exposeInMainWorld("escudo", {
     }
   },
   on: (canal, cb) => {
-    const permitidos = ["ocupado", "progreso-modelo", "progreso-descarga", "demo-auto"];
+    const permitidos = [
+      "ocupado",
+      "progreso-modelo",
+      "progreso-descarga",
+      "llamada-segmento",
+      "llamada-alerta",
+      "llamada-transcrita",
+      "llamada-fin",
+    ];
     if (!permitidos.includes(canal)) return () => {};
     const h = (_e, carga) => cb(carga);
     ipcRenderer.on(canal, h);

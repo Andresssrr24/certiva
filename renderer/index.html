@@ -2,17 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; style-src 'self' 'unsafe-inline'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; media-src 'self' file:; style-src 'self' 'unsafe-inline'">
   <title>Anti-fraude QVAC</title>
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
   <header class="barra">
     <div class="marca">Anti-fraude <span>QVAC</span></div>
-    <nav class="tabs" role="tablist">
-      <button class="tab activa" data-tab="cliente" role="tab">Cliente</button>
-      <button class="tab" data-tab="banco" role="tab">Modo banco</button>
-    </nav>
+    <div class="tabs" role="tablist">
+      <button type="button" class="tab activa" data-tab="cliente" role="tab">Cliente</button>
+      <button type="button" class="tab" data-tab="llamada" role="tab">Llamada</button>
+      <button type="button" class="tab" data-tab="banco" role="tab">Modo banco</button>
+    </div>
     <div class="red" id="red" title="Conexiones TCP establecidas del proceso y sus hijos, medidas con lsof"><span class="punto"></span>Conexiones a la nube: <b id="redNube">…</b></div>
     <div class="estado" id="estado">listo</div>
   </header>
@@ -22,14 +23,14 @@
       <div class="zona" id="zona">
         <p class="grande">Arrastra la captura de un mensaje sospechoso</p>
         <p class="mini">o</p>
-        <button id="elegir">Elegir captura…</button>
+        <button type="button" id="elegir">Elegir captura…</button>
         <p class="mini">Se analiza en este equipo. La captura no se guarda ni sale de aquí.</p>
       </div>
       <div class="demo">
         <label for="demoSel">Capturas de la demo · banco ficticio</label>
         <div class="fila">
           <select id="demoSel"><option value="">— elegir —</option></select>
-          <button id="demoBtn" class="sec">Analizar</button>
+          <button type="button" id="demoBtn" class="sec">Analizar</button>
         </div>
       </div>
       <figure class="vista" id="figura" hidden><img id="vista" alt="Captura analizada"></figure>
@@ -44,6 +45,30 @@
         <h3>Analizados en esta sesión</h3>
         <ul id="historialLista"></ul>
       </div>
+    </section>
+  </main>
+
+  <main class="cuerpo llamada" id="vistaLlamada" hidden>
+    <section class="izq">
+      <div class="zona quieta">
+        <p class="grande">Modo llamada</p>
+        <p class="mini">La llamada se transcribe en este equipo por lotes de cinco segundos. Las reglas del banco avisan en cuanto aparece una señal: pedir el código, pedir la clave, presionar con el tiempo.</p>
+        <div class="fila">
+          <button type="button" id="llamadaDemo">Simular llamada de vishing</button>
+          <button type="button" id="llamadaArchivo" class="sec">Cargar audio…</button>
+        </div>
+        <p class="mini">El audio de la demo es sintético, generado con voces del sistema. Nadie fue grabado.</p>
+      </div>
+      <audio id="audio" controls preload="auto"></audio>
+      <div class="alerta" id="alerta" hidden>
+        <div class="alerta-titulo">Cuelga</div>
+        <div class="alerta-texto" id="alertaTexto"></div>
+      </div>
+    </section>
+    <section class="der">
+      <div id="llamadaVacio" class="vacio"><p class="grande">La transcripción aparece aquí mientras suena la llamada.</p><p>Cada aviso llega en el momento en que el estafador pide algo que el banco nunca pide.</p></div>
+      <ol class="transcripcion" id="transcripcion"></ol>
+      <div id="resumenLlamada" hidden></div>
     </section>
   </main>
 

@@ -13,7 +13,7 @@ const norm = (s) =>
     .replace(/\s+/g, " ")
     .trim();
 const dominio = (u) => {
-  const m = norm(u).match(/^(?:[a-z]+:\/\/)?([^\/\s:?#]+)/);
+  const m = norm(u).match(/^(?:[a-z]+:\/\/)?([^/\s:?#]+)/);
   return m ? m[1].replace(/^www\./, "") : norm(u);
 };
 function cer(a, b) {

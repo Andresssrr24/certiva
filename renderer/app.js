@@ -11,6 +11,8 @@ let ocupado = false;
 const sesion = [];
 
 const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+const ICONO_AVISO =
+  '<svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 6a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V9a1 1 0 0 1 1-1zm0 9.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>';
 const ETIQUETA = {
   fraude: "Fraude",
   sospechoso: "Sospechoso",
@@ -91,15 +93,14 @@ function pintaHistorial() {
       return `<li data-i="${i}"><span class="chip ${t}">${ETIQUETA[t] || t}</span><span>${esc(r.nombre)}</span></li>`;
     })
     .join("");
-  ul.querySelectorAll("li").forEach(
-    (li) =>
-      (li.onclick = () => {
-        const r = sesion[Number(li.dataset.i)];
-        vista.src = "file://" + r.ruta;
-        figura.hidden = false;
-        pinta(r);
-      }),
-  );
+  for (const li of ul.querySelectorAll("li")) {
+    li.onclick = () => {
+      const r = sesion[Number(li.dataset.i)];
+      vista.src = `file://${r.ruta}`;
+      figura.hidden = false;
+      pinta(r);
+    };
+  }
 }
 
 async function analizar(ruta) {
@@ -166,32 +167,106 @@ async function medirRed() {
 }
 
 $("#elegir").onclick = async () => analizar(await window.escudo.elegirCaptura());
-["dragenter", "dragover"].forEach((ev) =>
+for (const ev of ["dragenter", "dragover"]) {
   zona.addEventListener(ev, (e) => {
     e.preventDefault();
     zona.classList.add("sobre");
-  }),
-);
-["dragleave", "drop"].forEach((ev) =>
+  });
+}
+for (const ev of ["dragleave", "drop"]) {
   zona.addEventListener(ev, (e) => {
     e.preventDefault();
     zona.classList.remove("sobre");
-  }),
-);
+  });
+}
 zona.addEventListener("drop", (e) => {
   const f = e.dataTransfer.files && e.dataTransfer.files[0];
   if (f) analizar(window.escudo.rutaDeArchivo(f));
 });
 document.addEventListener("dragover", (e) => e.preventDefault());
 document.addEventListener("drop", (e) => e.preventDefault());
-document.querySelectorAll(".tab").forEach(
-  (t) =>
-    (t.onclick = () => {
-      document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("activa", x === t));
-      $("#vistaCliente").hidden = t.dataset.tab !== "cliente";
-      $("#vistaBanco").hidden = t.dataset.tab !== "banco";
-    }),
-);
+// ---------------------------------------------------------------- modo llamada
+const audio = $("#audio");
+const alerta = $("#alerta");
+let cola = []; // segmentos y alertas pendientes de mostrar, alineados al tiempo del audio
+function limpiarLlamada() {
+  cola = [];
+  $("#transcripcion").innerHTML = "";
+  $("#llamadaVacio").hidden = false;
+  $("#resumenLlamada").hidden = true;
+  alerta.hidden = true;
+}
+function muestraTranscripcion(item) {
+  const ol = $("#transcripcion");
+  $("#llamadaVacio").hidden = true;
+  const li = document.createElement("li");
+  if (item.tipo) {
+    li.className = "aviso";
+    li.innerHTML = `${ICONO_AVISO} ${esc(item.mensaje)} <span class="t">«${esc(item.frase)}»</span>`;
+    alerta.hidden = false;
+    $("#alertaTexto").textContent = item.mensaje;
+  } else {
+    li.innerHTML = `<span class="t">${Math.round(item.t0)}–${Math.round(item.t1)} s</span><span>${esc(item.texto || "…")}</span>`;
+  }
+  ol.appendChild(li);
+  ol.lastElementChild.scrollIntoView({ block: "nearest" });
+}
+// Los lotes se transcriben más rápido que el tiempo real: se muestran cuando el audio los alcanza, como en vivo.
+function vaciarCola() {
+  const t = audio.currentTime;
+  while (cola.length && (audio.paused || audio.ended || cola[0].t <= t + 0.2)) muestraTranscripcion(cola.shift());
+}
+audio.addEventListener("timeupdate", vaciarCola);
+audio.addEventListener("ended", vaciarCola);
+window.escudo.on("llamada-segmento", (s) => {
+  cola.push({ ...s, t: s.t1 });
+  vaciarCola();
+});
+window.escudo.on("llamada-alerta", (a) => {
+  cola.push({ ...a, t: a.t });
+  vaciarCola();
+});
+window.escudo.on("llamada-fin", (r) => {
+  const esperar = () => {
+    if (cola.length || (!audio.paused && !audio.ended)) return setTimeout(esperar, 400);
+    const v = r.resumen || {};
+    const el = $("#resumenLlamada");
+    el.hidden = false;
+    el.innerHTML = `<div class="resumen"><div class="cabecera"><span class="chip ${esc(v.veredicto || "sospechoso")}">${ETIQUETA[v.veredicto] || v.veredicto}</span><span class="conf">${r.alertas.length} avisos · ${Math.round(r.duracion_s)} s de llamada</span></div><p>${esc(v.resumen || "")}</p><div class="accion">${esc(v.accion || "")}</div></div>`;
+    tiempos.textContent = `llamada: ${r.segmentos.length} lotes transcritos en este equipo · resumen ${v.ms ?? "—"} ms`;
+    pon("listo");
+    return undefined;
+  };
+  esperar();
+});
+async function simularLlamada(ruta) {
+  if (ocupado || !ruta) return;
+  limpiarLlamada();
+  audio.src = `file://${ruta}`;
+  audio.currentTime = 0;
+  pon("transcribiendo la llamada");
+  try {
+    await audio.play();
+  } catch {
+    /* sin autoplay: el usuario pulsa play */
+  }
+  try {
+    await window.escudo.llamadaIniciar(ruta);
+  } catch (e) {
+    pon(`error: ${e.message || e}`);
+  }
+}
+$("#llamadaDemo").onclick = async () => simularLlamada(await window.escudo.llamadaDemo());
+$("#llamadaArchivo").onclick = async () => simularLlamada(await window.escudo.elegirAudio());
+
+for (const t of document.querySelectorAll(".tab")) {
+  t.onclick = () => {
+    for (const x of document.querySelectorAll(".tab")) x.classList.toggle("activa", x === t);
+    $("#vistaCliente").hidden = t.dataset.tab !== "cliente";
+    $("#vistaLlamada").hidden = t.dataset.tab !== "llamada";
+    $("#vistaBanco").hidden = t.dataset.tab !== "banco";
+  };
+}
 
 (async () => {
   const sel = $("#demoSel");
@@ -216,5 +291,9 @@ document.querySelectorAll(".tab").forEach(
   medirRed();
   setInterval(medirRed, 3000);
   const auto = await window.escudo.demoAuto();
-  if (auto) analizar(auto);
+  if (auto?.captura) analizar(auto.captura);
+  if (auto?.llamada) {
+    document.querySelector('[data-tab="llamada"]').click();
+    simularLlamada(auto.llamada);
+  }
 })();
