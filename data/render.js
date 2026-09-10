@@ -23,6 +23,8 @@ app.whenReady().then(async () => {
   console.log(`render: ${files.length} archivos, ventana creada`);
   for (const f of files) {
     await win.loadFile(path.join(dir, f));
+    // Electron recuerda el zoom por origen entre ejecuciones: se fija a 1 siempre, o la captura sale cortada.
+    win.webContents.setZoomFactor(1);
     await new Promise((r) => setTimeout(r, 250));
     const img = await win.webContents.capturePage();
     fs.writeFileSync(path.join(out, f.replace(/\.html$/, ".png")), img.toPNG());
