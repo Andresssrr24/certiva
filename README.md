@@ -35,6 +35,8 @@ node node_modules/electron/install.js   # si npm install no bajó el binario de 
 npm run modelos            # descarga los modelos a ~/.qvac/models (una vez, con internet)
 npm run datos              # genera los mensajes sintéticos y renderiza las capturas
 npm run prueba             # apaga el Wi-Fi primero: captura -> VisionPsy -> reglas -> veredicto de Qwen3
+node scripts/prueba-llamada.js   # modo llamada sin interfaz sobre el audio sintético
+npm run lint               # Biome
 npm start                  # la app
 npm run eval               # métricas sobre el set sintético -> eval/results.md
 node eval/reglas-check.js  # chequeo de las reglas sin modelos
@@ -48,7 +50,8 @@ Después de descargar los modelos, todo funciona sin red. El registro de rendimi
 2. **Reglas deterministas derivan los campos** de esa transcripción (`lib/lector.js`, `derivar`): canal, remitente, enlaces, teléfonos y montos por expresiones regulares y posición, con reparación de enlaces partidos por el salto de línea.
 3. **Reglas de fraude** (`lib/reglas.js`) producen evidencias en texto: dominio parecido al oficial, acortador, IP literal, punycode, número no oficial, petición de clave o código, presión de tiempo, pago a terceros.
 4. **Qwen3 4B** recibe la extracción y las evidencias y redacta el veredicto con un esquema JSON obligatorio: fraude, sospechoso, sin señales o no legible, con confianza, señales, acción y canal oficial. Nunca dice «seguro».
-5. **(pendiente)** Modo llamada con transcripción local en vivo, RAG sobre la política anti-fraude, indicadores compartidos por pares con Hyperswarm y radar para el equipo de fraude.
+5. **Modo llamada** (`lib/llamada.js`). El audio se transcribe en el equipo por lotes de cinco segundos con **Parakeet TDT 0.6B v3**, y reglas deterministas sobre la ventana de los últimos veinte segundos disparan el aviso en el instante en que aparece una señal: pide el código, pide la clave, presiona con el tiempo, se presenta como el banco, pide un pago. El aviso llega con un mensaje fijo para el cliente, sin esperar a ningún modelo. Al terminar, Qwen3 4B resume la llamada en dos frases con un esquema JSON. En la app, la transcripción se muestra sincronizada con la reproducción del audio, así que se ve como en vivo aunque se procese por lotes.
+6. **(pendiente)** RAG sobre la política anti-fraude, indicadores compartidos por pares con Hyperswarm y radar del banco alimentado por pares.
 
 ### La decisión sobre el lector, con evidencia
 
@@ -66,7 +69,7 @@ Una trampa que costó una hora y conviene contar: Electron recuerda el zoom por 
 
 ## Datos
 
-Ningún dato real. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
+Ningún dato real. El audio de la llamada de vishing de la demo, `data/audio/llamada-vishing.wav`, es sintético: lo genera `data/generar-llamada.js` con las voces del sistema de macOS a partir del guion de `data/llamada-vishing.md`. Nadie fue grabado. Medido en el M4: cada lote de cinco segundos se transcribe en unos 150 ms, y la llamada completa de 45 s se procesa en unos 10 s con carga del modelo incluida. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
 
 ## Para el jurado de la Caja de Ahorros **(pendiente)**
 
