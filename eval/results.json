@@ -4,559 +4,559 @@
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1213,
-    "ms_vision": 1814,
-    "ttft_texto": 2443,
-    "ms_texto": 5288
+    "ttft_vision": 1244,
+    "ms_vision": 1917,
+    "ttft_texto": 2449,
+    "ms_texto": 5421
   },
   {
     "id": "fraude-bloqueo_enlace-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1206,
-    "ms_vision": 1890,
-    "ttft_texto": 2504,
-    "ms_texto": 6619
+    "ttft_vision": 1212,
+    "ms_vision": 1815,
+    "ttft_texto": 2462,
+    "ms_texto": 5619
   },
   {
     "id": "fraude-bloqueo_enlace-03",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1229,
-    "ms_vision": 1871,
-    "ttft_texto": 2629,
-    "ms_texto": 6291
+    "ttft_vision": 1202,
+    "ms_vision": 1854,
+    "ttft_texto": 2618,
+    "ms_texto": 5742
   },
   {
     "id": "fraude-bloqueo_enlace-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1231,
-    "ms_vision": 2020,
-    "ttft_texto": 2424,
-    "ms_texto": 5696
+    "ttft_vision": 1214,
+    "ms_vision": 1903,
+    "ttft_texto": 2431,
+    "ms_texto": 5523
   },
   {
     "id": "fraude-bloqueo_enlace-05",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1365,
-    "ms_vision": 2058,
-    "ttft_texto": 2664,
-    "ms_texto": 5758
+    "ttft_vision": 1259,
+    "ms_vision": 1864,
+    "ttft_texto": 2620,
+    "ms_texto": 6629
   },
   {
     "id": "fraude-bloqueo_enlace-06",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1294,
-    "ms_vision": 1893,
-    "ttft_texto": 2642,
-    "ms_texto": 6402
+    "ttft_vision": 1288,
+    "ms_vision": 1880,
+    "ttft_texto": 2631,
+    "ms_texto": 6450
   },
   {
     "id": "fraude-bloqueo_enlace-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1312,
-    "ms_vision": 1938,
-    "ttft_texto": 2652,
-    "ms_texto": 6461
+    "ttft_vision": 1274,
+    "ms_vision": 1893,
+    "ttft_texto": 2593,
+    "ms_texto": 6304
   },
   {
     "id": "fraude-bloqueo_enlace-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1288,
-    "ms_vision": 1969,
-    "ttft_texto": 2733,
-    "ms_texto": 6661
+    "ttft_vision": 1278,
+    "ms_vision": 2125,
+    "ttft_texto": 2676,
+    "ms_texto": 6041
   },
   {
     "id": "fraude-compra_no_reconocida-01",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1296,
-    "ms_vision": 1981,
-    "ttft_texto": 2879,
-    "ms_texto": 6000
+    "ttft_vision": 1302,
+    "ms_vision": 1979,
+    "ttft_texto": 2687,
+    "ms_texto": 6224
   },
   {
     "id": "fraude-compra_no_reconocida-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1336,
-    "ms_vision": 2030,
-    "ttft_texto": 2736,
-    "ms_texto": 6442
+    "ttft_vision": 1288,
+    "ms_vision": 1900,
+    "ttft_texto": 2695,
+    "ms_texto": 6426
   },
   {
     "id": "fraude-compra_no_reconocida-03",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1291,
-    "ms_vision": 1956,
-    "ttft_texto": 2666,
-    "ms_texto": 5707
+    "ttft_vision": 1273,
+    "ms_vision": 1900,
+    "ttft_texto": 2518,
+    "ms_texto": 6025
   },
   {
     "id": "fraude-compra_no_reconocida-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1339,
-    "ms_vision": 2073,
-    "ttft_texto": 2756,
-    "ms_texto": 5847
+    "ttft_vision": 1262,
+    "ms_vision": 1908,
+    "ttft_texto": 2704,
+    "ms_texto": 5463
   },
   {
     "id": "fraude-compra_no_reconocida-05",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1326,
-    "ms_vision": 1944,
-    "ttft_texto": 2433,
-    "ms_texto": 5474
+    "ttft_vision": 1273,
+    "ms_vision": 1785,
+    "ttft_texto": 2409,
+    "ms_texto": 5235
   },
   {
     "id": "fraude-compra_no_reconocida-06",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1278,
-    "ms_vision": 1931,
-    "ttft_texto": 2531,
-    "ms_texto": 5640
+    "ttft_vision": 1281,
+    "ms_vision": 1953,
+    "ttft_texto": 2511,
+    "ms_texto": 5455
   },
   {
     "id": "fraude-compra_no_reconocida-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1302,
-    "ms_vision": 2007,
+    "ttft_vision": 1286,
+    "ms_vision": 1997,
     "ttft_texto": 2532,
-    "ms_texto": 6130
+    "ms_texto": 5553
   },
   {
     "id": "fraude-compra_no_reconocida-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1287,
-    "ms_vision": 1946,
-    "ttft_texto": 2709,
-    "ms_texto": 5521
+    "ttft_vision": 1281,
+    "ms_vision": 2046,
+    "ttft_texto": 2689,
+    "ms_texto": 5619
   },
   {
     "id": "fraude-correo_actualizacion-01",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1323,
-    "ms_vision": 2123,
-    "ttft_texto": 2703,
-    "ms_texto": 5739
+    "ttft_vision": 1265,
+    "ms_vision": 1803,
+    "ttft_texto": 2508,
+    "ms_texto": 6416
   },
   {
     "id": "fraude-correo_actualizacion-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1275,
-    "ms_vision": 2203,
-    "ttft_texto": 2801,
-    "ms_texto": 5839
+    "ttft_vision": 1282,
+    "ms_vision": 2186,
+    "ttft_texto": 2843,
+    "ms_texto": 5726
   },
   {
     "id": "fraude-correo_actualizacion-03",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1269,
-    "ms_vision": 2139,
-    "ttft_texto": 2693,
-    "ms_texto": 5872
+    "ttft_vision": 1213,
+    "ms_vision": 2169,
+    "ttft_texto": 2934,
+    "ms_texto": 6643
   },
   {
     "id": "fraude-correo_actualizacion-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1286,
-    "ms_vision": 2409,
-    "ttft_texto": 2829,
-    "ms_texto": 5898
+    "ttft_vision": 1311,
+    "ms_vision": 2404,
+    "ttft_texto": 3640,
+    "ms_texto": 6640
   },
   {
     "id": "fraude-correo_actualizacion-05",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1276,
-    "ms_vision": 2214,
-    "ttft_texto": 2799,
-    "ms_texto": 5859
+    "ttft_vision": 1334,
+    "ms_vision": 2430,
+    "ttft_texto": 3315,
+    "ms_texto": 6301
   },
   {
     "id": "fraude-correo_actualizacion-06",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1273,
-    "ms_vision": 2210,
-    "ttft_texto": 2800,
-    "ms_texto": 6203
+    "ttft_vision": 1192,
+    "ms_vision": 1976,
+    "ttft_texto": 3075,
+    "ms_texto": 6137
   },
   {
     "id": "fraude-correo_actualizacion-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1296,
-    "ms_vision": 2177,
-    "ttft_texto": 2696,
-    "ms_texto": 5618
+    "ttft_vision": 1191,
+    "ms_vision": 2446,
+    "ttft_texto": 3008,
+    "ms_texto": 5783
   },
   {
     "id": "fraude-correo_actualizacion-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1277,
-    "ms_vision": 2248,
-    "ttft_texto": 2785,
-    "ms_texto": 5918
+    "ttft_vision": 1309,
+    "ms_vision": 2210,
+    "ttft_texto": 3477,
+    "ms_texto": 7346
   },
   {
     "id": "fraude-ejecutivo_whatsapp-01",
     "esperado": "fraude",
-    "obtenido": "fraude",
-    "ok": true,
-    "ttft_vision": 1266,
-    "ms_vision": 2355,
-    "ttft_texto": 2533,
-    "ms_texto": 6844
+    "obtenido": "sin_senales",
+    "ok": false,
+    "ttft_vision": 1287,
+    "ms_vision": 1849,
+    "ttft_texto": 2002,
+    "ms_texto": 5730
   },
   {
     "id": "fraude-ejecutivo_whatsapp-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1251,
-    "ms_vision": 2081,
-    "ttft_texto": 2651,
-    "ms_texto": 6824
+    "ttft_vision": 1281,
+    "ms_vision": 2707,
+    "ttft_texto": 2606,
+    "ms_texto": 7050
   },
   {
     "id": "fraude-ejecutivo_whatsapp-03",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1347,
-    "ms_vision": 2029,
-    "ttft_texto": 2639,
-    "ms_texto": 6357
+    "ttft_vision": 1340,
+    "ms_vision": 2201,
+    "ttft_texto": 2576,
+    "ms_texto": 6570
   },
   {
     "id": "fraude-ejecutivo_whatsapp-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1305,
-    "ms_vision": 2211,
-    "ttft_texto": 2422,
-    "ms_texto": 5965
+    "ttft_vision": 1216,
+    "ms_vision": 2174,
+    "ttft_texto": 2433,
+    "ms_texto": 5764
   },
   {
     "id": "fraude-ejecutivo_whatsapp-05",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1266,
-    "ms_vision": 2125,
-    "ttft_texto": 2408,
-    "ms_texto": 5964
+    "ttft_vision": 1210,
+    "ms_vision": 1901,
+    "ttft_texto": 2322,
+    "ms_texto": 5919
   },
   {
     "id": "fraude-ejecutivo_whatsapp-06",
     "esperado": "fraude",
-    "obtenido": "sin_senales",
-    "ok": false,
-    "ttft_vision": 1269,
-    "ms_vision": 1764,
-    "ttft_texto": 2047,
-    "ms_texto": 5128
+    "obtenido": "fraude",
+    "ok": true,
+    "ttft_vision": 1233,
+    "ms_vision": 2005,
+    "ttft_texto": 2412,
+    "ms_texto": 5795
   },
   {
     "id": "fraude-ejecutivo_whatsapp-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1252,
-    "ms_vision": 1844,
-    "ttft_texto": 2407,
-    "ms_texto": 6323
+    "ttft_vision": 1226,
+    "ms_vision": 1894,
+    "ttft_texto": 2446,
+    "ms_texto": 6734
   },
   {
     "id": "fraude-ejecutivo_whatsapp-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1419,
-    "ms_vision": 2352,
-    "ttft_texto": 2517,
-    "ms_texto": 7866
+    "ttft_vision": 1227,
+    "ms_vision": 2045,
+    "ttft_texto": 2484,
+    "ms_texto": 6208
   },
   {
     "id": "fraude-ip_literal-01",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1302,
-    "ms_vision": 1826,
-    "ttft_texto": 2466,
-    "ms_texto": 6719
+    "ttft_vision": 1195,
+    "ms_vision": 1697,
+    "ttft_texto": 2325,
+    "ms_texto": 4998
   },
   {
     "id": "fraude-ip_literal-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1268,
-    "ms_vision": 1853,
-    "ttft_texto": 2722,
-    "ms_texto": 5975
+    "ttft_vision": 1216,
+    "ms_vision": 1700,
+    "ttft_texto": 2438,
+    "ms_texto": 5357
   },
   {
     "id": "fraude-ip_literal-03",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1452,
-    "ms_vision": 2348,
-    "ttft_texto": 2529,
-    "ms_texto": 6835
+    "ttft_vision": 1206,
+    "ms_vision": 1900,
+    "ttft_texto": 2414,
+    "ms_texto": 6566
   },
   {
     "id": "fraude-ip_literal-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1273,
-    "ms_vision": 1897,
-    "ttft_texto": 2609,
-    "ms_texto": 7092
+    "ttft_vision": 1219,
+    "ms_vision": 1799,
+    "ttft_texto": 2507,
+    "ms_texto": 7608
   },
   {
     "id": "fraude-ip_literal-05",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1260,
-    "ms_vision": 1937,
-    "ttft_texto": 2513,
-    "ms_texto": 6535
+    "ttft_vision": 1209,
+    "ms_vision": 1922,
+    "ttft_texto": 2492,
+    "ms_texto": 6702
   },
   {
     "id": "fraude-ip_literal-06",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1263,
-    "ms_vision": 1798,
-    "ttft_texto": 2617,
-    "ms_texto": 7337
+    "ttft_vision": 1225,
+    "ms_vision": 1750,
+    "ttft_texto": 2700,
+    "ms_texto": 5845
   },
   {
     "id": "fraude-ip_literal-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1278,
-    "ms_vision": 1797,
-    "ttft_texto": 2507,
-    "ms_texto": 5661
+    "ttft_vision": 1242,
+    "ms_vision": 1721,
+    "ttft_texto": 2423,
+    "ms_texto": 5418
   },
   {
     "id": "fraude-ip_literal-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1297,
-    "ms_vision": 1879,
-    "ttft_texto": 2412,
-    "ms_texto": 5238
+    "ttft_vision": 1243,
+    "ms_vision": 1722,
+    "ttft_texto": 2401,
+    "ms_texto": 5172
   },
   {
     "id": "fraude-pago_yappy-01",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1240,
-    "ms_vision": 1904,
-    "ttft_texto": 2507,
-    "ms_texto": 5872
+    "ttft_vision": 1237,
+    "ms_vision": 1834,
+    "ttft_texto": 2452,
+    "ms_texto": 5667
   },
   {
     "id": "fraude-pago_yappy-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1274,
-    "ms_vision": 1829,
-    "ttft_texto": 2231,
-    "ms_texto": 5581
+    "ttft_vision": 1213,
+    "ms_vision": 1701,
+    "ttft_texto": 2178,
+    "ms_texto": 5574
   },
   {
     "id": "fraude-pago_yappy-03",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1255,
-    "ms_vision": 1959,
-    "ttft_texto": 2350,
-    "ms_texto": 5529
+    "ttft_vision": 1236,
+    "ms_vision": 2109,
+    "ttft_texto": 2355,
+    "ms_texto": 5438
   },
   {
     "id": "fraude-pago_yappy-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1282,
-    "ms_vision": 1870,
-    "ttft_texto": 2525,
-    "ms_texto": 5843
+    "ttft_vision": 1229,
+    "ms_vision": 1889,
+    "ttft_texto": 2448,
+    "ms_texto": 5425
   },
   {
     "id": "fraude-pago_yappy-05",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1266,
+    "ttft_vision": 1219,
     "ms_vision": 2138,
-    "ttft_texto": 2714,
-    "ms_texto": 7258
+    "ttft_texto": 2819,
+    "ms_texto": 6583
   },
   {
     "id": "fraude-pago_yappy-06",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1277,
-    "ms_vision": 2118,
-    "ttft_texto": 2419,
-    "ms_texto": 6162
+    "ttft_vision": 1270,
+    "ms_vision": 2094,
+    "ttft_texto": 2461,
+    "ms_texto": 5845
   },
   {
     "id": "fraude-pago_yappy-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1242,
-    "ms_vision": 1792,
-    "ttft_texto": 2522,
-    "ms_texto": 5896
+    "ttft_vision": 1236,
+    "ms_vision": 1929,
+    "ttft_texto": 2494,
+    "ms_texto": 6347
   },
   {
     "id": "fraude-pago_yappy-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1240,
-    "ms_vision": 1787,
-    "ttft_texto": 2483,
-    "ms_texto": 5974
+    "ttft_vision": 1426,
+    "ms_vision": 2107,
+    "ttft_texto": 2499,
+    "ms_texto": 6350
   },
   {
     "id": "fraude-pide_codigo-01",
     "esperado": "fraude",
-    "obtenido": "fraude",
-    "ok": true,
-    "ttft_vision": 1395,
-    "ms_vision": 1975,
-    "ttft_texto": 2230,
-    "ms_texto": 5874
+    "obtenido": "sin_senales",
+    "ok": false,
+    "ttft_vision": 1322,
+    "ms_vision": 1851,
+    "ttft_texto": 2146,
+    "ms_texto": 5252
   },
   {
     "id": "fraude-pide_codigo-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1268,
-    "ms_vision": 2149,
-    "ttft_texto": 2410,
-    "ms_texto": 5290
+    "ttft_vision": 1299,
+    "ms_vision": 2007,
+    "ttft_texto": 2390,
+    "ms_texto": 5571
   },
   {
     "id": "fraude-pide_codigo-03",
     "esperado": "fraude",
-    "obtenido": "fraude",
-    "ok": true,
-    "ttft_vision": 1253,
-    "ms_vision": 1780,
-    "ttft_texto": 2317,
-    "ms_texto": 4937
+    "obtenido": "sin_senales",
+    "ok": false,
+    "ttft_vision": 1222,
+    "ms_vision": 1769,
+    "ttft_texto": 2195,
+    "ms_texto": 5111
   },
   {
     "id": "fraude-pide_codigo-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1232,
-    "ms_vision": 1761,
-    "ttft_texto": 2387,
-    "ms_texto": 5586
+    "ttft_vision": 1216,
+    "ms_vision": 1847,
+    "ttft_texto": 2359,
+    "ms_texto": 5996
   },
   {
     "id": "fraude-pide_codigo-05",
     "esperado": "fraude",
-    "obtenido": "sin_senales",
-    "ok": false,
-    "ttft_vision": 1249,
-    "ms_vision": 1783,
-    "ttft_texto": 2211,
-    "ms_texto": 4893
+    "obtenido": "fraude",
+    "ok": true,
+    "ttft_vision": 1230,
+    "ms_vision": 1763,
+    "ttft_texto": 2281,
+    "ms_texto": 6340
   },
   {
     "id": "fraude-pide_codigo-06",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1241,
-    "ms_vision": 1844,
-    "ttft_texto": 2595,
-    "ms_texto": 5231
+    "ttft_vision": 1224,
+    "ms_vision": 1923,
+    "ttft_texto": 2432,
+    "ms_texto": 5892
   },
   {
     "id": "fraude-pide_codigo-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1256,
-    "ms_vision": 1930,
-    "ttft_texto": 2401,
-    "ms_texto": 5966
+    "ttft_vision": 1195,
+    "ms_vision": 1695,
+    "ttft_texto": 2424,
+    "ms_texto": 5720
   },
   {
     "id": "fraude-pide_codigo-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1245,
-    "ms_vision": 1783,
-    "ttft_texto": 2396,
+    "ttft_vision": 1200,
+    "ms_vision": 1794,
+    "ttft_texto": 2354,
     "ms_texto": 6229
   },
   {
@@ -564,639 +564,639 @@
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1267,
-    "ms_vision": 2002,
-    "ttft_texto": 2719,
-    "ms_texto": 6690
+    "ttft_vision": 1221,
+    "ms_vision": 1968,
+    "ttft_texto": 2658,
+    "ms_texto": 6537
   },
   {
     "id": "fraude-reembolso_acortador-02",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1248,
-    "ms_vision": 1718,
-    "ttft_texto": 2313,
-    "ms_texto": 6857
+    "ttft_vision": 1210,
+    "ms_vision": 1675,
+    "ttft_texto": 2257,
+    "ms_texto": 6276
   },
   {
     "id": "fraude-reembolso_acortador-03",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1243,
-    "ms_vision": 1671,
-    "ttft_texto": 2387,
-    "ms_texto": 6005
+    "ttft_vision": 1195,
+    "ms_vision": 1634,
+    "ttft_texto": 2252,
+    "ms_texto": 6137
   },
   {
     "id": "fraude-reembolso_acortador-04",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1281,
-    "ms_vision": 1928,
-    "ttft_texto": 2304,
-    "ms_texto": 5680
+    "ttft_vision": 1197,
+    "ms_vision": 1858,
+    "ttft_texto": 2278,
+    "ms_texto": 5929
   },
   {
     "id": "fraude-reembolso_acortador-05",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1322,
-    "ms_vision": 1911,
-    "ttft_texto": 2434,
-    "ms_texto": 5366
+    "ttft_vision": 1219,
+    "ms_vision": 1872,
+    "ttft_texto": 2349,
+    "ms_texto": 5207
   },
   {
     "id": "fraude-reembolso_acortador-06",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1285,
-    "ms_vision": 1960,
-    "ttft_texto": 2519,
-    "ms_texto": 7514
+    "ttft_vision": 1232,
+    "ms_vision": 1770,
+    "ttft_texto": 2552,
+    "ms_texto": 6580
   },
   {
     "id": "fraude-reembolso_acortador-07",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1287,
-    "ms_vision": 2129,
-    "ttft_texto": 2609,
-    "ms_texto": 7131
+    "ttft_vision": 1199,
+    "ms_vision": 1951,
+    "ttft_texto": 2544,
+    "ms_texto": 6852
   },
   {
     "id": "fraude-reembolso_acortador-08",
     "esperado": "fraude",
     "obtenido": "fraude",
     "ok": true,
-    "ttft_vision": 1316,
-    "ms_vision": 2132,
-    "ttft_texto": 2375,
-    "ms_texto": 6006
+    "ttft_vision": 1264,
+    "ms_vision": 1936,
+    "ttft_texto": 2318,
+    "ms_texto": 6310
   },
   {
     "id": "legitimo-alerta_transaccion-01",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1259,
-    "ms_vision": 1742,
-    "ttft_texto": 2229,
-    "ms_texto": 4760
+    "ttft_vision": 1437,
+    "ms_vision": 1979,
+    "ttft_texto": 2258,
+    "ms_texto": 5531
   },
   {
     "id": "legitimo-alerta_transaccion-02",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1256,
-    "ms_vision": 1866,
-    "ttft_texto": 2316,
-    "ms_texto": 4971
+    "ttft_vision": 1285,
+    "ms_vision": 1908,
+    "ttft_texto": 2366,
+    "ms_texto": 5331
   },
   {
     "id": "legitimo-alerta_transaccion-03",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1273,
-    "ms_vision": 1707,
-    "ttft_texto": 2155,
-    "ms_texto": 5098
+    "ttft_vision": 1281,
+    "ms_vision": 1657,
+    "ttft_texto": 2217,
+    "ms_texto": 5099
   },
   {
     "id": "legitimo-alerta_transaccion-04",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1260,
-    "ms_vision": 1764,
-    "ttft_texto": 2212,
-    "ms_texto": 4928
+    "ttft_vision": 1331,
+    "ms_vision": 1962,
+    "ttft_texto": 2329,
+    "ms_texto": 5467
   },
   {
     "id": "legitimo-alerta_transaccion-05",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1248,
-    "ms_vision": 1734,
-    "ttft_texto": 2223,
-    "ms_texto": 5261
+    "ttft_vision": 1247,
+    "ms_vision": 1621,
+    "ttft_texto": 2146,
+    "ms_texto": 5523
   },
   {
     "id": "legitimo-alerta_transaccion-06",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1297,
-    "ms_vision": 1917,
-    "ttft_texto": 2320,
-    "ms_texto": 6088
+    "ttft_vision": 1292,
+    "ms_vision": 1967,
+    "ttft_texto": 2291,
+    "ms_texto": 5551
   },
   {
     "id": "legitimo-alerta_transaccion-07",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1349,
-    "ms_vision": 1851,
-    "ttft_texto": 2268,
-    "ms_texto": 5227
+    "ttft_vision": 1270,
+    "ms_vision": 1731,
+    "ttft_texto": 2230,
+    "ms_texto": 4820
   },
   {
     "id": "legitimo-alerta_transaccion-08",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1304,
-    "ms_vision": 1767,
-    "ttft_texto": 2341,
-    "ms_texto": 5652
+    "ttft_vision": 1277,
+    "ms_vision": 1786,
+    "ttft_texto": 2318,
+    "ms_texto": 5389
   },
   {
     "id": "legitimo-correo_estado_cuenta-01",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1286,
-    "ms_vision": 2068,
-    "ttft_texto": 2488,
-    "ms_texto": 5406
+    "ttft_vision": 1272,
+    "ms_vision": 2100,
+    "ttft_texto": 2507,
+    "ms_texto": 5439
   },
   {
     "id": "legitimo-correo_estado_cuenta-02",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1372,
-    "ms_vision": 2150,
-    "ttft_texto": 2330,
-    "ms_texto": 5882
+    "ttft_vision": 1282,
+    "ms_vision": 2141,
+    "ttft_texto": 2359,
+    "ms_texto": 6595
   },
   {
     "id": "legitimo-correo_estado_cuenta-03",
     "esperado": "sin_senales",
-    "obtenido": "fraude",
-    "ok": false,
-    "ttft_vision": 1278,
-    "ms_vision": 2020,
-    "ttft_texto": 2548,
-    "ms_texto": 6837
+    "obtenido": "sin_senales",
+    "ok": true,
+    "ttft_vision": 1416,
+    "ms_vision": 2291,
+    "ttft_texto": 3163,
+    "ms_texto": 6038
   },
   {
     "id": "legitimo-correo_estado_cuenta-04",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1275,
-    "ms_vision": 1962,
-    "ttft_texto": 2335,
-    "ms_texto": 4821
+    "ttft_vision": 1294,
+    "ms_vision": 2299,
+    "ttft_texto": 2967,
+    "ms_texto": 5460
   },
   {
     "id": "legitimo-correo_estado_cuenta-05",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1253,
-    "ms_vision": 1993,
-    "ttft_texto": 2393,
-    "ms_texto": 5061
+    "ttft_vision": 1198,
+    "ms_vision": 2113,
+    "ttft_texto": 2265,
+    "ms_texto": 5157
   },
   {
     "id": "legitimo-correo_estado_cuenta-06",
     "esperado": "sin_senales",
-    "obtenido": "fraude",
-    "ok": false,
-    "ttft_vision": 1235,
-    "ms_vision": 2066,
-    "ttft_texto": 2402,
-    "ms_texto": 5846
+    "obtenido": "sin_senales",
+    "ok": true,
+    "ttft_vision": 1224,
+    "ms_vision": 2185,
+    "ttft_texto": 2392,
+    "ms_texto": 6492
   },
   {
     "id": "legitimo-correo_estado_cuenta-07",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1267,
-    "ms_vision": 2176,
-    "ttft_texto": 2319,
-    "ms_texto": 5544
+    "ttft_vision": 1368,
+    "ms_vision": 26329,
+    "ttft_texto": 3578,
+    "ms_texto": 6201
   },
   {
     "id": "legitimo-correo_estado_cuenta-08",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1256,
-    "ms_vision": 2059,
-    "ttft_texto": 2327,
-    "ms_texto": 5018
+    "ttft_vision": 1230,
+    "ms_vision": 1997,
+    "ttft_texto": 2321,
+    "ms_texto": 5187
   },
   {
     "id": "legitimo-neutral-01",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1258,
-    "ms_vision": 1800,
-    "ttft_texto": 2055,
-    "ms_texto": 4863
+    "ttft_vision": 1266,
+    "ms_vision": 1879,
+    "ttft_texto": 2143,
+    "ms_texto": 4971
   },
   {
     "id": "legitimo-neutral-02",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1227,
-    "ms_vision": 1594,
-    "ttft_texto": 2045,
-    "ms_texto": 4627
+    "ttft_vision": 1233,
+    "ms_vision": 1732,
+    "ttft_texto": 1983,
+    "ms_texto": 4816
   },
   {
     "id": "legitimo-neutral-03",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1267,
-    "ms_vision": 1555,
-    "ttft_texto": 1963,
-    "ms_texto": 4625
+    "ttft_vision": 1246,
+    "ms_vision": 1524,
+    "ttft_texto": 1985,
+    "ms_texto": 4502
   },
   {
     "id": "legitimo-neutral-04",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1306,
-    "ms_vision": 1630,
-    "ttft_texto": 1958,
-    "ms_texto": 5225
+    "ttft_vision": 1257,
+    "ms_vision": 1626,
+    "ttft_texto": 1975,
+    "ms_texto": 4809
   },
   {
     "id": "legitimo-neutral-05",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1277,
-    "ms_vision": 1760,
-    "ttft_texto": 2189,
-    "ms_texto": 5169
+    "ttft_vision": 1247,
+    "ms_vision": 1692,
+    "ttft_texto": 2067,
+    "ms_texto": 4544
   },
   {
     "id": "legitimo-neutral-06",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1313,
-    "ms_vision": 1902,
-    "ttft_texto": 2145,
-    "ms_texto": 4969
+    "ttft_vision": 1270,
+    "ms_vision": 1905,
+    "ttft_texto": 2158,
+    "ms_texto": 5022
   },
   {
     "id": "legitimo-neutral-07",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1279,
-    "ms_vision": 1842,
-    "ttft_texto": 2037,
-    "ms_texto": 5213
+    "ttft_vision": 1234,
+    "ms_vision": 1728,
+    "ttft_texto": 2214,
+    "ms_texto": 4970
   },
   {
     "id": "legitimo-neutral-08",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1293,
-    "ms_vision": 1946,
-    "ttft_texto": 2193,
-    "ms_texto": 6586
+    "ttft_vision": 1218,
+    "ms_vision": 1752,
+    "ttft_texto": 2201,
+    "ms_texto": 4892
   },
   {
     "id": "legitimo-oficial_con_urgencia-01",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1278,
-    "ms_vision": 1815,
-    "ttft_texto": 2238,
-    "ms_texto": 6165
+    "ttft_vision": 1228,
+    "ms_vision": 1669,
+    "ttft_texto": 2219,
+    "ms_texto": 5361
   },
   {
     "id": "legitimo-oficial_con_urgencia-02",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1324,
-    "ms_vision": 1903,
-    "ttft_texto": 2307,
-    "ms_texto": 5513
+    "ttft_vision": 1222,
+    "ms_vision": 1654,
+    "ttft_texto": 2211,
+    "ms_texto": 5366
   },
   {
     "id": "legitimo-oficial_con_urgencia-03",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1252,
-    "ms_vision": 1706,
-    "ttft_texto": 2304,
-    "ms_texto": 5624
+    "ttft_vision": 1250,
+    "ms_vision": 1691,
+    "ttft_texto": 2218,
+    "ms_texto": 5552
   },
   {
     "id": "legitimo-oficial_con_urgencia-04",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1251,
-    "ms_vision": 1678,
-    "ttft_texto": 2132,
-    "ms_texto": 5116
+    "ttft_vision": 1237,
+    "ms_vision": 1677,
+    "ttft_texto": 2212,
+    "ms_texto": 5304
   },
   {
     "id": "legitimo-oficial_con_urgencia-05",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1279,
-    "ms_vision": 1782,
-    "ttft_texto": 2224,
-    "ms_texto": 5432
+    "ttft_vision": 1240,
+    "ms_vision": 1685,
+    "ttft_texto": 2213,
+    "ms_texto": 5414
   },
   {
     "id": "legitimo-oficial_con_urgencia-06",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1270,
-    "ms_vision": 1818,
-    "ttft_texto": 2218,
-    "ms_texto": 5481
+    "ttft_vision": 1250,
+    "ms_vision": 1776,
+    "ttft_texto": 2214,
+    "ms_texto": 5536
   },
   {
     "id": "legitimo-oficial_con_urgencia-07",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1277,
-    "ms_vision": 1717,
-    "ttft_texto": 2223,
-    "ms_texto": 5345
+    "ttft_vision": 1282,
+    "ms_vision": 1751,
+    "ttft_texto": 2258,
+    "ms_texto": 5730
   },
   {
     "id": "legitimo-oficial_con_urgencia-08",
     "esperado": "sospechoso",
     "obtenido": "sospechoso",
     "ok": true,
-    "ttft_vision": 1240,
-    "ms_vision": 1728,
-    "ttft_texto": 2318,
-    "ms_texto": 5812
+    "ttft_vision": 1528,
+    "ms_vision": 2011,
+    "ttft_texto": 2317,
+    "ms_texto": 5807
   },
   {
     "id": "legitimo-otp_legitimo-01",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1291,
-    "ms_vision": 1872,
-    "ttft_texto": 2257,
-    "ms_texto": 5426
+    "ttft_vision": 1327,
+    "ms_vision": 1958,
+    "ttft_texto": 2471,
+    "ms_texto": 5264
   },
   {
     "id": "legitimo-otp_legitimo-02",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1350,
-    "ms_vision": 1934,
-    "ttft_texto": 2254,
-    "ms_texto": 5602
+    "ttft_vision": 1278,
+    "ms_vision": 1774,
+    "ttft_texto": 2168,
+    "ms_texto": 4692
   },
   {
     "id": "legitimo-otp_legitimo-03",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1297,
-    "ms_vision": 1781,
-    "ttft_texto": 2298,
-    "ms_texto": 5605
+    "ttft_vision": 1247,
+    "ms_vision": 1703,
+    "ttft_texto": 2236,
+    "ms_texto": 5557
   },
   {
     "id": "legitimo-otp_legitimo-04",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1285,
-    "ms_vision": 1797,
-    "ttft_texto": 2242,
-    "ms_texto": 5081
+    "ttft_vision": 1299,
+    "ms_vision": 1800,
+    "ttft_texto": 2280,
+    "ms_texto": 5125
   },
   {
     "id": "legitimo-otp_legitimo-05",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1285,
-    "ms_vision": 1778,
-    "ttft_texto": 2240,
-    "ms_texto": 5098
+    "ttft_vision": 1320,
+    "ms_vision": 1825,
+    "ttft_texto": 2293,
+    "ms_texto": 6107
   },
   {
     "id": "legitimo-otp_legitimo-06",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1332,
-    "ms_vision": 1846,
-    "ttft_texto": 2228,
-    "ms_texto": 4860
+    "ttft_vision": 1504,
+    "ms_vision": 2037,
+    "ttft_texto": 2318,
+    "ms_texto": 5116
   },
   {
     "id": "legitimo-otp_legitimo-07",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1256,
-    "ms_vision": 1768,
-    "ttft_texto": 2151,
-    "ms_texto": 4967
+    "ttft_vision": 1287,
+    "ms_vision": 1834,
+    "ttft_texto": 2349,
+    "ms_texto": 5176
   },
   {
     "id": "legitimo-otp_legitimo-08",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1269,
-    "ms_vision": 1727,
-    "ttft_texto": 2256,
-    "ms_texto": 5152
+    "ttft_vision": 1311,
+    "ms_vision": 1871,
+    "ttft_texto": 2569,
+    "ms_texto": 5805
   },
   {
     "id": "legitimo-recordatorio_pago-01",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1269,
-    "ms_vision": 1892,
-    "ttft_texto": 2516,
-    "ms_texto": 6017
+    "ttft_vision": 1267,
+    "ms_vision": 1914,
+    "ttft_texto": 2261,
+    "ms_texto": 5305
   },
   {
     "id": "legitimo-recordatorio_pago-02",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1273,
-    "ms_vision": 1938,
-    "ttft_texto": 2356,
-    "ms_texto": 5200
+    "ttft_vision": 1293,
+    "ms_vision": 2002,
+    "ttft_texto": 2525,
+    "ms_texto": 5353
   },
   {
     "id": "legitimo-recordatorio_pago-03",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1273,
-    "ms_vision": 1863,
-    "ttft_texto": 2345,
-    "ms_texto": 5269
+    "ttft_vision": 1257,
+    "ms_vision": 1826,
+    "ttft_texto": 2533,
+    "ms_texto": 5571
   },
   {
     "id": "legitimo-recordatorio_pago-04",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1271,
-    "ms_vision": 1870,
-    "ttft_texto": 2255,
-    "ms_texto": 4936
+    "ttft_vision": 1511,
+    "ms_vision": 2227,
+    "ttft_texto": 2251,
+    "ms_texto": 5188
   },
   {
     "id": "legitimo-recordatorio_pago-05",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1274,
-    "ms_vision": 1895,
-    "ttft_texto": 2330,
-    "ms_texto": 4954
+    "ttft_vision": 1310,
+    "ms_vision": 1903,
+    "ttft_texto": 2303,
+    "ms_texto": 4811
   },
   {
     "id": "legitimo-recordatorio_pago-06",
     "esperado": "sin_senales",
-    "obtenido": "sospechoso",
-    "ok": false,
-    "ttft_vision": 1279,
-    "ms_vision": 1864,
-    "ttft_texto": 2432,
-    "ms_texto": 5357
+    "obtenido": "sin_senales",
+    "ok": true,
+    "ttft_vision": 1249,
+    "ms_vision": 1802,
+    "ttft_texto": 2291,
+    "ms_texto": 4807
   },
   {
     "id": "legitimo-recordatorio_pago-07",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1266,
-    "ms_vision": 1849,
-    "ttft_texto": 2257,
-    "ms_texto": 5020
+    "ttft_vision": 1256,
+    "ms_vision": 1851,
+    "ttft_texto": 2211,
+    "ms_texto": 5316
   },
   {
     "id": "legitimo-recordatorio_pago-08",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1270,
-    "ms_vision": 1890,
-    "ttft_texto": 2350,
-    "ms_texto": 5053
+    "ttft_vision": 1237,
+    "ms_vision": 1793,
+    "ttft_texto": 2292,
+    "ms_texto": 4806
   },
   {
     "id": "legitimo-whatsapp_oficial-01",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1270,
-    "ms_vision": 1757,
-    "ttft_texto": 2331,
-    "ms_texto": 5795
+    "ttft_vision": 1236,
+    "ms_vision": 1694,
+    "ttft_texto": 2122,
+    "ms_texto": 4918
   },
   {
     "id": "legitimo-whatsapp_oficial-02",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1280,
-    "ms_vision": 1639,
-    "ttft_texto": 2216,
-    "ms_texto": 4728
+    "ttft_vision": 1238,
+    "ms_vision": 1615,
+    "ttft_texto": 2203,
+    "ms_texto": 4693
   },
   {
     "id": "legitimo-whatsapp_oficial-03",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1299,
-    "ms_vision": 1691,
-    "ttft_texto": 2219,
-    "ms_texto": 4850
+    "ttft_vision": 1259,
+    "ms_vision": 1639,
+    "ttft_texto": 2203,
+    "ms_texto": 4619
   },
   {
     "id": "legitimo-whatsapp_oficial-04",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1268,
-    "ms_vision": 1522,
-    "ttft_texto": 2223,
-    "ms_texto": 5621
+    "ttft_vision": 1249,
+    "ms_vision": 1696,
+    "ttft_texto": 2297,
+    "ms_texto": 5873
   },
   {
     "id": "legitimo-whatsapp_oficial-05",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1274,
-    "ms_vision": 1676,
-    "ttft_texto": 2215,
-    "ms_texto": 4785
+    "ttft_vision": 1236,
+    "ms_vision": 1601,
+    "ttft_texto": 2205,
+    "ms_texto": 4561
   },
   {
     "id": "legitimo-whatsapp_oficial-06",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1261,
-    "ms_vision": 1659,
-    "ttft_texto": 2237,
-    "ms_texto": 4909
+    "ttft_vision": 1240,
+    "ms_vision": 1586,
+    "ttft_texto": 2199,
+    "ms_texto": 4569
   },
   {
     "id": "legitimo-whatsapp_oficial-07",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1280,
-    "ms_vision": 1650,
-    "ttft_texto": 2241,
-    "ms_texto": 4739
+    "ttft_vision": 1236,
+    "ms_vision": 1612,
+    "ttft_texto": 2207,
+    "ms_texto": 4687
   },
   {
     "id": "legitimo-whatsapp_oficial-08",
     "esperado": "sin_senales",
     "obtenido": "sin_senales",
     "ok": true,
-    "ttft_vision": 1284,
-    "ms_vision": 1698,
-    "ttft_texto": 2257,
-    "ms_texto": 4859
+    "ttft_vision": 1237,
+    "ms_vision": 1614,
+    "ttft_texto": 2201,
+    "ms_texto": 5217
   }
 ]
