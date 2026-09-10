@@ -20,7 +20,6 @@ function rng(seed) {
 }
 const R = rng(SEMILLA);
 const pick = (a) => a[Math.floor(R() * a.length)];
-const chance = (p) => R() < p;
 const digitos = (n) => Array.from({ length: n }, () => Math.floor(R() * 10)).join("");
 const movil = () => `6${digitos(3)}-${digitos(4)}`;
 const movilConPrefijo = () => `+507 ${movil()}`;
@@ -386,11 +385,9 @@ const LEGITIMO = {
 
 function generar({ porTipo = 8 } = {}) {
   const mensajes = [];
-  let n = 0;
   const agrega = (grupo, tipo, fn, veredictoBase) => {
     for (let i = 0; i < porTipo; i++) {
       const m = fn();
-      n += 1;
       const id = `${grupo}-${tipo}-${String(i + 1).padStart(2, "0")}`;
       mensajes.push({
         id,
