@@ -23,7 +23,7 @@ Declaración obligatoria del hackatón. Este proyecto parte de código ajeno:
 | Transcripción de llamadas | Parakeet TDT 0.6B v3 | `PARAKEET_TDT_0_6B_V3_Q8_0` | Q8_0 |
 | Embeddings del RAG | EmbeddingGemma 300M | `EMBEDDINGGEMMA_300M_Q4_0` | Q4_0 |
 
-Hardware de desarrollo y demo: MacBook con Apple M4 y 16 GB de RAM, macOS, backend GPU. SDK `@qvac/sdk` 0.19. Tiempos medidos en esta máquina: VisionPsy 1,07 s al primer token y 173 tokens/s; Qwen3 4B 1,75 s al primer token y 35 tokens/s. El objetivo del producto es el teléfono del cliente; los benchmarks de VisionPsy en teléfonos citados en la presentación son del fabricante del modelo, no medidos por este equipo **(pendiente: resultados propios si el Android con Expo llega)**.
+Hardware de desarrollo y demo: MacBook con Apple M4 y 16 GB de RAM, macOS, backend GPU. SDK `@qvac/sdk` 0.19. Tiempos medidos en esta máquina: VisionPsy 1,10 s al primer token y 156 tokens/s; Qwen3 4B 2,38 s al primer token y 33 tokens/s con la política en el prompt. El objetivo del producto es el teléfono del cliente; los benchmarks de VisionPsy en teléfonos citados en la presentación son del fabricante del modelo, no medidos por este equipo **(pendiente: resultados propios si el Android con Expo llega)**.
 
 ## Reproducir
 
@@ -111,26 +111,27 @@ Ningún dato real. El audio de la llamada de vishing de la demo, `data/audio/lla
 
 | Métrica | Valor |
 |---|---|
-| Exactitud global del veredicto | 92,5 % |
-| Precisión en fraude | 96,9 % |
-| Exhaustividad en fraude | 98,4 % (63 de 64) |
-| Legítimos reconocidos sin señales | 97,9 % (47 de 48) |
-| Remitente correcto (VisionPsy) | 90,8 % |
-| Dominios de los enlaces correctos (VisionPsy) | 85,0 % |
-| Teléfonos correctos (VisionPsy) | 95,0 % |
-| Texto literal, 1 − CER medio (VisionPsy) | 62,6 % |
+| Exactitud global del veredicto | 95,8% |
+| Precisión en fraude | 96,9% |
+| Exhaustividad en fraude | 96,9% |
+| Legítimos reconocidos sin señales | 93,8% (45/48) |
+| Mensajes con solo presión de tiempo reconocidos como sospechosos | 100,0% (8/8) |
+| Remitente correcto (VisionPsy) | 87,5% |
+| Dominios de los enlaces correctos (VisionPsy) | 84,2% |
+| Teléfonos correctos (VisionPsy) | 95,0% |
+| Texto literal, 1 − CER medio (VisionPsy) | 74,9% |
 
 | Etapa | TTFT mediana | Total mediana | Tokens/s | Tokens de salida |
 |---|---|---|---|---|
-| VisionPsy Flash, transcripción | 1,07 s | 1,80 s | 173 | 95 |
-| Qwen3 4B, veredicto con esquema | 1,75 s | 6,59 s | 35 | 166 |
+| VisionPsy Flash, transcripción | 1,10 s | 1,89 s | 156 | 94 |
+| Búsqueda en la política (EmbeddingGemma, vector store del SDK) | — | 32 ms | — | — |
+| Qwen3 4B, veredicto con esquema y política | 2,38 s | 5,63 s | 33 | 102 |
 
-Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 120 capturas.
+Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 120 capturas. La corrida anterior, sin urgencia tolerante a la transcripción ni política como contexto, daba 92,5 % de exactitud y 1 de 8 en la clase sospechosa; está en el historial del repositorio.
 
 **Límites y manejo de riesgo, con honestidad.**
-- La transcripción de VisionPsy tiene errores de caracteres (CER medio del 37 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave, no sobre el texto exacto.
-- La clase «sospechoso» (solo presión de tiempo, sin otra señal) se detecta mal: 1 de 8. El modelo pequeño transcribe mal frases como «último aviso» y la regla no dispara. Es el siguiente ajuste.
-- En correos largos con dominio oficial, VisionPsy a veces transcribe mal el dominio y las reglas lo ven «parecido al oficial»: 1 falso positivo de 48 legítimos en esta corrida. El contraste con el OCR determinista, solo cuando un dominio queda a uno o dos caracteres del oficial, está previsto para reducirlo.
+- La transcripción de VisionPsy tiene errores de caracteres (CER medio del 25,1 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave con tolerancia a errores, no sobre el texto exacto.
+- Fallos de esta corrida, 5 de 120: fraude-ejecutivo_whatsapp-06: esperado fraude, obtenido sin_senales; fraude-pide_codigo-05: esperado fraude, obtenido sin_senales; legitimo-correo_estado_cuenta-03: esperado sin_senales, obtenido fraude; legitimo-correo_estado_cuenta-06: esperado sin_senales, obtenido fraude; legitimo-recordatorio_pago-06: esperado sin_senales, obtenido sospechoso. Los dos fraudes que pasan como sin señales son mensajes que solo piden el código y cuya frase clave llegó mal transcrita; los legítimos marcados como fraude son correos largos con el dominio oficial mal transcrito. El contraste con el OCR determinista, solo cuando un dominio queda a uno o dos caracteres del oficial, es el siguiente paso para reducirlos.
 - La app nunca dice «seguro». Ante la duda, muestra el canal oficial y pide llamar al número impreso en la tarjeta.
 
 ## Para el desafío general
