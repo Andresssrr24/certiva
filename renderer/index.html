@@ -9,27 +9,53 @@
 <body>
   <header class="barra">
     <div class="marca">Anti-fraude <span>QVAC</span></div>
-    <div class="red" id="red">Conexiones salientes: <b>0</b> · inferencia local</div>
+    <nav class="tabs" role="tablist">
+      <button class="tab activa" data-tab="cliente" role="tab">Cliente</button>
+      <button class="tab" data-tab="banco" role="tab">Modo banco</button>
+    </nav>
+    <div class="red" id="red" title="Conexiones TCP establecidas del proceso y sus hijos, medidas con lsof"><span class="punto"></span>Conexiones a la nube: <b id="redNube">…</b></div>
     <div class="estado" id="estado">listo</div>
   </header>
-  <main class="cuerpo">
+
+  <main class="cuerpo" id="vistaCliente">
     <section class="izq">
       <div class="zona" id="zona">
-        <p><strong>Arrastra una captura</strong> de un mensaje sospechoso, o</p>
+        <p class="grande">Arrastra la captura de un mensaje sospechoso</p>
+        <p class="mini">o</p>
         <button id="elegir">Elegir captura…</button>
-        <p class="mini">Nada sale de este equipo. La captura se analiza aquí y no se guarda.</p>
+        <p class="mini">Se analiza en este equipo. La captura no se guarda ni sale de aquí.</p>
       </div>
       <div class="demo">
-        <label for="demoSel">Capturas de la demo (banco ficticio)</label>
-        <select id="demoSel"><option value="">— elegir —</option></select>
-        <button id="demoBtn" class="sec">Analizar</button>
+        <label for="demoSel">Capturas de la demo · banco ficticio</label>
+        <div class="fila">
+          <select id="demoSel"><option value="">— elegir —</option></select>
+          <button id="demoBtn" class="sec">Analizar</button>
+        </div>
       </div>
-      <img id="vista" alt="" hidden>
+      <figure class="vista" id="figura" hidden><img id="vista" alt="Captura analizada"></figure>
     </section>
-    <section class="der" id="resultado">
-      <div class="vacio">El veredicto aparece aquí, con sus razones y qué hacer.</div>
+
+    <section class="der">
+      <div id="resultado"><div class="vacio">
+        <p class="grande">El veredicto aparece aquí, con sus razones y qué hacer.</p>
+        <p>Primero un modelo de visión de 460 millones de parámetros lee la captura. Luego las reglas del banco buscan señales. Al final un modelo de texto explica el veredicto. Todo aquí, sin internet.</p>
+      </div></div>
+      <div class="historial" id="historial" hidden>
+        <h3>Analizados en esta sesión</h3>
+        <ul id="historialLista"></ul>
+      </div>
     </section>
   </main>
+
+  <main class="cuerpo banco" id="vistaBanco" hidden>
+    <section class="der ancho">
+      <h2>Radar del equipo de fraude</h2>
+      <p class="mini">Indicadores reportados por los clientes. Solo llegan hashes del remitente, del número o del dominio: nunca el mensaje. La fase 2 los comparte entre pares con Hyperswarm.</p>
+      <div class="kpis" id="kpis"></div>
+      <div class="table-wrap"><table id="tablaReportes"><thead><tr><th>Cuándo</th><th>Tipo</th><th>Indicador (hash)</th><th>Origen</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </main>
+
   <footer class="pie">
     <span id="modelos">VisionPsy Nano 460M Flash · Qwen3 4B · local</span>
     <span id="tiempos"></span>

@@ -9,6 +9,7 @@ const { Motor } = require("./lib/analizar");
 const modelos = require("./lib/modelos");
 const reglas = require("./lib/reglas");
 const perf = require("./lib/perf");
+const red = require("./lib/red");
 
 app.setName("Anti-fraude QVAC");
 // Dos apps QVAC a la vez se quedan colgadas en el worker compartido de ~/.qvac. El candado es obligatorio.
@@ -17,8 +18,12 @@ if (!app.requestSingleInstanceLock()) app.exit(0);
 let win = null;
 let ocupado = false;
 const motor = new Motor();
-const historial = []; // veredictos de esta sesión, en memoria: nada se guarda en disco
-const reportes = [];  // indicadores reportados por el usuario (hash, tipo, ts). Base del modo banco.
+const historial = []; // veredictos de esta sesión, en memoria: el mensaje nunca se guarda en disco
+let reportes = [];    // indicadores reportados por el usuario (hash, tipo, ts). Solo hashes, nunca el mensaje.
+
+function rutaReportes() { return path.join(app.getPath("userData"), "reportes.json"); }
+function cargarReportes() { try { reportes = JSON.parse(fs.readFileSync(rutaReportes(), "utf8")); } catch { reportes = []; } }
+function guardarReportes() { try { fs.mkdirSync(path.dirname(rutaReportes()), { recursive: true }); fs.writeFileSync(rutaReportes(), JSON.stringify(reportes, null, 2)); } catch { /* nunca rompe la app */ } }
 
 function enviar(canal, carga) { if (win && !win.isDestroyed()) win.webContents.send(canal, carga); }
 motor.onProgress = (p) => enviar("progreso-modelo", p);
@@ -78,10 +83,29 @@ ipcMain.handle("reportar", (_e, { captura }) => {
   for (const t of captura.telefonos || []) nuevos.push({ tipo: "numero", hash: crypto.createHash("sha256").update(String(t).replace(/\D/g, "")).digest("hex").slice(0, 16), ts: Date.now(), origen: "local" });
   if (captura.remitente) nuevos.push({ tipo: "remitente", hash: crypto.createHash("sha256").update(String(captura.remitente).toLowerCase()).digest("hex").slice(0, 16), ts: Date.now(), origen: "local" });
   reportes.push(...nuevos);
+  guardarReportes();
   return reportes;
 });
 
+// Conexiones salientes del árbol de procesos: la prueba de que nada va a la nube.
+ipcMain.handle("red", () => red.conexiones(process.pid));
+
+// Para verificar la interfaz sin manos: con DEMO_AUTO=<id> analiza esa captura al abrir y guarda una imagen de la ventana.
+async function demoAutomatica() {
+  const id = process.env.DEMO_AUTO;
+  if (!id || !win) return;
+  const ruta = path.join(__dirname, "data", "capturas", `${id}.png`);
+  await new Promise((r) => setTimeout(r, 1500));
+  win.webContents.send("demo-auto", ruta);
+  const salida = process.env.DEMO_CAPTURA;
+  if (salida) {
+    await new Promise((r) => setTimeout(r, Number(process.env.DEMO_ESPERA_MS || 25000)));
+    try { const img = await win.webContents.capturePage(); fs.writeFileSync(salida, img.toPNG()); console.log("captura de la ventana en", salida); } catch (e) { console.error("no se pudo capturar", e.message); }
+    if (process.env.DEMO_SALIR) { await motor.descargarTodo(); app.exit(0); }
+  }
+}
+
 ipcMain.handle("descargar-modelos-memoria", async () => { await motor.descargarTodo(); return true; });
 
-app.whenReady().then(crearVentana);
+app.whenReady().then(() => { cargarReportes(); crearVentana(); win.webContents.once("did-finish-load", () => { demoAutomatica().catch(() => {}); }); });
 app.on("window-all-closed", async () => { try { await motor.descargarTodo(); } catch { /* */ } app.quit(); });

@@ -11,9 +11,10 @@ contextBridge.exposeInMainWorld("escudo", {
   analizar: (ruta) => ipcRenderer.invoke("analizar", ruta),
   reportar: (captura) => ipcRenderer.invoke("reportar", { captura }),
   liberarModelos: () => ipcRenderer.invoke("descargar-modelos-memoria"),
+  red: () => ipcRenderer.invoke("red"),
   rutaDeArchivo: (file) => { try { return webUtils.getPathForFile(file); } catch { return null; } },
   on: (canal, cb) => {
-    const permitidos = ["ocupado", "progreso-modelo", "progreso-descarga"];
+    const permitidos = ["ocupado", "progreso-modelo", "progreso-descarga", "demo-auto"];
     if (!permitidos.includes(canal)) return () => {};
     const h = (_e, carga) => cb(carga);
     ipcRenderer.on(canal, h);

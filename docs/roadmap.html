@@ -159,7 +159,7 @@
       <li><input type="checkbox" id="p1-4"><label for="p1-4"><span class="tag a">App</span>Pantalla de veredicto: chip, evidencias, qué hacer, canal oficial y el tiempo al primer token visible. Botón «reportar» aunque todavía no haga nada.</label></li>
       <li><input type="checkbox" id="p1-5"><label for="p1-5"><span class="tag a">App</span>Indicador de red en la barra: contador de conexiones salientes que debe decir cero durante la demo.</label></li>
     </ul>
-    <p class="done-when"><strong>Listo cuando:</strong> cinco capturas de fraude y cinco legítimas pasan por la interfaz con veredicto correcto en menos de diez segundos cada una.</p>
+    <p class="done-when"><strong>Listo cuando:</strong> cinco capturas de fraude y cinco legítimas pasan por la interfaz con veredicto correcto en menos de diez segundos cada una. <strong>Estado a las 09:00:</strong> evaluación sobre 120 capturas con 92,5 % de exactitud, 96,9 % de precisión y 98,4 % de exhaustividad en fraude; veredicto completo en 6 a 8 s; pantalla de veredicto, historial, contador de conexiones y modo banco en la app.</p>
     <p class="cut"><strong>Decisión tomada a las 08:30 con evidencia:</strong> VisionPsy con esquema de ocho campos inventa; VisionPsy en transcripción libre más reglas deterministas acierta 15 de 15 en la muestra con 1,3 s al primer token, y el OCR clásico tarda 16 s. El lector es VisionPsy transcribiendo. Detalle y tabla en el README. Trampa evitable: Electron guarda el zoom entre ejecuciones y las capturas salían cortadas; ya está fijo en 1.</p>
   </section>
 
@@ -206,6 +206,26 @@
       <li><input type="checkbox" id="p4-4"><label for="p4-4"><span class="tag t">Todos</span>El capitán entrega en Dojo antes de las 07:00 con los tres tracks marcados y guarda una captura de la confirmación.</label></li>
     </ul>
     <p class="done-when"><strong>Listo cuando:</strong> la entrega aparece en Dojo y el capitán tiene la captura.</p>
+  </section>
+
+  <section>
+    <h2>Stack y arquitectura, decididos el 10 a las 08:45</h2>
+    <p>Un solo proceso por máquina es dueño de los modelos: dos procesos de QVAC en la misma máquina se bloquean en el worker compartido. Todo lo que decide es JavaScript puro que corre donde sea.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Capa</th><th>Decisión</th><th>Alternativa descartada y por qué</th></tr></thead>
+        <tbody>
+          <tr><td>Cascarón</td><td>Electron: motor en el proceso principal, interfaz en el renderer. Es la demo y el modo banco.</td><td>Web en la misma Wi-Fi: medio día para un relato que el jurado técnico cuestiona. Expo en Android: solo con cuarta persona, spike de dos horas y se cierra si no carga.</td></tr>
+          <tr><td>Lector</td><td>VisionPsy Flash transcribe; <code>lib/lector.derivar</code> saca los campos por reglas.</td><td>VisionPsy con esquema de ocho campos inventa. OCR clásico tarda 16 s.</td></tr>
+          <tr><td>Veredicto</td><td>Qwen3 4B con esquema corto: veredicto, confianza, una señal adicional, acción y canal. La app une las señales de las reglas.</td><td>Pedirle al modelo que repita las evidencias doblaba el tiempo.</td></tr>
+          <tr><td>Interfaz</td><td>HTML y JavaScript sin framework, fuentes del sistema, mismo sistema visual de estas páginas.</td><td>React con Vite: un build más y el jurado ve el video, no el código.</td></tr>
+          <tr><td>Modo llamada</td><td>Primero por lotes de cinco segundos con <code>transcribe()</code>; en vivo con <code>transcribeStream()</code> si sobra tarde.</td><td>Empezar por el vivo: API por descubrir en el peor momento.</td></tr>
+          <tr><td>Pares</td><td>Hyperswarm con gossip de hashes; el radar es el mismo código sin modelos.</td><td>Hypercore o Autobase: horas sin puntos. App nativa de Pear: el SDK no lo documenta.</td></tr>
+          <tr><td>Datos</td><td>Memoria y un JSON en la carpeta de la app para reportes.</td><td>Base de datos: ni tiempo ni necesidad.</td></tr>
+          <tr><td>Prueba de soberanía</td><td>Contador de conexiones a la nube con <code>lsof</code> sobre el árbol de procesos, visible en la barra.</td><td>Decirlo sin medirlo. Ojo: los pares sí abren conexiones; la frase es «cero a la nube».</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <section>
