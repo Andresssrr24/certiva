@@ -28,10 +28,13 @@ function cer(a, b) { // tasa de error de caracteres, Levenshtein normalizada
   let cerTotal = 0, legibles = 0;
   const conf = {};
   const porClase = {};
+  const errores = [];
   const t0 = Date.now();
   for (const id of ids) {
     const v = verdad[id];
-    const r = await motor.analizar(path.join(dir, `${id}.png`));
+    let r;
+    try { r = await motor.analizar(path.join(dir, `${id}.png`)); }
+    catch (err) { r = { ok: false, etapa: "error", detalle: String(err && err.message || err).slice(0, 200) }; errores.push({ id, error: r.detalle }); }
     const esp = v.esperado.veredicto;
     const obt = r.ok ? ((r.veredicto && r.veredicto.veredicto) || r.veredicto_reglas) : "no_legible";
     conf[esp] = conf[esp] || {}; conf[esp][obt] = (conf[esp][obt] || 0) + 1;
@@ -83,6 +86,8 @@ function cer(a, b) { // tasa de error de caracteres, Levenshtein normalizada
     ``, `Registro por llamada: \`eval/perf.jsonl\`.`, ``,
     `## Fallos`, ``,
     ...filas.filter((f) => !f.ok).map((f) => `- ${f.id}: esperado ${f.esperado}, obtenido ${f.obtenido}`),
+    ``, `## Errores de ejecución (${errores.length})`, ``,
+    ...errores.map((e) => `- ${e.id}: ${e.error}`),
   ].join("\n");
   fs.writeFileSync(path.join(__dirname, "results.md"), md);
   fs.writeFileSync(path.join(__dirname, "results.json"), JSON.stringify(filas, null, 2));
