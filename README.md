@@ -1,6 +1,6 @@
 # Anti-fraude en el dispositivo · Hackatón QVAC · ISD Summit 2026
 
-> Nombre del proyecto pendiente. Repositorio provisional: https://github.com/Andresssrr24/antifraude-qvac (privado hasta la entrega). Este README se completa durante el hackatón; las secciones marcadas **(pendiente)** se llenan antes de la entrega.
+> Nombre del proyecto pendiente. Repositorio provisional: https://github.com/Andresssrr24/antifraude-qvac (privado hasta la entrega).
 
 Lee capturas de mensajes sospechosos y llamadas en vivo **en el teléfono del cliente**, con modelos locales de QVAC, y dice si es fraude, por qué y qué hacer. Ni el mensaje ni la llamada salen del dispositivo. Los indicadores confirmados se comparten entre pares sin servidor.
 
@@ -76,6 +76,8 @@ Decisiones de diseño: sin framework, fuentes del sistema para funcionar sin int
 
 ## Cómo probarlo tú mismo
 
+La guía completa, con solución de problemas, está en [docs/COMO-PROBAR.md](docs/COMO-PROBAR.md).
+
 Todo corre en el MacBook. Dos procesos de QVAC a la vez se bloquean en el worker compartido, así que cierra cualquier script del proyecto antes de abrir la app, y al revés.
 
 1. **Preparar una vez**, con internet: `npm install`, `node node_modules/electron/install.js` si no bajó Electron, y `npm run modelos`. Si el registro P2P del SDK se cae a mitad de Qwen3 4B, `node scripts/importar-modelo.js QWEN3_4B_INST_Q4_K_M <archivo .gguf bajado por HTTP>` lo importa validando el checksum.
@@ -91,9 +93,15 @@ Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector p
 
 Ningún dato real. El audio de la llamada de vishing de la demo, `data/audio/llamada-vishing.wav`, es sintético: lo genera `data/generar-llamada.js` con las voces del sistema de macOS a partir del guion de `data/llamada-vishing.md`. Nadie fue grabado. Medido en el M4: cada lote de cinco segundos se transcribe en unos 150 ms, y la llamada completa de 45 s se procesa en unos 10 s con carga del modelo incluida. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
 
-## Para el jurado de la Caja de Ahorros **(pendiente)**
+## Para el jurado de la Caja de Ahorros
 
-Aplicabilidad, integración como función de la app del banco, modo sucursal, radar para el equipo de fraude, y por qué lo local es la ventaja.
+**Aplicabilidad.** Es una función para la app del banco, no un producto aparte: «Verificar un mensaje» y «Verificar una llamada» dentro de la app que el cliente ya tiene. El mismo motor sirve en modo sucursal, para el cajero que recibe «¿este correo es de ustedes?». El radar le da al equipo de fraude las campañas contra la marca a medida que aparecen, con solo hashes.
+
+**Lo local como ventaja, no como restricción.** Los mensajes y las llamadas privadas del cliente nunca llegan al banco ni a un proveedor, así que el banco no se vuelve custodio de datos que no quiere tener. El costo de inferencia por verificación es cero a cualquier escala. Funciona sin plan de datos, que es la realidad de muchos clientes. Y la trazabilidad que pide el regulador sale de los reportes, no de los mensajes.
+
+**Demostración.** Cuatro ejemplos con un clic, la llamada con el «Cuelga» en vivo, el reporte que llega a otro equipo por pares, y el contador de conexiones a la nube en cero durante toda la demo.
+
+**Piloto propuesto.** Noventa días con el equipo de fraude y un grupo de clientes, midiendo tres cosas: mensajes verificados, campañas detectadas antes que el centro de llamadas, y llamadas al centro evitadas.
 
 ## Para el reto QVAC Psy
 
@@ -125,9 +133,15 @@ Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Ce
 - En correos largos con dominio oficial, VisionPsy a veces transcribe mal el dominio y las reglas lo ven «parecido al oficial»: 1 falso positivo de 48 legítimos en esta corrida. El contraste con el OCR determinista, solo cuando un dominio queda a uno o dos caracteres del oficial, está previsto para reducirlo.
 - La app nunca dice «seguro». Ante la duda, muestra el canal oficial y pide llamar al número impreso en la tarjeta.
 
-## Para el desafío general **(pendiente)**
+## Para el desafío general
 
-Problema, impacto con cifras de la SBP, innovación, uso de pares.
+**Problema.** Según los reportes de los bancos a la Superintendencia de Bancos de Panamá, en 2025 hubo intentos de fraude por canales electrónicos por unos 150 millones de dólares y fraudes materializados por unos 21 millones; el sector habla de siete panameños estafados al día, y el regulador alertó sobre esquemas que usan el nombre y el logo de los bancos. La víctima típica es una persona mayor con un mensaje o una llamada que la presiona.
+
+**Por qué en el dispositivo.** La nube no debería llegar a los mensajes privados de nadie. La captura de pantalla es la única entrada universal a los mensajes de otras apps, y leerla exige un modelo de visión que quepa en un teléfono: VisionPsy Nano 460M. Todo lo demás, reglas, veredicto, transcripción de llamadas y política del banco, corre en el mismo equipo.
+
+**Innovación.** La detección en vivo dentro de una llamada, con el aviso en el instante en que el estafador pide el código. Y la inmunidad colectiva por pares: un cliente reporta y los demás lo saben sin servidor, con Hyperswarm, el enjambre de Pear.
+
+**Evidencia.** Evaluación reproducible sobre 120 capturas sintéticas con verdad conocida, registro de rendimiento por llamada al modelo, y una comparación honesta de tres lectores que dejó a VisionPsy transcribiendo y a las reglas derivando los campos.
 
 ## Seguridad y límites
 
@@ -135,7 +149,11 @@ Problema, impacto con cifras de la SBP, innovación, uso de pares.
 - Nada se guarda ni sale del teléfono salvo que el usuario reporte, y el reporte lleva indicadores, no el mensaje.
 - Puede fallar con tácticas nuevas. Ante la duda, llamar al número oficial impreso en la tarjeta.
 
-## Modelo de negocio **(pendiente)**
+## Modelo de negocio
+
+Lo que se vende es un módulo que el banco embebe en su app, con una consola para el equipo de fraude que corre dentro de la infraestructura del banco, y una app de marca blanca para cooperativas y financieras, que en Panamá son cientos y no tienen presupuesto de seguridad. Lo local es el argumento económico: costo de inferencia cero por verificación, y ningún dato del cliente en manos de un proveedor. La consola del banco, multiusuario y con histórico de campañas, es el producto que se construye después del hackatón con un stack web convencional; este repositorio es el motor local que la alimenta. La propiedad intelectual queda en el equipo, como establece el reto de la Caja.
+
+Precios de partida, sin validar: para un banco, un pago inicial de integración y una mensualidad por tramo de clientes activos; para una cooperativa, una mensualidad baja por la app de marca blanca.
 
 ## Licencia
 
