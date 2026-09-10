@@ -30,12 +30,15 @@ function cer(a, b) {
 
 (async () => {
   const max = Number(process.argv[2]) || Infinity;
+  // --solo <texto> evalúa solo las capturas cuyo id contiene ese texto, para corridas cortas de una clase.
+  const soloI = process.argv.indexOf("--solo");
+  const solo = soloI >= 0 ? process.argv[soloI + 1] : null;
   const dir = path.join(__dirname, "..", "data", "capturas");
   const ids = fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".png"))
     .map((f) => f.replace(/\.png$/, ""))
-    .filter((id) => verdad[id])
+    .filter((id) => verdad[id] && (!solo || id.includes(solo)))
     .sort()
     .slice(0, max);
   if (!ids.length) throw new Error("No hay capturas con verdad. Corre: npm run datos");
