@@ -1,6 +1,6 @@
 # Anti-fraude en el dispositivo · Hackatón QVAC · ISD Summit 2026
 
-> Nombre del proyecto pendiente. Este README se completa durante el hackatón; las secciones marcadas **(pendiente)** se llenan antes de la entrega.
+> Nombre del proyecto pendiente. Repositorio provisional: https://github.com/Andresssrr24/antifraude-qvac (privado hasta la entrega). Este README se completa durante el hackatón; las secciones marcadas **(pendiente)** se llenan antes de la entrega.
 
 Lee capturas de mensajes sospechosos y llamadas en vivo **en el teléfono del cliente**, con modelos locales de QVAC, y dice si es fraude, por qué y qué hacer. Ni el mensaje ni la llamada salen del dispositivo. Los indicadores confirmados se comparten entre pares sin servidor.
 
@@ -31,11 +31,13 @@ Hardware de desarrollo y demo: MacBook con Apple M4 y 16 GB de RAM, macOS. SDK `
 node -v                    # 22.17 o más
 npx -y @qvac/cli doctor    # GPU, memoria, disco
 npm install
+node node_modules/electron/install.js   # si npm install no bajó el binario de Electron (pasa en redes lentas)
 npm run modelos            # descarga los modelos a ~/.qvac/models (una vez, con internet)
 npm run datos              # genera los mensajes sintéticos y renderiza las capturas
 npm run prueba             # apaga el Wi-Fi primero: captura -> extracción -> reglas -> veredicto
 npm start                  # la app
-npm run eval               # métricas sobre el set sintético (pendiente)
+npm run eval               # métricas sobre el set sintético -> eval/results.md
+node eval/reglas-check.js  # chequeo de las reglas sin modelos
 ```
 
 Después de descargar los modelos, todo funciona sin red. El registro de rendimiento se escribe en `eval/perf.jsonl`.
