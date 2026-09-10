@@ -11,6 +11,7 @@ const modelos = require("./lib/modelos");
 const reglas = require("./lib/reglas");
 const perf = require("./lib/perf");
 const red = require("./lib/red");
+const { fork } = require("node:child_process");
 
 app.setName("Anti-fraude QVAC");
 // Dos apps QVAC a la vez se quedan colgadas en el worker compartido de ~/.qvac. El candado es obligatorio.
@@ -23,6 +24,82 @@ const llamada = new Llamada({ motor });
 let llamadaEnCurso = false;
 const historial = []; // veredictos de esta sesión, en memoria: el mensaje nunca se guarda en disco
 let reportes = []; // indicadores reportados por el usuario (hash, tipo, ts). Solo hashes, nunca el mensaje.
+
+// ---------------------------------------------------------------- pares (proceso hijo)
+let pares = null;
+let paresEstado = { nodo: null, pares: 0, indicadores: 0 };
+const paresLog = [];
+const indicadoresPares = new Map(); // "tipo:hash" -> { tipo, hash, ts, nodo, vecinos }
+function arrancarPares() {
+  if (process.env.PARES !== "0") {
+    try {
+      pares = fork(path.join(__dirname, "scripts", "pares-worker.js"), [], {
+        env: { ...process.env, PARES_NODO: process.env.PARES_NODO || "" },
+        silent: true,
+      });
+    } catch (e) {
+      paresLog.push(`no arrancó: ${e.message}`);
+      return;
+    }
+    pares.on("message", (m) => {
+      if (!m) return;
+      if (m.tipo === "estado") {
+        paresEstado = m.estado;
+        enviar("pares-estado", paresEstado);
+      }
+      if (m.tipo === "log") {
+        paresLog.push(`${new Date().toLocaleTimeString("es-PA")} ${m.linea}`);
+        if (paresLog.length > 200) paresLog.shift();
+        enviar("pares-log", m.linea);
+      }
+      if (m.tipo === "indicador" && m.ind) {
+        indicadoresPares.set(`${m.ind.tipo}:${m.ind.hash}`, m.ind);
+        reportes.push({
+          tipo: m.ind.tipo,
+          hash: m.ind.hash,
+          ts: m.ind.ts || Date.now(),
+          origen: `par ${String(m.ind.nodo || "").slice(0, 6)}`,
+        });
+        guardarReportes();
+        enviar("pares-indicador", m.ind);
+      }
+    });
+    pares.on("exit", () => {
+      pares = null;
+      paresEstado = { ...paresEstado, pares: 0 };
+      enviar("pares-estado", paresEstado);
+    });
+  }
+}
+function paresPid() {
+  return pares && pares.pid ? [pares.pid] : [];
+}
+function hashInd(v) {
+  return require("node:crypto").createHash("sha256").update(String(v)).digest("hex").slice(0, 16);
+}
+// Indicadores de una captura, para saber si otros clientes ya reportaron el mismo remitente, número o dominio.
+function indicadoresDe(captura) {
+  const out = [];
+  for (const enlace of captura.enlaces || []) {
+    const d = reglas.dominioDe(enlace);
+    if (d) out.push({ tipo: "dominio", hash: hashInd(d), valor: d });
+  }
+  for (const t of captura.telefonos || [])
+    out.push({ tipo: "numero", hash: hashInd(String(t).replace(/\D/g, "")), valor: t });
+  if (captura.remitente)
+    out.push({ tipo: "remitente", hash: hashInd(String(captura.remitente).toLowerCase()), valor: captura.remitente });
+  return out;
+}
+function vecinosDe(captura) {
+  return indicadoresDe(captura)
+    .map((i) => ({
+      ...i,
+      vecinos: indicadoresPares.has(`${i.tipo}:${i.hash}`)
+        ? indicadoresPares.get(`${i.tipo}:${i.hash}`).vecinos || 1
+        : 0,
+    }))
+    .filter((i) => i.vecinos > 0);
+}
 
 function rutaReportes() {
   return path.join(app.getPath("userData"), "reportes.json");
@@ -72,6 +149,7 @@ function crearVentana() {
 
 ipcMain.handle("estado", async () => ({
   ocupado,
+  pares: paresEstado,
   banco: motor.banco,
   historial,
   reportes,
@@ -122,7 +200,7 @@ ipcMain.handle("analizar", async (_e, ruta) => {
   enviar("ocupado", true);
   try {
     const r = await motor.analizar(ruta, { onEtapa: (e) => enviar("analisis-etapa", e) });
-    const item = { ruta, ts: Date.now(), ...r };
+    const item = { ruta, ts: Date.now(), ...r, vecinos: r.ok ? vecinosDe(r.captura) : [] };
     historial.unshift(item);
     return item;
   } finally {
@@ -161,8 +239,13 @@ ipcMain.handle("reportar", (_e, { captura }) => {
     });
   reportes.push(...nuevos);
   guardarReportes();
+  if (pares) for (const n of nuevos) pares.send({ tipo: "publicar", ind: { tipo: n.tipo, hash: n.hash, ts: n.ts } });
   return reportes;
 });
+
+ipcMain.handle("vecinos", (_e, captura) => (captura ? vecinosDe(captura) : []));
+
+ipcMain.handle("pares", () => ({ estado: paresEstado, log: paresLog.slice(-30), pid: paresPid()[0] || null }));
 
 // ---------------------------------------------------------------- modo llamada
 ipcMain.handle("llamada-demo", () => path.join(__dirname, "data", "audio", "llamada-vishing.wav"));
@@ -206,7 +289,7 @@ ipcMain.handle("llamada-detener", () => {
 });
 
 // Conexiones salientes del árbol de procesos: la prueba de que nada va a la nube.
-ipcMain.handle("red", () => red.conexiones(process.pid));
+ipcMain.handle("red", () => red.conexiones(process.pid, { pares: paresPid() }));
 
 // Para verificar la interfaz sin manos: con DEMO_AUTO=<id> el renderer pide la captura al iniciar y la analiza;
 // con DEMO_CAPTURA=<ruta> se guarda una imagen de la ventana pasados DEMO_ESPERA_MS.
@@ -240,12 +323,20 @@ ipcMain.handle("descargar-modelos-memoria", async () => {
 
 app.whenReady().then(() => {
   cargarReportes();
+  arrancarPares();
   crearVentana();
   win.webContents.once("did-finish-load", () => {
     demoAutomatica().catch(() => {});
   });
 });
 app.on("window-all-closed", async () => {
+  if (pares) {
+    try {
+      pares.send({ tipo: "cerrar" });
+    } catch {
+      /* */
+    }
+  }
   try {
     await llamada.descargar();
     await motor.descargarTodo();

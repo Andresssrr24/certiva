@@ -124,6 +124,7 @@ function pintaTelefono(r) {
     .join("");
   $("#tConsejo").textContent =
     v.accion || "Ante la duda, no toques el enlace y llama al número oficial impreso en tu tarjeta.";
+  pintaVecinos(r.vecinos || []);
   $("#tReportar").disabled = false;
   $("#tReportar").textContent = "Reportar este mensaje";
   $("#tReportar").onclick = async () => {
@@ -134,6 +135,21 @@ function pintaTelefono(r) {
   };
   pantalla("veredicto");
 }
+const NOMBRE_IND = { dominio: "esta dirección web", numero: "este número", remitente: "este remitente" };
+function pintaVecinos(vecinos) {
+  const el = $("#tVecinos");
+  if (!vecinos.length) {
+    el.hidden = true;
+    return;
+  }
+  const v = vecinos.sort((a, b) => b.vecinos - a.vecinos)[0];
+  el.hidden = false;
+  el.textContent =
+    v.vecinos === 1
+      ? `Otro cliente ya reportó ${NOMBRE_IND[v.tipo] || v.tipo}.`
+      : `${v.vecinos} clientes ya reportaron ${NOMBRE_IND[v.tipo] || v.tipo}.`;
+}
+let ultimoAnalisis = null;
 function pintaTecnico(r) {
   const v = r.veredicto || {};
   const senales = (v.senales && v.senales.length ? v.senales : r.senales) || [];
@@ -180,6 +196,7 @@ async function analizar(ruta) {
     const r = await window.escudo.analizar(ruta);
     r.nombre = ruta.split("/").pop();
     sesion.unshift(r);
+    ultimoAnalisis = r;
     pintaHistorial();
     pintaTelefono(r);
     pintaTecnico(r);
@@ -334,6 +351,12 @@ for (const t of document.querySelectorAll(".tab")) {
     escalar();
   };
 }
+function pintaPares(estado, log) {
+  const e = estado || {};
+  $("#paresEstado").innerHTML =
+    `<span>Pares conectados: <b>${e.pares ?? 0}</b></span><span>Indicadores conocidos: <b>${e.indicadores ?? 0}</b></span><span>Este nodo: <b>${esc(String(e.nodo || "—").slice(0, 8))}</b></span>`;
+  if (log) $("#paresLog").textContent = log.join("\n");
+}
 function pintaBanco(reps) {
   const porTipo = {};
   for (const r of reps) porTipo[r.tipo] = (porTipo[r.tipo] || 0) + 1;
@@ -368,6 +391,7 @@ async function medirRed() {
       return;
     }
     n.textContent = String(r.nube);
+    $("#redPares").textContent = String(r.pares ?? 0);
     el.classList.toggle("alerta", r.nube > 0);
     el.title = r.detalle.length
       ? r.detalle.map((d) => `${d.proceso} → ${d.destino}${d.local ? " (local)" : ""}`).join("\n")
@@ -393,6 +417,28 @@ async function medirRed() {
   $("#modelos").textContent =
     `VisionPsy Nano 460M Flash · Qwen3 4B · Parakeet TDT · SDK ${st.sdk} · ${st.hardware.cpu}, ${st.hardware.ram_gb} GB · inferencia local`;
   pintaBanco(st.reportes || []);
+  pintaPares(st.pares, []);
+  try {
+    const pp = await window.escudo.pares();
+    pintaPares(pp.estado, pp.log);
+  } catch {
+    /* sin pares */
+  }
+  window.escudo.on("pares-estado", (e) => pintaPares(e));
+  window.escudo.on("pares-log", (l) => {
+    const pre = $("#paresLog");
+    pre.textContent = `${pre.textContent}\n${l}`.trim();
+  });
+  window.escudo.on("pares-indicador", async () => {
+    const st2 = await window.escudo.estado();
+    pintaBanco(st2.reportes || []);
+    pintaPares(st2.pares);
+    if (ultimoAnalisis?.ok) {
+      const r2 = await window.escudo.analizarVecinos(ultimoAnalisis.captura);
+      ultimoAnalisis.vecinos = r2;
+      if (!$('[data-p="veredicto"]').hidden) pintaVecinos(r2);
+    }
+  });
   medirRed();
   setInterval(medirRed, 3000);
   const auto = await window.escudo.demoAuto();

@@ -880,3 +880,35 @@ td {
   font-size: 0.7rem;
   color: var(--muted);
 }
+
+/* pares */
+.red .sep {
+  margin: 0 0.2rem;
+  opacity: 0.6;
+}
+.red b.pares {
+  color: var(--accent);
+}
+.vecinos {
+  background: var(--twarn-soft);
+  color: var(--twarn);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.pares-estado {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.pares-estado b {
+  color: var(--accent);
+}
+.pares-log pre {
+  max-height: 9rem;
+}

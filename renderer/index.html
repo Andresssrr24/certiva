@@ -13,7 +13,7 @@
       <button type="button" class="tab activa" data-tab="cliente" role="tab" aria-selected="true">Cliente</button>
       <button type="button" class="tab" data-tab="banco" role="tab" aria-selected="false">Modo banco</button>
     </div>
-    <div class="red" id="red" title="Conexiones TCP establecidas del proceso y sus hijos, medidas con lsof"><span class="punto"></span>Conexiones a la nube: <b id="redNube">…</b></div>
+    <div class="red" id="red" title="Conexiones TCP establecidas, medidas con lsof sobre el árbol de procesos"><span class="punto"></span>Nube: <b id="redNube">…</b><span class="sep">·</span>Pares: <b id="redPares" class="pares">…</b></div>
     <div class="estado" id="estado" aria-live="polite">listo</div>
   </header>
 
@@ -48,6 +48,7 @@
                 <div class="tchip" id="tChip"></div>
                 <p class="tresumen" id="tResumen"></p>
                 <ul class="razones" id="tRazones"></ul>
+                <div class="vecinos" id="tVecinos" hidden></div>
                 <div class="consejo" id="tConsejo"></div>
                 <button type="button" class="tbtn" id="tLlamar">Llamar al banco · 800-1234</button>
                 <button type="button" class="tbtn sec" id="tReportar">Reportar este mensaje</button>
@@ -102,9 +103,11 @@
   <main class="cuerpo banco" id="vistaBanco" hidden>
     <section class="der ancho">
       <h2>Radar del equipo de fraude</h2>
-      <p class="mini">Indicadores reportados por los clientes. Solo llegan hashes del remitente, del número o del dominio: nunca el mensaje. La fase 2 los comparte entre pares con Hyperswarm.</p>
+      <p class="mini">Indicadores reportados por los clientes de este equipo y de los pares conectados. Solo viajan hashes del remitente, del número o del dominio: nunca el mensaje.</p>
+      <div class="pares-estado" id="paresEstado"></div>
       <div class="kpis" id="kpis"></div>
-      <div class="table-wrap"><table id="tablaReportes"><thead><tr><th>Cuándo</th><th>Tipo</th><th>Indicador (hash)</th><th>Origen</th></tr></thead><tbody></tbody></table></div>
+      <div class="table-wrap"><table id="tablaReportes" aria-live="polite"><thead><tr><th>Cuándo</th><th>Tipo</th><th>Indicador (hash)</th><th>Origen</th></tr></thead><tbody></tbody></table></div>
+      <details class="pares-log"><summary>Registro de la capa de pares</summary><pre id="paresLog"></pre></details>
     </section>
   </main>
 
