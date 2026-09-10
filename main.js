@@ -121,7 +121,7 @@ ipcMain.handle("analizar", async (_e, ruta) => {
   ocupado = true;
   enviar("ocupado", true);
   try {
-    const r = await motor.analizar(ruta);
+    const r = await motor.analizar(ruta, { onEtapa: (e) => enviar("analisis-etapa", e) });
     const item = { ruta, ts: Date.now(), ...r };
     historial.unshift(item);
     return item;

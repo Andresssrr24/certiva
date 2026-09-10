@@ -29,6 +29,7 @@ contextBridge.exposeInMainWorld("escudo", {
       "ocupado",
       "progreso-modelo",
       "progreso-descarga",
+      "analisis-etapa",
       "llamada-segmento",
       "llamada-alerta",
       "llamada-transcrita",
