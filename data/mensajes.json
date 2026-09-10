@@ -8,19 +8,14 @@
     "verificado": false,
     "hora": "2:37",
     "texto": "Estimado cliente de Banco Demo, detectamos un acceso desde otro dispositivo. Para evitar el bloqueo de su cuenta confirme sus datos hoy mismo en https://bancodemo-pa.app/seguridad",
-    "enlaces": [
-      "https://bancodemo-pa.app/seguridad"
-    ],
+    "enlaces": ["https://bancodemo-pa.app/seguridad"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -32,19 +27,14 @@
     "verificado": false,
     "hora": "8:48",
     "texto": "Banco Demo: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad en https://bancodem0.com/verificar antes de 24 horas o será cancelada.",
-    "enlaces": [
-      "https://bancodem0.com/verificar"
-    ],
+    "enlaces": ["https://bancodem0.com/verificar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -56,19 +46,14 @@
     "verificado": false,
     "hora": "10:05",
     "texto": "Banco Demo: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad en https://banco-demo-pa.com/verificar antes de 24 horas o será cancelada.",
-    "enlaces": [
-      "https://banco-demo-pa.com/verificar"
-    ],
+    "enlaces": ["https://banco-demo-pa.com/verificar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -80,19 +65,14 @@
     "verificado": false,
     "hora": "6:37",
     "texto": "Banco Demo: Su cuenta ha sido bloqueada por actividad inusual. Verifique su identidad en https://seguridad-bancodemo.com/verificar antes de 24 horas o será cancelada.",
-    "enlaces": [
-      "https://seguridad-bancodemo.com/verificar"
-    ],
+    "enlaces": ["https://seguridad-bancodemo.com/verificar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -104,19 +84,14 @@
     "verificado": false,
     "hora": "10:05",
     "texto": "Estimado cliente de Banco Demo, detectamos un acceso desde otro dispositivo. Para evitar el bloqueo de su cuenta confirme sus datos hoy mismo en https://banco-demo-pa.com/seguridad",
-    "enlaces": [
-      "https://banco-demo-pa.com/seguridad"
-    ],
+    "enlaces": ["https://banco-demo-pa.com/seguridad"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -128,19 +103,14 @@
     "verificado": false,
     "hora": "8:05",
     "texto": "BANCO DEMO - AVISO URGENTE: su tarjeta será suspendida. Reactívela de inmediato en https://app-bancodemo.co/reactivar",
-    "enlaces": [
-      "https://app-bancodemo.co/reactivar"
-    ],
+    "enlaces": ["https://app-bancodemo.co/reactivar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -152,19 +122,14 @@
     "verificado": false,
     "hora": "9:12",
     "texto": "BANCO DEMO - AVISO URGENTE: su tarjeta será suspendida. Reactívela de inmediato en https://app-bancodemo.co/reactivar",
-    "enlaces": [
-      "https://app-bancodemo.co/reactivar"
-    ],
+    "enlaces": ["https://app-bancodemo.co/reactivar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -176,19 +141,14 @@
     "verificado": false,
     "hora": "10:37",
     "texto": "BANCO DEMO - AVISO URGENTE: su tarjeta será suspendida. Reactívela de inmediato en https://bancodemo-seguro.com/reactivar",
-    "enlaces": [
-      "https://bancodemo-seguro.com/reactivar"
-    ],
+    "enlaces": ["https://bancodemo-seguro.com/reactivar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -200,20 +160,14 @@
     "verificado": false,
     "hora": "3:53",
     "texto": "Banco Demo: tiene un reembolso de B/. 441.99 pendiente por cobro duplicado. Reclámelo aquí: https://bit.ly/24Bz20",
-    "enlaces": [
-      "https://bit.ly/24Bz20"
-    ],
+    "enlaces": ["https://bit.ly/24Bz20"],
     "telefonos": [],
-    "montos": [
-      "B/. 441.99"
-    ],
+    "montos": ["B/. 441.99"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador"
-      ]
+      "senales": ["acortador"]
     }
   },
   {
@@ -225,20 +179,14 @@
     "verificado": false,
     "hora": "3:12",
     "texto": "Su bono de fidelidad de B/. 791.99 está listo. Actívelo en https://rb.gy/03Lm34",
-    "enlaces": [
-      "https://rb.gy/03Lm34"
-    ],
+    "enlaces": ["https://rb.gy/03Lm34"],
     "telefonos": [],
-    "montos": [
-      "B/. 791.99"
-    ],
+    "montos": ["B/. 791.99"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador"
-      ]
+      "senales": ["acortador"]
     }
   },
   {
@@ -250,20 +198,14 @@
     "verificado": false,
     "hora": "5:24",
     "texto": "Su bono de fidelidad de B/. 361.00 está listo. Actívelo en https://tinyurl.com/65xQ67",
-    "enlaces": [
-      "https://tinyurl.com/65xQ67"
-    ],
+    "enlaces": ["https://tinyurl.com/65xQ67"],
     "telefonos": [],
-    "montos": [
-      "B/. 361.00"
-    ],
+    "montos": ["B/. 361.00"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador"
-      ]
+      "senales": ["acortador"]
     }
   },
   {
@@ -275,20 +217,14 @@
     "verificado": false,
     "hora": "11:05",
     "texto": "Su bono de fidelidad de B/. 894.75 está listo. Actívelo en https://is.gd/95xQ54",
-    "enlaces": [
-      "https://is.gd/95xQ54"
-    ],
+    "enlaces": ["https://is.gd/95xQ54"],
     "telefonos": [],
-    "montos": [
-      "B/. 894.75"
-    ],
+    "montos": ["B/. 894.75"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador"
-      ]
+      "senales": ["acortador"]
     }
   },
   {
@@ -300,21 +236,14 @@
     "verificado": false,
     "hora": "6:24",
     "texto": "Felicidades, usted fue seleccionado para una devolución de B/. 740.25 de Banco Demo. Solicítela en https://acortar.link/61Lm67 antes de que expire.",
-    "enlaces": [
-      "https://acortar.link/61Lm67"
-    ],
+    "enlaces": ["https://acortar.link/61Lm67"],
     "telefonos": [],
-    "montos": [
-      "B/. 740.25"
-    ],
+    "montos": ["B/. 740.25"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador",
-        "urgencia"
-      ]
+      "senales": ["acortador", "urgencia"]
     }
   },
   {
@@ -326,20 +255,14 @@
     "verificado": false,
     "hora": "4:24",
     "texto": "Banco Demo: tiene un reembolso de B/. 248.99 pendiente por cobro duplicado. Reclámelo aquí: https://cutt.ly/40xQ72",
-    "enlaces": [
-      "https://cutt.ly/40xQ72"
-    ],
+    "enlaces": ["https://cutt.ly/40xQ72"],
     "telefonos": [],
-    "montos": [
-      "B/. 248.99"
-    ],
+    "montos": ["B/. 248.99"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador"
-      ]
+      "senales": ["acortador"]
     }
   },
   {
@@ -351,20 +274,14 @@
     "verificado": false,
     "hora": "7:53",
     "texto": "Banco Demo: tiene un reembolso de B/. 477.00 pendiente por cobro duplicado. Reclámelo aquí: https://acortar.link/98Bz13",
-    "enlaces": [
-      "https://acortar.link/98Bz13"
-    ],
+    "enlaces": ["https://acortar.link/98Bz13"],
     "telefonos": [],
-    "montos": [
-      "B/. 477.00"
-    ],
+    "montos": ["B/. 477.00"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador"
-      ]
+      "senales": ["acortador"]
     }
   },
   {
@@ -376,20 +293,14 @@
     "verificado": false,
     "hora": "8:05",
     "texto": "Su bono de fidelidad de B/. 397.75 está listo. Actívelo en https://bit.ly/33Lm44",
-    "enlaces": [
-      "https://bit.ly/33Lm44"
-    ],
+    "enlaces": ["https://bit.ly/33Lm44"],
     "telefonos": [],
-    "montos": [
-      "B/. 397.75"
-    ],
+    "montos": ["B/. 397.75"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "acortador"
-      ]
+      "senales": ["acortador"]
     }
   },
   {
@@ -408,9 +319,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -429,10 +338,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -451,10 +357,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -473,10 +376,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -495,10 +395,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -517,10 +414,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -539,10 +433,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -561,10 +452,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -577,21 +465,13 @@
     "hora": "10:48",
     "texto": "Banco Demo: su cuota del préstamo está vencida. Para evitar cargos realice el pago de B/. 844.50 por Yappy al 6380-9726 hoy mismo.",
     "enlaces": [],
-    "telefonos": [
-      "6380-9726"
-    ],
-    "montos": [
-      "B/. 844.50"
-    ],
+    "telefonos": ["6380-9726"],
+    "montos": ["B/. 844.50"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -604,21 +484,13 @@
     "hora": "2:05",
     "texto": "Aviso: pago pendiente de B/. 94.50. Envíe el monto por Yappy al 6357-2245 para evitar la suspensión del servicio.",
     "enlaces": [],
-    "telefonos": [
-      "6357-2245"
-    ],
-    "montos": [
-      "B/. 94.50"
-    ],
+    "telefonos": ["6357-2245"],
+    "montos": ["B/. 94.50"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -631,21 +503,13 @@
     "hora": "8:37",
     "texto": "Cobros Banco Demo: regularice su tarjeta transfiriendo B/. 813.25 a la cuenta de nuestro gestor, Luis Batista, al 6831-9851 antes de las 5 p.m.",
     "enlaces": [],
-    "telefonos": [
-      "6831-9851"
-    ],
-    "montos": [
-      "B/. 813.25"
-    ],
+    "telefonos": ["6831-9851"],
+    "montos": ["B/. 813.25"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -658,21 +522,13 @@
     "hora": "9:24",
     "texto": "Banco Demo: su cuota del préstamo está vencida. Para evitar cargos realice el pago de B/. 649.75 por Yappy al 6106-0165 hoy mismo.",
     "enlaces": [],
-    "telefonos": [
-      "6106-0165"
-    ],
-    "montos": [
-      "B/. 649.75"
-    ],
+    "telefonos": ["6106-0165"],
+    "montos": ["B/. 649.75"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -685,21 +541,13 @@
     "hora": "12:37",
     "texto": "Cobros Banco Demo: regularice su tarjeta transfiriendo B/. 291.00 a la cuenta de nuestro gestor, María Rodríguez, al 6495-4257 antes de las 5 p.m.",
     "enlaces": [],
-    "telefonos": [
-      "6495-4257"
-    ],
-    "montos": [
-      "B/. 291.00"
-    ],
+    "telefonos": ["6495-4257"],
+    "montos": ["B/. 291.00"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -712,21 +560,13 @@
     "hora": "9:48",
     "texto": "Cobros Banco Demo: regularice su tarjeta transfiriendo B/. 308.25 a la cuenta de nuestro gestor, Luis Batista, al 6838-6421 antes de las 5 p.m.",
     "enlaces": [],
-    "telefonos": [
-      "6838-6421"
-    ],
-    "montos": [
-      "B/. 308.25"
-    ],
+    "telefonos": ["6838-6421"],
+    "montos": ["B/. 308.25"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -739,21 +579,13 @@
     "hora": "7:05",
     "texto": "Aviso: pago pendiente de B/. 272.50. Envíe el monto por Yappy al 6543-7486 para evitar la suspensión del servicio.",
     "enlaces": [],
-    "telefonos": [
-      "6543-7486"
-    ],
-    "montos": [
-      "B/. 272.50"
-    ],
+    "telefonos": ["6543-7486"],
+    "montos": ["B/. 272.50"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -766,21 +598,13 @@
     "hora": "5:37",
     "texto": "Aviso: pago pendiente de B/. 500.99. Envíe el monto por Yappy al 6312-9590 para evitar la suspensión del servicio.",
     "enlaces": [],
-    "telefonos": [
-      "6312-9590"
-    ],
-    "montos": [
-      "B/. 500.99"
-    ],
+    "telefonos": ["6312-9590"],
+    "montos": ["B/. 500.99"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pago_terceros",
-        "numero_no_oficial",
-        "urgencia"
-      ]
+      "senales": ["pago_terceros", "numero_no_oficial", "urgencia"]
     }
   },
   {
@@ -794,20 +618,14 @@
     "verificado": false,
     "hora": "5:53",
     "texto": "Hola,\n\nSu estado de cuenta presenta una inconsistencia. Para revisarla confirme su número de tarjeta y clave en https://seguridad-bancodemo.com/revision. Si no lo hace en 48 horas la cuenta será limitada.\n\nServicio al cliente",
-    "enlaces": [
-      "https://seguridad-bancodemo.com/revision"
-    ],
+    "enlaces": ["https://seguridad-bancodemo.com/revision"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -821,20 +639,14 @@
     "verificado": false,
     "hora": "9:48",
     "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 10 de septiembre. Ingrese con su usuario y clave en https://banco-demo-pa.com/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
-    "enlaces": [
-      "https://banco-demo-pa.com/actualizar"
-    ],
+    "enlaces": ["https://banco-demo-pa.com/actualizar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -848,20 +660,14 @@
     "verificado": false,
     "hora": "4:24",
     "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 3 de septiembre. Ingrese con su usuario y clave en https://bancodemo.com-verificar.net/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
-    "enlaces": [
-      "https://bancodemo.com-verificar.net/actualizar"
-    ],
+    "enlaces": ["https://bancodemo.com-verificar.net/actualizar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -875,20 +681,14 @@
     "verificado": false,
     "hora": "2:12",
     "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 12 de septiembre. Ingrese con su usuario y clave en https://bancodemo.com-verificar.net/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
-    "enlaces": [
-      "https://bancodemo.com-verificar.net/actualizar"
-    ],
+    "enlaces": ["https://bancodemo.com-verificar.net/actualizar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -902,20 +702,14 @@
     "verificado": false,
     "hora": "12:53",
     "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 12 de septiembre. Ingrese con su usuario y clave en https://bancodemo.com-verificar.net/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
-    "enlaces": [
-      "https://bancodemo.com-verificar.net/actualizar"
-    ],
+    "enlaces": ["https://bancodemo.com-verificar.net/actualizar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -929,20 +723,14 @@
     "verificado": false,
     "hora": "9:05",
     "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 10 de septiembre. Ingrese con su usuario y clave en https://bancodemo-seguro.com/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
-    "enlaces": [
-      "https://bancodemo-seguro.com/actualizar"
-    ],
+    "enlaces": ["https://bancodemo-seguro.com/actualizar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -956,20 +744,14 @@
     "verificado": false,
     "hora": "2:24",
     "texto": "Estimado cliente,\n\nPor disposición regulatoria todos los usuarios deben actualizar sus datos antes del 9 de septiembre. Ingrese con su usuario y clave en https://banco-demo-pa.com/actualizar para mantener su cuenta activa.\n\nAtentamente,\nDepartamento de Seguridad",
-    "enlaces": [
-      "https://banco-demo-pa.com/actualizar"
-    ],
+    "enlaces": ["https://banco-demo-pa.com/actualizar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -983,20 +765,14 @@
     "verificado": false,
     "hora": "1:24",
     "texto": "Hola,\n\nSu estado de cuenta presenta una inconsistencia. Para revisarla confirme su número de tarjeta y clave en https://bancodemo.com-verificar.net/revision. Si no lo hace en 48 horas la cuenta será limitada.\n\nServicio al cliente",
-    "enlaces": [
-      "https://bancodemo.com-verificar.net/revision"
-    ],
+    "enlaces": ["https://bancodemo.com-verificar.net/revision"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": true,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "pide_datos_sensibles",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "pide_datos_sensibles", "urgencia"]
     }
   },
   {
@@ -1015,9 +791,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1036,9 +810,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1057,9 +829,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1078,9 +848,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1099,9 +867,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1120,9 +886,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1141,9 +905,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1162,9 +924,7 @@
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "pide_datos_sensibles"
-      ]
+      "senales": ["pide_datos_sensibles"]
     }
   },
   {
@@ -1176,21 +936,14 @@
     "verificado": false,
     "hora": "3:12",
     "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 820.50 en PriceSmart. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodemo-clientes.info/bloqueo",
-    "enlaces": [
-      "https://bancodemo-clientes.info/bloqueo"
-    ],
+    "enlaces": ["https://bancodemo-clientes.info/bloqueo"],
     "telefonos": [],
-    "montos": [
-      "B/. 820.50"
-    ],
+    "montos": ["B/. 820.50"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1202,21 +955,14 @@
     "verificado": false,
     "hora": "1:37",
     "texto": "Banco Demo: compra por B/. 120.00 en Netflix. Si NO reconoce esta transacción cancélela de inmediato en https://bancodemo-clientes.info/cancelar",
-    "enlaces": [
-      "https://bancodemo-clientes.info/cancelar"
-    ],
+    "enlaces": ["https://bancodemo-clientes.info/cancelar"],
     "telefonos": [],
-    "montos": [
-      "B/. 120.00"
-    ],
+    "montos": ["B/. 120.00"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1228,21 +974,14 @@
     "verificado": false,
     "hora": "11:48",
     "texto": "Banco Demo: compra por B/. 208.25 en Netflix. Si NO reconoce esta transacción cancélela de inmediato en https://bancodemo-clientes.info/cancelar",
-    "enlaces": [
-      "https://bancodemo-clientes.info/cancelar"
-    ],
+    "enlaces": ["https://bancodemo-clientes.info/cancelar"],
     "telefonos": [],
-    "montos": [
-      "B/. 208.25"
-    ],
+    "montos": ["B/. 208.25"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1254,21 +993,14 @@
     "verificado": false,
     "hora": "12:12",
     "texto": "Banco Demo: compra por B/. 190.99 en PriceSmart. Si NO reconoce esta transacción cancélela de inmediato en https://seguridad-bancodemo.com/cancelar",
-    "enlaces": [
-      "https://seguridad-bancodemo.com/cancelar"
-    ],
+    "enlaces": ["https://seguridad-bancodemo.com/cancelar"],
     "telefonos": [],
-    "montos": [
-      "B/. 190.99"
-    ],
+    "montos": ["B/. 190.99"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1280,21 +1012,14 @@
     "verificado": false,
     "hora": "2:48",
     "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 441.99 en Uber. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodem0.com/bloqueo",
-    "enlaces": [
-      "https://bancodem0.com/bloqueo"
-    ],
+    "enlaces": ["https://bancodem0.com/bloqueo"],
     "telefonos": [],
-    "montos": [
-      "B/. 441.99"
-    ],
+    "montos": ["B/. 441.99"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1306,21 +1031,14 @@
     "verificado": false,
     "hora": "12:05",
     "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 207.00 en Super 99. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodem0.com/bloqueo",
-    "enlaces": [
-      "https://bancodem0.com/bloqueo"
-    ],
+    "enlaces": ["https://bancodem0.com/bloqueo"],
     "telefonos": [],
-    "montos": [
-      "B/. 207.00"
-    ],
+    "montos": ["B/. 207.00"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1332,21 +1050,14 @@
     "verificado": false,
     "hora": "1:37",
     "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 824.75 en Super 99. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodemo-clientes.info/bloqueo",
-    "enlaces": [
-      "https://bancodemo-clientes.info/bloqueo"
-    ],
+    "enlaces": ["https://bancodemo-clientes.info/bloqueo"],
     "telefonos": [],
-    "montos": [
-      "B/. 824.75"
-    ],
+    "montos": ["B/. 824.75"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1358,21 +1069,14 @@
     "verificado": false,
     "hora": "1:12",
     "texto": "Alerta Banco Demo: se aprobó un cargo de B/. 186.25 en Riba Smith. ¿No fue usted? Bloquee su tarjeta ahora en https://bancodemo-pa.app/bloqueo",
-    "enlaces": [
-      "https://bancodemo-pa.app/bloqueo"
-    ],
+    "enlaces": ["https://bancodemo-pa.app/bloqueo"],
     "telefonos": [],
-    "montos": [
-      "B/. 186.25"
-    ],
+    "montos": ["B/. 186.25"],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "dominio_parecido",
-        "urgencia"
-      ]
+      "senales": ["dominio_parecido", "urgencia"]
     }
   },
   {
@@ -1384,19 +1088,14 @@
     "verificado": false,
     "hora": "6:24",
     "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://186.85.411.76/bancodemo/verificar",
-    "enlaces": [
-      "http://186.85.411.76/bancodemo/verificar"
-    ],
+    "enlaces": ["http://186.85.411.76/bancodemo/verificar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal",
-        "urgencia"
-      ]
+      "senales": ["ip_literal", "urgencia"]
     }
   },
   {
@@ -1408,18 +1107,14 @@
     "verificado": false,
     "hora": "6:05",
     "texto": "Banco Demo: actualice su token de seguridad en http://181.91.938.05/bancodemo/seguridad para seguir usando la banca en línea.",
-    "enlaces": [
-      "http://181.91.938.05/bancodemo/seguridad"
-    ],
+    "enlaces": ["http://181.91.938.05/bancodemo/seguridad"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal"
-      ]
+      "senales": ["ip_literal"]
     }
   },
   {
@@ -1431,18 +1126,14 @@
     "verificado": false,
     "hora": "9:12",
     "texto": "Banco Demo: actualice su token de seguridad en http://181.42.908.18/bancodemo/verificar para seguir usando la banca en línea.",
-    "enlaces": [
-      "http://181.42.908.18/bancodemo/verificar"
-    ],
+    "enlaces": ["http://181.42.908.18/bancodemo/verificar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal"
-      ]
+      "senales": ["ip_literal"]
     }
   },
   {
@@ -1454,19 +1145,14 @@
     "verificado": false,
     "hora": "10:37",
     "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://181.69.147.68/bancodemo/verificar",
-    "enlaces": [
-      "http://181.69.147.68/bancodemo/verificar"
-    ],
+    "enlaces": ["http://181.69.147.68/bancodemo/verificar"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal",
-        "urgencia"
-      ]
+      "senales": ["ip_literal", "urgencia"]
     }
   },
   {
@@ -1478,18 +1164,14 @@
     "verificado": false,
     "hora": "12:24",
     "texto": "Banco Demo: actualice su token de seguridad en http://186.11.492.35/bancodemo/seguridad para seguir usando la banca en línea.",
-    "enlaces": [
-      "http://186.11.492.35/bancodemo/seguridad"
-    ],
+    "enlaces": ["http://186.11.492.35/bancodemo/seguridad"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal"
-      ]
+      "senales": ["ip_literal"]
     }
   },
   {
@@ -1501,19 +1183,14 @@
     "verificado": false,
     "hora": "6:48",
     "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://181.42.683.52/bancodemo/seguridad",
-    "enlaces": [
-      "http://181.42.683.52/bancodemo/seguridad"
-    ],
+    "enlaces": ["http://181.42.683.52/bancodemo/seguridad"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal",
-        "urgencia"
-      ]
+      "senales": ["ip_literal", "urgencia"]
     }
   },
   {
@@ -1525,19 +1202,14 @@
     "verificado": false,
     "hora": "4:24",
     "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://190.82.856.32/bancodemo/acceso",
-    "enlaces": [
-      "http://190.82.856.32/bancodemo/acceso"
-    ],
+    "enlaces": ["http://190.82.856.32/bancodemo/acceso"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal",
-        "urgencia"
-      ]
+      "senales": ["ip_literal", "urgencia"]
     }
   },
   {
@@ -1549,19 +1221,14 @@
     "verificado": false,
     "hora": "2:37",
     "texto": "Su acceso vence hoy. Renueve su clave de Banco Demo en http://200.41.768.47/bancodemo/seguridad",
-    "enlaces": [
-      "http://200.41.768.47/bancodemo/seguridad"
-    ],
+    "enlaces": ["http://200.41.768.47/bancodemo/seguridad"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "fraude",
-      "senales": [
-        "ip_literal",
-        "urgencia"
-      ]
+      "senales": ["ip_literal", "urgencia"]
     }
   },
   {
@@ -1574,12 +1241,8 @@
     "hora": "9:37",
     "texto": "Banco Demo: compra aprobada por B/. 74.00 en Riba Smith. Consultas al 300-1234.",
     "enlaces": [],
-    "telefonos": [
-      "300-1234"
-    ],
-    "montos": [
-      "B/. 74.00"
-    ],
+    "telefonos": ["300-1234"],
+    "montos": ["B/. 74.00"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1597,12 +1260,8 @@
     "hora": "1:12",
     "texto": "Banco Demo: retiro por B/. 451.75 en ATM Penonomé el 10 de septiembre a las 8:48. Si no fue usted, llame al 800-1234.",
     "enlaces": [],
-    "telefonos": [
-      "800-1234"
-    ],
-    "montos": [
-      "B/. 451.75"
-    ],
+    "telefonos": ["800-1234"],
+    "montos": ["B/. 451.75"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1620,12 +1279,8 @@
     "hora": "4:05",
     "texto": "Banco Demo: compra aprobada por B/. 597.25 en El Machetazo. Consultas al 800-1234.",
     "enlaces": [],
-    "telefonos": [
-      "800-1234"
-    ],
-    "montos": [
-      "B/. 597.25"
-    ],
+    "telefonos": ["800-1234"],
+    "montos": ["B/. 597.25"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1644,9 +1299,7 @@
     "texto": "Banco Demo: se acreditó un depósito de B/. 160.50 en su cuenta de ahorros. Saldo disponible en la app oficial.",
     "enlaces": [],
     "telefonos": [],
-    "montos": [
-      "B/. 160.50"
-    ],
+    "montos": ["B/. 160.50"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1664,12 +1317,8 @@
     "hora": "2:53",
     "texto": "Banco Demo: compra aprobada por B/. 167.25 en Netflix. Consultas al +507 300-1234.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
-    "montos": [
-      "B/. 167.25"
-    ],
+    "telefonos": ["+507 300-1234"],
+    "montos": ["B/. 167.25"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1687,12 +1336,8 @@
     "hora": "8:37",
     "texto": "Banco Demo: retiro por B/. 546.75 en ATM David el 12 de septiembre a las 3:12. Si no fue usted, llame al 800-1234.",
     "enlaces": [],
-    "telefonos": [
-      "800-1234"
-    ],
-    "montos": [
-      "B/. 546.75"
-    ],
+    "telefonos": ["800-1234"],
+    "montos": ["B/. 546.75"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1711,9 +1356,7 @@
     "texto": "Banco Demo: se acreditó un depósito de B/. 901.25 en su cuenta de ahorros. Saldo disponible en la app oficial.",
     "enlaces": [],
     "telefonos": [],
-    "montos": [
-      "B/. 901.25"
-    ],
+    "montos": ["B/. 901.25"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1731,12 +1374,8 @@
     "hora": "11:05",
     "texto": "Banco Demo: compra aprobada por B/. 606.99 en Riba Smith. Consultas al 800-1234.",
     "enlaces": [],
-    "telefonos": [
-      "800-1234"
-    ],
-    "montos": [
-      "B/. 606.99"
-    ],
+    "telefonos": ["800-1234"],
+    "montos": ["B/. 606.99"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1905,13 +1544,9 @@
     "verificado": false,
     "hora": "4:24",
     "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 690.99 vence el 10 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 690.99"
-    ],
+    "montos": ["B/. 690.99"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1928,13 +1563,9 @@
     "verificado": false,
     "hora": "11:53",
     "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 637.00 vence el 10 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 637.00"
-    ],
+    "montos": ["B/. 637.00"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1951,13 +1582,9 @@
     "verificado": false,
     "hora": "11:48",
     "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 451.25 y vence el 10 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 451.25"
-    ],
+    "montos": ["B/. 451.25"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1974,13 +1601,9 @@
     "verificado": false,
     "hora": "4:05",
     "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 224.25 vence el 5 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 224.25"
-    ],
+    "montos": ["B/. 224.25"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -1997,13 +1620,9 @@
     "verificado": false,
     "hora": "1:05",
     "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 223.50 y vence el 12 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 223.50"
-    ],
+    "montos": ["B/. 223.50"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -2020,13 +1639,9 @@
     "verificado": false,
     "hora": "6:12",
     "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 103.50 y vence el 9 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 103.50"
-    ],
+    "montos": ["B/. 103.50"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -2043,13 +1658,9 @@
     "verificado": false,
     "hora": "11:48",
     "texto": "Banco Demo: le recordamos que su cuota de préstamo de B/. 117.00 vence el 9 de septiembre. Puede pagar en la app oficial o en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 117.00"
-    ],
+    "montos": ["B/. 117.00"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -2066,13 +1677,9 @@
     "verificado": false,
     "hora": "5:24",
     "texto": "Recordatorio Banco Demo: el pago mínimo de su tarjeta es B/. 883.00 y vence el 15 de septiembre. Gestione su pago en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
-    "montos": [
-      "B/. 883.00"
-    ],
+    "montos": ["B/. 883.00"],
     "pide_datos_sensibles": false,
     "urgencia": false,
     "esperado": {
@@ -2091,9 +1698,7 @@
     "verificado": false,
     "hora": "3:12",
     "texto": "Estimado cliente,\n\nLe informamos que el 3 de septiembre nuestras sucursales de Costa del Este atenderán en horario reducido. La app y https://app.bancodemo.com.pa funcionan con normalidad.\n\nBanco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2114,9 +1719,7 @@
     "verificado": false,
     "hora": "12:24",
     "texto": "Hola,\n\nSu estado de cuenta de julio ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2137,9 +1740,7 @@
     "verificado": false,
     "hora": "12:37",
     "texto": "Estimado cliente,\n\nLe informamos que el 3 de septiembre nuestras sucursales de Costa del Este atenderán en horario reducido. La app y https://app.bancodemo.com.pa funcionan con normalidad.\n\nBanco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2160,9 +1761,7 @@
     "verificado": false,
     "hora": "5:37",
     "texto": "Estimado cliente,\n\nLe informamos que el 8 de septiembre nuestras sucursales de Multiplaza atenderán en horario reducido. La app y https://app.bancodemo.com.pa funcionan con normalidad.\n\nBanco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2183,9 +1782,7 @@
     "verificado": false,
     "hora": "9:37",
     "texto": "Hola,\n\nSu estado de cuenta de agosto ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2206,9 +1803,7 @@
     "verificado": false,
     "hora": "7:48",
     "texto": "Hola,\n\nSu estado de cuenta de junio ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2229,9 +1824,7 @@
     "verificado": false,
     "hora": "4:53",
     "texto": "Hola,\n\nSu estado de cuenta de agosto ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2252,9 +1845,7 @@
     "verificado": false,
     "hora": "12:37",
     "texto": "Hola,\n\nSu estado de cuenta de julio ya está disponible. Puede consultarlo ingresando a https://app.bancodemo.com.pa o desde la app oficial.\n\nRecuerde: Banco Demo nunca le pedirá su clave ni códigos por correo.\n\nEquipo de Banco Demo",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
@@ -2274,9 +1865,7 @@
     "hora": "2:05",
     "texto": "Banco Demo informa: ya está disponible la nueva versión de la app en las tiendas oficiales. No la descargue desde enlaces de mensajes.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2295,9 +1884,7 @@
     "hora": "9:48",
     "texto": "Hola, le saluda Banco Demo. Le recordamos que el 15 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2316,9 +1903,7 @@
     "hora": "5:05",
     "texto": "Hola, le saluda Banco Demo. Le recordamos que el 10 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2337,9 +1922,7 @@
     "hora": "4:53",
     "texto": "Banco Demo informa: ya está disponible la nueva versión de la app en las tiendas oficiales. No la descargue desde enlaces de mensajes.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2358,9 +1941,7 @@
     "hora": "4:48",
     "texto": "Hola, le saluda Banco Demo. Le recordamos que el 5 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2379,9 +1960,7 @@
     "hora": "4:12",
     "texto": "Hola, le saluda Banco Demo. Le recordamos que el 8 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2400,9 +1979,7 @@
     "hora": "2:48",
     "texto": "Hola, le saluda Banco Demo. Le recordamos que el 12 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2421,9 +1998,7 @@
     "hora": "1:24",
     "texto": "Hola, le saluda Banco Demo. Le recordamos que el 5 de septiembre es feriado y nuestras sucursales estarán cerradas. La app funciona con normalidad. Nunca compartas tus claves.",
     "enlaces": [],
-    "telefonos": [
-      "+507 300-1234"
-    ],
+    "telefonos": ["+507 300-1234"],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": false,
@@ -2600,9 +2175,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   },
   {
@@ -2621,9 +2194,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   },
   {
@@ -2635,18 +2206,14 @@
     "verificado": false,
     "hora": "3:48",
     "texto": "Banco Demo: actualice su app hoy mismo para seguir usando la banca en línea. Descárguela en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   },
   {
@@ -2665,9 +2232,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   },
   {
@@ -2686,9 +2251,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   },
   {
@@ -2700,18 +2263,14 @@
     "verificado": false,
     "hora": "10:12",
     "texto": "Banco Demo: actualice su app hoy mismo para seguir usando la banca en línea. Descárguela en https://app.bancodemo.com.pa",
-    "enlaces": [
-      "https://app.bancodemo.com.pa"
-    ],
+    "enlaces": ["https://app.bancodemo.com.pa"],
     "telefonos": [],
     "montos": [],
     "pide_datos_sensibles": false,
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   },
   {
@@ -2730,9 +2289,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   },
   {
@@ -2751,9 +2308,7 @@
     "urgencia": true,
     "esperado": {
       "veredicto": "sospechoso",
-      "senales": [
-        "urgencia"
-      ]
+      "senales": ["urgencia"]
     }
   }
 ]

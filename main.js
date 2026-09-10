@@ -19,30 +19,67 @@ let win = null;
 let ocupado = false;
 const motor = new Motor();
 const historial = []; // veredictos de esta sesión, en memoria: el mensaje nunca se guarda en disco
-let reportes = [];    // indicadores reportados por el usuario (hash, tipo, ts). Solo hashes, nunca el mensaje.
+let reportes = []; // indicadores reportados por el usuario (hash, tipo, ts). Solo hashes, nunca el mensaje.
 
-function rutaReportes() { return path.join(app.getPath("userData"), "reportes.json"); }
-function cargarReportes() { try { reportes = JSON.parse(fs.readFileSync(rutaReportes(), "utf8")); } catch { reportes = []; } }
-function guardarReportes() { try { fs.mkdirSync(path.dirname(rutaReportes()), { recursive: true }); fs.writeFileSync(rutaReportes(), JSON.stringify(reportes, null, 2)); } catch { /* nunca rompe la app */ } }
+function rutaReportes() {
+  return path.join(app.getPath("userData"), "reportes.json");
+}
+function cargarReportes() {
+  try {
+    reportes = JSON.parse(fs.readFileSync(rutaReportes(), "utf8"));
+  } catch {
+    reportes = [];
+  }
+}
+function guardarReportes() {
+  try {
+    fs.mkdirSync(path.dirname(rutaReportes()), { recursive: true });
+    fs.writeFileSync(rutaReportes(), JSON.stringify(reportes, null, 2));
+  } catch {
+    /* nunca rompe la app */
+  }
+}
 
-function enviar(canal, carga) { if (win && !win.isDestroyed()) win.webContents.send(canal, carga); }
+function enviar(canal, carga) {
+  if (win && !win.isDestroyed()) win.webContents.send(canal, carga);
+}
 motor.onProgress = (p) => enviar("progreso-modelo", p);
 
 function crearVentana() {
   win = new BrowserWindow({
-    width: 1180, height: 820, minWidth: 900, minHeight: 620,
+    width: 1180,
+    height: 820,
+    minWidth: 900,
+    minHeight: 620,
     backgroundColor: "#0f1514",
     titleBarStyle: process.platform === "darwin" ? "hiddenInset" : "default",
-    webPreferences: { preload: path.join(__dirname, "preload.js"), contextIsolation: true, nodeIntegration: false, sandbox: true },
+    webPreferences: {
+      preload: path.join(__dirname, "preload.js"),
+      contextIsolation: true,
+      nodeIntegration: false,
+      sandbox: true,
+    },
   });
   win.loadFile(path.join(__dirname, "renderer", "index.html"));
   win.webContents.setWindowOpenHandler(() => ({ action: "deny" }));
-  win.webContents.on("will-navigate", (e, url) => { if (url !== win.webContents.getURL()) e.preventDefault(); });
+  win.webContents.on("will-navigate", (e, url) => {
+    if (url !== win.webContents.getURL()) e.preventDefault();
+  });
 }
 
 ipcMain.handle("estado", async () => ({
-  ocupado, banco: motor.banco, historial, reportes,
-  hardware: perf.hardware(), sdk: (() => { try { return require("@qvac/sdk/package").version; } catch { return "?"; } })(),
+  ocupado,
+  banco: motor.banco,
+  historial,
+  reportes,
+  hardware: perf.hardware(),
+  sdk: (() => {
+    try {
+      return require("@qvac/sdk/package").version;
+    } catch {
+      return "?";
+    }
+  })(),
 }));
 
 ipcMain.handle("catalogo", () => modelos.catalogo());
@@ -54,34 +91,71 @@ ipcMain.handle("descargar-modelo", async (_e, { grupo, key }) => {
 });
 
 ipcMain.handle("elegir-captura", async () => {
-  const r = await dialog.showOpenDialog(win, { title: "Elige una captura de pantalla", properties: ["openFile"], filters: [{ name: "Imágenes", extensions: ["png", "jpg", "jpeg", "webp"] }] });
+  const r = await dialog.showOpenDialog(win, {
+    title: "Elige una captura de pantalla",
+    properties: ["openFile"],
+    filters: [{ name: "Imágenes", extensions: ["png", "jpg", "jpeg", "webp"] }],
+  });
   return r.canceled ? null : r.filePaths[0];
 });
 
 ipcMain.handle("capturas-demo", () => {
   const dir = path.join(__dirname, "data", "capturas");
-  try { return fs.readdirSync(dir).filter((f) => f.endsWith(".png")).sort().map((f) => ({ id: f.replace(/\.png$/, ""), ruta: path.join(dir, f) })); } catch { return []; }
+  try {
+    return fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith(".png"))
+      .sort()
+      .map((f) => ({ id: f.replace(/\.png$/, ""), ruta: path.join(dir, f) }));
+  } catch {
+    return [];
+  }
 });
 
 ipcMain.handle("analizar", async (_e, ruta) => {
   if (ocupado) throw new Error("Ya hay un análisis en curso");
   if (!ruta || !fs.existsSync(ruta)) throw new Error("No encuentro la captura");
-  ocupado = true; enviar("ocupado", true);
+  ocupado = true;
+  enviar("ocupado", true);
   try {
     const r = await motor.analizar(ruta);
     const item = { ruta, ts: Date.now(), ...r };
     historial.unshift(item);
     return item;
-  } finally { ocupado = false; enviar("ocupado", false); }
+  } finally {
+    ocupado = false;
+    enviar("ocupado", false);
+  }
 });
 
 // Reportar: solo viaja el hash del indicador, nunca el mensaje. Hoy queda en memoria; la fase 3 lo publica por pares.
 ipcMain.handle("reportar", (_e, { captura }) => {
   const crypto = require("node:crypto");
   const nuevos = [];
-  for (const enlace of captura.enlaces || []) { const d = reglas.dominioDe(enlace); if (d) nuevos.push({ tipo: "dominio", hash: crypto.createHash("sha256").update(d).digest("hex").slice(0, 16), ts: Date.now(), origen: "local" }); }
-  for (const t of captura.telefonos || []) nuevos.push({ tipo: "numero", hash: crypto.createHash("sha256").update(String(t).replace(/\D/g, "")).digest("hex").slice(0, 16), ts: Date.now(), origen: "local" });
-  if (captura.remitente) nuevos.push({ tipo: "remitente", hash: crypto.createHash("sha256").update(String(captura.remitente).toLowerCase()).digest("hex").slice(0, 16), ts: Date.now(), origen: "local" });
+  for (const enlace of captura.enlaces || []) {
+    const d = reglas.dominioDe(enlace);
+    if (d)
+      nuevos.push({
+        tipo: "dominio",
+        hash: crypto.createHash("sha256").update(d).digest("hex").slice(0, 16),
+        ts: Date.now(),
+        origen: "local",
+      });
+  }
+  for (const t of captura.telefonos || [])
+    nuevos.push({
+      tipo: "numero",
+      hash: crypto.createHash("sha256").update(String(t).replace(/\D/g, "")).digest("hex").slice(0, 16),
+      ts: Date.now(),
+      origen: "local",
+    });
+  if (captura.remitente)
+    nuevos.push({
+      tipo: "remitente",
+      hash: crypto.createHash("sha256").update(String(captura.remitente).toLowerCase()).digest("hex").slice(0, 16),
+      ts: Date.now(),
+      origen: "local",
+    });
   reportes.push(...nuevos);
   guardarReportes();
   return reportes;
@@ -92,18 +166,45 @@ ipcMain.handle("red", () => red.conexiones(process.pid));
 
 // Para verificar la interfaz sin manos: con DEMO_AUTO=<id> el renderer pide la captura al iniciar y la analiza;
 // con DEMO_CAPTURA=<ruta> se guarda una imagen de la ventana pasados DEMO_ESPERA_MS.
-ipcMain.handle("demo-auto", () => process.env.DEMO_AUTO ? path.join(__dirname, "data", "capturas", `${process.env.DEMO_AUTO}.png`) : null);
+ipcMain.handle("demo-auto", () =>
+  process.env.DEMO_AUTO ? path.join(__dirname, "data", "capturas", `${process.env.DEMO_AUTO}.png`) : null,
+);
 async function demoAutomatica() {
   if (!process.env.DEMO_AUTO || !win) return;
   const salida = process.env.DEMO_CAPTURA;
   if (salida) {
     await new Promise((r) => setTimeout(r, Number(process.env.DEMO_ESPERA_MS || 25000)));
-    try { const img = await win.webContents.capturePage(); fs.writeFileSync(salida, img.toPNG()); console.log("captura de la ventana en", salida); } catch (e) { console.error("no se pudo capturar", e.message); }
-    if (process.env.DEMO_SALIR) { await motor.descargarTodo(); app.exit(0); }
+    try {
+      const img = await win.webContents.capturePage();
+      fs.writeFileSync(salida, img.toPNG());
+      console.log("captura de la ventana en", salida);
+    } catch (e) {
+      console.error("no se pudo capturar", e.message);
+    }
+    if (process.env.DEMO_SALIR) {
+      await motor.descargarTodo();
+      app.exit(0);
+    }
   }
 }
 
-ipcMain.handle("descargar-modelos-memoria", async () => { await motor.descargarTodo(); return true; });
+ipcMain.handle("descargar-modelos-memoria", async () => {
+  await motor.descargarTodo();
+  return true;
+});
 
-app.whenReady().then(() => { cargarReportes(); crearVentana(); win.webContents.once("did-finish-load", () => { demoAutomatica().catch(() => {}); }); });
-app.on("window-all-closed", async () => { try { await motor.descargarTodo(); } catch { /* */ } app.quit(); });
+app.whenReady().then(() => {
+  cargarReportes();
+  crearVentana();
+  win.webContents.once("did-finish-load", () => {
+    demoAutomatica().catch(() => {});
+  });
+});
+app.on("window-all-closed", async () => {
+  try {
+    await motor.descargarTodo();
+  } catch {
+    /* */
+  }
+  app.quit();
+});

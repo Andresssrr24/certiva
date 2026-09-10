@@ -4,17 +4,32 @@
 const path = require("node:path");
 const modelos = require("../lib/modelos");
 
-const IDS = ["fraude-bloqueo_enlace-01", "legitimo-alerta_transaccion-01", "fraude-ejecutivo_whatsapp-01", "legitimo-correo_estado_cuenta-01"];
-const P_LIBRE = "Transcribe exactly all the text visible in this phone screenshot, in the original language. Output only the transcription.";
-const P_LIBRE_ES = "Transcribe exactamente todo el texto que aparece en esta captura de pantalla de un teléfono. Responde solo con la transcripción.";
-const ESQ_TEXTO = { type: "object", additionalProperties: false, required: ["remitente", "texto"], properties: { remitente: { type: "string" }, texto: { type: "string" } } };
+const IDS = [
+  "fraude-bloqueo_enlace-01",
+  "legitimo-alerta_transaccion-01",
+  "fraude-ejecutivo_whatsapp-01",
+  "legitimo-correo_estado_cuenta-01",
+];
+const P_LIBRE =
+  "Transcribe exactly all the text visible in this phone screenshot, in the original language. Output only the transcription.";
+const P_LIBRE_ES =
+  "Transcribe exactamente todo el texto que aparece en esta captura de pantalla de un teléfono. Responde solo con la transcripción.";
+const ESQ_TEXTO = {
+  type: "object",
+  additionalProperties: false,
+  required: ["remitente", "texto"],
+  properties: { remitente: { type: "string" }, texto: { type: "string" } },
+};
 
 async function corre(S, modelId, ruta, prompt, esquema) {
-  const t0 = Date.now(); let ttft = null;
+  const t0 = Date.now();
+  let ttft = null;
   const opts = { modelId, stream: true, history: [{ role: "user", content: prompt, attachments: [{ path: ruta }] }] };
   if (esquema) opts.responseFormat = { type: "json_schema", json_schema: { name: "t", schema: esquema } };
   const run = S.completion(opts);
-  for await (const ev of run.events) { if (ttft === null && ev && ev.type === "contentDelta") ttft = Date.now() - t0; }
+  for await (const ev of run.events) {
+    if (ttft === null && ev && ev.type === "contentDelta") ttft = Date.now() - t0;
+  }
   const f = await run.final;
   return { texto: String(f.contentText || "").trim(), ttft, ms: Date.now() - t0 };
 }
@@ -38,9 +53,14 @@ async function corre(S, modelId, ruta, prompt, esquema) {
       try {
         const r = await corre(S, modelId, ruta, prompt, esq);
         console.log(`--- ${nombre} · TTFT ${r.ttft} ms · ${r.ms} ms\n${r.texto.slice(0, 400)}`);
-      } catch (err) { console.log(`--- ${nombre} · ERROR ${err.message}`); }
+      } catch (err) {
+        console.log(`--- ${nombre} · ERROR ${err.message}`);
+      }
     }
   }
   await S.unloadModel({ modelId, clearStorage: false });
   process.exit(0);
-})().catch((e) => { console.error("✖", e && e.stack ? e.stack : e); process.exit(1); });
+})().catch((e) => {
+  console.error("✖", e && e.stack ? e.stack : e);
+  process.exit(1);
+});

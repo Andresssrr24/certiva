@@ -9,7 +9,10 @@ const { Motor } = require("../lib/analizar");
   let ruta = process.argv[2];
   if (!ruta) {
     const dir = path.join(__dirname, "..", "data", "capturas");
-    const f = fs.readdirSync(dir).filter((x) => x.endsWith(".png")).sort()[0];
+    const f = fs
+      .readdirSync(dir)
+      .filter((x) => x.endsWith(".png"))
+      .sort()[0];
     if (!f) throw new Error("No hay capturas. Corre: npm run datos");
     ruta = path.join(dir, f);
   }
@@ -29,8 +32,16 @@ const { Motor } = require("../lib/analizar");
   const id = path.basename(ruta, ".png");
   try {
     const verdad = require("../data/verdad.json")[id];
-    if (verdad) console.log(`Esperado: ${verdad.esperado.veredicto} [${verdad.esperado.senales.join(", ")}] · Reglas: ${r.veredicto_reglas} · Modelo: ${r.veredicto && r.veredicto.veredicto}`);
-  } catch { /* sin verdad */ }
+    if (verdad)
+      console.log(
+        `Esperado: ${verdad.esperado.veredicto} [${verdad.esperado.senales.join(", ")}] · Reglas: ${r.veredicto_reglas} · Modelo: ${r.veredicto && r.veredicto.veredicto}`,
+      );
+  } catch {
+    /* sin verdad */
+  }
   await motor.descargarTodo();
   process.exit(0);
-})().catch((e) => { console.error("✖", e && e.stack ? e.stack : e); process.exit(1); });
+})().catch((e) => {
+  console.error("✖", e && e.stack ? e.stack : e);
+  process.exit(1);
+});

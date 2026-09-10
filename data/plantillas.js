@@ -2,10 +2,14 @@
 // Sin logos ni marcas reales. Se renderizan a 390x844 px CSS y se capturan al doble de escala.
 "use strict";
 
-function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
 function conEnlaces(texto) {
-  return esc(texto).replace(/(https?:\/\/[^\s]+|[a-z0-9.-]+\.(?:com|net|app|info|co|pa|link|ly|gd|gy|io)(?:\.[a-z]{2})?(?:\/[^\s]*)?)/gi,
-    (m) => `<span class="lnk">${m}</span>`);
+  return esc(texto).replace(
+    /(https?:\/\/[^\s]+|[a-z0-9.-]+\.(?:com|net|app|info|co|pa|link|ly|gd|gy|io)(?:\.[a-z]{2})?(?:\/[^\s]*)?)/gi,
+    (m) => `<span class="lnk">${m}</span>`,
+  );
 }
 const base = (cuerpo, extraCss = "") => `<!doctype html><html lang="es"><head><meta charset="utf-8">
 <style>
@@ -17,7 +21,8 @@ const base = (cuerpo, extraCss = "") => `<!doctype html><html lang="es"><head><m
 
 function sms(m) {
   const hora = m.hora || "10:24";
-  return base(`
+  return base(
+    `
   <div class="wrap">
     <div class="status"><span>${hora}</span><span>▲ ▮ 82%</span></div>
     <div class="hdr"><div class="back">‹</div><div class="avatar">${esc((m.remitente || "?").slice(0, 1))}</div><div class="who">${esc(m.remitente)}</div></div>
@@ -26,7 +31,8 @@ function sms(m) {
       <div class="bubble">${conEnlaces(m.texto)}</div>
     </div>
     <div class="input"><span>Mensaje de texto</span></div>
-  </div>`, `
+  </div>`,
+    `
   .wrap{background:#fff;height:100%;display:flex;flex-direction:column;color:#000}
   .hdr{display:flex;flex-direction:column;align-items:center;padding:4px 0 10px;border-bottom:1px solid #e5e5ea;position:relative}
   .back{position:absolute;left:16px;top:4px;font-size:30px;color:#0a84ff}
@@ -37,13 +43,15 @@ function sms(m) {
   .bubble{max-width:280px;background:#e9e9eb;border-radius:18px;padding:10px 14px;font-size:17px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word}
   .bubble .lnk{color:#0a84ff}
   .input{height:60px;border-top:1px solid #e5e5ea;display:flex;align-items:center;padding:0 16px;color:#8e8e93;font-size:17px}
-  .input span{border:1px solid #c7c7cc;border-radius:20px;padding:8px 14px;flex:1}`);
+  .input span{border:1px solid #c7c7cc;border-radius:20px;padding:8px 14px;flex:1}`,
+  );
 }
 
 function whatsapp(m) {
   const hora = m.hora || "9:12";
   const verificado = m.verificado ? ' <span class="ok">✔</span>' : "";
-  return base(`
+  return base(
+    `
   <div class="wrap">
     <div class="status top"><span>${hora}</span><span>▲ ▮ 82%</span></div>
     <div class="hdr"><span class="back">‹</span><div class="av">${esc((m.remitente || "?").slice(0, 1))}</div><div class="name">${esc(m.remitente)}${verificado}<div class="sub">${m.verificado ? "Cuenta de empresa verificada" : "No está en tus contactos"}</div></div></div>
@@ -52,7 +60,8 @@ function whatsapp(m) {
       <div class="bubble">${conEnlaces(m.texto)}<span class="time">${hora}</span></div>
     </div>
     <div class="input"><span>Mensaje</span></div>
-  </div>`, `
+  </div>`,
+    `
   .wrap{background:#efe7dd;height:100%;display:flex;flex-direction:column;color:#111}
   .top{background:#075e54;color:#fff}
   .hdr{background:#075e54;color:#fff;display:flex;align-items:center;gap:10px;padding:6px 12px 10px}
@@ -67,11 +76,13 @@ function whatsapp(m) {
   .bubble .lnk{color:#027eb5}
   .time{position:absolute;right:10px;bottom:4px;font-size:11px;color:#8a8a8a}
   .input{height:60px;display:flex;align-items:center;padding:0 12px;color:#8a8a8a;font-size:16px}
-  .input span{background:#fff;border-radius:22px;padding:10px 16px;flex:1}`);
+  .input span{background:#fff;border-radius:22px;padding:10px 16px;flex:1}`,
+  );
 }
 
 function correo(m) {
-  return base(`
+  return base(
+    `
   <div class="wrap">
     <div class="status"><span>${m.hora || "8:03"}</span><span>▲ ▮ 82%</span></div>
     <div class="bar"><span>‹</span><span>⋮</span></div>
@@ -79,7 +90,8 @@ function correo(m) {
     <div class="from"><div class="av">${esc((m.remitenteNombre || m.remitente || "?").slice(0, 1))}</div>
       <div><div class="fn">${esc(m.remitenteNombre || "")} <span class="addr">&lt;${esc(m.remitente)}&gt;</span></div><div class="to">para mí · ${m.fecha || "hoy"}</div></div></div>
     <div class="body">${conEnlaces(m.texto).replace(/\n/g, "<br>")}</div>
-  </div>`, `
+  </div>`,
+    `
   .wrap{background:#fff;height:100%;color:#202124}
   .bar{display:flex;justify-content:space-between;padding:8px 18px;font-size:26px;color:#5f6368}
   .subject{font-size:22px;font-weight:500;padding:6px 20px 12px;line-height:1.25}
@@ -89,7 +101,8 @@ function correo(m) {
   .addr{font-weight:400;color:#5f6368;font-size:13px}
   .to{font-size:13px;color:#5f6368;margin-top:2px}
   .body{padding:4px 20px;font-size:16px;line-height:1.45;white-space:normal;word-wrap:break-word}
-  .body .lnk{color:#1a73e8}`);
+  .body .lnk{color:#1a73e8}`,
+  );
 }
 
 module.exports = { sms, whatsapp, correo };

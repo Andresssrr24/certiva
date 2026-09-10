@@ -15,8 +15,21 @@ const modelos = require("../lib/modelos");
   console.log(`▸ Importando ${constName} desde ${src}`);
   let u = -10;
   const t0 = Date.now();
-  const id = await S.loadModel({ modelSrc: c.src || c, modelType: c.engine, fallbackSrc: src, onProgress: (p) => { if (p && typeof p.percentage === "number" && p.percentage - u >= 10) { u = p.percentage; console.log(`  ${p.percentage.toFixed(0)}%`); } } });
+  const id = await S.loadModel({
+    modelSrc: c.src || c,
+    modelType: c.engine,
+    fallbackSrc: src,
+    onProgress: (p) => {
+      if (p && typeof p.percentage === "number" && p.percentage - u >= 10) {
+        u = p.percentage;
+        console.log(`  ${p.percentage.toFixed(0)}%`);
+      }
+    },
+  });
   console.log(`▸ Cargado y validado en ${Math.round((Date.now() - t0) / 1000)}s. Descargando de memoria.`);
   await S.unloadModel({ modelId: id, clearStorage: false });
   process.exit(0);
-})().catch((e) => { console.error("✖", e && e.message ? e.message : e); process.exit(1); });
+})().catch((e) => {
+  console.error("✖", e && e.message ? e.message : e);
+  process.exit(1);
+});
