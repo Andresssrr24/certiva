@@ -154,6 +154,8 @@ Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Ce
 
 ## Modelo de negocio
 
+El propósito de la integración en el ecosistema bancario, con los puntos de integración, el caso de pagos, los límites y las fases de un piloto, está desarrollado en [docs/PROPOSITO-E-INTEGRACION.md](docs/PROPOSITO-E-INTEGRACION.md).
+
 Lo que se vende es un módulo que el banco embebe en su app, con una consola para el equipo de fraude que corre dentro de la infraestructura del banco, y una app de marca blanca para cooperativas y financieras, que en Panamá son cientos y no tienen presupuesto de seguridad. Lo local es el argumento económico: costo de inferencia cero por verificación, y ningún dato del cliente en manos de un proveedor. La consola del banco, multiusuario y con histórico de campañas, es el producto que se construye después del hackatón con un stack web convencional; este repositorio es el motor local que la alimenta. La propiedad intelectual queda en el equipo, como establece el reto de la Caja.
 
 Precios de partida, sin validar: para un banco, un pago inicial de integración y una mensualidad por tramo de clientes activos; para una cooperativa, una mensualidad baja por la app de marca blanca.
