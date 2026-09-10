@@ -67,6 +67,12 @@ Se eligió VisionPsy en transcripción libre. El OCR y la variante con esquema q
 
 Una trampa que costó una hora y conviene contar: Electron recuerda el zoom por origen entre ejecuciones, y la segunda renderización de las capturas salió cortada por la mitad a la derecha. Los dos lectores «perdían el final de cada línea» y parecía culpa de los modelos. `data/render.js` fija el zoom en 1.
 
+## Interfaz
+
+Una ventana, dos mundos. A la izquierda, **lo que ve el cliente en su teléfono**: tema claro, letra grande, una acción por pantalla, veredicto en lenguaje llano («La dirección web imita la del banco», «Te meten prisa»), un botón para llamar al banco y otro para reportar. En el modo llamada, el aviso ocupa toda la pantalla: «Cuelga». A la derecha, **detrás de escena para el jurado y el banco**: tarjetas de ejemplo, los tres pasos con su tiempo (VisionPsy, reglas, Qwen3), las señales con su nombre técnico, la transcripción con marcas de tiempo y el JSON completo. La pestaña **Modo banco** es el radar del equipo de fraude.
+
+Decisiones de diseño: sin framework, fuentes del sistema para funcionar sin internet, contraste mínimo 4,5:1, foco visible, `role="alert"` en el aviso de colgar, `aria-live` en la transcripción, movimiento reducido respetado, iconos SVG en vez de emojis. Para verificar la interfaz sin manos: `DEMO_AUTO=<id de captura>` o `DEMO_LLAMADA=1` junto con `DEMO_CAPTURA=<ruta.png>` guardan una imagen de la ventana.
+
 ## Datos
 
 Ningún dato real. El audio de la llamada de vishing de la demo, `data/audio/llamada-vishing.wav`, es sintético: lo genera `data/generar-llamada.js` con las voces del sistema de macOS a partir del guion de `data/llamada-vishing.md`. Nadie fue grabado. Medido en el M4: cada lote de cinco segundos se transcribe en unos 150 ms, y la llamada completa de 45 s se procesa en unos 10 s con carga del modelo incluida. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
