@@ -23,7 +23,7 @@ Declaración obligatoria del hackatón. Este proyecto parte de código ajeno:
 | Transcripción de llamadas | Parakeet TDT 0.6B v3 | `PARAKEET_TDT_0_6B_V3_Q8_0` | Q8_0 |
 | Embeddings del RAG | EmbeddingGemma 300M | `EMBEDDINGGEMMA_300M_Q4_0` | Q4_0 |
 
-Hardware de desarrollo y demo: MacBook con Apple M4 y 16 GB de RAM, macOS. SDK `@qvac/sdk` 0.19. El objetivo del producto es el teléfono del cliente; los benchmarks de VisionPsy en teléfonos citados en la presentación son del fabricante del modelo, no medidos por este equipo **(pendiente: resultados propios si el Android con Expo llega)**.
+Hardware de desarrollo y demo: MacBook con Apple M4 y 16 GB de RAM, macOS, backend GPU. SDK `@qvac/sdk` 0.19. Tiempos medidos en esta máquina: VisionPsy 1,07 s al primer token y 173 tokens/s; Qwen3 4B 1,75 s al primer token y 35 tokens/s. El objetivo del producto es el teléfono del cliente; los benchmarks de VisionPsy en teléfonos citados en la presentación son del fabricante del modelo, no medidos por este equipo **(pendiente: resultados propios si el Android con Expo llega)**.
 
 ## Reproducir
 
@@ -72,9 +72,35 @@ Ningún dato real. `data/banco-demo.json` define un banco ficticio con sus canal
 
 Aplicabilidad, integración como función de la app del banco, modo sucursal, radar para el equipo de fraude, y por qué lo local es la ventaja.
 
-## Para el reto QVAC Psy **(pendiente)**
+## Para el reto QVAC Psy
 
-Por qué VisionPsy es central por necesidad, métricas de calidad sobre el set sintético, registro de rendimiento, límites y manejo de riesgo.
+**Por qué VisionPsy es central por necesidad.** Ninguna app puede leer los SMS o el WhatsApp de otra: la captura de pantalla es la única entrada universal a los mensajes, y leerla en el teléfono exige un modelo de visión que quepa en un teléfono de gama media. VisionPsy Nano 460M Flash es el único modelo que mira la imagen en este flujo.
+
+**Calidad medida sobre el set sintético** (`npm run eval`, 120 capturas, resultados completos en `eval/results.md`, registro por llamada en `eval/perf.jsonl`):
+
+| Métrica | Valor |
+|---|---|
+| Exactitud global del veredicto | 92,5 % |
+| Precisión en fraude | 96,9 % |
+| Exhaustividad en fraude | 98,4 % (63 de 64) |
+| Legítimos reconocidos sin señales | 97,9 % (47 de 48) |
+| Remitente correcto (VisionPsy) | 90,8 % |
+| Dominios de los enlaces correctos (VisionPsy) | 85,0 % |
+| Teléfonos correctos (VisionPsy) | 95,0 % |
+| Texto literal, 1 − CER medio (VisionPsy) | 62,6 % |
+
+| Etapa | TTFT mediana | Total mediana | Tokens/s | Tokens de salida |
+|---|---|---|---|---|
+| VisionPsy Flash, transcripción | 1,07 s | 1,80 s | 173 | 95 |
+| Qwen3 4B, veredicto con esquema | 1,75 s | 6,59 s | 35 | 166 |
+
+Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 120 capturas.
+
+**Límites y manejo de riesgo, con honestidad.**
+- La transcripción de VisionPsy tiene errores de caracteres (CER medio del 37 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave, no sobre el texto exacto.
+- La clase «sospechoso» (solo presión de tiempo, sin otra señal) se detecta mal: 1 de 8. El modelo pequeño transcribe mal frases como «último aviso» y la regla no dispara. Es el siguiente ajuste.
+- En correos largos con dominio oficial, VisionPsy a veces transcribe mal el dominio y las reglas lo ven «parecido al oficial»: 1 falso positivo de 48 legítimos en esta corrida. El contraste con el OCR determinista, solo cuando un dominio queda a uno o dos caracteres del oficial, está previsto para reducirlo.
+- La app nunca dice «seguro». Ante la duda, muestra el canal oficial y pide llamar al número impreso en la tarjeta.
 
 ## Para el desafío general **(pendiente)**
 
