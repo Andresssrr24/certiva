@@ -1,4 +1,5 @@
 // Renderiza cada data/html/*.html a data/capturas/*.png con Electron, sin navegador externo.
+// Ventana de 390x844 px CSS; en pantalla retina la captura sale a 780x1688, tamaño de teléfono real.
 // Uso: npx electron data/render.js [máximo]     (el máximo sirve para probar con pocas)
 "use strict";
 const { app, BrowserWindow } = require("electron");
@@ -15,14 +16,13 @@ app.whenReady().then(async () => {
   const max = Number(process.argv[2]) || Infinity;
   const files = fs.readdirSync(dir).filter((f) => f.endsWith(".html")).sort().slice(0, max);
   const win = new BrowserWindow({
-    show: false, width: 780, height: 1688,
+    show: false, width: 390, height: 844,
     webPreferences: { offscreen: true, sandbox: true, contextIsolation: true, nodeIntegration: false },
   });
   let n = 0;
   console.log(`render: ${files.length} archivos, ventana creada`);
   for (const f of files) {
     await win.loadFile(path.join(dir, f));
-    win.webContents.setZoomFactor(2);
     await new Promise((r) => setTimeout(r, 250));
     const img = await win.webContents.capturePage();
     fs.writeFileSync(path.join(out, f.replace(/\.html$/, ".png")), img.toPNG());

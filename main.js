@@ -37,7 +37,7 @@ function crearVentana() {
 
 ipcMain.handle("estado", async () => ({
   ocupado, banco: motor.banco, historial, reportes,
-  hardware: perf.hardware(), sdk: await modelos.sdk().then((S) => S.version || "0.19").catch(() => "?"),
+  hardware: perf.hardware(), sdk: (() => { try { return require("@qvac/sdk/package").version; } catch { return "?"; } })(),
 }));
 
 ipcMain.handle("catalogo", () => modelos.catalogo());
