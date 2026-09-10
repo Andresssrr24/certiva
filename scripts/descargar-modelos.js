@@ -28,7 +28,18 @@ const modelos = require("../lib/modelos");
     console.log(`\n▸ Descargando ${e.label} (${gb(s.bytes)})`);
     let ultimo = -10;
     const t0 = Date.now();
-    await modelos.descargar(e, (p) => { if (p.porcentaje - ultimo >= 5) { ultimo = p.porcentaje; process.stdout.write(`  ${p.porcentaje.toFixed(0)}% archivo ${p.archivo}/${p.archivos}\n`); } });
+    try {
+      await modelos.descargar(e, (p) => { if (p.porcentaje - ultimo >= 5) { ultimo = p.porcentaje; process.stdout.write(`  ${p.porcentaje.toFixed(0)}% archivo ${p.archivo}/${p.archivos}\n`); } });
+    } catch (err) {
+      if (!e.fallback) throw err;
+      // El registro P2P falló: se carga desde la URL HTTP de respaldo. El SDK valida el checksum del catálogo.
+      console.log(`  registro falló (${(err && err.message || err).toString().slice(0, 80)}...). Probando respaldo HTTP: ${e.fallback}`);
+      const S = await modelos.sdk();
+      const args = await modelos.argsCarga(e);
+      let u = -10;
+      const id = await S.loadModel({ ...args, fallbackSrc: e.fallback, onProgress: (p) => { if (p && typeof p.percentage === "number" && p.percentage - u >= 5) { u = p.percentage; process.stdout.write(`  ${p.percentage.toFixed(0)}% (respaldo)\n`); } } });
+      await S.unloadModel({ modelId: id, clearStorage: false });
+    }
     total += s.bytes;
     console.log(`  listo en ${Math.round((Date.now() - t0) / 1000)}s`);
   }
