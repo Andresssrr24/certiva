@@ -2,7 +2,34 @@
 
 > Nombre del proyecto pendiente. Repositorio provisional: https://github.com/Andresssrr24/antifraude-qvac (privado hasta la entrega).
 
-Prototipo Electron en Mac que lee capturas de mensajes sospechosos y simula el análisis de llamadas con audio sintético, con modelos locales de QVAC, y dice si es fraude, por qué y qué hacer. La inferencia corre localmente; la integración en teléfonos es trabajo futuro. Los indicadores reportados, no verificados, se comparten entre pares sin servidor.
+**Un motor anti-fraude que corre donde está el cliente.** No es una app más: es un motor que un banco, una cooperativa o una billetera de criptoactivos embebe en la suya. Lee la captura de un mensaje sospechoso o una llamada en vivo **en el teléfono del cliente**, con modelos locales de QVAC, y dice si es fraude, por qué y qué hacer. Ni el mensaje, ni la llamada, ni la captura salen nunca del dispositivo. Lo único que cruza una frontera es lo que no es inferencia: el registro de canales oficiales baja del emisor al teléfono, los reportes suben como hashes, y una bandera de coacción llega al motor de riesgo por el canal que la app del banco ya tiene.
+
+| Superficie | Quién la usa | Dónde corre la inferencia |
+|---|---|---|
+| Módulo embebible en la app del emisor | El cliente | En su teléfono: VisionPsy y reglas |
+| Radar para el equipo de fraude | El banco | En la infraestructura del banco |
+| App de referencia, este repositorio | El jurado y el piloto | En el MacBook, con los mismos modelos |
+
+```mermaid
+flowchart LR
+  subgraph T[Teléfono del cliente]
+    C[Captura o llamada] --> V[VisionPsy · Parakeet] --> R[Reglas + Qwen3] --> D[Veredicto y consejo]
+  end
+  subgraph B[Infraestructura del banco]
+    RG[Registro de canales oficiales]
+    RA[Radar del equipo de fraude]
+    MR[Motor de riesgo de pagos]
+  end
+  subgraph P[Pares · Hyperswarm]
+    H[Hashes de indicadores]
+  end
+  RG -- lista de canales --> R
+  D -- hash del remitente, número o dominio --> H
+  H --> RA
+  D -- bandera de coacción, sin contenido --> MR
+```
+
+El contrato de integración son dos esquemas JSON, `lib/esquemas.js`: lo que entra de la captura y lo que sale como veredicto. `npm run ejemplo` corre el motor sin interfaz y muestra exactamente lo que cruzaría hacia el banco. **Mismas tácticas, mismo motor:** las estafas contra usuarios de billeteras y exchanges piden la frase semilla, cambian direcciones de depósito y ofrecen «envíe para recibir»; el motor las detecta con las mismas reglas, y el set de demo incluye 16 ejemplos de una billetera ficticia.
 
 Tracks en los que compite: **Desafío General**, **Caja de Ahorros**, **QVAC Psy**.
 
@@ -92,7 +119,7 @@ Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector p
 
 ## Datos
 
-Ningún dato real. El audio de la llamada de vishing de la demo, `data/audio/llamada-vishing.wav`, es sintético: lo genera `data/generar-llamada.js` con las voces del sistema de macOS a partir del guion de `data/llamada-vishing.md`. Nadie fue grabado. Medido en el M4: cada lote de cinco segundos se transcribe en unos 150 ms, y la llamada completa de 45 s se procesa en unos 10 s con carga del modelo incluida. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
+Ningún dato real. El emisor de la demo es «Banco Demo»; las estafas de billetera imitan a «Billetera Demo», también ficticia. El audio de la llamada de vishing de la demo, `data/audio/llamada-vishing.wav`, es sintético: lo genera `data/generar-llamada.js` con las voces del sistema de macOS a partir del guion de `data/llamada-vishing.md`. Nadie fue grabado. Medido en el M4: cada lote de cinco segundos se transcribe en unos 150 ms, y la llamada completa de 45 s se procesa en unos 10 s con carga del modelo incluida. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
 
 ## Para el jurado de la Caja de Ahorros
 
