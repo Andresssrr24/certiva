@@ -304,3 +304,7 @@ El radar marca reportes para investigación durante la sesión; no confirma frau
 ### Evidencia del formulario y consola
 
 [Flujo real Android → piloto → consola](docs/evidencias/flujo-real/README.md): prueba móvil aprobada con reglas locales y consentimiento; asignación/resolución del mismo caso verificadas en backend. La instrumentación administrativa agotó el tiempo de lectura final y conserva su fallo. Grabaciones originales archivadas en la release; esto no valida QVAC Android.
+
+### Compatibilidad del piloto local
+
+Si una APK emite motivos que un servidor antiguo rechaza, usa una revisión compatible conservando la base y usuarios existentes. [Recuperación verificada del piloto local](docs/PILOTO-LOCAL-COMPATIBLE.md): contrato validado con 16 pruebas y SDK/política cotejados con la APK0.4; no se desactivaron controles de reporte.
