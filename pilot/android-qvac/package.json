@@ -1,1 +1,11 @@
-{"name":"certiva-android-qvac","private":true,"version":"0.1.0","devDependencies":{"bare-link":"3.3.0"},"scripts":{"bundle":"node scripts/bundle.cjs"}}
+{
+  "name": "certiva-android-qvac",
+  "private": true,
+  "version": "0.1.0",
+  "devDependencies": {
+    "bare-link": "3.3.0"
+  },
+  "scripts": {
+    "bundle": "node scripts/bundle.cjs"
+  }
+}
