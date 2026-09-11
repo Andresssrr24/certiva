@@ -37,6 +37,12 @@ Usar esa lámina como referencia principal para futuras piezas, presentaciones, 
 - El PNG v5 está disponible. El master vectorial, la fuente exacta del lettering y las exportaciones finales aún no están producidos.
 - `output/pdf/Certiva-Brand-Book-v1.pdf` es histórico: no representa la tipografía, el descriptor ni la paleta final. Actualizarlo con esta memoria cuando se solicite una nueva edición.
 
+## Alcance de producto confirmado por Bryan
+
+- USDT y wallets cripto quedan fuera del alcance; no son requisitos.
+- La dirección actual es banca, con Caja de Ahorros como referencia: SDK móvil, consola de fraude y modelo comercial para que el banco lo ofrezca o comercialice a sus clientes.
+- Propuesta vigente: `docs/PRODUCTO-BANCA-Y-MODELO-COMERCIAL.md`. Precios, piloto y modalidad de cobro son hipótesis propuestas, no decisiones comerciales aprobadas ni acuerdo con el banco.
+
 ## Continuidad y coordinación
 
 Una indicación nueva no cancela otras tareas autorizadas. Coordinar interfaces y archivos compartidos antes de modificarlos. No afirmar que otra tarea está activa sin verificar su estado.
