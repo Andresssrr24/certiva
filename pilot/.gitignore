@@ -1,0 +1,7 @@
+.local/
+*.sqlite*
+ios/.build/
+ios/.swiftpm/
+artifacts/
+ios/**/xcuserdata/
+ios/DerivedData/

@@ -1,0 +1,34 @@
+name: CertivaPilot
+options:
+  bundleIdPrefix: local.certiva
+packages:
+  CertivaSDK:
+    path: .
+targets:
+  CertivaPilot:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: [Demo]
+    dependencies:
+      - package: CertivaSDK
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.certiva.pilot
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        INFOPLIST_KEY_CFBundleDisplayName: Certiva Piloto
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+    info:
+      path: Demo/Info.plist
+      properties:
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        UILaunchScreen: {}
+schemes:
+  CertivaPilot:
+    build:
+      targets:
+        CertivaPilot: all
