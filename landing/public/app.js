@@ -3,7 +3,7 @@ import { analyzeText, EXAMPLES, PRESENTATION } from "./analyzer.js";
 const $ = (selector) => document.querySelector(selector);
 const state = { mode: "text", token: "", connected: false, busy: false, last: null };
 const resultEmpty = $("#result").innerHTML;
-const escape = (text) =>
+const escapeHtml = (text) =>
   String(text).replace(
     /[&<>"']/g,
     (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch],
@@ -31,7 +31,7 @@ function renderResult(result) {
   state.last = result;
   $("#engine-label").textContent = result.engine === "qvac" ? "QVAC LOCAL" : "REGLAS LOCALES";
   $("#result").innerHTML =
-    `<article class="result-card"><span class="result-state ${result.verdict === "sin_senales" ? "neutral" : ""}">${p.badge}</span><h3>${p.title}</h3><p>${p.action}</p>${result.signals.length ? `<ul class="signals">${result.signals.map((s) => `<li><div><strong>${escape(s.title || "Señal detectada")}</strong><br>${escape(s.evidence)}</div></li>`).join("")}</ul>` : ""}${result.explanation ? `<p><strong>Explicación QVAC:</strong> ${escape(result.explanation)}</p>` : ""}<div class="result-actions"><a class="button" href="tel:8002252">Llamar al 800-2252 ↗</a><button class="quiet" id="download" type="button">Descargar resultado</button></div><p class="result-meta">${result.engine === "qvac" ? "Procesado con QVAC en tu equipo" : "Análisis de reglas en tu navegador"} · ${result.elapsedMs} ms<br>Orientación preventiva. No es una confirmación de autenticidad.</p></article>`;
+    `<article class="result-card"><span class="result-state ${result.verdict === "sin_senales" ? "neutral" : ""}">${p.badge}</span><h3>${p.title}</h3><p>${p.action}</p>${result.signals.length ? `<ul class="signals">${result.signals.map((s) => `<li><div><strong>${escapeHtml(s.title || "Señal detectada")}</strong><br>${escapeHtml(s.evidence)}</div></li>`).join("")}</ul>` : ""}${result.explanation ? `<p><strong>Explicación QVAC:</strong> ${escapeHtml(result.explanation)}</p>` : ""}<div class="result-actions"><a class="button" href="tel:8002252">Llamar al 800-2252 ↗</a><button class="quiet" id="download" type="button">Descargar resultado</button></div><p class="result-meta">${result.engine === "qvac" ? "Procesado con QVAC en tu equipo" : "Análisis de reglas en tu navegador"} · ${result.elapsedMs} ms<br>Orientación preventiva. No es una confirmación de autenticidad.</p></article>`;
   $("#download").addEventListener("click", downloadResult);
 }
 function downloadResult() {
@@ -153,9 +153,9 @@ $("#clear").addEventListener("click", () => {
   resetResult();
   $("#message").focus();
 });
-document
-  .querySelectorAll("[data-mode]")
-  .forEach((button) => button.addEventListener("click", () => setMode(button.dataset.mode)));
+document.querySelectorAll("[data-mode]").forEach((button) => {
+  button.addEventListener("click", () => setMode(button.dataset.mode));
+});
 $("#capture").addEventListener("change", () => {
   if (!state.busy) resetResult();
   $("#file-label").textContent = $("#capture").files[0]?.name || "Selecciona una captura.";
@@ -262,9 +262,9 @@ let demoCase = "phishing";
 function selectDemo(key) {
   if (state.busy) return;
   demoCase = key;
-  document
-    .querySelectorAll("[data-demo]")
-    .forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.demo === key)));
+  document.querySelectorAll("[data-demo]").forEach((b) => {
+    b.setAttribute("aria-pressed", String(b.dataset.demo === key));
+  });
   $("#demo-sender").textContent = demoCases[key].sender;
   $("#demo-message").textContent = EXAMPLES[key];
   $("#demo-question").textContent = demoCases[key].question;
@@ -273,7 +273,9 @@ function selectDemo(key) {
   $("#demo-reveal").textContent = "Ver las señales ↗";
   $("#engine-label").textContent = "DEMO · REGLAS";
 }
-document.querySelectorAll("[data-demo]").forEach((b) => b.addEventListener("click", () => selectDemo(b.dataset.demo)));
+document.querySelectorAll("[data-demo]").forEach((b) => {
+  b.addEventListener("click", () => selectDemo(b.dataset.demo));
+});
 $("#demo-reveal").addEventListener("click", () => {
   if (state.busy) return;
   renderResult(analyzeText(EXAMPLES[demoCase]));
