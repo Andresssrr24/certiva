@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "test": "NotificationBrandingTest",
+  "apkSha256": "cb69b6bfd72aada2c12649870b73fc6d73dd15f26707086c518913c185234837",
+  "scope": "Native Android notification with controlled fixture. Small icon, public version and large icon checked; visible title awaited and screenshot reviewed. No inference, real WhatsApp delivery or physical phone validation."
+}
