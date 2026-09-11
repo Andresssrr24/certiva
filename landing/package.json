@@ -1,0 +1,17 @@
+{
+  "name": "certiva-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/preview.mjs",
+    "build": "node server/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "qvac": "node server/bridge.mjs",
+    "qvac:prepare": "node server/prepare-qvac.mjs",
+    "qvac:verify": "node server/verify-qvac.mjs"
+  },
+  "engines": {
+    "node": ">=22.17"
+  }
+}
