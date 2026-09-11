@@ -19,7 +19,7 @@ Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorr
 
 ## Antes de enviar
 
-- [ ] Nombre del proyecto decidido; renombrar el repo con `gh repo rename <nombre>` y actualizar el enlace del README.
+- [x] Nombre del proyecto decidido: **Certiva**; repo renombrado a `certiva` (la URL anterior redirige) y enlaces actualizados.
 - [ ] `npm run lint` sin errores y `node eval/reglas-check.js` en 120 de 120.
 - [ ] `eval/results.md` con la última corrida y las métricas copiadas al README.
 - [ ] Etiqueta `git tag v1.0-hackathon && git push --tags`.

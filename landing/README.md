@@ -23,7 +23,7 @@ La vista previa usa http://127.0.0.1:4317. Vercel publica exclusivamente `dist/`
 
 QVAC no corre en funciones de Vercel. El usuario conecta un puente que escucha exclusivamente en 127.0.0.1:4318. El SDK y los modelos se ejecutan en ese mismo equipo; no permite conectarse al Mac del autor desde otros dispositivos.
 
-1. En la raíz `antifraude-qvac`, ejecutar `npm ci`. En `landing`, ejecutar `npm run qvac:prepare`: descarga VisionPsy y Qwen3, los dos modelos usados por la landing. Reservar espacio para las dependencias nativas y los modelos (varios GB).
+1. En la raíz `certiva`, ejecutar `npm ci`. En `landing`, ejecutar `npm run qvac:prepare`: descarga VisionPsy y Qwen3, los dos modelos usados por la landing. Reservar espacio para las dependencias nativas y los modelos (varios GB).
 2. Cerrar otras aplicaciones/procesos QVAC: comparten un worker.
 3. En `landing`, ejecutar `npm run qvac`.
 4. Abrir el enlace de conexión directa que imprime el puente, o pegar la clave temporal de la terminal en «Conectar motor QVAC local». La clave viaja en el fragmento de la URL, no en la petición HTTP a Vercel; la página retira ese fragmento del historial al recibirlo. La clave solo vive en memoria y se renueva al reiniciar el puente.

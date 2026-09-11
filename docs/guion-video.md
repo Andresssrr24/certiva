@@ -30,9 +30,9 @@ Objetivo: 4:40 de duración para dejar margen; máximo 5:00. Rúbrica general: t
 
 ### 0. Gancho y tesis — 0:00 a 0:30
 
-Pantalla: la app en la pantalla de inicio, tarjeta «SMS: «cuenta bloqueada»» visible. Rótulo: nombre del proyecto y «Motor anti-fraude en el dispositivo · QVAC».
+Pantalla: la app en la pantalla de inicio, tarjeta «SMS: «cuenta bloqueada»» visible. Rótulo: «Certiva · Tu aliado contra el fraude» y debajo «Motor anti-fraude en el dispositivo · QVAC».
 
-> Este mensaje le llega a un cliente de la Caja de Ahorros: «su cuenta fue bloqueada, entre aquí». El enlace se parece al oficial y pide el código. Cada día alguien cae. Esto no es otra app: es un motor anti-fraude que el banco mete en su propia app. Corre en el teléfono del cliente, y el banco recibe la señal sin recibir nunca el mensaje.
+> Este mensaje le llega a un cliente de la Caja de Ahorros: «su cuenta fue bloqueada, entre aquí». El enlace se parece al oficial y pide el código. Cada día alguien cae. Esto no es otra app: Certiva es un motor anti-fraude que el banco mete en su propia app. Corre en el teléfono del cliente, y el banco recibe la señal sin recibir nunca el mensaje.
 
 ### 1. Sin internet, análisis completo — 0:30 a 1:40
 
