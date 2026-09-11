@@ -58,23 +58,31 @@ capturas, logs ni argumentos visibles de comandos:
   credenciales conservadas fuera del repositorio.
 - Canal cerrado Alpha configurado con el grupo y Panamá como mercado inicial.
 - Paquete 4 / `0.4.0-menu-experimental`, target 36, agregado al borrador cerrado.
-- Google Play exige completar la configuración inicial. La descripción general de
-  publicación ya muestra la declaración financiera actualizada; siguen pendientes
-  la ficha y otros datos obligatorios de la app. No se ha enviado a revisión y el
-  canal cerrado **no está publicado**.
-- Las siete variables de producción están configuradas como sensibles en Vercel
-  por la tarea propietaria, mediante CLI y con autorización de Bryan.
-  `BETA_ENABLED` permanece en `false`; el formulario público sigue oculto.
-- Despliegue comunicado por la tarea propietaria:
-  `dpl_ESYDTVEkiQY47f9eguS7vyuh1tG9`, READY y asociado al alias público.
-  Consulta pública independiente de `/api/beta/status`: HTTP 200,
-  `enabled:false`, `registered:false`, con enlace a la prueba interna.
-- `npm test`: 16 pruebas aprobadas en la integración; la tarea propietaria repitió
-  las 9 pruebas beta y el build antes del despliegue, ambos correctos.
+- Google Play confirma **6 de 11 tareas iniciales completas**: privacidad, anuncios,
+  apps gubernamentales, funciones financieras, salud y categoría/contacto.
+- Política Android publicada y guardada en Play: `/privacidad-app`. Categoría
+  Herramientas; correo de soporte y sitio HTTPS guardados.
+- Ficha es-419 guardada como borrador con descripción, icono 512, gráfico 1024×500
+  y dos capturas reales del menú. Falta resolver la declaración de recursos de IA.
+- Clasificación de contenido pendiente de aceptación de condiciones IARC.
+- Público 18+ aprobado por Bryan; el formulario depende de Detalles de acceso.
+  Bryan decidió conservar Ingresar/Mis reportes y conectar su servicio público
+  después. Falta acceso completo para revisores a esas funciones.
+- Seguridad de datos guardada como borrador: descarga HTTPS del modelo y cuentas
+  asignadas externamente. Faltan tipos, usos y revisión final de la declaración.
+- No se ha enviado la app a revisión; el canal cerrado **no está publicado**.
+- Las siete variables de producción ya están guardadas como sensibles en Vercel
+  mediante CLI, con autorización de Bryan. `BETA_ENABLED` permanece en `false`.
+  `/probar` muestra la invitación interna y mantiene oculto el formulario;
+  OAuth público no activa ese formulario.
+- La política Android se desplegó por la tarea propietaria en
+  `dpl_7sbtMY19XVfpbLhMchU4uPNhVoJh`; el registro permanece desactivado.
+- `npm test`: 16 pruebas aprobadas en la integración beta; build correcto.
+  La actualización de privacidad/ficha no cambia la API ni Android.
 
 ## Antes de activar
 
-1. Mantener las variables sensibles configuradas y comprobar el estado del despliegue.
+1. Comprobar el despliegue con los secretos de producción ya guardados.
 2. Conservar el registro desactivado mientras Google Play no ofrezca el canal cerrado.
 3. Completar ficha, privacidad, clasificación, acceso y declaraciones de Google Play;
    enviar la prueba cerrada a revisión y comprobar que esté disponible.

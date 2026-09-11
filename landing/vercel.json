@@ -51,6 +51,10 @@
   ],
   "rewrites": [
     {
+      "source": "/privacidad-app",
+      "destination": "/privacidad-app.html"
+    },
+    {
       "source": "/probar",
       "destination": "/probar.html"
     },

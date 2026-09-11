@@ -3,6 +3,7 @@ server/preview.mjs
 server/prepare-qvac.mjs
 server/verify-qvac.mjs
 tests/
+play-store-assets/
 README.md
 
 # Built by Vercel from public/; avoid uploading duplicate APK bytes.

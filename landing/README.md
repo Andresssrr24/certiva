@@ -28,6 +28,8 @@ En esta rama, el botón abre `/probar` y el QR vuelve a la ruta estable `/apk`, 
 
 Estado y requisitos: [BETA-SETUP.md](BETA-SETUP.md). Revisión independiente: [BETA-REVIEW.md](BETA-REVIEW.md). `npm run dev` sirve archivos estáticos y no emula las funciones ni el flujo OAuth; las pruebas de servidor emplean dobles y no dan de alta usuarios reales. Esta PR no acredita un despliegue, una instalación desde Play ni el recorrido completo en navegador.
 
+La política Android está en `/privacidad-app`, separada de la privacidad del registro web. Los [materiales de la ficha es-419](play-store-assets/README.md) se conservan como borrador y `.vercelignore` excluye esa carpeta del despliegue. No acreditan aprobación de Google Play; continúan pendientes acceso completo para revisores, declaraciones y clasificación.
+
 Los apartados de despliegue que siguen documentan revisiones anteriores y sus comprobaciones históricas.
 
 ## QVAC

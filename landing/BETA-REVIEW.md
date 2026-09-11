@@ -29,3 +29,13 @@ Las variables sensibles de Vercel ya están configuradas por la tarea propietari
 ## Estado de producción comunicado y comprobado
 
 La tarea de landing incorporó las correcciones y, tras autorización de Bryan, configuró las siete variables sensibles de producción. Notificó el despliegue READY `dpl_ESYDTVEkiQY47f9eguS7vyuh1tG9`. Esta tarea confirmó por GET público que `/api/beta/status` responde HTTP 200 con `enabled:false` y `registered:false`. El despliegue no acredita activación del registro ni disponibilidad del canal cerrado. El estado actualizado de Play y los requisitos pendientes figuran en BETA-SETUP.md. No se consultaron ni copiaron los valores de las variables para esta actualización documental.
+
+## Privacidad Android y ficha de Play
+
+Inventario congelado de la tarea propietaria: política `/privacidad-app`, rewrite, exclusión de `play-store-assets/` en `.vercelignore`, descripción es-419 y recursos de la ficha en borrador. La política pública se comparó byte a byte con el archivo incorporado; recursos locales y ruta correctos. API pública: `enabled:false`, `registered:false`. Biome de HTML/configuración sin errores. El código Android y la API beta no cambian.
+
+Icono 512×512, gráfico 1024×500 inspeccionado y capturas 1080×2400. Las dos capturas son idénticas a `menu-home.png` y `menu-verify.png` de la evidencia nativa 0.4 target35. No equivalen a capturas de una instalación Play. El origen y la autorización de la etiqueta IA del icono/gráfico continúan pendientes en la tarea propietaria; no se declara resuelta esa revisión por archivar los materiales.
+
+Play tiene 6 de 11 tareas completas según la comprobación de la tarea propietaria. Siguen pendientes acceso completo para revisores, clasificación IARC, declaración de recursos de IA y cierre de Seguridad de datos. La ficha no se ha enviado a revisión ni está publicado el canal cerrado. Los borradores de datos y la política se archivan con su estado; esta integración no certifica cumplimiento ni completa los formularios de Play.
+
+Durante la copia se agotó el disco. Se retiraron únicamente `dist/` y la APK duplicada de esta carpeta aislada de revisión, generados por la misma tarea. Las doce fuentes/materiales seleccionados se copiaron de nuevo y se compararon byte a byte antes de ajustar la documentación. No se eliminaron originales ni archivos de otras tareas. No se repitió la compilación para esta actualización estática.
