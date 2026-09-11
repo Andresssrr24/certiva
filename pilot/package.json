@@ -1,0 +1,11 @@
+{
+  "name": "certiva-bank-pilot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build": "node build.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=22.17" }
+}
