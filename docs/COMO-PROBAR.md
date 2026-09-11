@@ -11,8 +11,8 @@ Guía para el equipo. Todo corre en la máquina: modelos, reglas, pares. No hay 
 ## 1. Instalar, una vez y con internet
 
 ```bash
-git clone https://github.com/Andresssrr24/antifraude-qvac.git
-cd antifraude-qvac
+git clone https://github.com/Andresssrr24/certiva.git
+cd certiva
 npm install
 node node_modules/electron/install.js   # solo si npm install no bajó el binario de Electron (pasa en redes lentas)
 npx -y @qvac/cli doctor                  # GPU, memoria y disco

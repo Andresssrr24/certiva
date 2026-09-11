@@ -1,8 +1,8 @@
 {
-  "name": "antifraude-qvac",
+  "name": "certiva",
   "version": "0.1.0",
   "private": true,
-  "description": "Anti-fraude en el dispositivo: lee capturas de mensajes y llamadas en vivo con modelos locales de QVAC. Hackatón ISD Summit 2026.",
+  "description": "Certiva · Tu aliado contra el fraude. Verificación local con QVAC.",
   "license": "Apache-2.0",
   "type": "commonjs",
   "main": "main.js",
@@ -27,5 +27,5 @@
     "@biomejs/biome": "^2.5.13",
     "electron": "^42.5.0"
   },
-  "productName": "Anti-fraude QVAC"
+  "productName": "Certiva"
 }

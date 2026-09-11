@@ -19,7 +19,7 @@ Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorr
 
 ## Antes de enviar
 
-- [ ] Nombre del proyecto decidido; renombrar el repo con `gh repo rename <nombre>` y actualizar el enlace del README.
+- [x] Nombre del proyecto decidido: **Certiva**; repo renombrado a `certiva` (la URL anterior redirige) y enlaces actualizados.
 - [ ] `npm run lint` sin errores, `npm test` en verde y `node eval/reglas-check.js` en 136 de 136.
 - [ ] La última corrida en `eval/runs/<fecha>/` y sus métricas copiadas al README. Hoy el README lleva la corrida de 136 (83,1 % antes de la corrección) más la verificación por subconjuntos tras corregir la segunda lectura; si hay 25 minutos libres con el worker de QVAC desocupado, `npm run eval` y actualizar la tabla.
 - [ ] Mergear la rama `apk-movil` a `main` por PR (APK, lector Q8 en el teléfono, contraste en SMS, métricas honestas).

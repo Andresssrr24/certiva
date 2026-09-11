@@ -8,13 +8,25 @@ const tecnico = $("#tecnico");
 const zona = $("#zona");
 const audio = $("#audio");
 let ocupado = false;
+let mensajesDisponibles = false;
+let llamadasDisponibles = false;
+function actualizarAcciones() {
+  const bloqueado = ocupado || window.certivaScenarioBusy;
+  for (const id of ["#elegir", "#tVerificarMensaje"]) $(id).disabled = bloqueado || !mensajesDisponibles;
+  for (const id of ["#llamadaDemo", "#tVerificarLlamada"]) $(id).disabled = bloqueado || !llamadasDisponibles;
+  for (const boton of document.querySelectorAll(".ejemplo")) boton.disabled = bloqueado || !mensajesDisponibles;
+}
 const sesion = [];
 
-const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+const esc = (s) =>
+  String(s ?? "").replace(
+    /[&<>"']/g,
+    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c],
+  );
 const ICONO_AVISO =
   '<svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 6a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V9a1 1 0 0 1 1-1zm0 9.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>';
 const ETIQUETA = {
-  fraude: "Es una estafa",
+  fraude: "Señales de estafa",
   sospechoso: "Sospechoso",
   sin_senales: "Sin señales de estafa",
   no_legible: "No pude leerlo",
@@ -41,7 +53,6 @@ const SENAL = {
   urgencia: "Te meten prisa",
   pago_terceros: "Te piden mover dinero",
 };
-const TEL_OFICIAL = "800-1234";
 function pon(txt) {
   estado.textContent = txt;
 }
@@ -70,8 +81,12 @@ $("#tCuelgaOk").onclick = () => {
 };
 $("#tVolver").onclick = () => pantalla("inicio");
 $("#tVolver2").onclick = () => pantalla("inicio");
-$("#tLlamar").onclick = () => pon(`en el teléfono real esto marca al ${TEL_OFICIAL}`);
-$("#tLlamar2").onclick = () => pon(`en el teléfono real esto marca al ${TEL_OFICIAL}`);
+$("#tLlamar").onclick = () => {
+  $("#tContacto").hidden = false;
+};
+$("#tLlamar2").onclick = () => {
+  $("#tContacto2").hidden = false;
+};
 $("#tVerificarMensaje").onclick = async () => analizar(await window.escudo.elegirCaptura());
 $("#tVerificarLlamada").onclick = async () => simularLlamada(await window.escudo.llamadaDemo());
 
@@ -143,10 +158,27 @@ function pintaTelefono(r) {
   $("#tReportar").textContent = "Reportar este mensaje";
   $("#tReportar").onclick = async () => {
     $("#tReportar").disabled = true;
-    const reps = await window.escudo.reportar(r.captura);
-    $("#tReportar").textContent = "Reportado. Gracias por proteger a otros.";
-    pintaBanco(reps);
+    try {
+      if (!r.reportedIndicators) {
+        const reps = await window.escudo.reportar(r.captura);
+        r.reportedIndicators = true;
+        pintaBanco(reps);
+      }
+      if (!r.reportedCase) {
+        await createReportedCase(r);
+        r.reportedCase = true;
+      }
+      $("#tReportar").textContent = "Reporte recibido en el centro de seguridad";
+    } catch (e) {
+      $("#tReportar").disabled = false;
+      $("#tReportar").textContent = "Reintentar reporte";
+      pon(e.message || e);
+    }
   };
+  if (r.reportedCase) {
+    $("#tReportar").disabled = true;
+    $("#tReportar").textContent = "Reporte recibido en el centro de seguridad";
+  }
   pantalla("veredicto");
 }
 const NOMBRE_IND = { dominio: "esta dirección web", numero: "este número", remitente: "este remitente" };
@@ -204,24 +236,37 @@ function pintaHistorial() {
     };
   }
 }
-async function analizar(ruta) {
-  if (ocupado || !ruta) return;
+async function analizar(ruta, options = {}) {
+  if (ocupado || !ruta || !mensajesDisponibles) return;
+  ocupado = true;
+  actualizarAcciones();
   pasosReset();
-  pantalla("analizando");
+  if (!options.background) {
+    $("#certivaNotification").hidden = true;
+    $("#sourceNotification").hidden = true;
+    pantalla("analizando");
+  }
   pon("analizando");
   try {
     const r = await window.escudo.analizar(ruta);
     r.nombre = ruta.split("/").pop();
     sesion.unshift(r);
     ultimoAnalisis = r;
+    pendingAssessment = r;
     pintaHistorial();
-    pintaTelefono(r);
+    if (options.background) assessmentArrived(r);
+    else pintaTelefono(r);
     pintaTecnico(r);
     pon("listo");
   } catch (e) {
-    pintaTelefono({ ok: false, detalle: String(e.message || e) });
+    const failure = { ok: false, detalle: String(e.message || e) };
+    if (options.background) assessmentArrived(failure);
+    else pintaTelefono(failure);
     tecnico.innerHTML = `<p class="mini">Error: ${esc(e.message || e)}</p>`;
     pon("error");
+  } finally {
+    ocupado = false;
+    actualizarAcciones();
   }
 }
 
@@ -302,7 +347,7 @@ window.escudo.on("llamada-fin", (r) => {
   esperar();
 });
 async function simularLlamada(ruta) {
-  if (ocupado || !ruta) return;
+  if (ocupado || !ruta || !llamadasDisponibles) return;
   limpiarLlamada();
   pantalla("llamada");
   audio.hidden = false;
@@ -332,14 +377,14 @@ const EJEMPLOS = [
 ];
 async function pintaEjemplos() {
   const todas = await window.escudo.capturasDemo();
-  const porId = new Map(todas.map((c) => [c.id, c.ruta]));
+  const porId = new Map(todas.map((c) => [c.id, c]));
   $("#ejemplos").innerHTML = EJEMPLOS.filter(([id]) => porId.has(id))
     .map(
       ([id, titulo, sub]) =>
-        `<button type="button" class="ejemplo" data-ruta="${esc(porId.get(id))}"><img src="file://${esc(porId.get(id))}" alt=""><span>${esc(titulo)}<small>${esc(sub)}</small></span></button>`,
+        `<button type="button" class="ejemplo" data-id="${esc(id)}"><span class="scenario-icon" data-channel="${id.includes("whatsapp") ? "whatsapp" : id.includes("correo") ? "correo" : "sms"}"><svg class="android-icon" aria-hidden="true"><use href="#android-${id.includes("whatsapp") ? "whatsapp" : id.includes("correo") ? "mail" : "messages"}"/></svg></span><span>${esc(titulo)}<small>${esc(sub)}</small></span></button>`,
     )
     .join("");
-  for (const b of document.querySelectorAll(".ejemplo")) b.onclick = () => analizar(b.dataset.ruta);
+  for (const b of document.querySelectorAll(".ejemplo")) b.onclick = () => receiveScenario(porId.get(b.dataset.id), b);
 }
 $("#elegir").onclick = async () => analizar(await window.escudo.elegirCaptura());
 for (const ev of ["dragenter", "dragover"])
@@ -432,18 +477,31 @@ async function medirRed() {
 (async () => {
   window.escudo.on("ocupado", (v) => {
     ocupado = v;
-    $("#elegir").disabled = v;
-    $("#llamadaDemo").disabled = v;
-    $("#tVerificarMensaje").disabled = v;
-    $("#tVerificarLlamada").disabled = v;
+    actualizarAcciones();
   });
   window.escudo.on("progreso-modelo", (p) => pon(`cargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("progreso-descarga", (p) => pon(`descargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("analisis-etapa", paso);
   await pintaEjemplos();
   const st = await window.escudo.estado();
+  const listo = (grupo, key) => st.modelos?.[grupo]?.some((m) => m.key === key && m.enCache);
+  mensajesDisponibles = listo("vision", "visionpsy-flash") && listo("texto", "qwen3-4b");
+  llamadasDisponibles = mensajesDisponibles && listo("voz", "parakeet-tdt");
+  actualizarAcciones();
   $("#modelos").textContent =
-    `VisionPsy Nano 460M Flash · Qwen3 4B · Parakeet TDT · SDK ${st.sdk} · ${st.hardware.cpu}, ${st.hardware.ram_gb} GB · inferencia local`;
+    `VisionPsy Nano 460M Flash · Qwen3 4B · SDK ${st.sdk} · ${st.hardware.cpu}, ${st.hardware.ram_gb} GB · inferencia local`;
+  const aviso =
+    st.sdk === "?"
+      ? "Para verificar mensajes en este equipo, instala QVAC y descarga los modelos locales."
+      : !mensajesDisponibles
+        ? "Falta preparar los modelos para verificar mensajes. Consulta las instrucciones de instalación del proyecto."
+        : !llamadasDisponibles
+          ? "Verificación de mensajes disponible. Las llamadas requieren descargar el modelo de voz."
+          : "";
+  $("#setupNotice").hidden = !aviso;
+  $("#setupNotice").textContent = aviso;
+  for (const id of ["#llamadaDemo", "#tVerificarLlamada"])
+    $(id).title = llamadasDisponibles ? "Explorar una llamada de ejemplo" : "Modelo de voz pendiente de descarga";
   pintaBanco(st.reportes || []);
   pintaPares(st.pares, []);
   try {
@@ -470,6 +528,6 @@ async function medirRed() {
   medirRed();
   setInterval(medirRed, 3000);
   const auto = await window.escudo.demoAuto();
-  if (auto?.captura) analizar(auto.captura);
+  if (auto?.captura) setTimeout(() => analizar(auto.captura), 1800);
   if (auto?.llamada) simularLlamada(auto.llamada);
 })();

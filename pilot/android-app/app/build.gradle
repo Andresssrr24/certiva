@@ -1,0 +1,18 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'local.certiva.pilot'
+    compileSdk 35
+    useLibrary 'android.test.runner'
+    useLibrary 'android.test.base'
+    useLibrary 'android.test.mock'
+    defaultConfig {
+        applicationId 'local.certiva.pilot'
+        minSdk 33
+        targetSdk 35
+        versionCode 2
+        versionName '0.2.0-protection'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies { implementation project(':sdk') }

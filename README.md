@@ -1,37 +1,90 @@
-# Anti-fraude en el dispositivo · Hackatón QVAC · ISD Summit 2026
+# Certiva · Tu aliado contra el fraude
 
-> Nombre del proyecto pendiente. Repositorio provisional: https://github.com/Andresssrr24/antifraude-qvac (privado hasta la entrega).
+**Antes de responder, verifica.** Certiva ayuda a reconocer señales de estafa en mensajes y capturas, explica el riesgo y orienta al usuario hacia un canal oficial. El alcance vigente es un SDK móvil y una consola para que un banco ofrezca esta protección a sus clientes. Caja de Ahorros es una referencia de producto; no existe integración bancaria, contrato ni aval institucional. USDT y wallets cripto quedan fuera del alcance comercial actual.
 
-**Un motor anti-fraude que corre donde está el cliente.** No es una app más: es un motor que un banco, una cooperativa o una billetera de criptoactivos embebe en la suya. Lee la captura de un mensaje sospechoso o una llamada en vivo **en el teléfono del cliente**, con modelos locales de QVAC, y dice si es fraude, por qué y qué hacer. Ni el mensaje, ni la llamada, ni la captura salen nunca del dispositivo. Lo único que cruza una frontera es lo que no es inferencia: el registro de canales oficiales baja del emisor al teléfono, los reportes suben como hashes, y una bandera de coacción llega al motor de riesgo por el canal que la app del banco ya tiene.
+Proyecto del Hackatón QVAC · ISD Summit 2026. Tracks: **Desafío General**, **Caja de Ahorros** y **QVAC Psy**.
 
-| Superficie | Quién la usa | Dónde corre la inferencia |
+## Estado del avance
+
+Corte documental: **10 de septiembre de 2026, hora de Panamá**. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
+
+| Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
-| Módulo embebible en la app del emisor | El cliente | En su teléfono: VisionPsy y reglas |
-| Radar para el equipo de fraude | El banco | En la infraestructura del banco |
-| App de referencia, este repositorio | El jurado y el piloto | En el MacBook, con los mismos modelos |
+| Escritorio Electron | Teléfono simulado, mensaje → alerta → detalle, centro de seguridad y análisis QVAC local | [Recorrido y pruebas](docs/EXPERIENCIA-Y-ALERTAS.md) · [Entorno QVAC](docs/INTERFAZ-LOCAL.md). Las medidas bancarias son solicitudes de demostración. |
+| Landing | Sitio interactivo, verificador de texto por reglas y puente opcional al QVAC del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). QVAC no se ejecuta en Vercel. |
+| Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Sin QVAC móvil ni conexión a APIs bancarias. |
+| App Android con QVAC (Expo) | APK de 228 MB compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y corre en el teléfono | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico |
+| Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
+
+La app de escritorio ejecuta VisionPsy, reglas y Qwen3 localmente. La landing analiza texto con reglas en el navegador; para usar modelos requiere un puente en `127.0.0.1` y modelos descargados en el mismo equipo. Las alertas y el consejo no autentican remitentes ni garantizan que un mensaje sea legítimo.
 
 ```mermaid
 flowchart LR
-  subgraph T[Teléfono del cliente]
-    C[Captura o llamada] --> V[VisionPsy · Parakeet] --> R[Reglas + Qwen3] --> D[Veredicto y consejo]
-  end
-  subgraph B[Infraestructura del banco]
-    RG[Registro de canales oficiales]
-    RA[Radar del equipo de fraude]
-    MR[Motor de riesgo de pagos]
-  end
-  subgraph P[Pares · Hyperswarm]
-    H[Hashes de indicadores]
-  end
-  RG -- lista de canales --> R
-  D -- hash del remitente, número o dominio --> H
-  H --> RA
-  D -- bandera de coacción, sin contenido --> MR
+  C[Captura sintética o aportada] --> E[Electron o puente local]
+  E --> V[VisionPsy y reglas locales]
+  V --> Q[Qwen3: explicación]
+  T[Texto en la landing] --> R[Reglas en el navegador]
+  Q --> A[Advertencia y canal de contacto]
+  R --> A
 ```
 
-El contrato de integración son dos esquemas JSON, `lib/esquemas.js`: lo que entra de la captura y lo que sale como veredicto. `npm run ejemplo` corre el motor sin interfaz y muestra exactamente lo que cruzaría hacia el banco. **Mismas tácticas, mismo motor:** las estafas contra usuarios de billeteras y exchanges piden la frase semilla, cambian direcciones de depósito y ofrecen «envíe para recibir»; el motor las detecta con las mismas reglas, y el set de demo incluye 16 ejemplos de una billetera ficticia.
+## Inicio rápido
 
-Tracks en los que compite: **Desafío General**, **Caja de Ahorros**, **QVAC Psy**.
+Escritorio, desde la raíz, con Node 22.17+:
+
+```sh
+npm ci
+npm run modelos
+npm start
+```
+
+Landing sin dependencias adicionales:
+
+```sh
+cd landing
+npm test
+npm run build
+npm run dev
+```
+
+Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README.md](landing/README.md). El worker QVAC se comparte: coordinar su uso antes de iniciar Electron, el puente o una evaluación. No ejecutar dos inferencias del proyecto en procesos distintos al mismo tiempo.
+
+## Validación de este avance
+
+- `npm test`: **11/11** pruebas del motor, evaluación y persistencia/transiciones de casos, con dobles de los modelos.
+- `npx electron scripts/prueba-experiencia.js`: **9/9** comprobaciones de navegación y reporte con motor controlado; ver entorno utilizado en [la guía del portal](docs/EXPERIENCIA-Y-ALERTAS.md).
+- `node eval/reglas-check.js`: **136/136** veredictos correctos sobre el texto verdadero del dataset sintético; no mide OCR ni generalización.
+- `npm --prefix landing test`: **7/7**, con reglas y contrato HTTP del puente.
+- `npm --prefix landing run build`: genera el sitio estático.
+- Sintaxis de JavaScript del portal y Biome de ocho archivos modificados: sin errores, con 12 advertencias.
+
+La verificación QVAC real previa está descrita en las guías de escritorio y landing. No se repitió al preparar este PR para evitar interferir con el motor en uso. La conexión de la landing desde un navegador depende de sus permisos de red local y no está validada por las pruebas HTTP.
+
+## Piloto bancario: SDK móvil y consola
+
+El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. Android 0.2 añade protección voluntaria de notificaciones de WhatsApp, aviso nativo y apertura de detalle/reporte, además de pegar o compartir texto. Todo el análisis de esta versión usa reglas locales; QVAC en Android sigue en desarrollo. [Guía y límites](docs/ALERTAS-ANDROID.md). Estas aplicaciones no ejecutan QVAC.
+
+La consola usa sesiones y roles de cliente, analista y auditor, aislamiento por banco, deduplicación, control de versiones y auditoría en SQLite. El reporte contiene nueve campos de resultado y consentimiento; no incluye el mensaje, la captura, enlaces ni teléfonos. Son reportes de clientes pendientes de corroboración.
+
+```sh
+# Desde la raíz, con Node 22.17+:
+npm --prefix pilot test
+npm --prefix pilot start
+# Consola: http://127.0.0.1:4320
+swift test --package-path pilot/ios
+```
+
+Los accesos locales se generan al primer arranque y se guardan fuera del repositorio; el servidor imprime la ubicación del archivo privado. La instalación iOS, la compilación Android y el alcance del SDK están en [pilot/README.md](pilot/README.md). Las claves públicas y la política de desarrollo firmada se incluyen; la clave privada no se publica. La política vence el 10 de diciembre de 2026.
+
+**Validación de integración:** 15 pruebas Node y 6 pruebas Swift, incluyendo OCR real de una captura sintética y señales de pago que deben conservar el mismo resultado en la fuente, los bundles web/nativos y los reportes aceptados por la API. También compiló la app iOS para simulador desde esta rama. La prueba del bundle Android en Node comprueba paridad de reglas; la versión base pasó 2/2 pruebas nativas, pero falta repetirlas en el APK integrado ([evidencia](pilot/VALIDACION.md)). El proyecto Gradle y las pruebas instrumentadas están incluidos. Para Android 0.2, el APK congelado pasó 7 pruebas nativas ejecutadas por clase; esas pruebas todavía deben repetirse sobre el APK recompilado con el SDK integrado ([evidencia 0.2](pilot/VALIDACION-ANDROID-0.2.md)).
+
+El piloto es para evaluación interna. Autenticación institucional, despliegue con TLS, operación bancaria y pruebas en teléfonos físicos siguen pendientes; ver los criterios de adopción de la guía. La propuesta comercial y los precios siguen por validar.
+
+## Trabajo por commits y PRs
+
+Cada entrega debe partir de `origin/main` actualizado, agrupar cambios coherentes en commits y actualizar este README junto con la guía del componente. El PR debe indicar las pruebas realizadas y los pendientes. Los cambios en desarrollo de otras tareas se incorporan cuando estén estables; no se cambian de rama ni se sobrescriben sus archivos compartidos.
+
+Los resultados locales de pruebas, credenciales, bases de datos, modelos, APK/AAR compilados y archivos temporales no son código fuente. Los artefactos se entregan por separado y las afirmaciones de validación deben identificar el entorno donde se comprobaron.
 
 ## Base preexistente
 
@@ -50,7 +103,7 @@ Declaración obligatoria del hackatón. Este proyecto parte de código ajeno:
 | Transcripción de llamadas | Parakeet TDT 0.6B v3 | `PARAKEET_TDT_0_6B_V3_Q8_0` | Q8_0 |
 | Embeddings del RAG | EmbeddingGemma 300M | `EMBEDDINGGEMMA_300M_Q4_0` | Q4_0 |
 
-Hardware de desarrollo y demo: MacBook con Apple M4 y 16 GB de RAM, macOS, backend GPU. SDK `@qvac/sdk` 0.19. Tiempos medidos en esta máquina: VisionPsy 1,06 s al primer token y 168 tokens/s; Qwen3 4B 2,33 s al primer token y 34 tokens/s con la política en el prompt. El objetivo del producto es el teléfono del cliente; los benchmarks de VisionPsy en teléfonos citados en la presentación son del fabricante del modelo, no medidos por este equipo **(pendiente: resultados propios si el Android con Expo llega)**.
+Hardware de los benchmarks históricos: MacBook con Apple M4 y 16 GB de RAM, macOS, backend GPU. SDK `@qvac/sdk` 0.19. Tiempos medidos en esta máquina: VisionPsy 1,06 s al primer token y 168 tokens/s; Qwen3 4B 2,33 s al primer token y 34 tokens/s con la política en el prompt. El objetivo del producto es el teléfono del cliente; los benchmarks de VisionPsy en teléfonos citados en la presentación son del fabricante del modelo, no medidos por este equipo **(pendiente: medición de QVAC en teléfonos físicos)**. La comprobación reciente de escritorio usa un Apple M1 Pro de 16 GB; ver [INTERFAZ-LOCAL.md](docs/INTERFAZ-LOCAL.md).
 
 ## Reproducir
 
@@ -99,9 +152,9 @@ Una trampa que costó una hora y conviene contar: Electron recuerda el zoom por 
 
 ## Interfaz
 
-Una ventana, dos mundos. A la izquierda, **lo que ve el cliente en su teléfono**: tema claro, letra grande, una acción por pantalla, veredicto en lenguaje llano («La dirección web imita la del banco», «Te meten prisa»), un botón para llamar al banco y otro para reportar. En el modo llamada, el aviso ocupa toda la pantalla: «Cuelga». A la derecha, **detrás de escena para el jurado y el banco**: tarjetas de ejemplo, los tres pasos con su tiempo (VisionPsy, reglas, Qwen3), las señales con su nombre técnico, la transcripción con marcas de tiempo y el JSON completo. La pestaña **Modo banco** es el radar del equipo de fraude.
+La experiencia del cliente empieza fuera de Certiva, en una pantalla Android simulada: cámara circular, reloj, fondo local e iconos SVG. Las notificaciones y el detalle de Certiva mantienen esa apariencia Android. Elegir un ejemplo entrega el mensaje, solicita el análisis y muestra una alerta; tocarla abre las señales y el consejo. El usuario decide si reporta. El detalle técnico conserva los pasos, tiempos y resultado del motor.
 
-Decisiones de diseño: sin framework, fuentes del sistema para funcionar sin internet, contraste mínimo 4,5:1, foco visible, `role="alert"` en el aviso de colgar, `aria-live` en la transcripción, movimiento reducido respetado, iconos SVG en vez de emojis. Para verificar la interfaz sin manos: `DEMO_AUTO=<id de captura>` o `DEMO_LLAMADA=1` junto con `DEMO_CAPTURA=<ruta.png>` guardan una imagen de la ventana.
+El **Centro de seguridad** conserva casos locales de demostración, asignación, solicitudes de medidas y cierre con historial. No autentica analistas ni ejecuta cambios de claves, cierre de sesiones o comunicaciones bancarias. Los reportes de la APK se abren en la consola autenticada del piloto en el puerto 4320; su almacén y permisos son independientes. Ver [recorrido, límites y comprobaciones](docs/EXPERIENCIA-Y-ALERTAS.md).
 
 ## Cómo probarlo tú mismo
 
@@ -110,8 +163,8 @@ La guía completa, con solución de problemas, está en [docs/COMO-PROBAR.md](do
 Todo corre en el MacBook. Dos procesos de QVAC a la vez se bloquean en el worker compartido, así que cierra cualquier script del proyecto antes de abrir la app, y al revés.
 
 1. **Preparar una vez**, con internet: `npm install`, `node node_modules/electron/install.js` si no bajó Electron, y `npm run modelos`. Si el registro P2P del SDK se cae a mitad de Qwen3 4B, `node scripts/importar-modelo.js QWEN3_4B_INST_Q4_K_M <archivo .gguf bajado por HTTP>` lo importa validando el checksum.
-2. **Datos de la demo:** `npm run datos` genera los 136 mensajes y sus capturas; `node data/generar-llamada.js` genera el audio de la llamada con las voces del sistema.
-3. **Sin interfaz, para ver el motor:** `npm run prueba` analiza una captura de punta a punta; `node scripts/prueba-llamada.js` corre la llamada; `node scripts/prueba-politica.js` muestra qué recupera el RAG; `npm run eval` corre las 136 capturas y escribe `eval/runs/<fecha>/results.md` (`--solo legitimo` para una clase; unos 25 minutos la corrida completa).
+2. **Datos de la demo:** `npm run datos` genera los 136 mensajes y sus capturas del dataset actual; `node data/generar-llamada.js` genera el audio de la llamada con las voces del sistema.
+3. **Sin interfaz, para ver el motor:** `npm run prueba` analiza una captura de punta a punta; `node scripts/prueba-llamada.js` corre la llamada; `node scripts/prueba-politica.js` muestra qué recupera el RAG; `npm run eval` corre las 136 capturas y escribe `eval/runs/<fecha>/results.md` (`--solo legitimo` para una clase; unos 25 minutos la corrida completa); `eval/results.md` conserva resultados históricos.
 4. **La app:** apaga el Wi-Fi y `npm start`. Pestaña Cliente: toca una tarjeta de ejemplo, o arrastra una captura, y mira el teléfono. «Simular llamada de vishing» reproduce el audio con la transcripción sincronizada y el «Cuelga». «Reportar este mensaje» publica el hash a los pares. Pestaña Modo banco: el radar. La barra dice cuántas conexiones hay a la nube y cuántas a pares.
 5. **Pares en dos máquinas:** en la segunda, `node scripts/radar.js` se une al enjambre y va listando lo que llega. Si la red del lugar bloquea el DHT, modo directo: en la segunda máquina `node scripts/radar.js --puerto 4411 --sin-swarm`, y en la primera `PARES_DIRECTO=<ip de la segunda>:4411 npm start`. Para probarlo solo, en una terminal `node scripts/radar.js --puerto 4411 --sin-swarm --emitir dominio:bancodemo-pa.app` y en otra `PARES_DIRECTO=127.0.0.1:4411 PARES_SWARM=0 npm start`: al analizar la tarjeta «SMS: cuenta bloqueada» el teléfono dice que otro cliente ya reportó esa dirección.
 6. **Comprobar sin manos:** `DEMO_AUTO=fraude-bloqueo_enlace-01 DEMO_CAPTURA=/tmp/app.png DEMO_SALIR=1 DEMO_ESPERA_MS=26000 npx electron .` analiza esa captura al abrir y guarda una imagen de la ventana; `DEMO_LLAMADA=1` hace lo mismo con la llamada.
@@ -120,7 +173,7 @@ Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector p
 
 ## App móvil y APK
 
-La prueba de que el motor se embebe es una app Android con el mismo núcleo: código en `mobile/`, plan y mediciones en [docs/PLAN-APK.md](docs/PLAN-APK.md), instrucciones en [mobile/README.md](mobile/README.md). El APK está compilado: `mobile/dist/antifraude-release-arm64.apk`, 228 MB, arm64, Android 10 o superior, sin ningún modelo dentro; se comparte por enlace, no por el repositorio. Probado en el emulador Android arm64 del MacBook: instala, arranca, y un mensaje de fraude pegado da «Es una estafa» con sus tres señales en 1 ms (capturas en `docs/img/`). Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas en menos de un milisegundo. Leer capturas descarga VisionPsy Q8 una sola vez (546 MB, el mismo lector del escritorio: Q4 se midió sobre las 136 capturas y pierde 4,4 puntos) y corre en el teléfono; el consejo en el teléfono es texto fijo por señal, porque Qwen3 0.6B, medido, no lo mejora y Qwen3 4B no cabe. El peso del APK es casi todo runtime del SDK: backend GPU Vulkan de 86 MB y runtime Bare de 62 MB; preferimos conservar la GPU antes que bajar a unos 133 MB. Estado: compilado en el MacBook sin Android Studio y probado en emulador; la prueba en teléfono físico, con la descarga del lector y una captura real, queda para el equipo.
+La prueba de que el motor se embebe es una app Android con el mismo núcleo: código en `mobile/`, plan y mediciones en [docs/PLAN-APK.md](docs/PLAN-APK.md), instrucciones en [mobile/README.md](mobile/README.md). El APK está compilado: `mobile/dist/antifraude-release-arm64.apk`, 228 MB, arm64, Android 10 o superior, sin ningún modelo dentro; se comparte por enlace, no por el repositorio. Probado en el emulador Android arm64 del MacBook: instala, arranca, y un mensaje de fraude pegado da «Es una estafa» con sus tres señales en 1 ms (capturas en `docs/img/`). Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas en menos de un milisegundo. Leer capturas descarga VisionPsy Q8 una sola vez (546 MB, el mismo lector del escritorio: Q4 se midió sobre las 136 capturas y pierde 4,4 puntos) y corre en el teléfono; el consejo en el teléfono es texto fijo por señal, porque Qwen3 0.6B, medido, no lo mejora y Qwen3 4B no cabe. El peso del APK es casi todo runtime del SDK: backend GPU Vulkan de 86 MB y runtime Bare de 62 MB; preferimos conservar la GPU antes que bajar a unos 133 MB. Estado: compilado en el MacBook sin Android Studio y probado en emulador; la prueba en teléfono físico, con la descarga del lector y una captura real, queda para el equipo. Esta app es distinta del SDK y la consola del [piloto bancario](pilot/README.md), que usan reglas locales y OCR de Apple Vision en iOS: la app Expo de `mobile/` es la que ejecuta QVAC en Android.
 
 ## Datos
 
@@ -177,6 +230,8 @@ Lector del teléfono, medido sobre las 136 capturas con las reglas directamente 
 
 En total, un mensaje de fraude tarda unos 7 s y uno legítimo unos 14 s, porque la segunda lectura solo corre cuando no hay señales. Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 136 capturas.
 
+**Verificación del 10 de septiembre a las 23:00, tras corregir la segunda lectura OCR.** La corrida completa con la segunda lectura original dio 83,1 % de exactitud: los 80 fraudes bien y 23 legítimos mal, porque el OCR podía agregar señales de dominio y ensucia los enlaces. Con la segunda lectura asimétrica, que solo suma señales de frase y abstiene con 0,3 de acuerdo, los 56 legítimos dieron 53 de 56 (`eval/runs/2026-09-11T03-45-52-660Z`): quedan un «último aviso» que sube a fraude en vez de sospechoso, un recordatorio de pago y un WhatsApp oficial que se abstiene. La corrida completa de 136 con la corrección queda pendiente por tiempo. En la corrida previa, 4 de los 80 fraudes se detectaron gracias a una señal de número que la segunda lectura ya no puede aportar; re-ejecutados con la corrección, esos 4 salen «no legible», es decir, el motor se abstiene en vez de tranquilizar. Estimación combinada del estado actual: fraudes 76 de 80 detectados y 4 abstenciones, ningún fraude mostrado como «sin señales»; legítimos 53 de 56; exactitud global cercana al 95 %.
+
 **Límites y manejo de riesgo, con honestidad.**
 - La transcripción de VisionPsy tiene errores de caracteres (CER medio del 26,1 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave con tolerancia a errores, y porque un dominio dudoso se contrasta con el OCR determinista.
 - Lo que sigue fallando es la lectura de dominios: VisionPsy cambia letras del dominio oficial en unos 5 de cada 100 SMS legítimos («bancodesmo», «banccodemo»). El contraste OCR lo corrige cuando el dominio está a una o dos letras del oficial; en el teléfono, sin OCR, la app lo reporta como sospechoso y pide comparar el enlace letra por letra. Un dominio de phishing real a una letra del oficial recibe el mismo trato: sospechoso, no fraude.
@@ -201,11 +256,9 @@ En total, un mensaje de fraude tarda unos 7 s y uno legítimo unos 14 s, porque 
 
 ## Modelo de negocio
 
-El propósito de la integración en el ecosistema bancario, con los puntos de integración, el caso de pagos, los límites y las fases de un piloto, está desarrollado en [docs/PROPOSITO-E-INTEGRACION.md](docs/PROPOSITO-E-INTEGRACION.md).
+La propuesta vigente es [Certiva para banca: producto y modelo comercial](docs/PRODUCTO-BANCA-Y-MODELO-COMERCIAL.md): SDK integrado en la app del banco, protección esencial incluida para el cliente y consola para gestionar los reportes. El banco contrataría integración y licencia por bandas de clientes activos; el piloto, los precios y la modalidad de cobro son hipótesis por validar.
 
-Lo que se vende es un módulo que el banco embebe en su app, con una consola para el equipo de fraude que corre dentro de la infraestructura del banco, y una app de marca blanca para cooperativas y financieras, que en Panamá son cientos y no tienen presupuesto de seguridad. Lo local es el argumento económico: costo de inferencia cero por verificación, y ningún dato del cliente en manos de un proveedor. La consola del banco, multiusuario y con histórico de campañas, es el producto que se construye después del hackatón con un stack web convencional; este repositorio es el motor local que la alimenta. La propiedad intelectual queda en el equipo, como establece el reto de la Caja.
-
-Precios de partida, sin validar: para un banco, un pago inicial de integración y una mensualidad por tramo de clientes activos; para una cooperativa, una mensualidad baja por la app de marca blanca.
+Los documentos de [propósito e integración](docs/PROPOSITO-E-INTEGRACION.md) y [banca/USDT](docs/PRODUCTO-PRODUCCION-PANAMA-USDT.md) conservan contexto histórico. Las propuestas de cripto, intervención sobre pagos e integración institucional no describen funcionalidades entregadas ni requisitos vigentes. El dataset heredado incluye 16 ejemplos sintéticos de billetera como casos de regresión; conservarlos no amplía el alcance del producto.
 
 ## Licencia
 
@@ -213,7 +266,7 @@ Apache-2.0. Ver `LICENSE` y `NOTICE`.
 
 ## Cambios de fiabilidad y alcance de la demo
 
-La ausencia de señales en VisionPsy activa una segunda lectura OCR local. Si recupera una señal se usa para el veredicto; si falla, el texto es demasiado corto o los lectores discrepan, se pide revisión con `no_legible`. El generador no puede rebajar una alerta determinista. El umbral es heurístico, no una garantía: dos lectores pueden omitir la misma frase. Se añade latencia y debe medirse de nuevo.
+La ausencia de señales en VisionPsy activa una segunda lectura OCR local. La segunda lectura solo suma señales de frase permitidas; no agrega dominios ni números derivados del OCR. Si recupera una señal permitida se usa para el veredicto; si falla, el texto es demasiado corto o los lectores discrepan, se pide revisión con `no_legible`. El generador no puede rebajar una alerta determinista. El umbral es heurístico, no una garantía: dos lectores pueden omitir la misma frase. Se añade latencia y debe medirse de nuevo.
 
 `npm test` verifica estos flujos con dobles de los modelos. No sustituye la evaluación real. Ver [protocolo externo](docs/EVALUACION-INDEPENDIENTE.md) y [guion de entrega](docs/guion-video.md).
 

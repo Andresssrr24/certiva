@@ -12,12 +12,53 @@ const reglas = require("./lib/reglas");
 const perf = require("./lib/perf");
 const red = require("./lib/red");
 const { fork } = require("node:child_process");
+const { PilotCases } = require("./lib/casos-piloto");
 
-app.setName("Anti-fraude QVAC");
+app.setName("Certiva");
+// Conservar los reportes existentes tras el cambio de nombre.
+app.setPath("userData", path.join(app.getPath("appData"), "Anti-fraude QVAC"));
+let caseStore;
+function cases() {
+  if (!caseStore) caseStore = new PilotCases(path.join(app.getPath("userData"), "casos-piloto.json"));
+  return caseStore;
+}
+ipcMain.handle("casos-listar", () => cases().list());
+ipcMain.handle("casos-crear", (_event, input) => cases().create(input));
+ipcMain.handle("casos-accion", (_event, { id, action }) => cases().act(id, action));
 // Dos apps QVAC a la vez se quedan colgadas en el worker compartido de ~/.qvac. El candado es obligatorio.
 if (!app.requestSingleInstanceLock()) app.exit(0);
 
 let win = null;
+let pilotWindow = null;
+ipcMain.handle("consola-piloto-abrir", async () => {
+  if (pilotWindow && !pilotWindow.isDestroyed()) {
+    pilotWindow.show();
+    pilotWindow.focus();
+    return true;
+  }
+  pilotWindow = new BrowserWindow({
+    width: 1240,
+    height: 850,
+    title: "Certiva · Reportes de la APK",
+    backgroundColor: "#f4f7fc",
+    webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true },
+  });
+  const view = pilotWindow;
+  view.webContents.setWindowOpenHandler(() => ({ action: "deny" }));
+  view.webContents.on("will-navigate", (event, url) => {
+    if (new URL(url).origin !== "http://127.0.0.1:4320") event.preventDefault();
+  });
+  view.on("closed", () => {
+    if (pilotWindow === view) pilotWindow = null;
+  });
+  try {
+    await view.loadURL("http://127.0.0.1:4320");
+    return true;
+  } catch {
+    view.close();
+    throw new Error("Inicia el servidor del piloto en el puerto 4320 para ver los reportes de la APK.");
+  }
+});
 let ocupado = false;
 const motor = new Motor();
 const llamada = new Llamada({ motor });
@@ -127,11 +168,12 @@ motor.onProgress = (p) => enviar("progreso-modelo", p);
 
 function crearVentana() {
   win = new BrowserWindow({
-    width: 1180,
-    height: 820,
+    width: 1380,
+    height: 920,
     minWidth: 900,
     minHeight: 620,
-    backgroundColor: "#0f1514",
+    backgroundColor: "#f4f7fc",
+    title: "Certiva · Tu aliado contra el fraude",
     titleBarStyle: process.platform === "darwin" ? "hiddenInset" : "default",
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
@@ -151,6 +193,7 @@ ipcMain.handle("estado", async () => ({
   ocupado,
   pares: paresEstado,
   banco: motor.banco,
+  modelos: await modelos.catalogo().catch(() => null),
   historial,
   reportes,
   hardware: perf.hardware(),
@@ -183,15 +226,60 @@ ipcMain.handle("elegir-captura", async () => {
 ipcMain.handle("capturas-demo", () => {
   const dir = path.join(__dirname, "data", "capturas");
   try {
+    const ejemplos = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "mensajes.json"), "utf8"));
     return fs
       .readdirSync(dir)
       .filter((f) => f.endsWith(".png"))
       .sort()
-      .map((f) => ({ id: f.replace(/\.png$/, ""), ruta: path.join(dir, f) }));
+      .map((f) => {
+        const id = f.replace(/\.png$/, "");
+        const mensaje = ejemplos.find((e) => e.id === id);
+        return {
+          id,
+          ruta: path.join(dir, f),
+          mensaje: mensaje
+            ? { canal: mensaje.canal, remitente: mensaje.remitente, texto: mensaje.texto, hora: mensaje.hora }
+            : null,
+        };
+      });
   } catch {
     return [];
   }
 });
+
+// Evidencia optativa de una captura sintética: nunca guarda mensajes de uso normal.
+const sesionEvidencia = `${new Date().toISOString().replace(/[:.]/g, "-")}-${process.pid}`;
+let ejecucionEvidencia = 0;
+function guardarEvidenciaDemo(nombre, resultado, ejecucion = "inicio") {
+  if (!process.env.DEMO_EVIDENCIA_DIR || !process.env.DEMO_AUTO) return;
+  const dir = path.resolve(process.env.DEMO_EVIDENCIA_DIR, sesionEvidencia, ejecucion);
+  setTimeout(async () => {
+    try {
+      fs.mkdirSync(dir, { recursive: true });
+      const imagen = await win.webContents.capturePage();
+      fs.writeFileSync(path.join(dir, `${nombre}.png`), imagen.toPNG());
+      if (resultado)
+        fs.writeFileSync(
+          path.join(dir, "resultado.json"),
+          JSON.stringify(
+            {
+              sesionEvidencia,
+              ejecucion,
+              casoSintetico: process.env.DEMO_AUTO,
+              fecha: new Date().toISOString(),
+              electron: process.versions.electron,
+              ...resultado,
+            },
+            null,
+            2,
+          ),
+        );
+      console.log(`Evidencia de escritorio: ${path.join(dir, nombre)}`);
+    } catch (e) {
+      console.error("No se pudo guardar evidencia:", e.message);
+    }
+  }, 600);
+}
 
 ipcMain.handle("analizar", async (_e, ruta) => {
   if (ocupado) throw new Error("Ya hay un análisis en curso");
@@ -199,9 +287,13 @@ ipcMain.handle("analizar", async (_e, ruta) => {
   ocupado = true;
   enviar("ocupado", true);
   try {
+    const esDemo = ruta === path.join(__dirname, "data", "capturas", `${process.env.DEMO_AUTO}.png`);
+    const ejecucion = `analisis-${++ejecucionEvidencia}`;
+    if (esDemo) guardarEvidenciaDemo("02-analizando", null, ejecucion);
     const r = await motor.analizar(ruta, { onEtapa: (e) => enviar("analisis-etapa", e) });
     const item = { ruta, ts: Date.now(), ...r, vecinos: r.ok ? vecinosDe(r.captura) : [] };
     historial.unshift(item);
+    if (esDemo) guardarEvidenciaDemo("03-resultado", item, ejecucion);
     return item;
   } finally {
     ocupado = false;
@@ -298,7 +390,7 @@ ipcMain.handle("demo-auto", () => ({
   llamada: process.env.DEMO_LLAMADA ? path.join(__dirname, "data", "audio", "llamada-vishing.wav") : null,
 }));
 async function demoAutomatica() {
-  if ((!process.env.DEMO_AUTO && !process.env.DEMO_LLAMADA) || !win) return;
+  if (!process.env.DEMO_CAPTURA || !win) return;
   const salida = process.env.DEMO_CAPTURA;
   if (salida) {
     await new Promise((r) => setTimeout(r, Number(process.env.DEMO_ESPERA_MS || 25000)));
@@ -326,6 +418,7 @@ app.whenReady().then(() => {
   arrancarPares();
   crearVentana();
   win.webContents.once("did-finish-load", () => {
+    guardarEvidenciaDemo("01-inicio");
     demoAutomatica().catch(() => {});
   });
 });
