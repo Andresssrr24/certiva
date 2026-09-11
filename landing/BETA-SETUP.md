@@ -49,7 +49,7 @@ capturas, logs ni argumentos visibles de comandos:
 
 ## Estado comprobado el 11 de septiembre de 2026
 
-- Prueba interna de Certiva 0.4 publicada; instalación física todavía no verificada.
+- Prueba interna de Certiva 0.5 publicada; instalación física desde Play todavía no verificada.
 - Grupo privado creado y cuenta técnica añadida con rol de propietario.
 - Cloud Identity API habilitada. Consulta real del grupo: HTTP 200.
 - Alta idempotente del propietario existente y alta de un verificador externo previamente
@@ -67,8 +67,9 @@ capturas, logs ni argumentos visibles de comandos:
   y dos capturas reales del menú. Falta resolver la declaración de recursos de IA.
 - Clasificación de contenido pendiente de aceptación de condiciones IARC.
 - Público 18+ aprobado por Bryan; el formulario depende de Detalles de acceso.
-  Bryan decidió conservar Ingresar/Mis reportes y conectar su servicio público
-  después. Falta acceso completo para revisores a esas funciones.
+  Android0.5 ya conecta Ingresar/Mis reportes por HTTPS. La tarea propietaria
+  confirmó que guardó las credenciales exclusivas y las instrucciones del revisor,
+  tras autorización expresa de Bryan; no se incluyen sus valores en esta documentación.
 - Seguridad de datos guardada como borrador: descarga HTTPS del modelo y cuentas
   asignadas externamente. Faltan tipos, usos y revisión final de la declaración.
 - No se ha enviado la app a revisión; el canal cerrado **no está publicado**.
@@ -142,3 +143,13 @@ comprobado una instalación física desde Play.
 
 Despliegue de este corte comunicado por la tarea propietaria:
 `dpl_98DyQHhxBznSeP635h4mALX3aP1y`, READY y asociado al alias público.
+
+## Reportes públicos de Android0.5
+
+El servicio HTTPS y la aplicación0.5 tienen un corte revisado, con cuenta asignada
+independiente del registro Google. Véase [REPORTS-SETUP.md](REPORTS-SETUP.md).
+La suite de integración pasa30pruebas; la tarea propietaria ejecutó dos pruebas
+nativas contra HTTPS y publicó version5 en prueba interna el11de septiembre07:19Panamá.
+También guardó el acceso exclusivo de revisión, previa autorización de Bryan.
+El canal cerrado sigue sin publicar. Las correcciones de cuota/provisioning aún
+necesitan incorporarse al despliegue. Registro habilitado y descarga cerrada pendiente.

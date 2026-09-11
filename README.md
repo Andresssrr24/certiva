@@ -8,7 +8,9 @@ Demo vigente: [Android y administración del mismo caso — video de 56 segundos
 
 ## Estado del avance
 
-Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. El inventario actualizado distingue PR integradas, las PR #34/#35/#36 abiertas y los 22 archivos de la prerelease, con sus hashes. API36 requiere integrar la PR #36 en `main`; su PR anterior se fusionó en otra rama. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
+Android0.5 conecta **Ingresar/Mis reportes por HTTPS** y permite borrar reportes propios: [PR #37](https://github.com/Andresssrr24/certiva/pull/37). [Servicio y validación](landing/REPORTS-SETUP.md): dos pruebas nativas contra HTTPS aprobadas en emulador API35; no acredita instalación física desde Play ni inferencia QVAC. Las correcciones de cuota de la revisión están publicadas en código y pendientes de desplegar.
+
+Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. El inventario actualizado distingue PR integradas, las PR #34/#35/#36/#37 abiertas y los 22 archivos de la prerelease, con sus hashes. API36 requiere integrar la PR #36 en `main`; su PR anterior se fusionó en otra rama. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
@@ -62,7 +64,7 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 - `npm test`: **11/11** pruebas del motor, evaluación y persistencia/transiciones de casos, con dobles de los modelos.
 - `npx electron scripts/prueba-experiencia.js`: **9/9** comprobaciones de navegación y reporte con motor controlado; ver entorno utilizado en [la guía del portal](docs/EXPERIENCIA-Y-ALERTAS.md).
 - `node eval/reglas-check.js`: **136/136** veredictos correctos sobre el texto verdadero del dataset sintético; no mide OCR ni generalización.
-- `npm --prefix landing test`: **20/20**, con reglas, contrato HTTP del puente, flujo beta con OAuth/membresía simulados, estados de registro/descarga y redirección condicionada a Play.
+- `npm --prefix landing test`: **30/30**, con reglas, puente, registro Google, reportes por cuenta, cuota persistente y aprovisionamiento privado; servicios externos simulados en la suite.
 - `npm --prefix landing run build`: genera el sitio estático.
 - Sintaxis de JavaScript del portal y Biome de ocho archivos modificados: sin errores, con 12 advertencias.
 
