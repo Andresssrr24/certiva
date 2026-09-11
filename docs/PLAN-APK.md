@@ -57,7 +57,7 @@ Sin Android Studio. El toolchain se instala con Homebrew y `sdkmanager`, y dos s
 
 - APK sin modelos dentro. Peso medido: 219 MB, aceptado por el equipo a cambio de conservar el backend GPU.
 - Sin descargar nada, un texto de fraude pegado da veredicto en menos de un segundo.
-- Con VisionPsy Q8 descargado, una captura de la demo da veredicto en menos de 10 s en un teléfono de gama media, sin red.
+- Con VisionPsy Q8 descargado, una captura de la demo da veredicto en menos de 10 s en un teléfono de gama media, sin red. Medido hasta ahora solo en el emulador, en CPU: 31 a 43 s por captura; la cifra con GPU de teléfono sigue pendiente.
 - Las 136 capturas dan el mismo veredicto por reglas que en el escritorio con el mismo lector.
 - Con el modo avión, todo sigue funcionando.
 
@@ -70,6 +70,6 @@ Sin Android Studio. El toolchain se instala con Homebrew y `sdkmanager`, y dos s
 | Preparar el proyecto Expo con `preparar.sh` | MacBook, toolchain por Homebrew | Si el prebuild no pasa en una hora, se para | Hecho |
 | APK de release | MacBook | Se mide el peso y se decide | Hecho: 228 MB sin R8 (219 con R8), se conserva la GPU |
 | Instalar y abrir en un Android | Emulador arm64 en el MacBook; después un teléfono del equipo | Es el mínimo para decir «corre en un teléfono» | Emulador: instala, arranca, y un texto de fraude pegado da «Es una estafa» con tres señales en 1 ms. Teléfono físico: pendiente del equipo |
-| Descargar VisionPsy y leer una captura en el teléfono | Teléfono físico | El tiempo al primer token va al README y al video | Pendiente |
+| Descargar VisionPsy y leer una captura en el teléfono | Emulador arm64 (CPU, sin GPU); después un teléfono físico | El tiempo al primer token va al README y al video | Emulador: la descarga de 546 MB desde la app tardó unos 2,5 minutos; el modelo carga; la captura de fraude «bloqueo por enlace» dio «Es una estafa» (dominio ajeno y prisa) con primer token a los 23 s y total 31 s; una legítima con enlace oficial dio «Sospechoso» porque VisionPsy cambió letras del dominio y en el teléfono no hay OCR de contraste. Teléfono físico con GPU: pendiente del equipo |
 
 **Lo que no cambia:** el video y la entrega no dependen del APK. Si el APK no llega a probarse en un teléfono físico, el proyecto se entrega igual y queda declarado como compilado y probado en emulador.
