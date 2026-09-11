@@ -25,3 +25,6 @@ mobile/ios/
 eval/runs/
 mobile/app/
 mobile/dist/
+
+# Capturas y resultados temporales de las comprobaciones locales
+/tmp/

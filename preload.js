@@ -4,6 +4,10 @@ const { contextBridge, ipcRenderer, webUtils } = require("electron");
 
 contextBridge.exposeInMainWorld("escudo", {
   estado: () => ipcRenderer.invoke("estado"),
+  casos: () => ipcRenderer.invoke("casos-listar"),
+  abrirConsolaPiloto: () => ipcRenderer.invoke("consola-piloto-abrir"),
+  casoCrear: (input) => ipcRenderer.invoke("casos-crear", input),
+  casoAccion: (id, action) => ipcRenderer.invoke("casos-accion", { id, action }),
   catalogo: () => ipcRenderer.invoke("catalogo"),
   descargarModelo: (grupo, key) => ipcRenderer.invoke("descargar-modelo", { grupo, key }),
   elegirCaptura: () => ipcRenderer.invoke("elegir-captura"),

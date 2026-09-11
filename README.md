@@ -10,9 +10,9 @@ Corte documental: **10 de septiembre de 2026, hora de Panamá**. Las pruebas y l
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
-| Escritorio Electron | Identidad Certiva v5, análisis de capturas con QVAC, disponibilidad de modelos y evidencia separada por ejecución | Inferencia real de una captura sintética documentada; voz, RAG y pares no se volvieron a validar en esta entrega. [Guía](docs/INTERFAZ-LOCAL.md) |
+| Escritorio Electron | Teléfono simulado, mensaje → alerta → detalle, centro de seguridad y análisis QVAC local | [Recorrido y pruebas](docs/EXPERIENCIA-Y-ALERTAS.md) · [Entorno QVAC](docs/INTERFAZ-LOCAL.md). Las medidas bancarias son solicitudes de demostración. |
 | Landing | Sitio interactivo, verificador de texto por reglas y puente opcional al QVAC del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). QVAC no se ejecuta en Vercel. |
-| Piloto bancario | SDK móvil y consola en preparación en una tarea independiente | Se incorporará en un PR propio después de sus comprobaciones. [Producto y modelo comercial](docs/PRODUCTO-BANCA-Y-MODELO-COMERCIAL.md) |
+| Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Sin QVAC móvil ni conexión a APIs bancarias. |
 | Exploración Expo | Andamiaje previo en `mobile/`, conservado desde `main` | No acredita QVAC funcionando en un teléfono. [Guía](mobile/README.md) |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
 
@@ -51,13 +51,34 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 
 ## Validación de este avance
 
-- `npm test`: **8/8** pruebas del motor y evaluación, con dobles de los modelos.
+- `npm test`: **11/11** pruebas del motor, evaluación y persistencia/transiciones de casos, con dobles de los modelos.
+- `npx electron scripts/prueba-experiencia.js`: **9/9** comprobaciones de navegación y reporte con motor controlado; ver entorno utilizado en [la guía del portal](docs/EXPERIENCIA-Y-ALERTAS.md).
 - `node eval/reglas-check.js`: **136/136** veredictos correctos sobre el texto verdadero del dataset sintético; no mide OCR ni generalización.
 - `npm --prefix landing test`: **7/7**, con reglas y contrato HTTP del puente.
 - `npm --prefix landing run build`: genera el sitio estático.
-- Sintaxis de `main.js` y `renderer/app.js`, y Biome de esos archivos y `package.json`: sin errores, con advertencias de estilo existentes.
+- Sintaxis de JavaScript del portal y Biome de ocho archivos modificados: sin errores, con 12 advertencias.
 
 La verificación QVAC real previa está descrita en las guías de escritorio y landing. No se repitió al preparar este PR para evitar interferir con el motor en uso. La conexión de la landing desde un navegador depende de sus permisos de red local y no está validada por las pruebas HTTP.
+
+## Piloto bancario: SDK móvil y consola
+
+El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. Android incluye app de muestra y biblioteca AAR para pegar o compartir texto. La versión base pasó las pruebas nativas de motor y conexión; falta repetirlas con el APK de esta rama. Estas aplicaciones no ejecutan QVAC.
+
+La consola usa sesiones y roles de cliente, analista y auditor, aislamiento por banco, deduplicación, control de versiones y auditoría en SQLite. El reporte contiene nueve campos de resultado y consentimiento; no incluye el mensaje, la captura, enlaces ni teléfonos. Son reportes de clientes pendientes de corroboración.
+
+```sh
+# Desde la raíz, con Node 22.17+:
+npm --prefix pilot test
+npm --prefix pilot start
+# Consola: http://127.0.0.1:4320
+swift test --package-path pilot/ios
+```
+
+Los accesos locales se generan al primer arranque y se guardan fuera del repositorio; el servidor imprime la ubicación del archivo privado. La instalación iOS, la compilación Android y el alcance del SDK están en [pilot/README.md](pilot/README.md). Las claves públicas y la política de desarrollo firmada se incluyen; la clave privada no se publica. La política vence el 10 de diciembre de 2026.
+
+**Validación de integración:** 15 pruebas Node y 6 pruebas Swift, incluyendo OCR real de una captura sintética y señales de pago que deben conservar el mismo resultado en la fuente, los bundles web/nativos y los reportes aceptados por la API. También compiló la app iOS para simulador desde esta rama. La prueba del bundle Android en Node comprueba paridad de reglas; la versión base pasó 2/2 pruebas nativas, pero falta repetirlas en el APK integrado ([evidencia](pilot/VALIDACION.md)). El proyecto Gradle compiló APK, APK de pruebas y AAR; lint registró 0 errores y 13 advertencias. Las pruebas instrumentadas están incluidas para repetir la comprobación nativa pendiente.
+
+El piloto es para evaluación interna. Autenticación institucional, despliegue con TLS, operación bancaria y pruebas en teléfonos físicos siguen pendientes; ver los criterios de adopción de la guía. La propuesta comercial y los precios siguen por validar.
 
 ## Trabajo por commits y PRs
 
@@ -131,9 +152,9 @@ Una trampa que costó una hora y conviene contar: Electron recuerda el zoom por 
 
 ## Interfaz
 
-Una ventana, dos mundos. A la izquierda, **lo que ve el cliente en su teléfono**: tema claro, letra grande, una acción por pantalla, veredicto en lenguaje llano («La dirección web imita la del banco», «Te meten prisa»), un botón para llamar al banco y otro para reportar. En el modo llamada, el aviso ocupa toda la pantalla: «Cuelga». A la derecha, **detrás de escena para el jurado y el banco**: tarjetas de ejemplo, los tres pasos con su tiempo (VisionPsy, reglas, Qwen3), las señales con su nombre técnico, la transcripción con marcas de tiempo y el JSON completo. La pestaña **Modo banco** es el radar del equipo de fraude.
+La experiencia del cliente empieza fuera de Certiva, en una pantalla Android simulada: cámara circular, reloj, fondo local e iconos SVG. Las notificaciones y el detalle de Certiva mantienen esa apariencia Android. Elegir un ejemplo entrega el mensaje, solicita el análisis y muestra una alerta; tocarla abre las señales y el consejo. El usuario decide si reporta. El detalle técnico conserva los pasos, tiempos y resultado del motor.
 
-Decisiones de diseño: sin framework, fuentes del sistema para funcionar sin internet, contraste mínimo 4,5:1, foco visible, `role="alert"` en el aviso de colgar, `aria-live` en la transcripción, movimiento reducido respetado, iconos SVG en vez de emojis. Para verificar la interfaz sin manos: `DEMO_AUTO=<id de captura>` o `DEMO_LLAMADA=1` junto con `DEMO_CAPTURA=<ruta.png>` guardan una imagen de la ventana.
+El **Centro de seguridad** conserva casos locales de demostración, asignación, solicitudes de medidas y cierre con historial. No autentica analistas ni ejecuta cambios de claves, cierre de sesiones o comunicaciones bancarias. Los reportes de la APK se abren en la consola autenticada del piloto en el puerto 4320; su almacén y permisos son independientes. Ver [recorrido, límites y comprobaciones](docs/EXPERIENCIA-Y-ALERTAS.md).
 
 ## Cómo probarlo tú mismo
 
@@ -152,7 +173,7 @@ Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector p
 
 ## Exploración móvil previa
 
-El andamiaje Expo de `mobile/` y [su plan de APK](docs/PLAN-APK.md) se conservan desde `main`. Plantean descargar modelos por separado del APK, pero no acreditan compilación ni inferencia QVAC en teléfonos. Esta exploración es distinta del SDK y la consola del piloto bancario en preparación.
+El andamiaje Expo de `mobile/` y [su plan de APK](docs/PLAN-APK.md) se conservan desde `main`. Plantean descargar modelos por separado del APK, pero no acreditan compilación ni inferencia QVAC en teléfonos. Esta exploración es distinta del SDK y la consola del [piloto bancario](pilot/README.md), que usan reglas locales y OCR Apple Vision en iOS.
 
 ## Datos
 
