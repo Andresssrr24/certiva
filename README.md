@@ -298,3 +298,7 @@ La ausencia de señales en VisionPsy activa una segunda lectura OCR local. La se
 `npm test` verifica estos flujos con dobles de los modelos. No sustituye la evaluación real. Ver [protocolo externo](docs/EVALUACION-INDEPENDIENTE.md) y [guion de entrega](docs/guion-video.md).
 
 El radar marca reportes para investigación durante la sesión; no confirma fraude, no acredita usuarios únicos y no bloquea clientes. Los hashes sin secreto pueden compararse por enumeración y no son anonimización. El transporte directo TCP es únicamente para demostración con datos sintéticos en una red de confianza. El contador muestra conexiones TCP observadas, excluye UDP y no demuestra ausencia total de tráfico. Un fallo de medición se muestra como no disponible.
+
+### Evidencia del formulario y consola
+
+[Flujo real Android → piloto → consola](docs/evidencias/flujo-real/README.md): prueba móvil aprobada con reglas locales y consentimiento; asignación/resolución del mismo caso verificadas en backend. La instrumentación administrativa agotó el tiempo de lectura final y conserva su fallo. Grabaciones originales archivadas en la release; esto no valida QVAC Android.

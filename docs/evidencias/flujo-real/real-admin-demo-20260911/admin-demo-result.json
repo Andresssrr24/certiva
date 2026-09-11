@@ -1,0 +1,32 @@
+{
+  "caseId": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+  "assessmentId": "880ee912-881b-4190-a541-d60ea595c2fc",
+  "origin": "http:\/\/127.0.0.1:4320",
+  "phases": [
+    {
+      "name": "01-recepcion",
+      "at": 1789106134357
+    },
+    {
+      "name": "02-detalle",
+      "at": 1789106149611
+    },
+    {
+      "name": "03-asignacion",
+      "at": 1789106161780
+    },
+    {
+      "name": "04-conclusion",
+      "at": 1789106166576
+    },
+    {
+      "name": "05-resuelto",
+      "at": 1789106171480
+    },
+    {
+      "name": "06-auditoria",
+      "at": 1789106181934
+    }
+  ],
+  "passed": false
+}

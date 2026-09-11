@@ -22,7 +22,14 @@ public final class UiInternalFlowTest extends UiFixtureFlowTest {
         var context=getInstrumentation().getTargetContext();
         final java.util.ArrayList<Activity> opened=new java.util.ArrayList<>();
         try{
-            Activity protection=getInstrumentation().startActivitySync(new Intent(context,ProtectionActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));opened.add(protection);
+            assertTrue(getInstrumentation().getUiAutomation().performGlobalAction(android.accessibilityservice.AccessibilityService.GLOBAL_ACTION_HOME));
+            android.os.SystemClock.sleep(800);
+            Activity home=getInstrumentation().startActivitySync(new Intent(context,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));opened.add(home);
+            screenshot("android-protection-main.png");android.os.SystemClock.sleep(1500);
+            Button configure=button(home.getWindow().getDecorView(),"Configurar protección");assertNotNull(configure);
+            var protectionMonitor=getInstrumentation().addMonitor(ProtectionActivity.class.getName(),null,false);
+            runTestOnUiThread(configure::performClick);
+            Activity protection=getInstrumentation().waitForMonitorWithTimeout(protectionMonitor,10000);assertNotNull(protection);opened.add(protection);
             screenshot("android-protection-settings.png");android.os.SystemClock.sleep(1500);
             Button alert=button(protection.getWindow().getDecorView(),"Encontramos señales de riesgo");reveal(alert);
             screenshot("android-protection-recent.png");android.os.SystemClock.sleep(1500);
