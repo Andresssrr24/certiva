@@ -4,6 +4,7 @@ const { contextBridge, ipcRenderer, webUtils } = require("electron");
 
 contextBridge.exposeInMainWorld("escudo", {
   estado: () => ipcRenderer.invoke("estado"),
+  abrirFuenteContacto: (id) => ipcRenderer.invoke("contactos-fuente-abrir", id),
   casos: () => ipcRenderer.invoke("casos-listar"),
   abrirConsolaPiloto: () => ipcRenderer.invoke("consola-piloto-abrir"),
   casoCrear: (input) => ipcRenderer.invoke("casos-crear", input),
@@ -12,6 +13,7 @@ contextBridge.exposeInMainWorld("escudo", {
   descargarModelo: (grupo, key) => ipcRenderer.invoke("descargar-modelo", { grupo, key }),
   elegirCaptura: () => ipcRenderer.invoke("elegir-captura"),
   capturasDemo: () => ipcRenderer.invoke("capturas-demo"),
+  analizarMensaje: (id) => ipcRenderer.invoke("analizar-mensaje", id),
   analizar: (ruta) => ipcRenderer.invoke("analizar", ruta),
   reportar: (captura) => ipcRenderer.invoke("reportar", { captura }),
   liberarModelos: () => ipcRenderer.invoke("descargar-modelos-memoria"),
@@ -36,6 +38,7 @@ contextBridge.exposeInMainWorld("escudo", {
       "progreso-modelo",
       "progreso-descarga",
       "analisis-etapa",
+      "analisis-alerta",
       "pares-estado",
       "pares-log",
       "pares-indicador",

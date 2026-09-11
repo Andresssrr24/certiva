@@ -1,0 +1,115 @@
+.contactos-banco {
+  background: #f4f7fc;
+  border: 1px solid #dce5f1;
+  border-radius: 24px;
+  padding: 20px;
+  margin: 8px 0;
+  color: #152e4e;
+}
+.contactos-sello {
+  display: inline-block;
+  color: #205094;
+  background: #e5edfb;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 800;
+}
+.contactos-banco .contactos-titulo {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  margin: 14px 0 10px;
+}
+.contactos-intro,
+.contactos-contexto {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.contactos-contexto {
+  border-left: 3px solid #205094;
+  padding-left: 10px;
+  color: #54677e;
+}
+.contacto-card {
+  background: #fff;
+  border: 1px solid #dce5f1;
+  border-radius: 18px;
+  padding: 16px;
+  margin: 14px 0;
+}
+.contacto-canal {
+  color: #54677e;
+  font-size: 11px;
+}
+.contactos-banco .contacto-uso {
+  font-size: 15px;
+  margin: 4px 0 8px;
+  line-height: 1.4;
+}
+.contacto-numero {
+  display: block;
+  font-size: 26px;
+  letter-spacing: -0.035em;
+  color: #205094;
+  user-select: text;
+}
+.contacto-descripcion {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 8px 0 12px;
+}
+.contacto-fuentes {
+  font-size: 11px;
+  color: #54677e;
+  line-height: 1.5;
+}
+.contacto-fuente {
+  display: block;
+  color: #205094;
+  text-decoration: underline;
+  padding: 5px 0;
+}
+.contacto-comparador {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.contacto-comparador label {
+  font-size: 15px;
+  font-weight: 700;
+}
+.contacto-comparador input {
+  font: inherit;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #b5c8e2;
+  border-radius: 12px;
+  width: 100%;
+  background: white;
+  color: #152e4e;
+}
+.contacto-comparador button {
+  font-size: 13px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 12px;
+  background: #205094;
+  color: white;
+  padding: 12px;
+}
+.contacto-estado {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.contactos-nota {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #54677e;
+  margin: 12px 0 0;
+}
+.contactos-banco :focus-visible {
+  outline: 2px solid #205094;
+  outline-offset: 3px;
+}

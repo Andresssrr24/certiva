@@ -29,6 +29,13 @@ ipcMain.handle("casos-accion", (_event, { id, action }) => cases().act(id, actio
 if (!app.requestSingleInstanceLock()) app.exit(0);
 
 let win = null;
+ipcMain.handle("contactos-fuente-abrir", async (event, id) => {
+  if (event.sender !== win?.webContents) throw new Error("Ventana no autorizada");
+  const fuente = require("./renderer/contactos-data").fuentePorId(id);
+  if (!fuente) throw new Error("Fuente no reconocida");
+  await require("electron").shell.openExternal(fuente.url);
+  return true;
+});
 let pilotWindow = null;
 ipcMain.handle("consola-piloto-abrir", async () => {
   if (pilotWindow && !pilotWindow.isDestroyed()) {
@@ -299,6 +306,24 @@ ipcMain.handle("analizar", async (_e, ruta) => {
     ocupado = false;
     enviar("ocupado", false);
   }
+});
+
+// El escenario ya tiene texto: no volver a transcribir su captura ilustrativa.
+ipcMain.handle("analizar-mensaje", async (_e, id) => {
+  if (ocupado) throw new Error("Ya hay un análisis en curso");
+  if (typeof id !== "string" || id.length > 100) throw new Error("Mensaje no disponible");
+  const mensaje = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "mensajes.json"), "utf8")).find(m => m.id === id);
+  if (!mensaje) throw new Error("Mensaje no disponible");
+  ocupado = true; enviar("ocupado", true);
+  try {
+    const r = await motor.analizarTexto(mensaje, {
+      onEtapa: e => enviar("analisis-etapa", e),
+      onAlerta: r => enviar("analisis-alerta", r),
+    });
+    const item = { ts: Date.now(), ...r, vecinos: r.ok ? vecinosDe(r.captura) : [] };
+    historial.unshift(item);
+    return item;
+  } finally { ocupado = false; enviar("ocupado", false); }
 });
 
 // Reportar: solo viaja el hash del indicador, nunca el mensaje. Hoy queda en memoria; la fase 3 lo publica por pares.

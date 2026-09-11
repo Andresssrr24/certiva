@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: case lifecycle persists and does not execute bank actions
+ok 1 - case lifecycle persists and does not execute bank actions
+  ---
+  duration_ms: 7.639667
+  type: 'test'
+  ...
+# Subtest: cases reject message contents and invalid actions
+ok 2 - cases reject message contents and invalid actions
+  ---
+  duration_ms: 1.64975
+  type: 'test'
+  ...
+# Subtest: discard requires an assigned analyst and survives restart
+ok 3 - discard requires an assigned analyst and survives restart
+  ---
+  duration_ms: 3.095583
+  type: 'test'
+  ...
+# Subtest: compara números panameños sin confundir prefijos extranjeros ni extensiones
+ok 4 - compara números panameños sin confundir prefijos extranjeros ni extensiones
+  ---
+  duration_ms: 1.060084
+  type: 'test'
+  ...
+# Subtest: cada contacto tiene fuentes primarias fechadas y las fuentes solo se resuelven por ID
+ok 5 - cada contacto tiene fuentes primarias fechadas y las fuentes solo se resuelven por ID
+  ---
+  duration_ms: 0.264
+  type: 'test'
+  ...
+# Subtest: el consejo generado no convierte teléfonos ficticios en contactos oficiales
+ok 6 - el consejo generado no convierte teléfonos ficticios en contactos oficiales
+  ---
+  duration_ms: 0.164375
+  type: 'test'
+  ...
+# Subtest: texto recibido conserva cuerpo, canal y URL sin correcciones visuales
+ok 7 - texto recibido conserva cuerpo, canal y URL sin correcciones visuales
+  ---
+  duration_ms: 21.960333
+  type: 'test'
+  ...
+# Subtest: alerta precede al modelo lento y el veredicto final conserva protección
+ok 8 - alerta precede al modelo lento y el veredicto final conserva protección
+  ---
+  duration_ms: 4.898917
+  type: 'test'
+  ...
+# Subtest: no se anticipa ausencia de señales ni se llama OCR sobre texto
+ok 9 - no se anticipa ausencia de señales ni se llama OCR sobre texto
+  ---
+  duration_ms: 11.947792
+  type: 'test'
+  ...
+# Subtest: fallo de IA conserva advertencia previa y texto vacío sigue no concluyente
+ok 10 - fallo de IA conserva advertencia previa y texto vacío sigue no concluyente
+  ---
+  duration_ms: 8.729334
+  type: 'test'
+  ...
+# Subtest: dataset externo guarda manifiesto y no infla campos vacíos
+ok 11 - dataset externo guarda manifiesto y no infla campos vacíos
+  ---
+  duration_ms: 325.137917
+  type: 'test'
+  ...
+# Subtest: el modelo no rebaja una alerta de fraude
+ok 12 - el modelo no rebaja una alerta de fraude
+  ---
+  duration_ms: 0.504417
+  type: 'test'
+  ...
+# Subtest: respuesta inválida sin evidencias se abstiene
+ok 13 - respuesta inválida sin evidencias se abstiene
+  ---
+  duration_ms: 0.117334
+  type: 'test'
+  ...
+# Subtest: segunda lectura coincide, sin afirmar autenticidad
+ok 14 - segunda lectura coincide, sin afirmar autenticidad
+  ---
+  duration_ms: 35.332834
+  type: 'test'
+  ...
+# Subtest: OCR recupera petición de código omitida por visión
+ok 15 - OCR recupera petición de código omitida por visión
+  ---
+  duration_ms: 5.277292
+  type: 'test'
+  ...
+# Subtest: lectores discrepantes se abstienen
+ok 16 - lectores discrepantes se abstienen
+  ---
+  duration_ms: 8.527708
+  type: 'test'
+  ...
+# Subtest: fallo del segundo lector no produce tranquilidad
+ok 17 - fallo del segundo lector no produce tranquilidad
+  ---
+  duration_ms: 0.200708
+  type: 'test'
+  ...
+# Subtest: fallo del generador entrega una acción de revisión
+ok 18 - fallo del generador entrega una acción de revisión
+  ---
+  duration_ms: 0.345
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 400.523208

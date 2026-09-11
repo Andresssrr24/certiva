@@ -56,10 +56,15 @@ function openAssessment() {
   $("#appBadge").hidden = true;
   phoneMode = "certiva";
   pintaTelefono(pendingAssessment);
-  experienceStatus("Ahora estás dentro de Certiva.", "Revisa las señales y decide si quieres reportar el mensaje.");
+  experienceStatus("Ahora estás dentro de Certiva.", pendingAssessment.preliminar ? "Advertencia inicial por señales detectadas. La revisión continúa." : "Revisa las señales y decide si quieres reportar el mensaje.");
 }
 function assessmentArrived(r) {
   pendingAssessment = r;
+  if (phoneMode === "certiva") {
+    pintaTelefono(r);
+    experienceStatus(r.preliminar ? "Advertencia inicial" : "Revisión terminada", r.preliminar ? "No respondas todavía. La revisión continúa." : "Ya puedes revisar el resultado y decidir si reportarlo.", !!r.preliminar);
+    return;
+  }
   const type = r.ok ? r.veredicto?.veredicto || r.veredicto_reglas : "no_legible";
   const risk = ["fraude", "sospechoso"].includes(type);
   $("#pushTitle").textContent = risk
@@ -72,13 +77,18 @@ function assessmentArrived(r) {
     : type === "sin_senales"
       ? "No se encontraron señales. Esto no confirma autenticidad. Toca para ver el detalle."
       : "Toca para revisar la lectura e intentarlo de nuevo.";
+  if (r.preliminar) {
+    $("#pushTitle").textContent = "No respondas todavía.";
+    $("#pushBody").textContent = "Detectamos señales de riesgo. Toca para verlas mientras termina la revisión.";
+  }
   $("#certivaNotification").classList.toggle("risk", risk);
   $("#certivaNotification").hidden = false;
   $("#appBadge").hidden = false;
   journeyStep("alert");
   experienceStatus(
-    risk ? "Certiva encontró señales y te avisó." : "La revisión terminó.",
-    "Toca la notificación de Certiva en el teléfono para abrir el detalle.",
+    r.preliminar ? "Ya detectamos señales de riesgo." : risk ? "Certiva encontró señales y te avisó." : "La revisión terminó.",
+    r.preliminar ? "Puedes ver la advertencia ahora. La revisión continúa." : "Toca la notificación de Certiva en el teléfono para abrir el detalle.",
+    !!r.preliminar,
   );
 }
 async function receiveScenario(example, button) {
@@ -112,14 +122,13 @@ async function receiveScenario(example, button) {
     true,
   );
   try {
-    await new Promise((resolve) => setTimeout(resolve, 900));
     journeyStep("analysis");
     experienceStatus(
       "Certiva está revisando el contenido.",
       "La inferencia ocurre en este equipo. El teléfono sigue fuera de Certiva.",
       true,
     );
-    await analizar(example.ruta, { background: true });
+    await analizar(example.ruta, { background: true, messageId: example.mensaje ? example.id : null });
   } finally {
     experienceBusy = false;
     window.certivaScenarioBusy = false;

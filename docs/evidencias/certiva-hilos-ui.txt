@@ -1,0 +1,12 @@
+PASS starts outside app
+PASS incoming message over launcher
+PASS source opens as WhatsApp
+PASS risk warning arrives before slow verdict
+PASS preliminary warning cannot be reported
+PASS open warning updates to final result
+PASS push does not open app automatically
+PASS tap opens detailed analysis
+PASS client report reaches bank
+PASS bank measure persists as request
+PASS resolved case leaves open inbox
+PASS closed case remains auditable
