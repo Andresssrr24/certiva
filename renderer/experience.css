@@ -42,7 +42,12 @@
 .android-icon {
   width: 24px;
   height: 24px;
-  fill: currentColor;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
   flex-shrink: 0;
 }
 .telefono {
@@ -188,8 +193,8 @@
   box-shadow: 0 2px 4px #193a5812;
 }
 .app-tile svg {
-  width: 31px;
-  height: 31px;
+  width: 29px;
+  height: 29px;
 }
 .home-app .brand-icon {
   border-radius: 18px;
@@ -1252,4 +1257,47 @@ button.bank-primary {
   font-size: 10px;
   color: #205094;
   white-space: nowrap;
+}
+
+/* A single channel identity follows the case, launcher and incoming alert. */
+.ejemplo .scenario-icon {
+  flex-shrink: 0;
+}
+.scenario-icon[data-channel="whatsapp"] {
+  background: #e5f4eb;
+  color: #168645;
+}
+.scenario-icon[data-channel="sms"] {
+  background: #e8effd;
+  color: #2363cf;
+}
+.scenario-icon[data-channel="correo"] {
+  background: #edf1f8;
+  color: #205094;
+}
+.notification-icon[data-channel="whatsapp"] {
+  color: #168645;
+}
+.notification-icon[data-channel="sms"] {
+  color: #2363cf;
+}
+.notification-icon[data-channel="correo"] {
+  color: #205094;
+}
+.source-heading #sourceIcon[data-channel="sms"] {
+  color: #2363cf;
+  background: #e8effd;
+}
+.source-heading #sourceIcon[data-channel="correo"] {
+  color: #205094;
+  background: #edf1f8;
+}
+.scenario-icon .android-icon {
+  width: 23px;
+  height: 23px;
+}
+.home-app:focus-visible {
+  outline: 2px solid #205094;
+  outline-offset: 5px;
+  border-radius: 16px;
 }
