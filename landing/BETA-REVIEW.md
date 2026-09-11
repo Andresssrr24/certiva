@@ -32,7 +32,7 @@ Las comprobaciones reales previas de consulta/alta autorizada del grupo están r
 
 La política `/privacidad-app` se comparó byte a byte con el archivo publicado durante su integración. Rewrite y recursos locales correctos; `play-store-assets/` queda excluido de Vercel. Icono 512×512, gráfico 1024×500 inspeccionado y capturas 1080×2400. Las capturas son idénticas a `menu-home.png` y `menu-verify.png` de la evidencia nativa 0.4 target35, no a una instalación Play.
 
-Play lleva 6 de 11 tareas completas según la tarea propietaria. Siguen pendientes acceso completo para revisores, clasificación IARC, declaración de recursos de IA y cierre de Seguridad de datos. La ficha no se ha enviado a revisión ni está publicado el canal cerrado. Archivar los materiales no resuelve las aprobaciones pendientes ni certifica cumplimiento. El código Android no cambia.
+Play lleva 6 de 11 tareas completas según la tarea propietaria. La tarea propietaria confirmó después acceso de revisión guardado, IARC completado y público mayores18 guardado. Siguen pendientes declaración de recursos de IA, ficha y cierre de Seguridad de datos. La ficha no se ha enviado a revisión ni está publicado el canal cerrado. Archivar los materiales no resuelve las aprobaciones pendientes ni certifica cumplimiento. El código Android no cambia.
 
 ## Corrección del envío del formulario
 

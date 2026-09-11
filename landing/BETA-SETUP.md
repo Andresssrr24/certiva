@@ -65,8 +65,9 @@ capturas, logs ni argumentos visibles de comandos:
   Herramientas; correo de soporte y sitio HTTPS guardados.
 - Ficha es-419 guardada como borrador con descripción, icono 512, gráfico 1024×500
   y dos capturas reales del menú. Falta resolver la declaración de recursos de IA.
-- Clasificación de contenido pendiente de aceptación de condiciones IARC.
-- Público 18+ aprobado por Bryan; el formulario depende de Detalles de acceso.
+- IARC autorizado y completado: clasificación general3+/ESRB Todos, según la
+  confirmación de la tarea propietaria. Público objetivo mayores18 guardado.
+- Acceso para revisores:
   Android0.5 ya conecta Ingresar/Mis reportes por HTTPS. La tarea propietaria
   confirmó que guardó las credenciales exclusivas y las instrucciones del revisor,
   tras autorización expresa de Bryan; no se incluyen sus valores en esta documentación.
@@ -153,3 +154,7 @@ nativas contra HTTPS y publicó version5 en prueba interna el11de septiembre07:1
 También guardó el acceso exclusivo de revisión, previa autorización de Bryan.
 El canal cerrado sigue sin publicar. Las correcciones de cuota/provisioning aún
 necesitan incorporarse al despliegue. Registro habilitado y descarga cerrada pendiente.
+
+Actualización Play comunicada por la tarea propietaria: IARC completado y público
+objetivo mayores18 guardado. Siguen pendientes Seguridad de datos y ficha/recursos IA;
+el canal cerrado continúa sin publicar. Backend revisado en PR #38 y Android en PR #37.
