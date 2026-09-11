@@ -1,0 +1,42 @@
+{
+  "compileSdk": 36,
+  "targetSdk": 36,
+  "minSdk": 33,
+  "executedOn": {
+    "android": 15,
+    "api": 35,
+    "device": "emulator-5580"
+  },
+  "instrumentation": {
+    "testsPassed": 2,
+    "seconds": 20.813
+  },
+  "build": {
+    "reportedBy": "Play preparation task",
+    "passed": true,
+    "seconds": 27,
+    "tasks": 222,
+    "scope": "bundleRelease, lintRelease and debug/test builds in isolated preparation with private signing configuration omitted from this PR"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 21,
+    "issuesById": {
+      "ChromeOsAbiSupport": 1,
+      "DataExtractionRules": 1,
+      "DrawAllocation": 1,
+      "ObsoleteSdkInt": 1,
+      "MonochromeLauncherIcon": 1,
+      "SetTextI18n": 16
+    }
+  },
+  "sourceSha256": {
+    "pilot/android-app/app/src/main/java/local/certiva/pilot/MainActivity.java": "0afae7824b909c5d5978acb9ec8de7ee6f2ff80854f8055f9d934205a25493f6",
+    "pilot/android-app/app/src/main/AndroidManifest.xml": "97ac2ed8ee60cddd1c7afe8a4b093630debfb1d90021189cf16b3bc0a7388b99",
+    "pilot/android-app/app/src/androidTest/java/local/certiva/pilot/BackNavigationApi36Test.java": "cfa8588c9f9c5f52bc8153c06b583ae42b4cd84d1d371a9d959b1efc8c36ba79"
+  },
+  "runtimeAndroid16Validated": false,
+  "predictiveGestureAndroid16Validated": false,
+  "inferenceValidated": false,
+  "publicationReranTests": false
+}

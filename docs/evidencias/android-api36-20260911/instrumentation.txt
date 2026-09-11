@@ -1,0 +1,6 @@
+
+local.certiva.pilot.BackNavigationApi36Test:..
+Test results for InstrumentationTestRunner=..
+Time: 20.813
+
+OK (2 tests)

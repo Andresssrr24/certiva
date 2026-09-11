@@ -40,3 +40,5 @@ Los modelos GGUF, dependencias, cachés, directorios de compilación, credencial
 
 - Distribución: publicado el [diagnóstico de Play Protect](android/PLAY-PROTECT-REVISION.md) de la APK nativa 0.3 y un borrador no enviado. Google Play/API36 sigue en preparación. README actualizado para enlazar la release Expo apk-v0.2 ya publicada y aclarar el requisito del APK para reconstruir la landing.
 - Android nativo 0.4: [inicio y menú de cuatro secciones](ANDROID-INICIO-Y-MENU.md), seis pruebas juntas y navegación con texto al 130 % aprobadas. APK debug target35 y resultado archivados con SHA-256; la preparación de Google Play/API36 continúa por separado.
+
+- Preparación API36: [callback nativo de Atrás y test de recreación](android/API36-Y-NAVEGACION-ATRAS.md), 2/2 en Android15/API35. Build/lint de preparación aprobados; no acredita ejecución Android16 ni distribución Google Play. Código integrado sin material de firma ni bundles.

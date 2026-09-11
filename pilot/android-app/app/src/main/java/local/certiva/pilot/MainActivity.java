@@ -22,6 +22,8 @@ public final class MainActivity extends Activity {
     private final ImageView[] navIcons = new ImageView[4];
     private final int[] pageScroll = new int[4];
     private int selectedPage;
+    private boolean backCallbackRegistered;
+    private final android.window.OnBackInvokedCallback navigateHome = () -> selectPage(0);
     private TextView setupProgress, alertCount, accountSummary;
     private ProgressBar setupBar;
     private android.content.SharedPreferences.OnSharedPreferenceChangeListener protectionChanges;
@@ -172,6 +174,13 @@ public final class MainActivity extends Activity {
     }
     private void selectPage(int index){
         int next=Math.max(0,Math.min(3,index));pageScroll[selectedPage]=scroll.getScrollY();selectedPage=next;
+        if(next!=0&&!backCallbackRegistered){
+            getOnBackInvokedDispatcher().registerOnBackInvokedCallback(android.window.OnBackInvokedDispatcher.PRIORITY_DEFAULT,navigateHome);
+            backCallbackRegistered=true;
+        }else if(next==0&&backCallbackRegistered){
+            getOnBackInvokedDispatcher().unregisterOnBackInvokedCallback(navigateHome);
+            backCallbackRegistered=false;
+        }
         String[] icons={"home","scan","bell","menu"};
         for(int i=0;i<pages.length;i++){pages[i].setVisibility(i==next?View.VISIBLE:View.GONE);if(navItems[i]!=null){navItems[i].setSelected(i==next);navItems[i].setBackground(ProtectionStyle.shape(i==next?ProtectionStyle.TONAL:Color.WHITE,dp(18)));navLabels[i].setTextColor(i==next?blue:ProtectionStyle.MUTED);navIcons[i].setImageDrawable(new NavigationIcon(icons[i],i==next?blue:ProtectionStyle.MUTED));}}
         for(int i=0;i<navItems.length;i++){if(navItems[i]!=null){navIcons[i].invalidate();navLabels[i].invalidate();navItems[i].invalidate();}}
@@ -206,7 +215,6 @@ public final class MainActivity extends Activity {
         makeAction(card,item.optString("title")+". "+date+". Ver detalle",()->startActivity(new android.content.Intent(this,ProtectionDetailActivity.class).putExtra("alert_id",item.optString("id"))));
     }
     @Override protected void onSaveInstanceState(Bundle out){super.onSaveInstanceState(out);out.putInt("selectedPage",selectedPage);out.putString("draft",message.getText().toString());out.putInt("channel",channel.getSelectedItemPosition());}
-    @Override public void onBackPressed(){if(selectedPage!=0)selectPage(0);else super.onBackPressed();}
     private void invalidate(){if(pendingProtectionId!=null)return;revision++;assessment=null;if(resultBox!=null){resultBox.removeAllViews();resultBox.setVisibility(View.GONE);}updateAnalyzeButton();}
     private void updateAnalyzeButton(){if(analyze!=null){analyze.setEnabled(engineReady&&!analyzing&&message.getText().toString().trim().length()>0);analyze.setText(analyzing?"Revisando…":"Verificar mensaje");}}
     private void scrollToResult(){selectPage(1);content.post(()->scroll.smoothScrollTo(0,verifyPage.getTop()+resultBox.getTop()));}
@@ -278,5 +286,5 @@ public final class MainActivity extends Activity {
         api.request("cases","GET",null,(result,error)->{if(!alive)return;if(error!=null){error(error);return;}StringBuilder list=new StringBuilder();var items=result.optJSONArray("cases");if(items!=null)for(int i=0;i<items.length();i++){var item=items.optJSONObject(i);list.append("Caso ").append(item.optString("id").substring(0,8)).append(" · ").append(item.optString("state").replace('_',' ')).append("\n\n");}new AlertDialog.Builder(this).setTitle("Mis reportes").setMessage(list.length()==0?"Todavía no has enviado reportes.":list.toString()).setPositiveButton("Cerrar",null).show();});
     }
     private void error(String message){if(alive)new AlertDialog.Builder(this).setTitle("Certiva").setMessage(message).setPositiveButton("Entendido",null).show();}
-    @Override protected void onDestroy(){alive=false;if(protectionChanges!=null)ProtectionStore.prefs(this).unregisterOnSharedPreferenceChangeListener(protectionChanges);if(scroll!=null)scroll.removeCallbacks(refreshOnScreen);if(engine!=null)engine.close();api.close();super.onDestroy();}
+    @Override protected void onDestroy(){alive=false;if(backCallbackRegistered){getOnBackInvokedDispatcher().unregisterOnBackInvokedCallback(navigateHome);backCallbackRegistered=false;}if(protectionChanges!=null)ProtectionStore.prefs(this).unregisterOnSharedPreferenceChangeListener(protectionChanges);if(scroll!=null)scroll.removeCallbacks(refreshOnScreen);if(engine!=null)engine.close();api.close();super.onDestroy();}
 }

@@ -19,6 +19,8 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 | App Android con QVAC (Expo) | [APK actual de 229 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre es una app con cuatro pestañas (revisar, historial, aprender, ajustes), marca Certiva e historial en el teléfono (0.3.0, publicada en la release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
 
+Preparación Android API36: [migración del botón Atrás y validación](docs/android/API36-Y-NAVEGACION-ATRAS.md). Dos pruebas pasaron con target36 en Android15/API35; Android16 y su gesto predictivo siguen pendientes. La APK 0.4 archivada conserva target35.
+
 Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto; la preparación de Google Play continúa por separado. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
 
 La app de escritorio ejecuta VisionPsy, reglas y Qwen3 localmente. La landing analiza texto con reglas en el navegador; para usar modelos requiere un puente en `127.0.0.1` y modelos descargados en el mismo equipo. Las alertas y el consejo no autentican remitentes ni garantizan que un mensaje sea legítimo.
