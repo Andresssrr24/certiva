@@ -24,3 +24,4 @@ mobile/ios/
 # corridas de evaluación con manifiesto; el benchmark de referencia vive en eval/results.md
 eval/runs/
 mobile/app/
+mobile/dist/

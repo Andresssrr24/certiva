@@ -20,7 +20,7 @@ cp "$RAIZ/data/banco-demo.json" "$RAIZ/data/politica-antifraude.md" core/
 # nuestras pantallas y configuración
 cp ../src/*.js ../src/*.jsx .
 cp ../app.config.js ../qvac.config.json .
-rm -f app.json
+rm -f app.json App.js   # la plantilla trae un App.js que taparía nuestro App.jsx
 echo
 echo "Listo. Siguiente: npx expo prebuild --platform android"
 echo "Luego, con el teléfono conectado: npx expo run:android --device"
