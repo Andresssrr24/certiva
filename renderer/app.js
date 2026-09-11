@@ -148,15 +148,19 @@ function pintaTelefono(r) {
         : "No encontré señales de estafa. Eso no lo vuelve seguro: el banco nunca te pide claves ni códigos.";
   $("#tRazones").innerHTML = senales
     .map(
-      (s) => `<li>${ICONO_AVISO}<div><b>${esc(SENAL[s.tipo] || s.tipo)}</b><span>${esc(s.tipo === "numero_no_oficial" ? "El número leído no figura en los canales configurados para este análisis. Esta ausencia no confirma fraude; contrasta con las fuentes del banco." : s.evidencia)}</span></div></li>`,
+      (s) =>
+        `<li>${ICONO_AVISO}<div><b>${esc(SENAL[s.tipo] || s.tipo)}</b><span>${esc(s.tipo === "numero_no_oficial" ? "El número leído no figura en los canales configurados para este análisis. Esta ausencia no confirma fraude; contrasta con las fuentes del banco." : s.evidencia)}</span></div></li>`,
     )
     .join("");
   $("#tConsejo").textContent =
-    window.CertivaContactos.consejoSinTelefonosGenerados(v.accion) || "Ante la duda, no toques el enlace y llama al número oficial impreso en tu tarjeta.";
+    window.CertivaContactos.consejoSinTelefonosGenerados(v.accion) ||
+    "Ante la duda, no toques el enlace y llama al número oficial impreso en tu tarjeta.";
   pintaVecinos(r.vecinos || []);
   $("#tReportar").disabled = !r.captura || !!r.preliminar;
   $("#tReportar").textContent = r.preliminar ? "Revisión en curso…" : "Reportar este mensaje";
-  if (r.preliminar) $("#tResumen").textContent = "Advertencia inicial por señales detectadas. No respondas mientras termina la revisión.";
+  if (r.preliminar)
+    $("#tResumen").textContent =
+      "Advertencia inicial por señales detectadas. No respondas mientras termina la revisión.";
   $("#tReportar").onclick = async () => {
     if (r.preliminar) return;
     $("#tReportar").disabled = true;
@@ -254,7 +258,9 @@ async function analizar(ruta, options = {}) {
   }
   pon("analizando");
   try {
-    const r = options.messageId ? await window.escudo.analizarMensaje(options.messageId) : await window.escudo.analizar(ruta);
+    const r = options.messageId
+      ? await window.escudo.analizarMensaje(options.messageId)
+      : await window.escudo.analizar(ruta);
     r.nombre = ruta.split("/").pop();
     sesion.unshift(r);
     ultimoAnalisis = r;
@@ -488,7 +494,7 @@ async function medirRed() {
   window.escudo.on("progreso-modelo", (p) => pon(`cargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("progreso-descarga", (p) => pon(`descargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("analisis-etapa", paso);
-  window.escudo.on("analisis-alerta", r => {
+  window.escudo.on("analisis-alerta", (r) => {
     if (experienceBusy && r.preliminar) assessmentArrived(r);
   });
   await pintaEjemplos();

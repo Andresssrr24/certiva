@@ -95,11 +95,11 @@ function cer(a, b) {
     try {
       r = await motor.analizar(path.join(dir, `${id}.png`));
     } catch (err) {
-      r = { ok: false, etapa: "error", detalle: String((err && err.message) || err).slice(0, 200) };
+      r = { ok: false, etapa: "error", detalle: String(err?.message || err).slice(0, 200) };
       errores.push({ id, error: r.detalle });
     }
     const esp = v.esperado.veredicto;
-    const obt = r.ok ? (r.veredicto && r.veredicto.veredicto) || r.veredicto_reglas : "no_legible";
+    const obt = r.ok ? r.veredicto?.veredicto || r.veredicto_reglas : "no_legible";
     conf[esp] = conf[esp] || {};
     conf[esp][obt] = (conf[esp][obt] || 0) + 1;
     porClase[esp] = porClase[esp] || { tot: 0, ok: 0 };
@@ -125,12 +125,12 @@ function cer(a, b) {
       esperado: esp,
       obtenido: obt,
       ok: obt === esp,
-      ttft_vision: r.tiempos && r.tiempos.extraccion_ttft_ms,
-      ms_vision: r.tiempos && r.tiempos.extraccion_ms,
-      total_ms: r.tiempos && r.tiempos.total_ms,
+      ttft_vision: r.tiempos?.extraccion_ttft_ms,
+      ms_vision: r.tiempos?.extraccion_ms,
+      total_ms: r.tiempos?.total_ms,
       revision: r.revision,
-      ttft_texto: r.tiempos && r.tiempos.veredicto_ttft_ms,
-      ms_texto: r.tiempos && r.tiempos.veredicto_ms,
+      ttft_texto: r.tiempos?.veredicto_ttft_ms,
+      ms_texto: r.tiempos?.veredicto_ms,
     });
     process.stdout.write(
       `${filas.length}/${ids.length} ${id} -> ${obt}${obt === esp ? "" : "  (esperado " + esp + ")"}\n`,
@@ -205,6 +205,6 @@ function cer(a, b) {
   );
   process.exit(0);
 })().catch((e) => {
-  console.error("✖", e && e.stack ? e.stack : e);
+  console.error("✖", e?.stack ? e.stack : e);
   process.exit(1);
 });
