@@ -23,6 +23,10 @@ Qué pesa dentro, leído del APK:
 
 Ninguna biblioteca lleva símbolos de depuración. Quitar Vulkan dejaría el APK en unos 133 MB con VisionPsy en CPU u OpenCL; el equipo prefirió conservar la GPU.
 
+## Instalar en un teléfono
+
+`./instalar.sh` (o `./mobile/instalar.sh` desde la raíz) usa el APK de `dist/` o lo baja del Release `apk-v0.1`, verifica su SHA-256 contra `antifraude-release-arm64.apk.sha256`, y lo instala por USB si hay un teléfono con depuración activada (comprobando Android 10+ y arm64) o, si no, lo sirve por Wi-Fi con un QR en la terminal. `--usb` y `--wifi` fuerzan un camino; también acepta la ruta de otro APK. Las instrucciones para quien solo tiene el teléfono están en la sección «Instalar en un Android» del README principal.
+
 ## Preparar y compilar sin Android Studio
 
 Requisitos: Homebrew, Node 20 o superior, y una vez:

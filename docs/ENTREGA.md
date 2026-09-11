@@ -7,6 +7,7 @@ Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorr
 - [ ] **Base preexistente declarada** en el README: `qvac-invoice-manager-demo` y los otros ejemplos de `tetherto/qvac-examples`. Ya está; no borrarla.
 - [ ] **Ninguna inferencia en la nube,** ni como respaldo. Buscar en el código llamadas externas: `grep -rn "fetch(\|https://" lib main.js renderer scripts` y confirmar que solo hay descargas de modelos y enlaces del README.
 - [ ] **Repositorio accesible al jurado durante toda la evaluación:** hacerlo público el 11 temprano (`gh repo edit --visibility public`), o dar acceso al jurado si prefieren privado.
+- [ ] **Al hacer público el repo, abrir el QR del README desde un teléfono sin sesión de GitHub** y comprobar que el Release apk-v0.1 descarga.
 - [ ] **Video de máximo cinco minutos** con enlace sin credenciales (YouTube sin listar). Abrirlo en una ventana de incógnito antes de pegarlo.
 
 ## Para el reto Psy
