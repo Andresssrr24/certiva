@@ -1,0 +1,27 @@
+{
+  "release": "avances-2026-09-11",
+  "files": [
+    {
+      "name": "certiva-demo-editable-20260911.zip",
+      "bytes": 4895671,
+      "sha256": "78fd33e7b2d790b48b708990f465c006d99a65bc86e3834f0f02fc905cb9cbde"
+    },
+    {
+      "name": "certiva-demo-final-20260911.mp4",
+      "bytes": 1845611,
+      "sha256": "ded276b0d21b6c1402e83ee282b016cd1adff6da898ff487eceed9905a8235c7"
+    }
+  ],
+  "videoVerified": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "durationSeconds": 56.041667,
+    "audioStreams": 0
+  },
+  "zipIntegrityPassed": true,
+  "sourceMediaHashesMatched": true,
+  "compositionMatchesArchive": true,
+  "renderRepeated": false
+}

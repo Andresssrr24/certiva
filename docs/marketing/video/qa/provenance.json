@@ -1,0 +1,42 @@
+{
+  "visualQaPassed": true,
+  "apkSha256": "21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942",
+  "installedApkSha256": "21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942",
+  "phoneVideoSha256": "76269a81a7388f922672d03bbb87a0f001edc6ee9d4ee0b0605917746f9b8f63",
+  "caseId": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+  "assessmentId": "880ee912-881b-4190-a541-d60ea595c2fc",
+  "mobileSource": "pilot/artifacts/real-home-demo-20260911-05/android-real-flow.mp4",
+  "mobileUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GMObER4e0Coaiy1mp7s18g2XJP/6ace8b1e-7522-4980-8e4c-c8565684804c.mp4",
+  "mobileQaUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GMObER4e0Coaiy1mp7s18g2XJP/44cebdb9-fea3-43ef-99f7-985c6f7dba8e.png",
+  "checkedMobileSeconds": [
+    1,
+    6,
+    12,
+    18,
+    19.7
+  ],
+  "mobileQa": "Clean frames: current home, actual analysis loading, rules result, real consent dialog, same-case server receipt. No credential visible.",
+  "adminVisualQaPassed": true,
+  "mobileVisualQaPassed": true,
+  "adminVideoSha256": "a9e8a3c4262e787b614b36a14ef701dfe74d9731d68765903fd9da1e4b919254",
+  "adminSource": "pilot/artifacts/real-admin-demo-20260911/admin-real-flow.mp4",
+  "adminUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GMObER4e0Coaiy1mp7s18g2XJP/7f65a1d6-f5bb-4ebb-8b4a-c10f7bab174c.mp4",
+  "adminQaUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GMObER4e0Coaiy1mp7s18g2XJP/139d3e03-0dd8-448b-888e-e0921d96ebb7.png",
+  "checkedAdminSeconds": [
+    1,
+    17,
+    20,
+    22,
+    24,
+    26,
+    28,
+    29,
+    34,
+    39,
+    44,
+    50
+  ],
+  "adminQa": "Original finalized recording recovered without repair or remux. Reception, detail, assignment, conclusion, resolution and audit visible. Long idle periods removed with native source trims. Android system bars cropped only.",
+  "adminInstrumentationPassed": false,
+  "adminFunctionalServerVerification": true
+}

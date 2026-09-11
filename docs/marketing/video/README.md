@@ -1,6 +1,6 @@
 # Producción de video: estado del material
 
-El corte visual más reciente es [Demo visual Android](DEMO-VISUAL-ANDROID.md): video de 23 segundos, planos revisados y proyecto editable ya publicados en sus enlaces. Muestra capturas animadas y un resultado controlado; no demuestra inferencia ni un recorrido completo.
+La entrega vigente es [Demo final Android y administración](ENTREGA-DEMO-FINAL.md): 56 segundos en 1080p, con grabación real del formulario, reglas, consentimiento y seguimiento del mismo caso en consola. Conserva el fallo de instrumentación administrativa y la verificación independiente que lo acompaña. El [corte visual de 23 segundos](DEMO-VISUAL-ANDROID.md), con capturas animadas y un resultado controlado, queda como antecedente.
 
 La notificación de ese corte todavía tiene el candado anterior. La corrección actual del icono ya está documentada en [la evidencia Android](../../ICONO-ANDROID.md); queda pendiente incorporarla a un nuevo montaje.
 
