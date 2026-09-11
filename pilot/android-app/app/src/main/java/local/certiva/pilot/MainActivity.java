@@ -22,6 +22,8 @@ public final class MainActivity extends Activity {
     private final ImageView[] navIcons = new ImageView[4];
     private final int[] pageScroll = new int[4];
     private int selectedPage;
+    private boolean backCallbackRegistered;
+    private final android.window.OnBackInvokedCallback navigateHome = () -> selectPage(0);
     private TextView setupProgress, alertCount, accountSummary;
     private ProgressBar setupBar;
     private android.content.SharedPreferences.OnSharedPreferenceChangeListener protectionChanges;
@@ -136,7 +138,7 @@ public final class MainActivity extends Activity {
         text(menuPage,"AYUDA Y PRIVACIDAD",11,true).setTextColor(blue);
         LinearLayout help=ProtectionStyle.card(menuPage,Color.WHITE);
         menuAction(help,"help","Cómo usar Certiva","De un mensaje a una decisión",this::showGuide);
-        menuAction(help,"lock","Tus datos y privacidad","Qué se guarda y qué se comparte",()->info("Tus datos y privacidad","La revisión ocurre en este teléfono. Certiva procesa el texto visible de notificaciones de WhatsApp y WhatsApp Business si lo autorizas.\n\nGuarda hasta 20 resultados durante 7 días, sin el mensaje original, remitente, enlaces ni códigos. Puedes borrarlos en Mi protección.\n\nLos reportes requieren tu confirmación. Incluyen el resultado y sus motivos, sin enviar el texto del mensaje."));
+        menuAction(help,"lock","Tus datos y privacidad","Qué se guarda y qué se comparte",()->info("Tus datos y privacidad","La revisión ocurre en este teléfono. Certiva procesa el texto visible de notificaciones de WhatsApp y WhatsApp Business si lo autorizas.\n\nGuarda hasta 20 resultados durante 7 días, sin el mensaje original, remitente, enlaces ni códigos. Puedes borrarlos en Mi protección.\n\nLos reportes requieren tu confirmación. Se envían por HTTPS al servicio de Certiva, vinculados a tu cuenta, sin el texto del mensaje. Puedes borrarlos desde Mis reportes."));
         menuAction(help,"info","Acerca de Certiva","Tu aliado contra el fraude",()->info("Acerca de Certiva","Antes de responder, verifica.\n\nEste piloto no está conectado al banco y no interviene en pagos ni modifica accesos. QVAC en Android sigue en fase experimental; instalar un modelo no acredita su funcionamiento. Si la IA no está disponible, los resultados lo indican.\n\nVersión "+versionName()));
         text(menuPage,"Certiva · Piloto experimental",12,false).setGravity(android.view.Gravity.CENTER);
     }
@@ -172,6 +174,13 @@ public final class MainActivity extends Activity {
     }
     private void selectPage(int index){
         int next=Math.max(0,Math.min(3,index));pageScroll[selectedPage]=scroll.getScrollY();selectedPage=next;
+        if(next!=0&&!backCallbackRegistered){
+            getOnBackInvokedDispatcher().registerOnBackInvokedCallback(android.window.OnBackInvokedDispatcher.PRIORITY_DEFAULT,navigateHome);
+            backCallbackRegistered=true;
+        }else if(next==0&&backCallbackRegistered){
+            getOnBackInvokedDispatcher().unregisterOnBackInvokedCallback(navigateHome);
+            backCallbackRegistered=false;
+        }
         String[] icons={"home","scan","bell","menu"};
         for(int i=0;i<pages.length;i++){pages[i].setVisibility(i==next?View.VISIBLE:View.GONE);if(navItems[i]!=null){navItems[i].setSelected(i==next);navItems[i].setBackground(ProtectionStyle.shape(i==next?ProtectionStyle.TONAL:Color.WHITE,dp(18)));navLabels[i].setTextColor(i==next?blue:ProtectionStyle.MUTED);navIcons[i].setImageDrawable(new NavigationIcon(icons[i],i==next?blue:ProtectionStyle.MUTED));}}
         for(int i=0;i<navItems.length;i++){if(navItems[i]!=null){navIcons[i].invalidate();navLabels[i].invalidate();navItems[i].invalidate();}}
@@ -206,7 +215,6 @@ public final class MainActivity extends Activity {
         makeAction(card,item.optString("title")+". "+date+". Ver detalle",()->startActivity(new android.content.Intent(this,ProtectionDetailActivity.class).putExtra("alert_id",item.optString("id"))));
     }
     @Override protected void onSaveInstanceState(Bundle out){super.onSaveInstanceState(out);out.putInt("selectedPage",selectedPage);out.putString("draft",message.getText().toString());out.putInt("channel",channel.getSelectedItemPosition());}
-    @Override public void onBackPressed(){if(selectedPage!=0)selectPage(0);else super.onBackPressed();}
     private void invalidate(){if(pendingProtectionId!=null)return;revision++;assessment=null;if(resultBox!=null){resultBox.removeAllViews();resultBox.setVisibility(View.GONE);}updateAnalyzeButton();}
     private void updateAnalyzeButton(){if(analyze!=null){analyze.setEnabled(engineReady&&!analyzing&&message.getText().toString().trim().length()>0);analyze.setText(analyzing?"Revisando…":"Verificar mensaje");}}
     private void scrollToResult(){selectPage(1);content.post(()->scroll.smoothScrollTo(0,verifyPage.getTop()+resultBox.getTop()));}
@@ -256,7 +264,7 @@ public final class MainActivity extends Activity {
     private void preview(Button report){
         if(assessment==null)return;if(!api.loggedIn){login();return;}
         JSONObject snapshot=assessment;
-        new AlertDialog.Builder(this).setTitle("Confirma tu reporte").setMessage("Se enviarán el canal, los motivos, el resultado, la fecha y las versiones del análisis.\n\nNo se enviarán texto, enlaces, números ni imágenes.\n\n"+snapshot.optString("title"))
+        new AlertDialog.Builder(this).setTitle("Confirma tu reporte").setMessage("Se enviarán al servicio de Certiva por HTTPS el canal, los motivos, el resultado, la fecha y las versiones del análisis, vinculados a tu cuenta.\n\nNo se enviarán texto, enlaces, números ni imágenes.\n\n"+snapshot.optString("title"))
             .setNegativeButton("Volver",null).setPositiveButton("Confirmar y enviar",(d,w)->{
                 report.setEnabled(false);
                 try { api.request("cases","POST",CertivaEngine.report(snapshot,true),(result,error)->{if(!alive)return;if(error!=null){report.setEnabled(true);error(error);}else{report.setText("Reporte recibido · "+result.optString("id").substring(0,8));}}); }
@@ -265,18 +273,24 @@ public final class MainActivity extends Activity {
     }
     private void login(){
         LinearLayout form=new LinearLayout(this);form.setOrientation(LinearLayout.VERTICAL);form.setPadding(dp(24),dp(8),dp(24),dp(8));
-        EditText name=new EditText(this);name.setHint("Usuario");name.setText("cliente");name.setSingleLine(true);form.addView(name);
+        EditText name=new EditText(this);name.setHint("Usuario");name.setSingleLine(true);form.addView(name);
         EditText password=new EditText(this);password.setHint("Contraseña");password.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);form.addView(password);
         text(form,"Usa el acceso de cliente asignado. Enviar reportes es opcional y requiere conexión al servicio del piloto; el análisis y las alertas funcionan en tu teléfono.",12,false);
-        new AlertDialog.Builder(this).setTitle("Acceso al piloto local").setView(form).setNegativeButton("Volver",null).setPositiveButton("Entrar",(d,w)->{
-            try { JSONObject data=new JSONObject().put("username",name.getText().toString()).put("password",password.getText().toString());password.setText("");api.request("login","POST",data,(r,e)->{if(!alive)return;if(e!=null)error(e);else{account.setText("Cerrar sesión");accountSummary.setText("Sesión activa. Puedes consultar tus reportes y decidir qué resultados compartir.");status.setText("Sesión lista. Revisa los datos antes de enviar tu reporte.");}}); }
+        new AlertDialog.Builder(this).setTitle("Acceso a reportes").setView(form).setNegativeButton("Volver",null).setPositiveButton("Entrar",(d,w)->{
+            try { JSONObject data=new JSONObject().put("username",name.getText().toString().trim()).put("password",password.getText().toString());password.setText("");api.request("login","POST",data,(r,e)->{if(!alive)return;if(e!=null)error(e);else{account.setText("Cerrar sesión");accountSummary.setText("Sesión activa. Puedes consultar tus reportes y decidir qué resultados compartir.");status.setText("Sesión lista. Revisa los datos antes de enviar tu reporte.");}}); }
             catch(Exception e){error("Revisa tus credenciales");}
         }).show();
     }
     private void reports(){
         if(!api.loggedIn){login();return;}
-        api.request("cases","GET",null,(result,error)->{if(!alive)return;if(error!=null){error(error);return;}StringBuilder list=new StringBuilder();var items=result.optJSONArray("cases");if(items!=null)for(int i=0;i<items.length();i++){var item=items.optJSONObject(i);list.append("Caso ").append(item.optString("id").substring(0,8)).append(" · ").append(item.optString("state").replace('_',' ')).append("\n\n");}new AlertDialog.Builder(this).setTitle("Mis reportes").setMessage(list.length()==0?"Todavía no has enviado reportes.":list.toString()).setPositiveButton("Cerrar",null).show();});
+        api.request("cases","GET",null,(result,error)->{if(!alive)return;if(error!=null){error(error);return;}StringBuilder list=new StringBuilder();var items=result.optJSONArray("cases");if(items!=null)for(int i=0;i<items.length();i++){var item=items.optJSONObject(i);list.append("Caso ").append(item.optString("id").substring(0,8)).append(" · ").append(item.optString("state").replace('_',' ')).append("\n\n");}new AlertDialog.Builder(this).setTitle("Mis reportes").setMessage(list.length()==0?"Todavía no has enviado reportes.":list.toString()).setPositiveButton("Cerrar",null).setNeutralButton("Borrar mis reportes",(d,w)->confirmErase()).show();});
+    }
+    private void confirmErase(){
+        new AlertDialog.Builder(this).setTitle("Borrar mis reportes").setMessage("Se eliminarán todos los reportes de tu cuenta del servicio del piloto. Esta acción no se puede deshacer.").setNegativeButton("Cancelar",null).setPositiveButton("Borrar",(d,w)->{
+            try { api.request("erase","POST",new JSONObject().put("confirm",true),(r,e)->{if(!alive)return;if(e!=null)error(e);else info("Reportes borrados","Se eliminaron los reportes de tu cuenta.");}); }
+            catch(Exception e){error("No se pudo preparar el borrado");}
+        }).show();
     }
     private void error(String message){if(alive)new AlertDialog.Builder(this).setTitle("Certiva").setMessage(message).setPositiveButton("Entendido",null).show();}
-    @Override protected void onDestroy(){alive=false;if(protectionChanges!=null)ProtectionStore.prefs(this).unregisterOnSharedPreferenceChangeListener(protectionChanges);if(scroll!=null)scroll.removeCallbacks(refreshOnScreen);if(engine!=null)engine.close();api.close();super.onDestroy();}
+    @Override protected void onDestroy(){alive=false;if(backCallbackRegistered){getOnBackInvokedDispatcher().unregisterOnBackInvokedCallback(navigateHome);backCallbackRegistered=false;}if(protectionChanges!=null)ProtectionStore.prefs(this).unregisterOnSharedPreferenceChangeListener(protectionChanges);if(scroll!=null)scroll.removeCallbacks(refreshOnScreen);if(engine!=null)engine.close();api.close();super.onDestroy();}
 }

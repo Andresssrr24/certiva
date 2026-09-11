@@ -1,0 +1,11 @@
+{
+  "artifact": "certiva-0.5-reportes-piloto.aab",
+  "bytes": 41967268,
+  "sha256": "c9753707642fa6455e2bf5d7b7e06aade79491994ae70e047f300183a37a69d4",
+  "versionCode": 5,
+  "versionName": "0.5.0-reportes-piloto",
+  "minSdk": 33,
+  "targetSdk": 36,
+  "compileSdk": 36,
+  "abi": "arm64-v8a"
+}

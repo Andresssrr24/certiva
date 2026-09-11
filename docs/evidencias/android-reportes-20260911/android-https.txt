@@ -1,0 +1,17 @@
+2026-09-11 · Certiva 0.5.0-reportes-piloto (versionCode 5)
+Android 15 / API35 emulator CertivaPilot, port5580, debug variant with target36.
+Instrumentation: local.certiva.pilot.PublicReportsTest
+Time: 6.242 seconds
+OK (2 tests)
+- Unknown remote API endpoint rejected.
+- Default HTTPS endpoint, assigned review account login.
+- Real signed local SDK generated minimum report from synthetic message.
+- Report sent; identical resubmission returned same case.
+- Logout/relogin; report persisted server-side.
+- Confirmed deletion; empty list; logout.
+No QVAC model inference, WhatsApp test or physical Android installation claimed.
+Credentials transferred via stdin into app-private file; test deleted file before requests.
+Synthetic report removed; review account returned to empty state.
+Play Console: version5/0.5.0-reportes-piloto published to internal testing on
+2026-09-11 07:19 Panama. Active, available to internal testers, not reviewed.
+Existing selected tester list unchanged. No physical Play installation verified.

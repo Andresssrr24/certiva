@@ -1,0 +1,295 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+
+> Configure project :app
+WARNING: The option setting 'android.useAndroidX=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :qvac:preBuild UP-TO-DATE
+> Task :qvac:preReleaseBuild UP-TO-DATE
+> Task :qvac:processReleaseNavigationResources UP-TO-DATE
+> Task :sdk:preBuild UP-TO-DATE
+> Task :sdk:preReleaseBuild UP-TO-DATE
+> Task :sdk:processReleaseNavigationResources UP-TO-DATE
+> Task :app:processReleaseNavigationResources UP-TO-DATE
+> Task :app:compileReleaseNavigationResources UP-TO-DATE
+> Task :qvac:generateReleaseResources UP-TO-DATE
+> Task :qvac:packageReleaseResources UP-TO-DATE
+> Task :sdk:generateReleaseResources UP-TO-DATE
+> Task :sdk:packageReleaseResources UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :app:generateReleaseResources UP-TO-DATE
+> Task :app:mergeReleaseResources UP-TO-DATE
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :qvac:extractDeepLinksRelease UP-TO-DATE
+> Task :qvac:processReleaseManifest UP-TO-DATE
+> Task :sdk:extractDeepLinksRelease UP-TO-DATE
+> Task :sdk:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseMainManifest UP-TO-DATE
+> Task :app:processReleaseManifest UP-TO-DATE
+> Task :app:processApplicationManifestReleaseForBundle UP-TO-DATE
+> Task :qvac:writeReleaseAarMetadata UP-TO-DATE
+> Task :sdk:writeReleaseAarMetadata UP-TO-DATE
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:packageReleaseResources UP-TO-DATE
+> Task :app:parseReleaseLocalResources UP-TO-DATE
+> Task :app:processReleaseManifestForPackage UP-TO-DATE
+> Task :qvac:compileReleaseLibraryResources UP-TO-DATE
+> Task :qvac:parseReleaseLocalResources UP-TO-DATE
+> Task :qvac:generateReleaseRFile UP-TO-DATE
+> Task :sdk:compileReleaseLibraryResources UP-TO-DATE
+> Task :sdk:parseReleaseLocalResources UP-TO-DATE
+> Task :sdk:generateReleaseRFile UP-TO-DATE
+> Task :app:processReleaseResources UP-TO-DATE
+> Task :app:bundleReleaseResources UP-TO-DATE
+> Task :app:extractReleaseVersionControlInfo UP-TO-DATE
+> Task :sdk:compileReleaseKotlin NO-SOURCE
+> Task :sdk:javaPreCompileRelease UP-TO-DATE
+> Task :sdk:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sdk:bundleLibRuntimeToDirRelease UP-TO-DATE
+> Task :qvac:compileReleaseKotlin NO-SOURCE
+> Task :qvac:javaPreCompileRelease UP-TO-DATE
+> Task :qvac:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :qvac:bundleLibRuntimeToDirRelease UP-TO-DATE
+> Task :app:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :app:generateReleaseRFile UP-TO-DATE
+> Task :qvac:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :sdk:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :app:compileReleaseKotlin NO-SOURCE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+
+> Task :app:compileReleaseJavaWithJavac
+Note: <build-workspace>/pilot/android-app/app/src/main/java/local/certiva/pilot/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies UP-TO-DATE
+> Task :app:mergeReleaseStartupProfile UP-TO-DATE
+> Task :app:mergeExtDexRelease UP-TO-DATE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :qvac:generateReleaseAssets UP-TO-DATE
+> Task :qvac:mergeReleaseAssets UP-TO-DATE
+> Task :sdk:generateReleaseAssets UP-TO-DATE
+> Task :sdk:mergeReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets UP-TO-DATE
+> Task :sdk:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :qvac:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :app:mergeReleaseGlobalSynthetics UP-TO-DATE
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :qvac:processReleaseJavaRes NO-SOURCE
+> Task :sdk:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseJavaResource UP-TO-DATE
+> Task :app:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :qvac:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :qvac:mergeReleaseNativeLibs UP-TO-DATE
+> Task :qvac:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sdk:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sdk:mergeReleaseNativeLibs NO-SOURCE
+> Task :sdk:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeReleaseNativeLibs UP-TO-DATE
+> Task :app:stripReleaseDebugSymbols UP-TO-DATE
+> Task :app:writeReleaseAppMetadata UP-TO-DATE
+> Task :qvac:prepareReleaseArtProfile UP-TO-DATE
+> Task :sdk:prepareReleaseArtProfile UP-TO-DATE
+> Task :app:mergeReleaseArtProfile UP-TO-DATE
+> Task :app:collectReleaseDependencies UP-TO-DATE
+> Task :app:configureReleaseDependencies UP-TO-DATE
+> Task :app:extractReleaseNativeSymbolTables UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :qvac:createFullJarRelease UP-TO-DATE
+> Task :qvac:extractProguardFiles UP-TO-DATE
+> Task :qvac:generateReleaseLintModel UP-TO-DATE
+> Task :qvac:prepareLintJarForPublish UP-TO-DATE
+> Task :sdk:createFullJarRelease UP-TO-DATE
+> Task :sdk:extractProguardFiles UP-TO-DATE
+> Task :sdk:generateReleaseLintModel UP-TO-DATE
+> Task :sdk:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateReleaseLintVitalReportModel
+> Task :sdk:checkReleaseAarMetadata UP-TO-DATE
+> Task :sdk:stripReleaseDebugSymbols NO-SOURCE
+> Task :sdk:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :sdk:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :sdk:extractReleaseAnnotations UP-TO-DATE
+> Task :sdk:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :sdk:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :sdk:mergeReleaseJavaResource UP-TO-DATE
+> Task :sdk:syncReleaseLibJars UP-TO-DATE
+> Task :sdk:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :qvac:checkReleaseAarMetadata UP-TO-DATE
+> Task :qvac:stripReleaseDebugSymbols UP-TO-DATE
+> Task :qvac:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :qvac:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :qvac:extractReleaseAnnotations UP-TO-DATE
+> Task :qvac:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :qvac:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :qvac:mergeReleaseJavaResource UP-TO-DATE
+> Task :qvac:syncReleaseLibJars UP-TO-DATE
+> Task :qvac:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :qvac:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :qvac:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :sdk:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :sdk:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :app:mergeDexRelease
+> Task :app:buildReleasePreBundle
+> Task :app:compileReleaseArtProfile
+> Task :qvac:generateReleaseLintVitalModel UP-TO-DATE
+> Task :sdk:generateReleaseLintVitalModel UP-TO-DATE
+> Task :app:parseReleaseIntegrityConfig UP-TO-DATE
+> Task :app:generateReleaseLintReportModel
+> Task :qvac:lintAnalyzeRelease UP-TO-DATE
+> Task :sdk:lintAnalyzeRelease UP-TO-DATE
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalReportRelease SKIPPED
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:lintAnalyzeRelease
+> Task :app:packageReleaseBundle
+
+> Task :app:lintReportRelease
+Wrote HTML report to file://<build-workspace>/pilot/android-app/app/build/reports/lint-results-release.html
+
+> Task :app:lintRelease
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :qvac:preDebugBuild UP-TO-DATE
+> Task :qvac:processDebugNavigationResources UP-TO-DATE
+> Task :sdk:preDebugBuild UP-TO-DATE
+> Task :sdk:processDebugNavigationResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :qvac:generateDebugResources UP-TO-DATE
+> Task :qvac:packageDebugResources UP-TO-DATE
+> Task :qvac:parseDebugLocalResources UP-TO-DATE
+> Task :qvac:generateDebugRFile UP-TO-DATE
+> Task :qvac:compileDebugKotlin NO-SOURCE
+> Task :qvac:javaPreCompileDebug UP-TO-DATE
+> Task :qvac:compileDebugJavaWithJavac UP-TO-DATE
+> Task :qvac:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :sdk:generateDebugResources UP-TO-DATE
+> Task :sdk:packageDebugResources UP-TO-DATE
+> Task :sdk:parseDebugLocalResources UP-TO-DATE
+> Task :sdk:generateDebugRFile UP-TO-DATE
+> Task :sdk:compileDebugKotlin NO-SOURCE
+> Task :sdk:javaPreCompileDebug UP-TO-DATE
+> Task :sdk:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sdk:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+Note: <build-workspace>/pilot/android-app/app/src/main/java/local/certiva/pilot/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :qvac:generateDebugAssets UP-TO-DATE
+> Task :qvac:mergeDebugAssets UP-TO-DATE
+> Task :sdk:generateDebugAssets UP-TO-DATE
+> Task :sdk:mergeDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :sdk:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :qvac:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :qvac:writeDebugAarMetadata UP-TO-DATE
+> Task :sdk:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :qvac:extractDeepLinksDebug UP-TO-DATE
+> Task :qvac:processDebugManifest UP-TO-DATE
+> Task :sdk:extractDeepLinksDebug UP-TO-DATE
+> Task :sdk:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :qvac:compileDebugLibraryResources UP-TO-DATE
+> Task :sdk:compileDebugLibraryResources UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :qvac:processDebugJavaRes NO-SOURCE
+> Task :sdk:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :sdk:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :qvac:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :qvac:mergeDebugJniLibFolders UP-TO-DATE
+> Task :qvac:mergeDebugNativeLibs UP-TO-DATE
+> Task :qvac:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sdk:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sdk:mergeDebugNativeLibs NO-SOURCE
+> Task :sdk:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDebug
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResources UP-TO-DATE
+> Task :app:packageDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:parseDebugAndroidTestLocalResources UP-TO-DATE
+> Task :app:generateDebugAndroidTestRFile UP-TO-DATE
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:javaPreCompileDebugAndroidTest UP-TO-DATE
+> Task :app:compileDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestAssets UP-TO-DATE
+> Task :app:compressDebugAndroidTestAssets UP-TO-DATE
+> Task :app:desugarDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:checkDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:compileDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:mapDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:mergeDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDebugAndroidTestManifest UP-TO-DATE
+> Task :app:processDebugAndroidTestResources UP-TO-DATE
+> Task :app:dexBuilderDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:mergeDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:checkDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexDebugAndroidTest UP-TO-DATE
+> Task :app:mergeProjectDexDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebugAndroidTest UP-TO-DATE
+> Task :app:writeDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:packageDebugAndroidTest UP-TO-DATE
+> Task :app:createDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDebugAndroidTest UP-TO-DATE
+> Task :app:signReleaseBundle
+> Task :app:produceReleaseBundleIdeListingFile
+> Task :app:createReleaseBundleListingFileRedirect UP-TO-DATE
+> Task :app:bundleRelease
+
+[Incubating] Problems report is available at: file://<build-workspace>/pilot/android-app/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 27s
+222 actionable tasks: 19 executed, 203 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.1.0/userguide/configuration_cache_enabling.html
