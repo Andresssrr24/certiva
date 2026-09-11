@@ -11,7 +11,7 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
 | Escritorio Electron | Teléfono simulado, mensaje → alerta → detalle, centro de seguridad y análisis QVAC local | [Recorrido y pruebas](docs/EXPERIENCIA-Y-ALERTAS.md) · [Entorno QVAC](docs/INTERFAZ-LOCAL.md). Las medidas bancarias son solicitudes de demostración. |
-| Landing | Sitio interactivo, verificador de texto por reglas y puente opcional al QVAC del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). QVAC no se ejecuta en Vercel. |
+| Landing | Ejemplos interactivos, favicon Certiva, guía de cinco pasos y QR de descarga Android; puente QVAC opcional del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). La APK 0.3 descargable es experimental; QVAC web no se ejecuta en Vercel. |
 | Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Android 0.2 usa reglas; sin conexión a APIs bancarias. |
 | Android nativo 0.3 experimental | Interfaz renovada, runtime QVAC CPU, instalador de modelo y conservación del riesgo de reglas cuando falla la IA | [Código y construcción](pilot/android-qvac/README.md) · [Resultados y fallos](pilot/android-qvac/VALIDATION.md). El clasificador corregido agotó el tiempo en Android; no es una versión validada. |
 | App Android con QVAC (Expo) | [APK de 228 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre es una app con cuatro pestañas (revisar, historial, aprender, ajustes), marca Certiva e historial en el teléfono (0.3.0, pendiente de publicar como Release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
@@ -62,6 +62,8 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 La verificación QVAC real previa está descrita en las guías de escritorio y landing. No se repitió al preparar este PR para evitar interferir con el motor en uso. La conexión de la landing desde un navegador depende de sus permisos de red local y no está validada por las pruebas HTTP.
 
 ## Piloto bancario: SDK móvil y consola
+
+La pantalla inicial Android 0.3 agrupa el estado de protección, la revisión manual y los reportes. Conserva el texto compartido y evita iniciar revisiones vacías o simultáneas. [Capturas y dos pruebas de interfaz aprobadas](docs/ANDROID-UI.md#inicio-de-la-apk-revisión-posterior); la validación de QVAC sigue pendiente.
 
 El portal analiza directamente el texto de los escenarios y muestra una advertencia inicial de reglas mientras Qwen prepara la explicación; el reporte espera al resultado final. El directorio de contactos incluye fuentes oficiales y fecha de consulta, y evita presentar teléfonos generados por IA como canales verificados. [Rendimiento y comprobaciones](docs/RENDIMIENTO-PORTAL.md) · [Contactos y límites](docs/CONTACTOS-BANCARIOS.md).
 

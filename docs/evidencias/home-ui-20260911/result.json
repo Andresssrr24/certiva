@@ -1,0 +1,18 @@
+{
+  "version": "0.3.0-qvac-local",
+  "apk": "certiva-0.3-home-experimental.apk",
+  "sha256": "21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942",
+  "passed": true,
+  "test": "HomeScreenTest",
+  "tests": 2,
+  "seconds": 14.678,
+  "checks": [
+    "brand fully visible on launch",
+    "empty input disabled",
+    "editable example enables verification",
+    "protection navigation",
+    "shared text preserved"
+  ],
+  "build": "assembleDebug, assembleDebugAndroidTest and lintDebug passed",
+  "scope": "UI validation on Android emulator. No model inference, physical WhatsApp delivery or report submission tested. QVAC Android remains experimental."
+}

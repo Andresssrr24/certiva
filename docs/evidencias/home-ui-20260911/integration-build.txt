@@ -1,0 +1,211 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+WARNING: The option setting 'android.useAndroidX=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :qvac:preBuild UP-TO-DATE
+> Task :qvac:preDebugBuild UP-TO-DATE
+> Task :qvac:processDebugNavigationResources
+> Task :sdk:preBuild UP-TO-DATE
+> Task :sdk:preDebugBuild UP-TO-DATE
+> Task :sdk:processDebugNavigationResources
+> Task :app:processDebugNavigationResources
+> Task :qvac:generateDebugResources
+> Task :qvac:packageDebugResources
+> Task :qvac:parseDebugLocalResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :qvac:generateDebugRFile
+> Task :qvac:compileDebugKotlin NO-SOURCE
+> Task :sdk:generateDebugResources
+> Task :qvac:javaPreCompileDebug
+> Task :sdk:packageDebugResources
+> Task :qvac:compileDebugJavaWithJavac
+> Task :sdk:parseDebugLocalResources
+> Task :sdk:generateDebugRFile
+> Task :qvac:bundleLibCompileToJarDebug
+> Task :sdk:compileDebugKotlin NO-SOURCE
+> Task :sdk:javaPreCompileDebug
+> Task :app:javaPreCompileDebug
+> Task :sdk:compileDebugJavaWithJavac
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :qvac:generateDebugAssets UP-TO-DATE
+> Task :sdk:bundleLibCompileToJarDebug
+> Task :qvac:mergeDebugAssets
+> Task :app:compileDebugKotlin NO-SOURCE
+
+> Task :app:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :sdk:generateDebugAssets UP-TO-DATE
+> Task :sdk:mergeDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :sdk:bundleLibRuntimeToJarDebug
+> Task :qvac:bundleLibRuntimeToJarDebug
+> Task :qvac:writeDebugAarMetadata
+> Task :app:desugarDebugFileDependencies
+> Task :sdk:writeDebugAarMetadata
+> Task :app:compileDebugNavigationResources
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :qvac:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+> Task :sdk:extractDeepLinksDebug
+> Task :qvac:processDebugManifest
+> Task :sdk:processDebugManifest
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :qvac:compileDebugLibraryResources
+> Task :sdk:compileDebugLibraryResources
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :qvac:processDebugJavaRes NO-SOURCE
+> Task :sdk:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:mergeDebugJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics
+> Task :app:checkDebugDuplicateClasses
+> Task :sdk:bundleLibRuntimeToDirDebug
+> Task :qvac:bundleLibRuntimeToDirDebug
+> Task :app:mergeExtDexDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :qvac:mergeDebugJniLibFolders
+> Task :app:mergeLibDexDebug
+> Task :sdk:mergeDebugJniLibFolders
+> Task :sdk:mergeDebugNativeLibs NO-SOURCE
+> Task :sdk:copyDebugJniLibsProjectOnly
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResources
+> Task :app:packageDebugAndroidTestResources
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:javaPreCompileDebugAndroidTest
+
+> Task :app:compileDebugAndroidTestJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:compileDebugAndroidTestNavigationResources
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:processDebugAndroidTestManifest
+> Task :app:processDebugAndroidTestResources
+> Task :app:dexBuilderDebugAndroidTest
+> Task :app:mergeDebugAndroidTestGlobalSynthetics
+> Task :app:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :sdk:checkDebugAarMetadata
+> Task :sdk:stripDebugDebugSymbols NO-SOURCE
+> Task :sdk:copyDebugJniLibsProjectAndLocalJars
+> Task :sdk:extractDebugAnnotations
+> Task :sdk:extractDeepLinksForAarDebug
+> Task :sdk:mergeDebugGeneratedProguardFiles
+> Task :sdk:mergeDebugConsumerProguardFiles
+> Task :sdk:prepareDebugArtProfile
+> Task :sdk:prepareLintJarForPublish
+> Task :sdk:mergeDebugJavaResource
+> Task :sdk:syncDebugLibJars
+> Task :sdk:bundleDebugLocalLintAar
+> Task :qvac:checkDebugAarMetadata
+> Task :qvac:extractDebugAnnotations
+> Task :qvac:extractDeepLinksForAarDebug
+> Task :qvac:mergeDebugGeneratedProguardFiles
+> Task :qvac:mergeDebugConsumerProguardFiles
+> Task :qvac:prepareDebugArtProfile
+> Task :qvac:prepareLintJarForPublish
+> Task :qvac:mergeDebugJavaResource
+> Task :qvac:syncDebugLibJars
+> Task :qvac:createFullJarDebug
+> Task :qvac:writeDebugLintModelMetadata
+> Task :sdk:createFullJarDebug
+> Task :sdk:writeDebugLintModelMetadata
+> Task :app:extractProguardFiles
+> Task :qvac:extractProguardFiles
+> Task :qvac:generateDebugLintModel
+> Task :sdk:extractProguardFiles
+> Task :sdk:generateDebugLintModel
+> Task :app:generateDebugLintReportModel
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :qvac:mergeDebugNativeLibs
+> Task :qvac:copyDebugJniLibsProjectOnly
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :qvac:lintAnalyzeDebug
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:assembleDebugAndroidTest
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :qvac:stripDebugDebugSymbols
+> Task :qvac:copyDebugJniLibsProjectAndLocalJars
+> Task :sdk:lintAnalyzeDebug
+> Task :qvac:bundleDebugLocalLintAar
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :qvac:preDebugAndroidTestBuild UP-TO-DATE
+> Task :qvac:generateDebugAndroidTestLintModel
+> Task :qvac:preDebugUnitTestBuild UP-TO-DATE
+> Task :qvac:generateDebugUnitTestLintModel
+> Task :qvac:lintAnalyzeDebugAndroidTest
+> Task :qvac:lintAnalyzeDebugUnitTest
+> Task :sdk:preDebugAndroidTestBuild UP-TO-DATE
+> Task :sdk:generateDebugAndroidTestLintModel
+> Task :sdk:preDebugUnitTestBuild UP-TO-DATE
+> Task :sdk:generateDebugUnitTestLintModel
+> Task :sdk:lintAnalyzeDebugAndroidTest
+> Task :sdk:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///Users/bryanlarez/Documents/DESARROLLO/certiva-pr-inicio-android/pilot/android-app/app/build/reports/lint-results-debug.html
+
+> Task :app:lintDebug
+
+[Incubating] Problems report is available at: file:///Users/bryanlarez/Documents/DESARROLLO/certiva-pr-inicio-android/pilot/android-app/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 30s
+149 actionable tasks: 149 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.1.0/userguide/configuration_cache_enabling.html

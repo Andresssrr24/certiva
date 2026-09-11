@@ -1,5 +1,5 @@
 /* Directorio editorial consultado con IA en fuentes primarias. No es una búsqueda en vivo. */
-(function (root) {
+((root) => {
   "use strict";
   const directorio = {
     banco: "Caja de Ahorros",

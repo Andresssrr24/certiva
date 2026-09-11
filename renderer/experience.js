@@ -56,13 +56,24 @@ function openAssessment() {
   $("#appBadge").hidden = true;
   phoneMode = "certiva";
   pintaTelefono(pendingAssessment);
-  experienceStatus("Ahora estás dentro de Certiva.", pendingAssessment.preliminar ? "Advertencia inicial por señales detectadas. La revisión continúa." : "Revisa las señales y decide si quieres reportar el mensaje.");
+  experienceStatus(
+    "Ahora estás dentro de Certiva.",
+    pendingAssessment.preliminar
+      ? "Advertencia inicial por señales detectadas. La revisión continúa."
+      : "Revisa las señales y decide si quieres reportar el mensaje.",
+  );
 }
 function assessmentArrived(r) {
   pendingAssessment = r;
   if (phoneMode === "certiva") {
     pintaTelefono(r);
-    experienceStatus(r.preliminar ? "Advertencia inicial" : "Revisión terminada", r.preliminar ? "No respondas todavía. La revisión continúa." : "Ya puedes revisar el resultado y decidir si reportarlo.", !!r.preliminar);
+    experienceStatus(
+      r.preliminar ? "Advertencia inicial" : "Revisión terminada",
+      r.preliminar
+        ? "No respondas todavía. La revisión continúa."
+        : "Ya puedes revisar el resultado y decidir si reportarlo.",
+      !!r.preliminar,
+    );
     return;
   }
   const type = r.ok ? r.veredicto?.veredicto || r.veredicto_reglas : "no_legible";
@@ -86,8 +97,14 @@ function assessmentArrived(r) {
   $("#appBadge").hidden = false;
   journeyStep("alert");
   experienceStatus(
-    r.preliminar ? "Ya detectamos señales de riesgo." : risk ? "Certiva encontró señales y te avisó." : "La revisión terminó.",
-    r.preliminar ? "Puedes ver la advertencia ahora. La revisión continúa." : "Toca la notificación de Certiva en el teléfono para abrir el detalle.",
+    r.preliminar
+      ? "Ya detectamos señales de riesgo."
+      : risk
+        ? "Certiva encontró señales y te avisó."
+        : "La revisión terminó.",
+    r.preliminar
+      ? "Puedes ver la advertencia ahora. La revisión continúa."
+      : "Toca la notificación de Certiva en el teléfono para abrir el detalle.",
     !!r.preliminar,
   );
 }

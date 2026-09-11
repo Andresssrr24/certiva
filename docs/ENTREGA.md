@@ -6,7 +6,7 @@ Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorr
 
 - [ ] **Base preexistente declarada** en el README: `qvac-invoice-manager-demo` y los otros ejemplos de `tetherto/qvac-examples`. Ya está; no borrarla.
 - [ ] **Ninguna inferencia en la nube,** ni como respaldo. Buscar en el código llamadas externas: `grep -rn "fetch(\|https://" lib main.js renderer scripts` y confirmar que solo hay descargas de modelos y enlaces del README.
-- [ ] **Repositorio accesible al jurado durante toda la evaluación:** hacerlo público el 11 temprano (`gh repo edit --visibility public`), o dar acceso al jurado si prefieren privado.
+- [ ] **Repositorio accesible al jurado durante toda la evaluación:** la tarjeta de Dojo ya apunta a `https://github.com/Andresssrr24/certiva`, pero el repo sigue privado y Dojo solo acepta repos públicos. Hacerlo público antes de enviar: `gh repo edit Andresssrr24/certiva --visibility public`.
 - [ ] **Al hacer público el repo, abrir el QR del README desde un teléfono sin sesión de GitHub** y comprobar que el Release apk-v0.1 descarga.
 - [ ] **Video de máximo cinco minutos** con enlace sin credenciales (YouTube sin listar). Abrirlo en una ventana de incógnito antes de pegarlo.
 
@@ -27,7 +27,9 @@ Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorr
 - [x] APK publicado en el [Release apk-v0.1](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1) con SHA-256 en las notas, y el enlace en la sección «App móvil y APK» del README.
 - [ ] Publicar el APK 0.3.0 (marca Certiva y app de cuatro pestañas; rama `apk-marca-certiva`, 229 MB, SHA-256 `9a5165c4…5d4099`) como Release `apk-v0.2`, y apuntar ahí el enlace del README, el QR y `mobile/antifraude-release-arm64.apk.sha256`.
 - [ ] Ningún secreto en el repo: `git log -p | grep -iE "api[_-]?key|secret|token" | head`.
-- [ ] El capitán entrega en Dojo, marca los tres tracks y guarda una captura de la confirmación.
+- [x] **Tarjeta del proyecto creada en Dojo** (borrador, 11 de septiembre): nombre *Certiva*, tracks General + Caja de Ahorros + QVAC Psy, plataforma Mobile-First, descripción, logo y banner de la lámina v5 ([logo](marketing/brand/certiva-logo-512.png) · [banner](marketing/brand/certiva-banner-3x1.png)), enlace del repositorio y Live Demo con la landing.
+- [ ] **Pegar el enlace del video** en «Link to your demo» de la tarjeta, con el repositorio ya público.
+- [ ] **«Submit & participate» en Dojo:** bloquea el proyecto para la evaluación, así que es el último paso. Guardar una captura de la confirmación.
 
 ## Validación final de esta rama
 
