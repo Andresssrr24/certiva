@@ -19,7 +19,22 @@ const hash = (v) => crypto.createHash("sha256").update(String(v)).digest("hex").
       ]
     : [];
   // Lo que cruza la frontera hacia el banco: nunca el mensaje, solo esto.
-  console.log(JSON.stringify({ veredicto: r.veredicto, senales: r.senales, indicadores, coaccion_reciente: r.ok && r.veredicto && r.veredicto.veredicto === "fraude", tiempos: r.tiempos }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        veredicto: r.veredicto,
+        senales: r.senales,
+        indicadores,
+        coaccion_reciente: r.ok && r.veredicto && r.veredicto.veredicto === "fraude",
+        tiempos: r.tiempos,
+      },
+      null,
+      2,
+    ),
+  );
   await motor.descargarTodo();
   process.exit(0);
-})().catch((e) => { console.error(e.message); process.exit(1); });
+})().catch((e) => {
+  console.error(e.message);
+  process.exit(1);
+});
