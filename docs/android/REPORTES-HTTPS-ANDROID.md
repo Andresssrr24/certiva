@@ -23,3 +23,5 @@ La integración conserva las pruebas históricas de la base publicada. Tres prue
 La tarea propietaria comprobó version5 publicada en la prueba interna el11de septiembre de2026 a las07:19 de Panamá, disponible para los testers de ese canal. El canal cerrado sigue pendiente. No se ha verificado instalación física desde Play, Android16, recepción real de WhatsApp ni inferencia QVAC en esta corrida.
 
 [Instrucciones para revisores, sin credenciales](ACCESO-REVISION-PLAY.md). La contraseña dedicada se entrega por separado solo con autorización expresa; no forma parte de la APK, documentos públicos ni evidencias. El servicio es un piloto técnico, no una conexión al banco ni un canal de denuncias.
+
+El servicio backend se entrega en [PR #38](https://github.com/Andresssrr24/certiva/pull/38), que también actualiza el README e inventario general. Esta PR mantiene las fuentes y evidencias Android separadas de ese backend.

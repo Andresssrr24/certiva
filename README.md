@@ -8,8 +8,6 @@ Demo vigente: [Android y administración del mismo caso — video de 56 segundos
 
 ## Estado del avance
 
-Android 0.5 conecta **Ingresar/Mis reportes por HTTPS** con cuenta asignada y permite borrar los reportes propios. [Cambios y evidencia](docs/android/REPORTES-HTTPS-ANDROID.md): dos pruebas nativas aprobadas en emulador API 35; instalación física desde Play y QVAC siguen pendientes. El servicio remoto es independiente de la demo local.
-
 Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. El inventario actualizado distingue PR integradas, las PR #34/#35/#36 abiertas y los 22 archivos de la prerelease, con sus hashes. API36 requiere integrar la PR #36 en `main`; su PR anterior se fusionó en otra rama. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |
@@ -23,9 +21,7 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 
 Registro beta: **habilitado con Google; descarga cerrada pendiente**. Confirma la cuenta y su membresía en el grupo con consentimiento. `BETA_ENABLED=true` permite registrarse; `BETA_PLAY_READY=false` mantiene oculto el enlace de instalación. Con la prueba cerrada disponible y la bandera activada, el registro confirmado redirigirá directamente a Google Play. La tarea de landing verificó OAuth completo en Chrome de escritorio con una cuenta ya perteneciente al grupo, tras corregir el fallo de origen del formulario. Bryan confirmó después que el registro en Android funciona. Siguen pendientes una nueva alta externa instrumentada y la distribución cerrada. [Configuración y estado](landing/BETA-SETUP.md) · [Revisión de integración](landing/BETA-REVIEW.md). Google Play lleva 6 de 11 tareas completas; la ficha es-419 está en borrador. [Política Android](https://certiva-landing.vercel.app/privacidad-app) · [Materiales y pendientes](landing/play-store-assets/README.md).
 
-API36: [navegación Atrás y validación](docs/android/API36-Y-NAVEGACION-ATRAS.md). Se conserva en Android 0.5; las pruebas ejecutadas en API 35 no acreditan Android 16.
-
-Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El diagnóstico de Play Protect conserva su alcance histórico. La versión 5 ya está publicada en prueba interna según la tarea propietaria; instalación física y canal cerrado siguen pendientes. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
+Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto; la preparación de Google Play continúa por separado. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
 
 La app de escritorio ejecuta VisionPsy, reglas y Qwen3 localmente. La landing analiza texto con reglas en el navegador; para usar modelos requiere un puente en `127.0.0.1` y modelos descargados en el mismo equipo. Las alertas y el consejo no autentican remitentes ni garantizan que un mensaje sea legítimo.
 

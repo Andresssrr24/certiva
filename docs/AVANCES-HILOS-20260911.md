@@ -45,7 +45,3 @@ Los ZIP de evidencias conservan pruebas fallidas y sus resultados. El video fina
 La tarea de landing comunicó pruebas HTTP reales aprobadas del servicio HTTPS de reportes: inicio de sesión, reporte, duplicado, cierre/reinicio de sesión, persistencia y borrado. La preparación Android0.5 y los cambios de privacidad asociados siguen activos; no están congelados ni incorporados a esta PR. Ese resultado HTTP no acredita todavía el recorrido de reportes desde Android0.5 ni aprobación del canal cerrado de Play.
 
 Se mantiene la separación entre cortes revisados y trabajo en curso. Los cambios de las tareas se publican después de revisar archivos concretos y evidencias, sin sobrescribir el checkout compartido ni copiar credenciales o datos personales de prueba.
-
-## Android 0.5 incorporado en este corte
-
-[PR #37](https://github.com/Andresssrr24/certiva/pull/37): Ingresar/Mis reportes por HTTPS, confirmación de envío mínimo y borrado de reportes propios. Conserva API36 como base y apunta a main. Dos pruebas nativas aprobadas en API35 contra el HTTPS real; no se reejecutó la suite completa durante la publicación. [Fuentes y alcance](android/REPORTES-HTTPS-ANDROID.md). El backend se entrega por separado y no se incluye material de firma o credenciales.
