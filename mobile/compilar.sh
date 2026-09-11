@@ -9,11 +9,12 @@ export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$JAVA_HOME/bin:$ANDROID_HOME/platform-tools:$PATH"
 VARIANTE="${1:-release}"
 # Sincroniza el código fuente con el repo: el núcleo compartido, las pantallas, los plugins y la configuración.
-mkdir -p core plugins
+mkdir -p core plugins assets
 cp ../../lib/reglas.js ../../lib/derivar.js ../../lib/esquemas.js core/
 cp ../../data/banco-demo.json ../../data/politica-antifraude.md core/
 cp ../src/*.js ../src/*.jsx .
 cp ../plugins/*.js plugins/
+cp ../assets/* assets/   # iconos y fuentes de la marca
 cp ../app.config.js ../qvac.config.json .
 npx expo prebuild --platform android --no-install   # idempotente: vuelve a aplicar los plugins sobre android/
 echo "sdk.dir=$ANDROID_HOME" > android/local.properties

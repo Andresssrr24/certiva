@@ -1,13 +1,18 @@
 // App móvil: la misma experiencia del teléfono de la demo, corriendo en un teléfono. Tema claro, letra grande, una acción por pantalla.
+// Marca Certiva (MEMORIA_PROYECTO.md): símbolo Enlace, wordmark en minúsculas con Manrope, azul #205094 y la paleta del escritorio.
 
 import * as Clipboard from "expo-clipboard";
+import { useFonts } from "expo-font";
 import * as ImagePicker from "expo-image-picker";
-import React, { useEffect, useState } from "react";
+import { StatusBar as BarraEstado } from "expo-status-bar";
+import { createContext, useContext, useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Image,
   Pressable,
   SafeAreaView,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   TextInput,
@@ -16,27 +21,60 @@ import {
 import { consejoPara, SENAL } from "./consejos";
 import { analizarCaptura, analizarTexto, descargarVision, estadoVision } from "./motor";
 
+// Paleta compartida con el escritorio (renderer/certiva.css).
 const C = {
-  fondo: "#f5f7f6",
-  tinta: "#14201e",
-  gris: "#5b6764",
-  linea: "#dfe5e2",
-  acento: "#0e5e63",
+  fondo: "#f4f7fc",
+  tinta: "#152e4e",
+  gris: "#54677e",
+  linea: "#dce5f1",
+  acento: "#205094",
   malo: "#a3302a",
-  maloSuave: "#f7dedc",
-  bien: "#1e7a4b",
-  bienSuave: "#ddf0e4",
-  aviso: "#8a5d0c",
-  avisoSuave: "#f6ebd0",
+  maloSuave: "#fceae8",
+  bien: "#205094",
+  bienSuave: "#eaf1fb",
+  aviso: "#895909",
+  avisoSuave: "#fff3d9",
+  neutro: "#526477",
+  neutroSuave: "#edf1f5",
 };
 const COLOR = {
   fraude: [C.malo, C.maloSuave],
   sospechoso: [C.aviso, C.avisoSuave],
   sin_senales: [C.bien, C.bienSuave],
-  no_legible: [C.gris, C.linea],
+  no_legible: [C.neutro, C.neutroSuave],
 };
 
+// Manrope (OFL), la misma letra del escritorio. Hasta que carga, la del sistema con el mismo peso.
+const FUENTES = {
+  Manrope500: require("./assets/manrope-500.ttf"),
+  Manrope700: require("./assets/manrope-700.ttf"),
+  Manrope800: require("./assets/manrope-800.ttf"),
+};
+const FuentesListas = createContext(false);
+
+// Texto con la fuente de marca. Con Manrope cargada, fontWeight vuelve a normal: Android engordaría la letra de forma
+// sintética si se deja en 700 u 800.
+function T({ peso = 500, style, ...props }) {
+  const listas = useContext(FuentesListas);
+  return <Text {...props} style={[style, listas && { fontFamily: `Manrope${peso}`, fontWeight: "normal" }]} />;
+}
+
+function Marca() {
+  return (
+    <View style={s.marca}>
+      <Image source={require("./assets/marca.png")} style={s.marcaIcono} accessibilityLabel="Certiva" />
+      <View>
+        <T peso={800} style={s.wordmark}>
+          certiva
+        </T>
+        <T style={s.descriptor}>Tu aliado contra el fraude</T>
+      </View>
+    </View>
+  );
+}
+
 export default function App() {
+  const [fuentes] = useFonts(FUENTES);
   const [pantalla, setPantalla] = useState("inicio");
   const [texto, setTexto] = useState("");
   const [resultado, setResultado] = useState(null);
@@ -96,69 +134,85 @@ export default function App() {
   };
 
   return (
-    <SafeAreaView style={s.raiz}>
-      <ScrollView contentContainerStyle={s.cuerpo}>
-        {pantalla === "inicio" && (
-          <View style={s.col}>
-            <Text style={s.cab}>Banco Demo · Protección</Text>
-            <Text style={s.h1}>¿Te llegó algo raro?</Text>
-            <Text style={s.lead}>
-              Revísalo aquí antes de hacer nada. Todo se analiza en tu teléfono: nadie ve tu mensaje.
-            </Text>
-            <TextInput
-              style={s.caja}
-              multiline
-              placeholder="Pega aquí el texto del mensaje"
-              value={texto}
-              onChangeText={setTexto}
-            />
-            <View style={s.fila}>
-              <Boton texto="Pegar" sec onPress={pegar} />
-              <Boton texto="Verificar el texto" onPress={() => texto.trim() && verTexto(texto)} />
+    <FuentesListas.Provider value={fuentes}>
+      <BarraEstado style="dark" />
+      <SafeAreaView style={s.raiz}>
+        {/* Con el teclado abierto, el primer toque en un botón debe pulsarlo, no solo cerrar el teclado. */}
+        <ScrollView contentContainerStyle={s.cuerpo} keyboardShouldPersistTaps="handled">
+          <Marca />
+          {pantalla === "inicio" && (
+            <View style={s.col}>
+              <T peso={700} style={s.cab}>
+                Banco Demo · Protección
+              </T>
+              <T peso={800} style={s.h1}>
+                ¿Te llegó algo raro?
+              </T>
+              <T style={s.lead}>
+                Revísalo aquí antes de hacer nada. Todo se analiza en tu teléfono: nadie ve tu mensaje.
+              </T>
+              <TextInput
+                style={s.caja}
+                multiline
+                placeholder="Pega aquí el texto del mensaje"
+                placeholderTextColor={C.gris}
+                value={texto}
+                onChangeText={setTexto}
+              />
+              <View style={s.fila}>
+                <Boton texto="Pegar" sec onPress={pegar} />
+                <Boton texto="Verificar el texto" onPress={() => texto.trim() && verTexto(texto)} />
+              </View>
+              <Boton
+                texto={vision.enCache ? "Verificar una captura" : "Verificar una captura (descarga el lector)"}
+                sec
+                onPress={elegirCaptura}
+              />
+              <View style={s.regla}>
+                <T style={s.reglaTxt}>
+                  <T peso={700} style={{ color: C.tinta }}>
+                    Regla de oro.{" "}
+                  </T>
+                  El banco nunca te pide tu clave ni el código que te llega por SMS. Nunca.
+                </T>
+              </View>
             </View>
-            <Boton
-              texto={vision.enCache ? "Verificar una captura" : "Verificar una captura (descarga el lector)"}
-              sec
-              onPress={elegirCaptura}
-            />
-            <View style={s.regla}>
-              <Text style={s.reglaTxt}>
-                <Text style={{ fontWeight: "700", color: C.tinta }}>Regla de oro. </Text>El banco nunca te pide tu clave
-                ni el código que te llega por SMS. Nunca.
-              </Text>
+          )}
+
+          {pantalla === "descarga" && (
+            <View style={s.col}>
+              <T peso={700} style={s.h2}>
+                Leer capturas necesita un modelo
+              </T>
+              <T style={s.lead}>
+                Para leer capturas, el modelo vive en tu teléfono y nunca sale de él. Pesa{" "}
+                {Math.round((vision.bytes || 0) / 1e6)} MB y se descarga una sola vez.
+              </T>
+              {progreso === null ? (
+                <Boton texto="Descargar el lector" onPress={descargar} />
+              ) : (
+                <T style={s.lead}>Descargando… {progreso}%</T>
+              )}
+              <Boton texto="Ahora no" sec onPress={() => setPantalla("inicio")} />
+              {estado ? <T style={s.mini}>{estado}</T> : null}
             </View>
-          </View>
-        )}
+          )}
 
-        {pantalla === "descarga" && (
-          <View style={s.col}>
-            <Text style={s.h2}>Leer capturas necesita un modelo</Text>
-            <Text style={s.lead}>
-              Para leer capturas, el modelo vive en tu teléfono y nunca sale de él. Pesa{" "}
-              {Math.round((vision.bytes || 0) / 1e6)} MB y se descarga una sola vez.
-            </Text>
-            {progreso === null ? (
-              <Boton texto="Descargar el lector" onPress={descargar} />
-            ) : (
-              <Text style={s.lead}>Descargando… {progreso}%</Text>
-            )}
-            <Boton texto="Ahora no" sec onPress={() => setPantalla("inicio")} />
-            {estado ? <Text style={s.mini}>{estado}</Text> : null}
-          </View>
-        )}
+          {pantalla === "analizando" && (
+            <View style={s.col}>
+              <T peso={700} style={s.h2}>
+                Revisando el mensaje…
+              </T>
+              <ActivityIndicator size="large" color={C.acento} />
+              <T style={s.lead}>{estado}</T>
+              <T style={s.mini}>Tarda unos segundos. Nada sale de tu teléfono.</T>
+            </View>
+          )}
 
-        {pantalla === "analizando" && (
-          <View style={s.col}>
-            <Text style={s.h2}>Revisando el mensaje…</Text>
-            <ActivityIndicator size="large" color={C.acento} />
-            <Text style={s.lead}>{estado}</Text>
-            <Text style={s.mini}>Tarda unos segundos. Nada sale de tu teléfono.</Text>
-          </View>
-        )}
-
-        {pantalla === "resultado" && resultado && <Resultado r={resultado} volver={() => setPantalla("inicio")} />}
-      </ScrollView>
-    </SafeAreaView>
+          {pantalla === "resultado" && resultado && <Resultado r={resultado} volver={() => setPantalla("inicio")} />}
+        </ScrollView>
+      </SafeAreaView>
+    </FuentesListas.Provider>
   );
 }
 
@@ -169,32 +223,36 @@ function Resultado({ r, volver }) {
   return (
     <View style={s.col}>
       <View style={[s.chip, { backgroundColor: fondo }]}>
-        <Text style={[s.chipTxt, { color }]}>{c.etiqueta}</Text>
+        <T peso={800} style={[s.chipTxt, { color }]}>
+          {c.etiqueta}
+        </T>
       </View>
       {r.senales?.length ? (
         <View style={s.col}>
-          <Text style={s.lead}>Encontré estas señales en el mensaje:</Text>
+          <T style={s.lead}>Encontré estas señales en el mensaje:</T>
           {r.senales.map((x, i) => (
             <View key={`${x.tipo}-${i}`} style={s.razon}>
-              <Text style={s.razonTit}>{SENAL[x.tipo] || x.tipo}</Text>
-              <Text style={s.razonEv}>{x.evidencia}</Text>
+              <T peso={700} style={s.razonTit}>
+                {SENAL[x.tipo] || x.tipo}
+              </T>
+              <T style={s.razonEv}>{x.evidencia}</T>
             </View>
           ))}
         </View>
       ) : (
-        <Text style={s.lead}>{tipo === "no_legible" ? "" : "No encontré señales de estafa en este mensaje."}</Text>
+        <T style={s.lead}>{tipo === "no_legible" ? "" : "No encontré señales de estafa en este mensaje."}</T>
       )}
       <View style={s.consejo}>
-        <Text style={s.consejoTxt}>{c.consejo}</Text>
+        <T style={s.consejoTxt}>{c.consejo}</T>
       </View>
-      <Text style={s.mini}>Canal oficial: {c.canalOficial}</Text>
+      <T style={s.mini}>Canal oficial: {c.canalOficial}</T>
       <Boton texto={`Llamar al banco · ${c.telefono}`} onPress={() => {}} />
       <Boton texto="Volver al inicio" sec onPress={volver} />
-      <Text style={s.mini}>
+      <T style={s.mini}>
         {r.lector === "visionpsy"
           ? `Leído con VisionPsy en tu teléfono · primer token ${r.ttft ?? "—"} ms · total ${r.msVision} ms`
           : `Reglas sobre el texto · ${r.ms} ms`}
-      </Text>
+      </T>
     </View>
   );
 }
@@ -202,16 +260,23 @@ function Resultado({ r, volver }) {
 function Boton({ texto, onPress, sec }) {
   return (
     <Pressable onPress={onPress} style={({ pressed }) => [s.btn, sec && s.btnSec, pressed && { opacity: 0.85 }]}>
-      <Text style={[s.btnTxt, sec && { color: C.acento }]}>{texto}</Text>
+      <T peso={700} style={[s.btnTxt, sec && { color: C.acento }]}>
+        {texto}
+      </T>
     </Pressable>
   );
 }
 
 const s = StyleSheet.create({
   raiz: { flex: 1, backgroundColor: C.fondo },
-  cuerpo: { padding: 20, gap: 14 },
+  // La app es borde a borde (Expo 54): el contenido empieza debajo de la barra de estado, no detrás.
+  cuerpo: { padding: 20, paddingTop: 20 + (StatusBar.currentHeight || 0), gap: 14 },
   col: { gap: 14 },
   fila: { flexDirection: "row", gap: 10 },
+  marca: { flexDirection: "row", alignItems: "center", gap: 10, paddingBottom: 4 },
+  marcaIcono: { width: 54, height: 54 },
+  wordmark: { fontSize: 28, lineHeight: 32, fontWeight: "800", color: C.acento, letterSpacing: -0.5 },
+  descriptor: { fontSize: 14, color: C.gris },
   cab: { fontSize: 15, color: C.gris, fontWeight: "600" },
   h1: { fontSize: 30, fontWeight: "800", color: C.tinta, lineHeight: 34 },
   h2: { fontSize: 24, fontWeight: "700", color: C.tinta },
