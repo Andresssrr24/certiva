@@ -18,7 +18,8 @@ module.exports = function precargaAppmodules(config) {
   return withMainApplication(config, (c) => {
     const s = c.modResults.contents;
     if (!s.includes('System.loadLibrary("appmodules")')) {
-      if (!s.includes(MARCA)) throw new Error("precarga-appmodules: no encuentro loadReactNative(this) en MainApplication");
+      if (!s.includes(MARCA))
+        throw new Error("precarga-appmodules: no encuentro loadReactNative(this) en MainApplication");
       c.modResults.contents = s.replace(MARCA, PRECARGA);
     }
     return c;
