@@ -33,194 +33,233 @@
   border: 1px solid #dbe5f1;
   background: white;
 }
+.android-symbols {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.android-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
 .telefono {
-  background: #182331;
-  border: 2px solid #556378;
-  padding: 7px;
-  border-radius: 49px;
+  background: #171a20;
+  border: 2px solid #737b86;
+  padding: 5px;
+  border-radius: 44px;
   box-shadow:
-    0 25px 45px #16325329,
-    0 0 0 3px #d4deeb,
-    inset 0 0 0 1px #8190a3;
+    0 26px 48px #14284425,
+    0 0 0 1px #9ca3ad,
+    inset 0 0 0 2px #343942;
+  position: relative;
+}
+.telefono::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 175px;
+  height: 62px;
+  width: 3px;
+  background: #737b86;
+  border-radius: 0 2px 2px 0;
 }
 .pantalla {
   border: 0;
-  border-radius: 39px;
+  border-radius: 37px;
+  background: #f8f9ff;
+  font-family: Arial, system-ui, sans-serif;
+}
+.pantalla:has(.phone-home:not([hidden])) {
+  background: #bfcfe4 url("assets/android-wallpaper.svg") center / cover;
 }
 .tstatus {
   z-index: 8;
-  height: 38px;
+  height: 42px;
   flex-shrink: 0;
-  padding: 13px 25px 4px;
-  background: white;
-  color: #182c42;
+  padding: 14px 26px 5px;
+  background: transparent;
+  color: #172c47;
+  font-size: 13px;
+  font-weight: 600;
+  align-items: center;
 }
 .tstatus::after {
   content: "";
   position: absolute;
-  top: 11px;
-  left: calc(50% - 32px);
-  width: 64px;
-  height: 18px;
-  border-radius: 20px;
-  background: #182331;
+  top: 13px;
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #293342;
+  border-radius: 50%;
+  background: #070b12;
+}
+.android-status-icons svg {
+  width: 51px;
+  height: 15px;
+  fill: currentColor;
+  display: block;
 }
 .home-indicator {
-  width: 110px;
-  min-height: 5px;
-  height: 5px;
+  width: 100px;
+  min-height: 4px;
+  height: 4px;
   border: 0;
   padding: 0;
-  background: #21354e;
+  background: #172c47;
   border-radius: 9px;
-  margin: 9px auto;
+  margin: 10px auto;
   z-index: 10;
 }
 .phone-home {
-  background:
-    radial-gradient(ellipse at 90% 80%, #a0bdce 0%, transparent 60%),
-    linear-gradient(150deg, #e8e9e3 0%, #cadbdc 46%, #6f91b1 100%);
-  padding: 26px 23px 10px;
-  gap: 12px;
+  background: transparent;
+  padding: 25px 25px 8px;
+  gap: 0;
+  overflow: hidden;
 }
-.home-date {
-  text-align: center;
-  color: #26435a;
-  font-size: 14px;
-  margin-top: 5px;
-}
-.home-clock {
-  font-size: 77px;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: -6px;
-  text-align: center;
-  color: #234058;
-}
-.weather-widget {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: center;
-  color: #274359;
-  margin: 2px 0 17px;
-}
-.weather-widget > span {
-  font-size: 34px;
-  color: #aa732c;
-}
-.weather-widget strong {
-  font-size: 24px;
-  font-weight: 600;
-}
-.weather-widget small {
-  display: block;
-  font-size: 11px;
-}
-.daily-widget {
-  padding: 17px;
-  background: #ffffff75;
-  border: 1px solid #ffffff78;
-  border-radius: 22px;
+.at-a-glance {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #172f50;
+}
+.at-a-glance > span:last-child {
+  display: flex;
+  align-items: center;
   gap: 7px;
-  color: #264158;
-  box-shadow: 0 6px 25px #31587709;
-}
-.daily-widget small {
-  font-size: 9px;
-  letter-spacing: 1.4px;
-  font-weight: 800;
-}
-.daily-widget b {
   font-size: 16px;
 }
-.daily-widget > span {
-  font-size: 11px;
+.at-a-glance svg {
+  width: 20px;
+  height: 20px;
+  color: #83612d;
+}
+.android-clock {
+  font-family: Manrope, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 113px;
+  line-height: 0.88;
+  letter-spacing: -7px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin: 42px 0 0 1px;
+  color: #213f63;
+}
+.home-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 24px;
 }
 .app-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: auto;
-  gap: 8px;
-  margin-bottom: 12px;
+  gap: 12px;
 }
 .home-app {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   border: 0;
   background: transparent;
-  font-size: 10px;
-  color: #203e58;
+  font-size: 11px;
+  color: #152f4d;
   padding: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 .app-tile,
 .home-app .brand-icon {
-  width: 55px;
-  height: 55px;
-  border-radius: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 35px;
-  font-weight: 500;
   color: white;
-  box-shadow: 0 4px 9px #25435918;
+  box-shadow: 0 2px 4px #193a5812;
+}
+.app-tile svg {
+  width: 31px;
+  height: 31px;
+}
+.home-app .brand-icon {
+  border-radius: 18px;
 }
 .whatsapp {
-  background: #208765;
+  background: #168645;
 }
 .messages {
-  background: #418b60;
+  background: #2363cf;
 }
 .mail {
-  background: #4975ae;
+  background: #f8faff;
+  color: #205094;
 }
 #appBadge {
   position: absolute;
-  right: 0;
-  top: -5px;
-  background: #b73b3b;
+  right: 4px;
+  top: 0;
+  background: #205094;
   color: white;
-  border: 2px solid #d6e1e8;
-  width: 20px;
-  height: 20px;
+  border: 2px solid #d8e4f5;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  font-size: 11px;
+  font-size: 0;
 }
 .home-search {
-  background: #ffffff55;
-  border: 1px solid #ffffff55;
-  border-radius: 22px;
-  text-align: center;
-  padding: 9px;
-  color: #39566c;
+  background: #edf3ffeb;
+  border: 1px solid #f8faff70;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  padding: 15px 19px;
+  color: #273e59;
   font-size: 15px;
+  height: 56px;
+  gap: 15px;
 }
 .home-search span {
-  font-size: 11px;
-  margin-left: 6px;
+  flex: 1;
+}
+.home-search svg {
+  width: 21px;
+  height: 21px;
 }
 .phone-dock {
   display: flex;
   justify-content: space-around;
-  border-radius: 24px;
-  background: #ffffff65;
-  padding: 14px 5px;
-  font-size: 26px;
-  margin-top: 12px;
-  color: #30577b;
+  gap: 22px;
+  padding: 0 24px;
+  color: #2a4b71;
+}
+.phone-dock > span {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  background: #e4edfc;
+}
+.phone-dock svg {
+  width: 26px;
+  height: 26px;
 }
 .phone-notifications {
   position: absolute;
   z-index: 9;
-  left: 9px;
-  right: 9px;
-  top: 7px;
+  left: 8px;
+  right: 8px;
+  top: 3px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -228,17 +267,17 @@
 }
 .phone-notification {
   display: grid;
-  grid-template-columns: 34px 1fr;
-  gap: 10px;
+  grid-template-columns: 22px 1fr;
+  gap: 9px;
   text-align: left;
-  background: #fafcfff5;
-  backdrop-filter: blur(18px);
-  padding: 15px 13px;
-  border: 1px solid #ffffff;
-  border-radius: 22px;
-  box-shadow: 0 8px 30px #152e4e35;
+  background: #f1f4fc;
+  backdrop-filter: blur(20px);
+  padding: 15px 18px 17px;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 0 8px 22px #152a4b30;
   pointer-events: auto;
-  color: #213b56;
+  color: #18273a;
   animation: notification-in 0.35s ease-out;
   position: relative;
 }
@@ -249,50 +288,74 @@
   gap: 4px;
 }
 .phone-notification small {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  padding-right: 27px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-right: 40px;
+  margin: 2px 0 5px;
+  color: #52677e;
 }
 .phone-notification b {
-  font-size: 13px;
-  line-height: 1.35;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-left: -31px;
 }
 .phone-notification span span {
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-left: -31px;
 }
 .phone-notification em {
   position: absolute;
-  right: 13px;
-  top: 15px;
-  font-size: 9px;
+  right: 19px;
+  top: 19px;
+  font-size: 10px;
   font-style: normal;
-  color: #687a8e;
+  color: #66778a;
 }
-.notification-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 11px;
-  color: white;
+.notification-icon,
+.phone-notification > .brand-icon.small {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #168645;
+  background: transparent;
+  box-shadow: none;
   display: grid;
   place-items: center;
-  font-size: 25px;
+}
+.phone-notification > .brand-icon.small {
+  background-image: url("assets/certiva-brand.png");
+  background-size: 711.111% 474.074%;
+  background-position: 29.394% 8.663%;
+  border-radius: 6px;
+}
+.notification-icon svg {
+  width: 18px;
+  height: 18px;
 }
 .certiva-notification {
-  border: 1px solid #91acd4;
-  background: #f6f9fff7;
+  background: #e5edfb;
+  order: -1;
 }
 .certiva-notification.risk b {
-  color: #a63730;
+  color: #182d49;
+}
+.notification-action {
+  font-size: 13px;
+  font-weight: 600;
+  color: #205094;
+  margin: 8px 0 0 -31px;
 }
 .source-app {
   padding: 0;
-  background: #f2ece3;
+  background: #efece7;
   gap: 0;
 }
 .source-app.email {
@@ -301,19 +364,24 @@
 .source-heading {
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: #146851;
-  color: white;
-  padding: 20px 17px;
+  gap: 10px;
+  background: #f8faf9;
+  color: #17251e;
+  padding: 12px 12px 16px;
 }
-.source-heading > span {
-  background: #ffffff30;
+.source-heading > span:first-of-type {
+  background: #dce9df;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   display: grid;
   place-items: center;
-  font-size: 27px;
+  flex-shrink: 0;
+  color: #577466;
+}
+.source-heading > div {
+  flex: 1;
+  min-width: 0;
 }
 .source-heading b {
   font-size: 14px;
@@ -321,59 +389,198 @@
 .source-heading small {
   display: block;
   font-size: 10px;
-  opacity: 0.8;
-  margin-top: 3px;
+  color: #718176;
+  margin-top: 2px;
+}
+.source-back {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #152820;
+  min-height: 38px;
+  width: 20px;
+}
+.source-back svg {
+  width: 20px;
+}
+.source-tools {
+  display: flex;
+  gap: 13px;
+}
+.source-tools svg {
+  width: 19px;
 }
 .email .source-heading {
-  background: #205094;
+  background: #edf2fa;
+  color: #205094;
 }
 .chat-day {
   align-self: center;
   background: #fff9;
-  border-radius: 8px;
-  padding: 5px 12px;
-  font-size: 10px;
-  color: #607276;
-  margin: 21px 0 12px;
+  border-radius: 9px;
+  padding: 6px 12px;
+  font-size: 11px;
+  color: #56635d;
+  margin: 23px 0 12px;
 }
 .chat-context {
-  background: #fff9c5;
-  color: #786c35;
+  background: #fff5ce;
+  color: #685c32;
   padding: 10px;
   margin: 0 16px;
-  border-radius: 8px;
+  border-radius: 11px;
   text-align: center;
   font-size: 11px;
+  line-height: 1.45;
 }
 .message-bubble {
-  margin: 18px 25px 12px 12px;
-  padding: 15px 15px 8px;
-  border-radius: 0 15px 15px;
+  margin: 18px 28px 12px 12px;
+  padding: 13px 14px 7px;
+  border-radius: 0 16px 16px;
   background: white;
-  box-shadow: 0 1px 3px #0002;
+  box-shadow: 0 1px 1px #0002;
   overflow-wrap: anywhere;
 }
 .message-bubble p {
   font-size: 16px;
-  line-height: 1.55;
+  line-height: 1.48;
   white-space: pre-wrap;
+  color: #202a25;
 }
 .message-bubble small {
   display: block;
   text-align: right;
-  color: #72818a;
-  font-size: 10px;
+  color: #738178;
+  font-size: 11px;
+  margin-top: 5px;
 }
 .chat-compose {
-  margin: auto 12px 12px;
-  border-radius: 25px;
+  margin: auto 10px 12px;
+  border-radius: 28px;
   background: white;
   padding: 13px 18px;
-  color: #829092;
-  font-size: 15px;
+  color: #77847c;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+.chat-compose svg {
+  color: #177647;
+  width: 21px;
+}
+.p[data-p="veredicto"] {
+  background: #f8f9ff;
+  padding: 5px 21px 20px;
+  gap: 14px;
+}
+.detail-appbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-family: Manrope, Arial, sans-serif;
+  font-weight: 800;
+  color: #205094;
+  margin-bottom: 8px;
+}
+.detail-appbar .brand-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+}
+.detail-label {
+  margin-left: auto;
+  font:
+    12px Arial,
+    sans-serif;
+  color: #667487;
+}
+.detail-shield {
+  width: 62px;
+  height: 62px;
+  border-radius: 23px;
+  background: #e5ecfa;
+  display: grid;
+  place-items: center;
+  color: #205094;
+  margin-top: 8px;
+}
+.detail-shield svg {
+  width: 33px;
+  height: 33px;
+}
+.p[data-p="veredicto"] .tchip {
+  font-size: 29px;
+  line-height: 1.12;
+  letter-spacing: -0.7px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #192f4c;
+  font-weight: 700;
+}
+.p[data-p="veredicto"] .tresumen {
+  font-size: 14px;
+  color: #65748a;
+  line-height: 1.5;
+}
+.razones {
+  gap: 3px;
+}
+.razones li {
+  border: 0;
+  background: #edf1f8;
+  padding: 16px;
+  border-radius: 5px;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+}
+.razones li:first-child {
+  border-radius: 19px 19px 5px 5px;
+}
+.razones li:last-child {
+  border-radius: 5px 5px 19px 19px;
+}
+.razones li:only-child {
+  border-radius: 19px;
+}
+.razones li b {
+  font-size: 15px;
+  font-weight: 600;
+}
+.razones li span {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.razones .ico {
+  font-size: 17px;
+}
+.consejo {
+  border: 0;
+  background: #e4ecfb;
+  border-radius: 20px;
+  padding: 17px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #244a77;
+}
+.tbtn {
+  border-radius: 30px;
+  min-height: 50px;
+  font-size: 14px;
+  box-shadow: none;
+  flex-shrink: 0;
+}
+.tbtn.sec {
+  border-radius: 30px;
+  font-size: 14px;
+}
+.tenlace {
+  font-size: 12px;
+  min-height: 40px;
+}
+
 .journey {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

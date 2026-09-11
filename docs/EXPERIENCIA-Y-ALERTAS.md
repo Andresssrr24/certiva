@@ -6,6 +6,8 @@ Los mensajes del menú son ficticios. La inferencia del portal es real cuando lo
 
 ## Portal
 
+El teléfono usa una cámara perforada circular, pantalla de inicio Android, iconos SVG, notificaciones y detalle de Certiva rediseñados. El fondo vectorial local está en `renderer/assets/android-wallpaper.svg`; no requiere recursos de red. El script de pruebas también guarda `tmp/portal-detail.png` para revisar el resultado completo.
+
 Desde la raíz del repositorio:
 
 ```sh

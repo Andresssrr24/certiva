@@ -1,5 +1,8 @@
 "use strict";
 // Demo OS notifications are scoped to the simulated phone. Android uses a native listener.
+function androidIcon(name) {
+  return `<svg class="android-icon" aria-hidden="true"><use href="#android-${name}"/></svg>`;
+}
 let incomingMessage = null;
 let pendingAssessment = null;
 let experienceBusy = false;
@@ -36,7 +39,7 @@ function openIncoming() {
         : "Mensaje de texto";
   $("#sourceText").textContent = m.texto;
   $("#sourceTime").textContent = m.hora || "ahora";
-  $("#sourceIcon").textContent = m.canal === "correo" ? "✉" : "◔";
+  $("#sourceIcon").innerHTML = androidIcon(m.canal === "correo" ? "mail" : m.canal === "sms" ? "messages" : "whatsapp");
   $("#sourceContext").textContent = "Mensaje de ejemplo. El nombre visible no confirma la identidad del remitente.";
   $('[data-p="mensaje"]').classList.toggle("email", m.canal === "correo");
   pantalla("mensaje");
@@ -92,10 +95,12 @@ async function receiveScenario(example, button) {
   $("#appBadge").hidden = true;
   $("#sourceNotification").hidden = false;
   const m = incomingMessage;
-  $("#arrivalApp").textContent = m.canal === "whatsapp" ? "WHATSAPP" : m.canal === "correo" ? "CORREO" : "MENSAJES";
+  $("#arrivalApp").textContent = m.canal === "whatsapp" ? "WhatsApp" : m.canal === "correo" ? "Correo" : "Mensajes";
   $("#arrivalSender").textContent = m.remitente;
   $("#arrivalPreview").textContent = m.texto;
-  $("#arrivalIcon").textContent = m.canal === "correo" ? "✉" : m.canal === "whatsapp" ? "◔" : "☰";
+  $("#arrivalIcon").innerHTML = androidIcon(
+    m.canal === "correo" ? "mail" : m.canal === "whatsapp" ? "whatsapp" : "messages",
+  );
   for (const b of document.querySelectorAll(".ejemplo")) b.classList.toggle("selected", b === button);
   journeyStep("received");
   experienceStatus(
@@ -122,6 +127,7 @@ $("#sourceNotification").onclick = openIncoming;
 $("#certivaNotification").onclick = openAssessment;
 $("#openCertiva").onclick = openAssessment;
 $("#phoneHome").onclick = phoneDesktop;
+$("#sourceBack").onclick = phoneDesktop;
 $("#tVolver").onclick = phoneDesktop;
 $("#tVolver2").onclick = phoneDesktop;
 for (const b of document.querySelectorAll("[data-home-app]")) b.onclick = openIncoming;
