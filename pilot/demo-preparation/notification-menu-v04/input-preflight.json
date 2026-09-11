@@ -1,0 +1,8 @@
+{
+  "outcome": "riesgo",
+  "reasonCodes": [
+    "pide_datos_sensibles",
+    "urgencia"
+  ],
+  "scope": "Preflight with bundled production rules and policy; no report or Android run"
+}

@@ -308,3 +308,5 @@ El radar marca reportes para investigación durante la sesión; no confirma frau
 ### Compatibilidad del piloto local
 
 Si una APK emite motivos que un servidor antiguo rechaza, usa una revisión compatible conservando la base y usuarios existentes. [Recuperación verificada del piloto local](docs/PILOTO-LOCAL-COMPATIBLE.md): contrato validado con 16 pruebas y SDK/política cotejados con la APK0.4; no se desactivaron controles de reporte.
+
+La [nueva evidencia de notificación y menú 0.4](docs/evidencias/notification-menu/README.md) confirma un reporte y su resolución después de recuperar el servidor compatible. La entrada sigue siendo sintética; se distinguen la grabación administrativa operativa, descartada por encuadre, y la consulta horizontal posterior de solo lectura.

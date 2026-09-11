@@ -1,0 +1,47 @@
+{
+  "assessment": {
+    "id": "7c8c3112-3221-407b-8011-720aec2f8aa0",
+    "outcome": "riesgo",
+    "title": "Encontramos señales de riesgo",
+    "action": "No compartas claves ni códigos ni sigas instrucciones de pago. Verifica con el banco desde su app o el número de tu tarjeta.",
+    "channel": "whatsapp",
+    "source": "texto",
+    "evaluatedAt": "2026-09-11T06:29:29.315Z",
+    "policyVersion": "ca-referencia-2026-09-v1",
+    "sdkVersion": "0.1.0",
+    "coverage": "reglas_de_texto",
+    "aiStatus": "unavailable",
+    "reasons": [
+      {
+        "code": "pide_datos_sensibles",
+        "title": "Solicita una clave o un código privado"
+      },
+      {
+        "code": "envio_para_recibir",
+        "title": "Solicita enviar dinero para recibir un beneficio"
+      },
+      {
+        "code": "urgencia",
+        "title": "El mensaje presiona para actuar pronto"
+      }
+    ],
+    "receivedAt": 1789108169987
+  },
+  "report": {
+    "assessmentId": "7c8c3112-3221-407b-8011-720aec2f8aa0",
+    "outcome": "riesgo",
+    "reasonCodes": [
+      "pide_datos_sensibles",
+      "envio_para_recibir",
+      "urgencia"
+    ],
+    "channel": "whatsapp",
+    "source": "texto",
+    "evaluatedAt": "2026-09-11T06:29:29.315Z",
+    "policyVersion": "ca-referencia-2026-09-v1",
+    "sdkVersion": "0.1.0",
+    "consent": true
+  },
+  "deviceTime": 1789108170023,
+  "reportSubmitted": false
+}
