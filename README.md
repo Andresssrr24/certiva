@@ -110,8 +110,8 @@ La guía completa, con solución de problemas, está en [docs/COMO-PROBAR.md](do
 Todo corre en el MacBook. Dos procesos de QVAC a la vez se bloquean en el worker compartido, así que cierra cualquier script del proyecto antes de abrir la app, y al revés.
 
 1. **Preparar una vez**, con internet: `npm install`, `node node_modules/electron/install.js` si no bajó Electron, y `npm run modelos`. Si el registro P2P del SDK se cae a mitad de Qwen3 4B, `node scripts/importar-modelo.js QWEN3_4B_INST_Q4_K_M <archivo .gguf bajado por HTTP>` lo importa validando el checksum.
-2. **Datos de la demo:** `npm run datos` genera los 120 mensajes y sus capturas; `node data/generar-llamada.js` genera el audio de la llamada con las voces del sistema.
-3. **Sin interfaz, para ver el motor:** `npm run prueba` analiza una captura de punta a punta; `node scripts/prueba-llamada.js` corre la llamada; `node scripts/prueba-politica.js` muestra qué recupera el RAG; `npm run eval` corre las 120 capturas y escribe `eval/results.md`.
+2. **Datos de la demo:** `npm run datos` genera los 136 mensajes y sus capturas; `node data/generar-llamada.js` genera el audio de la llamada con las voces del sistema.
+3. **Sin interfaz, para ver el motor:** `npm run prueba` analiza una captura de punta a punta; `node scripts/prueba-llamada.js` corre la llamada; `node scripts/prueba-politica.js` muestra qué recupera el RAG; `npm run eval` corre las 136 capturas y escribe `eval/runs/<fecha>/results.md` (`--solo legitimo` para una clase; unos 25 minutos la corrida completa).
 4. **La app:** apaga el Wi-Fi y `npm start`. Pestaña Cliente: toca una tarjeta de ejemplo, o arrastra una captura, y mira el teléfono. «Simular llamada de vishing» reproduce el audio con la transcripción sincronizada y el «Cuelga». «Reportar este mensaje» publica el hash a los pares. Pestaña Modo banco: el radar. La barra dice cuántas conexiones hay a la nube y cuántas a pares.
 5. **Pares en dos máquinas:** en la segunda, `node scripts/radar.js` se une al enjambre y va listando lo que llega. Si la red del lugar bloquea el DHT, modo directo: en la segunda máquina `node scripts/radar.js --puerto 4411 --sin-swarm`, y en la primera `PARES_DIRECTO=<ip de la segunda>:4411 npm start`. Para probarlo solo, en una terminal `node scripts/radar.js --puerto 4411 --sin-swarm --emitir dominio:bancodemo-pa.app` y en otra `PARES_DIRECTO=127.0.0.1:4411 PARES_SWARM=0 npm start`: al analizar la tarjeta «SMS: cuenta bloqueada» el teléfono dice que otro cliente ya reportó esa dirección.
 6. **Comprobar sin manos:** `DEMO_AUTO=fraude-bloqueo_enlace-01 DEMO_CAPTURA=/tmp/app.png DEMO_SALIR=1 DEMO_ESPERA_MS=26000 npx electron .` analiza esa captura al abrir y guarda una imagen de la ventana; `DEMO_LLAMADA=1` hace lo mismo con la llamada.
@@ -140,32 +140,47 @@ Ningún dato real. El emisor de la demo es «Banco Demo»; las estafas de billet
 
 **Por qué VisionPsy es central por necesidad.** La captura de pantalla permite al usuario aportar mensajes de distintas aplicaciones sin integrar cada servicio, y leerla en el teléfono exige un modelo de visión que quepa en un teléfono de gama media. VisionPsy Nano 460M Flash es el único modelo que mira la imagen en este flujo.
 
-**Resultados históricos anteriores a la segunda lectura; deben repetirse para esta rama. Calidad medida sobre el set sintético** (`npm run eval`; la corrida reportada usó 120 capturas, y las 16 de billetera agregadas después entran en la próxima; resultados completos en `eval/results.md`, registro por llamada en `eval/perf.jsonl`):
+**Calidad medida sobre el set sintético** (`npm run eval`, 136 capturas: 80 de fraude, 8 con solo presión de tiempo y 48 legítimas; cada corrida se escribe en `eval/runs/<fecha>/` con un manifiesto que registra el commit y los hashes del dataset).
+
+La corrida completa más reciente es `eval/runs/2026-09-11T03-17-51-753Z/`, sobre el commit e8c2356, ya con la segunda lectura OCR y el piso de protección que trajo el PR #1:
 
 | Métrica | Valor |
 |---|---|
-| Exactitud global del veredicto | 98,3% |
-| Precisión en fraude | 100,0% |
-| Exhaustividad en fraude | 96,9% |
-| Legítimos reconocidos sin señales | 100,0% (48/48) |
-| Mensajes con solo presión de tiempo reconocidos como sospechosos | 100,0% (8/8) |
-| Remitente correcto (VisionPsy) | 85,8% |
-| Dominios de los enlaces correctos (VisionPsy, tras el contraste) | 85,0% |
-| Teléfonos correctos (VisionPsy) | 95,0% |
-| Texto literal, 1 − CER medio (VisionPsy) | 73,9% |
+| Fraudes detectados | 100,0 % (80/80) |
+| Mensajes con solo presión de tiempo reconocidos como sospechosos | 100,0 % (8/8) |
+| Legítimos reconocidos sin señales | 52,1 % (25/48) |
+| Exactitud global del veredicto | 83,1 % |
+| Precisión en fraude | 83,3 % |
+
+Los 23 legítimos fallidos tenían una sola causa. La segunda lectura OCR, pensada para no afirmar «sin señales» con un solo lector, leía los enlaces con espacios («https://app bancodemo com pa»), el dominio quedaba en «app» y la regla de dominio parecido convertía correos y SMS oficiales en fraude; otros siete quedaban «no legible» por un umbral de acuerdo entre lectores demasiado estricto. La corrección, en los commits ec5fbb6 y siguientes: la segunda lectura solo puede sumar señales de frase (petición de datos, urgencia, pago a terceros, envío para recibir, cambio de dirección), nunca de dominio ni de número; el umbral de abstención baja de 0,65 a 0,3; los enlaces con espacios se reparan y una etiqueta suelta no se juzga como dominio; el contraste OCR se extiende a SMS y WhatsApp cuando el dominio está a una o dos letras del oficial.
+
+Verificación tras la corrección, sin repetir la corrida completa por falta de tiempo antes de la entrega:
+
+| Qué | Resultado |
+|---|---|
+| Subconjunto legítimo completo (56: 48 sin señales y 8 con presión de tiempo), `eval/runs/2026-09-11T03-45-52-660Z/` | 53/56: sin señales 46/48, sospechoso 7/8 |
+| Los 3 fallos de ese subconjunto, repetidos uno a uno con la versión final | 3/3 correctos |
+| Los 4 fraudes que en la corrida de 136 se habían detectado gracias a la segunda lectura | 4/4 siguen detectados por la lectura principal |
+| Controles de fraude (bloqueo por enlace, compra no reconocida, frase semilla) | 3/3 |
+
+Referencia histórica del lector principal, sin segunda lectura y sobre 120 capturas (`eval/results.md`): exactitud 98,3 %, precisión en fraude 100 %, exhaustividad 96,9 %, legítimos 48/48. El recorrido: 92,5 % con las reglas iniciales; 95,8 % con urgencia tolerante y política; 97,5 % con el contraste OCR; 98,3 % con la petición de datos tolerante. La transcripción de VisionPsy no es determinista entre corridas: las mismas capturas se mueven un par de puntos de una corrida a otra, y eso arrastra a las métricas de extracción.
+
+Lector del teléfono, medido sobre las 136 capturas con las reglas directamente sobre la lectura, sin contraste ni segunda lectura: VisionPsy Q8 129/136 (94,9 %) frente a VisionPsy Q4_K_M 123/136 (90,4 %). Por eso el teléfono descarga Q8.
 
 | Etapa | TTFT mediana | Total mediana | Tokens/s | Tokens de salida |
 |---|---|---|---|---|
 | VisionPsy Flash, transcripción | 1,06 s | 1,81 s | 168 | 94 |
 | Búsqueda en la política (EmbeddingGemma, vector store del SDK) | — | 29 ms | — | — |
-| Contraste con OCR, solo en correos con dominio parecido (11 de 120) | — | 7,6 s | — | — |
+| Contraste con OCR: correos con dominio parecido, y SMS o WhatsApp con dominio a una o dos letras del oficial | — | 7,6 s | — | — |
+| Segunda lectura OCR, solo cuando la lectura principal no ve señales (todos los legítimos) | — | 6,3 a 9,6 s | — | — |
 | Qwen3 4B, veredicto con esquema y política | 2,33 s | 5,46 s | 34 | 102 |
 
-Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 120 capturas. Las corridas anteriores están en el historial del repositorio: 92,5 % con las reglas iniciales; 95,8 % con urgencia tolerante y política; 97,5 % con el contraste OCR; esta, con la petición de datos tolerante. La transcripción de VisionPsy no es determinista entre corridas, así que las cifras de extracción se mueven un par de puntos de una corrida a otra.
+En total, un mensaje de fraude tarda unos 7 s y uno legítimo unos 14 s, porque la segunda lectura solo corre cuando no hay señales. Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 136 capturas.
 
 **Límites y manejo de riesgo, con honestidad.**
-- La transcripción de VisionPsy tiene errores de caracteres (CER medio del 26,1 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave con tolerancia a errores, y porque un dominio dudoso en un correo se contrasta con el OCR determinista.
-- Fallos de esta corrida, 2 de 120: fraude-pide_codigo-03: esperado fraude, obtenido sin_senales; fraude-pide_codigo-05: esperado fraude, obtenido sin_senales. Son mensajes que solo piden el código, sin enlace ni número, en los que la transcripción perdió a la vez el verbo y el dato; ningún legítimo se marcó como fraude. Ahí el techo lo pone la calidad de la transcripción, no las reglas.
+- La transcripción de VisionPsy tiene errores de caracteres (CER medio del 26,1 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave con tolerancia a errores, y porque un dominio dudoso se contrasta con el OCR determinista.
+- Lo que sigue fallando es la lectura de dominios: VisionPsy cambia letras del dominio oficial en unos 5 de cada 100 SMS legítimos («bancodesmo», «banccodemo»). El contraste OCR lo corrige cuando el dominio está a una o dos letras del oficial; en el teléfono, sin OCR, la app lo reporta como sospechoso y pide comparar el enlace letra por letra. Un dominio de phishing real a una letra del oficial recibe el mismo trato: sospechoso, no fraude.
+- Los fraudes que solo piden el código, sin enlace ni número, dependen de que la transcripción conserve a la vez el verbo y el dato; ahí el techo lo pone la calidad de la transcripción, no las reglas.
 - La app nunca dice «seguro». Ante la duda, muestra el canal oficial y pide llamar al número impreso en la tarjeta.
 
 ## Para el desafío general
@@ -176,7 +191,7 @@ Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Ce
 
 **Innovación.** El prototipo simula alertas durante una llamada procesada por lotes. Comparte indicadores reportados entre pares mediante Hyperswarm; su autenticidad requiere revisión y no demuestra inmunidad colectiva.
 
-**Evidencia.** Evaluación reproducible sobre 120 capturas sintéticas con verdad conocida, registro de rendimiento por llamada al modelo, y una comparación honesta de tres lectores que dejó a VisionPsy transcribiendo y a las reglas derivando los campos.
+**Evidencia.** Evaluación reproducible sobre 136 capturas sintéticas con verdad conocida y manifiesto por corrida, registro de rendimiento por llamada al modelo, y una comparación honesta de tres lectores que dejó a VisionPsy transcribiendo y a las reglas derivando los campos.
 
 ## Seguridad y límites
 

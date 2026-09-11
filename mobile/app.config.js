@@ -22,6 +22,7 @@ module.exports = {
       ],
       // antes del plugin de QVAC: los mods de Expo corren del último registrado al primero, así este corrige lo que QVAC escribe
       "./plugins/opencl-opcional.js",
+      "./plugins/precarga-appmodules.js",
       "@qvac/sdk/expo-plugin",
     ],
   },
