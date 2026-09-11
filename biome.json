@@ -6,7 +6,17 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!data/html", "!data/capturas", "!docs", "!eval/*.json", "!eval/*.jsonl", "!vendor-notice"]
+    "includes": [
+      "**",
+      "!data/html",
+      "!data/capturas",
+      "!docs",
+      "!eval/*.json",
+      "!eval/*.jsonl",
+      "!vendor-notice",
+      "!eval/runs/**",
+      "!mobile/app/**"
+    ]
   },
   "formatter": {
     "enabled": true,

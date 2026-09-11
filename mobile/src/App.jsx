@@ -1,13 +1,39 @@
 // App móvil: la misma experiencia del teléfono de la demo, corriendo en un teléfono. Tema claro, letra grande, una acción por pantalla.
 import React, { useEffect, useState } from "react";
-import { ActivityIndicator, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+import {
+  ActivityIndicator,
+  Pressable,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
 import * as Clipboard from "expo-clipboard";
 import * as ImagePicker from "expo-image-picker";
 import { analizarCaptura, analizarTexto, descargarVision, estadoVision } from "./motor";
 import { consejoPara, SENAL } from "./consejos";
 
-const C = { fondo: "#f5f7f6", tinta: "#14201e", gris: "#5b6764", linea: "#dfe5e2", acento: "#0e5e63", malo: "#a3302a", maloSuave: "#f7dedc", bien: "#1e7a4b", bienSuave: "#ddf0e4", aviso: "#8a5d0c", avisoSuave: "#f6ebd0" };
-const COLOR = { fraude: [C.malo, C.maloSuave], sospechoso: [C.aviso, C.avisoSuave], sin_senales: [C.bien, C.bienSuave], no_legible: [C.gris, C.linea] };
+const C = {
+  fondo: "#f5f7f6",
+  tinta: "#14201e",
+  gris: "#5b6764",
+  linea: "#dfe5e2",
+  acento: "#0e5e63",
+  malo: "#a3302a",
+  maloSuave: "#f7dedc",
+  bien: "#1e7a4b",
+  bienSuave: "#ddf0e4",
+  aviso: "#8a5d0c",
+  avisoSuave: "#f6ebd0",
+};
+const COLOR = {
+  fraude: [C.malo, C.maloSuave],
+  sospechoso: [C.aviso, C.avisoSuave],
+  sin_senales: [C.bien, C.bienSuave],
+  no_legible: [C.gris, C.linea],
+};
 
 export default function App() {
   const [pantalla, setPantalla] = useState("inicio");
@@ -18,7 +44,9 @@ export default function App() {
   const [estado, setEstado] = useState("");
 
   useEffect(() => {
-    estadoVision().then(setVision).catch(() => setVision({ disponible: false }));
+    estadoVision()
+      .then(setVision)
+      .catch(() => setVision({ disponible: false }));
   }, []);
 
   const verTexto = (t) => {
@@ -73,22 +101,46 @@ export default function App() {
           <View style={s.col}>
             <Text style={s.cab}>Banco Demo · Protección</Text>
             <Text style={s.h1}>¿Te llegó algo raro?</Text>
-            <Text style={s.lead}>Revísalo aquí antes de hacer nada. Todo se analiza en tu teléfono: nadie ve tu mensaje.</Text>
-            <TextInput style={s.caja} multiline placeholder="Pega aquí el texto del mensaje" value={texto} onChangeText={setTexto} />
+            <Text style={s.lead}>
+              Revísalo aquí antes de hacer nada. Todo se analiza en tu teléfono: nadie ve tu mensaje.
+            </Text>
+            <TextInput
+              style={s.caja}
+              multiline
+              placeholder="Pega aquí el texto del mensaje"
+              value={texto}
+              onChangeText={setTexto}
+            />
             <View style={s.fila}>
               <Boton texto="Pegar" sec onPress={pegar} />
               <Boton texto="Verificar el texto" onPress={() => texto.trim() && verTexto(texto)} />
             </View>
-            <Boton texto={vision.enCache ? "Verificar una captura" : "Verificar una captura (descarga el lector)"} sec onPress={elegirCaptura} />
-            <View style={s.regla}><Text style={s.reglaTxt}><Text style={{ fontWeight: "700", color: C.tinta }}>Regla de oro. </Text>El banco nunca te pide tu clave ni el código que te llega por SMS. Nunca.</Text></View>
+            <Boton
+              texto={vision.enCache ? "Verificar una captura" : "Verificar una captura (descarga el lector)"}
+              sec
+              onPress={elegirCaptura}
+            />
+            <View style={s.regla}>
+              <Text style={s.reglaTxt}>
+                <Text style={{ fontWeight: "700", color: C.tinta }}>Regla de oro. </Text>El banco nunca te pide tu clave
+                ni el código que te llega por SMS. Nunca.
+              </Text>
+            </View>
           </View>
         )}
 
         {pantalla === "descarga" && (
           <View style={s.col}>
             <Text style={s.h2}>Leer capturas necesita un modelo</Text>
-            <Text style={s.lead}>Para leer capturas, el modelo vive en tu teléfono y nunca sale de él. Pesa {Math.round((vision.bytes || 0) / 1e6)} MB y se descarga una sola vez.</Text>
-            {progreso === null ? <Boton texto="Descargar el lector" onPress={descargar} /> : <Text style={s.lead}>Descargando… {progreso}%</Text>}
+            <Text style={s.lead}>
+              Para leer capturas, el modelo vive en tu teléfono y nunca sale de él. Pesa{" "}
+              {Math.round((vision.bytes || 0) / 1e6)} MB y se descarga una sola vez.
+            </Text>
+            {progreso === null ? (
+              <Boton texto="Descargar el lector" onPress={descargar} />
+            ) : (
+              <Text style={s.lead}>Descargando… {progreso}%</Text>
+            )}
             <Boton texto="Ahora no" sec onPress={() => setPantalla("inicio")} />
             {estado ? <Text style={s.mini}>{estado}</Text> : null}
           </View>
@@ -115,7 +167,9 @@ function Resultado({ r, volver }) {
   const [color, fondo] = COLOR[tipo] || COLOR.no_legible;
   return (
     <View style={s.col}>
-      <View style={[s.chip, { backgroundColor: fondo }]}><Text style={[s.chipTxt, { color }]}>{c.etiqueta}</Text></View>
+      <View style={[s.chip, { backgroundColor: fondo }]}>
+        <Text style={[s.chipTxt, { color }]}>{c.etiqueta}</Text>
+      </View>
       {r.senales?.length ? (
         <View style={s.col}>
           <Text style={s.lead}>Encontré estas señales en el mensaje:</Text>
@@ -129,12 +183,16 @@ function Resultado({ r, volver }) {
       ) : (
         <Text style={s.lead}>{tipo === "no_legible" ? "" : "No encontré señales de estafa en este mensaje."}</Text>
       )}
-      <View style={s.consejo}><Text style={s.consejoTxt}>{c.consejo}</Text></View>
+      <View style={s.consejo}>
+        <Text style={s.consejoTxt}>{c.consejo}</Text>
+      </View>
       <Text style={s.mini}>Canal oficial: {c.canalOficial}</Text>
       <Boton texto={`Llamar al banco · ${c.telefono}`} onPress={() => {}} />
       <Boton texto="Volver al inicio" sec onPress={volver} />
       <Text style={s.mini}>
-        {r.lector === "visionpsy" ? `Leído con VisionPsy en tu teléfono · primer token ${r.ttft ?? "—"} ms · total ${r.msVision} ms` : `Reglas sobre el texto · ${r.ms} ms`}
+        {r.lector === "visionpsy"
+          ? `Leído con VisionPsy en tu teléfono · primer token ${r.ttft ?? "—"} ms · total ${r.msVision} ms`
+          : `Reglas sobre el texto · ${r.ms} ms`}
       </Text>
     </View>
   );
@@ -158,8 +216,26 @@ const s = StyleSheet.create({
   h2: { fontSize: 24, fontWeight: "700", color: C.tinta },
   lead: { fontSize: 18, color: C.gris, lineHeight: 26 },
   mini: { fontSize: 14, color: C.gris },
-  caja: { minHeight: 110, backgroundColor: "#fff", borderColor: C.linea, borderWidth: 1, borderRadius: 14, padding: 12, fontSize: 17, color: C.tinta, textAlignVertical: "top" },
-  btn: { minHeight: 56, borderRadius: 16, backgroundColor: C.acento, alignItems: "center", justifyContent: "center", paddingHorizontal: 18, flexGrow: 1 },
+  caja: {
+    minHeight: 110,
+    backgroundColor: "#fff",
+    borderColor: C.linea,
+    borderWidth: 1,
+    borderRadius: 14,
+    padding: 12,
+    fontSize: 17,
+    color: C.tinta,
+    textAlignVertical: "top",
+  },
+  btn: {
+    minHeight: 56,
+    borderRadius: 16,
+    backgroundColor: C.acento,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 18,
+    flexGrow: 1,
+  },
   btnSec: { backgroundColor: "#fff", borderWidth: 2, borderColor: C.acento },
   btnTxt: { color: "#fff", fontSize: 18, fontWeight: "700" },
   regla: { marginTop: 8, backgroundColor: "#fff", borderColor: C.linea, borderWidth: 1, borderRadius: 14, padding: 14 },

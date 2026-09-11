@@ -18,7 +18,7 @@ mkdir -p core
 cp "$RAIZ/lib/reglas.js" "$RAIZ/lib/derivar.js" "$RAIZ/lib/esquemas.js" core/
 cp "$RAIZ/data/banco-demo.json" "$RAIZ/data/politica-antifraude.md" core/
 # nuestras pantallas y configuración
-cp ../src/*.js .
+cp ../src/*.js ../src/*.jsx .
 cp ../app.config.js ../qvac.config.json .
 rm -f app.json
 echo
