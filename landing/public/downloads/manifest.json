@@ -1,0 +1,18 @@
+{
+  "version": "0.3.0-qvac-local",
+  "status": "experimental-android-ai-not-validated",
+  "apk": "certiva-0.3-qvac-experimental-21542a5a.apk",
+  "bytes": 71201693,
+  "sha256": "21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942",
+  "androidMin": 13,
+  "abi": "arm64-v8a",
+  "modelIncluded": false,
+  "modelBytes": 1107409472,
+  "modelSha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+  "signature": "debug",
+  "limitations": [
+    "QVAC Android end-to-end detection not yet validated; two emulator classifier runs timed out and no physical-device validation is complete",
+    "Text only; no image or call analysis",
+    "Reports require pilot service access and explicit confirmation"
+  ]
+}

@@ -3,3 +3,6 @@ dist/
 node_modules/
 .env*
 .vercel
+
+# APKs are copied from frozen pilot artifacts for deployment.
+public/downloads/*.apk
