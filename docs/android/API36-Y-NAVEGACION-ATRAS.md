@@ -12,4 +12,12 @@ En su copia aislada pasaron bundleRelease, lintRelease y builds debug/test: 222 
 
 Al publicar se aplicó el patch sobre el menú final y se comprobó igualdad de MainActivity, manifiesto y test con los archivos probados. Se revisaron logs y se contaron las advertencias del XML de lint. No se repitieron compilación ni instrumentación durante la integración.
 
-La APK debug target35 publicada como `certiva-0.4-menu-experimental.apk` continúa siendo un artefacto histórico con sus propias pruebas. No se reemplazó el QR ni ese archivo con esta preparación API36. La distribución en Google Play y la apelación de Play Protect se gestionan por separado; este cambio no acredita aprobación, publicación ni desbloqueo del teléfono.
+La APK debug target35 publicada como `certiva-0.4-menu-experimental.apk` continúa siendo un artefacto histórico con sus propias pruebas. No se reemplazó el QR ni ese archivo con esta preparación API36. La distribución en Google Play y la apelación de Play Protect se gestionan por separado; la disponibilidad interna descrita abajo no acredita aprobación de Google ni desbloqueo del teléfono.
+
+## Disponibilidad para pruebas internas
+
+La tarea de distribución confirmó en Play Console el 11 de septiembre de 2026 a la 01:26 (Panamá) el segmento **Activo**, «Disponible para verificadores internos», versión4 con target36. La ficha conserva el nombre temporal `local.certiva.pilot (unreviewed)`. [Acceso a la prueba interna](https://play.google.com/apps/internaltest/4701618464331966700), sujeto a la cuenta autorizada como verificador.
+
+El bundle aceptado tiene SHA-256 `2dc6cd615ecf5439bd39b05d11c421dc29e373b5446cbb2791c740d9c5e5879e` y 41.966.733 bytes. Se registra su identidad, sin incorporar el AAB ni el material de firma al repositorio. La única advertencia informada fue la ausencia del mapping R8; la compilación no usa ofuscación.
+
+La instalación real desde Google Play todavía no se verificó. Tampoco se acreditan ejecución en Android16, inferencia QVAC, revisión o aprobación de Google. El QR de la landing sigue entregando la APK0.3 anterior. El alta automática de verificadores continúa en preparación; no hay grupo ni API de altas operativos confirmados. No se publican correos de verificadores.

@@ -47,4 +47,4 @@ Agradecemos que indiquen si el bloqueo corresponde a la protección contra insta
 
 ## Seguimiento posterior al diagnóstico
 
-La tarea de preparación informa que Bryan creó la ficha `local.certiva.pilot` en Play Console. Todavía no se ha cargado el bundle ni enviado esta apelación. La preparación de API36 y del paquete de distribución sigue en otra tarea, pendiente del ajuste visual final del menú y de su validación. Este documento no declara aprobado ese paquete ni resuelto el bloqueo del teléfono.
+La tarea de distribución confirmó posteriormente la versión4 con target36 activa y disponible para verificadores internos en Play Console. [Estado y acceso a pruebas internas](API36-Y-NAVEGACION-ATRAS.md#disponibilidad-para-pruebas-internas). No se ha verificado la instalación desde Play ni enviado esta apelación. Este documento no declara aprobado el paquete ni resuelto el bloqueo del teléfono.

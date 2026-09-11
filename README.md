@@ -21,7 +21,7 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 
 Preparación Android API36: [migración del botón Atrás y validación](docs/android/API36-Y-NAVEGACION-ATRAS.md). Dos pruebas pasaron con target36 en Android15/API35; Android16 y su gesto predictivo siguen pendientes. La APK 0.4 archivada conserva target35.
 
-Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto; la preparación de Google Play continúa por separado. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
+Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto. La versión4 ya está disponible en [pruebas internas de Google Play](https://play.google.com/apps/internaltest/4701618464331966700) para cuentas autorizadas; la instalación desde Play sigue sin verificar y no implica aprobación de Google. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
 
 La app de escritorio ejecuta VisionPsy, reglas y Qwen3 localmente. La landing analiza texto con reglas en el navegador; para usar modelos requiere un puente en `127.0.0.1` y modelos descargados en el mismo equipo. Las alertas y el consejo no autentican remitentes ni garantizan que un mensaje sea legítimo.
 
