@@ -51,21 +51,21 @@ npm run eval                              # las 120 capturas -> eval/results.md 
 
 ## 4. La app
 
-Apaga el Wi-Fi para que la barra diga «Nube: 0» y abre:
+Apaga el Wi-Fi para que la barra diga «TCP externo: 0» y abre:
 
 ```bash
 npm start
 ```
 
-**Pestaña Cliente.** A la izquierda, el teléfono del cliente. A la derecha, «detrás de escena».
+**Pestaña «Experiencia del cliente».** A la izquierda, un teléfono Android simulado. A la derecha, las situaciones de prueba y, plegada, la evidencia técnica.
 
-1. Toca una de las cuatro tarjetas de ejemplo, o arrastra una captura, o «Elegir captura…».
-2. Mira el teléfono: los tres pasos con su tiempo, el veredicto, las razones en lenguaje llano, el consejo, «Llamar al banco», «Reportar este mensaje».
-3. A la derecha: tiempos por etapa, señales con su nombre técnico, lo que leyó el modelo y el JSON completo.
+1. Toca una de las cinco tarjetas de «Prueba una situación»: al teléfono llega la notificación del mensaje (paso 01), Certiva lo revisa en segundo plano (paso 02) y al terminar aparece la notificación «Certiva · Protección» (paso 03). Puedes abrir el mensaje mientras tanto, como haría el cliente. Una captura propia, arrastrada o con «Elegir captura…», muestra el veredicto directo.
+2. «Ver detalle» en la notificación: el veredicto, las razones en lenguaje llano, el consejo, «Cómo contactar a tu banco» y «Reportar este mensaje».
+3. A la derecha, «Ver análisis y evidencia técnica»: tiempos por etapa, señales con su nombre técnico, lo que leyó el modelo y el JSON completo. La barra inferior resume los tiempos de la última corrida.
 4. «Simular llamada de vishing»: el audio suena, la transcripción aparece sincronizada y el «Cuelga» ocupa el teléfono cuando el estafador pide el código.
-5. «Reportar este mensaje»: se guarda el hash en `reportes.json` de la app y se publica a los pares.
+5. «Reportar este mensaje»: guarda el hash en `reportes.json` de la app, lo publica a los pares y abre un caso en el Centro de seguridad.
 
-**Pestaña Modo banco.** El radar: indicadores, última hora, pares conectados, registro de la capa de pares.
+**Pestaña «Centro de seguridad».** «Operaciones»: bandeja de incidentes con los casos reportados desde el teléfono y sus acciones, registradas en el piloto sin conexión al banco; «Generar caso de prueba» crea un caso simulado. «Inteligencia de red»: indicadores reportados, pares conectados y registro de la capa de pares.
 
 ## 5. Pares
 

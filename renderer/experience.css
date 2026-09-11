@@ -261,7 +261,7 @@
 }
 .phone-notifications {
   position: absolute;
-  z-index: 9;
+  z-index: 20;
   left: 8px;
   right: 8px;
   top: 3px;
