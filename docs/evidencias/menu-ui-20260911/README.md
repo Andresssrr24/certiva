@@ -30,3 +30,9 @@ APK local: `pilot/artifacts/menu-ui-20260911/certiva-0.4-menu-experimental.apk` 
 SHA-256: `8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f`.
 
 Estas pruebas no ejecutan inferencia QVAC, no envían reportes y no validan conexión bancaria ni recepción física de WhatsApp. QVAC continúa experimental. La variante de publicación con targetSdk36 y firma se prepara por separado; estas evidencias corresponden a esta APK target35.
+
+## Publicación del avance
+
+APK, checksum y resultado de validación archivados en la [prerelease de avances](https://github.com/Andresssrr24/certiva/releases/tag/avances-2026-09-11), como `certiva-0.4-menu-experimental.apk`, su `.sha256` y `certiva-0.4-menu-validation.json`. Es la APK debug target35 de la ejecución final del commit fuente `4df8a7a`, de 41.003.835 bytes; no es el paquete de Google Play.
+
+Al integrar sobre main se conservaron los 22 archivos de código/evidencia de ese commit sin cambios; el README se combinó con las publicaciones posteriores. Se verificaron los logs, hash de MainActivity, hash del APK y sus metadatos Android (versión 4, mínimo33, target35, ARM64). Se revisaron inicio y menú ampliado. No se repitió la instrumentación ni se reconstruyó el binario durante la publicación.
