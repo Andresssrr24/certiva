@@ -12,14 +12,53 @@ const reglas = require("./lib/reglas");
 const perf = require("./lib/perf");
 const red = require("./lib/red");
 const { fork } = require("node:child_process");
+const { PilotCases } = require("./lib/casos-piloto");
 
 app.setName("Certiva");
 // Conservar los reportes existentes tras el cambio de nombre.
 app.setPath("userData", path.join(app.getPath("appData"), "Anti-fraude QVAC"));
+let caseStore;
+function cases() {
+  if (!caseStore) caseStore = new PilotCases(path.join(app.getPath("userData"), "casos-piloto.json"));
+  return caseStore;
+}
+ipcMain.handle("casos-listar", () => cases().list());
+ipcMain.handle("casos-crear", (_event, input) => cases().create(input));
+ipcMain.handle("casos-accion", (_event, { id, action }) => cases().act(id, action));
 // Dos apps QVAC a la vez se quedan colgadas en el worker compartido de ~/.qvac. El candado es obligatorio.
 if (!app.requestSingleInstanceLock()) app.exit(0);
 
 let win = null;
+let pilotWindow = null;
+ipcMain.handle("consola-piloto-abrir", async () => {
+  if (pilotWindow && !pilotWindow.isDestroyed()) {
+    pilotWindow.show();
+    pilotWindow.focus();
+    return true;
+  }
+  pilotWindow = new BrowserWindow({
+    width: 1240,
+    height: 850,
+    title: "Certiva · Reportes de la APK",
+    backgroundColor: "#f4f7fc",
+    webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true },
+  });
+  const view = pilotWindow;
+  view.webContents.setWindowOpenHandler(() => ({ action: "deny" }));
+  view.webContents.on("will-navigate", (event, url) => {
+    if (new URL(url).origin !== "http://127.0.0.1:4320") event.preventDefault();
+  });
+  view.on("closed", () => {
+    if (pilotWindow === view) pilotWindow = null;
+  });
+  try {
+    await view.loadURL("http://127.0.0.1:4320");
+    return true;
+  } catch {
+    view.close();
+    throw new Error("Inicia el servidor del piloto en el puerto 4320 para ver los reportes de la APK.");
+  }
+});
 let ocupado = false;
 const motor = new Motor();
 const llamada = new Llamada({ motor });
@@ -187,11 +226,22 @@ ipcMain.handle("elegir-captura", async () => {
 ipcMain.handle("capturas-demo", () => {
   const dir = path.join(__dirname, "data", "capturas");
   try {
+    const ejemplos = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "mensajes.json"), "utf8"));
     return fs
       .readdirSync(dir)
       .filter((f) => f.endsWith(".png"))
       .sort()
-      .map((f) => ({ id: f.replace(/\.png$/, ""), ruta: path.join(dir, f) }));
+      .map((f) => {
+        const id = f.replace(/\.png$/, "");
+        const mensaje = ejemplos.find((e) => e.id === id);
+        return {
+          id,
+          ruta: path.join(dir, f),
+          mensaje: mensaje
+            ? { canal: mensaje.canal, remitente: mensaje.remitente, texto: mensaje.texto, hora: mensaje.hora }
+            : null,
+        };
+      });
   } catch {
     return [];
   }
