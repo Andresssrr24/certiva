@@ -58,15 +58,23 @@ capturas, logs ni argumentos visibles de comandos:
   credenciales conservadas fuera del repositorio.
 - Canal cerrado Alpha configurado con el grupo y Panamá como mercado inicial.
 - Paquete 4 / `0.4.0-menu-experimental`, target 36, agregado al borrador cerrado.
-- Google Play exige completar las 11 tareas iniciales de configuración. La revisión
-  del borrador señala, entre otros, descripción completa, declaración financiera
-  y declaración de salud. El canal cerrado **no está publicado**.
-- `npm test`: 16 pruebas aprobadas; `npm run build`: correcto.
+- Google Play exige completar la configuración inicial. La descripción general de
+  publicación ya muestra la declaración financiera actualizada; siguen pendientes
+  la ficha y otros datos obligatorios de la app. No se ha enviado a revisión y el
+  canal cerrado **no está publicado**.
+- Vercel todavía no tiene variables de producción. `/probar` muestra la invitación
+  interna y mantiene oculto el formulario; OAuth público no activa ese formulario.
+- La tarea propietaria desplegó la revisión de integración como
+  `dpl_73Pi3sVsLWQzNFAUfWD2YKTnV84A`, READY y aliada a la landing.
+  Consulta pública independiente de `/api/beta/status`: `enabled:false`,
+  `registered:false`, con enlace a la prueba interna.
+- `npm test`: 16 pruebas aprobadas en la integración; la tarea propietaria repitió
+  las 9 pruebas beta y el build antes del despliegue, ambos correctos.
 
 ## Antes de activar
 
 1. Guardar los secretos autorizados en Vercel y desplegar.
-2. Verificar un alta externa consentida de extremo a extremo desde `/probar`.
+2. Conservar el registro desactivado mientras Google Play no ofrezca el canal cerrado.
 3. Completar ficha, privacidad, clasificación, acceso y declaraciones de Google Play;
    enviar la prueba cerrada a revisión y comprobar que esté disponible.
 4. Confirmar el mercado de las cuentas de prueba y ampliar países si corresponde.
