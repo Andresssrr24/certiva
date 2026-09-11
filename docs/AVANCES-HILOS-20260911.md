@@ -33,3 +33,5 @@ Avances posteriores al corte inicial: [inicio Android renovado, PR21](https://gi
 Se preservó todo el código y documentación nuevos identificados en los inventarios. El checkout compartido conserva sus archivos y su rama. Las variantes locales antiguas de README, reglas, bundles SDK, dataset, licencias y branding no reemplazan correcciones posteriores de `main`. El PDF v1 local coincide con el histórico ya versionado y no se duplicó.
 
 Los modelos GGUF, dependencias, cachés, directorios de compilación, credenciales, bases SQLite y clones de terceros no forman parte del código publicado. Sus fuentes y mecanismos de reconstrucción se documentan donde corresponde. Los ajustes encargados después de este corte se incorporan como avances posteriores, con su propia evidencia.
+
+- Archivadas las fuentes y evidencias del formulario Android y la consola para el mismo caso: [resultado y límites](evidencias/flujo-real/README.md). Prueba móvil aprobada; instrumentación administrativa fallida por timeout, con estado final verificado por lectura independiente. Incluye grabaciones originales en la release y corrección posterior del recorder, sin nueva ejecución.

@@ -1,0 +1,46 @@
+{
+  "caseId": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+  "assessmentId": "880ee912-881b-4190-a541-d60ea595c2fc",
+  "origin": "http://127.0.0.1:4320",
+  "phases": [
+    {
+      "name": "01-recepcion",
+      "at": 1789106134357
+    },
+    {
+      "name": "02-detalle",
+      "at": 1789106149611
+    },
+    {
+      "name": "03-asignacion",
+      "at": 1789106161780
+    },
+    {
+      "name": "04-conclusion",
+      "at": 1789106166576
+    },
+    {
+      "name": "05-resuelto",
+      "at": 1789106171480
+    },
+    {
+      "name": "06-auditoria",
+      "at": 1789106181934
+    }
+  ],
+  "passed": false,
+  "instrumentationPassed": false,
+  "apkSha256": "21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942",
+  "installedApkSha256": "21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942",
+  "testApkSha256": "5a4b5cd7a22564880bd2b4089c2c50f1c244dba8a99512e36ec4f078b4e344e5",
+  "videoSha256": "a9e8a3c4262e787b614b36a14ef701dfe74d9731d68765903fd9da1e4b919254",
+  "videoDurationSeconds": 83.699911,
+  "videoWidth": 1280,
+  "videoHeight": 576,
+  "videoFrames": 41,
+  "remoteVideo": "/sdcard/certiva-admin-1789106090.mp4",
+  "recordingRecovered": true,
+  "backendVerification": "backend-verification.json",
+  "failure": "Final WebView read-back timed out after six UI phases; instrumentation did not pass.",
+  "recordingNotes": "Original screenrecord repulled after recorder exit. No remux. ffprobe valid; ffmpeg null decode exits 0 with repeated DTS warnings. Low frame rate during host load; long static stretches."
+}

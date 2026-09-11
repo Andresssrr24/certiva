@@ -1,0 +1,96 @@
+{
+  "archive": "certiva-flujo-real-android-admin-20260911.zip",
+  "archiveSha256": "e028ce8c91b29bcd4993d7231ec2f7c676cb517ae80821c29345c001fa4104ae",
+  "files": [
+    {
+      "path": "real-home-demo-20260911-05/result.json",
+      "bytes": 1140,
+      "sha256": "a62942d8123f649848cb5b1ab37a5f32a623b08907057fcad8fb6d4f27065258"
+    },
+    {
+      "path": "real-home-demo-20260911-05/android-real-flow.mp4",
+      "bytes": 750329,
+      "sha256": "76269a81a7388f922672d03bbb87a0f001edc6ee9d4ee0b0605917746f9b8f63"
+    },
+    {
+      "path": "real-home-demo-20260911-05/receipt.png",
+      "bytes": 165312,
+      "sha256": "b8eed3546a3fdae847e0a5571206fca23813b83e048c4a3c37360013b148332d"
+    },
+    {
+      "path": "real-home-demo-20260911-05/consent.png",
+      "bytes": 157270,
+      "sha256": "9c1342f71e50681b0c8dbdaf2dc7aa9e31b5492c45815e0850a472e219aa9bbf"
+    },
+    {
+      "path": "real-home-demo-20260911-05/instrumentation.txt",
+      "bytes": 113,
+      "sha256": "d166a3b0945ba19fcbba5791904323cb3e535527b21c423af99ea88e31e62290"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-real-flow.mp4",
+      "bytes": 322899,
+      "sha256": "a9e8a3c4262e787b614b36a14ef701dfe74d9731d68765903fd9da1e4b919254"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-01-recepcion.png",
+      "bytes": 129581,
+      "sha256": "0e3647608dd692478ca47f9f4ff39ab2fec23cd6521f1f7cd2456905a27053a9"
+    },
+    {
+      "path": "real-admin-demo-20260911/result.json",
+      "bytes": 1536,
+      "sha256": "d52b184c6afd8e872b95d5ba5d0b865f5dce4740cbe1cbde2f15e362b6ca9592"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-05-resuelto.png",
+      "bytes": 178844,
+      "sha256": "a0a935c19935c2114d70ded5db591025751bbc5aeeb0f31a441041602d5b591a"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-contact-sheet.jpg",
+      "bytes": 68024,
+      "sha256": "523e641559d05a0029897aeeb2e89a297af1fd813fdbedb8e214921af89c6d53"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-04-conclusion.png",
+      "bytes": 172349,
+      "sha256": "04f1067238298f5ba65380cf4fadddfca66c4767fcde1a6d799841ae01516eda"
+    },
+    {
+      "path": "real-admin-demo-20260911/README.md",
+      "bytes": 1803,
+      "sha256": "5d64e264b779f1e0b8e0544eaaff68373a30486249b6987f29379769c29dc1c3"
+    },
+    {
+      "path": "real-admin-demo-20260911/backend-verification.json",
+      "bytes": 1816,
+      "sha256": "2114d7b5ee6607e25ee9a8e1b5e0dcc1fe0510b44d46482c7f3bbbd73e32cc3e"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-06-auditoria.png",
+      "bytes": 115308,
+      "sha256": "66706b20e09a7b3c019b3fe99e4b8b6d647e5d11aa470c42b5440bc91c3650ef"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-02-detalle.png",
+      "bytes": 161414,
+      "sha256": "3e1f100bd40de3278eb729b2e25eeb15ade4245b26a4e8be57ddd1cd244375d5"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-demo-result.json",
+      "bytes": 601,
+      "sha256": "d221d5ad29d422b27d709c57b6d63bf633ca0c2f6155870d1ce19213d2bfd8d1"
+    },
+    {
+      "path": "real-admin-demo-20260911/admin-03-asignacion.png",
+      "bytes": 172559,
+      "sha256": "01c730cb7379e0de3add96a4ea9d8feff1b284f465f3fad8db65292fb33c50a5"
+    },
+    {
+      "path": "real-admin-demo-20260911/instrumentation.txt",
+      "bytes": 902,
+      "sha256": "2908a9d893351de55167eea4329e71e0538bf349233ab4fa5ecd4b892c0e5d48"
+    }
+  ]
+}
