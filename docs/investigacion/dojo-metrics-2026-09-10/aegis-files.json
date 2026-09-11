@@ -1,0 +1,932 @@
+{
+  "backend/training/aegis_v1_v2_reviewed/review.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 17565,
+    "language": "HTML"
+  },
+  "frontend/src/pages/HospitalDetail/HospitalDetailPage.tsx": {
+    "blank": 116,
+    "comment": 0,
+    "code": 729,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Review/ReviewPage.tsx": {
+    "blank": 82,
+    "comment": 6,
+    "code": 676,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/ReviewQueue/ReviewQueuePage.tsx": {
+    "blank": 98,
+    "comment": 1,
+    "code": 672,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Home/HomePage.tsx": {
+    "blank": 85,
+    "comment": 0,
+    "code": 558,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Hospitals/HospitalsPage.tsx": {
+    "blank": 78,
+    "comment": 0,
+    "code": 497,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/NewVisit/NewVisitPage.tsx": {
+    "blank": 63,
+    "comment": 0,
+    "code": 428,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/SupervisorDashboard/SupervisorDashboardPage.tsx": {
+    "blank": 63,
+    "comment": 0,
+    "code": 402,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Capture/CapturePage.tsx": {
+    "blank": 100,
+    "comment": 6,
+    "code": 385,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/VisitDetail/VisitDetailPage.tsx": {
+    "blank": 57,
+    "comment": 0,
+    "code": 359,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Match/MatchPage.tsx": {
+    "blank": 76,
+    "comment": 2,
+    "code": 323,
+    "language": "TypeScript"
+  },
+  "backend/app/api/visits.py": {
+    "blank": 45,
+    "comment": 45,
+    "code": 274,
+    "language": "Python"
+  },
+  "backend/app/ai/extractor.py": {
+    "blank": 22,
+    "comment": 31,
+    "code": 258,
+    "language": "Python"
+  },
+  "frontend/src/components/SupervisorLayout.tsx": {
+    "blank": 34,
+    "comment": 0,
+    "code": 245,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Visits/VisitsPage.tsx": {
+    "blank": 45,
+    "comment": 0,
+    "code": 234,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/observationApi.ts": {
+    "blank": 23,
+    "comment": 1,
+    "code": 205,
+    "language": "TypeScript"
+  },
+  "backend/scripts/adapt_aegis_pack.py": {
+    "blank": 19,
+    "comment": 8,
+    "code": 194,
+    "language": "Python"
+  },
+  "frontend/src/pages/Login/LoginPage.tsx": {
+    "blank": 47,
+    "comment": 0,
+    "code": 194,
+    "language": "TypeScript"
+  },
+  "backend/scripts/curate_aegis_dataset.py": {
+    "blank": 19,
+    "comment": 10,
+    "code": 172,
+    "language": "Python"
+  },
+  "backend/scripts/evaluate_aegis_predictions.py": {
+    "blank": 17,
+    "comment": 6,
+    "code": 164,
+    "language": "Python"
+  },
+  "backend/app/services/evidence.py": {
+    "blank": 34,
+    "comment": 7,
+    "code": 156,
+    "language": "Python"
+  },
+  "frontend/src/pages/Success/SuccessPage.tsx": {
+    "blank": 42,
+    "comment": 0,
+    "code": 151,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/uiLanguage.tsx": {
+    "blank": 11,
+    "comment": 3,
+    "code": 150,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/visits.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 150,
+    "language": "TypeScript"
+  },
+  "qvac/server.mjs": {
+    "blank": 5,
+    "comment": 6,
+    "code": 149,
+    "language": "JavaScript"
+  },
+  "backend/app/services/local_media.py": {
+    "blank": 19,
+    "comment": 3,
+    "code": 138,
+    "language": "Python"
+  },
+  "backend/tests/test_extraction_regressions.py": {
+    "blank": 21,
+    "comment": 0,
+    "code": 132,
+    "language": "Python"
+  },
+  "backend/tests/test_storage.py": {
+    "blank": 14,
+    "comment": 1,
+    "code": 131,
+    "language": "Python"
+  },
+  "frontend/src/index.css": {
+    "blank": 3,
+    "comment": 2,
+    "code": 122,
+    "language": "CSS"
+  },
+  "frontend/src/pages/InstalledBase/InstalledBasePage.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 113,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/visitStore.ts": {
+    "blank": 2,
+    "comment": 1,
+    "code": 111,
+    "language": "TypeScript"
+  },
+  "frontend/tests/browser-flow.mjs": {
+    "blank": 0,
+    "comment": 2,
+    "code": 104,
+    "language": "JavaScript"
+  },
+  "qvac/finetune-lora.mjs": {
+    "blank": 4,
+    "comment": 5,
+    "code": 99,
+    "language": "JavaScript"
+  },
+  "backend/app/ai/group_grounding.py": {
+    "blank": 6,
+    "comment": 7,
+    "code": 97,
+    "language": "Python"
+  },
+  "backend/tests/test_phase2_workflows.py": {
+    "blank": 13,
+    "comment": 0,
+    "code": 90,
+    "language": "Python"
+  },
+  "backend/app/ai/count_grounding.py": {
+    "blank": 11,
+    "comment": 15,
+    "code": 88,
+    "language": "Python"
+  },
+  "backend/app/api/intelligence.py": {
+    "blank": 9,
+    "comment": 2,
+    "code": 83,
+    "language": "Python"
+  },
+  "backend/scripts/smoke_system.py": {
+    "blank": 4,
+    "comment": 1,
+    "code": 83,
+    "language": "Python"
+  },
+  "frontend/tests/observation-api.test.mjs": {
+    "blank": 5,
+    "comment": 0,
+    "code": 80,
+    "language": "JavaScript"
+  },
+  "backend/app/ai/narrative_grounding.py": {
+    "blank": 6,
+    "comment": 10,
+    "code": 72,
+    "language": "Python"
+  },
+  "backend/scripts/auto_review_aegis.py": {
+    "blank": 15,
+    "comment": 8,
+    "code": 72,
+    "language": "Python"
+  },
+  "frontend/src/components/HospitalMap.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 72,
+    "language": "TypeScript"
+  },
+  "backend/app/ai/age_grounding.py": {
+    "blank": 11,
+    "comment": 7,
+    "code": 71,
+    "language": "Python"
+  },
+  "backend/scripts/evaluate_training_dataset.py": {
+    "blank": 10,
+    "comment": 3,
+    "code": 70,
+    "language": "Python"
+  },
+  "backend/scripts/audit_training_labels.py": {
+    "blank": 5,
+    "comment": 1,
+    "code": 69,
+    "language": "Python"
+  },
+  "frontend/src/components/AppLayout.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 69,
+    "language": "TypeScript"
+  },
+  "backend/app/services/installed_base.py": {
+    "blank": 8,
+    "comment": 7,
+    "code": 68,
+    "language": "Python"
+  },
+  "backend/tests/benchmark_local.py": {
+    "blank": 9,
+    "comment": 1,
+    "code": 68,
+    "language": "Python"
+  },
+  "backend/tests/test_observation_analysis.py": {
+    "blank": 14,
+    "comment": 0,
+    "code": 68,
+    "language": "Python"
+  },
+  "frontend/src/pages/Dashboard/DashboardPage.tsx": {
+    "blank": 4,
+    "comment": 0,
+    "code": 68,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/QuickCapture/QuickCapturePage.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 68,
+    "language": "TypeScript"
+  },
+  "backend/scripts/seed_international.py": {
+    "blank": 6,
+    "comment": 3,
+    "code": 67,
+    "language": "Python"
+  },
+  "frontend/tests/visit-flow.test.mjs": {
+    "blank": 5,
+    "comment": 0,
+    "code": 65,
+    "language": "JavaScript"
+  },
+  "frontend/tests/visual-readiness.mjs": {
+    "blank": 0,
+    "comment": 1,
+    "code": 64,
+    "language": "JavaScript"
+  },
+  "backend/scripts/benchmark_multilingual.py": {
+    "blank": 5,
+    "comment": 3,
+    "code": 63,
+    "language": "Python"
+  },
+  "frontend/tests/storage-api.test.mjs": {
+    "blank": 6,
+    "comment": 0,
+    "code": 63,
+    "language": "JavaScript"
+  },
+  "backend/tests/test_aegis_curation.py": {
+    "blank": 9,
+    "comment": 0,
+    "code": 62,
+    "language": "Python"
+  },
+  "frontend/src/pages/Customer360/Customer360Page.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 62,
+    "language": "TypeScript"
+  },
+  "backend/app/db/database.py": {
+    "blank": 7,
+    "comment": 63,
+    "code": 60,
+    "language": "Python"
+  },
+  "backend/tests/test_dataset_adaptation.py": {
+    "blank": 7,
+    "comment": 0,
+    "code": 58,
+    "language": "Python"
+  },
+  "frontend/src/components/FollowUp.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 54,
+    "language": "TypeScript"
+  },
+  "frontend/src/routes/router.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 54,
+    "language": "TypeScript"
+  },
+  "backend/scripts/seed_demo.py": {
+    "blank": 4,
+    "comment": 2,
+    "code": 53,
+    "language": "Python"
+  },
+  "backend/tests/test_local_media.py": {
+    "blank": 3,
+    "comment": 0,
+    "code": 53,
+    "language": "Python"
+  },
+  "frontend/src/components/ObservationExplorer.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 53,
+    "language": "TypeScript"
+  },
+  "backend/scripts/prepare_aegis_clean_splits.py": {
+    "blank": 12,
+    "comment": 5,
+    "code": 52,
+    "language": "Python"
+  },
+  "frontend/src/pages/Map/InstalledBaseMapPage.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 50,
+    "language": "TypeScript"
+  },
+  "backend/app/schemas/visit.py": {
+    "blank": 7,
+    "comment": 0,
+    "code": 48,
+    "language": "Python"
+  },
+  "backend/scripts/apply_aegis_review.py": {
+    "blank": 8,
+    "comment": 1,
+    "code": 46,
+    "language": "Python"
+  },
+  "frontend/src/components/InformationReviewQueue.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 45,
+    "language": "TypeScript"
+  },
+  "backend/scripts/install_stt_model.py": {
+    "blank": 5,
+    "comment": 1,
+    "code": 44,
+    "language": "Python"
+  },
+  "frontend/src/data/equipmentMatching.ts": {
+    "blank": 2,
+    "comment": 2,
+    "code": 42,
+    "language": "TypeScript"
+  },
+  "backend/app/api/users.py": {
+    "blank": 11,
+    "comment": 2,
+    "code": 41,
+    "language": "Python"
+  },
+  "backend/scripts/evaluate_user_narratives.py": {
+    "blank": 5,
+    "comment": 1,
+    "code": 41,
+    "language": "Python"
+  },
+  "backend/tests/test_age_grounding.py": {
+    "blank": 16,
+    "comment": 0,
+    "code": 41,
+    "language": "Python"
+  },
+  "frontend/src/pages/Analytics/AnalyticsPage.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 40,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Map/MapPage.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 40,
+    "language": "TypeScript"
+  },
+  "backend/scripts/smoke_final_ai.py": {
+    "blank": 1,
+    "comment": 1,
+    "code": 39,
+    "language": "Python"
+  },
+  "backend/tests/test_users.py": {
+    "blank": 5,
+    "comment": 0,
+    "code": 39,
+    "language": "Python"
+  },
+  "frontend/src/components/LocalVoiceCapture.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 39,
+    "language": "TypeScript"
+  },
+  "backend/tests/test_narrative_grounding.py": {
+    "blank": 6,
+    "comment": 0,
+    "code": 38,
+    "language": "Python"
+  },
+  "backend/app/api/observations.py": {
+    "blank": 6,
+    "comment": 6,
+    "code": 37,
+    "language": "Python"
+  },
+  "backend/app/schemas/observation.py": {
+    "blank": 18,
+    "comment": 6,
+    "code": 37,
+    "language": "Python"
+  },
+  "backend/app/services/observation_service.py": {
+    "blank": 6,
+    "comment": 1,
+    "code": 37,
+    "language": "Python"
+  },
+  "qvac/finetune-model.mjs": {
+    "blank": 3,
+    "comment": 0,
+    "code": 37,
+    "language": "JavaScript"
+  },
+  "backend/app/services/inventory_summary.py": {
+    "blank": 1,
+    "comment": 2,
+    "code": 36,
+    "language": "Python"
+  },
+  "backend/scripts/install_ocr_languages.py": {
+    "blank": 7,
+    "comment": 1,
+    "code": 36,
+    "language": "Python"
+  },
+  "frontend/src/data/storageApi.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 36,
+    "language": "TypeScript"
+  },
+  "backend/app/services/follow_up.py": {
+    "blank": 2,
+    "comment": 2,
+    "code": 35,
+    "language": "Python"
+  },
+  "backend/tests/test_inventory_summary.py": {
+    "blank": 5,
+    "comment": 0,
+    "code": 35,
+    "language": "Python"
+  },
+  "backend/app/schemas/user.py": {
+    "blank": 7,
+    "comment": 0,
+    "code": 33,
+    "language": "Python"
+  },
+  "frontend/src/data/followUp.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 32,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/hospitals.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 32,
+    "language": "TypeScript"
+  },
+  "backend/tests/test_installed_base.py": {
+    "blank": 2,
+    "comment": 0,
+    "code": 31,
+    "language": "Python"
+  },
+  "backend/app/services/reliability.py": {
+    "blank": 2,
+    "comment": 1,
+    "code": 30,
+    "language": "Python"
+  },
+  "backend/app/services/visit_similarity.py": {
+    "blank": 9,
+    "comment": 5,
+    "code": 30,
+    "language": "Python"
+  },
+  "frontend/src/data/demoExtraction.ts": {
+    "blank": 2,
+    "comment": 2,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "backend/app/main.py": {
+    "blank": 8,
+    "comment": 3,
+    "code": 28,
+    "language": "Python"
+  },
+  "frontend/src/components/PhotoOcr.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 28,
+    "language": "TypeScript"
+  },
+  "backend/tests/test_contextual_follow_up.py": {
+    "blank": 6,
+    "comment": 0,
+    "code": 27,
+    "language": "Python"
+  },
+  "frontend/src/data/analyticsCopy.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 26,
+    "language": "TypeScript"
+  },
+  "backend/tests/test_intelligence.py": {
+    "blank": 4,
+    "comment": 0,
+    "code": 25,
+    "language": "Python"
+  },
+  "backend/app/services/installation_year.py": {
+    "blank": 1,
+    "comment": 1,
+    "code": 24,
+    "language": "Python"
+  },
+  "backend/tests/test_visit_similarity.py": {
+    "blank": 5,
+    "comment": 0,
+    "code": 24,
+    "language": "Python"
+  },
+  "frontend/src/data/language.ts": {
+    "blank": 4,
+    "comment": 0,
+    "code": 24,
+    "language": "TypeScript"
+  },
+  "frontend/tests/observation-explorer.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 24,
+    "language": "JavaScript"
+  },
+  "frontend/src/data/observationExplorer.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 23,
+    "language": "TypeScript"
+  },
+  "frontend/tests/equipment-matching.test.mjs": {
+    "blank": 2,
+    "comment": 0,
+    "code": 23,
+    "language": "JavaScript"
+  },
+  "qvac/download-model.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 23,
+    "language": "JavaScript"
+  },
+  "backend/scripts/make_aegis_review.py": {
+    "blank": 6,
+    "comment": 7,
+    "code": 22,
+    "language": "Python"
+  },
+  "backend/tests/test_training_feedback.py": {
+    "blank": 2,
+    "comment": 0,
+    "code": 22,
+    "language": "Python"
+  },
+  "frontend/src/data/hospitalOverview.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/reviewCopy.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/useVisits.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Settings/SettingsPage.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "backend/tests/test_reliability.py": {
+    "blank": 4,
+    "comment": 0,
+    "code": 21,
+    "language": "Python"
+  },
+  "frontend/eslint.config.js": {
+    "blank": 1,
+    "comment": 0,
+    "code": 21,
+    "language": "JavaScript"
+  },
+  "frontend/tests/hospital-switch.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 21,
+    "language": "JavaScript"
+  },
+  "backend/app/ai/qvac_client.py": {
+    "blank": 2,
+    "comment": 0,
+    "code": 20,
+    "language": "Python"
+  },
+  "backend/app/api/media.py": {
+    "blank": 5,
+    "comment": 0,
+    "code": 20,
+    "language": "Python"
+  },
+  "frontend/src/components/ObservationHistory.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 20,
+    "language": "TypeScript"
+  },
+  "qvac/model.mjs": {
+    "blank": 2,
+    "comment": 0,
+    "code": 20,
+    "language": "JavaScript"
+  },
+  "backend/scripts/export_training_feedback.py": {
+    "blank": 2,
+    "comment": 2,
+    "code": 19,
+    "language": "Python"
+  },
+  "frontend/src/pages/Opportunities/OpportunitiesPage.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 18,
+    "language": "TypeScript"
+  },
+  "frontend/src/pages/Register/RegisterPage.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 18,
+    "language": "TypeScript"
+  },
+  "backend/app/services/training_feedback.py": {
+    "blank": 2,
+    "comment": 4,
+    "code": 17,
+    "language": "Python"
+  },
+  "backend/tests/test_catalog_geography.py": {
+    "blank": 3,
+    "comment": 0,
+    "code": 17,
+    "language": "Python"
+  },
+  "backend/tests/test_seed.py": {
+    "blank": 3,
+    "comment": 0,
+    "code": 17,
+    "language": "Python"
+  },
+  "frontend/src/data/userApi.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "backend/app/schemas/equipment.py": {
+    "blank": 9,
+    "comment": 5,
+    "code": 16,
+    "language": "Python"
+  },
+  "frontend/src/components/VisitContext.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 16,
+    "language": "TypeScript"
+  },
+  "backend/app/ai/language.py": {
+    "blank": 4,
+    "comment": 3,
+    "code": 15,
+    "language": "Python"
+  },
+  "backend/app/ai/performance.py": {
+    "blank": 2,
+    "comment": 1,
+    "code": 15,
+    "language": "Python"
+  },
+  "frontend/tests/follow-up.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 15,
+    "language": "JavaScript"
+  },
+  "frontend/tests/hospital-overview.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 15,
+    "language": "JavaScript"
+  },
+  "frontend/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 14,
+    "language": "HTML"
+  },
+  "frontend/src/data/hospitalResolution.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "frontend/src/main.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "frontend/tests/pcm-audio.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 12,
+    "language": "JavaScript"
+  },
+  "frontend/src/components/LocalStatus.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 11,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/pcmAudio.ts": {
+    "blank": 0,
+    "comment": 1,
+    "code": 10,
+    "language": "TypeScript"
+  },
+  "frontend/tests/hospital-resolution.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 10,
+    "language": "JavaScript"
+  },
+  "frontend/tests/modality-aliases.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 10,
+    "language": "JavaScript"
+  },
+  "frontend/vite.config.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/AssetAudit.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "frontend/tests/language.test.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 8,
+    "language": "JavaScript"
+  },
+  "qvac/download-finetune-model.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 8,
+    "language": "JavaScript"
+  },
+  "backend/training/aegis_260_production_clean/review.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 7,
+    "language": "HTML"
+  },
+  "frontend/src/App.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 7,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/appearance.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 7,
+    "language": "TypeScript"
+  },
+  "backend/app/schemas/follow_up.py": {
+    "blank": 1,
+    "comment": 0,
+    "code": 6,
+    "language": "Python"
+  },
+  "frontend/src/components/AegisBrand.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "frontend/src/data/inventorySummary.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "backend/app/ai/prompts.py": {
+    "blank": 1,
+    "comment": 9,
+    "code": 1,
+    "language": "Python"
+  },
+  "frontend/src/data/panamaBoundary.ts": {
+    "blank": 0,
+    "comment": 4,
+    "code": 1,
+    "language": "TypeScript"
+  }
+}

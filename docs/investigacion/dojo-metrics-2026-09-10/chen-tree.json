@@ -1,0 +1,494 @@
+[
+  {
+    "path": ".env.example",
+    "sha": "2d9cad0e5d3598cfccd0df962662b9983b4a94d0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": ".github/workflows/check.yml",
+    "sha": "89c5a4c2d6a17fe7edc3afba4719c21386b1b58c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": ".gitignore",
+    "sha": "9769eef33824a0b9a13a203be2765004d4b4cedd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "Iniciar-Chen.cmd",
+    "sha": "f96c102946355f426e57faa8fd50e55e8d42ae4c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "LICENSE",
+    "sha": "f965134d8ac9ba701e4d0351f9504826f187917b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "a074073506149429eeaa07f3360f9292c3ba7cc1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audio/README.md",
+    "sha": "1a20c8b219d9d0a1e99c955193949f0b7826d22b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audio/ahorro.wav",
+    "sha": "660fa511f1ecb8d9a783a29bc9863783427d3883",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audio/consulta.wav",
+    "sha": "19ae69d88d22a3afc8585d63df2c16ec24053cbf",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/ARQUITECTURA.md",
+    "sha": "fc6140c6daa08101fff159390cd6561bb37143c7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "index.html",
+    "sha": "719b3d98538972bd115ef0ea362309ec7baef32c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package-lock.json",
+    "sha": "55fcf97f0d3cc676842a920012f22fabcce05901",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package.json",
+    "sha": "c576d939b37df110a261b60d6e30f0885510d1d8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/brand/ca-loop-poster.png",
+    "sha": "fa29346b9849a77a1a4082ddb24d844238a83b45",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/brand/ca-loop.mp4",
+    "sha": "7e96d454762b2a195996eb5de37e9fe847c6e732",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/brand/logo-ca-192.png",
+    "sha": "2e2672e45204defff9742abea58a70a87b37c9bf",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/brand/logo-ca-32.png",
+    "sha": "81a30c2fdd7e9b08ecc709f89b8588d8a1227d9a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/brand/logo-ca-512.png",
+    "sha": "29aa56c5ade5ef484974561365f9337f90e56eeb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/brand/logo-ca-64.png",
+    "sha": "54529244636236946d90512b792c04ad37133b47",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/brand/logo-ca.png",
+    "sha": "57cd6643bff46395850b24b9005d8197b4e87ef0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/favicon.ico",
+    "sha": "10b9d81c5f5ff2f3ef8258b665a86e71aaa9bfae",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/bateria-preguntas.ts",
+    "sha": "a491f2d1fee184ba89b0f925841bb880d0d1d069",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/demo.mjs",
+    "sha": "bf14135ee13afa86467d96ff10d0433839c4f6bd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/fit-check.ts",
+    "sha": "d2f600ba4d47f8b3abd185cb57021ef7bbb2b036",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/network-probe.ts",
+    "sha": "00673f263208b41d099c21f25f400a4f0f012ecd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/qvac-check.ts",
+    "sha": "4d921380eae8c7e509b7005c320dfad1ee1f54e8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/ui-check.ts",
+    "sha": "c7ac64073b7b7f5cc720ece29b13b5d2da186bad",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/voice-check.ts",
+    "sha": "05116295c2c2818ce15fc40a5db577d12a8dbb3e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/analysis.ts",
+    "sha": "96143eab18bf0f491e57ab8fb552d791d50ec1b5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/answer-validator.ts",
+    "sha": "256a46c0a5f048addae142b5b12b669fde06a0ae",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/domain.ts",
+    "sha": "947988b8142f34d4a3590c23af57369cf454043e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/fixtures.ts",
+    "sha": "712c7d19ce237bb6ce820992b672746666501f90",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/forecast.ts",
+    "sha": "bc78ba69290380215e968b77c0f7771b5c5e3951",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/history.ts",
+    "sha": "0cdc906a593b65190de72838320e5e2c8e840124",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/index.ts",
+    "sha": "3187cfa71cc1fa8b8c73cf43abd8dc3848d2ef9a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/intent.ts",
+    "sha": "533bf549a5672ebee0a1211dd0a6d2a23511a180",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/model-fit.ts",
+    "sha": "67dc9fcd201d09b067bab0d939a2ce6d837eace8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/planning-domain.ts",
+    "sha": "068fe90a254048e48e89e09854d5d62b12014cef",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/planning-fixtures.ts",
+    "sha": "e08bff01d6e0c4566777310ca4e808e61d640da3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/planning-repository.ts",
+    "sha": "59b17e98a01e5d2322ddcd1bb6b76cb48c02b063",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/planning.ts",
+    "sha": "c6295b233a0d6e231815e20127ee34f9d25985cc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/qvac.ts",
+    "sha": "3cc1886dd4673c84ed3c8f8c566ef3c7a2929479",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/repository.ts",
+    "sha": "9fcccd058732ff2b2a26bd8c99ca50954e4933b9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/timeframe.ts",
+    "sha": "b2b4681e024bc4a677b7a8e2425653fd93de728c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/voice.ts",
+    "sha": "85b7e1ed4696ade7767e7adf0e94942ad6865873",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/ActivityPanel.tsx",
+    "sha": "6b7d8951e21f18841135767a2b738a44dfb26822",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/App.tsx",
+    "sha": "6e1f8202ffde3192d42a5410d3054c1d695707af",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/AppFrame.tsx",
+    "sha": "7115a1822d0c99bc0ca98f7cdffe1dfe09d4a73f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/BrandLoader.tsx",
+    "sha": "03fa325c5c1070e29739013316c9a4c32dc1865e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/ChatBubble.tsx",
+    "sha": "adee4fe742fb952de5fe783109fc41d73eb9ee3f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/ChatPanel.tsx",
+    "sha": "47c9ee5d6d0a54f15b3cd1faf7be8020748d6f90",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/Combobox.tsx",
+    "sha": "85e0a9907cf09e8a4799911bd7f11ab3f036a807",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/ForecastPanel.tsx",
+    "sha": "f0902008af67bdae8973891e0295e707054f0ece",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/GuidePanel.tsx",
+    "sha": "8dcf119c63c18758616d3636458be197e7a33ff5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/Insights.tsx",
+    "sha": "5f40a8df5df4af536285cdf9159bf6ae90a36639",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/LoginScreen.tsx",
+    "sha": "ecee909735bf31f1c856627739a98335b91fd1db",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/MovementTable.tsx",
+    "sha": "209b638b30c568109dda2db5a8b8b1f902b9b679",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/OrganizePanel.tsx",
+    "sha": "f2cd071df8b25e255baf64aa29d22ca238cd5388",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/RecurringPanel.tsx",
+    "sha": "92b364c018a9594b51ee853f930793a3de1af6f0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/ScenariosPanel.tsx",
+    "sha": "aca016d4e5d46b699287a23d40475321f3f2d6b8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/SpendingOverview.tsx",
+    "sha": "b73b2d5edea89e5a29a4c3250097fbef4f1b7ab3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/api.ts",
+    "sha": "85f7370ed6d9e1797fd12733cb4984c929f9d440",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/ledger.ts",
+    "sha": "0f2d72853c57aafcf22d31d6bdec7bc88fe54a96",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/main.tsx",
+    "sha": "c113af2a79e04b6b7e87c65bd0a28f68c269e470",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/period-labels.ts",
+    "sha": "0b9d1a753b50774b15d33547cbbdda1c2c73027b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/styles.css",
+    "sha": "878e3e97fbb8f3034e946f8e66adc1b879684f8e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/useChen.ts",
+    "sha": "4ed5593cba4a12862ef9e3a338c23f04ff5978c7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/wav-recorder.ts",
+    "sha": "fdcb81053e9f2f79f698ade4aa078207049eee7a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/analysis.test.ts",
+    "sha": "47ac58f863d0161c18f8595efb222e14b96206f2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/asistente-mira-adelante.test.ts",
+    "sha": "36980c0b94ae78ce14d06a1c554fd66e86cd0ae8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/forecast.test.ts",
+    "sha": "022c0baad29ccf6c83ed304ffa0f6fe272618310",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/history.test.ts",
+    "sha": "6f5d402516004fff95aff78e743725c63bd7168f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/inference-disabled.test.ts",
+    "sha": "59e4772157f4cdb54ad445fcb4ec6788577f8c91",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/intent.test.ts",
+    "sha": "81f88374d44a69aff8266fbfbf0309c2c150a027",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/menu-de-intenciones.test.ts",
+    "sha": "d5c87f14de9e3e133f25670901b2fac1e4904fb8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/model-fit.test.ts",
+    "sha": "74ffa0775119026aafe19417030bee38106438ad",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/no-cloud.test.ts",
+    "sha": "ff5e4b099c201087bed53182a9569c56f4766615",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/persistence.test.ts",
+    "sha": "c5c160c336da309b1a7c86614899ae49ae43ad71",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/planning.test.ts",
+    "sha": "2fbb9ecb35999791bb1cd09ec62a6b4a769671cd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/sin-caracteres-invisibles.test.ts",
+    "sha": "c7d4d94e5fbb4d4c8e633db40c2424e746295103",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha": "aeef6a21781fa71c6992e55410b8893733b7f3ce",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "vite.config.ts",
+    "sha": "d9dfddfcdf477cb2f73562ffca39e46e6a3ba3be",
+    "type": "blob",
+    "mode": "100644"
+  }
+]

@@ -1,0 +1,392 @@
+[
+  {
+    "path": ".gitignore",
+    "sha": "36edd675a103a0d99ff5d57b93ae53ef238bef01",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "LICENSE",
+    "sha": "d4072062a07508ee3dc4d57b46b0906cc5fbce6a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.es.md",
+    "sha": "3a04bb426269bd949277c6431c25c8c8f595b321",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "6c546dcdbe3c088a3fcaa0a1aba99c05d4ee4ba8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "api.py",
+    "sha": "b3264c152b50d0f82bb77721e2eca59488e44465",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "app.py",
+    "sha": "2314420aa824871632cbc4228ec296340c20535e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "confidence.py",
+    "sha": "63d31c00e17cad08314e5578fbe7c0cfef70e347",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "context/README.md",
+    "sha": "8e63922f73e53bed5eafa70fe6454f50471998af",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "context/hackathon-whatsapp-chat.md",
+    "sha": "8774169e4f3d7638fe17785203a55a87450cbbd8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "context/qvac-integration-notes.md",
+    "sha": "f80222aae185ec0d7c4b958afa83ec25c58ed7f2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "context/qvac-sdk-research.md",
+    "sha": "b709f8061c86e0394b8c0c5677d5e799c8af4827",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "context/termux-android-demo.md",
+    "sha": "ea8aa5eebc93cfad53e1a996be70dec9b6705cb2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "db.py",
+    "sha": "d41043664e4a356cf50b2b6048b042681191ea62",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "dedupe.py",
+    "sha": "d58fd0914d49cc6edc9349ae487de73325aa8510",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/screenshots/01-login.jpg",
+    "sha": "dff9be8147dcc852c7f8803d12c3a0d662366b24",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/screenshots/02-mode.jpg",
+    "sha": "3e16aa9d2e66de03536df65df4a048dd7547b2dd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/screenshots/03-capture.jpg",
+    "sha": "62e1ecf1854b0005c4e28e88060fc29436d5e6b7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/screenshots/04-review.jpg",
+    "sha": "f35963b717ad6bd018a2965139f1ab26a2b361c3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/screenshots/05-panel.jpg",
+    "sha": "37e1f1957c954277f4f4ab13c43a7b4956275856",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "extract.py",
+    "sha": "b4b6cd2ea9908ef161c2c2c4db3b0e0612450110",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/.gitignore",
+    "sha": "a547bf36d8d11a4f89c59c144f24795749086dd1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/.oxlintrc.json",
+    "sha": "6fa991dad24b57eb19c9cefba8ea12fd1870ed07",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/README.md",
+    "sha": "d6af7e39ffac6183b891838d6ab1d6eb7ac70dda",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/components.json",
+    "sha": "15addee81fadab3e2f43e23425168d57f800bd8f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/index.html",
+    "sha": "c51ec0d41b7f57aa925e2e063dd3b9b5e1c72409",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/package-lock.json",
+    "sha": "e3d54f68f6267e71459c33c33470c8adad49b3be",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/package.json",
+    "sha": "742ec0e9bc67eb481a905191b07948d52550e28e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/public/favicon.svg",
+    "sha": "6893eb13237060adc0c968a690149a49faa2d7d3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/public/icons.svg",
+    "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/App.tsx",
+    "sha": "c7ecf165ea6472d2336b8c88b1da9ab71b6fd32f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/api.ts",
+    "sha": "f433103c89c7fb527355529638d5633dca212c1f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/Background.tsx",
+    "sha": "27d8f3a8cedd3e1d79dde7d926623e943f838a01",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/GlassPanel.tsx",
+    "sha": "0cd384f12fc1b1278373614616627ec4b756d7f5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/StepShell.tsx",
+    "sha": "2c043d9dfee10a51aefac204e849c421f415b473",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/steps/CaptureStep.tsx",
+    "sha": "3a775b671776c701218cfb9c7e66682758decd67",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/steps/LoginStep.tsx",
+    "sha": "1ce4778c2d119aeec39b6542f94e63a069770f1e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/steps/ModeStep.tsx",
+    "sha": "c22fcfb0b5139e29a80df3b2b50db6913bc11a82",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/steps/PanelStep.tsx",
+    "sha": "d182b5dde78c97adae1fb25e22a32dbaf03e1948",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/steps/ReviewStep.tsx",
+    "sha": "b327ffda331ee42bb253d9f41aecb268dbb6518d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/badge.tsx",
+    "sha": "6bc28c30ee309a4a5d53fe3e10e7394dd2034d1d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/button.tsx",
+    "sha": "841a4c1e214752fd9b402946e041b99d432ca3b1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/card.tsx",
+    "sha": "cf02f4845b73e9895881a1a2e1b00a52bc576cd4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/input.tsx",
+    "sha": "677fed327acd261c78ea59abf0fa92fc297941a5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/label.tsx",
+    "sha": "ddfd2e16915f7435c3a7654add2e0f49d98612aa",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/select.tsx",
+    "sha": "28ee9d2813c1d40b3ea3936f13b9b00ba8e334e1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/table.tsx",
+    "sha": "d0baee609bf5d47f7d62b8a3697d5cb4e79b7565",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/components/ui/textarea.tsx",
+    "sha": "5141de794cdc57aa317c8beba328a7284475d767",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/hooks/use-prefers-reduced-motion.ts",
+    "sha": "aee89cbc63e849b44a920a85a0781f9005aa8542",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/index.css",
+    "sha": "5315a154adaed8cb2241699f77dead72864c9da8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/lib/motion.ts",
+    "sha": "9a0054fffddb0f292c0495e8500c78981ab946c1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/lib/utils.ts",
+    "sha": "f815ded4d7865413255682a8b1f8f95beb620d0a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/src/main.tsx",
+    "sha": "bef5202a32cbd0632c43de40f6e908532903fd42",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/tsconfig.app.json",
+    "sha": "ddea15b3fd8e1b5ea9a0268b958cc640f5b3d0f7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/tsconfig.json",
+    "sha": "1ffef600d959ec9e396d5a260bd3f5b927b2cef8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/tsconfig.node.json",
+    "sha": "8455dcbc2c947322adef8783a42741878edaea9c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "frontend/vite.config.ts",
+    "sha": "07a2fc8947d1f839149591f80295a34561cd1a9d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "install.sh",
+    "sha": "d82e2d378531f23d6eee6a93042f12cbb711c58b",
+    "type": "blob",
+    "mode": "100755"
+  },
+  {
+    "path": "qvac_client.py",
+    "sha": "d7b290838846c75c89057861ff1b81b7150a27e3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "requirements.txt",
+    "sha": "4bd3f6d6ca100d17f2ce63e2da673f79cdff2c41",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "run.sh",
+    "sha": "25cc31049a74ad99835c399bd86a263ff1021113",
+    "type": "blob",
+    "mode": "100755"
+  },
+  {
+    "path": "taxonomy.csv",
+    "sha": "433b7afb2c61405dea8b8381a564a289b9be0094",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "test_confidence.py",
+    "sha": "43e3b5362558fc21806dcdede4ee711b4f2fd082",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "test_db.py",
+    "sha": "7accca7ed25d61e429363f132d1c1f2e0c4078f2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "test_dedupe.py",
+    "sha": "835d0ffb2bcb29abd5d5f326399a808c8b37c8ae",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "test_extract.py",
+    "sha": "83091b747b07afd126c1221e11bb88e1feadde96",
+    "type": "blob",
+    "mode": "100644"
+  }
+]

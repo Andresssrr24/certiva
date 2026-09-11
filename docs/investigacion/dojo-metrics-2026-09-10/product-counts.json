@@ -1,0 +1,100 @@
+[
+  {
+    "folder": "aegis",
+    "snapshot_code": 30609,
+    "product_code": 9992,
+    "excluded": 20617,
+    "product_files": 94
+  },
+  {
+    "folder": "atlas",
+    "snapshot_code": 9477,
+    "product_code": 7728,
+    "excluded": 1749,
+    "product_files": 75
+  },
+  {
+    "folder": "chen",
+    "snapshot_code": 8706,
+    "product_code": 6551,
+    "excluded": 2155,
+    "product_files": 39
+  },
+  {
+    "folder": "clik2trip-text",
+    "snapshot_code": 8321,
+    "product_code": 4439,
+    "excluded": 3882,
+    "product_files": 48
+  },
+  {
+    "folder": "devcors",
+    "snapshot_code": 9749,
+    "product_code": 4135,
+    "excluded": 5614,
+    "product_files": 21
+  },
+  {
+    "folder": "fleetsense",
+    "snapshot_code": 2330,
+    "product_code": 1525,
+    "excluded": 805,
+    "product_files": 23
+  },
+  {
+    "folder": "ina-igar",
+    "snapshot_code": 14257,
+    "product_code": 9864,
+    "excluded": 4393,
+    "product_files": 70
+  },
+  {
+    "folder": "luma",
+    "snapshot_code": 4191,
+    "product_code": 3834,
+    "excluded": 357,
+    "product_files": 11
+  },
+  {
+    "folder": "mam",
+    "snapshot_code": 7957,
+    "product_code": 7060,
+    "excluded": 897,
+    "product_files": 72
+  },
+  {
+    "folder": "pulso-text",
+    "snapshot_code": 5523,
+    "product_code": 4356,
+    "excluded": 1167,
+    "product_files": 32
+  },
+  {
+    "folder": "saja",
+    "snapshot_code": 4518,
+    "product_code": 3695,
+    "excluded": 823,
+    "product_files": 18
+  },
+  {
+    "folder": "salus",
+    "snapshot_code": 6859,
+    "product_code": 4889,
+    "excluded": 1970,
+    "product_files": 135
+  },
+  {
+    "folder": "trustmesh",
+    "snapshot_code": 533,
+    "product_code": 72,
+    "excluded": 461,
+    "product_files": 4
+  },
+  {
+    "folder": "zarpe",
+    "snapshot_code": 1046,
+    "product_code": 792,
+    "excluded": 254,
+    "product_files": 5
+  }
+]

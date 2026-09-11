@@ -1,0 +1,560 @@
+{
+  "mobile/App.tsx": {
+    "blank": 32,
+    "comment": 0,
+    "code": 999,
+    "language": "TypeScript"
+  },
+  "training/generate_dataset.py": {
+    "blank": 29,
+    "comment": 9,
+    "code": 716,
+    "language": "Python"
+  },
+  "web/src/pages/SettingsPage.tsx": {
+    "blank": 17,
+    "comment": 0,
+    "code": 596,
+    "language": "TypeScript"
+  },
+  "web/src/components/forms/ObservationForm.tsx": {
+    "blank": 31,
+    "comment": 0,
+    "code": 499,
+    "language": "TypeScript"
+  },
+  "web/src/pages/InstalledBasePage.tsx": {
+    "blank": 20,
+    "comment": 0,
+    "code": 356,
+    "language": "TypeScript"
+  },
+  "web/src/pages/HelpPage.tsx": {
+    "blank": 10,
+    "comment": 0,
+    "code": 324,
+    "language": "TypeScript"
+  },
+  "web/src/pages/QueriesPage.tsx": {
+    "blank": 19,
+    "comment": 0,
+    "code": 305,
+    "language": "TypeScript"
+  },
+  "src/qvac/engine.ts": {
+    "blank": 17,
+    "comment": 0,
+    "code": 268,
+    "language": "TypeScript"
+  },
+  "web/server/main.py": {
+    "blank": 65,
+    "comment": 5,
+    "code": 264,
+    "language": "Python"
+  },
+  "web/src/pages/CapturePage.tsx": {
+    "blank": 16,
+    "comment": 0,
+    "code": 262,
+    "language": "TypeScript"
+  },
+  "web/src/pages/DashboardPage.tsx": {
+    "blank": 14,
+    "comment": 0,
+    "code": 205,
+    "language": "TypeScript"
+  },
+  "web/src/lib/mappers.ts": {
+    "blank": 21,
+    "comment": 2,
+    "code": 198,
+    "language": "TypeScript"
+  },
+  "web/src/stores/useAppStore.ts": {
+    "blank": 6,
+    "comment": 0,
+    "code": 196,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/repositories/observations.py": {
+    "blank": 19,
+    "comment": 45,
+    "code": 188,
+    "language": "Python"
+  },
+  "training/evaluate_adapter.ts": {
+    "blank": 9,
+    "comment": 0,
+    "code": 161,
+    "language": "TypeScript"
+  },
+  "web/src/services/api.ts": {
+    "blank": 22,
+    "comment": 1,
+    "code": 157,
+    "language": "TypeScript"
+  },
+  "web/src/components/common/Modal.tsx": {
+    "blank": 10,
+    "comment": 0,
+    "code": 153,
+    "language": "TypeScript"
+  },
+  "training/train_lora.py": {
+    "blank": 20,
+    "comment": 1,
+    "code": 144,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/database/sqlite.py": {
+    "blank": 26,
+    "comment": 116,
+    "code": 131,
+    "language": "Python"
+  },
+  "web/src/hooks/useObservations.ts": {
+    "blank": 17,
+    "comment": 0,
+    "code": 130,
+    "language": "TypeScript"
+  },
+  "web/src/components/forms/SearchForm.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 127,
+    "language": "TypeScript"
+  },
+  "web/src/components/layout/Header.tsx": {
+    "blank": 7,
+    "comment": 0,
+    "code": 126,
+    "language": "TypeScript"
+  },
+  "web/src/components/layout/Sidebar.tsx": {
+    "blank": 7,
+    "comment": 0,
+    "code": 119,
+    "language": "TypeScript"
+  },
+  "tools/download-models.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 107,
+    "language": "JavaScript"
+  },
+  "web/src/types/index.ts": {
+    "blank": 10,
+    "comment": 0,
+    "code": 107,
+    "language": "TypeScript"
+  },
+  "web/src/components/common/Input.tsx": {
+    "blank": 8,
+    "comment": 0,
+    "code": 104,
+    "language": "TypeScript"
+  },
+  "src/atlas/application/capture.py": {
+    "blank": 15,
+    "comment": 1,
+    "code": 91,
+    "language": "Python"
+  },
+  "web/src/components/common/Card.tsx": {
+    "blank": 14,
+    "comment": 0,
+    "code": 90,
+    "language": "TypeScript"
+  },
+  "src/atlas/domain/equipment.py": {
+    "blank": 23,
+    "comment": 4,
+    "code": 88,
+    "language": "Python"
+  },
+  "tests/test_api.py": {
+    "blank": 30,
+    "comment": 0,
+    "code": 84,
+    "language": "Python"
+  },
+  "mobile/src/qvac.ts": {
+    "blank": 11,
+    "comment": 3,
+    "code": 83,
+    "language": "TypeScript"
+  },
+  "src/atlas/main.py": {
+    "blank": 14,
+    "comment": 1,
+    "code": 82,
+    "language": "Python"
+  },
+  "web/src/components/common/Select.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 81,
+    "language": "TypeScript"
+  },
+  "src/qvac/query.ts": {
+    "blank": 4,
+    "comment": 0,
+    "code": 79,
+    "language": "TypeScript"
+  },
+  "tests/test_domain.py": {
+    "blank": 14,
+    "comment": 0,
+    "code": 77,
+    "language": "Python"
+  },
+  "src/qvac/cli.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 74,
+    "language": "TypeScript"
+  },
+  "src/qvac/query-normalize.ts": {
+    "blank": 7,
+    "comment": 0,
+    "code": 74,
+    "language": "TypeScript"
+  },
+  "web/src/index.css": {
+    "blank": 4,
+    "comment": 0,
+    "code": 73,
+    "language": "CSS"
+  },
+  "src/atlas/domain/duplicates.py": {
+    "blank": 16,
+    "comment": 1,
+    "code": 72,
+    "language": "Python"
+  },
+  "web/src/hooks/useQVAC.ts": {
+    "blank": 8,
+    "comment": 0,
+    "code": 70,
+    "language": "TypeScript"
+  },
+  "src/atlas/domain/confidence.py": {
+    "blank": 18,
+    "comment": 2,
+    "code": 68,
+    "language": "Python"
+  },
+  "mobile/src/db.ts": {
+    "blank": 6,
+    "comment": 0,
+    "code": 67,
+    "language": "TypeScript"
+  },
+  "web/src/components/common/Badge.tsx": {
+    "blank": 6,
+    "comment": 0,
+    "code": 65,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/audit/ledger.py": {
+    "blank": 8,
+    "comment": 6,
+    "code": 64,
+    "language": "Python"
+  },
+  "tests/qvac-normalization.test.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 63,
+    "language": "TypeScript"
+  },
+  "src/atlas/application/renewal.py": {
+    "blank": 15,
+    "comment": 2,
+    "code": 62,
+    "language": "Python"
+  },
+  "src/atlas/domain/observations.py": {
+    "blank": 21,
+    "comment": 2,
+    "code": 58,
+    "language": "Python"
+  },
+  "src/atlas/application/search.py": {
+    "blank": 13,
+    "comment": 9,
+    "code": 57,
+    "language": "Python"
+  },
+  "tests/test_database.py": {
+    "blank": 9,
+    "comment": 0,
+    "code": 54,
+    "language": "Python"
+  },
+  "tools/prepare_environment.py": {
+    "blank": 15,
+    "comment": 0,
+    "code": 54,
+    "language": "Python"
+  },
+  "tests/test_data_assets.py": {
+    "blank": 11,
+    "comment": 0,
+    "code": 52,
+    "language": "Python"
+  },
+  "web/src/components/common/Button.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 52,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/qvac/pipeline.py": {
+    "blank": 8,
+    "comment": 1,
+    "code": 48,
+    "language": "Python"
+  },
+  "web/tailwind.config.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 48,
+    "language": "JavaScript"
+  },
+  "src/atlas/application/follow_up.py": {
+    "blank": 13,
+    "comment": 1,
+    "code": 46,
+    "language": "Python"
+  },
+  "training/qvac_finetune.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "mobile/android/app/src/main/java/com/atlas/field/MainApplication.kt": {
+    "blank": 11,
+    "comment": 2,
+    "code": 43,
+    "language": "Kotlin"
+  },
+  "src/qvac/normalize.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 43,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/qvac/runtime.py": {
+    "blank": 9,
+    "comment": 1,
+    "code": 40,
+    "language": "Python"
+  },
+  "src/qvac/types.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 39,
+    "language": "TypeScript"
+  },
+  "mobile/android/app/src/main/java/com/atlas/field/MainActivity.kt": {
+    "blank": 8,
+    "comment": 19,
+    "code": 34,
+    "language": "Kotlin"
+  },
+  "mobile/src/types.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 28,
+    "language": "TypeScript"
+  },
+  "web/src/App.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 28,
+    "language": "TypeScript"
+  },
+  "web/eslint.config.js": {
+    "blank": 1,
+    "comment": 5,
+    "code": 25,
+    "language": "JavaScript"
+  },
+  "web/vite.config.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 24,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/storage/evidence.py": {
+    "blank": 7,
+    "comment": 1,
+    "code": 20,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/p2p/outbox.py": {
+    "blank": 8,
+    "comment": 10,
+    "code": 19,
+    "language": "Python"
+  },
+  "src/atlas/application/inventory.py": {
+    "blank": 5,
+    "comment": 1,
+    "code": 17,
+    "language": "Python"
+  },
+  "web/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 16,
+    "language": "HTML"
+  },
+  "web/src/components/layout/MainLayout.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 16,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/qvac/documents.py": {
+    "blank": 7,
+    "comment": 1,
+    "code": 15,
+    "language": "Python"
+  },
+  "mobile/qvac/worker.entry.mjs": {
+    "blank": 6,
+    "comment": 9,
+    "code": 14,
+    "language": "JavaScript"
+  },
+  "eslint.config.js": {
+    "blank": 1,
+    "comment": 4,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "web/src/components/common/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 13,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/qvac/embeddings.py": {
+    "blank": 7,
+    "comment": 1,
+    "code": 12,
+    "language": "Python"
+  },
+  "web/src/main.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/qvac/extraction.py": {
+    "blank": 6,
+    "comment": 1,
+    "code": 11,
+    "language": "Python"
+  },
+  "src/qvac/metrics.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 11,
+    "language": "TypeScript"
+  },
+  "src/atlas/infrastructure/qvac/speech.py": {
+    "blank": 6,
+    "comment": 1,
+    "code": 9,
+    "language": "Python"
+  },
+  "web/postcss.config.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "JavaScript"
+  },
+  "mobile/index.ts": {
+    "blank": 2,
+    "comment": 3,
+    "code": 3,
+    "language": "TypeScript"
+  },
+  "web/src/components/forms/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 2,
+    "language": "TypeScript"
+  },
+  "web/src/components/layout/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 2,
+    "language": "TypeScript"
+  },
+  "src/atlas/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/application/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/domain/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/audit/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/database/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/p2p/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/qvac/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/repositories/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  },
+  "src/atlas/infrastructure/storage/__init__.py": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "Python"
+  }
+}

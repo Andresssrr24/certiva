@@ -6,7 +6,7 @@ Proyecto del Hackatón QVAC · ISD Summit 2026. Tracks: **Desafío General**, **
 
 ## Estado del avance
 
-Corte documental: **10 de septiembre de 2026, hora de Panamá**. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
+Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|

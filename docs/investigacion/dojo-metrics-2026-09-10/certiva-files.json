@@ -1,0 +1,503 @@
+{
+  "header": {
+    "cloc_url": "github.com/AlDanial/cloc",
+    "cloc_version": "2.10",
+    "elapsed_seconds": 0.133755922317505,
+    "n_files": 81,
+    "n_lines": 10770,
+    "files_per_second": 605.580662123694,
+    "lines_per_second": 80519.7991490393
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/renderer/experience.css": {
+    "blank": 1,
+    "comment": 2,
+    "code": 1252,
+    "language": "CSS"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/renderer/app.css": {
+    "blank": 9,
+    "comment": 11,
+    "code": 894,
+    "language": "CSS"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/renderer/app.js": {
+    "blank": 7,
+    "comment": 12,
+    "code": 514,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/renderer/certiva.css": {
+    "blank": 0,
+    "comment": 1,
+    "code": 409,
+    "language": "CSS"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/analizar.js": {
+    "blank": 17,
+    "comment": 26,
+    "code": 403,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/main.js": {
+    "blank": 24,
+    "comment": 16,
+    "code": 400,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/android-app/sdk/src/main/assets/certiva.js": {
+    "blank": 24,
+    "comment": 14,
+    "code": 362,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/ios/Sources/CertivaSDK/Resources/certiva.js": {
+    "blank": 24,
+    "comment": 14,
+    "code": 362,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/public/certiva.js": {
+    "blank": 24,
+    "comment": 14,
+    "code": 362,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/reglas.js": {
+    "blank": 22,
+    "comment": 10,
+    "code": 266,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/renderer/experience.js": {
+    "blank": 1,
+    "comment": 1,
+    "code": 245,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/mobile/src/App.jsx": {
+    "blank": 14,
+    "comment": 1,
+    "code": 235,
+    "language": "JSX"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/llamada.js": {
+    "blank": 10,
+    "comment": 9,
+    "code": 222,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/server.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 212,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/modelos.js": {
+    "blank": 11,
+    "comment": 11,
+    "code": 210,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/eval/evaluar.js": {
+    "blank": 2,
+    "comment": 5,
+    "code": 203,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/ios/Demo/CertivaPilotApp.swift": {
+    "blank": 5,
+    "comment": 1,
+    "code": 179,
+    "language": "Swift"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/renderer/index.html": {
+    "blank": 12,
+    "comment": 0,
+    "code": 153,
+    "language": "HTML"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/test/pilot.test.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 152,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/pares.js": {
+    "blank": 13,
+    "comment": 12,
+    "code": 148,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/esquemas.js": {
+    "blank": 8,
+    "comment": 7,
+    "code": 129,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/prueba-experiencia.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 123,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/public/app.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 117,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/casos-piloto.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 116,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/mobile/src/motor.js": {
+    "blank": 10,
+    "comment": 7,
+    "code": 114,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/politica.js": {
+    "blank": 9,
+    "comment": 9,
+    "code": 105,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/ios/Sources/CertivaSDK/CertivaEngine.swift": {
+    "blank": 7,
+    "comment": 3,
+    "code": 98,
+    "language": "Swift"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/android-app/app/src/main/java/local/certiva/pilot/MainActivity.java": {
+    "blank": 2,
+    "comment": 0,
+    "code": 96,
+    "language": "Java"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/lector.js": {
+    "blank": 4,
+    "comment": 6,
+    "code": 94,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/sdk/index.js": {
+    "blank": 0,
+    "comment": 4,
+    "code": 91,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/server/bridge.mjs": {
+    "blank": 1,
+    "comment": 6,
+    "code": 88,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/derivar.js": {
+    "blank": 2,
+    "comment": 9,
+    "code": 80,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/descargar-modelos.js": {
+    "blank": 1,
+    "comment": 3,
+    "code": 77,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/android-app/sdk/src/main/java/local/certiva/sdk/CertivaEngine.java": {
+    "blank": 2,
+    "comment": 3,
+    "code": 70,
+    "language": "Java"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/experimento-preguntas.js": {
+    "blank": 0,
+    "comment": 2,
+    "code": 64,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/test/seguridad.test.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 62,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/experimento-formato.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 61,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/experimento-vision.js": {
+    "blank": 3,
+    "comment": 2,
+    "code": 61,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/prueba-lector.js": {
+    "blank": 0,
+    "comment": 2,
+    "code": 60,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/experimento-control.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 59,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/prueba-vision.js": {
+    "blank": 1,
+    "comment": 3,
+    "code": 56,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/red.js": {
+    "blank": 5,
+    "comment": 5,
+    "code": 55,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/test/evaluacion.test.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 55,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/public/analyzer.js": {
+    "blank": 0,
+    "comment": 3,
+    "code": 50,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/android-app/app/src/main/java/local/certiva/pilot/PilotAPI.java": {
+    "blank": 2,
+    "comment": 0,
+    "code": 50,
+    "language": "Java"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/preload.js": {
+    "blank": 1,
+    "comment": 1,
+    "code": 50,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/android-app/app/src/androidTest/java/local/certiva/pilot/EngineTest.java": {
+    "blank": 2,
+    "comment": 0,
+    "code": 49,
+    "language": "Java"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/experimento-franjas.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 49,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/ios/Tests/CertivaSDKTests/CertivaSDKTests.swift": {
+    "blank": 1,
+    "comment": 0,
+    "code": 48,
+    "language": "Swift"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/server/verify-qvac.mjs": {
+    "blank": 0,
+    "comment": 1,
+    "code": 46,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/test/casos-piloto.test.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 46,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/prueba-texto.js": {
+    "blank": 0,
+    "comment": 2,
+    "code": 45,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/radar.js": {
+    "blank": 0,
+    "comment": 3,
+    "code": 44,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/eval/reglas-check.js": {
+    "blank": 0,
+    "comment": 2,
+    "code": 43,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/prueba-offline.js": {
+    "blank": 1,
+    "comment": 3,
+    "code": 43,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/mobile/src/consejos.js": {
+    "blank": 5,
+    "comment": 2,
+    "code": 38,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/experimento-cuadrado.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 37,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/ejemplos/integracion.js": {
+    "blank": 2,
+    "comment": 4,
+    "code": 34,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/public/app.js": {
+    "blank": 0,
+    "comment": 2,
+    "code": 34,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/build.js": {
+    "blank": 0,
+    "comment": 2,
+    "code": 32,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/importar-modelo.js": {
+    "blank": 1,
+    "comment": 3,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/server/prepare-qvac.mjs": {
+    "blank": 0,
+    "comment": 0,
+    "code": 30,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/seguridad.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 28,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/prueba-llamada.js": {
+    "blank": 0,
+    "comment": 2,
+    "code": 26,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/lib/perf.js": {
+    "blank": 4,
+    "comment": 2,
+    "code": 25,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/prueba-politica.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 25,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/tests/analyzer.test.mjs": {
+    "blank": 0,
+    "comment": 0,
+    "code": 24,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/tests/bridge.test.mjs": {
+    "blank": 0,
+    "comment": 0,
+    "code": 23,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/public/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 23,
+    "language": "HTML"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/scripts/pares-worker.js": {
+    "blank": 1,
+    "comment": 2,
+    "code": 21,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/public/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 17,
+    "language": "HTML"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/test/fixtures/experience-preload.cjs": {
+    "blank": 0,
+    "comment": 0,
+    "code": 16,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/server/preview.mjs": {
+    "blank": 0,
+    "comment": 0,
+    "code": 14,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/mobile/app.config.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 11,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/ios/Package.swift": {
+    "blank": 1,
+    "comment": 1,
+    "code": 10,
+    "language": "Swift"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/public/styles.css": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5,
+    "language": "CSS"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/server/build.mjs": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/test/android-server.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 5,
+    "language": "JavaScript"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/public/styles.css": {
+    "blank": 0,
+    "comment": 0,
+    "code": 2,
+    "language": "CSS"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/landing/public/assets/fonts.css": {
+    "blank": 0,
+    "comment": 1,
+    "code": 1,
+    "language": "CSS"
+  },
+  "<workspace>/dojo-metrics-2026-09-10/source/certiva/pilot/public/policy-key.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "JavaScript"
+  },
+  "SUM": {
+    "blank": 298,
+    "comment": 277,
+    "code": 10195,
+    "nFiles": 81
+  }
+}

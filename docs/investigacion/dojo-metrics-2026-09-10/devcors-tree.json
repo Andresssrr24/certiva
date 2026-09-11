@@ -1,0 +1,554 @@
+[
+  {
+    "path": ".gitignore",
+    "sha": "fa7f96e6b10a3d46dc86d5289ec2368dd22235ee",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "EMPIEZA-AQUI.md",
+    "sha": "bdb53562db7bcacf7a3bbdf930a17ea433519373",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "LICENSE",
+    "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "c837162f5101a9c5a1d049fce4452571252f3db1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/EVIDENCE_MAP.md",
+    "sha": "2956a94f9001d26c47c8adbf97c512f35bfd1436",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/calidad.json",
+    "sha": "a845f81688312079e68caeff9b242eb6c27c8cf0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/clon-limpio.json",
+    "sha": "4cb2ef96f500fff42846c357ef58f5900e5f9bb2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/determinismo.json",
+    "sha": "5aa2dd05b9c2c988899e464cdd42104c329d39e0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/entrega.json",
+    "sha": "b95b171c0bfc0fc07dba614c9725b5601809aa00",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/hardware.json",
+    "sha": "14f1f690f4c7cc9dc14f3976721e9b20cd973b17",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/inference_log.csv",
+    "sha": "f3513c915ac2255521a35db80e7fe0f369cf15d8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/invariantes.json",
+    "sha": "748068fdcdb25400e062757aba2763b0d2216ae7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/puertas.json",
+    "sha": "11c1771731b26cce02788f08cf619a5d92405dff",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/remote_calls.json",
+    "sha": "3bf879bb168cf6e82589c5f5e2e9f3061ae75d02",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "audit/tests.json",
+    "sha": "82a6c4ec60d3b91d75621e16e6baed1caf07f07a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cli.mjs",
+    "sha": "3b3dc8f9c0dbc9658f0325376ae4fc3567ed4682",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/anclaje.mjs",
+    "sha": "efbf5a43cb0a7e988c9f280293aef3978da19fdd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/calidad.mjs",
+    "sha": "3f02c991f90eef19838d3c40aad8b8cd5e702902",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/dedup.mjs",
+    "sha": "16913baa22d2d98a2cff42ed3a3951f1164c2bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/esquema.mjs",
+    "sha": "53af9865464d59c96a3214d3b2fba5dca6209d2c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/estado.mjs",
+    "sha": "79aff482b7a6147e1a40bf4a64d6e8e8b8605384",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/expediente.mjs",
+    "sha": "f9181fc0284ad38564ff6e80767c430eb744137b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/guardias.mjs",
+    "sha": "225a5b5e8f793979c3d9208a9b4db87257f087e8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/ledger.mjs",
+    "sha": "2bc6b0a4759994990a6973301262163a05e0584f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/prompt.mjs",
+    "sha": "bd3d0b6b26cee6bf1c757f64daf7c8fb47ef95f9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/proyeccion.mjs",
+    "sha": "3690188df00090c684a50077a4c497b3c27161dc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "core/serie.mjs",
+    "sha": "f89c51b080dbc829012ec1f2f222038b2f677cd5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/FSM-registro.md",
+    "sha": "7f5ccfce4d9dac58ae13fe250969a78ba6af9b23",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/PROBLEMA.md",
+    "sha": "becdba0a51169ef3eea6869acde11330c72b8e58",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/banner.jpeg",
+    "sha": "75b1984766bb00057af329fd4df075f2f5bf1447",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/logo.jpeg",
+    "sha": "705db4796621b6e275c90f113c343423921addbc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "ia/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "ia/extraer.mjs",
+    "sha": "825d2375627606b473004ddef47ac9059de596e0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/esquema.json",
+    "sha": "91abfbb113daa880a6d9862ba71ddffd78be8387",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/guardias.mjs",
+    "sha": "9e2d255c9f710d34ebbf55b317dff7a907a5d7e3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/seed/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/seed/casos.json",
+    "sha": "527bc3003e84f8d0c7370fe740dd022468d4288e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/seed/dictado-01.txt",
+    "sha": "5f17131af72709fb071e2bea26771045ce316be8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/seed/dictado-03-segunda-fuente.txt",
+    "sha": "7a54e0255ae12f676a4160fd38b36c9b24e38f74",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/seed/extraccion-01-con-invenciones.json",
+    "sha": "53b81c627ae27365eea126259d2f81cbf501ca16",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/seed/extraccion-02-honesta.json",
+    "sha": "a996a7807db7a24155b473c85ece851df1819ba2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/banca/seed/extraccion-03-fuente-discrepante.json",
+    "sha": "ce5052a8dbb7828b73470fb33f34bbdf5c777823",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/salud/esquema.json",
+    "sha": "b2029d76524ec61203e2d7de6b703841a04de703",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/salud/placas/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/salud/seed/dictado-01.txt",
+    "sha": "7c4789be1445f88082b3135478e6a58d9a0f34bc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "instancias/salud/seed/extraccion-01-los-tres-errores-medidos.json",
+    "sha": "a73ee898a3a4fe5806ced26303e537072842dbdf",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/bootstrap.mjs",
+    "sha": "5859d41a7ab63ee3e4bbbbe7b16894242b0b8f53",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/campo.mjs",
+    "sha": "09487f19fe73e4d331938aaed325d5807a996a39",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/consumidor.mjs",
+    "sha": "42c0ef00e5ce040048614db87ef041f45eae4e8d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/motor.mjs",
+    "sha": "f46a20d27766e24c8d48f6508060df154d8de757",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/package-lock.json",
+    "sha": "f9f12e2b0a82abbfafe958583df5424c915f68e5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/package.json",
+    "sha": "58be6d5a4f80e62f7dff5c351a03571f61fd1305",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "malla/proveedor.mjs",
+    "sha": "47d677c8ee5589778221abb66476d72dcf43b6cd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package-lock.json",
+    "sha": "6d8aef006741a0ae60f2d6e639e9047327e1a581",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package.json",
+    "sha": "a54486610227fdd0345b8ccca21a9d6cd94e08a7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/anclaje.test.mjs",
+    "sha": "ff8c96bbdc868e3370337f844a9edd027bcdb6d0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/casos-de-uso.test.mjs",
+    "sha": "05124c59b1b15dc0c3cb68617b7e294a79ab8ce7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/dedup-calidad.test.mjs",
+    "sha": "a95ae7fcf1ee376da3a70e31d9a48b7ff657c7cb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/esquema.test.mjs",
+    "sha": "3b0c330af8c3bbcb139d74e7bf6e9e3fc7cacbf0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/estado.test.mjs",
+    "sha": "e9eeae05b90cd624a02ea88aa8e568abcaa8d125",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/fixtures.mjs",
+    "sha": "500bb31f6d6b44d498328043b25e95d4f3ee253a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/frontera.test.mjs",
+    "sha": "912ccbf0d5eb91c02b64a3ed812c3f4d6780981d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/guardias-banca.test.mjs",
+    "sha": "e108f5d20d59787714ec69de5596e765c2d10b06",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/guardias.test.mjs",
+    "sha": "3077c98d10e549aeab6a314db24288547829b324",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/invariantes.test.mjs",
+    "sha": "4237945447d53cc93f53de2434024cb97e307b5b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/ledger.test.mjs",
+    "sha": "89ca8bbffa43ae71af6b9dad528abc9e0962685f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/prompt.test.mjs",
+    "sha": "c60c3e09bf5501aebbdefb131b2c25a068c59f65",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/serie.test.mjs",
+    "sha": "a16a1e6690328ca88cf621f5d5b3e3ade5f5af00",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pruebas/ui.test.mjs",
+    "sha": "d0244b055339aa0fa5f02c56829aba16331e636e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/audit-all.mjs",
+    "sha": "29a926cb164c13f5fc9d00c0c87840e1a0deec1a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/calidad.mjs",
+    "sha": "2a63fc9af1f184f24b68f54b997ef17f52790d65",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/cargar-dominio.mjs",
+    "sha": "8571d6ae3375889589fde7abf0c775c324cd08f9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/casos.mjs",
+    "sha": "96bb448fc9494a9fa4e7236becee22ea25102bde",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/demo.mjs",
+    "sha": "06a90462193d5e41fdd026e5f034b17befa8dd3b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/doctor.mjs",
+    "sha": "9378db52d0895861e778a849ff61926d9f6a92cb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/frontera.mjs",
+    "sha": "c6ba15cbf54f800fcab323a6f945bb20c106056a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/lista-negra.mjs",
+    "sha": "2f549e04b22c5b084138e256e0a0bfe53f15ac6b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/metricas.mjs",
+    "sha": "19729e60646b95ba25ca5ea82bea0f29ae7a19d6",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/plata.mjs",
+    "sha": "2f2ea898c6e7c151be4d298c6ed9ff7d79b53d32",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/setup.mjs",
+    "sha": "5df8c6824ad09fa04806b0542add44644d07a546",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/smoke.mjs",
+    "sha": "65171757accb79e3a76764a979576f71a4723e7d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/sucursal.mjs",
+    "sha": "18b8d61bf6fe3a3e16f7b788aa2e4bc907d3fe93",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/verificar-entrega.mjs",
+    "sha": "6dab4cee038c2f4bd23d8cce23ead4729ce24659",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/verificar-frontera.mjs",
+    "sha": "b8fb41a9b159d1056d0fc68e9c0d1a8150979bdd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/verificar-invariantes.mjs",
+    "sha": "10c1c95e33a45c01e76dad75abbc8e4e90a0cfcb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "ui/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "ui/index.html",
+    "sha": "b130fe2103c8adf6e3af240a4943299a778cf13f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "ui/servidor.mjs",
+    "sha": "4df625aa2be3a755096e76e9aa491a740b2d7a93",
+    "type": "blob",
+    "mode": "100644"
+  }
+]

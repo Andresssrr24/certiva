@@ -1,0 +1,182 @@
+[
+  {
+    "path": ".gitignore",
+    "sha": "a547bf36d8d11a4f89c59c144f24795749086dd1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "App.tsx",
+    "sha": "581fd36f162ddb31596602f7e894a15174a58a16",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "0b7cc823be515b0b5caeb9a8ee7cb53a2b70677e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "components/ArbitrageControls.tsx",
+    "sha": "53f1414243f028991e2fc03084a5edff00269a5d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "components/ArbitrageResults.tsx",
+    "sha": "7bc0b9a811cd91361e87c325d56c6ebd318660e4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "components/Spinner.tsx",
+    "sha": "14cc5b7c4b07743cfe152e4c3c922e5caaaef5da",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "constants.ts",
+    "sha": "91edb64ab8a7783909f27bd3c1b818643ace86e1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/.mcp.json",
+    "sha": "8b3521a83f4336dfd2324a61a07a21c64ef3bb3b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/AGENTS.md",
+    "sha": "290da5aacd39ccbdf363f83e21c935c4a340885c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/README.md",
+    "sha": "25530ed5b249d8d6ee471a9f672ba730bacdc40d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/docs/SUBMISSION.md",
+    "sha": "dee851ab514e6d2cf464b8700a041bcb58fcc334",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/index.html",
+    "sha": "140fc421eaa2ec846dce2f30f67079f725dcd0ad",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/package.json",
+    "sha": "6ac15c8cd2c2dcdc22a5cf13e733c88fba70818f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/public/agent-os.json",
+    "sha": "38d1c8200e1e915965a021ff2b690e5a9a72bb8a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cryptocompass-ai/vercel.json",
+    "sha": "ed1f5fd531f10c2c8331194c65589622f5961244",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "index.html",
+    "sha": "09aee24f978204b32ce2794ee74b9648775bd8f9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "index.tsx",
+    "sha": "aaa0c6e4687f6cecf582465e25a32c725104814d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "metadata.json",
+    "sha": "2dbf428c9d2cd05e14accd0c66d2fa01090e1812",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package.json",
+    "sha": "5d03567804c269074e06eab7bbd13e788447230d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "services/geminiService.ts",
+    "sha": "79a701751e24474b0b0b2ba881e6ca46f9eb99dd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "trustmesh-ai/ARCHITECTURE.md",
+    "sha": "f1ab05f16d472cacde9949d759f55fa23d0bfce0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "trustmesh-ai/DEMO.md",
+    "sha": "3f39cd17b6b4be25ac86e60fd6380811260b1fe5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "trustmesh-ai/README.md",
+    "sha": "6c8fab5110e066f40ca7e2b1569b8ba7760294d4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "trustmesh-ai/app.js",
+    "sha": "7bd012353ce9d1d360b5fcaf6c5fa0b329f32c4b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "trustmesh-ai/enterprise.js",
+    "sha": "cf6917bc452d0d4120058c750044fdb375d9acda",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "trustmesh-ai/index.html",
+    "sha": "c72056f52528a23220cf853ae1daf2516bf76c98",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "trustmesh-ai/styles.css",
+    "sha": "6d80eab8c3dfe34d0a2b589ba2cbf934f0a67a00",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha": "2c6eed55868c7545e8f265f260277fb0605b2dbc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "types.ts",
+    "sha": "460cc102a171a2f97160b33b4e78505da4846f7c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "vite.config.ts",
+    "sha": "ee5fb8d2dfb261530fb407cb2f28599d50fcae26",
+    "type": "blob",
+    "mode": "100644"
+  }
+]

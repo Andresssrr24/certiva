@@ -1,0 +1,2772 @@
+[
+  {
+    "path": ".gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "129f543961d2bc05960f9fdf81eaac7743cf4866",
+    "size": 1235,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/129f543961d2bc05960f9fdf81eaac7743cf4866"
+  },
+  {
+    "path": "AGENTS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d7e23a7082c122c1723eb4f5f62ecad558c144b",
+    "size": 1568,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2d7e23a7082c122c1723eb4f5f62ecad558c144b"
+  },
+  {
+    "path": "INTEGRATION_REPORT.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9ef3311e167764e0b3eaae0661d419f2c6fd60dd",
+    "size": 5512,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/9ef3311e167764e0b3eaae0661d419f2c6fd60dd"
+  },
+  {
+    "path": "LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "433b1e7dd5f6a27aa455a11487c3aeb7b48ad951",
+    "size": 1091,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/433b1e7dd5f6a27aa455a11487c3aeb7b48ad951"
+  },
+  {
+    "path": "PHASE2_STATUS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ebf3d979fbca653087fa9ccd00d6b9105eaa2534",
+    "size": 7310,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ebf3d979fbca653087fa9ccd00d6b9105eaa2534"
+  },
+  {
+    "path": "PHOTO_ANALYSIS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7c371191365c3edd93ac241b040815888ef91389",
+    "size": 3021,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7c371191365c3edd93ac241b040815888ef91389"
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a42fd7f5032d2cf72da2289c97be6dfd0e4a1aaf",
+    "size": 18341,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a42fd7f5032d2cf72da2289c97be6dfd0e4a1aaf"
+  },
+  {
+    "path": "TESTING.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8f2887060f4c8769a7ed2d89dea01fb73e328ec3",
+    "size": 8062,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8f2887060f4c8769a7ed2d89dea01fb73e328ec3"
+  },
+  {
+    "path": "THIRD_PARTY_AND_PRIVACY.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "034dee81cf0c583b96987b48eab1afcca195ba8d",
+    "size": 3019,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/034dee81cf0c583b96987b48eab1afcca195ba8d"
+  },
+  {
+    "path": "TRACK02_SUBMISSION.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9d17a5a27767e2afa161cae2508569414887c3fa",
+    "size": 3352,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/9d17a5a27767e2afa161cae2508569414887c3fa"
+  },
+  {
+    "path": "backend",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "dd6f5690e4409fb428dde6bdf3b533ca86f7a8a9",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/dd6f5690e4409fb428dde6bdf3b533ca86f7a8a9"
+  },
+  {
+    "path": "backend/.env.example",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b0dd7732b829d96e8f67da6bbc0414e523e101db",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/b0dd7732b829d96e8f67da6bbc0414e523e101db"
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/ai",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b4299a41e18b4183c84139c7401e3ca1249bc420",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/b4299a41e18b4183c84139c7401e3ca1249bc420"
+  },
+  {
+    "path": "backend/app/ai/__init__.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/ai/age_grounding.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "43d84ae4db44b87f922fd7eb0d3b26ed6a32e562",
+    "size": 4642,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/43d84ae4db44b87f922fd7eb0d3b26ed6a32e562"
+  },
+  {
+    "path": "backend/app/ai/confidence.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/ai/count_grounding.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "96b66efa61cf833118cf3c8ca98d954127df7d14",
+    "size": 6090,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/96b66efa61cf833118cf3c8ca98d954127df7d14"
+  },
+  {
+    "path": "backend/app/ai/extractor.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2f6c895e5233e6fa212878ed46316fda6e62052",
+    "size": 18525,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c2f6c895e5233e6fa212878ed46316fda6e62052"
+  },
+  {
+    "path": "backend/app/ai/group_grounding.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "afccdafb7b0fa2d489e969873c55dc00db9c6c22",
+    "size": 5817,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/afccdafb7b0fa2d489e969873c55dc00db9c6c22"
+  },
+  {
+    "path": "backend/app/ai/language.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a3a1a0c896bc32f7d342e28916a5a73f8f1c0c05",
+    "size": 1125,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a3a1a0c896bc32f7d342e28916a5a73f8f1c0c05"
+  },
+  {
+    "path": "backend/app/ai/narrative_grounding.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cf8467eb21ba1f2b3b04b1942a5ed570b564361e",
+    "size": 4707,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/cf8467eb21ba1f2b3b04b1942a5ed570b564361e"
+  },
+  {
+    "path": "backend/app/ai/performance.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a122bd438c8c5bd6cd534eda54b7e5112a8d56f4",
+    "size": 894,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a122bd438c8c5bd6cd534eda54b7e5112a8d56f4"
+  },
+  {
+    "path": "backend/app/ai/prompts.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ca5a90025720e1401c8914d5f4bc7f08be560d1",
+    "size": 1392,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3ca5a90025720e1401c8914d5f4bc7f08be560d1"
+  },
+  {
+    "path": "backend/app/ai/qvac_client.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "71f77e24024e94976cd01ff10d0c56d5149274a6",
+    "size": 741,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/71f77e24024e94976cd01ff10d0c56d5149274a6"
+  },
+  {
+    "path": "backend/app/api",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "087e95f8c342ba9e5a130dca04ed3fa53086d6a0",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/087e95f8c342ba9e5a130dca04ed3fa53086d6a0"
+  },
+  {
+    "path": "backend/app/api/__init__.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/api/equipment.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/api/hospitals.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/api/intelligence.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "de33dc7ec026ad6c9a3db1fea73482acc11a3d35",
+    "size": 4693,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/de33dc7ec026ad6c9a3db1fea73482acc11a3d35"
+  },
+  {
+    "path": "backend/app/api/media.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8126c678655b79386a0fed9903ad13fb956124ee",
+    "size": 890,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8126c678655b79386a0fed9903ad13fb956124ee"
+  },
+  {
+    "path": "backend/app/api/observations.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dea6369b34c0eb6aab934bdf83a0856547c0c77e",
+    "size": 2087,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/dea6369b34c0eb6aab934bdf83a0856547c0c77e"
+  },
+  {
+    "path": "backend/app/api/users.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8976334449dd97724fcba8d9297006d8ff0e146c",
+    "size": 2320,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8976334449dd97724fcba8d9297006d8ff0e146c"
+  },
+  {
+    "path": "backend/app/api/visits.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "18cb60ab180350b25ee5c06249bd2cc798bc0f4f",
+    "size": 22877,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/18cb60ab180350b25ee5c06249bd2cc798bc0f4f"
+  },
+  {
+    "path": "backend/app/db",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "61a85bb562e9955ff7f7a3235754d04c2add0bb0",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/61a85bb562e9955ff7f7a3235754d04c2add0bb0"
+  },
+  {
+    "path": "backend/app/db/database.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2cb010575804112c98f5bf3504c93d4281ae2987",
+    "size": 6820,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2cb010575804112c98f5bf3504c93d4281ae2987"
+  },
+  {
+    "path": "backend/app/db/hospitals.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "835990c090f638271e5cfb974c4d19e6057aae09",
+    "size": 9544,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/835990c090f638271e5cfb974c4d19e6057aae09"
+  },
+  {
+    "path": "backend/app/db/models.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/main.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6a88bc0912a4aea23a3a0060a6d011b72953b4b",
+    "size": 1086,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c6a88bc0912a4aea23a3a0060a6d011b72953b4b"
+  },
+  {
+    "path": "backend/app/schemas",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5d80bbc59a5712c624f62ada4d401c4020355c3f",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/5d80bbc59a5712c624f62ada4d401c4020355c3f"
+  },
+  {
+    "path": "backend/app/schemas/equipment.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81615fd04e1f5374a987be1f66a9fd132af4feeb",
+    "size": 960,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/81615fd04e1f5374a987be1f66a9fd132af4feeb"
+  },
+  {
+    "path": "backend/app/schemas/follow_up.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1e0ed67e73187c0d599121d734cd69508b2e6c6f",
+    "size": 284,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1e0ed67e73187c0d599121d734cd69508b2e6c6f"
+  },
+  {
+    "path": "backend/app/schemas/hospital.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/schemas/observation.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc2675f706a8c4e6d0f639d3df8bdbcd6be9681a",
+    "size": 2012,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fc2675f706a8c4e6d0f639d3df8bdbcd6be9681a"
+  },
+  {
+    "path": "backend/app/schemas/user.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b801b28789ea49399db830302f6801788518b0cb",
+    "size": 1492,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b801b28789ea49399db830302f6801788518b0cb"
+  },
+  {
+    "path": "backend/app/schemas/visit.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8070aee8e5cfd825ccf5de835f54c4a8cd97d88b",
+    "size": 2277,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8070aee8e5cfd825ccf5de835f54c4a8cd97d88b"
+  },
+  {
+    "path": "backend/app/services",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "39059dd794b3d728ecd7cf071fb5c1418023220e",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/39059dd794b3d728ecd7cf071fb5c1418023220e"
+  },
+  {
+    "path": "backend/app/services/duplicate_service.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/services/evidence.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "92a20ac5a9d355c23131891dc1a848832946c193",
+    "size": 5735,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/92a20ac5a9d355c23131891dc1a848832946c193"
+  },
+  {
+    "path": "backend/app/services/follow_up.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cdae08b8bce758c194e2c530f7d66089efaf7ad6",
+    "size": 1972,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/cdae08b8bce758c194e2c530f7d66089efaf7ad6"
+  },
+  {
+    "path": "backend/app/services/installation_year.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5bf8b5ae63d6b9fccce6231512740f20c201f2a9",
+    "size": 1462,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/5bf8b5ae63d6b9fccce6231512740f20c201f2a9"
+  },
+  {
+    "path": "backend/app/services/installed_base.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e1d24f68955f6c4d704b687dc14ab98c218be1d",
+    "size": 5956,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8e1d24f68955f6c4d704b687dc14ab98c218be1d"
+  },
+  {
+    "path": "backend/app/services/inventory_summary.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d922a4a53da6ed659bf712ab11ece198435db17f",
+    "size": 3191,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/d922a4a53da6ed659bf712ab11ece198435db17f"
+  },
+  {
+    "path": "backend/app/services/local_media.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "23e591003bf9512d3a8387b54adf4be733df903b",
+    "size": 8488,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/23e591003bf9512d3a8387b54adf4be733df903b"
+  },
+  {
+    "path": "backend/app/services/observation_service.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7977db9e536109cbe08b9d38b48eccac7d774308",
+    "size": 1683,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7977db9e536109cbe08b9d38b48eccac7d774308"
+  },
+  {
+    "path": "backend/app/services/opportunity_service.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "backend/app/services/reliability.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "89e4565c0f037ce412842b5bed944690ea216ee2",
+    "size": 2219,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/89e4565c0f037ce412842b5bed944690ea216ee2"
+  },
+  {
+    "path": "backend/app/services/training_feedback.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b9b674c78e80beecc915a2f692418b77bd1919bf",
+    "size": 1344,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b9b674c78e80beecc915a2f692418b77bd1919bf"
+  },
+  {
+    "path": "backend/app/services/visit_similarity.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bc1d6e97837271833b9f5226105931ba7f30fce5",
+    "size": 1998,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/bc1d6e97837271833b9f5226105931ba7f30fce5"
+  },
+  {
+    "path": "backend/requirements-stt.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a8be7551461eeee81b71e1ffa5cfaf5f50393efa",
+    "size": 198,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a8be7551461eeee81b71e1ffa5cfaf5f50393efa"
+  },
+  {
+    "path": "backend/requirements.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f382796d14753ab581f53a13e57d9b3ef6c00a7a",
+    "size": 718,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/f382796d14753ab581f53a13e57d9b3ef6c00a7a"
+  },
+  {
+    "path": "backend/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "73d93a701c872b2250626e34e448bf112399fbe6",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/73d93a701c872b2250626e34e448bf112399fbe6"
+  },
+  {
+    "path": "backend/scripts/adapt_aegis_pack.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "312c3c6f4f68f86e2b54e751e55ee165f19a0bab",
+    "size": 12954,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/312c3c6f4f68f86e2b54e751e55ee165f19a0bab"
+  },
+  {
+    "path": "backend/scripts/apply_aegis_review.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8283729f2b2b837395f5efda55a7cd1e3bd0f09b",
+    "size": 2952,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8283729f2b2b837395f5efda55a7cd1e3bd0f09b"
+  },
+  {
+    "path": "backend/scripts/audit_training_labels.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "914ad924e37c66d7ee7e4020ba6e017790e690d0",
+    "size": 3971,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/914ad924e37c66d7ee7e4020ba6e017790e690d0"
+  },
+  {
+    "path": "backend/scripts/auto_review_aegis.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ff74f5b9739d764c26bf50eff8419e677d77d1c1",
+    "size": 4090,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ff74f5b9739d764c26bf50eff8419e677d77d1c1"
+  },
+  {
+    "path": "backend/scripts/benchmark_multilingual.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3fc7b542f403e0c5492fe80580fc3a1029dad9d",
+    "size": 4788,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/f3fc7b542f403e0c5492fe80580fc3a1029dad9d"
+  },
+  {
+    "path": "backend/scripts/curate_aegis_dataset.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "08c2fa2eac31848851af00ad8ca43fba3ac9427a",
+    "size": 12138,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/08c2fa2eac31848851af00ad8ca43fba3ac9427a"
+  },
+  {
+    "path": "backend/scripts/evaluate_aegis_predictions.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6159a679c889bf0780d44f2fa70d370abd9be00f",
+    "size": 9193,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/6159a679c889bf0780d44f2fa70d370abd9be00f"
+  },
+  {
+    "path": "backend/scripts/evaluate_training_dataset.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2bf3a6f73c360f1eedb95c75a77f36ca8f6bc124",
+    "size": 4159,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2bf3a6f73c360f1eedb95c75a77f36ca8f6bc124"
+  },
+  {
+    "path": "backend/scripts/evaluate_user_narratives.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "96e08b0abba3c6c2a1c80abfa02cb01cc029fc1b",
+    "size": 1969,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/96e08b0abba3c6c2a1c80abfa02cb01cc029fc1b"
+  },
+  {
+    "path": "backend/scripts/export_training_feedback.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f564a15baf04074d676f35de5015d7e8974eb56e",
+    "size": 1141,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/f564a15baf04074d676f35de5015d7e8974eb56e"
+  },
+  {
+    "path": "backend/scripts/install_ocr_languages.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e32bf78f1bf64997c8ef75292a0aa208df111cf",
+    "size": 1840,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8e32bf78f1bf64997c8ef75292a0aa208df111cf"
+  },
+  {
+    "path": "backend/scripts/install_stt_model.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4585124e268af8610819e273371ef455dd8d2dfd",
+    "size": 2377,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4585124e268af8610819e273371ef455dd8d2dfd"
+  },
+  {
+    "path": "backend/scripts/make_aegis_review.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "66e2472e005a191f3f587df043303201ed41ae87",
+    "size": 5735,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/66e2472e005a191f3f587df043303201ed41ae87"
+  },
+  {
+    "path": "backend/scripts/prepare_aegis_clean_splits.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5fe958c48407c3a71b8ac33916dd1fc5e85a9a7a",
+    "size": 3149,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/5fe958c48407c3a71b8ac33916dd1fc5e85a9a7a"
+  },
+  {
+    "path": "backend/scripts/seed_demo.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6c9ffeabd84c96f11b74f661f48878cb7375c603",
+    "size": 3580,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/6c9ffeabd84c96f11b74f661f48878cb7375c603"
+  },
+  {
+    "path": "backend/scripts/seed_international.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c46cc1436a8906c87352f08f150e9648369b7831",
+    "size": 4026,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c46cc1436a8906c87352f08f150e9648369b7831"
+  },
+  {
+    "path": "backend/scripts/smoke_final_ai.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "96ab5bd6e6b3726f2eed69be23233d5a84dffcdd",
+    "size": 2041,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/96ab5bd6e6b3726f2eed69be23233d5a84dffcdd"
+  },
+  {
+    "path": "backend/scripts/smoke_system.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e168a8d12c9a4ce01540bba1749c3da3253f1fd4",
+    "size": 6327,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e168a8d12c9a4ce01540bba1749c3da3253f1fd4"
+  },
+  {
+    "path": "backend/tests",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4af376aab1e4447a4ec56e469aa43e6a38f6b566",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/4af376aab1e4447a4ec56e469aa43e6a38f6b566"
+  },
+  {
+    "path": "backend/tests/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d1609b3ef16c66ef91ae6727fd750b238c688225",
+    "size": 1655,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/d1609b3ef16c66ef91ae6727fd750b238c688225"
+  },
+  {
+    "path": "backend/tests/benchmark_local.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8a13dd3591e57281338ddabb76b3cbe5fc1b4939",
+    "size": 3543,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8a13dd3591e57281338ddabb76b3cbe5fc1b4939"
+  },
+  {
+    "path": "backend/tests/fixtures",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ac932cb24f373c1c6161c9d794d68d6a5bd01e81",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/ac932cb24f373c1c6161c9d794d68d6a5bd01e81"
+  },
+  {
+    "path": "backend/tests/fixtures/demo_final_es.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2c0f8b992a994cac3c275129b325aef338fa9689",
+    "size": 787,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2c0f8b992a994cac3c275129b325aef338fa9689"
+  },
+  {
+    "path": "backend/tests/fixtures/long_inventory.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "43a8196e725177144401228a7c2d563516fd0ae6",
+    "size": 972,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/43a8196e725177144401228a7c2d563516fd0ae6"
+  },
+  {
+    "path": "backend/tests/fixtures/uncertain_inventory_es.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a360a037eb0407a18f7c55e7902fe3fc220a2e66",
+    "size": 1041,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a360a037eb0407a18f7c55e7902fe3fc220a2e66"
+  },
+  {
+    "path": "backend/tests/test_aegis_curation.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1f60a650795fe95957498ae9eedac1ac1665c302",
+    "size": 3980,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1f60a650795fe95957498ae9eedac1ac1665c302"
+  },
+  {
+    "path": "backend/tests/test_age_grounding.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3a47810672b57ae7bf64cfa9c83f9e9f1b16a8dd",
+    "size": 2477,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3a47810672b57ae7bf64cfa9c83f9e9f1b16a8dd"
+  },
+  {
+    "path": "backend/tests/test_catalog_geography.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4c5e4e0445c53b4799e462cc8548206dfe4bc4dd",
+    "size": 820,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4c5e4e0445c53b4799e462cc8548206dfe4bc4dd"
+  },
+  {
+    "path": "backend/tests/test_contextual_follow_up.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5873c786735da39addcf45ed41535e35c66f9363",
+    "size": 2161,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/5873c786735da39addcf45ed41535e35c66f9363"
+  },
+  {
+    "path": "backend/tests/test_dataset_adaptation.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "08c5ff7ef729ab922713171f48e22c7276f0806f",
+    "size": 3728,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/08c5ff7ef729ab922713171f48e22c7276f0806f"
+  },
+  {
+    "path": "backend/tests/test_extraction_regressions.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6b2a694f80e460bd6cbf735deb95ce3e0c191330",
+    "size": 10119,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/6b2a694f80e460bd6cbf735deb95ce3e0c191330"
+  },
+  {
+    "path": "backend/tests/test_installed_base.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7c63ba0a1a76bbd02cf4ddaef352e95bfdf2c1dc",
+    "size": 1978,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7c63ba0a1a76bbd02cf4ddaef352e95bfdf2c1dc"
+  },
+  {
+    "path": "backend/tests/test_intelligence.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cd4c06d865ab222baec4dcfa53b668663dd16598",
+    "size": 1859,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/cd4c06d865ab222baec4dcfa53b668663dd16598"
+  },
+  {
+    "path": "backend/tests/test_inventory_summary.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "53bab588e99cb1457d6cc41e1669c19cfa5e3a67",
+    "size": 2082,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/53bab588e99cb1457d6cc41e1669c19cfa5e3a67"
+  },
+  {
+    "path": "backend/tests/test_local_media.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b98fb64008a83cb42c3d7227a9081aa0b06efeb6",
+    "size": 3586,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b98fb64008a83cb42c3d7227a9081aa0b06efeb6"
+  },
+  {
+    "path": "backend/tests/test_narrative_grounding.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4fd1aead5a3dd4a80a93e7dc090780108bbf4ae4",
+    "size": 2620,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4fd1aead5a3dd4a80a93e7dc090780108bbf4ae4"
+  },
+  {
+    "path": "backend/tests/test_observation_analysis.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "614e73130f9e534edb7809ded0ae5b65578b2fb3",
+    "size": 3922,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/614e73130f9e534edb7809ded0ae5b65578b2fb3"
+  },
+  {
+    "path": "backend/tests/test_phase2_workflows.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "30d4a1bf5513b5b89106bc91ac354a9d7c46a6a1",
+    "size": 6204,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/30d4a1bf5513b5b89106bc91ac354a9d7c46a6a1"
+  },
+  {
+    "path": "backend/tests/test_reliability.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60c4a185ee89357642da80b53e385a6318a2ded3",
+    "size": 1350,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/60c4a185ee89357642da80b53e385a6318a2ded3"
+  },
+  {
+    "path": "backend/tests/test_seed.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "438c72f9f5bf1ff5a83fee788da8f305b1f953ab",
+    "size": 830,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/438c72f9f5bf1ff5a83fee788da8f305b1f953ab"
+  },
+  {
+    "path": "backend/tests/test_storage.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58fa11b4fe1e39016feab6651d217139a4f9fe34",
+    "size": 8256,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/58fa11b4fe1e39016feab6651d217139a4f9fe34"
+  },
+  {
+    "path": "backend/tests/test_training_feedback.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b1dff0d89183ac596af687d6371c09e28c08f662",
+    "size": 1442,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b1dff0d89183ac596af687d6371c09e28c08f662"
+  },
+  {
+    "path": "backend/tests/test_users.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4087d44fda6fe91dc8f815a88139b73b79915811",
+    "size": 2806,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4087d44fda6fe91dc8f815a88139b73b79915811"
+  },
+  {
+    "path": "backend/tests/test_visit_similarity.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2771d1bf7e5750358c32fbb7a2613f3a65c13438",
+    "size": 1199,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2771d1bf7e5750358c32fbb7a2613f3a65c13438"
+  },
+  {
+    "path": "backend/training",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2c63e28f3f5c8051a57d9be915ac8936a3351147",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/2c63e28f3f5c8051a57d9be915ac8936a3351147"
+  },
+  {
+    "path": "backend/training/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a9d14c25e5651de54233d946a632f57d5d97fc34",
+    "size": 2039,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a9d14c25e5651de54233d946a632f57d5d97fc34"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5fd5ee01682b0ee1d62f9ee1a61c674de6499c84",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/5fd5ee01682b0ee1d62f9ee1a61c674de6499c84"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "88f9580af30ed5b0eddcc110c7c456bbb9a11465",
+    "size": 707,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/88f9580af30ed5b0eddcc110c7c456bbb9a11465"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/review_application_report.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aab415c7b938e0bf93a4f78126f98a38c20638ef",
+    "size": 48700,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/aab415c7b938e0bf93a4f78126f98a38c20638ef"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/test_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b8125ee42297e06d68c1625f53ff04642f85bc98",
+    "size": 5470,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b8125ee42297e06d68c1625f53ff04642f85bc98"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/test_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "20357d0c19bd9fa3dfe22678b47c1e3746a0dbd4",
+    "size": 14209,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/20357d0c19bd9fa3dfe22678b47c1e3746a0dbd4"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/train_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "51ab787cabd50d22b6ae18565f8b3f8fc3d7e7b3",
+    "size": 22702,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/51ab787cabd50d22b6ae18565f8b3f8fc3d7e7b3"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/train_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6b11a2ee738512ba77dfb7b4003f7fd20e85e4c8",
+    "size": 61860,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/6b11a2ee738512ba77dfb7b4003f7fd20e85e4c8"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/validation_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4528bf93fff670b22a0a00cb79ad8c6c1d35161e",
+    "size": 8095,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4528bf93fff670b22a0a00cb79ad8c6c1d35161e"
+  },
+  {
+    "path": "backend/training/aegis_260_auto_reviewed/validation_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e1b4a1d502dec3372e2fcc02f67c1bc8dcb92dc3",
+    "size": 20866,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e1b4a1d502dec3372e2fcc02f67c1bc8dcb92dc3"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1f3cfd39d488ec7b7d89b72bd241af54ec119a76",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/1f3cfd39d488ec7b7d89b72bd241af54ec119a76"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/REVIEW_INSTRUCTIONS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "87c46c918e0ac6fbd6386d68203b10113f0e67bf",
+    "size": 1827,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/87c46c918e0ac6fbd6386d68203b10113f0e67bf"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/automatic-review-decisions.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c171a0f0dae41ddb186dd05e8d4c6794b165db06",
+    "size": 55704,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c171a0f0dae41ddb186dd05e8d4c6794b165db06"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/deduplication_report.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2853e88a94f1cc5bf22e99fe4bc3f1868964bef8",
+    "size": 3327,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2853e88a94f1cc5bf22e99fe4bc3f1868964bef8"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/review.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f642fb060967b0d147a8316f15cb8c8cdcbc35c2",
+    "size": 821707,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/f642fb060967b0d147a8316f15cb8c8cdcbc35c2"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/test_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d50197a7fcd7e071d5b144f96832f5859c8ee252",
+    "size": 40871,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/d50197a7fcd7e071d5b144f96832f5859c8ee252"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/test_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4593d34e27ba143bcddf2fec83503be0a717d161",
+    "size": 131925,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4593d34e27ba143bcddf2fec83503be0a717d161"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/train_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "10a0c5aaf1f9fa77bb6819ce08553f233d842cb4",
+    "size": 183610,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/10a0c5aaf1f9fa77bb6819ce08553f233d842cb4"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/train_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fb60d8f3dc25e3b402e4c2e7c4f22dac5e29356b",
+    "size": 599751,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fb60d8f3dc25e3b402e4c2e7c4f22dac5e29356b"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/validation_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2a812e1b7b8312cf9204f5876b288ca8be59e312",
+    "size": 40380,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2a812e1b7b8312cf9204f5876b288ca8be59e312"
+  },
+  {
+    "path": "backend/training/aegis_260_production_clean/validation_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b2eb61787ecd8aee03a78313028b24bf375fef15",
+    "size": 126805,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b2eb61787ecd8aee03a78313028b24bf375fef15"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "066438dff001da9811457d32751a883be67dfd4b",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/066438dff001da9811457d32751a883be67dfd4b"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "524ac814ec68a56021dcbd169bbb75f0b26c8e73",
+    "size": 6262,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/524ac814ec68a56021dcbd169bbb75f0b26c8e73"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/REVIEW.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60d50b7224a9a59263474bfdfe7e4ae055335bed",
+    "size": 11213,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/60d50b7224a9a59263474bfdfe7e4ae055335bed"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/adaptation_report.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aeb8ed7561d489693b12c627c8680bfe16e85480",
+    "size": 4085,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/aeb8ed7561d489693b12c627c8680bfe16e85480"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/production_schema.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ea284c99df488d51a42a0555a732ccc23712bcde",
+    "size": 3787,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ea284c99df488d51a42a0555a732ccc23712bcde"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/test_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bc513ec779c1c8c893aec533717eba3c467846c4",
+    "size": 71134,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/bc513ec779c1c8c893aec533717eba3c467846c4"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/test_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b613ca05bba9bc99fc1ac69e5b71f8b2b682153c",
+    "size": 133460,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b613ca05bba9bc99fc1ac69e5b71f8b2b682153c"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/train_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "543f0190d0fdce7e15de1f8d7896662434042a56",
+    "size": 338124,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/543f0190d0fdce7e15de1f8d7896662434042a56"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/train_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc86cf39c80afc3ffca30992ef3e9e98ef9b8546",
+    "size": 651021,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fc86cf39c80afc3ffca30992ef3e9e98ef9b8546"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/validation_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "34e04e0aea4d9dfbd7cdcada8ccaa092acacce2f",
+    "size": 70098,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/34e04e0aea4d9dfbd7cdcada8ccaa092acacce2f"
+  },
+  {
+    "path": "backend/training/aegis_260_production_draft/validation_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b2eb61787ecd8aee03a78313028b24bf375fef15",
+    "size": 126805,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b2eb61787ecd8aee03a78313028b24bf375fef15"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3785d248d6d90e87a6892b43006995df3c3bb503",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/3785d248d6d90e87a6892b43006995df3c3bb503"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa44a2d295273229a3fc65e4d44c3a5e4e6535d6",
+    "size": 3507,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fa44a2d295273229a3fc65e4d44c3a5e4e6535d6"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/all_reviewed_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4e5af8e46bf34c008ef235bf91547d353270ed3e",
+    "size": 2259336,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4e5af8e46bf34c008ef235bf91547d353270ed3e"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/decisions.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0cc370c54f32710fd9f0e190192d678159e8eb5c",
+    "size": 151897,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/0cc370c54f32710fd9f0e190192d678159e8eb5c"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/excluded_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "89f5772e412132c688d84594a0c8dd32093522b3",
+    "size": 1716895,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/89f5772e412132c688d84594a0c8dd32093522b3"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/report.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7b2892af290b87e3fe5ce4ead0e8495d58f01cfe",
+    "size": 1142,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7b2892af290b87e3fe5ce4ead0e8495d58f01cfe"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/review.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ec74b0ae4cd7ee89993b47477fb77ba65d2c5305",
+    "size": 911093,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ec74b0ae4cd7ee89993b47477fb77ba65d2c5305"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/test_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b41af1cb980c7bcc071ce5ef2d536cc3de8f62bf",
+    "size": 45323,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b41af1cb980c7bcc071ce5ef2d536cc3de8f62bf"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/test_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9ed943f58238b0883c54f0c5b5604124944e444a",
+    "size": 74189,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/9ed943f58238b0883c54f0c5b5604124944e444a"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/train_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecca388580646941a481e8f38f5ff36c329dfee8",
+    "size": 221522,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ecca388580646941a481e8f38f5ff36c329dfee8"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/train_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "10cea16fbb6d3f91f5beac154d22e65b4f95ad03",
+    "size": 364509,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/10cea16fbb6d3f91f5beac154d22e65b4f95ad03"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/validation_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1dbec54c8a3b0b54441179b0444a62a3184c9984",
+    "size": 53699,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1dbec54c8a3b0b54441179b0444a62a3184c9984"
+  },
+  {
+    "path": "backend/training/aegis_v1_v2_reviewed/validation_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2eb73fcd5731bcdbe1f5f6362982e89a201bd92",
+    "size": 103743,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c2eb73fcd5731bcdbe1f5f6362982e89a201bd92"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3e8f47f645887d4521a24143fb010d661176f15b",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/3e8f47f645887d4521a24143fb010d661176f15b"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/REVIEW.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ca4130aeb9c91a4718c276aff94affffefe5a9af",
+    "size": 15199,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ca4130aeb9c91a4718c276aff94affffefe5a9af"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/adaptation_report.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e0dce3a767e8a13e227df472f73dc3595ad2458",
+    "size": 1151,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7e0dce3a767e8a13e227df472f73dc3595ad2458"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/production_schema.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ea284c99df488d51a42a0555a732ccc23712bcde",
+    "size": 3787,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ea284c99df488d51a42a0555a732ccc23712bcde"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/test_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f40ca60285d2efaa88fe2de38b2728286b965f17",
+    "size": 87539,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/f40ca60285d2efaa88fe2de38b2728286b965f17"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/test_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8ac50e53bb259693ad4d050cd3a2d4aaae82cf27",
+    "size": 179179,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8ac50e53bb259693ad4d050cd3a2d4aaae82cf27"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/train_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dfb70244545473c139ab0e3a189f004a6f50433f",
+    "size": 398952,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/dfb70244545473c139ab0e3a189f004a6f50433f"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/train_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7960aa62ff751d9d42a326f202e616b191f2d1ad",
+    "size": 791757,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7960aa62ff751d9d42a326f202e616b191f2d1ad"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/validation_chat.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "67e6e7afbbb52d86b9cd4a46cfb219217ec96692",
+    "size": 88516,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/67e6e7afbbb52d86b9cd4a46cfb219217ec96692"
+  },
+  {
+    "path": "backend/training/aegis_v2_300_production_draft/validation_raw.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed9750342825140c854ff2891a29e4c882a62592",
+    "size": 184476,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ed9750342825140c854ff2891a29e4c882a62592"
+  },
+  {
+    "path": "backend/training/inventory_extraction_es_draft.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "74d8d998333fe2ffd0937d26832eb3d0bf73e93d",
+    "size": 7083,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/74d8d998333fe2ffd0937d26832eb3d0bf73e93d"
+  },
+  {
+    "path": "benchmarks",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cdb6985f2ae8820f2f35ffd0b06511687b2d1abd",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/cdb6985f2ae8820f2f35ffd0b06511687b2d1abd"
+  },
+  {
+    "path": "benchmarks/FINAL_READINESS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7bf63431c085f212b2af76e3735cb19b1ec002e7",
+    "size": 8327,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7bf63431c085f212b2af76e3735cb19b1ec002e7"
+  },
+  {
+    "path": "benchmarks/results",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7a43e0aa11927c57858d58c82d6ab53be57d6476",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/7a43e0aa11927c57858d58c82d6ab53be57d6476"
+  },
+  {
+    "path": "benchmarks/results/final-ai-complex-compact.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3979566d665c14ec9c1375ccc7374f366c0dbd42",
+    "size": 236,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3979566d665c14ec9c1375ccc7374f366c0dbd42"
+  },
+  {
+    "path": "benchmarks/results/final-ai-complex-complete.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "98ef99dc9e9a9046a1812fd1a46434b97a0a93b4",
+    "size": 238,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/98ef99dc9e9a9046a1812fd1a46434b97a0a93b4"
+  },
+  {
+    "path": "benchmarks/results/final-ai-complex-grounded.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "abf88dbfa8798d48752cbdaf049501c3d528b92b",
+    "size": 9983,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/abf88dbfa8798d48752cbdaf049501c3d528b92b"
+  },
+  {
+    "path": "benchmarks/results/final-ai-complex-schema.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2966741e6ddd837bee615c63a49f0ca604e09987",
+    "size": 238,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2966741e6ddd837bee615c63a49f0ca604e09987"
+  },
+  {
+    "path": "benchmarks/results/final-ai-complex-spanish.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a47f5c08462f5b2c271b716a8ddf1ccd06ec0869",
+    "size": 10837,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a47f5c08462f5b2c271b716a8ddf1ccd06ec0869"
+  },
+  {
+    "path": "benchmarks/results/final-ai-reconciled.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "75cb8ebd812bc49be3b0c0f5d638f921d9c7a307",
+    "size": 10366,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/75cb8ebd812bc49be3b0c0f5d638f921d9c7a307"
+  },
+  {
+    "path": "benchmarks/results/final-ai-smoke.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ea25e80d40ec6fb2f80fe8d2b77f72d5f911763f",
+    "size": 3840,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ea25e80d40ec6fb2f80fe8d2b77f72d5f911763f"
+  },
+  {
+    "path": "benchmarks/results/final-label-audit.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3aea0082589727d9139e8dc36a44e9612aea2156",
+    "size": 24904,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3aea0082589727d9139e8dc36a44e9612aea2156"
+  },
+  {
+    "path": "benchmarks/results/hardware.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "57636ac8458d31d6cf066575df2c1bbe428666e9",
+    "size": 1616,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/57636ac8458d31d6cf066575df2c1bbe428666e9"
+  },
+  {
+    "path": "benchmarks/results/inference.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69f5e5de79c2e72f9eeea410818ea1cbf4ddb0a",
+    "size": 26126,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69f5e5de79c2e72f9eeea410818ea1cbf4ddb0a"
+  },
+  {
+    "path": "benchmarks/results/medgemma-baseline.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4ef2b122ecdb397890ffbc8c894a0a1153766167",
+    "size": 7685,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4ef2b122ecdb397890ffbc8c894a0a1153766167"
+  },
+  {
+    "path": "benchmarks/results/medpsy-baseline.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9d68a5e736513b6c4e30ed022380c05588123f66",
+    "size": 29540,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/9d68a5e736513b6c4e30ed022380c05588123f66"
+  },
+  {
+    "path": "benchmarks/results/multilingual.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "792cce210db8a45d98fa8670f73bcda284f44a3c",
+    "size": 38369,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/792cce210db8a45d98fa8670f73bcda284f44a3c"
+  },
+  {
+    "path": "benchmarks/results/system-smoke.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "428f8aa368ecc2957995b5230b6fc0fecc2a1b76",
+    "size": 5710,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/428f8aa368ecc2957995b5230b6fc0fecc2a1b76"
+  },
+  {
+    "path": "benchmarks/results/training-eval-initial",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1a4680f068933ada3d3ebcd7768fce7c5a540ecf",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/1a4680f068933ada3d3ebcd7768fce7c5a540ecf"
+  },
+  {
+    "path": "benchmarks/results/training-eval-initial/001-central-istmo-001.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e9b3fa76617d0211b8212bd379c98eca6228e60c",
+    "size": 2617,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e9b3fa76617d0211b8212bd379c98eca6228e60c"
+  },
+  {
+    "path": "benchmarks/results/training-eval-initial/002-santa-maria-002.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "579f4d81b34726fe5e62fe5f61b85066af9286ac",
+    "size": 345,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/579f4d81b34726fe5e62fe5f61b85066af9286ac"
+  },
+  {
+    "path": "benchmarks/results/training-eval-initial/summary.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "72809ff384df896b1ad758471fa645bd8cec17e4",
+    "size": 641,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/72809ff384df896b1ad758471fa645bd8cec17e4"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2e95059014998b4454b7601ae1b5ec6a2b61349a",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/2e95059014998b4454b7601ae1b5ec6a2b61349a"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-01.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4242f973b2de02145502372b648958096608a815",
+    "size": 3598,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4242f973b2de02145502372b648958096608a815"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-02.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "54005e68ed441e9386b4c3c4570a810fc432af6c",
+    "size": 1339,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/54005e68ed441e9386b4c3c4570a810fc432af6c"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-03.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fec77a6ddd65746fa00bc39b7b77a1d15d6aed2a",
+    "size": 3879,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fec77a6ddd65746fa00bc39b7b77a1d15d6aed2a"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-04.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "530648385e2c2948dba7454e19205b3fffda28ab",
+    "size": 1287,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/530648385e2c2948dba7454e19205b3fffda28ab"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-05.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7348cbdc4548c4c63bf35d26ebef2f65cd1f33c3",
+    "size": 3392,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7348cbdc4548c4c63bf35d26ebef2f65cd1f33c3"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-06.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3f2472d34193f32e78516b90e2272839f45d05e3",
+    "size": 1245,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3f2472d34193f32e78516b90e2272839f45d05e3"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-07.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f8a2f5ff485be08d63de1a8740575d7d92af4602",
+    "size": 5380,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/f8a2f5ff485be08d63de1a8740575d7d92af4602"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-08.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "15e32861d41f34d34b0051c6a8994a06ee78b5d4",
+    "size": 1198,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/15e32861d41f34d34b0051c6a8994a06ee78b5d4"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-09.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1fc211a2c0218afc3841c425777b9a057b843922",
+    "size": 4197,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1fc211a2c0218afc3841c425777b9a057b843922"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/case-10.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b5681d96c90e683e4f855611ae0e61d81e871c59",
+    "size": 1422,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b5681d96c90e683e4f855611ae0e61d81e871c59"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910-repeat/metrics.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "63f58306ffba8ead5285b213b691ea59a75022a8",
+    "size": 3072,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/63f58306ffba8ead5285b213b691ea59a75022a8"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d813ba2d16fe8c28edee99d3d46b5258311fbd0c",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/d813ba2d16fe8c28edee99d3d46b5258311fbd0c"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/REPORT.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2bcd498466dffac2c16838d0d9bccdb1ead80c10",
+    "size": 4647,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2bcd498466dffac2c16838d0d9bccdb1ead80c10"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-01.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c4f9ac724521285afc7d624e6ce3a9e51ee0365f",
+    "size": 3598,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c4f9ac724521285afc7d624e6ce3a9e51ee0365f"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-02.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "06dd7480df6f69c0caee6e03084e51af8052b1d6",
+    "size": 1255,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/06dd7480df6f69c0caee6e03084e51af8052b1d6"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-03.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "872ac6106051dd513cf47503c01729b98785fceb",
+    "size": 3879,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/872ac6106051dd513cf47503c01729b98785fceb"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-04.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "72753bdff4c8b28742570ab995ca01d986d7ee02",
+    "size": 1203,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/72753bdff4c8b28742570ab995ca01d986d7ee02"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-05.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9bc46f6d65057504789e77c600908d10a8055d0f",
+    "size": 3392,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/9bc46f6d65057504789e77c600908d10a8055d0f"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-06.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac62796d1919bf0bd73053ac670ae635a21f8078",
+    "size": 1161,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ac62796d1919bf0bd73053ac670ae635a21f8078"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-07.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "066da0c251fd9e22f4a69af4c99bd6b19164874e",
+    "size": 5379,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/066da0c251fd9e22f4a69af4c99bd6b19164874e"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-08.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6d84f0d032ada97550a9860a37b67c21f0b9f544",
+    "size": 1114,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/6d84f0d032ada97550a9860a37b67c21f0b9f544"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-09.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b06e2e309a5069d1647020c36c67bbc03de6c7cc",
+    "size": 4197,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b06e2e309a5069d1647020c36c67bbc03de6c7cc"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/case-10.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7526970499e576bb6d872cc2f65a83fe092537e7",
+    "size": 1338,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7526970499e576bb6d872cc2f65a83fe092537e7"
+  },
+  {
+    "path": "benchmarks/results/user-narratives-20260910/metrics.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce6b2d92d74414424aefa122d8eaf39f0c120e60",
+    "size": 3067,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ce6b2d92d74414424aefa122d8eaf39f0c120e60"
+  },
+  {
+    "path": "frontend",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8a2cc93403379d5ce99f7837d7420059f290bf18",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/8a2cc93403379d5ce99f7837d7420059f290bf18"
+  },
+  {
+    "path": "frontend/.env.example",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad82eb26012defab5c6ba9f81ce7f39bf17fdf01",
+    "size": 35,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ad82eb26012defab5c6ba9f81ce7f39bf17fdf01"
+  },
+  {
+    "path": "frontend/FRONTEND_REVIEW.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e15cd62c5e32c9c4ad0f0166f95e054ae2a588a4",
+    "size": 7091,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e15cd62c5e32c9c4ad0f0166f95e054ae2a588a4"
+  },
+  {
+    "path": "frontend/eslint.config.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ef614d25c11dd1e89a8df0b2eaf934170b44daa8",
+    "size": 591,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ef614d25c11dd1e89a8df0b2eaf934170b44daa8"
+  },
+  {
+    "path": "frontend/index.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aa3f7cd9086bd989c62860be7945f92a40f1463e",
+    "size": 418,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/aa3f7cd9086bd989c62860be7945f92a40f1463e"
+  },
+  {
+    "path": "frontend/package-lock.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "21da9f4dde160f45cac13978774a05bcb5055a74",
+    "size": 118146,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/21da9f4dde160f45cac13978774a05bcb5055a74"
+  },
+  {
+    "path": "frontend/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "53de4c87c177723c02837c94d24c46474c90b912",
+    "size": 962,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/53de4c87c177723c02837c94d24c46474c90b912"
+  },
+  {
+    "path": "frontend/public",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0c163cda0a560b74e18110e781f77cd3e66b76c5",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/0c163cda0a560b74e18110e781f77cd3e66b76c5"
+  },
+  {
+    "path": "frontend/public/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/public/aegis-logo.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "50e6822253c1b8f55b7854b45044398fd4f25772",
+    "size": 1391921,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/50e6822253c1b8f55b7854b45044398fd4f25772"
+  },
+  {
+    "path": "frontend/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b9bf99f95ae2aaad12c7b5351fc103a83b6f6a22",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/b9bf99f95ae2aaad12c7b5351fc103a83b6f6a22"
+  },
+  {
+    "path": "frontend/src/App.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7114d4c74751fcf09f8c112e4b70098c25ec6967",
+    "size": 253,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7114d4c74751fcf09f8c112e4b70098c25ec6967"
+  },
+  {
+    "path": "frontend/src/assets",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/d564d0bc3dd917926892c55e3706cc116d5b165e"
+  },
+  {
+    "path": "frontend/src/assets/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/components",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "03260159b310562dd62ce496a44e9384fbc1e464",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/03260159b310562dd62ce496a44e9384fbc1e464"
+  },
+  {
+    "path": "frontend/src/components/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/components/AegisBrand.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c97ae5f4b886a7ca9ce48a84942d6cab10f5b64a",
+    "size": 235,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c97ae5f4b886a7ca9ce48a84942d6cab10f5b64a"
+  },
+  {
+    "path": "frontend/src/components/AppLayout.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cb9ca86131583fc8531cb4934110e13451da56e6",
+    "size": 5090,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/cb9ca86131583fc8531cb4934110e13451da56e6"
+  },
+  {
+    "path": "frontend/src/components/AssetAudit.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "49ff69a19fe903e012ff6b4aa07f302d984db327",
+    "size": 910,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/49ff69a19fe903e012ff6b4aa07f302d984db327"
+  },
+  {
+    "path": "frontend/src/components/FollowUp.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "855a74992b1715f3a98cba734578f8dbd7147cc1",
+    "size": 4751,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/855a74992b1715f3a98cba734578f8dbd7147cc1"
+  },
+  {
+    "path": "frontend/src/components/HospitalMap.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ee06866ba985eda9595cda176f04181dfa945986",
+    "size": 3457,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ee06866ba985eda9595cda176f04181dfa945986"
+  },
+  {
+    "path": "frontend/src/components/InformationReviewQueue.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2fb740d19d0cab58911dc3cfd12d41dced2ebf76",
+    "size": 3962,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2fb740d19d0cab58911dc3cfd12d41dced2ebf76"
+  },
+  {
+    "path": "frontend/src/components/LocalStatus.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e75e818755fdffbd36b7bed9a6601587c7a63344",
+    "size": 2037,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e75e818755fdffbd36b7bed9a6601587c7a63344"
+  },
+  {
+    "path": "frontend/src/components/LocalVoiceCapture.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d1f2002e713ede54b1d13b125d4bbd27744b1be3",
+    "size": 4108,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/d1f2002e713ede54b1d13b125d4bbd27744b1be3"
+  },
+  {
+    "path": "frontend/src/components/ObservationExplorer.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "013077b836e4de446bc100610e2d2de012f0f828",
+    "size": 6489,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/013077b836e4de446bc100610e2d2de012f0f828"
+  },
+  {
+    "path": "frontend/src/components/ObservationHistory.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "454c97916b08192e3022f6c443481681f7a3990a",
+    "size": 1703,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/454c97916b08192e3022f6c443481681f7a3990a"
+  },
+  {
+    "path": "frontend/src/components/PhotoOcr.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c46aa5a78452a248ef2991270bdf07a92db67888",
+    "size": 2614,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c46aa5a78452a248ef2991270bdf07a92db67888"
+  },
+  {
+    "path": "frontend/src/components/SupervisorLayout.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ecf7155213f5c4b1ed3445b33c306675fdc82df2",
+    "size": 8182,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ecf7155213f5c4b1ed3445b33c306675fdc82df2"
+  },
+  {
+    "path": "frontend/src/components/VisitContext.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b8ccb0f89cc14891c30bb5c3b93803af2026feea",
+    "size": 1261,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b8ccb0f89cc14891c30bb5c3b93803af2026feea"
+  },
+  {
+    "path": "frontend/src/data",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9dd40bca501a6238432d5865cde2c614857d84b5",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/9dd40bca501a6238432d5865cde2c614857d84b5"
+  },
+  {
+    "path": "frontend/src/data/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/data/analyticsCopy.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b1005c98affbc85a1aceae853bdf15387e76b4c9",
+    "size": 3652,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b1005c98affbc85a1aceae853bdf15387e76b4c9"
+  },
+  {
+    "path": "frontend/src/data/appearance.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ddbc4f15d3d43291c76768f5188582b3ae02d7bb",
+    "size": 364,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ddbc4f15d3d43291c76768f5188582b3ae02d7bb"
+  },
+  {
+    "path": "frontend/src/data/demoExtraction.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b3b70a9ce972cd88d3242c6b24c691001c90888a",
+    "size": 2283,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b3b70a9ce972cd88d3242c6b24c691001c90888a"
+  },
+  {
+    "path": "frontend/src/data/equipmentMatching.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "027cb7aae220c92a24b9a77e4600d8301a779626",
+    "size": 3459,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/027cb7aae220c92a24b9a77e4600d8301a779626"
+  },
+  {
+    "path": "frontend/src/data/followUp.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "901e75da477a5ceb0052c1005961304c66a96b4c",
+    "size": 2471,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/901e75da477a5ceb0052c1005961304c66a96b4c"
+  },
+  {
+    "path": "frontend/src/data/hospitalOverview.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "370eeab80d0620295e9e58f406df2b715866ba74",
+    "size": 1274,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/370eeab80d0620295e9e58f406df2b715866ba74"
+  },
+  {
+    "path": "frontend/src/data/hospitalResolution.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a529eb68360cf8272d3d7e720c89732698c2fc86",
+    "size": 684,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a529eb68360cf8272d3d7e720c89732698c2fc86"
+  },
+  {
+    "path": "frontend/src/data/hospitals.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "641e95a6b040f86c013a8c1d21c8c099c77b290e",
+    "size": 643,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/641e95a6b040f86c013a8c1d21c8c099c77b290e"
+  },
+  {
+    "path": "frontend/src/data/inventorySummary.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0a765c078efd27893d8e845fcc456ae225b93dd4",
+    "size": 647,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/0a765c078efd27893d8e845fcc456ae225b93dd4"
+  },
+  {
+    "path": "frontend/src/data/language.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "52858872585402e54dbbeb8b0ff601228b6ae23c",
+    "size": 2688,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/52858872585402e54dbbeb8b0ff601228b6ae23c"
+  },
+  {
+    "path": "frontend/src/data/observationApi.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e8bc180831ddb6493dad84bb2c055eddab66912b",
+    "size": 8057,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e8bc180831ddb6493dad84bb2c055eddab66912b"
+  },
+  {
+    "path": "frontend/src/data/observationExplorer.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ada7ffb0cbf435e2d706911c254fa51c10e7d61",
+    "size": 1711,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3ada7ffb0cbf435e2d706911c254fa51c10e7d61"
+  },
+  {
+    "path": "frontend/src/data/panamaBoundary.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "eb03ab45ae76649ea9d8e919de6bf229194e9a99",
+    "size": 43840,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/eb03ab45ae76649ea9d8e919de6bf229194e9a99"
+  },
+  {
+    "path": "frontend/src/data/pcmAudio.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2455526621d354af8167bbec2b4731635d12d5df",
+    "size": 1268,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2455526621d354af8167bbec2b4731635d12d5df"
+  },
+  {
+    "path": "frontend/src/data/reviewCopy.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad4515e06a48fa6c61e95c573f74ace810e054a8",
+    "size": 1462,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ad4515e06a48fa6c61e95c573f74ace810e054a8"
+  },
+  {
+    "path": "frontend/src/data/storageApi.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "affbf5140c041b075b1a107feec5dadc13e93de2",
+    "size": 2588,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/affbf5140c041b075b1a107feec5dadc13e93de2"
+  },
+  {
+    "path": "frontend/src/data/uiLanguage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "eb6c709527be1f84dc8503b755e1a161ba622986",
+    "size": 18458,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/eb6c709527be1f84dc8503b755e1a161ba622986"
+  },
+  {
+    "path": "frontend/src/data/useVisits.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0c06808e9f91606970e4edb98567f6c810aa2e93",
+    "size": 1032,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/0c06808e9f91606970e4edb98567f6c810aa2e93"
+  },
+  {
+    "path": "frontend/src/data/userApi.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aa5b24c2915f79ce61dc14ae2468e6e690b9757a",
+    "size": 1348,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/aa5b24c2915f79ce61dc14ae2468e6e690b9757a"
+  },
+  {
+    "path": "frontend/src/data/visitStore.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e8a47ba3e4f2d19375edf813c95781890e6eae87",
+    "size": 6554,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e8a47ba3e4f2d19375edf813c95781890e6eae87"
+  },
+  {
+    "path": "frontend/src/data/visits.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b84b3f81ed7704afb4391bfacd21644680e81cd9",
+    "size": 4174,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b84b3f81ed7704afb4391bfacd21644680e81cd9"
+  },
+  {
+    "path": "frontend/src/index.css",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "980904ab24a6a9dec8df53889f93928a230c8a56",
+    "size": 9665,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/980904ab24a6a9dec8df53889f93928a230c8a56"
+  },
+  {
+    "path": "frontend/src/main.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9016d36a37d42cf88dde5313b7703c2287333195",
+    "size": 388,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/9016d36a37d42cf88dde5313b7703c2287333195"
+  },
+  {
+    "path": "frontend/src/pages",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "85783d9be4e6c77f1c861106331b28148c487bbb",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/85783d9be4e6c77f1c861106331b28148c487bbb"
+  },
+  {
+    "path": "frontend/src/pages/Analytics",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "afe91b2f4e1bc9c7c74a855cf1e268fe29e6377e",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/afe91b2f4e1bc9c7c74a855cf1e268fe29e6377e"
+  },
+  {
+    "path": "frontend/src/pages/Analytics/AnalyticsPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "619bde31cea22a7814243ad464f7851ea5563917",
+    "size": 4283,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/619bde31cea22a7814243ad464f7851ea5563917"
+  },
+  {
+    "path": "frontend/src/pages/Capture",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "023f44c08451643eb4c59ff844f9af76d9be089e",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/023f44c08451643eb4c59ff844f9af76d9be089e"
+  },
+  {
+    "path": "frontend/src/pages/Capture/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/pages/Capture/CapturePage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "20cfd8738f029e8a9d35f2a5cd168d2856501b0d",
+    "size": 18278,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/20cfd8738f029e8a9d35f2a5cd168d2856501b0d"
+  },
+  {
+    "path": "frontend/src/pages/Customer360",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "446275ca10afd8d2b611d6d3ece0443712356033",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/446275ca10afd8d2b611d6d3ece0443712356033"
+  },
+  {
+    "path": "frontend/src/pages/Customer360/Customer360Page.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c8f27ebae68d903f8a7c8eb95d628a804f04c5b1",
+    "size": 7074,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c8f27ebae68d903f8a7c8eb95d628a804f04c5b1"
+  },
+  {
+    "path": "frontend/src/pages/Dashboard",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "496124b682c5761da09b6273129b2177e68be7f6",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/496124b682c5761da09b6273129b2177e68be7f6"
+  },
+  {
+    "path": "frontend/src/pages/Dashboard/DashboardPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2a834318b7722dea2d9d8b32b742dacd1537c840",
+    "size": 7097,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2a834318b7722dea2d9d8b32b742dacd1537c840"
+  },
+  {
+    "path": "frontend/src/pages/Home",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "878fdd663778d22c9b7deef4dd275b400af2c2db",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/878fdd663778d22c9b7deef4dd275b400af2c2db"
+  },
+  {
+    "path": "frontend/src/pages/Home/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/pages/Home/HomePage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60c2a7b4113405aad6e1ce9f2c0ada229c0167fb",
+    "size": 21762,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/60c2a7b4113405aad6e1ce9f2c0ada229c0167fb"
+  },
+  {
+    "path": "frontend/src/pages/HospitalDetail",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a24da47a74fd8eb2d4e43a74d5bd1397d30a30e2",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/a24da47a74fd8eb2d4e43a74d5bd1397d30a30e2"
+  },
+  {
+    "path": "frontend/src/pages/HospitalDetail/HospitalDetailPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1beb9b613764b2c492c25be3908eb6d68745a2b4",
+    "size": 26502,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1beb9b613764b2c492c25be3908eb6d68745a2b4"
+  },
+  {
+    "path": "frontend/src/pages/Hospitals",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ef87687e15ebed15526136b84c3f57a20abdf60a",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/ef87687e15ebed15526136b84c3f57a20abdf60a"
+  },
+  {
+    "path": "frontend/src/pages/Hospitals/HospitalsPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2886d97cfc2066b7d36daf48ce62046e567a0bdb",
+    "size": 17576,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2886d97cfc2066b7d36daf48ce62046e567a0bdb"
+  },
+  {
+    "path": "frontend/src/pages/InstalledBase",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "38ca51063e89c422caa36d5b18b2d0f4cb27d6a0",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/38ca51063e89c422caa36d5b18b2d0f4cb27d6a0"
+  },
+  {
+    "path": "frontend/src/pages/InstalledBase/InstalledBasePage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b8450e1968c6db22598e87499fc10df494d87715",
+    "size": 11974,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/b8450e1968c6db22598e87499fc10df494d87715"
+  },
+  {
+    "path": "frontend/src/pages/Login",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "aa008ce1a8b1c5ab6f708dc8bfa1a513aa426f5f",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/aa008ce1a8b1c5ab6f708dc8bfa1a513aa426f5f"
+  },
+  {
+    "path": "frontend/src/pages/Login/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/pages/Login/LoginPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "943484770e0512117c6d20de5b0bd36116509b70",
+    "size": 8893,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/943484770e0512117c6d20de5b0bd36116509b70"
+  },
+  {
+    "path": "frontend/src/pages/Map",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cb7a1dd1d3c4ebf64c569517b0a2716879e17914",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/cb7a1dd1d3c4ebf64c569517b0a2716879e17914"
+  },
+  {
+    "path": "frontend/src/pages/Map/InstalledBaseMapPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e66b7b5c87928904af18b680e0f3f39fda4eb188",
+    "size": 5090,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e66b7b5c87928904af18b680e0f3f39fda4eb188"
+  },
+  {
+    "path": "frontend/src/pages/Map/MapPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0ead57626ee6d8aa9b8e4cea01b9d2c0087457ce",
+    "size": 4406,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/0ead57626ee6d8aa9b8e4cea01b9d2c0087457ce"
+  },
+  {
+    "path": "frontend/src/pages/Match",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c79548b15a63468c8075c51aab18902739de9de3",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/c79548b15a63468c8075c51aab18902739de9de3"
+  },
+  {
+    "path": "frontend/src/pages/Match/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/pages/Match/MatchPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fb5613c1bffe7890e42b3b599ad6b885e228f05a",
+    "size": 17701,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fb5613c1bffe7890e42b3b599ad6b885e228f05a"
+  },
+  {
+    "path": "frontend/src/pages/NewVisit",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "548a338d926c2def7b4f01937cd5a6ee8146351c",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/548a338d926c2def7b4f01937cd5a6ee8146351c"
+  },
+  {
+    "path": "frontend/src/pages/NewVisit/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/pages/NewVisit/NewVisitPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81b79b4fc6512ff506c888ba3db3636a32d38f40",
+    "size": 19308,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/81b79b4fc6512ff506c888ba3db3636a32d38f40"
+  },
+  {
+    "path": "frontend/src/pages/Opportunities",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6454ab3e30fc7c5b17a618e8edc89ffffbb7b0fc",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/6454ab3e30fc7c5b17a618e8edc89ffffbb7b0fc"
+  },
+  {
+    "path": "frontend/src/pages/Opportunities/OpportunitiesPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce465550d7c53d3366139408d719268d174e7907",
+    "size": 1887,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/ce465550d7c53d3366139408d719268d174e7907"
+  },
+  {
+    "path": "frontend/src/pages/QuickCapture",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7f2c34e99f94dcf08943195998c7c8a13c6e92f1",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/7f2c34e99f94dcf08943195998c7c8a13c6e92f1"
+  },
+  {
+    "path": "frontend/src/pages/QuickCapture/QuickCapturePage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fb003c2f170841f77668465846af049735e6c618",
+    "size": 6356,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fb003c2f170841f77668465846af049735e6c618"
+  },
+  {
+    "path": "frontend/src/pages/Register",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ad27a27244eaa8293402c3059d348f665080e021",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/ad27a27244eaa8293402c3059d348f665080e021"
+  },
+  {
+    "path": "frontend/src/pages/Register/RegisterPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "31d0b645ecdbed995c94d8ce01bfacfcd8161057",
+    "size": 3603,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/31d0b645ecdbed995c94d8ce01bfacfcd8161057"
+  },
+  {
+    "path": "frontend/src/pages/Review",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a7cd6ceee95ec4bcb393c46c40633419477a45c7",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/a7cd6ceee95ec4bcb393c46c40633419477a45c7"
+  },
+  {
+    "path": "frontend/src/pages/Review/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/pages/Review/ReviewPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "54f96fdd051c280bb774ebc4441e391e6b9e4274",
+    "size": 24207,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/54f96fdd051c280bb774ebc4441e391e6b9e4274"
+  },
+  {
+    "path": "frontend/src/pages/ReviewQueue",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a721cf5a34dbde0fc4fc8da53b1e32600077da8c",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/a721cf5a34dbde0fc4fc8da53b1e32600077da8c"
+  },
+  {
+    "path": "frontend/src/pages/ReviewQueue/ReviewQueuePage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6c0f762e059f8c3fce9a9404fc0588e194bfe0f",
+    "size": 21540,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/c6c0f762e059f8c3fce9a9404fc0588e194bfe0f"
+  },
+  {
+    "path": "frontend/src/pages/Settings",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c5f0b866dcbe3d7fd03cb05fbd7136ac1b6e9218",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/c5f0b866dcbe3d7fd03cb05fbd7136ac1b6e9218"
+  },
+  {
+    "path": "frontend/src/pages/Settings/SettingsPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "df383517bb3933ca492d5a472a3d45eb25507860",
+    "size": 3096,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/df383517bb3933ca492d5a472a3d45eb25507860"
+  },
+  {
+    "path": "frontend/src/pages/Success",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6d169523c9975a9eb1ebce07eb63ae8ef7104a08",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/6d169523c9975a9eb1ebce07eb63ae8ef7104a08"
+  },
+  {
+    "path": "frontend/src/pages/Success/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/pages/Success/SuccessPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "998ee03102b24faed37942077a9327c8a1d60bba",
+    "size": 6584,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/998ee03102b24faed37942077a9327c8a1d60bba"
+  },
+  {
+    "path": "frontend/src/pages/SupervisorDashboard",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b75d19caeb695184651fcf9a598278eb5f80c175",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/b75d19caeb695184651fcf9a598278eb5f80c175"
+  },
+  {
+    "path": "frontend/src/pages/SupervisorDashboard/SupervisorDashboardPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2b8677eb6b57d08fb2f845b115f1398a3a05fffa",
+    "size": 14621,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2b8677eb6b57d08fb2f845b115f1398a3a05fffa"
+  },
+  {
+    "path": "frontend/src/pages/VisitDetail",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6b78f4e9269ab0d3946d47a91fef2ea9cea036bf",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/6b78f4e9269ab0d3946d47a91fef2ea9cea036bf"
+  },
+  {
+    "path": "frontend/src/pages/VisitDetail/VisitDetailPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0fc323319d7c471ea59cb652adb36238328fcfc0",
+    "size": 14377,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/0fc323319d7c471ea59cb652adb36238328fcfc0"
+  },
+  {
+    "path": "frontend/src/pages/Visits",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "55c3a134bc05e34f51603852c596bfaedced5f43",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/55c3a134bc05e34f51603852c596bfaedced5f43"
+  },
+  {
+    "path": "frontend/src/pages/Visits/VisitsPage.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fbb3e56307724313e97a622050f360fa5829d2d2",
+    "size": 10525,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/fbb3e56307724313e97a622050f360fa5829d2d2"
+  },
+  {
+    "path": "frontend/src/routes",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "86d6c1c3b49cb519440250300f41dc213b5278f0",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/86d6c1c3b49cb519440250300f41dc213b5278f0"
+  },
+  {
+    "path": "frontend/src/routes/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "frontend/src/routes/router.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1c4ce6d21d1547a01ef9eba6330297ea88d6577c",
+    "size": 2842,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1c4ce6d21d1547a01ef9eba6330297ea88d6577c"
+  },
+  {
+    "path": "frontend/tests",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cff6c305323839427a5d1fdfc6ea7c2fe804086e",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/cff6c305323839427a5d1fdfc6ea7c2fe804086e"
+  },
+  {
+    "path": "frontend/tests/browser-flow.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "22c9786c39dc907263fa261432d7e0543a7a9229",
+    "size": 6513,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/22c9786c39dc907263fa261432d7e0543a7a9229"
+  },
+  {
+    "path": "frontend/tests/equipment-matching.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60181489262c70695b8f8ab8173bab996a6ea8da",
+    "size": 1514,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/60181489262c70695b8f8ab8173bab996a6ea8da"
+  },
+  {
+    "path": "frontend/tests/follow-up.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0246c6b642d9653fc848c934aa36908ea1a4136d",
+    "size": 1048,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/0246c6b642d9653fc848c934aa36908ea1a4136d"
+  },
+  {
+    "path": "frontend/tests/hospital-overview.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "34c7eb99d9680a985fe22d3e1dcda436ae057416",
+    "size": 999,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/34c7eb99d9680a985fe22d3e1dcda436ae057416"
+  },
+  {
+    "path": "frontend/tests/hospital-resolution.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "98f0405ea71287e41b5eb5dff3ef6ac3e0dba10e",
+    "size": 660,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/98f0405ea71287e41b5eb5dff3ef6ac3e0dba10e"
+  },
+  {
+    "path": "frontend/tests/hospital-switch.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "024fc504c208fa748db8c20c5d6191cc1e407e7c",
+    "size": 1440,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/024fc504c208fa748db8c20c5d6191cc1e407e7c"
+  },
+  {
+    "path": "frontend/tests/language.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6c005c4ad4051eaf4519a4757983c57c3d158479",
+    "size": 478,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/6c005c4ad4051eaf4519a4757983c57c3d158479"
+  },
+  {
+    "path": "frontend/tests/modality-aliases.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e5d25003be827bb699d2ee9d44f5f61175c18006",
+    "size": 692,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/e5d25003be827bb699d2ee9d44f5f61175c18006"
+  },
+  {
+    "path": "frontend/tests/observation-api.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7345352e9f0499935ad743af0af992eb6c976e88",
+    "size": 4566,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/7345352e9f0499935ad743af0af992eb6c976e88"
+  },
+  {
+    "path": "frontend/tests/observation-explorer.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5059cad542516e0c50b42ca3ff4a18059be353b2",
+    "size": 1707,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/5059cad542516e0c50b42ca3ff4a18059be353b2"
+  },
+  {
+    "path": "frontend/tests/pcm-audio.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "89dedfde3089128c3d1c77142053e47b7dfcbcb1",
+    "size": 528,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/89dedfde3089128c3d1c77142053e47b7dfcbcb1"
+  },
+  {
+    "path": "frontend/tests/storage-api.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3c313bab2892b9d151a009c55c0f2e8dfcc7494d",
+    "size": 3323,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3c313bab2892b9d151a009c55c0f2e8dfcc7494d"
+  },
+  {
+    "path": "frontend/tests/visit-flow.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1afcce06154a489b0f0df1768ec649474ae8addf",
+    "size": 3684,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1afcce06154a489b0f0df1768ec649474ae8addf"
+  },
+  {
+    "path": "frontend/tests/visual-readiness.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a2975398f4ad531ab008cff06f070068277356b5",
+    "size": 4701,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/a2975398f4ad531ab008cff06f070068277356b5"
+  },
+  {
+    "path": "frontend/tsconfig.app.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6830b6f759f55aec32f0a2fd367ee63cf68db8b7",
+    "size": 655,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/6830b6f759f55aec32f0a2fd367ee63cf68db8b7"
+  },
+  {
+    "path": "frontend/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1ffef600d959ec9e396d5a260bd3f5b927b2cef8",
+    "size": 119,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1ffef600d959ec9e396d5a260bd3f5b927b2cef8"
+  },
+  {
+    "path": "frontend/tsconfig.node.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8455dcbc2c947322adef8783a42741878edaea9c",
+    "size": 558,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8455dcbc2c947322adef8783a42741878edaea9c"
+  },
+  {
+    "path": "frontend/vite.config.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9930e284bb6a16e1cabf33494775a29d43b3e36f",
+    "size": 204,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/9930e284bb6a16e1cabf33494775a29d43b3e36f"
+  },
+  {
+    "path": "package-lock.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1e03893828d69a52e9486899eeb14af1e0c52fd9",
+    "size": 107562,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1e03893828d69a52e9486899eeb14af1e0c52fd9"
+  },
+  {
+    "path": "package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1f593de833a302829e64922461d37f14af089fa5",
+    "size": 861,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/1f593de833a302829e64922461d37f14af089fa5"
+  },
+  {
+    "path": "qvac.config.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4de97c85ebc619f5482697c1b091343e28274415",
+    "size": 156,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/4de97c85ebc619f5482697c1b091343e28274415"
+  },
+  {
+    "path": "qvac",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "568f15cb166cfdf45ec1ffa992022d904f2706c9",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/568f15cb166cfdf45ec1ffa992022d904f2706c9"
+  },
+  {
+    "path": "qvac/download-finetune-model.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8a8d5eadb766b2a50cc70accf6df93f7ad0d3a9c",
+    "size": 259,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/8a8d5eadb766b2a50cc70accf6df93f7ad0d3a9c"
+  },
+  {
+    "path": "qvac/download-model.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dbdbda7ba630c65970751578436e3fda0e014035",
+    "size": 985,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/dbdbda7ba630c65970751578436e3fda0e014035"
+  },
+  {
+    "path": "qvac/finetune-lora.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5202e11ec0cd059b9df9fe89555a9f9f39a1933c",
+    "size": 7245,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/5202e11ec0cd059b9df9fe89555a9f9f39a1933c"
+  },
+  {
+    "path": "qvac/finetune-model.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "50d9a4a760172c406861f952759a45a20eb2c893",
+    "size": 2276,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/50d9a4a760172c406861f952759a45a20eb2c893"
+  },
+  {
+    "path": "qvac/model.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2154ce598f250ae06710f36930b597985b16ae97",
+    "size": 1040,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/2154ce598f250ae06710f36930b597985b16ae97"
+  },
+  {
+    "path": "qvac/server.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46247261a503bd8bb073f0771521c3f53f71d0e0",
+    "size": 6912,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/46247261a503bd8bb073f0771521c3f53f71d0e0"
+  },
+  {
+    "path": "scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "73a22dfb7b620b33e443a5644623b7fa378377f3",
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/trees/73a22dfb7b620b33e443a5644623b7fa378377f3"
+  },
+  {
+    "path": "scripts/capture-hardware.ps1",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3e3e0cd47ad2a048d9a49a8149958223cf5f10a2",
+    "size": 1425,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/3e3e0cd47ad2a048d9a49a8149958223cf5f10a2"
+  },
+  {
+    "path": "scripts/check-environment.ps1",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0e61de9ebf152c4c2ed58edcc2915c1d27db8c71",
+    "size": 556,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/0e61de9ebf152c4c2ed58edcc2915c1d27db8c71"
+  },
+  {
+    "path": "scripts/smoke-stt.ps1",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f87c78c5a2ddfd2ec1dbed54e2c40f6069ab9c8f",
+    "size": 1717,
+    "url": "https://api.github.com/repos/BLeandro5/AEGIS_AI/git/blobs/f87c78c5a2ddfd2ec1dbed54e2c40f6069ab9c8f"
+  }
+]

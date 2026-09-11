@@ -1,0 +1,675 @@
+{
+  "repository": "https://github.com/Andresssrr24/certiva",
+  "branch": "main",
+  "commit": "35339b846c4f0368d3856fbc12f99c64657434a4",
+  "counted_at_utc": "2026-09-11T04:29:54.617682+00:00",
+  "source_code_broad": 10195,
+  "product_code": 7163,
+  "excluded": 3032,
+  "product_files": 35,
+  "declared_derived_files_code": 1063,
+  "other_product_files_code": 6100,
+  "css_code": 2557,
+  "non_css_code": 4606,
+  "groups": {
+    "Motor y escritorio": 5838,
+    "Móvil Expo": 387,
+    "Piloto, SDK y apps nativas": 938
+  },
+  "commits_at_query": 77,
+  "prs_at_query": {
+    "total": 11,
+    "open": 3,
+    "merged": 8
+  },
+  "manifest": [
+    {
+      "path": "renderer/experience.css",
+      "code": 1252,
+      "language": "CSS",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "renderer/app.css",
+      "code": 894,
+      "language": "CSS",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "renderer/app.js",
+      "code": 514,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "renderer/certiva.css",
+      "code": 409,
+      "language": "CSS",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "lib/analizar.js",
+      "code": 403,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": true,
+      "reason": "Producto"
+    },
+    {
+      "path": "main.js",
+      "code": 400,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": true,
+      "reason": "Producto"
+    },
+    {
+      "path": "pilot/android-app/sdk/src/main/assets/certiva.js",
+      "code": 362,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Bundle generado duplicado o constante generada"
+    },
+    {
+      "path": "pilot/ios/Sources/CertivaSDK/Resources/certiva.js",
+      "code": 362,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Bundle generado duplicado o constante generada"
+    },
+    {
+      "path": "pilot/public/certiva.js",
+      "code": 362,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Bundle generado duplicado o constante generada"
+    },
+    {
+      "path": "lib/reglas.js",
+      "code": 266,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "renderer/experience.js",
+      "code": 245,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "mobile/src/App.jsx",
+      "code": 235,
+      "language": "JSX",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "lib/llamada.js",
+      "code": 222,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "pilot/server.js",
+      "code": 212,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "lib/modelos.js",
+      "code": 210,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": true,
+      "reason": "Producto"
+    },
+    {
+      "path": "eval/evaluar.js",
+      "code": 203,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/ios/Demo/CertivaPilotApp.swift",
+      "code": 179,
+      "language": "Swift",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "renderer/index.html",
+      "code": 153,
+      "language": "HTML",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "pilot/test/pilot.test.js",
+      "code": 152,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "lib/pares.js",
+      "code": 148,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "lib/esquemas.js",
+      "code": 129,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "scripts/prueba-experiencia.js",
+      "code": 123,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/public/app.js",
+      "code": 117,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "lib/casos-piloto.js",
+      "code": 116,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "mobile/src/motor.js",
+      "code": 114,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "lib/politica.js",
+      "code": 105,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "pilot/ios/Sources/CertivaSDK/CertivaEngine.swift",
+      "code": 98,
+      "language": "Swift",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "pilot/android-app/app/src/main/java/local/certiva/pilot/MainActivity.java",
+      "code": 96,
+      "language": "Java",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "lib/lector.js",
+      "code": 94,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "pilot/sdk/index.js",
+      "code": 91,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "landing/server/bridge.mjs",
+      "code": 88,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "lib/derivar.js",
+      "code": 80,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "scripts/descargar-modelos.js",
+      "code": 77,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/android-app/sdk/src/main/java/local/certiva/sdk/CertivaEngine.java",
+      "code": 70,
+      "language": "Java",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "scripts/experimento-preguntas.js",
+      "code": 64,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "test/seguridad.test.js",
+      "code": 62,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/experimento-formato.js",
+      "code": 61,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/experimento-vision.js",
+      "code": 61,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/prueba-lector.js",
+      "code": 60,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/experimento-control.js",
+      "code": 59,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/prueba-vision.js",
+      "code": 56,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "lib/red.js",
+      "code": 55,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "test/evaluacion.test.js",
+      "code": 55,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/public/analyzer.js",
+      "code": 50,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/android-app/app/src/main/java/local/certiva/pilot/PilotAPI.java",
+      "code": 50,
+      "language": "Java",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "preload.js",
+      "code": 50,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": true,
+      "reason": "Producto"
+    },
+    {
+      "path": "pilot/android-app/app/src/androidTest/java/local/certiva/pilot/EngineTest.java",
+      "code": 49,
+      "language": "Java",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/experimento-franjas.js",
+      "code": 49,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/ios/Tests/CertivaSDKTests/CertivaSDKTests.swift",
+      "code": 48,
+      "language": "Swift",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/server/verify-qvac.mjs",
+      "code": 46,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "test/casos-piloto.test.js",
+      "code": 46,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/prueba-texto.js",
+      "code": 45,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/radar.js",
+      "code": 44,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "eval/reglas-check.js",
+      "code": 43,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/prueba-offline.js",
+      "code": 43,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "mobile/src/consejos.js",
+      "code": 38,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "scripts/experimento-cuadrado.js",
+      "code": 37,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "ejemplos/integracion.js",
+      "code": 34,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/public/app.js",
+      "code": 34,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/build.js",
+      "code": 32,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "scripts/importar-modelo.js",
+      "code": 31,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/server/prepare-qvac.mjs",
+      "code": 30,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "lib/seguridad.js",
+      "code": 28,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "scripts/prueba-llamada.js",
+      "code": 26,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "lib/perf.js",
+      "code": 25,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Instrumentación de rendimiento"
+    },
+    {
+      "path": "scripts/prueba-politica.js",
+      "code": 25,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/tests/analyzer.test.mjs",
+      "code": 24,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/tests/bridge.test.mjs",
+      "code": 23,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/public/index.html",
+      "code": 23,
+      "language": "HTML",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "scripts/pares-worker.js",
+      "code": 21,
+      "language": "JavaScript",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "landing/public/index.html",
+      "code": 17,
+      "language": "HTML",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "test/fixtures/experience-preload.cjs",
+      "code": 16,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/server/preview.mjs",
+      "code": 14,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "mobile/app.config.js",
+      "code": 11,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/ios/Package.swift",
+      "code": 10,
+      "language": "Swift",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/public/styles.css",
+      "code": 5,
+      "language": "CSS",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "landing/server/build.mjs",
+      "code": 5,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/test/android-server.js",
+      "code": 5,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/public/styles.css",
+      "code": 2,
+      "language": "CSS",
+      "included": true,
+      "declared_derived_file": false,
+      "reason": "Producto"
+    },
+    {
+      "path": "landing/public/assets/fonts.css",
+      "code": 1,
+      "language": "CSS",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Pruebas, herramientas, evaluación, configuración o marketing"
+    },
+    {
+      "path": "pilot/public/policy-key.js",
+      "code": 1,
+      "language": "JavaScript",
+      "included": false,
+      "declared_derived_file": false,
+      "reason": "Bundle generado duplicado o constante generada"
+    }
+  ]
+}

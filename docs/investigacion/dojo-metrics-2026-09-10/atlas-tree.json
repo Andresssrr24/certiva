@@ -1,0 +1,1250 @@
+[
+  {
+    "path": ".editorconfig",
+    "sha": "f9a48601828fb29a43a1a66793c413ec8d417123",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": ".gitattributes",
+    "sha": "36a7954545c221bcb5a066ffe60d45ce37219a69",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "sha": "4fe721b2348bc3ad3890ad556ada35f1f029c2eb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": ".gitignore",
+    "sha": "6b03a65b15dcc7e24fea0291344889485064020d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "LICENSE",
+    "sha": "77834bf50b8fe63f94017f343459a4fbb089e3bd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "de001f7c0b66c00f96b74b5fe5d1f91895d6ddfd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "assets/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "config/models.json",
+    "sha": "0ec9932ff7a49344d10f27c7234ab740b8c75cfd",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "config/question-logic.json",
+    "sha": "1e678c328f1872252d28cffa282280a9d8780cfe",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "config/reference-values.json",
+    "sha": "ba1721fb2ab4a9e29765e3fb45ab826dd37dc344",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/evaluation/data-quality-cases.json",
+    "sha": "bdd0fccbd8ba7a46a2de819506f5eb8209d3f8be",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/evaluation/voice-cases.jsonl",
+    "sha": "05ffe9812c6564bf1435dde59f9ed0ec824b2fb7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/finetuning/manifest.json",
+    "sha": "a7136fffc705da0a36a1d56698986a5ebed465ec",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/finetuning/test.jsonl",
+    "sha": "41b06aa5f7216f8419f8797905f65fc0b5c412a0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/finetuning/train.jsonl",
+    "sha": "e3aec109eae7d427c40355c8bdbc3bf4176188f7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/finetuning/validation.jsonl",
+    "sha": "c33f8a59cfb91d2ef7bcba42970cad698a60644b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/seed/installed-base.csv",
+    "sha": "8cfffd4e2de3748085eb03fac4bb0b7e87b8ef37",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/source/customer-installed-base-challenge.docx",
+    "sha": "2610dec3d9774e5c3903c1b03ce649fdfdf933a9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/source/dummy-installed-base.xlsx",
+    "sha": "8cc81379cfd5679e5c6c2587ef365d18f8576ce4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "eslint.config.js",
+    "sha": "759a25a4c8d4e9b810165feb17bd70c3c3d3058c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "migrations/.gitkeep",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/README.md",
+    "sha": "ce8c4b6f601459a20f9301bafcc52b38f4753f96",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/devices.json",
+    "sha": "5efff6c8cb89ec0cae6774a2ea8bde81e3244691",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-adaptive-foreground/android-adaptive-foreground-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-transparent/icon_108.png",
+    "sha": "e1173a94d67fef8ecc8cae08697f56bb19f864bb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-adaptive-foreground/android-adaptive-foreground-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-transparent/icon_162.png",
+    "sha": "ac03dbf69f0d7bfe4cd103b20ae5228aec2ce383",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-adaptive-foreground/android-adaptive-foreground-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-transparent/icon_216.png",
+    "sha": "ff086fdc34ead5977beba4d9cf87c63b8b3a5c60",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-adaptive-foreground/android-adaptive-foreground-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-transparent/icon_324.png",
+    "sha": "f7f1d06908af8ba1320d9aa6474f792883db430a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-adaptive-foreground/android-adaptive-foreground-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-transparent/icon_432.png",
+    "sha": "49a464ee361fe64ce9d076716724a756c521d807",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-circle/android-standard-circle-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_144.png",
+    "sha": "345261586ca9baa40c35e3db8d50b048a8a6bff6",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-circle/android-standard-circle-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_192.png",
+    "sha": "b51fd15c26cdca51913e3696386b5e694327ca8a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-circle/android-standard-circle-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_48.png",
+    "sha": "c4f6e101ec73d0b675780f81d04a3d1b2ddcb04f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-circle/android-standard-circle-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_72.png",
+    "sha": "afa0a4ef4ba5230871e032f2a6df96ec572d7c49",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-circle/android-standard-circle-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_96.png",
+    "sha": "6c2d40bf55ead27ea9e0f88465db2de95683b533",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-square/android-standard-square-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_144.png",
+    "sha": "730e3fa552a9a6d5702998d11ff65d8e7ea13944",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-square/android-standard-square-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_192.png",
+    "sha": "b11a322ab4a6750ecea03c2ab21a772a1d293bac",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-square/android-standard-square-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_48.png",
+    "sha": "78aaf4541f5ca84674fd8d563ca9f35bf0b34463",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-square/android-standard-square-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_72.png",
+    "sha": "7fae0ccbcfa5c1de75a85a4420f0d8a01e2b0744",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/android-standard-square/android-standard-square-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-cover-#ffffff/icon_96.png",
+    "sha": "7a0f085faac07551f2407aea014b4ada7044a04c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/splash-android/splash-android-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-contain/icon_200.png",
+    "sha": "635530aca56ba40b6e66ea79b86a480cc9254076",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/splash-android/splash-android-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-contain/icon_300.png",
+    "sha": "03161bd658ed8de608d4418f9d6880f839c61d64",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/splash-android/splash-android-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-contain/icon_400.png",
+    "sha": "d4e41eafdc734158c7d0621d6cbf5c2a345bc4d9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/splash-android/splash-android-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-contain/icon_600.png",
+    "sha": "67ee127d766ded12cb0222195769bdef3b9a8063",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.expo/web/cache/production/images/splash-android/splash-android-5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8-contain/icon_800.png",
+    "sha": "8484e772e77c6efec4c907d86b8047c822c568a3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/.gitignore",
+    "sha": "9fc6c3fafc0ffa45f514b053fa6d9fca90f30f8b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/App.tsx",
+    "sha": "94bd19d7808ac83ee17a317516ae07698984a50c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/README.md",
+    "sha": "600e52f216846e74fa193239bf39ce989dab4b13",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/.gitignore",
+    "sha": "8a6be077181fc1c016eb71a0e426bd0525a90fea",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/build.gradle",
+    "sha": "5fb2d26c66bbfef3dee9fcdd2bf454c39b4875a5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/debug.keystore",
+    "sha": "364e105ed39fbfd62001429a68140672b06ec0de",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/proguard-rules.pro",
+    "sha": "551eb41da24268637f6d9ceb38ea1b5359bf734d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/debug/AndroidManifest.xml",
+    "sha": "3ec2507bab7c58dda1f8467f9137b02bdbd87b50",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/debugOptimized/AndroidManifest.xml",
+    "sha": "3ec2507bab7c58dda1f8467f9137b02bdbd87b50",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/AndroidManifest.xml",
+    "sha": "89cbf7f0d521aa787de361ce23a4c6017d199210",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/java/com/atlas/field/MainActivity.kt",
+    "sha": "ab0d67676f20a9b3a56188e013edf9fbfc45c008",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/java/com/atlas/field/MainApplication.kt",
+    "sha": "d0e72a51e909819cf7dd9a697f8b0c271b8a9219",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/drawable-hdpi/splashscreen_logo.png",
+    "sha": "31df827b18bba369596d713b3ed5f554c432c5db",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/drawable-mdpi/splashscreen_logo.png",
+    "sha": "ef243aab6c07672628b98d8eb239605edfb97c5c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png",
+    "sha": "e9d5474519c701b4b518f2f0a24d7d8742e93416",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png",
+    "sha": "d61da15d2410dd60355d0d9ca34bb2aa741267f0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png",
+    "sha": "4aeed11d00badbb02d5b40a3d24fcf97dbabbd5a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/drawable/ic_launcher_background.xml",
+    "sha": "883b2a080f3a9981ce0fdc780f34f24ede704236",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+    "sha": "5c25e728ea2ce7724bd9ef08c87ce7ee89c77103",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "sha": "3941bea9b98bb1a65d31fb061f111dfd77fa0993",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "sha": "3941bea9b98bb1a65d31fb061f111dfd77fa0993",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+    "sha": "7fae0ccbcfa5c1de75a85a4420f0d8a01e2b0744",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp",
+    "sha": "ac03dbf69f0d7bfe4cd103b20ae5228aec2ce383",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+    "sha": "afa0a4ef4ba5230871e032f2a6df96ec572d7c49",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+    "sha": "78aaf4541f5ca84674fd8d563ca9f35bf0b34463",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp",
+    "sha": "e1173a94d67fef8ecc8cae08697f56bb19f864bb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+    "sha": "c4f6e101ec73d0b675780f81d04a3d1b2ddcb04f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+    "sha": "7a0f085faac07551f2407aea014b4ada7044a04c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp",
+    "sha": "ff086fdc34ead5977beba4d9cf87c63b8b3a5c60",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+    "sha": "6c2d40bf55ead27ea9e0f88465db2de95683b533",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+    "sha": "730e3fa552a9a6d5702998d11ff65d8e7ea13944",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp",
+    "sha": "f7f1d06908af8ba1320d9aa6474f792883db430a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+    "sha": "345261586ca9baa40c35e3db8d50b048a8a6bff6",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "sha": "b11a322ab4a6750ecea03c2ab21a772a1d293bac",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp",
+    "sha": "49a464ee361fe64ce9d076716724a756c521d807",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+    "sha": "b51fd15c26cdca51913e3696386b5e694327ca8a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/values-night/colors.xml",
+    "sha": "3c05de5be81a972ce887d0e26d2c9cc4155c303d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/values/colors.xml",
+    "sha": "f387b90114275a3baaefa3b7e0b745d3e3df588b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/values/strings.xml",
+    "sha": "77bf684ee3edecff650d4ac53e07cd1f19d59130",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/app/src/main/res/values/styles.xml",
+    "sha": "cb4ceb711d7ee7ddd7b95ad0710776df82177491",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/build.gradle",
+    "sha": "2d00e0cca704cf2d6a0696dd1d7c98a0436aad1a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/gradle.properties",
+    "sha": "2fdba13a85afb4952b7f56cadb3c9f454fb6a4e2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/gradle/wrapper/gradle-wrapper.jar",
+    "sha": "1b33c55baabb587c669f562ae36f953de2481846",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/gradle/wrapper/gradle-wrapper.properties",
+    "sha": "d4081da476bb3ee087bb538a0bb6718958af29a4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/gradlew",
+    "sha": "7f94d3d4777766bfb6d45df1d8f45c3f3dce4855",
+    "type": "blob",
+    "mode": "100755"
+  },
+  {
+    "path": "mobile/android/gradlew.bat",
+    "sha": "db3a6ac207e507b0bc1635a9f2c18d3b174e682e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/android/settings.gradle",
+    "sha": "54831dd09fffc9754d04716602749394c2a53253",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/app.json",
+    "sha": "3f8561977c03ea5d27ecd1e8fb56faad05dcdeb0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/assets/adaptive-icon.png",
+    "sha": "03d6f6b6c6727954aec1d8206222769afd178d8d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/assets/favicon.png",
+    "sha": "e75f697b1801871ad8cd9309b05e8ffe8c6b6d01",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/assets/icon.png",
+    "sha": "a0b1526fc7b78680fd8d733dbc6113e1af695487",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/assets/splash-icon.png",
+    "sha": "03d6f6b6c6727954aec1d8206222769afd178d8d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/index.ts",
+    "sha": "1d6e981ef6c4ea336e6fe8f3fbce9487221a075c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/package-lock.json",
+    "sha": "47c55e4840183bbf23cd02f0cb32590a78bd71ff",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/package.json",
+    "sha": "b093e6297e2e3dfcb39bfd6bc09ef82f0a8c391b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/qvac.config.json",
+    "sha": "90b9e969a523965a8c654830ab9e427f4fb8d382",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/qvac/addons.manifest.json",
+    "sha": "619c0b45f5abda2e81075dcc3369d6a7cd5c7f1f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/qvac/worker.bundle.js",
+    "sha": "3eb796918968eba982c392d2d0cd2e13887ea364",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/qvac/worker.entry.mjs",
+    "sha": "c9ac661e9e49e9f33b6ec146cf48b6985cf8ece9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/src/db.ts",
+    "sha": "7c4f7684b914957b3c216a6656f4108b32bb1647",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/src/qvac.ts",
+    "sha": "7d53b1e8d31462dca37b0eb46920c14b1ebbfa51",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/src/types.ts",
+    "sha": "7712d8637d07551adf5da188bdfd2011001512d7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "mobile/tsconfig.json",
+    "sha": "b9567f6052d70ca2c9035e33667fded3cc4ed71f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "models/.gitignore",
+    "sha": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package-lock.json",
+    "sha": "e1050948cb88ff2bddbf17127f79c3da6f08b581",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package.json",
+    "sha": "e2dd24efb70035e6e7dc349d446148276aebc048",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "pyproject.toml",
+    "sha": "e47cd6c90f2f41ccd08b5449f9d45a9621668561",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "python-requirements.txt",
+    "sha": "82e5075ebfa50937fc03c624c78567c426d4fe77",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "schemas/installed-base-observation.schema.json",
+    "sha": "63b1600e9c11a793d0b74e4c24699ecb5af4d2dc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "schemas/inventory-query.schema.json",
+    "sha": "fffe208aa7e321c50ba6e4adefb62f95667c74f7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "schemas/performance-log.schema.json",
+    "sha": "f85eb779509885608fd0bf6c9176a7fb2e997d3f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/__init__.py",
+    "sha": "259a7369bcf3348d04e01c0a42ffd1c16873d1b3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/application/__init__.py",
+    "sha": "52df18e3bd9b9e77fa0f088678f20ed6ad2999f7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/application/capture.py",
+    "sha": "dfa4102aa85c8937a3a984c533d043ad06314b8a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/application/follow_up.py",
+    "sha": "456f55dfe999579473f4e42e3b3552ed1ca82217",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/application/inventory.py",
+    "sha": "3d89a7d564e190ca0b827864221f89ffa6efc462",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/application/renewal.py",
+    "sha": "70d13cdb3dabaf4ef3a5957b38b61f38bdd44a61",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/application/search.py",
+    "sha": "f2659be0104446eb81e58a8e28af91ef3fdd2799",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/domain/__init__.py",
+    "sha": "9a2a31d49bbae4d06b37a5b9d7e7a2f7bcc1c641",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/domain/confidence.py",
+    "sha": "daeb83cbd6557cc8b2a5c5de75bd015b0dcb4668",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/domain/duplicates.py",
+    "sha": "ba851156a24afa912855c1febee7a8255e40d6d6",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/domain/equipment.py",
+    "sha": "7dfb9cacfdb0c2ede7ae1a422bcf081e159d9094",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/domain/observations.py",
+    "sha": "068f89b6fccb4650eeab204a369b9e1b2774302c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/__init__.py",
+    "sha": "08b9c884812c23063523fe03ab4f01e4044964e6",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/audit/__init__.py",
+    "sha": "d7f21cae67b758ae8e5712c1b901ce7b899156b9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/audit/ledger.py",
+    "sha": "037fac5aad43a1d8e57c37976f2d7f014593839f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/database/__init__.py",
+    "sha": "d2d1d10db52df2e90d862742b333987b08517d4a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/database/sqlite.py",
+    "sha": "2b334c0aa5a6e95849468e0fc4ddc25e61c0d37f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/p2p/__init__.py",
+    "sha": "5bf0cc099d23ad2bfc616bdeb7d8b84d64ebde53",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/p2p/outbox.py",
+    "sha": "0a249ee8cdf60a960f592c2028d9ade8d827d195",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/__init__.py",
+    "sha": "77c7a43192ee23e7c878c5bed782944563363fe9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/documents.py",
+    "sha": "81b63b4cecc107283c4190f4ae1c751d7338d16e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/embeddings.py",
+    "sha": "409ee0adb6be44a470073c6880fd2fb401dd8fbe",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/extraction.py",
+    "sha": "40c5dbb129a137423514da73445b746df136c16c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/pipeline.py",
+    "sha": "0190a256e17f3e18249ea87d9a729ca66431cb82",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/runtime.py",
+    "sha": "c646162004e67524f5dd9692f14cbb114c319753",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/speech.py",
+    "sha": "53356d2ed887a6992ebab7f412a22a12e28c6bad",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/repositories/__init__.py",
+    "sha": "d26d2414d3acef3ff87a8332d41f93cac5e84e98",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/repositories/observations.py",
+    "sha": "3fa734f6f07433a8fca98bbacdcf5dfa3b76fcf0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/storage/__init__.py",
+    "sha": "d51899691dcc7357f3bae262f6764113e2b54b7f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/infrastructure/storage/evidence.py",
+    "sha": "a4fd0e1eb454eed26f853c15f0b1b24981e82a23",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/atlas/main.py",
+    "sha": "9198d269f0211b3c6de6d72893d83d231c5959c9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac/cli.ts",
+    "sha": "3bfb15f972503cde66aba4795235e0d25d42c409",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac/engine.ts",
+    "sha": "ca2b971add21ade44192293aebdcf293ab2ab9e2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac/metrics.ts",
+    "sha": "c40620488783fbdb85da489f84c0ca494d6b7e38",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac/normalize.ts",
+    "sha": "fc136c966a77b2d288cd1d522b24d86b625ff6a8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac/query-normalize.ts",
+    "sha": "83d3e9533287908adbc556cb553cfa01e6d7f8e2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac/query.ts",
+    "sha": "e93153e91bf73295423a7ee5339435904e5e4976",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac/types.ts",
+    "sha": "05c06d42273e3541df4dc0c169648b882f431873",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/qvac-normalization.test.ts",
+    "sha": "3f31885ea5658c4715129631fb11e4d39a128b8d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/test_api.py",
+    "sha": "2960d1c3cb8758b6ccc1afe604f724700fcbc08f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/test_data_assets.py",
+    "sha": "a681f15d0496bb8885d00d1227f9321d2b84a2ac",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/test_database.py",
+    "sha": "768ae5be697e4efbd95288c7a2fef406f45d4f84",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/test_domain.py",
+    "sha": "edaf39376ed5f734537b9137f5b68c66d84e8ad8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tools/download-models.js",
+    "sha": "e47972567301f7178d92f29972b445acd1a17c67",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tools/prepare_environment.py",
+    "sha": "9401d2b1b4c69887f6b7bb03c6fddb33f152dd90",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "training/evaluate_adapter.ts",
+    "sha": "b046a425bfa62a9730858ac97d6b2d720061a1e3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "training/generate_dataset.py",
+    "sha": "fdcb7d94d413ba6df74fdbb33aab1fc46c2141f1",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "training/output/.gitignore",
+    "sha": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "training/qvac_finetune.ts",
+    "sha": "12f1168c9ced92021d95cfe5ee73e3a24f96c791",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "training/train_lora.py",
+    "sha": "2e8bf67a893cf00fbafd201c2242924b0323fb78",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha": "729148ee4900e4920c3272ae1381e55dcb3a9385",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/.gitignore",
+    "sha": "378ea4021db6fc499f0c011581104480b93a71d2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/CONTRIBUTING.md",
+    "sha": "ca9d909e81c09eb7d13c80b3c0317306077eed49",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/README.md",
+    "sha": "ab882187aaa5ff521ebdf8275038ceba8205b5ae",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/eslint.config.js",
+    "sha": "a7224258eaa9c3bc88ab58b8198804adf792753a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/index.html",
+    "sha": "52105c771dccb6cb8a4074cb597a494109d86d90",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/package-lock.json",
+    "sha": "f40dd783ce81d8df460c2f85fbb391f6a608190d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/package.json",
+    "sha": "c90f35d706d8c1c39999dad1649658de7a845b74",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/postcss.config.js",
+    "sha": "e99ebc2c0e00cc37de4cefee2bf2a332abb73d8d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/public/atlas.svg",
+    "sha": "387f299a822e6f54eecbc4c61591f8eb01338181",
+    "type": "blob",
+    "mode": "100755"
+  },
+  {
+    "path": "web/server/main.py",
+    "sha": "1b5c37c5026627d31c15af5670159a692ffe6f2b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/App.tsx",
+    "sha": "7eb3f060be9cf4bbedfd4f79586dc15ae55902ba",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/common/Badge.tsx",
+    "sha": "89e74ea8706a38f4a0e3b21ba9a96644e40b3a13",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/common/Button.tsx",
+    "sha": "b3f177b80a9ed63a8d4c6310efd0255861e807d9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/common/Card.tsx",
+    "sha": "5ea1b447ca675eb60dae31fc91ed8118255b4238",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/common/Input.tsx",
+    "sha": "b1cbfb8db5d811a4e898d47c9f78a83a82fd17cc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/common/Modal.tsx",
+    "sha": "572aeb4cb5a751aaddfb4efc12f7d863a9779c93",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/common/Select.tsx",
+    "sha": "0377dcd169d8e56b2f415b75f9fd423956ca613c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/common/index.ts",
+    "sha": "318eb41bc5a97c8211f8d7f8035f1fb10b7fbf46",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/forms/ObservationForm.tsx",
+    "sha": "4b840776cd6db57de5fce849aacae4d53b4bc5da",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/forms/SearchForm.tsx",
+    "sha": "d3b5682dded0df62efe0ab0409a4ea2389943f01",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/forms/index.ts",
+    "sha": "bb353c1b385313e602a50ca7476ca30fbb7a234f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/layout/Header.tsx",
+    "sha": "ce68f1a1b691db91789877730e2e79a5017db1cb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/layout/MainLayout.tsx",
+    "sha": "8739ba4bc6d2f64762b7e348f37de66356a2fee8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/layout/Sidebar.tsx",
+    "sha": "11d872c30266e0e89e4e1e68550f8a252f7a6a20",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/components/layout/index.ts",
+    "sha": "41e16af41ffac396ee5820071b2a97964d03cdfe",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/hooks/useObservations.ts",
+    "sha": "fe3a855b731536c8cd19911b38d14a0e370b159d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/hooks/useQVAC.ts",
+    "sha": "38549fa84d05d6a740a04c4d4cdfa9fed7dbe5d7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/index.css",
+    "sha": "6e7cbd6d74b5309ef2b6a6ef423a13d5a5315afc",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/lib/mappers.ts",
+    "sha": "21d7181362ec17c11d5f794dbca5d2427301322b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/main.tsx",
+    "sha": "4fac9c3140869cba443b907db294508d74348044",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/pages/CapturePage.tsx",
+    "sha": "c0385b954bd169a99689bfce855c8ba055f4034e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/pages/DashboardPage.tsx",
+    "sha": "5429483d5ac44b3342f72e0831d9b425efa33b05",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/pages/HelpPage.tsx",
+    "sha": "a63651423a0b40e90cdb75c41b6a804bdd7be868",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/pages/InstalledBasePage.tsx",
+    "sha": "7db5ce43d28ac50dd80b0c7dbe03bb94568f05a7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/pages/QueriesPage.tsx",
+    "sha": "606fc7e5e287670d3c6fb0ec7f94463bc0929f8d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/pages/SettingsPage.tsx",
+    "sha": "156cf1ae120a1faad1a4f3247ab557f7d2da4b46",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/services/api.ts",
+    "sha": "41e7526794f69bbd0282a51b382cfd7fed28e720",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/stores/useAppStore.ts",
+    "sha": "98d87615554118a1391bb3cfc37172a9bcc149e7",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/src/types/index.ts",
+    "sha": "6b155a9c3bf160cfe55fd1e9866e610dece39803",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/tailwind.config.js",
+    "sha": "2e3d4c8313c546897b474a095fc850f1a38286bf",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/tsconfig.json",
+    "sha": "33a9cc04f930847a07ca9f1ada60f627b8f692be",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/tsconfig.node.json",
+    "sha": "4eb43d0547feaed3edb3f5547099880cfa2027c3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "web/vite.config.ts",
+    "sha": "3fc22a66af4c749b320060122e2f55a3f6595ece",
+    "type": "blob",
+    "mode": "100644"
+  }
+]
