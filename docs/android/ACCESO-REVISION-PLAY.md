@@ -25,3 +25,7 @@ QVAC is experimental and is not required for login or report testing.
 
 Test device: Android 13+ ARM64. Target/compile SDK36. Actual automated run:
 Android15/API35 emulator; physical Android16 and Play Store installation pending.
+
+The owning task confirmed that the dedicated reviewer credentials and these
+instructions were saved in Google Play after Bryan's explicit authorization.
+The credentials remain outside this document and the repository.
