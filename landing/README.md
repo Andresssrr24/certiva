@@ -2,7 +2,7 @@
 
 Producción: https://certiva-landing.vercel.app
 
-Vercel READY: `dpl_7pawnh1pdEXiALJqT2AzsYdvJXMG` (11 septiembre 2026 UTC).
+Vercel READY: `dpl_2Q1DqqeRZ2bbcrmUyS5pRYDWMyZR` (11 septiembre 2026 UTC).
 
 Landing independiente con branding v5, verificador de texto local y puente optativo al motor QVAC del proyecto. No modifica la app Electron ni utiliza su política sintética como si fuera de Caja de Ahorros.
 
@@ -66,7 +66,7 @@ Latest frozen APK source: `../pilot/artifacts/home-ui-20260911/certiva-0.3-home-
 
 For this update: 7 existing Node tests passed, JavaScript syntax and HTML structure/ID references checked, actual SVG QR decoded to the public `/apk` route, copied APK SHA/size/ZIP integrity verified. No browser visual QA was performed.
 
-Production verification: public root, QR, favicon, manifest and `/apk` return 200. `/apk` resolves to the 71,201,693-byte home revision SHA21542a5a with APK MIME and attachment disposition. Public HTML contains the demo and all five steps. Server bridge and build-source paths return 404. Production deployment `dpl_7pawnh1pdEXiALJqT2AzsYdvJXMG` is READY and aliased to https://certiva-landing.vercel.app.
+Production verification: public root, QR, favicon, manifest and `/apk` return 200. `/apk` resolves to the 71,201,693-byte home revision SHA21542a5a with APK MIME and attachment disposition. Public HTML contains the demo and all five steps. Server bridge and build-source paths return 404. Production deployment `dpl_2Q1DqqeRZ2bbcrmUyS5pRYDWMyZR` is READY and aliased to https://certiva-landing.vercel.app.
 
 Scope clarification: the corrected Android QVAC classifier timed out in two emulator runs and has no completed physical-device validation. Public copy and manifest say Android AI detection remains unvalidated, without implying successful emulator inference.
 
@@ -80,3 +80,13 @@ npm run build
 ```
 
 El archivo binario queda ignorado por Git. También está archivado en la prerelease `avances-2026-09-11` del repositorio, cuyo acceso requiere autorización mientras sea privado. La integración de fuentes pasó las siete pruebas Node y el build con la APK congelada; no se realizó una inspección visual adicional en navegador.
+
+## Android phone demonstration (reference alignment)
+
+The hero now contains an interactive Android handset based on the supplied reference and existing native demonstration: wallpaper, status bar, source/Certiva notifications, app icons, and gesture navigation. Scenario selection updates a real browser-rule assessment. Notifications and app shortcuts open message/detail views inside the handset; Home, back buttons, Escape and restart return to the home screen. The original manual verifier and desktop QVAC connection remain in a collapsed section. This is an explicitly labeled web simulation, not an embedded Android runtime or a claim that SMS/email background protection works in the APK.
+
+Changed: `public/index.html`, `public/app.js`, added `public/android-demo.js`, `public/android-demo.css`, `public/assets/android-wallpaper.svg`. APK unchanged. Seven existing tests pass. A lightweight DOM test using temporary LinkeDOM exercised notification → detail → message, app shortcuts, switching to the informational case clearing prior risk signals, replay and Escape. HTML nesting, IDs, controls, links/assets and JS syntax passed. No screenshot or browser visual QA performed for this revision.
+
+Android phone revision deployed READY at https://certiva-landing.vercel.app/?v=android-1#verificar. The existing browser tab was navigated to that URL; the handoff accessibility state showed the phone home, both notifications and four app shortcuts. No screenshot/visual comparison performed.
+
+Integración sobre `main` con Biome: preservadas las correcciones de la guía, el nombre `escapeHtml` y callbacks sin retorno; grupos de ejemplos con `fieldset`, SVG decorativos explícitos y título inicial accesible. Siete tests y prueba DOM repetidos sobre esta revisión, build correcto. Biome termina sin errores y con cinco avisos de especificidad CSS entre selectores de componentes diferentes. Estos ajustes de integración posteriores al despliegue se entregan en el PR.
