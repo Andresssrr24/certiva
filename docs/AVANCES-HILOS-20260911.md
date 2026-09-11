@@ -28,6 +28,8 @@ El ZIP de evidencias incluye capturas, logs y grabaciones históricas, incluidas
 
 ## Criterio de archivo
 
+Avances posteriores al corte inicial: [inicio Android renovado, PR21](https://github.com/Andresssrr24/certiva/pull/21), con dos pruebas UI aprobadas, y [landing con favicon, ejemplos, guía y QR](../landing/README.md). La APK home de SHA-256 `21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942` se añadió a la prerelease con sus metadatos y se sirve públicamente desde la landing. Sigue siendo experimental; no acredita detección QVAC validada.
+
 Se preservó todo el código y documentación nuevos identificados en los inventarios. El checkout compartido conserva sus archivos y su rama. Las variantes locales antiguas de README, reglas, bundles SDK, dataset, licencias y branding no reemplazan correcciones posteriores de `main`. El PDF v1 local coincide con el histórico ya versionado y no se duplicó.
 
 Los modelos GGUF, dependencias, cachés, directorios de compilación, credenciales, bases SQLite y clones de terceros no forman parte del código publicado. Sus fuentes y mecanismos de reconstrucción se documentan donde corresponde. Los ajustes encargados después de este corte se incorporan como avances posteriores, con su propia evidencia.
