@@ -29,7 +29,7 @@ cd android
 if [ "$VARIANTE" = "debug" ]; then ./gradlew assembleDebug --no-daemon -q; SALIDA=app/build/outputs/apk/debug/app-debug.apk;
 else ./gradlew assembleRelease --no-daemon -q; SALIDA=app/build/outputs/apk/release/app-release.apk; fi
 mkdir -p ../../dist
-cp "$SALIDA" "../../dist/antifraude-$VARIANTE-arm64.apk"
+cp "$SALIDA" "../../dist/certiva-$VARIANTE-arm64.apk"
 # Hash de referencia que instalar.sh verifica antes de instalar.
-(cd ../../dist && shasum -a 256 "antifraude-$VARIANTE-arm64.apk" > "../antifraude-$VARIANTE-arm64.apk.sha256")
-echo "APK: mobile/dist/antifraude-$VARIANTE-arm64.apk · $(du -h "../../dist/antifraude-$VARIANTE-arm64.apk" | cut -f1)"
+(cd ../../dist && shasum -a 256 "certiva-$VARIANTE-arm64.apk" > "../certiva-$VARIANTE-arm64.apk.sha256")
+echo "APK: mobile/dist/certiva-$VARIANTE-arm64.apk · $(du -h "../../dist/certiva-$VARIANTE-arm64.apk" | cut -f1)"
