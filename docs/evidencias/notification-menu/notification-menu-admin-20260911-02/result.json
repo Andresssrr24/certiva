@@ -1,0 +1,54 @@
+{
+  "caseId": "b63be9f8-f051-4873-a4a8-9823254f8711",
+  "assessmentId": "1de8045a-1df9-4433-80fe-0a9210539f8b",
+  "origin": "http://127.0.0.1:4320",
+  "phases": [
+    {
+      "name": "01-recepcion",
+      "at": 1789108483949,
+      "recordingElapsedMs": 912
+    },
+    {
+      "name": "02-detalle",
+      "at": 1789108486428,
+      "recordingElapsedMs": 3392
+    },
+    {
+      "name": "03-asignacion",
+      "at": 1789108489025,
+      "recordingElapsedMs": 5988
+    },
+    {
+      "name": "04-conclusion",
+      "at": 1789108491436,
+      "recordingElapsedMs": 8399
+    },
+    {
+      "name": "05-resuelto",
+      "at": 1789108494008,
+      "recordingElapsedMs": 10971
+    },
+    {
+      "name": "06-auditoria",
+      "at": 1789108496825,
+      "recordingElapsedMs": 13788
+    }
+  ],
+  "passed": true,
+  "remoteVideo": "/sdcard/certiva-admin-notification-1789108483036.mp4",
+  "uiPassed": true,
+  "requiresBackendVerification": true,
+  "recorderStopped": true,
+  "apkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "installedApkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "testApkSha256": "a0401439c2cb231f4282810cc220aa38b1c7b0c70465a84503dc4f07af45e61b",
+  "hostRunError": null,
+  "extractionErrors": [],
+  "mode": "admin",
+  "instrumentationPassed": true,
+  "videoValid": true,
+  "videoSha256": "251bbb471e87a553e5e45a3bc73f1ea91338ca14ae6e545afd84c43b49ce9e8e",
+  "backendVerified": true,
+  "visualQaPassed": false,
+  "visualQaNote": "Functional UI and backend passed, but recording is portrait content letterboxed into horizontal frame. Do not use as approved presentation footage."
+}

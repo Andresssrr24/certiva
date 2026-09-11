@@ -1,0 +1,31 @@
+Certiva
+
+Descripción breve:
+Revisa mensajes sospechosos y conoce señales de riesgo. Piloto experimental.
+
+Descripción completa:
+Antes de responder, verifica.
+
+Certiva es un piloto experimental para revisar mensajes sospechosos y reconocer señales de posible fraude antes de actuar.
+
+REVISA UN MENSAJE
+Escribe, pega o comparte un texto con Certiva. Selecciona el canal y consulta los motivos y la acción sugerida. La app incluye un ejemplo editable para explorar el recorrido.
+
+PROTECCIÓN OPCIONAL DE WHATSAPP
+Desde Mi protección puedes preparar el modelo local y autorizar la revisión del contenido visible de notificaciones de WhatsApp y WhatsApp Business. Los permisos son opcionales y se pueden revocar en Android. Certiva no lee el historial de conversaciones.
+
+TUS RESULTADOS, EN EL TELÉFONO
+Consulta hasta 20 resultados de alertas de los últimos 7 días. Ese historial no guarda el mensaje original, remitentes, enlaces ni códigos. Puedes borrar los resultados en Mi protección.
+
+UN PILOTO EN VALIDACIÓN
+El análisis combina reglas locales con QVAC cuando el modelo está disponible. La IA QVAC en Android continúa en validación; puede no estar disponible o no completar una revisión. La app informa esas limitaciones. La preparación del modelo requiere una descarga adicional de aproximadamente 1,1 GB y al menos 1,3 GB libres.
+
+Los accesos Ingresar y Mis reportes corresponden a un entorno técnico local del piloto y requieren una cuenta asignada y ese servicio configurado. El servicio público de reportes todavía no está disponible. No se necesita una cuenta de reportes para abrir el menú, revisar mensajes manualmente ni configurar la protección.
+
+ALCANCE
+Los resultados son orientativos: Certiva no autentica remitentes, no garantiza detectar todos los fraudes y no sustituye la confirmación con tu entidad por sus canales oficiales. No opera cuentas, realiza pagos ni ofrece asesoramiento financiero. No representa a un banco ni a una entidad gubernamental.
+
+Prueba dirigida a mayores de 18 años. Android 13 o posterior en dispositivos ARM64. Sin anuncios.
+
+Privacidad: https://certiva-landing.vercel.app/privacidad-app
+Soporte: bryan@grwestate.com

@@ -8,9 +8,9 @@ Demo vigente: [Android y administración del mismo caso — video de 56 segundos
 
 ## Estado del avance
 
-Android0.5 conecta **Ingresar/Mis reportes por HTTPS** con cuenta asignada y permite borrar los reportes propios. [Cambios y evidencia](docs/android/REPORTES-HTTPS-ANDROID.md): dos pruebas nativas aprobadas en emulador API35; instalación física desde Play y QVAC siguen pendientes. El servicio remoto es independiente de la demo local.
+Android 0.5 conecta **Ingresar/Mis reportes por HTTPS** con cuenta asignada y permite borrar los reportes propios. [Cambios y evidencia](docs/android/REPORTES-HTTPS-ANDROID.md): dos pruebas nativas aprobadas en emulador API 35; instalación física desde Play y QVAC siguen pendientes. El servicio remoto es independiente de la demo local.
 
-Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
+Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. El inventario actualizado distingue PR integradas, las PR #34/#35/#36 abiertas y los 22 archivos de la prerelease, con sus hashes. API36 requiere integrar la PR #36 en `main`; su PR anterior se fusionó en otra rama. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
@@ -21,9 +21,11 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 | App Android con QVAC (Expo) | [APK actual de 229 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre es una app con cuatro pestañas (revisar, historial, aprender, ajustes), marca Certiva e historial en el teléfono (0.3.0, publicada en la release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
 
-Preparación Android API36: [migración del botón Atrás y validación](docs/android/API36-Y-NAVEGACION-ATRAS.md). Dos pruebas pasaron con target36 en Android15/API35; Android16 y su gesto predictivo siguen pendientes. La APK 0.4 archivada conserva target35.
+Registro beta: **habilitado con Google; descarga cerrada pendiente**. Confirma la cuenta y su membresía en el grupo con consentimiento. `BETA_ENABLED=true` permite registrarse; `BETA_PLAY_READY=false` mantiene oculto el enlace de instalación. Con la prueba cerrada disponible y la bandera activada, el registro confirmado redirigirá directamente a Google Play. La tarea de landing verificó OAuth completo en Chrome de escritorio con una cuenta ya perteneciente al grupo, tras corregir el fallo de origen del formulario. Bryan confirmó después que el registro en Android funciona. Siguen pendientes una nueva alta externa instrumentada y la distribución cerrada. [Configuración y estado](landing/BETA-SETUP.md) · [Revisión de integración](landing/BETA-REVIEW.md). Google Play lleva 6 de 11 tareas completas; la ficha es-419 está en borrador. [Política Android](https://certiva-landing.vercel.app/privacidad-app) · [Materiales y pendientes](landing/play-store-assets/README.md).
 
-Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto. La versión4 ya está disponible en [pruebas internas de Google Play](https://play.google.com/apps/internaltest/4701618464331966700) para cuentas autorizadas; la instalación desde Play sigue sin verificar y no implica aprobación de Google. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
+API36: [navegación Atrás y validación](docs/android/API36-Y-NAVEGACION-ATRAS.md). Se conserva en Android 0.5; las pruebas ejecutadas en API 35 no acreditan Android 16.
+
+Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El diagnóstico de Play Protect conserva su alcance histórico. La versión 5 ya está publicada en prueba interna según la tarea propietaria; instalación física y canal cerrado siguen pendientes. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
 
 La app de escritorio ejecuta VisionPsy, reglas y Qwen3 localmente. La landing analiza texto con reglas en el navegador; para usar modelos requiere un puente en `127.0.0.1` y modelos descargados en el mismo equipo. Las alertas y el consejo no autentican remitentes ni garantizan que un mensaje sea legítimo.
 
@@ -51,6 +53,7 @@ Landing: antes de construir desde un clon, descarga el APK congelado siguiendo [
 
 ```sh
 cd landing
+npm ci
 npm test
 npm run build
 npm run dev
@@ -63,7 +66,7 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 - `npm test`: **11/11** pruebas del motor, evaluación y persistencia/transiciones de casos, con dobles de los modelos.
 - `npx electron scripts/prueba-experiencia.js`: **9/9** comprobaciones de navegación y reporte con motor controlado; ver entorno utilizado en [la guía del portal](docs/EXPERIENCIA-Y-ALERTAS.md).
 - `node eval/reglas-check.js`: **136/136** veredictos correctos sobre el texto verdadero del dataset sintético; no mide OCR ni generalización.
-- `npm --prefix landing test`: **7/7**, con reglas y contrato HTTP del puente.
+- `npm --prefix landing test`: **20/20**, con reglas, contrato HTTP del puente, flujo beta con OAuth/membresía simulados, estados de registro/descarga y redirección condicionada a Play.
 - `npm --prefix landing run build`: genera el sitio estático.
 - Sintaxis de JavaScript del portal y Biome de ocho archivos modificados: sin errores, con 12 advertencias.
 
@@ -308,3 +311,9 @@ El radar marca reportes para investigación durante la sesión; no confirma frau
 ### Evidencia del formulario y consola
 
 [Flujo real Android → piloto → consola](docs/evidencias/flujo-real/README.md): prueba móvil aprobada con reglas locales y consentimiento; asignación/resolución del mismo caso verificadas en backend. La instrumentación administrativa agotó el tiempo de lectura final y conserva su fallo. Grabaciones originales archivadas en la release; esto no valida QVAC Android.
+
+### Compatibilidad del piloto local
+
+Si una APK emite motivos que un servidor antiguo rechaza, usa una revisión compatible conservando la base y usuarios existentes. [Recuperación verificada del piloto local](docs/PILOTO-LOCAL-COMPATIBLE.md): contrato validado con 16 pruebas y SDK/política cotejados con la APK0.4; no se desactivaron controles de reporte.
+
+La [nueva evidencia de notificación y menú 0.4](docs/evidencias/notification-menu/README.md) confirma un reporte y su resolución después de recuperar el servidor compatible. La entrada sigue siendo sintética; se distinguen la grabación administrativa operativa, descartada por encuadre, y la consulta horizontal posterior de solo lectura.

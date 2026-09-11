@@ -1,46 +1,51 @@
 # Avances reunidos de las tareas de Certiva
 
-Corte: 11 de septiembre de 2026. Se revisaron los inventarios de las ocho tareas del proyecto y el checkout compartido. Las copias se integraron en ramas independientes, conservando las correcciones que ya estaban en `main`.
+Corte actualizado: 11 de septiembre de 2026. El código y las evidencias se integran en ramas aisladas; el checkout compartido conserva sus archivos. Se distingue lo integrado en `main`, lo publicado en una PR y lo que sigue en preparación.
 
-| Tarea | Resultado publicado o conservado | Estado y alcance |
+## Estado de las publicaciones
+
+GitHub marca las PR #1 a #33 como fusionadas, pero ese estado no garantiza que todas entraran en `main`. La [PR #31](https://github.com/Andresssrr24/certiva/pull/31) se fusionó en la rama del menú después de que esta entrara en `main`: API36 quedó fuera. La [PR #36](https://github.com/Andresssrr24/certiva/pull/36) propone incorporar esos dos commits existentes directamente a `main`.
+
+También quedan abiertas [PR #34](https://github.com/Andresssrr24/certiva/pull/34), evidencia de notificación/menú, y [PR #35](https://github.com/Andresssrr24/certiva/pull/35), registro Google y preparación de Play, esta última en borrador. Ambas estaban sin conflictos y con controles GitGuardian correctos en el corte consultado anterior a la actualización documental. Eso no equivale a ejecutar pruebas funcionales ni a aprobar Google Play.
+
+| Tarea | Resultado publicado | Estado y alcance |
 |---|---|---|
-| Añadir alertas push para fraudes | Iconos en PR13/15; UI nativa y scripts de prueba en [PR18](https://github.com/Andresssrr24/certiva/pull/18) | Los iconos tienen evidencia visual. Los recorridos nativos completos conservan sus fallos; no se consideran aprobados. |
-| Probar esto en Android | Runtime, instalador, aplicación de diagnóstico, API y evidencias QVAC en PR18 | Borrador experimental: dos timeouts del clasificador Android corregido. |
-| Diseñar producto para banca y USDT | [PR17](https://github.com/Andresssrr24/certiva/pull/17): texto directo y advertencia temprana; piloto y propuesta bancaria ya integrados | USDT queda fuera del alcance vigente. Las condiciones comerciales son hipótesis. |
-| Review decentralized AI hackathon | PR17: contactos bancarios, fuentes, comparación y orientación | Consulta histórica con fecha; coincidencia no autentica al remitente. |
-| Crear landing Certiva interactiva | Código y sitio ya publicados; [evidencia QVAC](evidencias/landing-qvac.json) archivada | Cuatro casos sintéticos con puente local. El motor no corre en Vercel. No se reactivó el puente durante esta integración. |
-| Crear video motion graphics | [Guiones, composiciones y enlaces a videos/editables](marketing/video/README.md) | Corte visual de 23 s con capturas animadas. La demo funcional APK → reporte → mismo caso en consola sigue sin grabar. |
-| Analiza proyectos y competidores | [Informe y manifiesto de 23 fichas/14 repositorios](investigacion/README.md) | Investigación histórica; no ejecución de aplicaciones rivales ni ranking oficial. |
-| Contar commits, PRs y líneas | Informes, scripts propios y 64 JSON de investigación en `docs/investigacion/` | Métricas de snapshots concretos. No prueban autoría ni funcionalidad y no describen el `main` actual. |
+| Añadir alertas push para fraudes | Iconos [PR #13](https://github.com/Andresssrr24/certiva/pull/13)/[PR #15](https://github.com/Andresssrr24/certiva/pull/15), Android experimental [PR #18](https://github.com/Andresssrr24/certiva/pull/18), flujo real [PR #25](https://github.com/Andresssrr24/certiva/pull/25), nuevo caso [PR #34](https://github.com/Andresssrr24/certiva/pull/34) | La nueva demo recorre listener con notificación sintética, alerta, detalle, menú y reporte; el caso fue resuelto y revisado en consola. Se conservan los intentos fallidos y los límites de cada grabación. No demuestra recepción física de WhatsApp ni inferencia QVAC. |
+| Probar esto en Android | Runtime, instalador, diagnóstico y evidencias [PR #18](https://github.com/Andresssrr24/certiva/pull/18) | Dos timeouts del clasificador corregido. Android QVAC sigue experimental; no se convierten esos fallos en pruebas aprobadas por publicar una APK. |
+| Mejorar interfaz y menú | Inicio [PR #21](https://github.com/Andresssrr24/certiva/pull/21), menú 0.4 [PR #30](https://github.com/Andresssrr24/certiva/pull/30), API36/Atrás [PR #36](https://github.com/Andresssrr24/certiva/pull/36) | Seis pruebas de menú y una con texto al 130 % aprobadas. Dos pruebas de navegación API36 ejecutadas en emulador API35; no acreditan Android16 ni instalación física desde Play. |
+| Diseñar producto para banca y USDT | Piloto bancario y propuesta integrados; portal [PR #17](https://github.com/Andresssrr24/certiva/pull/17), recuperación compatible [PR #32](https://github.com/Andresssrr24/certiva/pull/32) | Contrato validado con 16 pruebas y SDK/política cotejados con APK0.4. USDT queda fuera del alcance vigente; las condiciones comerciales son hipótesis. |
+| Review decentralized AI hackathon | Contactos bancarios, fuentes y orientación [PR #17](https://github.com/Andresssrr24/certiva/pull/17) | Investigación histórica con fecha; una coincidencia de contacto no autentica al remitente ni implica aval bancario. |
+| Crear landing Certiva interactiva | Guía y QR [PR #22](https://github.com/Andresssrr24/certiva/pull/22), teléfono interactivo [PR #24](https://github.com/Andresssrr24/certiva/pull/24), registro y privacidad [PR #35](https://github.com/Andresssrr24/certiva/pull/35) | Registro Google habilitado, descarga cerrada pendiente; callback a Play preparado detrás de su bandera. Suite de 20 pruebas aprobada. OAuth Chrome con miembro existente comprobado por la tarea y Android confirmado por Bryan. El servicio público de reportes/Android0.5 tiene trabajo posterior aún sin congelar. |
+| Crear video motion graphics | [Demo final de 56 segundos y editable](marketing/video/ENTREGA-DEMO-FINAL.md), [PR #27](https://github.com/Andresssrr24/certiva/pull/27) | Video y ZIP archivados en la prerelease con hashes. La tarea entregó posteriormente una versión de 60 segundos con audio; ese corte no se ha incorporado a esta publicación de GitHub. |
+| Analiza proyectos y competidores | [Informe y manifiesto de 23 fichas/14 repositorios](investigacion/README.md), [PR #19](https://github.com/Andresssrr24/certiva/pull/19) | Investigación histórica, sin ejecutar aplicaciones rivales ni afirmar un ranking oficial. |
+| Contar commits, PRs y líneas | Informes, scripts y 64 JSON de investigación en [PR #19](https://github.com/Andresssrr24/certiva/pull/19) | Métricas de snapshots concretos. No prueban autoría ni funcionalidad y no describen el `main` actual. |
 
-## Comprobaciones de integración
+La app Expo tiene su publicación independiente: [Release apk-v0.2](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2), actualizada por [PR #26](https://github.com/Andresssrr24/certiva/pull/26)/[PR #28](https://github.com/Andresssrr24/certiva/pull/28). No es la APK nativa `local.certiva.pilot`. [PR #33](https://github.com/Andresssrr24/certiva/pull/33) cambió la tarjeta al Release Expo; PR #35 la dirige al registro del piloto y documenta ese cambio expresamente.
 
-- Portal: 18 pruebas Node, 12 comprobaciones de recorrido y prueba de contactos aprobadas, con backend controlado y Electron 40.10.2.
-- Android experimental: bundle reconstruido; APK, APK de pruebas y lint aprobados en 30 s; app de diagnóstico compilada en 27 s; 16 pruebas API y regresiones JVM aprobadas. Se conservaron las señales de pago del SDK integrado. No se repitió inferencia Android.
-- Documentación y herramientas: 64 JSON validados y sintaxis Python/JavaScript comprobada. No se ejecutaron los scripts de adquisición de competidores ni un nuevo render.
-- Las observaciones históricas de latencia y precisión conservan su fecha, hardware, versión y limitaciones; no se reinterpretan como validación actual.
+## Evidencia y distribución
 
-## Artefactos
+- Android nativo: [inicio y menú](ANDROID-INICIO-Y-MENU.md), [API36 y navegación, pendiente de main](https://github.com/Andresssrr24/certiva/pull/36), [diagnóstico histórico Play Protect](android/PLAY-PROTECT-REVISION.md).
+- Flujo real anterior: [resultado y límites](evidencias/flujo-real/README.md). Prueba móvil aprobada; instrumentación administrativa fallida por timeout y estado final comprobado por lectura independiente. El éxito de otro caso posterior no reescribe ese fallo.
+- Nuevo caso de notificación/menú: evidencia en PR #34 y ZIP `certiva-notificacion-menu-20260911.zip`. Corrida móvil aprobada; consola resolvió el caso, con revisión visual posterior de solo lectura. Incluye intentos fallidos y la grabación administrativa inicial con encuadre deficiente, etiquetados.
+- Landing: [contrato, configuración y estado de Play](../landing/BETA-SETUP.md) y [revisión de integración](../landing/BETA-REVIEW.md). El registro está abierto; `BETA_PLAY_READY=false` mantiene pendiente la descarga cerrada. La prueba interna solo sirve a cuentas habilitadas en ese canal; registrarse en el grupo no concede por sí mismo acceso a la lista interna.
+- Servicio local: [recuperación del piloto compatible](PILOTO-LOCAL-COMPATIBLE.md). Conservó datos y cuentas existentes. Su base local no se incorpora al repositorio ni se considera la base del nuevo servicio público.
 
-Las APKs, AAR, hashes y evidencias se publican en la [prerelease de avances](https://github.com/Andresssrr24/certiva/releases/tag/avances-2026-09-11). El [manifiesto](evidencias/MANIFIESTO-ARTEFACTOS-20260911.json) distingue los baselines 0.1/0.2, la APK 0.2 con iconos, el snapshot 0.3 y la recompilación experimental con el SDK integrado.
+Los resultados QVAC del escritorio y del puente web mantienen su fecha, hardware y alcance. Las cuatro pruebas sintéticas del puente están en [la evidencia de landing](evidencias/landing-qvac.json); no demuestran que el motor corra en Vercel o que funcione en Android. Las mediciones históricas no sustituyen una evaluación de la versión actual.
 
-El ZIP de evidencias incluye capturas, logs y grabaciones históricas, incluidas pruebas UI fallidas etiquetadas en `result.json`. No es una demo funcional final. Los videos de marketing ya alojados conservan sus enlaces y estado en su documentación. La release Expo `apk-v0.1` es otro entregable y mantiene sus instrucciones propias.
+## Artefactos publicados
 
-## Criterio de archivo
+La [prerelease de avances](https://github.com/Andresssrr24/certiva/releases/tag/avances-2026-09-11) contiene **22 archivos** en este corte. El [índice actualizado](evidencias/INDICE-RELEASE-20260911.json) registra nombre, tamaño, digest SHA-256 y enlace devueltos por la API de GitHub. Es una consulta del inventario remoto, no una nueva descarga o ejecución de cada binario.
 
-Avances posteriores al corte inicial: [inicio Android renovado, PR21](https://github.com/Andresssrr24/certiva/pull/21), con dos pruebas UI aprobadas, y [landing con favicon, ejemplos, guía y QR](../landing/README.md). La APK home de SHA-256 `21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942` se añadió a la prerelease con sus metadatos y se sirve públicamente desde la landing. Sigue siendo experimental; no acredita detección QVAC validada.
+Incluye baselines APK/AAR, variantes nativas 0.2/0.3/0.4, evidencias históricas, demo final de 56 segundos y proyecto editable, flujo Android/consola y nuevo caso de notificación/menú. El [manifiesto inicial](evidencias/MANIFIESTO-ARTEFACTOS-20260911.json) conserva su alcance original; no debe interpretarse como inventario de los archivos añadidos después.
 
-Se preservó todo el código y documentación nuevos identificados en los inventarios. El checkout compartido conserva sus archivos y su rama. Las variantes locales antiguas de README, reglas, bundles SDK, dataset, licencias y branding no reemplazan correcciones posteriores de `main`. El PDF v1 local coincide con el histórico ya versionado y no se duplicó.
+Los ZIP de evidencias conservan pruebas fallidas y sus resultados. El video final y las grabaciones de prueba tienen documentación propia. No se suben AAB firmados de Play, claves, cuentas de revisión, bases SQLite, datos Blob, modelos, dependencias, cachés ni clones de terceros.
 
-Los modelos GGUF, dependencias, cachés, directorios de compilación, credenciales, bases SQLite y clones de terceros no forman parte del código publicado. Sus fuentes y mecanismos de reconstrucción se documentan donde corresponde. Los ajustes encargados después de este corte se incorporan como avances posteriores, con su propia evidencia.
+## Trabajo posterior sin publicar en este corte
 
-- Landing: simulador web de teléfono Android con tres casos, notificaciones y detalle; navegación por accesos, inicio y Escape. Fuentes integradas sobre main tras la limpieza de Biome, siete tests y flujo DOM aprobados. La APK no cambia; la demostración usa reglas locales y no valida QVAC Android.
-- Archivadas las fuentes y evidencias del formulario Android y la consola para el mismo caso: [resultado y límites](evidencias/flujo-real/README.md). Prueba móvil aprobada; instrumentación administrativa fallida por timeout, con estado final verificado por lectura independiente. Incluye grabaciones originales en la release y corrección posterior del recorder, sin nueva ejecución.
-- Video final: [56 segundos, 1080p y proyecto editable](marketing/video/ENTREGA-DEMO-FINAL.md), con grabaciones reales del formulario Android y del mismo caso en consola. SHA y ZIP verificados al archivar en release; QA visual reportada por la tarea de video, sin nuevo render. La variante AdminDemoTest con logs es posterior a la ejecución fallida.
+La tarea de landing comunicó pruebas HTTP reales aprobadas del servicio HTTPS de reportes: inicio de sesión, reporte, duplicado, cierre/reinicio de sesión, persistencia y borrado. La preparación Android0.5 y los cambios de privacidad asociados siguen activos; no están congelados ni incorporados a esta PR. Ese resultado HTTP no acredita todavía el recorrido de reportes desde Android0.5 ni aprobación del canal cerrado de Play.
 
-- Distribución: publicado el [diagnóstico de Play Protect](android/PLAY-PROTECT-REVISION.md) de la APK nativa 0.3 y un borrador no enviado. Google Play/API36 sigue en preparación. README actualizado para enlazar la release Expo apk-v0.2 ya publicada y aclarar el requisito del APK para reconstruir la landing.
-- Android nativo 0.4: [inicio y menú de cuatro secciones](ANDROID-INICIO-Y-MENU.md), seis pruebas juntas y navegación con texto al 130 % aprobadas. APK debug target35 y resultado archivados con SHA-256; la preparación de Google Play/API36 continúa por separado.
+Se mantiene la separación entre cortes revisados y trabajo en curso. Los cambios de las tareas se publican después de revisar archivos concretos y evidencias, sin sobrescribir el checkout compartido ni copiar credenciales o datos personales de prueba.
 
-- Preparación API36: [callback nativo de Atrás y test de recreación](android/API36-Y-NAVEGACION-ATRAS.md), 2/2 en Android15/API35. Build/lint de preparación aprobados; no acredita ejecución Android16 ni distribución Google Play. Código integrado sin material de firma ni bundles.
+## Android 0.5 incorporado en este corte
 
-- Google Play: versión4 target36 confirmada activa para verificadores internos el 11 de septiembre a la 01:26 (Panamá). [Acceso y alcance](android/API36-Y-NAVEGACION-ATRAS.md#disponibilidad-para-pruebas-internas). Instalación desde Play, Android16 y QVAC siguen pendientes; alta automática de verificadores aún en preparación.
+[PR #37](https://github.com/Andresssrr24/certiva/pull/37): Ingresar/Mis reportes por HTTPS, confirmación de envío mínimo y borrado de reportes propios. Conserva API36 como base y apunta a main. Dos pruebas nativas aprobadas en API35 contra el HTTPS real; no se reejecutó la suite completa durante la publicación. [Fuentes y alcance](android/REPORTES-HTTPS-ANDROID.md). El backend se entrega por separado y no se incluye material de firma o credenciales.

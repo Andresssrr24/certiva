@@ -1538,6 +1538,13 @@ footer > span {
   margin-top: 18px;
   font-size: 12px !important;
 }
+.download-card > p.apk-alt {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.8;
+}
 .apk-check {
   font-size: 12px;
   line-height: 1.8;

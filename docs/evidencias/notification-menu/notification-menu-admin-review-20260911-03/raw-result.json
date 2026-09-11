@@ -1,0 +1,35 @@
+{
+  "caseId": "b63be9f8-f051-4873-a4a8-9823254f8711",
+  "assessmentId": "1de8045a-1df9-4433-80fe-0a9210539f8b",
+  "origin": "http:\/\/127.0.0.1:4320",
+  "phases": [
+    {
+      "name": "01-recepcion",
+      "at": 1789108737407,
+      "recordingElapsedMs": 888
+    },
+    {
+      "name": "02-detalle-del-caso",
+      "at": 1789108741036,
+      "recordingElapsedMs": 4516
+    },
+    {
+      "name": "03-decision-registrada",
+      "at": 1789108745059,
+      "recordingElapsedMs": 8540
+    },
+    {
+      "name": "04-auditoria",
+      "at": 1789108749638,
+      "recordingElapsedMs": 13118
+    }
+  ],
+  "passed": false,
+  "readOnlyCaseReview": true,
+  "viewWidth": 2400,
+  "viewHeight": 1080,
+  "remoteVideo": "\/sdcard\/certiva-admin-case-review-1789108736520.mp4",
+  "uiPassed": true,
+  "requiresBackendVerification": true,
+  "recorderStopped": true
+}

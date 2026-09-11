@@ -1,0 +1,179 @@
+{
+  "archive": "certiva-notificacion-menu-20260911.zip",
+  "archiveSha256": "a20ec55b18faea5c4cf19a2d09e0dd1d5acd17b49df0ed1e44f0e5710e128127",
+  "caseId": "b63be9f8-f051-4873-a4a8-9823254f8711",
+  "assessmentId": "1de8045a-1df9-4433-80fe-0a9210539f8b",
+  "caseAndAuditUnchangedDuringReview": true,
+  "files": [
+    {
+      "path": "notification-menu-real-20260911-01/contact-sheet.jpg",
+      "bytes": 99510,
+      "sha256": "d045e58fcd0ae1fad21f8e942230a40d315ef7f075ca383e2e03e379692e601c"
+    },
+    {
+      "path": "notification-menu-real-20260911-01/ffprobe.json",
+      "bytes": 371,
+      "sha256": "2546a5e0399bbdc0636e19ba3cd22315830c2296206d9e5d86a4fe8ed5ae6c3c"
+    },
+    {
+      "path": "notification-menu-real-20260911-01/flow.mp4",
+      "bytes": 3608190,
+      "sha256": "287595d961cdf39d5c1df8b58194c808a2aaaadbfd01d85a51292c8abe51864e"
+    },
+    {
+      "path": "notification-menu-real-20260911-01/instrumentation.txt",
+      "bytes": 880,
+      "sha256": "8e90d87b167faee97405fb5aaf75dade37881c6dab92d67d8c83682392d6ee3c"
+    },
+    {
+      "path": "notification-menu-real-20260911-01/listener-metadata-diagnostic.json",
+      "bytes": 1386,
+      "sha256": "889215141990cfd701925c5f9c6631a1d75a89a7a79963c46891bc550b4f3ce7"
+    },
+    {
+      "path": "notification-menu-real-20260911-01/raw-result.json",
+      "bytes": 1643,
+      "sha256": "9f100733428898c42981f489e4bf69ae2f777b850aa8679849b5bad32361a69f"
+    },
+    {
+      "path": "notification-menu-real-20260911-01/result.json",
+      "bytes": 2142,
+      "sha256": "27aead5b460d74d7e119128d204862995a207a04bfe2fc5a54180b7beac74f01"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/README.md",
+      "bytes": 1677,
+      "sha256": "57e62098ead07c8567d0c1954648c08c214c639275483f8d391877feeb08f946"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/contact-sheet.jpg",
+      "bytes": 95063,
+      "sha256": "ea45dd0db4c5047f82ff9a54fae74be569c3eb3b834cc5a44305e3e6a9c1bd4b"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/ffprobe.json",
+      "bytes": 371,
+      "sha256": "9a0e91c0f1393624ef2c3b7022fadc1f775bf6ab203aaf997379a865e1d9a7b0"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/flow.mp4",
+      "bytes": 2680364,
+      "sha256": "84f95b962e678d7ef118a0385202eee8c1790df3f60b9d59e73dd9a0fe1a74aa"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/instrumentation.txt",
+      "bytes": 121,
+      "sha256": "3c19f2a7f3033e83d041dbcbf50c37068a4381a8c9255766dcb498ff91d3d056"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/raw-result.json",
+      "bytes": 2382,
+      "sha256": "d2ef34fe67812a9ea5b8086486e9bd892c8859445dca2b785382f4cfcc22569c"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/receipt-frame.png",
+      "bytes": 255821,
+      "sha256": "4eced81a64ac31cab76520632f84a8710fda716f166f247c58ab2a92309e797c"
+    },
+    {
+      "path": "notification-menu-real-20260911-02/result.json",
+      "bytes": 2879,
+      "sha256": "1042e3f6ad382d1ae09d19be74ea4fc00896ca721887234ea06b2c6f96a9300b"
+    },
+    {
+      "path": "notification-menu-admin-20260911-02/backend-verification.json",
+      "bytes": 1527,
+      "sha256": "2f377267b16abb7c43db9a5465414f6a95949863e76f0110b530baa781b28fee"
+    },
+    {
+      "path": "notification-menu-admin-20260911-02/contact-sheet.jpg",
+      "bytes": 30638,
+      "sha256": "fc7cac6516d2ba157d4ac829b67195be528d68e55adf0fefb2e2558beba2a245"
+    },
+    {
+      "path": "notification-menu-admin-20260911-02/ffprobe.json",
+      "bytes": 368,
+      "sha256": "39d6f64cd273fe8b749d063659906e7409cf4ac9c842eecff5ec4b964c25cef3"
+    },
+    {
+      "path": "notification-menu-admin-20260911-02/flow.mp4",
+      "bytes": 91023,
+      "sha256": "251bbb471e87a553e5e45a3bc73f1ea91338ca14ae6e545afd84c43b49ce9e8e"
+    },
+    {
+      "path": "notification-menu-admin-20260911-02/instrumentation.txt",
+      "bytes": 122,
+      "sha256": "ee6edafdca43076e6c0e5204e39a089e026cf655eed61b9c040f4c7896edb21a"
+    },
+    {
+      "path": "notification-menu-admin-20260911-02/raw-result.json",
+      "bytes": 967,
+      "sha256": "10bc67ffce999b2611e52159a20d0977a41ff3555651e36fd5e922856877f0a6"
+    },
+    {
+      "path": "notification-menu-admin-20260911-02/result.json",
+      "bytes": 1657,
+      "sha256": "697b03cdeb6cb16148c6b657efecf1f79c906743e2b737ea239ee33c479fa204"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-02/instrumentation.txt",
+      "bytes": 863,
+      "sha256": "9ae4a6964d8078999d56ba3eed1023818ac22d10d540bb2597869f21a494bd93"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-02/raw-result.json",
+      "bytes": 213,
+      "sha256": "eddade00920953767e1fdb05c8d9ed146d8d20ec24e94f28bd876b6810e52f42"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-02/result.json",
+      "bytes": 629,
+      "sha256": "e284b17a03098d9a4243aa91f52da77f512bbfdedcb1d63d9072c93a6ace5f91"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/README.md",
+      "bytes": 1234,
+      "sha256": "810c7e0a8023b37af361dc9ac721172678d61c7b8bf4999aed7ec5a6e9326adc"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/backend-verification.json",
+      "bytes": 1527,
+      "sha256": "2f377267b16abb7c43db9a5465414f6a95949863e76f0110b530baa781b28fee"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/contact-sheet.jpg",
+      "bytes": 53509,
+      "sha256": "492d3fd45473a09fe46ec631791d9079c5331d9d1b2e2844fc2d4219ea93c75d"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/ffprobe.json",
+      "bytes": 369,
+      "sha256": "b1b7777854f5bf7a3f3f3551f1754e03fcdeface2897f5a565c4d7c5e40f5e8d"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/final-frame.png",
+      "bytes": 75645,
+      "sha256": "4f4c0e9293c933e3b708d693b924cb8f923cb1a38f153bd27e106c2c0ec02e45"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/flow.mp4",
+      "bytes": 209327,
+      "sha256": "45f2c105a250fea93d9f00b7fb5ec53cd860818e005efe669426ebfffef34f6f"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/instrumentation.txt",
+      "bytes": 120,
+      "sha256": "8f462873e851914b7c25a90c47d3774616d712aa136da16ac51935c14d219b4d"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/raw-result.json",
+      "bytes": 850,
+      "sha256": "1a29720ef0ae93f9b0248f07692ba19c42cb9d0c6a5b63692bdf13af3c42bd98"
+    },
+    {
+      "path": "notification-menu-admin-review-20260911-03/result.json",
+      "bytes": 1620,
+      "sha256": "4cdf4f673317be9dd5af66e24e18ddc58414ce76674a25d6ff5a1747e77bb04e"
+    }
+  ]
+}
