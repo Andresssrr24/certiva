@@ -46,6 +46,6 @@ El corte está congelado y revisado: backend en [PR #38](https://github.com/Andr
 
 La revisión corrigió el reinicio de cuota al borrar reportes y endureció el directorio de aprovisionamiento;30pruebas y build aprobados. Esas correcciones aún no se habían incorporado al despliegue en el último estado confirmado. La tarea propietaria publicó versión 5 en prueba interna y guardó el acceso de revisión tras autorización de Bryan. Después confirmó ficha y declaraciones completas y envió 14 cambios de **0.5.0 · Certiva · Prueba cerrada**, con un único AAB versión 5. Play muestra «Cambios en la etapa de revisión», sin aprobación ni disponibilidad cerrada confirmadas. Panamá y el grupo se conservan; publicación administrada desactivada y `BETA_PLAY_READY=false`.
 
-Actualización posterior de la tarea de landing: prueba abierta 0.5 enviada a revisión para Colombia y Panamá, todavía sin aprobación ni descarga confirmadas. La nueva ruta de demo web sigue en preparación; aún no se incorpora como entrega publicada en este inventario.
+Actualización posterior de la tarea de landing: prueba abierta 0.5 enviada a revisión para Colombia y Panamá, todavía sin aprobación ni descarga confirmadas. La [demo web sin instalación](https://certiva-landing.vercel.app/demo) ya está publicada; el [inventario y las comprobaciones](../landing/DEMO-REVIEW.md) identifican los cuatro archivos congelados y el alcance por reglas locales.
 
 Se mantienen las credenciales, datos privados y AAB fuera del repositorio. El checkout compartido y las fuentes de las demás tareas se conservan.

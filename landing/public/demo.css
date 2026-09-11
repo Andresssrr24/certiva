@@ -1,0 +1,35 @@
+main > .context-strip,
+#como-funciona,
+#como-usar-app,
+#tecnologia,
+.faq,
+.closing,
+.connection,
+[data-mode="image"] {
+  display: none !important;
+}
+.hero {
+  padding-top: 36px;
+  min-height: 0;
+}
+.hero h1 {
+  font-size: clamp(42px, 6vw, 76px);
+}
+.hero-actions {
+  display: none;
+}
+.manual-section {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.hero-description {
+  max-width: 580px;
+}
+@media (max-width: 700px) {
+  .header nav {
+    display: none;
+  }
+  .hero {
+    padding-top: 24px;
+  }
+}
