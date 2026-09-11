@@ -6,7 +6,7 @@ El plan, las mediciones de modelos y las compuertas están en [../docs/PLAN-APK.
 
 ## El APK
 
-`dist/antifraude-release-arm64.apk`: 219 MB, solo arm64, Android 10 o superior, firmado con la llave de depuración. No va en el repositorio por peso; se comparte por enlace.
+`dist/certiva-release-arm64.apk`: 229 MB, solo arm64, Android 10 o superior, firmado con la llave de depuración. No va en el repositorio por peso; se comparte por enlace.
 
 Qué pesa dentro, leído del APK:
 
@@ -72,8 +72,8 @@ El NDK 29.0.14206865 que fija el plugin de QVAC lo baja Gradle solo en la primer
 
 ```bash
 ./preparar.sh            # crea app/ con la plantilla oficial de Expo SDK 54, instala el SDK y copia el núcleo y las pantallas
-./compilar.sh release    # expo prebuild + gradlew assembleRelease -> dist/antifraude-release-arm64.apk
-adb install -r dist/antifraude-release-arm64.apk
+./compilar.sh release    # expo prebuild + gradlew assembleRelease -> dist/certiva-release-arm64.apk
+adb install -r dist/certiva-release-arm64.apk
 ```
 
 `compilar.sh` exporta `JAVA_HOME` y `ANDROID_HOME` con los valores de Homebrew si no están definidos. La primera compilación tomó unos 25 minutos en un M4, casi todo descarga de Gradle y del NDK; las siguientes son incrementales.
@@ -91,7 +91,7 @@ Para desarrollar con recarga en caliente en un teléfono conectado por USB: `cd 
 
 - Compilado el 10 de septiembre de 2026 en el MacBook, sin Android Studio. 228 MB.
 - 11 de septiembre: versión 0.3.0 con la app completa (cuatro pestañas, historial, aprender y ajustes), compilada y probada en el emulador arm64 API 35: la bienvenida, el recorrido de pegar un mensaje y ver el veredicto, el historial, el acordeón de señales y los ajustes funcionan; el botón físico de atrás cierra el detalle. 229 MB, SHA-256 `9a5165c4…5d4099`. Capturas en `../docs/img/apk-ui-*.png`.
-- 11 de septiembre: versión 0.2.0 con la marca Certiva (nombre, icono adaptativo Enlace, firma en la cabecera, Manrope y azul #205094), compilada y probada en el mismo emulador: el cajón de aplicaciones muestra «Certiva» con el símbolo, la app abre con la firma debajo de la barra de estado, y un mensaje de fraude tecleado da «Es una estafa» con tres señales en 9 ms con un solo toque en «Verificar» (antes, con el teclado abierto, el primer toque solo lo cerraba). 229 MB, SHA-256 `2e5137bb…ab48f`. Capturas: `../docs/img/apk-certiva-cajon.png`, `apk-certiva-inicio.png` y `apk-certiva-veredicto.png`. Pendiente: publicarla como Release `apk-v0.2` y actualizar el hash que verifica `instalar.sh`.
+- 11 de septiembre: versión 0.2.0 con la marca Certiva (nombre, icono adaptativo Enlace, firma en la cabecera, Manrope y azul #205094), compilada y probada en el mismo emulador: el cajón de aplicaciones muestra «Certiva» con el símbolo, la app abre con la firma debajo de la barra de estado, y un mensaje de fraude tecleado da «Es una estafa» con tres señales en 9 ms con un solo toque en «Verificar» (antes, con el teclado abierto, el primer toque solo lo cerraba). 229 MB, SHA-256 `2e5137bb…ab48f`. Capturas: `../docs/img/apk-certiva-cajon.png`, `apk-certiva-inicio.png` y `apk-certiva-veredicto.png`. Publicada en el [Release `apk-v0.2`](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2), con el hash que verifica `instalar.sh` en `certiva-release-arm64.apk.sha256`.
 - Emulador Android arm64 (API 35) en el MacBook: instala, arranca, y el modo texto funciona: un mensaje de fraude pegado da «Es una estafa» con las tres señales (dominio que imita al banco, petición de clave, prisa), el consejo y el canal oficial, en 1 ms. Capturas en `../docs/img/`.
 - En el mismo emulador, VisionPsy Q8 se descargó desde la app (546 MB en unos 2,5 minutos), cargó y leyó capturas en CPU: la de fraude «bloqueo por enlace» dio «Es una estafa» con dominio ajeno y prisa, primer token a los 23 s y total 31 s; una legítima con enlace oficial dio «Sospechoso» porque el lector cambió letras del dominio y el teléfono no tiene OCR de contraste (la app pide comparar el enlace letra por letra). Con GPU de teléfono debería bajar mucho; ese número lo pone la prueba en un teléfono físico.
 - Tres arreglos hicieron falta para llegar ahí, documentados en `plugins/` y en `../docs/PLAN-APK.md`: OpenCL declarada opcional (si no, el APK no instala donde no hay `libOpenCL.so`), precarga de `libappmodules.so` con el enlazador del sistema (SoLoader no encuentra `libnativehelper.so`, que `bare-kit` necesita, y la app moría al arrancar) y R8 apagado.
