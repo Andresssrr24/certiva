@@ -312,18 +312,24 @@ ipcMain.handle("analizar", async (_e, ruta) => {
 ipcMain.handle("analizar-mensaje", async (_e, id) => {
   if (ocupado) throw new Error("Ya hay un análisis en curso");
   if (typeof id !== "string" || id.length > 100) throw new Error("Mensaje no disponible");
-  const mensaje = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "mensajes.json"), "utf8")).find(m => m.id === id);
+  const mensaje = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "mensajes.json"), "utf8")).find(
+    (m) => m.id === id,
+  );
   if (!mensaje) throw new Error("Mensaje no disponible");
-  ocupado = true; enviar("ocupado", true);
+  ocupado = true;
+  enviar("ocupado", true);
   try {
     const r = await motor.analizarTexto(mensaje, {
-      onEtapa: e => enviar("analisis-etapa", e),
-      onAlerta: r => enviar("analisis-alerta", r),
+      onEtapa: (e) => enviar("analisis-etapa", e),
+      onAlerta: (r) => enviar("analisis-alerta", r),
     });
     const item = { ts: Date.now(), ...r, vecinos: r.ok ? vecinosDe(r.captura) : [] };
     historial.unshift(item);
     return item;
-  } finally { ocupado = false; enviar("ocupado", false); }
+  } finally {
+    ocupado = false;
+    enviar("ocupado", false);
+  }
 });
 
 // Reportar: solo viaja el hash del indicador, nunca el mensaje. Hoy queda en memoria; la fase 3 lo publica por pares.
