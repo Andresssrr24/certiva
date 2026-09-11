@@ -18,7 +18,7 @@ npm run build
 vercel --prod
 ```
 
-La vista previa usa http://127.0.0.1:4317. Vercel sirve el contenido estático de `dist/` y las funciones `api/beta/`. El puente y los modelos siguen siendo locales. El verificador funciona en el navegador sin enviar el texto a Vercel. El informe JSON se descarga localmente y puede contener dominios y evidencias, pero no incluye el mensaje completo.
+La vista previa usa http://127.0.0.1:4317. Vercel sirve el contenido estático de `dist/` y las funciones `api/beta/` y `api/reports/`. El puente y los modelos siguen siendo locales. El verificador funciona en el navegador sin enviar el texto a Vercel. El informe JSON se descarga localmente y puede contener dominios y evidencias, pero no incluye el mensaje completo.
 
 ## Registro con Google y descarga pendiente
 
@@ -31,6 +31,15 @@ Estado y requisitos: [BETA-SETUP.md](BETA-SETUP.md). Revisión independiente: [B
 La política Android está en `/privacidad-app`, separada de la privacidad del registro web. Los [materiales de la ficha es-419](play-store-assets/README.md) se conservan como borrador y `.vercelignore` excluye esa carpeta del despliegue. No acreditan aprobación de Google Play; continúan pendientes acceso completo para revisores, declaraciones y clasificación.
 
 Los apartados de despliegue que siguen documentan revisiones anteriores y sus comprobaciones históricas.
+
+## Reportes HTTPS del piloto
+
+Android0.5 incorpora inicio de sesión, reportes mínimos, consulta y borrado propios
+contra el servicio HTTPS, con una cuenta asignada distinta del acceso Google.
+[Configuración y evidencia](REPORTS-SETUP.md). La base privada del servicio es
+independiente de la SQLite local; no se migraron cuentas ni casos locales.
+Suite de integración30/30PASS. Las pruebas de la revisión usan almacenamiento
+simulado; no aprovisionan usuarios ni borran datos en producción.
 
 ## QVAC
 

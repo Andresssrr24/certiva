@@ -8,3 +8,7 @@ README.md
 
 # Built by Vercel from public/; avoid uploading duplicate APK bytes.
 dist/
+
+# Local provisioning tools and private environment files never ship.
+scripts/
+.env*

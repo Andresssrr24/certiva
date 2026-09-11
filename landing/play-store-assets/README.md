@@ -1,6 +1,6 @@
 # Ficha de Google Play · Certiva 0.4
 
-Archivos preparados para la ficha es-419. No son evidencia de aprobación de Play
+Archivo histórico del borrador0.4 preparado para la ficha es-419. Android0.5 ya incorpora reportes HTTPS y requiere actualizar esa ficha antes de presentarla como descripción vigente. No son evidencia de aprobación de Play
 ni de inferencia QVAC en un teléfono físico.
 
 - `icon-512.png`: exportación 512 × 512 del icono existente de Certiva.
