@@ -4,6 +4,7 @@
 import * as Clipboard from "expo-clipboard";
 import { useFonts } from "expo-font";
 import * as ImagePicker from "expo-image-picker";
+import { StatusBar as BarraEstado } from "expo-status-bar";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -11,6 +12,7 @@ import {
   Pressable,
   SafeAreaView,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   TextInput,
@@ -133,6 +135,7 @@ export default function App() {
 
   return (
     <FuentesListas.Provider value={fuentes}>
+      <BarraEstado style="dark" />
       <SafeAreaView style={s.raiz}>
         <ScrollView contentContainerStyle={s.cuerpo}>
           <Marca />
@@ -265,7 +268,8 @@ function Boton({ texto, onPress, sec }) {
 
 const s = StyleSheet.create({
   raiz: { flex: 1, backgroundColor: C.fondo },
-  cuerpo: { padding: 20, gap: 14 },
+  // La app es borde a borde (Expo 54): el contenido empieza debajo de la barra de estado, no detrás.
+  cuerpo: { padding: 20, paddingTop: 20 + (StatusBar.currentHeight || 0), gap: 14 },
   col: { gap: 14 },
   fila: { flexDirection: "row", gap: 10 },
   marca: { flexDirection: "row", alignItems: "center", gap: 10, paddingBottom: 4 },
