@@ -198,9 +198,11 @@ ipcMain.handle("capturas-demo", () => {
 });
 
 // Evidencia optativa de una captura sintética: nunca guarda mensajes de uso normal.
-function guardarEvidenciaDemo(nombre, resultado) {
+const sesionEvidencia = `${new Date().toISOString().replace(/[:.]/g, "-")}-${process.pid}`;
+let ejecucionEvidencia = 0;
+function guardarEvidenciaDemo(nombre, resultado, ejecucion = "inicio") {
   if (!process.env.DEMO_EVIDENCIA_DIR || !process.env.DEMO_AUTO) return;
-  const dir = path.resolve(process.env.DEMO_EVIDENCIA_DIR);
+  const dir = path.resolve(process.env.DEMO_EVIDENCIA_DIR, sesionEvidencia, ejecucion);
   setTimeout(async () => {
     try {
       fs.mkdirSync(dir, { recursive: true });
@@ -211,6 +213,8 @@ function guardarEvidenciaDemo(nombre, resultado) {
           path.join(dir, "resultado.json"),
           JSON.stringify(
             {
+              sesionEvidencia,
+              ejecucion,
               casoSintetico: process.env.DEMO_AUTO,
               fecha: new Date().toISOString(),
               electron: process.versions.electron,
@@ -234,11 +238,12 @@ ipcMain.handle("analizar", async (_e, ruta) => {
   enviar("ocupado", true);
   try {
     const esDemo = ruta === path.join(__dirname, "data", "capturas", `${process.env.DEMO_AUTO}.png`);
-    if (esDemo) guardarEvidenciaDemo("02-analizando");
+    const ejecucion = `analisis-${++ejecucionEvidencia}`;
+    if (esDemo) guardarEvidenciaDemo("02-analizando", null, ejecucion);
     const r = await motor.analizar(ruta, { onEtapa: (e) => enviar("analisis-etapa", e) });
     const item = { ruta, ts: Date.now(), ...r, vecinos: r.ok ? vecinosDe(r.captura) : [] };
     historial.unshift(item);
-    if (esDemo) guardarEvidenciaDemo("03-resultado", item);
+    if (esDemo) guardarEvidenciaDemo("03-resultado", item, ejecucion);
     return item;
   } finally {
     ocupado = false;

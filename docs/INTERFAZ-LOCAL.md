@@ -34,7 +34,8 @@ Evidencia: `tmp/desktop-qvac/`, ejecución del 11 de septiembre de 2026 UTC (10 
 - Flujo real Electron → IPC → VisionPsy → reglas → Qwen3 → resultado en pantalla.
 - Resultado: señales de estafa; tiempo total 23,042 ms, incluida carga de modelos.
 - Inferencia de visión: 2,309 ms; generación del consejo: 7,768 ms.
-- `01-inicio.png`, `02-analizando.png`, `03-resultado.png` y `resultado.json` conservan la ejecución. Las capturas iniciales preceden al ajuste posterior que retira el teléfono ficticio del botón de contacto.
+- El registro anterior en la raíz de `tmp/desktop-qvac/` fue sobrescrito por repeticiones interactivas; no usar ese conjunto como evidencia final ni asociarlo a los tiempos de la primera prueba. Las capturas también preceden al ajuste que retira el teléfono ficticio.
+- A partir del siguiente reinicio, la evidencia usa subdirectorios únicos por sesión y análisis: `<sesión>/inicio/01-inicio.png` y `<sesión>/analisis-N/{02-analizando.png,03-resultado.png,resultado.json}`. No navegar ni iniciar otra verificación hasta que aparezca el mensaje de captura guardada.
 - Limitación observada: el lector transcribió `banccodemo-pa.app` donde la imagen dice `bancodemo-pa.app`. El resultado sospechoso coincide con el caso, pero esto no acredita lectura exacta de dominios ni precisión general del detector.
 - Sin prueba de voz, RAG, pares ni Android. Las cuatro pruebas HTTP de la landing son evidencia independiente.
 
