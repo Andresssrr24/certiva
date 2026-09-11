@@ -16,7 +16,7 @@
       "!vendor-notice",
       "!eval/runs",
       "!mobile/app",
-      "!renderer/assets",
+      "!**/*.svg",
       "!pilot/**/certiva.js",
       "!pilot/**/policy.json",
       "!pilot/public/policy-key.js",
