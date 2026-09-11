@@ -1,4 +1,4 @@
-# Lista de verificación para la entrega en Dojo · antes del jueves 11 a las 07:00
+# Lista de verificación para la entrega en Dojo · antes del viernes 11 de septiembre de 2026 a las 07:00 (margen interno; cierre oficial 08:00 Panamá)
 
 Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorros** y **QVAC Psy**.
 
@@ -25,3 +25,12 @@ Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorr
 - [ ] Etiqueta `git tag v1.0-hackathon && git push --tags`.
 - [ ] Ningún secreto en el repo: `git log -p | grep -iE "api[_-]?key|secret|token" | head`.
 - [ ] El capitán entrega en Dojo, marca los tres tracks y guarda una captura de la confirmación.
+
+## Validación final de esta rama
+
+- Ejecutar `npm test` y `npm run lint`.
+- Repetir evaluación completa: las métricas 98,3% son anteriores a la segunda lectura.
+- Demostrar inferencia con internet desconectado y modelos ya descargados.
+- Demostrar P2P por separado en LAN; el contador TCP no mide UDP ni todo el tráfico.
+- Mostrar llamada como simulación con audio sintético y prototipo como aplicación de escritorio.
+- Verificar repo y vídeo desde una sesión sin credenciales; guardar comprobante de entrega.

@@ -2,7 +2,7 @@
   "name": "antifraude-qvac",
   "version": "0.1.0",
   "private": true,
-  "description": "Anti-fraude en el dispositivo: lee capturas de mensajes y llamadas en vivo con modelos locales de QVAC. Hackatón ISD Summit 2026.",
+  "description": "Anti-fraude en el dispositivo: lee capturas de mensajes y llamadas en vivo con modelos locales de QVAC. Hackat\u00f3n ISD Summit 2026.",
   "license": "Apache-2.0",
   "type": "commonjs",
   "main": "main.js",
@@ -14,7 +14,8 @@
     "datos": "node data/generar.js && electron data/render.js",
     "eval": "node eval/evaluar.js",
     "format": "biome format --write .",
-    "lint": "biome check ."
+    "lint": "biome check .",
+    "test": "node --test test/*.test.js"
   },
   "dependencies": {
     "@qvac/sdk": "^0.19.0",

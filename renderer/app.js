@@ -123,11 +123,12 @@ function pintaTelefono(r) {
   chip.className = `tchip ${tipo}`;
   chip.textContent = ETIQUETA[tipo] || tipo;
   const senales = (v.senales && v.senales.length ? v.senales : r.senales) || [];
-  $("#tResumen").textContent = !r.ok
-    ? "No pude leer bien la captura. Prueba con una imagen más nítida."
-    : senales.length
-      ? "Encontré estas señales en el mensaje:"
-      : "No encontré señales de estafa. Eso no lo vuelve seguro: el banco nunca te pide claves ni códigos.";
+  $("#tResumen").textContent =
+    !r.ok || tipo === "no_legible"
+      ? "La lectura no es concluyente. Revisa el texto o prueba con una imagen más nítida."
+      : senales.length
+        ? "Encontré estas señales en el mensaje:"
+        : "No encontré señales de estafa. Eso no lo vuelve seguro: el banco nunca te pide claves ni códigos.";
   $("#tRazones").innerHTML = senales
     .map(
       (s) => `<li>${ICONO_AVISO}<div><b>${esc(SENAL[s.tipo] || s.tipo)}</b><span>${esc(s.evidencia)}</span></div></li>`,
@@ -136,7 +137,7 @@ function pintaTelefono(r) {
   $("#tConsejo").textContent =
     v.accion || "Ante la duda, no toques el enlace y llama al número oficial impreso en tu tarjeta.";
   pintaVecinos(r.vecinos || []);
-  $("#tReportar").disabled = false;
+  $("#tReportar").disabled = !r.captura;
   $("#tReportar").textContent = "Reportar este mensaje";
   $("#tReportar").onclick = async () => {
     $("#tReportar").disabled = true;
@@ -157,8 +158,8 @@ function pintaVecinos(vecinos) {
   el.hidden = false;
   el.textContent =
     v.vecinos === 1
-      ? `Otro cliente ya reportó ${NOMBRE_IND[v.tipo] || v.tipo}.`
-      : `${v.vecinos} clientes ya reportaron ${NOMBRE_IND[v.tipo] || v.tipo}.`;
+      ? `Un nodo ya reportó ${NOMBRE_IND[v.tipo] || v.tipo}.`
+      : `${v.vecinos} nodos ya reportaron ${NOMBRE_IND[v.tipo] || v.tipo}.`;
 }
 let ultimoAnalisis = null;
 function pintaTecnico(r) {
@@ -171,13 +172,13 @@ function pintaTecnico(r) {
   const contrasteHtml = r.contraste?.usado
     ? `<p class="mini">Contraste con OCR (${r.contraste.ms} ms): ${r.contraste.correcciones.length ? r.contraste.correcciones.map((c) => `${esc(c.de)} era en realidad ${esc(c.a)}`).join("; ") : `el OCR también lee ${esc(r.contraste.dominios_sospechosos.join(", "))}: la señal se mantiene`}</p>`
     : "";
-  tecnico.innerHTML = `${pasosHtml}${contrasteHtml}
-    <div><span class="chip ${esc(v.veredicto || r.veredicto_reglas || "no_legible")}">${esc(ETIQUETA_CORTA[v.veredicto || r.veredicto_reglas] || "—")}</span> <span class="mini">confianza ${conf} · reglas: ${esc(r.veredicto_reglas || "—")} · ${esc((r.modelos && r.modelos.vision) || "")} + ${esc((r.modelos && r.modelos.texto) || "")}</span></div>
+  tecnico.innerHTML = `${pasosHtml}${contrasteHtml}${r.revision ? `<p class="mini">Segunda lectura: ${esc(r.revision.estado)} · ${r.revision.ms} ms. Coincidir no confirma autenticidad.</p>` : ""}
+    <div><span class="chip ${esc(v.veredicto || r.veredicto_reglas || "no_legible")}">${esc(ETIQUETA_CORTA[v.veredicto || r.veredicto_reglas] || "—")}</span> <span class="mini">estimación del modelo ${conf} (no calibrada) · reglas: ${esc(r.veredicto_reglas || "—")} · ${esc((r.modelos && r.modelos.vision) || "")} + ${esc((r.modelos && r.modelos.texto) || "")}</span></div>
     ${senales.length ? `<ul class="senales">${senales.map((s) => `<li><b>${esc(s.tipo)}</b><span>${esc(s.evidencia)}</span></li>`).join("")}</ul>` : `<p class="mini">Sin señales por reglas.</p>`}
     ${r.captura ? `<p class="leido"><b>${esc(r.captura.canal)}</b> · de <b>${esc(r.captura.remitente || "remitente no identificado")}</b>\n${esc(r.captura.texto)}</p>` : ""}
     <details><summary>JSON completo</summary><pre>${esc(JSON.stringify({ captura: r.captura, senales: r.senales, veredicto: r.veredicto, tiempos: r.tiempos, modelos: r.modelos, detalle: r.detalle }, null, 2))}</pre></details>`;
   if (r.tiempos)
-    tiempos.textContent = `visión ${r.tiempos.extraccion_ms} ms · veredicto ${r.tiempos.veredicto_ms} ms · total ${r.tiempos.extraccion_ms + r.tiempos.veredicto_ms} ms`;
+    tiempos.textContent = `visión ${r.tiempos.extraccion_ms} ms · veredicto ${r.tiempos.veredicto_ms} ms · total ${r.tiempos.total_ms ?? r.tiempos.extraccion_ms + r.tiempos.veredicto_ms} ms`;
 }
 function pintaHistorial() {
   const h = $("#historial");
@@ -371,6 +372,7 @@ function pintaPares(estado, log) {
     `<span>Pares conectados: <b>${e.pares ?? 0}</b></span><span>Indicadores conocidos: <b>${e.indicadores ?? 0}</b></span><span>Este nodo: <b>${esc(String(e.nodo || "—").slice(0, 8))}</b></span>`;
   if (log) $("#paresLog").textContent = log.join("\n");
 }
+const revisionesBanco = new Map(); // Solo sesión local; no altera reportes ni confirma fraude.
 function pintaBanco(reps) {
   const porTipo = {};
   for (const r of reps) porTipo[r.tipo] = (porTipo[r.tipo] || 0) + 1;
@@ -391,9 +393,16 @@ function pintaBanco(reps) {
       .slice(0, 50)
       .map(
         (r) =>
-          `<tr><td>${new Date(r.ts).toLocaleTimeString("es-PA")}</td><td>${esc(r.tipo)}</td><td>${esc(r.hash)}</td><td>${esc(r.origen)}</td></tr>`,
+          `<tr><td>${new Date(r.ts).toLocaleTimeString("es-PA")}</td><td>${esc(r.tipo)}</td><td>${esc(r.hash)}</td><td>${esc(r.origen)}</td><td><button type="button" data-revision="${esc(`${r.tipo}:${r.hash}`)}">${esc(revisionesBanco.get(`${r.tipo}:${r.hash}`) || "Marcar para investigar")}</button></td></tr>`,
       )
-      .join("") || `<tr><td colspan="4">Todavía no hay reportes.</td></tr>`;
+      .join("") || `<tr><td colspan="5">Todavía no hay reportes.</td></tr>`;
+  for (const boton of document.querySelectorAll("[data-revision]")) {
+    boton.onclick = () => {
+      revisionesBanco.set(boton.dataset.revision, "Pendiente de investigación");
+      boton.textContent = "Pendiente de investigación";
+      boton.disabled = true;
+    };
+  }
 }
 async function medirRed() {
   try {
@@ -402,6 +411,8 @@ async function medirRed() {
     const n = $("#redNube");
     if (r.nube === null) {
       n.textContent = "n/d";
+      $("#redPares").textContent = "n/d";
+      el.title = "Medición no disponible; no equivale a ausencia de tráfico.";
       return;
     }
     n.textContent = String(r.nube);
