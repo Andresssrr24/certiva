@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "Four navigation cell icon/label regions contain visible dark pixels on all four final portrait screenshots.",
+  "counts": {
+    "menu-home.png": [
+      1322,
+      1536,
+      1313,
+      1611
+    ],
+    "menu-verify.png": [
+      1307,
+      1564,
+      1313,
+      1611
+    ],
+    "menu-account.png": [
+      1307,
+      1536,
+      1313,
+      1636
+    ],
+    "menu-alerts.png": [
+      1307,
+      1536,
+      1360,
+      1611
+    ]
+  }
+}

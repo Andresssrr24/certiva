@@ -1,0 +1,46 @@
+{
+  "version": "0.4.0-menu-experimental",
+  "applicationId": "local.certiva.pilot",
+  "targetSdk": 35,
+  "apkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "mainActivitySha256": "742151afc17b32e53d3e9fa583fc24c09552135c1060574aeb383fb4a77200c2",
+  "buildPassed": true,
+  "lintErrors": 0,
+  "lintWarnings": 24,
+  "combinedInstrumentationPassed": true,
+  "testsPassed": 6,
+  "suiteSeconds": 56.98,
+  "largeTextTestPassed": true,
+  "fontScale": 1.3,
+  "largeTextSeconds": 24.452,
+  "navigationPixelCheckPassed": true,
+  "largeTextNavigationPixelCounts": {
+    "menu-home.png": [
+      1795,
+      2242,
+      1931,
+      2118
+    ],
+    "menu-verify.png": [
+      1779,
+      2290,
+      1931,
+      2118
+    ],
+    "menu-account.png": [
+      1779,
+      2242,
+      1931,
+      2171
+    ],
+    "menu-alerts.png": [
+      1779,
+      2242,
+      1966,
+      2118
+    ]
+  },
+  "androidInferenceValidated": false,
+  "realWhatsAppValidated": false,
+  "bankConnectionValidated": false
+}

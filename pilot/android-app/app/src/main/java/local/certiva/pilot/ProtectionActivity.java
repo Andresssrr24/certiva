@@ -61,7 +61,7 @@ public final class ProtectionActivity extends Activity {
         if(items.length()>0)button("Borrar resultados locales",()->new AlertDialog.Builder(this).setTitle("Borrar resultados").setMessage("Se eliminarán los resultados guardados en este teléfono.").setNegativeButton("Volver",null).setPositiveButton("Borrar",(d,w)->{ProtectionStore.prefs(this).edit().remove("alerts").apply();getSystemService(NotificationManager.class).cancelAll();render();}).show());
         if(modelReady)button("IA en este teléfono",()->startActivity(new Intent(this,local.certiva.qvac.ModelActivity.class)));
         ProtectionStyle.disclosure(layout,"Privacidad y alcance","El análisis ocurre en este dispositivo. Certiva solo procesa el texto visible de notificaciones de WhatsApp y WhatsApp Business, sin leer su historial ni enviar tus mensajes. Conserva hasta 20 resultados por 7 días, sin el mensaje original. Puedes desactivar la protección cuando quieras.");
-        button("Volver a verificación manual",this::finish);
+        button("Volver a Certiva",this::finish);
     }
     @Override public void onRequestPermissionsResult(int code,String[] permissions,int[] grants){super.onRequestPermissionsResult(code,permissions,grants);render();}
 }

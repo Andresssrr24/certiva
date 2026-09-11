@@ -15,7 +15,7 @@ import java.io.FileOutputStream;
 /** Home navigation and input checks; never runs inference or sends reports. */
 public final class HomeScreenTest extends InstrumentationTestCase {
     @Override protected void setUp()throws Exception{
-        super.setUp();assertTrue(getInstrumentation().getUiAutomation().performGlobalAction(android.accessibilityservice.AccessibilityService.GLOBAL_ACTION_HOME));
+        super.setUp();getInstrumentation().getUiAutomation().setRotation(android.app.UiAutomation.ROTATION_FREEZE_0);getInstrumentation().waitForIdleSync();
         android.os.SystemClock.sleep(500);
     }
     private View find(View root,String label){
@@ -31,7 +31,7 @@ public final class HomeScreenTest extends InstrumentationTestCase {
     }
     public void testHomeInputAndProtectionNavigation()throws Throwable{
         var context=getInstrumentation().getTargetContext();
-        Activity home=getInstrumentation().startActivitySync(new Intent(context,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));Activity protection=null;
+        Activity home=getInstrumentation().startActivitySync(new Intent(context,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK));Activity protection=null;
         try{
             View root=home.getWindow().getDecorView();
             EditText input=(EditText)find(root,"Texto del mensaje");Button verify=(Button)find(root,"Verificar mensaje");
@@ -40,11 +40,14 @@ public final class HomeScreenTest extends InstrumentationTestCase {
             getInstrumentation().waitForIdleSync();
             View brand=find(root,"certiva");android.graphics.Rect visible=new android.graphics.Rect();assertTrue(brand.getLocalVisibleRect(visible));assertEquals("The brand must be fully visible on launch",brand.getHeight(),visible.height());
             capture("android-home-redesign.png");
+            runTestOnUiThread(()->find(root,"Verificar").performClick());
+            getInstrumentation().waitForIdleSync();assertTrue(input.isShown());
             runTestOnUiThread(()->((Button)find(root,"Usar ejemplo")).performClick());
             long deadline=System.currentTimeMillis()+15000;
             while(!verify.isEnabled()&&System.currentTimeMillis()<deadline)android.os.SystemClock.sleep(100);
             assertTrue("Sample is editable and ready for review",verify.isEnabled());assertTrue(input.getText().length()>0);
             runTestOnUiThread(()->input.setText("   "));assertFalse(verify.isEnabled());
+            runTestOnUiThread(()->find(root,"Inicio").performClick());
             Button setup=(Button)find(root,"Configurar protección");if(setup==null)setup=(Button)find(root,"Ver protección y alertas");assertNotNull(setup);
             var monitor=getInstrumentation().addMonitor(ProtectionActivity.class.getName(),null,false);Button action=setup;
             runTestOnUiThread(action::performClick);protection=getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
@@ -53,7 +56,7 @@ public final class HomeScreenTest extends InstrumentationTestCase {
     }
     public void testSharedTextIsPreserved()throws Throwable{
         var context=getInstrumentation().getTargetContext();
-        Activity home=getInstrumentation().startActivitySync(new Intent(context,MainActivity.class).setAction(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT,"Mensaje de prueba compartido").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+        Activity home=getInstrumentation().startActivitySync(new Intent(context,MainActivity.class).setAction(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT,"Mensaje de prueba compartido").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK));
         try{EditText input=(EditText)find(home.getWindow().getDecorView(),"Texto del mensaje");assertEquals("Mensaje de prueba compartido",input.getText().toString());capture("android-home-shared.png");}
         finally{runTestOnUiThread(home::finish);}
     }
