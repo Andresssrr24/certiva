@@ -10,7 +10,7 @@ Demo vigente: [Android y administración del mismo caso — video de 56 segundos
 
 Android0.5 conecta **Ingresar/Mis reportes por HTTPS** y permite borrar reportes propios: [PR #37](https://github.com/Andresssrr24/certiva/pull/37). [Servicio y validación](landing/REPORTS-SETUP.md): dos pruebas nativas contra HTTPS aprobadas en emulador API35; no acredita instalación física desde Play ni inferencia QVAC. Las correcciones de cuota de la revisión están publicadas en código y pendientes de desplegar.
 
-Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. El inventario actualizado distingue PR integradas, las PR #36/#37/#38 abiertas y los 22 archivos de la prerelease, con sus hashes. API36 requiere integrar la PR #36 en `main`; su PR anterior se fusionó en otra rama. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
+Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. El inventario actualizado distingue PR integradas, las PR #37/#38 abiertas y los 22 archivos de la prerelease, con sus hashes. API36 está incluida en la PR #37, que reemplaza la #36, pendiente de entrar en `main`; su PR anterior se fusionó en otra rama. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|

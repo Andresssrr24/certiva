@@ -19,3 +19,5 @@ La política explica las marcas temporales sin contenido del reporte. La prueba 
 - La tarea propietaria reporta pruebas HTTP reales e instrumentación Android 0.5,2/2en 6.242 s. Esas pruebas corresponden al despliegue anterior a las correcciones de cuota; no se reetiquetan como prueba de la versión corregida.
 
 Sin credenciales, datos Blob/SQLite ni AAB en Git. La publicación de prueba interna no acredita aprobación del canal cerrado, instalación física, Android16 ni inferencia QVAC.
+
+Publicación final: backend en PR #38 y Android0.5 en PR #37, que incluye API36 y reemplaza #36. La PR #35 se fusionó antes de que se añadiera el servicio, por lo que no contiene este backend. Los merges posteriores de main solo incorporaron documentación/evidencias; las fuentes del servicio y las pruebas coinciden con el commit validado30/30.
