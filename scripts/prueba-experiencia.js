@@ -88,6 +88,8 @@ app
       '!document.querySelector(\'[data-p="veredicto"]\').hidden && document.querySelector("#certivaNotification").hidden',
       "tap opens detailed analysis",
     );
+    await pause(250);
+    fs.writeFileSync(root + "/tmp/portal-detail.png", (await w.webContents.capturePage()).toPNG());
     await run('document.querySelector("#tReportar").click()');
     await pause(200);
     await check('document.querySelectorAll(".case-row").length===1', "client report reaches bank");

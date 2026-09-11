@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="experience.css">
 </head>
 <body>
+<svg class="android-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="android-phone" viewBox="0 0 24 24"><path d="M7 3 4 4c-2 6 10 18 16 16l1-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></symbol><symbol id="android-whatsapp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 19 2.8 21l.8-5A9 9 0 1 1 5 19Z"/><path d="m8 6-2 1c-1 4 6 11 10 10l1-2-3-2-1 1c-2-1-3-2-4-4l1-1Z"/></symbol><symbol id="android-messages" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8l-6 4V5a2 2 0 0 1 2-2Z"/><path stroke="white" stroke-width="1.6" d="M7 8h10M7 12h7"/></symbol><symbol id="android-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-camera" viewBox="0 0 24 24"><path d="M7 5 9 2h6l2 3h4a2 2 0 0 1 2 2v13H1V7a2 2 0 0 1 2-2Z"/><circle cx="12" cy="12" r="4" fill="none" stroke="#e2eaff" stroke-width="2"/></symbol><symbol id="android-chrome" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 8h9M9 14l-5-8m10 9-4 7" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M6 10v2a6 6 0 0 0 12 0v-2M12 18v4" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 0v4m0 16v4M0 12h4m16 0h4M3 3l3 3m12 12 3 3M3 21l3-3M18 6l3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol><symbol id="android-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m8 12 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol><symbol id="android-back" viewBox="0 0 24 24"><path d="m14 5-7 7 7 7M7 12h15" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-video" viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="14" rx="3"/><path d="m17 9 6-4v14l-6-4Z"/></symbol><symbol id="android-more" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></symbol></defs></svg>
   <header class="barra">
     <div class="marca"><span class="brand-icon" aria-hidden="true"></span><div><strong class="wordmark">certiva</strong><small>Tu aliado contra el fraude</small></div></div>
     <div class="tabs" role="tablist" aria-label="Vistas">
@@ -26,30 +27,29 @@
       <div class="marco" id="marco">
         <div class="telefono" id="telefono">
           <div class="pantalla">
-            <div class="tstatus"><span>10:24</span><span>●●● ▲ ▮</span></div>
+            <div class="tstatus"><span>10:24</span><span class="android-status-icons"><svg viewBox="0 0 56 16" aria-label="Wi-Fi, señal móvil y batería al 82 por ciento"><path d="M1 4q9-8 18 0L10 14Z"/><path d="M23 14 36 1v13Z"/><rect x="42" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M45 1h6v2h-6zM44 5h8v7h-8z"/></svg></span></div>
             <div class="app">
               <section class="p phone-home" data-p="escritorio">
-                <div class="home-date">Jueves, 10 de septiembre</div><div class="home-clock">10:24</div>
-                <div class="weather-widget"><span>☀</span><div><strong>28°</strong><small>Ciudad de Panamá</small></div></div>
-                <div class="daily-widget"><small>TU DÍA</small><b>Un café. Y todo por delante.</b><span>Disfruta tu día, a tu ritmo.</span></div>
-                <div class="app-grid">
-                  <button class="home-app" data-home-app="whatsapp"><span class="app-tile whatsapp">◔</span>WhatsApp</button>
-                  <button class="home-app" data-home-app="sms"><span class="app-tile messages">☰</span>Mensajes</button>
-                  <button class="home-app" data-home-app="correo"><span class="app-tile mail">✉</span>Correo</button>
+                <div class="at-a-glance"><span class="home-date">Jue, 10 de sept.</span><span><svg class="android-icon" aria-hidden="true"><use href="#android-sun"/></svg> 28°</span></div>
+                <div class="android-clock" aria-label="10:24"><span>10</span><span>24</span></div>
+                <div class="home-bottom"><div class="app-grid">
+                  <button class="home-app" data-home-app="whatsapp"><span class="app-tile whatsapp"><svg class="android-icon" aria-hidden="true"><use href="#android-whatsapp"/></svg></span>WhatsApp</button>
+                  <button class="home-app" data-home-app="sms"><span class="app-tile messages"><svg class="android-icon" aria-hidden="true"><use href="#android-messages"/></svg></span>Mensajes</button>
+                  <button class="home-app" data-home-app="correo"><span class="app-tile mail"><svg class="android-icon" aria-hidden="true"><use href="#android-mail"/></svg></span>Correo</button>
                   <button class="home-app" id="openCertiva"><span class="brand-icon"></span>Certiva<span id="appBadge" hidden>1</span></button>
                 </div>
-                <div class="home-search">⌕ <span>Buscar en el teléfono</span></div>
-                <div class="phone-dock"><span>☎</span><span>◎</span><span>▧</span><span>♫</span></div>
+                <div class="phone-dock" aria-hidden="true"><span><svg class="android-icon" aria-hidden="true"><use href="#android-phone"/></svg></span><span><svg class="android-icon" aria-hidden="true"><use href="#android-chrome"/></svg></span><span><svg class="android-icon" aria-hidden="true"><use href="#android-camera"/></svg></span></div>
+                <div class="home-search" aria-hidden="true"><svg class="android-icon" aria-hidden="true"><use href="#android-search"/></svg><span>Buscar</span><svg class="android-icon" aria-hidden="true"><use href="#android-mic"/></svg></div></div>
               </section>
               <section class="p source-app" data-p="mensaje" hidden>
-                <div class="source-heading"><span id="sourceIcon">◔</span><div><b id="sourceSender"></b><small id="sourceChannel"></small></div></div>
+                <div class="source-heading"><button class="source-back" id="sourceBack" aria-label="Volver al inicio"><svg class="android-icon" aria-hidden="true"><use href="#android-back"/></svg></button><span id="sourceIcon"><svg class="android-icon" aria-hidden="true"><use href="#android-whatsapp"/></svg></span><div><b id="sourceSender"></b><small id="sourceChannel"></small></div><span class="source-tools" aria-hidden="true"><svg class="android-icon" aria-hidden="true"><use href="#android-video"/></svg><svg class="android-icon" aria-hidden="true"><use href="#android-more"/></svg></span></div>
                 <div class="chat-day">HOY</div><p class="chat-context" id="sourceContext"></p>
                 <div class="message-bubble"><p id="sourceText"></p><small id="sourceTime"></small></div>
-                <div class="chat-compose">Mensaje <span>＋</span></div>
+                <div class="chat-compose"><span>Mensaje</span><svg class="android-icon" aria-hidden="true"><use href="#android-mic"/></svg></div>
               </section>
               <div class="phone-notifications" aria-live="polite">
-                <button class="phone-notification source-notification" id="sourceNotification" hidden><span class="notification-icon whatsapp" id="arrivalIcon">◔</span><span><small id="arrivalApp"></small><b id="arrivalSender"></b><span id="arrivalPreview"></span></span><em>ahora</em></button>
-                <button class="phone-notification certiva-notification" id="certivaNotification" hidden><span class="brand-icon small"></span><span><small>CERTIVA · PROTECCIÓN</small><b id="pushTitle"></b><span id="pushBody"></span></span><em>ahora</em></button>
+                <button class="phone-notification source-notification" id="sourceNotification" hidden><span class="notification-icon whatsapp" id="arrivalIcon"><svg class="android-icon" aria-hidden="true"><use href="#android-whatsapp"/></svg></span><span><small id="arrivalApp"></small><b id="arrivalSender"></b><span id="arrivalPreview"></span></span><em>ahora</em></button>
+                <button class="phone-notification certiva-notification" id="certivaNotification" hidden><span class="brand-icon small"></span><span><small>Certiva · Protección</small><b id="pushTitle"></b><span id="pushBody"></span><strong class="notification-action">Ver detalle</strong></span><em>ahora</em></button>
               </div>
 
               <section class="p" data-p="inicio" hidden>
@@ -73,7 +73,7 @@
               </section>
 
               <section class="p" data-p="veredicto" hidden>
-                <div class="tchip" id="tChip"></div>
+                <div class="detail-appbar"><span class="brand-icon small"></span><span>certiva</span><span class="detail-label">Protección</span></div><div class="detail-shield"><svg class="android-icon" aria-hidden="true"><use href="#android-shield"/></svg></div><div class="tchip" id="tChip"></div>
                 <p class="tresumen" id="tResumen"></p>
                 <ul class="razones" id="tRazones"></ul>
                 <div class="vecinos" id="tVecinos" hidden></div>
@@ -110,7 +110,7 @@
           </div>
         </div>
       </div>
-      <p class="pie-escenario">Teléfono simulado · La app se abre al tocar la alerta</p>
+      <p class="pie-escenario">Android · Vista interactiva de demostración</p>
     </section>
 
     <section class="der detras" aria-label="Detrás de escena">
