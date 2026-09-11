@@ -7,7 +7,7 @@ Implementación para evaluación interna de **verificar mensaje → confirmar re
 | Pieza | Implementado | Límite actual |
 |---|---|---|
 | SDK de reglas compartido | JavaScript puro; resultado explicable; reporte de datos mínimos | Heurísticas de texto; no autentica remitentes ni acredita eficacia contra fraude real |
-| Android | Bundle JavaScript de reglas preparado | El proyecto nativo APK/AAR sigue en validación y no se incluye en este PR |
+| Android | SDK AAR, app de muestra APK y proyecto Gradle; pegar o compartir texto | Android 13+; sin OCR ni QVAC. Prueba de conexión nativa a consola pendiente. |
 | iOS | Swift Package, JavaScriptCore, verificación de firma y OCR Apple Vision | iOS 16+; comprobado en simulador y SDK sobre Mac, pendiente de teléfonos físicos |
 | Consola y cliente web | Login, roles, reporte, bandeja, asignación, resolución y auditoría | Local, 200 casos recientes por consulta; sin SSO, roles de configuración ni expediente con contenido |
 | Backend | SQLite, sesiones de una hora, CSRF, tenant derivado de sesión, idempotencia y control de concurrencia | Un proceso local; registro auditable pero no inmutable; no despliegue de producción |
@@ -38,11 +38,36 @@ Los reportes se conservan en `cases.sqlite` en la misma carpeta. `CERTIVA_PILOT_
 
 La app web conserva el texto únicamente durante la sesión de pantalla. El cierre de sesión limpia su estado. No pegar datos reales antes de acordar el tratamiento con el banco.
 
-## Android: entrega pendiente
+## Android: APK y AAR
 
-Esta rama incorpora `android-app/sdk/src/main/assets/certiva.js` como salida compartida del generador, para comprobar que las reglas sean las mismas en todos los destinos. No incluye todavía el proyecto Gradle, la app APK ni la biblioteca AAR.
+Proyecto: `android-app/`. La biblioteca integrable está en `sdk/`; la app de ejemplo está en `app/`.
 
-La implementación nativa se está validando en una tarea independiente. Se incorporará después de comprobar el motor y la conexión nativa para iniciar sesión, enviar un reporte y consultar el caso. Las pruebas Node del bundle no sustituyen esas comprobaciones en Android.
+Requisitos de compilación: JDK 17, Android SDK plataforma 35, Gradle 9.1.0 y Android Gradle Plugin 9.0.1. El wrapper generado permite reproducir la compilación:
+
+```sh
+cd android-app
+./gradlew :app:assembleDebug :sdk:assembleRelease
+```
+
+Configurar `JAVA_HOME` y `ANDROID_HOME` según la instalación. En este Mac:
+
+- JDK: `/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home`
+- Android SDK: `/opt/homebrew/share/android-commandlinetools`
+
+Salidas: `app/build/outputs/apk/debug/app-debug.apk` y `sdk/build/outputs/aar/sdk-release.aar`. El APK es de depuración, no una publicación de Play Store. El AAR contiene el motor y configuración de desarrollo; no incorpora credenciales ni necesita permiso de internet.
+
+Para conectar la app de muestra con la consola local desde un teléfono autorizado para depuración USB o emulador:
+
+```sh
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb reverse tcp:4320 tcp:4320
+```
+
+La evaluación de texto no necesita conexión ni sesión. Reportar y consultar casos sí requieren el acceso de cliente y la conexión al servidor local. La excepción HTTP del ejemplo solo admite `127.0.0.1`; un banco debe sustituir el transporte de muestra por sus canales autenticados con TLS.
+
+El SDK Android verifica Ed25519 con Bouncy Castle 1.85.2 incluido como dependencia Gradle, sin depender del proveedor criptográfico del fabricante. Si se integra el AAR como archivo, agregar también `org.bouncycastle:bcprov-jdk18on:1.85.2`; el AAR por sí solo no empaqueta esa dependencia. La compatibilidad inicial se mantiene en Android 13 por las APIs de la muestra y debe ampliarse con pruebas, no bajando `minSdk` sin validación.
+
+Integración: crear `CertivaEngine` en el hilo principal, esperar su callback de inicialización y llamar `assess(text, channel, callback)`. `CertivaEngine.report(result, true)` proyecta el reporte mínimo después de que la interfaz obtenga confirmación. El banco decide cómo autenticar y enviar; `close()` libera el WebView interno. Ese WebView no carga redes, no accede a archivos y no expone puentes Java al contenido.
 
 ## iOS: paquete y app de muestra
 
@@ -80,7 +105,14 @@ swift test
 
 Las pruebas Node cubren reglas, abstención, minimización, paridad de bundle, flujo de casos, deduplicación, conflictos de versión, separación de bancos y clientes, permisos, CSRF, origen/host, tamaño máximo, límites de reportes y persistencia. Las pruebas Swift incluyen lectura real de una captura sintética con Apple Vision y rechazo de una firma alterada. La captura viene del dataset de desarrollo: es una prueba de funcionamiento, no evaluación independiente.
 
-La prueba instrumentada de Android y las instrucciones de compilación se añadirán cuando se incorpore el proyecto nativo validado.
+Las pruebas instrumentadas están en `android-app/app/src/androidTest/`. Para reproducirlas, iniciar `node test/android-server.js` (backend aislado en memoria, puerto 4321), compilar `:app:assembleDebugAndroidTest` e instalar la app y el APK de pruebas. Seleccionar expresamente el dispositivo de pruebas:
+
+```sh
+adb -s <serial> reverse tcp:4321 tcp:4321
+adb -s <serial> shell am instrument -w local.certiva.pilot.test/android.test.InstrumentationTestRunner
+```
+
+El test usa `http://127.0.0.1:4321`; la app de muestra sigue usando 4320. Al terminar, quitar solo el reverse de pruebas con `adb -s <serial> reverse --remove tcp:4321` y detener el fixture. El test del motor había pasado 1/1 en el entorno de origen. La prueba completa de login/reporte/consulta sigue pendiente después de un bloqueo del emulador; no se declara validada en esta rama.
 
 ## Antes de usuarios bancarios reales
 
@@ -100,3 +132,7 @@ Consultar `OFERTA-PILOTO.md` para el alcance comercial propuesto. La salida a cl
 La entrega integra las reglas del `main` de referencia `69d1f34`. Se regeneró el JavaScript compartido preservando la política firmada y su clave pública de desarrollo. Las señales `envio_para_recibir` y `cambio_direccion` tienen explicación, conservan el resultado de riesgo y son aceptadas por la API. Son tácticas de pago heredadas del motor; no incorporan USDT al alcance del producto.
 
 Validación en la rama de integración: 15 pruebas Node y 6 Swift, incluidas las regresiones de paridad fuente/bundles y reporte a consola. La app iOS también compiló para simulador con Xcode desde esta rama. El OCR de Swift usa una captura sintética real; no mide eficacia en mensajes bancarios reales. Las pruebas nativas anteriores y los APK/AAR producidos en otra tarea deben distinguirse de los artefactos que se reconstruyan desde esta rama.
+
+### Compilación Android de esta rama
+
+`./gradlew :app:assembleDebug :app:assembleDebugAndroidTest :sdk:assembleRelease :app:lintDebug` terminó correctamente con JDK 17 y Android SDK 35. Se generaron APK de depuración, APK de pruebas y AAR; lint informa **0 errores y 13 advertencias**. El bundle conserva las correcciones probadas en las 15 pruebas Node. Esto verifica compilación, no instalación ni el recorrido de red de este APK; la prueba instrumentada completa sigue pendiente.
