@@ -24,15 +24,15 @@ Objetivo: una app Android instalable de unas decenas de megas que corra el mismo
 | Modelo | Descarga | Qué aporta | Evidencia |
 |---|---|---|---|
 | Reglas | 0 MB | El veredicto completo | 136 de 136 sobre el texto verdadero; el motor de escritorio las usa como base del veredicto |
-| VisionPsy Nano 460M Flash Q4_K_M + proyector Q8 | 303 + 109 MB | Leer la captura en el teléfono | **Pendiente de medir** contra Q8 en el MacBook: mismo set, mismas reglas. Se acepta si el veredicto por reglas se mantiene dentro de 2 puntos del Q8 |
-| VisionPsy Flash Q8 + proyector | 437 + 109 MB | Referencia: 98,3 % de exactitud en la corrida de 120 | Medido |
-| Qwen3 0.6B | 382 MB | Redactar el consejo | **Pendiente de medir**: si no mejora el consejo fijo, no entra |
+| VisionPsy Nano 460M Flash Q4_K_M + proyector Q8 | 303 + 109 MB | Leer la captura en el teléfono | Medido en el MacBook sobre 16 capturas (8 fraude, 8 legítimas): veredicto por reglas 15/16 con Q4 frente a 16/16 con Q8, con la misma latencia (1,2 a 1,5 s al primer token, 1,7 a 2,1 s por captura). La corrida sobre las 136 está en marcha y decide la compuerta de los 2 puntos |
+| VisionPsy Flash Q8 + proyector | 437 + 109 MB | El lector del escritorio; referencia | Medido: 16/16 en la misma muestra |
+| Qwen3 0.6B | 382 MB | Redactar el consejo | **Medido y descartado.** En 8 veredictos acierta 7, pero solo porque repite la base de las reglas, que el piso de seguridad impone de todos modos; el consejo que redacta es pobre: «Cuelgue» ante un SMS, «fraude» como acción, confianza 0 en 6 de 8, mediana de 1,3 s. El texto fijo por señal de `consejos.js` es mejor y pesa 0 MB |
 | Qwen3 1.7B | 1.057 MB | Redactar mejor | Fuera por peso |
 | OCR clásico del SDK | 98 MB | Leer capturas sin modelo Psy | Descartado: 7 a 9 s en el M4, más lento en teléfono, y no es Psy |
 
 Por debajo de unos 250 MB no existe modelo de visión que lea texto; lo que hay por debajo es OCR. Ese es el piso, y hay que decirlo así.
 
-**Presupuesto de peso:** APK de 50 a 80 MB compilado solo para arm64 (estimación, se mide en la primera compilación); descarga opcional de unos 410 MB para el lector de capturas. Nada más.
+**Peso medido:** el APK de release compilado solo para arm64 pesa **219 MB** sin ningún modelo dentro. La estimación inicial de 50 a 80 MB era incorrecta. El desglose, leído del APK: backend Vulkan de ggml 86 MB, runtime Bare con V8 62 MB, paquete JavaScript en bytecode Hermes 19 MB, motor llama.cpp 10 MB, RocksDB 6 MB, clases Java 6 MB, siete variantes del backend CPU de ggml de 1,4 MB cada una, OpenCL 3 MB. Ninguna biblioteca lleva símbolos de depuración: `llvm-strip` no les quita un byte. La única palanca grande es quitar el backend Vulkan (86 MB), que el motor carga dinámicamente y sin el cual VisionPsy correría en CPU o en OpenCL sobre Adreno: el APK bajaría a unos 133 MB. Decisión del equipo: 220 MB es aceptable si los modelos que corren son buenos, así que el APK entregado conserva Vulkan. La descarga opcional del lector de capturas va aparte: unos 410 MB con Q4 o 545 MB con Q8.
 
 ## Arquitectura de la app móvil
 
@@ -44,16 +44,17 @@ Por debajo de unos 250 MB no existe modelo de visión que lea texto; lo que hay 
 
 ## Cómo se compila
 
-1. Máquina con Android Studio, SDK 35, NDK y Java 17. **Esta máquina no los tiene**, y bajarlos en la red actual toma horas: la compilación va en la laptop de quien ya los tenga.
-2. `cd mobile && ./preparar.sh` y luego `cd app && npx expo prebuild --platform android`.
-3. En `android/gradle.properties`, dejar `reactNativeArchitectures=arm64-v8a` para que el APK no lleve cuatro arquitecturas.
-4. Con el teléfono conectado y depuración USB: `npx expo run:android --device`. Primera prueba: pegar un texto de fraude y ver el veredicto sin descargar nada.
-5. Descargar VisionPsy desde la app y analizar una captura de `data/capturas/` pasada al teléfono. Anotar el tiempo al primer token: ese número va al README.
-6. APK para compartir: `cd android && ./gradlew assembleRelease`; el archivo queda en `android/app/build/outputs/apk/release/`. Firmado con la llave de depuración basta para un hackatón.
+Sin Android Studio. El toolchain se instala con Homebrew y `sdkmanager`, y dos scripts hacen el resto.
+
+1. `brew install openjdk@17 android-commandlinetools` y `sdkmanager --sdk_root=$HOME/Library/Android/sdk "platform-tools" "platforms;android-36" "build-tools;36.0.0" "cmake;3.22.1"`. El NDK 29.0.14206865 que fija el plugin de QVAC lo baja Gradle solo en la primera compilación.
+2. `cd mobile && ./preparar.sh`: crea `app/` con la plantilla oficial de Expo SDK 54, instala `@qvac/sdk`, `react-native-bare-kit`, `bare-rpc` y `bare-pack`, y copia el núcleo compartido y las pantallas.
+3. `./compilar.sh release`: corre `expo prebuild` (el plugin de QVAC fija arm64 y el NDK, y genera el paquete del worker recortado al plugin `llamacpp-completion` que declara `qvac.config.json`) y luego `gradlew assembleRelease`. El APK queda en `mobile/dist/antifraude-release-arm64.apk`. La primera compilación tomó unos 25 minutos en el M4, casi todo descarga de Gradle y del NDK.
+4. Instalar: `adb install -r mobile/dist/antifraude-release-arm64.apk`. Firmado con la llave de depuración, que basta para un hackatón; Android 10 o superior, solo arm64.
+5. Primera prueba en el teléfono: pegar un texto de fraude y ver el veredicto sin descargar nada. Después, descargar VisionPsy desde la app y analizar una captura de `data/capturas/` pasada al teléfono; el tiempo al primer token va al README.
 
 ## Criterios de aceptación
 
-- APK por debajo de 80 MB.
+- APK sin modelos dentro. Peso medido: 219 MB, aceptado por el equipo a cambio de conservar el backend GPU.
 - Sin descargar nada, un texto de fraude pegado da veredicto en menos de un segundo.
 - Con VisionPsy Q4 descargado, una captura de la demo da veredicto en menos de 10 s en un teléfono de gama media, sin red.
 - Las 136 capturas dan el mismo veredicto por reglas que en el escritorio con el mismo lector.
@@ -61,13 +62,13 @@ Por debajo de unos 250 MB no existe modelo de visión que lea texto; lo que hay 
 
 ## Orden de trabajo y compuertas
 
-| Paso | Dónde | Compuerta |
-|---|---|---|
-| Medir VisionPsy Q4 contra Q8 en el MacBook | Esta máquina, cuando el worker esté libre | Si pierde más de 2 puntos, el teléfono usa Q8 y la descarga sube a 545 MB |
-| Medir Qwen3 0.6B en seis veredictos | Esta máquina | Si el consejo no supera al texto fijo, no entra |
-| Preparar el proyecto Expo con `preparar.sh` | Laptop con Android Studio | Si el prebuild no pasa en una hora, se para |
-| Correr en un Android físico con texto pegado | Esa laptop | Es el mínimo para decir «corre en un teléfono» |
-| Descargar VisionPsy Q4 y leer una captura | Esa laptop | El tiempo al primer token va al README y al video |
-| APK de release | Esa laptop | Enlace en el README |
+| Paso | Dónde | Compuerta | Estado |
+|---|---|---|---|
+| Medir VisionPsy Q4 contra Q8 | MacBook | Si pierde más de 2 puntos, el teléfono usa Q8 y la descarga sube a 545 MB | 16 capturas: 15/16 frente a 16/16. Corrida sobre las 136 en marcha |
+| Medir Qwen3 0.6B en ocho veredictos | MacBook | Si el consejo no supera al texto fijo, no entra | Hecho: no entra |
+| Preparar el proyecto Expo con `preparar.sh` | MacBook, toolchain por Homebrew | Si el prebuild no pasa en una hora, se para | Hecho |
+| APK de release | MacBook | Se mide el peso y se decide | Hecho: 219 MB, se conserva la GPU |
+| Instalar y abrir en un Android | Emulador arm64 en el MacBook; después un teléfono del equipo | Es el mínimo para decir «corre en un teléfono» | Emulador: en prueba. Teléfono físico: pendiente del equipo |
+| Descargar VisionPsy y leer una captura en el teléfono | Teléfono físico | El tiempo al primer token va al README y al video | Pendiente |
 
-**Lo que no cambia:** el video y la entrega no dependen del APK. Si la compuerta del prebuild no pasa, el proyecto se entrega igual y el APK queda como siguiente paso documentado.
+**Lo que no cambia:** el video y la entrega no dependen del APK. Si el APK no llega a probarse en un teléfono físico, el proyecto se entrega igual y queda declarado como compilado y probado en emulador.

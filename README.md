@@ -118,9 +118,9 @@ Todo corre en el MacBook. Dos procesos de QVAC a la vez se bloquean en el worker
 
 Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector para la comparación; `SIN_RAG=1` apaga la política; `PARES=0` apaga la capa de pares; `PARES_SWARM=0` deja solo el modo directo; `PARES_PUERTO=4411` hace que la app también escuche directo.
 
-## App móvil y APK ligero
+## App móvil y APK
 
-La prueba de que el motor se embebe es una app Android con el mismo núcleo. El plan, con los modelos medidos y sus compuertas, está en [docs/PLAN-APK.md](docs/PLAN-APK.md); el andamiaje Expo, en `mobile/`. Principio: el APK no lleva modelos. Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas; leer capturas descarga VisionPsy Q4 una sola vez, unos 410 MB, y corre en el teléfono. Estado: andamiaje escrito y sin compilar, porque la máquina de desarrollo no tiene el toolchain de Android; la compilación va en una laptop que lo tenga, siguiendo `mobile/README.md`.
+La prueba de que el motor se embebe es una app Android con el mismo núcleo: código en `mobile/`, plan y mediciones en [docs/PLAN-APK.md](docs/PLAN-APK.md), instrucciones en [mobile/README.md](mobile/README.md). El APK está compilado: `mobile/dist/antifraude-release-arm64.apk`, 219 MB, arm64, Android 10 o superior, sin ningún modelo dentro; se comparte por enlace, no por el repositorio. Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas en menos de un milisegundo. Leer capturas descarga VisionPsy una sola vez y corre en el teléfono; el consejo en el teléfono es texto fijo por señal, porque Qwen3 0.6B, medido, no lo mejora y Qwen3 4B no cabe. El peso del APK es casi todo runtime del SDK: backend GPU Vulkan de 86 MB y runtime Bare de 62 MB; preferimos conservar la GPU antes que bajar a unos 133 MB. Estado: compilado en el MacBook sin Android Studio; la prueba en emulador arm64 está en curso y la prueba en teléfono físico queda para el equipo.
 
 ## Datos
 
