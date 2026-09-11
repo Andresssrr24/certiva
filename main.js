@@ -16,7 +16,7 @@ const { PilotCases } = require("./lib/casos-piloto");
 
 app.setName("Certiva");
 // Conservar los reportes existentes tras el cambio de nombre.
-app.setPath("userData", path.join(app.getPath("appData"), "Anti-fraude QVAC"));
+app.setPath("userData", path.join(app.getPath("appData"), "Certiva"));
 let caseStore;
 function cases() {
   if (!caseStore) caseStore = new PilotCases(path.join(app.getPath("userData"), "casos-piloto.json"));
