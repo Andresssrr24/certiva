@@ -7,7 +7,7 @@ Implementación para evaluación interna de **verificar mensaje → confirmar re
 | Pieza | Implementado | Límite actual |
 |---|---|---|
 | SDK de reglas compartido | JavaScript puro; resultado explicable; reporte de datos mínimos | Heurísticas de texto; no autentica remitentes ni acredita eficacia contra fraude real |
-| Android | SDK AAR, app de muestra APK y proyecto Gradle; pegar o compartir texto | Android 13+; sin OCR ni QVAC. Conexión probada en la versión base; pendiente repetir en el APK de esta rama. |
+| Android | SDK AAR y app 0.2; entrada de texto y alertas locales voluntarias de WhatsApp | Android 13+; reglas locales, sin OCR ni QVAC. [Guía de alertas](../docs/ALERTAS-ANDROID.md). |
 | iOS | Swift Package, JavaScriptCore, verificación de firma y OCR Apple Vision | iOS 16+; comprobado en simulador y SDK sobre Mac, pendiente de teléfonos físicos |
 | Consola y cliente web | Login, roles, reporte, bandeja, asignación, resolución y auditoría | Local, 200 casos recientes por consulta; sin SSO, roles de configuración ni expediente con contenido |
 | Backend | SQLite, sesiones de una hora, CSRF, tenant derivado de sesión, idempotencia y control de concurrencia | Un proceso local; registro auditable pero no inmutable; no despliegue de producción |
@@ -39,6 +39,8 @@ Los reportes se conservan en `cases.sqlite` en la misma carpeta. `CERTIVA_PILOT_
 La app web conserva el texto únicamente durante la sesión de pantalla. El cierre de sesión limpia su estado. No pegar datos reales antes de acordar el tratamiento con el banco.
 
 ## Android: APK y AAR
+
+La app 0.2 incorpora protección voluntaria de notificaciones. Las instrucciones y los límites están en [la guía de alertas](../docs/ALERTAS-ANDROID.md); su evidencia se documenta en [VALIDACION-ANDROID-0.2.md](VALIDACION-ANDROID-0.2.md). La validación 0.1 descrita más abajo se conserva como antecedente, no valida por sí sola las alertas 0.2.
 
 Proyecto: `android-app/`. La biblioteca integrable está en `sdk/`; la app de ejemplo está en `app/`.
 
