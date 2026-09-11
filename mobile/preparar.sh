@@ -12,7 +12,7 @@ cd app
 npm install
 npm install @qvac/sdk bare-rpc react-native-bare-kit
 npm install -D bare-pack
-npx expo install expo-file-system expo-build-properties expo-device expo-image-picker expo-clipboard expo-font
+npx expo install expo-file-system expo-build-properties expo-device expo-image-picker expo-clipboard expo-font react-native-safe-area-context
 # núcleo compartido: idéntico al del escritorio
 mkdir -p core
 cp "$RAIZ/lib/reglas.js" "$RAIZ/lib/derivar.js" "$RAIZ/lib/esquemas.js" core/
