@@ -12,13 +12,14 @@ cd app
 npm install
 npm install @qvac/sdk bare-rpc react-native-bare-kit
 npm install -D bare-pack
-npx expo install expo-file-system expo-build-properties expo-device expo-image-picker expo-clipboard
+npx expo install expo-file-system expo-build-properties expo-device expo-image-picker expo-clipboard expo-font
 # núcleo compartido: idéntico al del escritorio
 mkdir -p core
 cp "$RAIZ/lib/reglas.js" "$RAIZ/lib/derivar.js" "$RAIZ/lib/esquemas.js" core/
 cp "$RAIZ/data/banco-demo.json" "$RAIZ/data/politica-antifraude.md" core/
 # nuestras pantallas y configuración
 cp ../src/*.js ../src/*.jsx .
+mkdir -p assets && cp ../assets/* assets/   # iconos y fuentes de la marca
 cp ../app.config.js ../qvac.config.json .
 rm -f app.json App.js   # la plantilla trae un App.js que taparía nuestro App.jsx
 echo
