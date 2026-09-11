@@ -5,7 +5,7 @@ import * as Clipboard from "expo-clipboard";
 import { useFonts } from "expo-font";
 import * as ImagePicker from "expo-image-picker";
 import { StatusBar as BarraEstado } from "expo-status-bar";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import {
   ActivityIndicator,
   Image,
@@ -137,7 +137,8 @@ export default function App() {
     <FuentesListas.Provider value={fuentes}>
       <BarraEstado style="dark" />
       <SafeAreaView style={s.raiz}>
-        <ScrollView contentContainerStyle={s.cuerpo}>
+        {/* Con el teclado abierto, el primer toque en un botón debe pulsarlo, no solo cerrar el teclado. */}
+        <ScrollView contentContainerStyle={s.cuerpo} keyboardShouldPersistTaps="handled">
           <Marca />
           {pantalla === "inicio" && (
             <View style={s.col}>
