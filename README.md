@@ -61,7 +61,7 @@ La verificación QVAC real previa está descrita en las guías de escritorio y l
 
 ## Piloto bancario: SDK móvil y consola
 
-El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. Android incluye app de muestra y biblioteca AAR para pegar o compartir texto. Su prueba nativa de conexión a la consola sigue pendiente. Estas aplicaciones no ejecutan QVAC.
+El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. Android incluye app de muestra y biblioteca AAR para pegar o compartir texto. La versión base pasó las pruebas nativas de motor y conexión; falta repetirlas con el APK de esta rama. Estas aplicaciones no ejecutan QVAC.
 
 La consola usa sesiones y roles de cliente, analista y auditor, aislamiento por banco, deduplicación, control de versiones y auditoría en SQLite. El reporte contiene nueve campos de resultado y consentimiento; no incluye el mensaje, la captura, enlaces ni teléfonos. Son reportes de clientes pendientes de corroboración.
 
@@ -75,7 +75,7 @@ swift test --package-path pilot/ios
 
 Los accesos locales se generan al primer arranque y se guardan fuera del repositorio; el servidor imprime la ubicación del archivo privado. La instalación iOS, la compilación Android y el alcance del SDK están en [pilot/README.md](pilot/README.md). Las claves públicas y la política de desarrollo firmada se incluyen; la clave privada no se publica. La política vence el 10 de diciembre de 2026.
 
-**Validación de integración:** 15 pruebas Node y 6 pruebas Swift, incluyendo OCR real de una captura sintética y señales de pago que deben conservar el mismo resultado en la fuente, los bundles web/nativos y los reportes aceptados por la API. También compiló la app iOS para simulador desde esta rama. La prueba del bundle Android en Node comprueba paridad de reglas; la comprobación nativa de login, reporte y consulta sigue pendiente. El proyecto Gradle compiló APK, APK de pruebas y AAR; lint registró 0 errores y 13 advertencias. Las pruebas instrumentadas están incluidas para repetir la comprobación nativa pendiente.
+**Validación de integración:** 15 pruebas Node y 6 pruebas Swift, incluyendo OCR real de una captura sintética y señales de pago que deben conservar el mismo resultado en la fuente, los bundles web/nativos y los reportes aceptados por la API. También compiló la app iOS para simulador desde esta rama. La prueba del bundle Android en Node comprueba paridad de reglas; la versión base pasó 2/2 pruebas nativas, pero falta repetirlas en el APK integrado ([evidencia](pilot/VALIDACION.md)). El proyecto Gradle compiló APK, APK de pruebas y AAR; lint registró 0 errores y 13 advertencias. Las pruebas instrumentadas están incluidas para repetir la comprobación nativa pendiente.
 
 El piloto es para evaluación interna. Autenticación institucional, despliegue con TLS, operación bancaria y pruebas en teléfonos físicos siguen pendientes; ver los criterios de adopción de la guía. La propuesta comercial y los precios siguen por validar.
 

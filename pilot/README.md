@@ -7,7 +7,7 @@ Implementación para evaluación interna de **verificar mensaje → confirmar re
 | Pieza | Implementado | Límite actual |
 |---|---|---|
 | SDK de reglas compartido | JavaScript puro; resultado explicable; reporte de datos mínimos | Heurísticas de texto; no autentica remitentes ni acredita eficacia contra fraude real |
-| Android | SDK AAR, app de muestra APK y proyecto Gradle; pegar o compartir texto | Android 13+; sin OCR ni QVAC. Prueba de conexión nativa a consola pendiente. |
+| Android | SDK AAR, app de muestra APK y proyecto Gradle; pegar o compartir texto | Android 13+; sin OCR ni QVAC. Conexión probada en la versión base; pendiente repetir en el APK de esta rama. |
 | iOS | Swift Package, JavaScriptCore, verificación de firma y OCR Apple Vision | iOS 16+; comprobado en simulador y SDK sobre Mac, pendiente de teléfonos físicos |
 | Consola y cliente web | Login, roles, reporte, bandeja, asignación, resolución y auditoría | Local, 200 casos recientes por consulta; sin SSO, roles de configuración ni expediente con contenido |
 | Backend | SQLite, sesiones de una hora, CSRF, tenant derivado de sesión, idempotencia y control de concurrencia | Un proceso local; registro auditable pero no inmutable; no despliegue de producción |
@@ -109,10 +109,10 @@ Las pruebas instrumentadas están en `android-app/app/src/androidTest/`. Para re
 
 ```sh
 adb -s <serial> reverse tcp:4321 tcp:4321
-adb -s <serial> shell am instrument -w local.certiva.pilot.test/android.test.InstrumentationTestRunner
+adb -s <serial> shell am instrument -w -e class local.certiva.pilot.EngineTest local.certiva.pilot.test/android.test.InstrumentationTestRunner
 ```
 
-El test usa `http://127.0.0.1:4321`; la app de muestra sigue usando 4320. Al terminar, quitar solo el reverse de pruebas con `adb -s <serial> reverse --remove tcp:4321` y detener el fixture. El test del motor había pasado 1/1 en el entorno de origen. La prueba completa de login/reporte/consulta sigue pendiente después de un bloqueo del emulador; no se declara validada en esta rama.
+El test usa `http://127.0.0.1:4321`; la app de muestra sigue usando 4320. Al terminar, quitar solo el reverse de pruebas con `adb -s <serial> reverse --remove tcp:4321` y detener el fixture. La versión base pasó 2/2 pruebas: motor firmado y login/reporte/consulta. Fue necesario indicar la clase: el descubrimiento general del ejecutor legacy terminaba con «Process crashed». Si la instalación streaming se queda esperando, usar `adb install --no-streaming -r archivo.apk`. Ver [evidencia de la versión base](VALIDACION.md). Esta rama conserva la validación Node/Swift y de compilación propia; queda pendiente ejecutar su APK en el emulador.
 
 ## Antes de usuarios bancarios reales
 
