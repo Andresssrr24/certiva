@@ -12,7 +12,7 @@ Corte documental: **10 de septiembre de 2026, hora de Panamá**. Las pruebas y l
 |---|---|---|
 | Escritorio Electron | Identidad Certiva v5, análisis de capturas con QVAC, disponibilidad de modelos y evidencia separada por ejecución | Inferencia real de una captura sintética documentada; voz, RAG y pares no se volvieron a validar en esta entrega. [Guía](docs/INTERFAZ-LOCAL.md) |
 | Landing | Sitio interactivo, verificador de texto por reglas y puente opcional al QVAC del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). QVAC no se ejecuta en Vercel. |
-| Piloto bancario | SDK móvil y consola en preparación en una tarea independiente | Se incorporará en un PR propio después de sus comprobaciones. [Producto y modelo comercial](docs/PRODUCTO-BANCA-Y-MODELO-COMERCIAL.md) |
+| Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/app de muestra iOS | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Sin QVAC móvil ni conexión a APIs bancarias. |
 | Exploración Expo | Andamiaje previo en `mobile/`, conservado desde `main` | No acredita QVAC funcionando en un teléfono. [Guía](mobile/README.md) |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
 
@@ -58,6 +58,26 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 - Sintaxis de `main.js` y `renderer/app.js`, y Biome de esos archivos y `package.json`: sin errores, con advertencias de estilo existentes.
 
 La verificación QVAC real previa está descrita en las guías de escritorio y landing. No se repitió al preparar este PR para evitar interferir con el motor en uso. La conexión de la landing desde un navegador depende de sus permisos de red local y no está validada por las pruebas HTTP.
+
+## Piloto bancario: SDK móvil y consola
+
+El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. La app y el AAR Android siguen en validación en una entrega independiente. Este PR contiene su bundle JavaScript preparado, no una app Android compilable. Estas aplicaciones no ejecutan QVAC.
+
+La consola usa sesiones y roles de cliente, analista y auditor, aislamiento por banco, deduplicación, control de versiones y auditoría en SQLite. El reporte contiene nueve campos de resultado y consentimiento; no incluye el mensaje, la captura, enlaces ni teléfonos. Son reportes de clientes pendientes de corroboración.
+
+```sh
+# Desde la raíz, con Node 22.17+:
+npm --prefix pilot test
+npm --prefix pilot start
+# Consola: http://127.0.0.1:4320
+swift test --package-path pilot/ios
+```
+
+Los accesos locales se generan al primer arranque y se guardan fuera del repositorio; el servidor imprime la ubicación del archivo privado. La instalación iOS y el alcance del SDK están en [pilot/README.md](pilot/README.md). Las claves públicas y la política de desarrollo firmada se incluyen; la clave privada no se publica. La política vence el 10 de diciembre de 2026.
+
+**Validación de integración:** 15 pruebas Node y 6 pruebas Swift, incluyendo OCR real de una captura sintética y señales de pago que deben conservar el mismo resultado en la fuente, los bundles web/nativos y los reportes aceptados por la API. También compiló la app iOS para simulador desde esta rama. La prueba del bundle Android en Node no acredita un APK; su incorporación queda pendiente de cerrar la prueba nativa de conexión.
+
+El piloto es para evaluación interna. Autenticación institucional, despliegue con TLS, operación bancaria y pruebas en teléfonos físicos siguen pendientes; ver los criterios de adopción de la guía. La propuesta comercial y los precios siguen por validar.
 
 ## Trabajo por commits y PRs
 
@@ -152,7 +172,7 @@ Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector p
 
 ## Exploración móvil previa
 
-El andamiaje Expo de `mobile/` y [su plan de APK](docs/PLAN-APK.md) se conservan desde `main`. Plantean descargar modelos por separado del APK, pero no acreditan compilación ni inferencia QVAC en teléfonos. Esta exploración es distinta del SDK y la consola del piloto bancario en preparación.
+El andamiaje Expo de `mobile/` y [su plan de APK](docs/PLAN-APK.md) se conservan desde `main`. Plantean descargar modelos por separado del APK, pero no acreditan compilación ni inferencia QVAC en teléfonos. Esta exploración es distinta del SDK y la consola del [piloto bancario](pilot/README.md), que usan reglas locales y OCR Apple Vision en iOS.
 
 ## Datos
 
