@@ -46,8 +46,8 @@ const SENAL = {
   ip_literal: "El enlace lleva a una dirección extraña",
   punycode: "El enlace usa letras disfrazadas",
   acortador: "El enlace esconde a dónde lleva",
-  numero_no_oficial: "El número no es del banco",
-  pide_datos_sensibles: "Te piden tu clave, tu código o tu frase semilla",
+  numero_no_oficial: "No coincide con los números de referencia",
+  pide_datos_sensibles: "Te piden tu clave o tu código",
   envio_para_recibir: "Te piden enviar dinero para recibir más",
   cambio_direccion: "Te piden cambiar la dirección de pago",
   urgencia: "Te meten prisa",
@@ -148,15 +148,17 @@ function pintaTelefono(r) {
         : "No encontré señales de estafa. Eso no lo vuelve seguro: el banco nunca te pide claves ni códigos.";
   $("#tRazones").innerHTML = senales
     .map(
-      (s) => `<li>${ICONO_AVISO}<div><b>${esc(SENAL[s.tipo] || s.tipo)}</b><span>${esc(s.evidencia)}</span></div></li>`,
+      (s) => `<li>${ICONO_AVISO}<div><b>${esc(SENAL[s.tipo] || s.tipo)}</b><span>${esc(s.tipo === "numero_no_oficial" ? "El número leído no figura en los canales configurados para este análisis. Esta ausencia no confirma fraude; contrasta con las fuentes del banco." : s.evidencia)}</span></div></li>`,
     )
     .join("");
   $("#tConsejo").textContent =
-    v.accion || "Ante la duda, no toques el enlace y llama al número oficial impreso en tu tarjeta.";
+    window.CertivaContactos.consejoSinTelefonosGenerados(v.accion) || "Ante la duda, no toques el enlace y llama al número oficial impreso en tu tarjeta.";
   pintaVecinos(r.vecinos || []);
-  $("#tReportar").disabled = !r.captura;
-  $("#tReportar").textContent = "Reportar este mensaje";
+  $("#tReportar").disabled = !r.captura || !!r.preliminar;
+  $("#tReportar").textContent = r.preliminar ? "Revisión en curso…" : "Reportar este mensaje";
+  if (r.preliminar) $("#tResumen").textContent = "Advertencia inicial por señales detectadas. No respondas mientras termina la revisión.";
   $("#tReportar").onclick = async () => {
+    if (r.preliminar) return;
     $("#tReportar").disabled = true;
     try {
       if (!r.reportedIndicators) {
@@ -201,7 +203,7 @@ function pintaTecnico(r) {
   const senales = (v.senales && v.senales.length ? v.senales : r.senales) || [];
   const conf = typeof v.confianza === "number" ? `${Math.round(v.confianza * 100)}%` : "—";
   const pasosHtml = r.tiempos
-    ? `<ul class="etapas"><li><b>${r.tiempos.extraccion_ms} ms</b>VisionPsy · primer token ${r.tiempos.extraccion_ttft_ms ?? "—"} ms</li><li><b>&lt; 1 ms</b>Reglas del banco</li><li><b>${r.tiempos.veredicto_ms} ms</b>Qwen3 · primer token ${r.tiempos.veredicto_ttft_ms ?? "—"} ms</li></ul>`
+    ? `<ul class="etapas"><li><b>${r.tiempos.extraccion_ms} ms</b>${r.origen === "texto" ? "Texto recibido" : "VisionPsy"} · primer token ${r.tiempos.extraccion_ttft_ms ?? "—"} ms</li><li><b>&lt; 1 ms</b>Reglas del banco</li><li><b>${r.tiempos.veredicto_ms} ms</b>Qwen3 · primer token ${r.tiempos.veredicto_ttft_ms ?? "—"} ms</li></ul>`
     : "";
   const contrasteHtml = r.contraste?.usado
     ? `<p class="mini">Contraste con OCR (${r.contraste.ms} ms): ${r.contraste.correcciones.length ? r.contraste.correcciones.map((c) => `${esc(c.de)} era en realidad ${esc(c.a)}`).join("; ") : `el OCR también lee ${esc(r.contraste.dominios_sospechosos.join(", "))}: la señal se mantiene`}</p>`
@@ -212,7 +214,7 @@ function pintaTecnico(r) {
     ${r.captura ? `<p class="leido"><b>${esc(r.captura.canal)}</b> · de <b>${esc(r.captura.remitente || "remitente no identificado")}</b>\n${esc(r.captura.texto)}</p>` : ""}
     <details><summary>JSON completo</summary><pre>${esc(JSON.stringify({ captura: r.captura, senales: r.senales, veredicto: r.veredicto, tiempos: r.tiempos, modelos: r.modelos, detalle: r.detalle }, null, 2))}</pre></details>`;
   if (r.tiempos)
-    tiempos.textContent = `visión ${r.tiempos.extraccion_ms} ms · veredicto ${r.tiempos.veredicto_ms} ms · total ${r.tiempos.total_ms ?? r.tiempos.extraccion_ms + r.tiempos.veredicto_ms} ms`;
+    tiempos.textContent = `${r.origen === "texto" ? "texto" : "visión"} ${r.tiempos.extraccion_ms} ms · veredicto ${r.tiempos.veredicto_ms} ms · total ${r.tiempos.total_ms ?? r.tiempos.extraccion_ms + r.tiempos.veredicto_ms} ms`;
 }
 function pintaHistorial() {
   const h = $("#historial");
@@ -241,6 +243,10 @@ async function analizar(ruta, options = {}) {
   ocupado = true;
   actualizarAcciones();
   pasosReset();
+  if (options.messageId) {
+    const visual = document.querySelector('.etapas li[data-paso="vision"]');
+    if (visual) visual.innerHTML = "<b>…</b>Texto recibido · sin lectura de imagen";
+  }
   if (!options.background) {
     $("#certivaNotification").hidden = true;
     $("#sourceNotification").hidden = true;
@@ -248,7 +254,7 @@ async function analizar(ruta, options = {}) {
   }
   pon("analizando");
   try {
-    const r = await window.escudo.analizar(ruta);
+    const r = options.messageId ? await window.escudo.analizarMensaje(options.messageId) : await window.escudo.analizar(ruta);
     r.nombre = ruta.split("/").pop();
     sesion.unshift(r);
     ultimoAnalisis = r;
@@ -334,7 +340,7 @@ window.escudo.on("llamada-fin", (r) => {
     chip.className = `tchip ${esc(v.veredicto || "sospechoso")}`;
     chip.textContent = ETIQUETA[v.veredicto] || v.veredicto;
     $("#tResumenLlamada").textContent = v.resumen || "";
-    $("#tConsejoLlamada").textContent = v.accion || "";
+    $("#tConsejoLlamada").textContent = window.CertivaContactos.consejoSinTelefonosGenerados(v.accion);
     $("#tCuelga").hidden = true;
     pantalla("fin-llamada");
     tecnico.insertAdjacentHTML(
@@ -482,6 +488,9 @@ async function medirRed() {
   window.escudo.on("progreso-modelo", (p) => pon(`cargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("progreso-descarga", (p) => pon(`descargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("analisis-etapa", paso);
+  window.escudo.on("analisis-alerta", r => {
+    if (experienceBusy && r.preliminar) assessmentArrived(r);
+  });
   await pintaEjemplos();
   const st = await window.escudo.estado();
   const listo = (grupo, key) => st.modelos?.[grupo]?.some((m) => m.key === key && m.enCache);

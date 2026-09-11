@@ -20,7 +20,7 @@ const result = {
   veredicto_reglas: "fraude",
   veredicto: { veredicto: "fraude", accion: "No compartas tu código. Verifica desde la app del banco." },
 };
-ipcMain.handle("test-api", async (_, name, args) => {
+ipcMain.handle("test-api", async (event, name, args) => {
   if (name === "estado")
     return {
       modelos: { vision: [{ key: "visionpsy-flash", enCache: true }], texto: [{ key: "qwen3-4b", enCache: true }] },
@@ -33,6 +33,12 @@ ipcMain.handle("test-api", async (_, name, args) => {
   if (name === "casos") return store.list();
   if (name === "casoCrear") return store.create(args[0]);
   if (name === "casoAccion") return store.act(...args);
+  if (name === "analizarMensaje") {
+    if (typeof args[0] !== "string") throw new Error("Expected scenario ID, not screenshot");
+    event.sender.send("analisis-alerta", { ...result, preliminar: true, origen: "texto" });
+    await new Promise((r) => setTimeout(r, 800));
+    return { ...result, origen: "texto" };
+  }
   if (name === "analizar") {
     await new Promise((r) => setTimeout(r, 800));
     return result;
@@ -77,7 +83,20 @@ app
     );
     await run('document.querySelector("#sourceNotification").click()');
     await check("!document.querySelector('[data-p=\"mensaje\"]').hidden", "source opens as WhatsApp");
-    await pause(2000);
+    await pause(150);
+    await check('!document.querySelector("#certivaNotification").hidden', "risk warning arrives before slow verdict");
+    await run('document.querySelector("#certivaNotification").click()');
+    await check(
+      'document.querySelector("#tReportar").disabled && document.querySelector("#tResumen").textContent.includes("inicial")',
+      "preliminary warning cannot be reported",
+    );
+    await pause(1000);
+    await check(
+      `!document.querySelector("#tReportar").disabled && !document.querySelector('[data-p="veredicto"]').hidden`,
+      "open warning updates to final result",
+    );
+    await run('document.querySelector("#phoneHome").click()');
+    await run("assessmentArrived(pendingAssessment)");
     await check(
       '!document.querySelector("#certivaNotification").hidden && document.querySelector(\'[data-p="veredicto"]\').hidden',
       "push does not open app automatically",

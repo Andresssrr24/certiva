@@ -1,0 +1,1 @@
+PASS: tarjetas, procedencia, contexto demo, comparación, fuente por IPC, ancho y cierre. Sin inferencia.
