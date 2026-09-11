@@ -8,6 +8,13 @@ const tecnico = $("#tecnico");
 const zona = $("#zona");
 const audio = $("#audio");
 let ocupado = false;
+let mensajesDisponibles = false;
+let llamadasDisponibles = false;
+function actualizarAcciones() {
+  for (const id of ["#elegir", "#tVerificarMensaje"]) $(id).disabled = ocupado || !mensajesDisponibles;
+  for (const id of ["#llamadaDemo", "#tVerificarLlamada"]) $(id).disabled = ocupado || !llamadasDisponibles;
+  for (const boton of document.querySelectorAll(".ejemplo")) boton.disabled = ocupado || !mensajesDisponibles;
+}
 const sesion = [];
 
 const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
@@ -41,7 +48,6 @@ const SENAL = {
   urgencia: "Te meten prisa",
   pago_terceros: "Te piden mover dinero",
 };
-const TEL_OFICIAL = "800-1234";
 function pon(txt) {
   estado.textContent = txt;
 }
@@ -70,8 +76,12 @@ $("#tCuelgaOk").onclick = () => {
 };
 $("#tVolver").onclick = () => pantalla("inicio");
 $("#tVolver2").onclick = () => pantalla("inicio");
-$("#tLlamar").onclick = () => pon(`en el teléfono real esto marca al ${TEL_OFICIAL}`);
-$("#tLlamar2").onclick = () => pon(`en el teléfono real esto marca al ${TEL_OFICIAL}`);
+$("#tLlamar").onclick = () => {
+  $("#tContacto").hidden = false;
+};
+$("#tLlamar2").onclick = () => {
+  $("#tContacto2").hidden = false;
+};
 $("#tVerificarMensaje").onclick = async () => analizar(await window.escudo.elegirCaptura());
 $("#tVerificarLlamada").onclick = async () => simularLlamada(await window.escudo.llamadaDemo());
 
@@ -205,7 +215,7 @@ function pintaHistorial() {
   }
 }
 async function analizar(ruta) {
-  if (ocupado || !ruta) return;
+  if (ocupado || !ruta || !mensajesDisponibles) return;
   pasosReset();
   pantalla("analizando");
   pon("analizando");
@@ -302,7 +312,7 @@ window.escudo.on("llamada-fin", (r) => {
   esperar();
 });
 async function simularLlamada(ruta) {
-  if (ocupado || !ruta) return;
+  if (ocupado || !ruta || !llamadasDisponibles) return;
   limpiarLlamada();
   pantalla("llamada");
   audio.hidden = false;
@@ -432,23 +442,31 @@ async function medirRed() {
 (async () => {
   window.escudo.on("ocupado", (v) => {
     ocupado = v;
-    $("#elegir").disabled = v;
-    $("#llamadaDemo").disabled = v;
-    $("#tVerificarMensaje").disabled = v;
-    $("#tVerificarLlamada").disabled = v;
+    actualizarAcciones();
   });
   window.escudo.on("progreso-modelo", (p) => pon(`cargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("progreso-descarga", (p) => pon(`descargando ${p.modelo} ${Math.round(p.porcentaje)}%`));
   window.escudo.on("analisis-etapa", paso);
   await pintaEjemplos();
   const st = await window.escudo.estado();
+  const listo = (grupo, key) => st.modelos?.[grupo]?.some((m) => m.key === key && m.enCache);
+  mensajesDisponibles = listo("vision", "visionpsy-flash") && listo("texto", "qwen3-4b");
+  llamadasDisponibles = mensajesDisponibles && listo("voz", "parakeet-tdt");
+  actualizarAcciones();
   $("#modelos").textContent =
-    `VisionPsy Nano 460M Flash · Qwen3 4B · Parakeet TDT · SDK ${st.sdk} · ${st.hardware.cpu}, ${st.hardware.ram_gb} GB · inferencia local`;
-  if (st.sdk === "?") {
-    $("#setupNotice").hidden = false;
-    $("#setupNotice").textContent =
-      "Interfaz local lista. Falta instalar QVAC y descargar los modelos para analizar mensajes en este equipo.";
-  }
+    `VisionPsy Nano 460M Flash · Qwen3 4B · SDK ${st.sdk} · ${st.hardware.cpu}, ${st.hardware.ram_gb} GB · inferencia local`;
+  const aviso =
+    st.sdk === "?"
+      ? "Para verificar mensajes en este equipo, instala QVAC y descarga los modelos locales."
+      : !mensajesDisponibles
+        ? "Falta preparar los modelos para verificar mensajes. Consulta las instrucciones de instalación del proyecto."
+        : !llamadasDisponibles
+          ? "Verificación de mensajes disponible. Las llamadas requieren descargar el modelo de voz."
+          : "";
+  $("#setupNotice").hidden = !aviso;
+  $("#setupNotice").textContent = aviso;
+  for (const id of ["#llamadaDemo", "#tVerificarLlamada"])
+    $(id).title = llamadasDisponibles ? "Explorar una llamada de ejemplo" : "Modelo de voz pendiente de descarga";
   pintaBanco(st.reportes || []);
   pintaPares(st.pares, []);
   try {
@@ -475,6 +493,6 @@ async function medirRed() {
   medirRed();
   setInterval(medirRed, 3000);
   const auto = await window.escudo.demoAuto();
-  if (auto?.captura) analizar(auto.captura);
+  if (auto?.captura) setTimeout(() => analizar(auto.captura), 1800);
   if (auto?.llamada) simularLlamada(auto.llamada);
 })();
