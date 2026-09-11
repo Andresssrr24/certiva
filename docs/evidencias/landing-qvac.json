@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-09-11T03:29:30.220Z",
+  "integration": "HTTP bridge + real @qvac/sdk 0.19.0",
+  "hardware": {
+    "cpu": "Apple M1 Pro",
+    "ramGiB": 16,
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "cases": [
+    {
+      "name": "phishing",
+      "input": "synthetic text",
+      "verdict": "fraude",
+      "signals": [
+        {
+          "type": "lookalike",
+          "title": "El enlace no coincide con el dominio verificado",
+          "evidence": "cajadeahorros-validar.example es distinto de cajadeahorros.com.pa. No confirma un canal del banco."
+        },
+        {
+          "type": "urgency",
+          "title": "Te presionan para actuar",
+          "evidence": "El mensaje utiliza una amenaza o un plazo corto. La urgencia es una señal para detenerse y verificar."
+        }
+      ],
+      "domains": [
+        "cajadeahorros-validar.example"
+      ],
+      "engine": "qvac",
+      "elapsedMs": 35429,
+      "text": "Caja de Ahorros: tu cuenta será bloqueada hoy. Actualiza tus datos de inmediato en https://cajadeahorros-validar.example/activar",
+      "model": "Qwen3 4B"
+    },
+    {
+      "name": "code",
+      "input": "synthetic text",
+      "verdict": "fraude",
+      "signals": [
+        {
+          "type": "sensitive",
+          "title": "Te piden información sensible",
+          "evidence": "El texto solicita una clave, un código o un dato de acceso. No lo compartas por mensajes ni llamadas."
+        }
+      ],
+      "domains": [],
+      "engine": "qvac",
+      "elapsedMs": 20588,
+      "text": "Hola, somos del equipo de seguridad de Caja de Ahorros. Envíame el código de verificación que acabas de recibir para cancelar una compra no reconocida.",
+      "model": "Qwen3 4B"
+    },
+    {
+      "name": "notice",
+      "input": "synthetic text",
+      "verdict": "sin_senales",
+      "signals": [],
+      "domains": [],
+      "engine": "qvac",
+      "elapsedMs": 17866,
+      "text": "Tu estado de cuenta ya está disponible. Revísalo ingresando directamente a la aplicación del banco. Nunca compartas tu contraseña ni tus códigos de verificación.",
+      "model": "Qwen3 4B"
+    },
+    {
+      "name": "capture-phishing",
+      "input": "data/capturas/fraude-bloqueo_enlace-01.png (synthetic Banco Demo)",
+      "verdict": "fraude",
+      "signals": [
+        {
+          "type": "unknown",
+          "title": "El enlace no es un canal verificado",
+          "evidence": "bancodemo-pa.app no aparece entre los canales configurados de Caja de Ahorros."
+        },
+        {
+          "type": "urgency",
+          "title": "Te presionan para actuar",
+          "evidence": "El mensaje utiliza una amenaza o un plazo corto. La urgencia es una señal para detenerse y verificar."
+        }
+      ],
+      "domains": [
+        "bancodemo-pa.app"
+      ],
+      "engine": "qvac",
+      "elapsedMs": 29960,
+      "text": "+507 6053-3977 Estimado cliente de Banco Demo, detectiveles un acceso desde otro dispositivo. Para evitarlo en su cuenta confirme sus datos hoy mismo en https://bancodemo-pa.app/seguridad",
+      "model": "Qwen3 4B",
+      "vision": "VisionPsy Nano 460M Flash"
+    }
+  ],
+  "passed": true
+}

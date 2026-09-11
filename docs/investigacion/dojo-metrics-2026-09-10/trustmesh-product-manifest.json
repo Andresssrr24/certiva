@@ -1,0 +1,107 @@
+[
+  {
+    "path": "components/ArbitrageControls.tsx",
+    "code": 96,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "services/geminiService.ts",
+    "code": 81,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "components/ArbitrageResults.tsx",
+    "code": 68,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "App.tsx",
+    "code": 67,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "trustmesh-ai/app.js",
+    "code": 43,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "index.html",
+    "code": 39,
+    "language": "HTML",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "components/Spinner.tsx",
+    "code": 28,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "types.ts",
+    "code": 24,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "constants.ts",
+    "code": 22,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "vite.config.ts",
+    "code": 22,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "trustmesh-ai/index.html",
+    "code": 20,
+    "language": "HTML",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "index.tsx",
+    "code": 13,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "trustmesh-ai/enterprise.js",
+    "code": 8,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "cryptocompass-ai/index.html",
+    "code": 1,
+    "language": "HTML",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "trustmesh-ai/styles.css",
+    "code": 1,
+    "language": "CSS",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  }
+]

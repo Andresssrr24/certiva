@@ -1,0 +1,800 @@
+[
+  {
+    "path": "mobile/App.tsx",
+    "code": 567,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaDocumentos.tsx",
+    "code": 544,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/leerDocumento.ts",
+    "code": 498,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/index.mjs",
+    "code": 408,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaEntrada.tsx",
+    "code": 393,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/sentry.ts",
+    "code": 385,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaAlerta.tsx",
+    "code": 384,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "landing/index.html",
+    "code": 383,
+    "language": "HTML",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "data/generar-usuarios.mjs",
+    "code": 348,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/medpsy.ts",
+    "code": 344,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/ui/componentes.tsx",
+    "code": 318,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaExamen.tsx",
+    "code": 317,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/extraccion.ts",
+    "code": 301,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "landing/pitch.html",
+    "code": 287,
+    "language": "HTML",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/core/paquete.ts",
+    "code": 276,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "spikes/lora-medpsy/make-dataset.mjs",
+    "code": 271,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "data/generar-documentos.py",
+    "code": 270,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/core/reglas.ts",
+    "code": 256,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/run.mjs",
+    "code": 243,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/nodoUrl.ts",
+    "code": 241,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/consola.html",
+    "code": 233,
+    "language": "HTML",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaSalud.tsx",
+    "code": 225,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaViaMed.tsx",
+    "code": 225,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaDatos.tsx",
+    "code": 211,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/envio.ts",
+    "code": 206,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "landing/admin.html",
+    "code": 198,
+    "language": "HTML",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "landing/server.js",
+    "code": 198,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "data/cartera-sintetica.mjs",
+    "code": 182,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/core/credito/modelo.ts",
+    "code": 179,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/perf/logger.ts",
+    "code": 171,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Instrumentación de benchmark"
+  },
+  {
+    "path": "mobile/src/ConsolaDemo.tsx",
+    "code": 170,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Consola de demostración"
+  },
+  {
+    "path": "spikes/lora-medpsy/spike.mjs",
+    "code": 169,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/ui/Pictograma.tsx",
+    "code": 166,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaEnvio.tsx",
+    "code": 162,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaFirma.tsx",
+    "code": 149,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/credito/motor.ts",
+    "code": 149,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/leerExamen.ts",
+    "code": 135,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/alerta.ts",
+    "code": 133,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/salud/alerta.test.mjs",
+    "code": 127,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/PantallaDesembolso.tsx",
+    "code": 116,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/laboratorio.ts",
+    "code": 104,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/credito/politica.ts",
+    "code": 103,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaRevision.tsx",
+    "code": 98,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaCredito.tsx",
+    "code": 97,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/schemas.ts",
+    "code": 96,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/plugins/withQvacBareLink.js",
+    "code": 94,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/demoLog.ts",
+    "code": 93,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Registro de demostración"
+  },
+  {
+    "path": "mobile/src/PantallaAnalizando.tsx",
+    "code": 91,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/salud/laboratorio.test.mjs",
+    "code": 87,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/historial.ts",
+    "code": 87,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaLeido.tsx",
+    "code": 86,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/PantallaCuota.tsx",
+    "code": 85,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/modo.ts",
+    "code": 85,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/credito/cola.test.mjs",
+    "code": 82,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/PantallaBanco.tsx",
+    "code": 81,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/credito/scorecard.ts",
+    "code": 77,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/harden-huellas.py",
+    "code": 75,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/motor.test.mjs",
+    "code": 71,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/PantallaArranque.tsx",
+    "code": 71,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/credito/pantalla.test.mjs",
+    "code": 70,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/core/marcadores.ts",
+    "code": 64,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/relay.mjs",
+    "code": 64,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/lora.ts",
+    "code": 63,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/probar-p2p.mjs",
+    "code": 62,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Prueba P2P"
+  },
+  {
+    "path": "mobile/src/PantallaRegistro.tsx",
+    "code": 60,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/consola.mjs",
+    "code": 60,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/p2p.ts",
+    "code": 59,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/cola.ts",
+    "code": 58,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/redactarAlerta.ts",
+    "code": 57,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/credito/explicacion.ts",
+    "code": 55,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "spikes/lora-medpsy/remedir.mjs",
+    "code": 54,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/index.tsx",
+    "code": 52,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/perf/exportar.ts",
+    "code": 52,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Instrumentación de benchmark"
+  },
+  {
+    "path": "eval/credito/contrato.test.mjs",
+    "code": 51,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/envioVisual.ts",
+    "code": 51,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/credito/capacidad.test.mjs",
+    "code": 48,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "nodo/inferir.mjs",
+    "code": 48,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "spikes/proveedor.mjs",
+    "code": 48,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/schemas.test.mjs",
+    "code": 47,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/scorecard.test.mjs",
+    "code": 45,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/core/prompts.ts",
+    "code": 44,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/ui/tokens.ts",
+    "code": 44,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/cartera.mjs",
+    "code": 44,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/dht.mjs",
+    "code": 44,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/probe-p2p.mjs",
+    "code": 44,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Prueba P2P"
+  },
+  {
+    "path": "mobile/src/core/credito/estructura.ts",
+    "code": 40,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/credito/explicacion.test.mjs",
+    "code": 38,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/paquete-lab.test.mjs",
+    "code": 38,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/colaSqlite.ts",
+    "code": 38,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/credito/estructura.test.mjs",
+    "code": 36,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/core/credito/capacidad.ts",
+    "code": 35,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/credito/precio.ts",
+    "code": 35,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "spikes/consumidor.mjs",
+    "code": 34,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/cartera.test.mjs",
+    "code": 33,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/precio.test.mjs",
+    "code": 32,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/lectura.ts",
+    "code": 30,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/usuarios.ts",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "spikes/lora-medpsy/diag.mjs",
+    "code": 29,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/envio.test.mjs",
+    "code": 28,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/nodo/inferir.test.mjs",
+    "code": 24,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "nodo/bootstrap-dht.mjs",
+    "code": 23,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/core/validaciones.ts",
+    "code": 20,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/sync-marca.sh",
+    "code": 16,
+    "language": "Bourne Shell",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "eval/credito/finanzas.test.mjs",
+    "code": 15,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "nodo/credito.mjs",
+    "code": 15,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/qvac/worker.entry.mjs",
+    "code": 14,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eval/credito/firma.test.mjs",
+    "code": 13,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/firmaHash.ts",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/modelosMarca.ts",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "nodo/Dockerfile",
+    "code": 9,
+    "language": "Dockerfile",
+    "included": false,
+    "reason": "Infraestructura"
+  },
+  {
+    "path": "mobile/src/core/credito/finanzas.ts",
+    "code": 8,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/gguf.d.ts",
+    "code": 4,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/metro.config.js",
+    "code": 4,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/bancoUrl.ts",
+    "code": 4,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  }
+]

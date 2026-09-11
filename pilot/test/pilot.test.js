@@ -152,3 +152,16 @@ test("la consola acepta las señales de pago emitidas por el motor vigente", asy
     assert.deepEqual(response.body.report.reasonCodes, result.reasons.map(reason => reason.code));
   }
 });
+
+test("QVAC Android conserva procedencia y minimización; rechaza pares motor/fuente incompatibles", async t => {
+  const a = await setup(t); const client = await a.login("client-a");
+  const local = { ...report(), source: "qvac_texto", sdkVersion: "0.3.0-qvac" };
+  const created = await a.request(client, "/api/cases", "POST", local);
+  assert.equal(created.status, 201);
+  const stored = (await a.request(client, "/api/cases")).body.cases.find(item => item.id === created.body.id);
+  assert.equal(stored.report.source, "qvac_texto");
+  assert.equal(stored.report.sdkVersion, "0.3.0-qvac");
+  for (const extra of [{sdkVersion: SDK.VERSION}, {source: "texto"}, {text: "do-not-store"}, {reasonCodes: ["unapproved_ai_signal"]}]) {
+    assert.equal((await a.request(client, "/api/cases", "POST", {...local, assessmentId: crypto.randomUUID(), ...extra})).status, 400);
+  }
+});

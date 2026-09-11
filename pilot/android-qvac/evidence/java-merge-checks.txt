@@ -1,0 +1,1 @@
+PASS: merge preservation, abstention, allowed signals, untrusted text projection, unknown signal rejection, unavailable AI risk provenance, non-mutation, no false completed assessment

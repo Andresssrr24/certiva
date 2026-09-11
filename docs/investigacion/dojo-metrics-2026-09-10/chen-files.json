@@ -1,0 +1,368 @@
+{
+  "src/styles.css": {
+    "blank": 13,
+    "comment": 34,
+    "code": 1678,
+    "language": "CSS"
+  },
+  "server/forecast.ts": {
+    "blank": 16,
+    "comment": 32,
+    "code": 409,
+    "language": "TypeScript"
+  },
+  "server/qvac.ts": {
+    "blank": 0,
+    "comment": 83,
+    "code": 365,
+    "language": "TypeScript"
+  },
+  "server/index.ts": {
+    "blank": 0,
+    "comment": 24,
+    "code": 319,
+    "language": "TypeScript"
+  },
+  "scripts/ui-check.ts": {
+    "blank": 4,
+    "comment": 22,
+    "code": 298,
+    "language": "TypeScript"
+  },
+  "src/ChatPanel.tsx": {
+    "blank": 9,
+    "comment": 7,
+    "code": 292,
+    "language": "TypeScript"
+  },
+  "server/history.ts": {
+    "blank": 14,
+    "comment": 10,
+    "code": 282,
+    "language": "TypeScript"
+  },
+  "server/analysis.ts": {
+    "blank": 0,
+    "comment": 2,
+    "code": 256,
+    "language": "TypeScript"
+  },
+  "src/GuidePanel.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 236,
+    "language": "TypeScript"
+  },
+  "src/Insights.tsx": {
+    "blank": 1,
+    "comment": 2,
+    "code": 229,
+    "language": "TypeScript"
+  },
+  "src/useChen.ts": {
+    "blank": 2,
+    "comment": 17,
+    "code": 225,
+    "language": "TypeScript"
+  },
+  "scripts/qvac-check.ts": {
+    "blank": 1,
+    "comment": 25,
+    "code": 204,
+    "language": "TypeScript"
+  },
+  "server/intent.ts": {
+    "blank": 13,
+    "comment": 30,
+    "code": 192,
+    "language": "TypeScript"
+  },
+  "src/ForecastPanel.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 174,
+    "language": "TypeScript"
+  },
+  "tests/analysis.test.ts": {
+    "blank": 3,
+    "comment": 2,
+    "code": 167,
+    "language": "TypeScript"
+  },
+  "src/SpendingOverview.tsx": {
+    "blank": 0,
+    "comment": 6,
+    "code": 164,
+    "language": "TypeScript"
+  },
+  "src/OrganizePanel.tsx": {
+    "blank": 1,
+    "comment": 2,
+    "code": 151,
+    "language": "TypeScript"
+  },
+  "tests/model-fit.test.ts": {
+    "blank": 11,
+    "comment": 7,
+    "code": 149,
+    "language": "TypeScript"
+  },
+  "src/AppFrame.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 129,
+    "language": "TypeScript"
+  },
+  "tests/asistente-mira-adelante.test.ts": {
+    "blank": 11,
+    "comment": 9,
+    "code": 124,
+    "language": "TypeScript"
+  },
+  "tests/intent.test.ts": {
+    "blank": 7,
+    "comment": 20,
+    "code": 123,
+    "language": "TypeScript"
+  },
+  "tests/menu-de-intenciones.test.ts": {
+    "blank": 13,
+    "comment": 8,
+    "code": 122,
+    "language": "TypeScript"
+  },
+  "scripts/bateria-preguntas.ts": {
+    "blank": 9,
+    "comment": 20,
+    "code": 119,
+    "language": "TypeScript"
+  },
+  "server/model-fit.ts": {
+    "blank": 6,
+    "comment": 25,
+    "code": 112,
+    "language": "TypeScript"
+  },
+  "server/planning-fixtures.ts": {
+    "blank": 6,
+    "comment": 6,
+    "code": 109,
+    "language": "TypeScript"
+  },
+  "tests/forecast.test.ts": {
+    "blank": 9,
+    "comment": 5,
+    "code": 109,
+    "language": "TypeScript"
+  },
+  "src/wav-recorder.ts": {
+    "blank": 9,
+    "comment": 13,
+    "code": 108,
+    "language": "TypeScript"
+  },
+  "server/planning.ts": {
+    "blank": 3,
+    "comment": 10,
+    "code": 106,
+    "language": "TypeScript"
+  },
+  "scripts/network-probe.ts": {
+    "blank": 11,
+    "comment": 25,
+    "code": 105,
+    "language": "TypeScript"
+  },
+  "src/App.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 105,
+    "language": "TypeScript"
+  },
+  "server/fixtures.ts": {
+    "blank": 0,
+    "comment": 5,
+    "code": 104,
+    "language": "TypeScript"
+  },
+  "server/domain.ts": {
+    "blank": 0,
+    "comment": 7,
+    "code": 101,
+    "language": "TypeScript"
+  },
+  "src/ActivityPanel.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 101,
+    "language": "TypeScript"
+  },
+  "server/planning-repository.ts": {
+    "blank": 1,
+    "comment": 6,
+    "code": 88,
+    "language": "TypeScript"
+  },
+  "server/planning-domain.ts": {
+    "blank": 7,
+    "comment": 10,
+    "code": 83,
+    "language": "TypeScript"
+  },
+  "src/MovementTable.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 83,
+    "language": "TypeScript"
+  },
+  "scripts/voice-check.ts": {
+    "blank": 1,
+    "comment": 7,
+    "code": 81,
+    "language": "TypeScript"
+  },
+  "src/ledger.ts": {
+    "blank": 5,
+    "comment": 5,
+    "code": 79,
+    "language": "TypeScript"
+  },
+  "server/voice.ts": {
+    "blank": 6,
+    "comment": 10,
+    "code": 76,
+    "language": "TypeScript"
+  },
+  "tests/history.test.ts": {
+    "blank": 8,
+    "comment": 4,
+    "code": 71,
+    "language": "TypeScript"
+  },
+  "tests/no-cloud.test.ts": {
+    "blank": 5,
+    "comment": 16,
+    "code": 69,
+    "language": "TypeScript"
+  },
+  "src/api.ts": {
+    "blank": 0,
+    "comment": 6,
+    "code": 53,
+    "language": "TypeScript"
+  },
+  "tests/planning.test.ts": {
+    "blank": 5,
+    "comment": 2,
+    "code": 51,
+    "language": "TypeScript"
+  },
+  "src/Combobox.tsx": {
+    "blank": 1,
+    "comment": 7,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "src/LoginScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "tests/sin-caracteres-invisibles.test.ts": {
+    "blank": 3,
+    "comment": 9,
+    "code": 48,
+    "language": "TypeScript"
+  },
+  "src/ChatBubble.tsx": {
+    "blank": 1,
+    "comment": 4,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "server/repository.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 39,
+    "language": "TypeScript"
+  },
+  "tests/persistence.test.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 36,
+    "language": "TypeScript"
+  },
+  "server/answer-validator.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "scripts/fit-check.ts": {
+    "blank": 1,
+    "comment": 5,
+    "code": 33,
+    "language": "TypeScript"
+  },
+  "src/RecurringPanel.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 33,
+    "language": "TypeScript"
+  },
+  "src/ScenariosPanel.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 28,
+    "language": "TypeScript"
+  },
+  "src/BrandLoader.tsx": {
+    "blank": 0,
+    "comment": 2,
+    "code": 25,
+    "language": "TypeScript"
+  },
+  "server/timeframe.ts": {
+    "blank": 6,
+    "comment": 35,
+    "code": 24,
+    "language": "TypeScript"
+  },
+  "tests/inference-disabled.test.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 16,
+    "language": "TypeScript"
+  },
+  "index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 15,
+    "language": "HTML"
+  },
+  "scripts/demo.mjs": {
+    "blank": 0,
+    "comment": 5,
+    "code": 14,
+    "language": "JavaScript"
+  },
+  "src/main.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "src/period-labels.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5,
+    "language": "TypeScript"
+  },
+  "vite.config.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 3,
+    "language": "TypeScript"
+  }
+}

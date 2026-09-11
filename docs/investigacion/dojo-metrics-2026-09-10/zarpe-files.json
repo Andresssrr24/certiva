@@ -1,0 +1,56 @@
+{
+  "public/index.html": {
+    "blank": 39,
+    "comment": 0,
+    "code": 415,
+    "language": "HTML"
+  },
+  "src/nucleo.js": {
+    "blank": 34,
+    "comment": 57,
+    "code": 213,
+    "language": "JavaScript"
+  },
+  "src/nucleo.test.js": {
+    "blank": 32,
+    "comment": 25,
+    "code": 155,
+    "language": "JavaScript"
+  },
+  "src/calculo.js": {
+    "blank": 11,
+    "comment": 29,
+    "code": 70,
+    "language": "JavaScript"
+  },
+  "src/server.js": {
+    "blank": 12,
+    "comment": 7,
+    "code": 63,
+    "language": "JavaScript"
+  },
+  "src/validar.test.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 38,
+    "language": "JavaScript"
+  },
+  "src/calculo.test.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 35,
+    "language": "JavaScript"
+  },
+  "src/validar.js": {
+    "blank": 3,
+    "comment": 4,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "index.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 26,
+    "language": "JavaScript"
+  }
+}

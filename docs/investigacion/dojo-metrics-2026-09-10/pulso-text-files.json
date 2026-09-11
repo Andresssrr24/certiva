@@ -1,0 +1,278 @@
+{
+  "src/app/App.tsx": {
+    "blank": 52,
+    "comment": 0,
+    "code": 743,
+    "language": "TypeScript"
+  },
+  "src/qvac/engine.ts": {
+    "blank": 37,
+    "comment": 0,
+    "code": 536,
+    "language": "TypeScript"
+  },
+  "src/pulso/clinical/documentation.py": {
+    "blank": 38,
+    "comment": 5,
+    "code": 436,
+    "language": "Python"
+  },
+  "src/pulso/clinical/encounter_service.py": {
+    "blank": 31,
+    "comment": 0,
+    "code": 415,
+    "language": "Python"
+  },
+  "src/pulso/storage/repository.py": {
+    "blank": 23,
+    "comment": 22,
+    "code": 340,
+    "language": "Python"
+  },
+  "src/app/styles.css": {
+    "blank": 13,
+    "comment": 0,
+    "code": 238,
+    "language": "CSS"
+  },
+  "src/pulso/desktop_bridge.py": {
+    "blank": 17,
+    "comment": 2,
+    "code": 192,
+    "language": "Python"
+  },
+  "tools/download-models.js": {
+    "blank": 17,
+    "comment": 0,
+    "code": 192,
+    "language": "JavaScript"
+  },
+  "src/pulso/clinical/fhir.py": {
+    "blank": 17,
+    "comment": 0,
+    "code": 191,
+    "language": "Python"
+  },
+  "src/qvac/cli.ts": {
+    "blank": 8,
+    "comment": 0,
+    "code": 174,
+    "language": "TypeScript"
+  },
+  "src/pulso/main.py": {
+    "blank": 9,
+    "comment": 0,
+    "code": 160,
+    "language": "Python"
+  },
+  "training/train_lora.py": {
+    "blank": 14,
+    "comment": 0,
+    "code": 138,
+    "language": "Python"
+  },
+  "src/app/electron.ts": {
+    "blank": 9,
+    "comment": 0,
+    "code": 133,
+    "language": "TypeScript"
+  },
+  "training/evaluate_adapter.ts": {
+    "blank": 6,
+    "comment": 0,
+    "code": 129,
+    "language": "TypeScript"
+  },
+  "tools/prepare_rag.py": {
+    "blank": 20,
+    "comment": 0,
+    "code": 125,
+    "language": "Python"
+  },
+  "tests/test_data_assets.py": {
+    "blank": 28,
+    "comment": 0,
+    "code": 117,
+    "language": "Python"
+  },
+  "src/pulso/clinical/events.py": {
+    "blank": 22,
+    "comment": 0,
+    "code": 112,
+    "language": "Python"
+  },
+  "tests/test_workflow.py": {
+    "blank": 12,
+    "comment": 0,
+    "code": 109,
+    "language": "Python"
+  },
+  "src/pulso/ai/runtime.py": {
+    "blank": 14,
+    "comment": 0,
+    "code": 85,
+    "language": "Python"
+  },
+  "tools/prepare_environment.py": {
+    "blank": 17,
+    "comment": 0,
+    "code": 81,
+    "language": "Python"
+  },
+  "src/pulso/storage/audit.py": {
+    "blank": 8,
+    "comment": 3,
+    "code": 71,
+    "language": "Python"
+  },
+  "tests/test_domain.py": {
+    "blank": 14,
+    "comment": 0,
+    "code": 71,
+    "language": "Python"
+  },
+  "tests/qvac-normalization.test.ts": {
+    "blank": 4,
+    "comment": 0,
+    "code": 69,
+    "language": "TypeScript"
+  },
+  "src/pulso/storage/routing.py": {
+    "blank": 6,
+    "comment": 0,
+    "code": 64,
+    "language": "Python"
+  },
+  "src/qvac/normalize.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 64,
+    "language": "TypeScript"
+  },
+  "src/pulso/clinical/order_service.py": {
+    "blank": 14,
+    "comment": 0,
+    "code": 62,
+    "language": "Python"
+  },
+  "src/pulso/clinical/orders.py": {
+    "blank": 14,
+    "comment": 0,
+    "code": 61,
+    "language": "Python"
+  },
+  "tools/download_rag_sources.py": {
+    "blank": 10,
+    "comment": 0,
+    "code": 50,
+    "language": "Python"
+  },
+  "src/pulso/ai/extraction.py": {
+    "blank": 7,
+    "comment": 0,
+    "code": 45,
+    "language": "Python"
+  },
+  "training/qvac_finetune.ts": {
+    "blank": 4,
+    "comment": 0,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "src/pulso/clinical/safety.py": {
+    "blank": 8,
+    "comment": 0,
+    "code": 36,
+    "language": "Python"
+  },
+  "src/pulso/clinical/encounters.py": {
+    "blank": 11,
+    "comment": 0,
+    "code": 35,
+    "language": "Python"
+  },
+  "src/pulso/storage/database.py": {
+    "blank": 18,
+    "comment": 110,
+    "code": 34,
+    "language": "Python"
+  },
+  "src/qvac/types.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 34,
+    "language": "TypeScript"
+  },
+  "eslint.config.js": {
+    "blank": 1,
+    "comment": 4,
+    "code": 18,
+    "language": "JavaScript"
+  },
+  "src/pulso/ai/translation.py": {
+    "blank": 6,
+    "comment": 0,
+    "code": 18,
+    "language": "Python"
+  },
+  "src/app/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 14,
+    "language": "HTML"
+  },
+  "src/pulso/ai/rag.py": {
+    "blank": 7,
+    "comment": 0,
+    "code": 12,
+    "language": "Python"
+  },
+  "tools/launch-desktop.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 12,
+    "language": "JavaScript"
+  },
+  "vite.config.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "src/pulso/ai/speech.py": {
+    "blank": 6,
+    "comment": 0,
+    "code": 10,
+    "language": "Python"
+  },
+  "src/app/renderer.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "src/pulso/ai/audio.py": {
+    "blank": 6,
+    "comment": 0,
+    "code": 9,
+    "language": "Python"
+  },
+  "src/app/types.d.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "src/qvac/metrics.ts": {
+    "blank": 4,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "src/app/preload.cjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 7,
+    "language": "JavaScript"
+  }
+}

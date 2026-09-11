@@ -78,10 +78,12 @@ function createApp({ file = ":memory:", accounts = [] } = {}) {
     catch { fail(400, "JSON inválido"); }
   }
   function validateReport(data) {
+    const supportedEngine = (SDK.SOURCES.includes(data.source) && data.sdkVersion === SDK.VERSION) ||
+      (data.source === "qvac_texto" && data.sdkVersion === "0.3.0-qvac");
     if (JSON.stringify(Object.keys(data).sort()) !== JSON.stringify(REPORT_KEYS)) fail(400, "Solo se admiten los campos mínimos del reporte");
     if (!SDK.isUUID(data.assessmentId) || data.consent !== true || !Object.hasOwn(SDK.LABELS, data.outcome) ||
-        !SDK.CHANNELS.includes(data.channel) || !SDK.SOURCES.includes(data.source) ||
-        data.sdkVersion !== SDK.VERSION || data.policyVersion !== POLICY_VERSION ||
+        !SDK.CHANNELS.includes(data.channel) || !supportedEngine ||
+        data.policyVersion !== POLICY_VERSION ||
         !Array.isArray(data.reasonCodes) || data.reasonCodes.length > Object.keys(SDK.REASONS).length ||
         data.reasonCodes.some(code => !Object.hasOwn(SDK.REASONS, code)) || new Set(data.reasonCodes).size !== data.reasonCodes.length ||
         typeof data.evaluatedAt !== "string" || !/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z$/.test(data.evaluatedAt) ||

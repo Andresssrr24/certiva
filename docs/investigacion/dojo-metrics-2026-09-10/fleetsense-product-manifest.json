@@ -1,0 +1,268 @@
+[
+  {
+    "path": "frontend/src/components/steps/PanelStep.tsx",
+    "code": 201,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/components/steps/CaptureStep.tsx",
+    "code": 194,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/components/ui/select.tsx",
+    "code": 187,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "frontend/src/components/steps/ReviewStep.tsx",
+    "code": 152,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "app.py",
+    "code": 142,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "qvac_client.py",
+    "code": 130,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/index.css",
+    "code": 125,
+    "language": "CSS",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/components/ui/table.tsx",
+    "code": 104,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "frontend/src/components/ui/card.tsx",
+    "code": 94,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "frontend/src/App.tsx",
+    "code": 87,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "api.py",
+    "code": 86,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/api.ts",
+    "code": 67,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "test_dedupe.py",
+    "code": 58,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "frontend/src/components/ui/button.tsx",
+    "code": 54,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "frontend/src/components/StepShell.tsx",
+    "code": 53,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "db.py",
+    "code": 52,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "install.sh",
+    "code": 49,
+    "language": "Bourne Shell",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "frontend/src/components/ui/badge.tsx",
+    "code": 48,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "test_db.py",
+    "code": 46,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "frontend/src/components/steps/ModeStep.tsx",
+    "code": 45,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/components/Background.tsx",
+    "code": 43,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "extract.py",
+    "code": 40,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "test_extract.py",
+    "code": 36,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "run.sh",
+    "code": 33,
+    "language": "Bourne Shell",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "test_confidence.py",
+    "code": 31,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "frontend/src/components/steps/LoginStep.tsx",
+    "code": 30,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/components/GlassPanel.tsx",
+    "code": 18,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/components/ui/input.tsx",
+    "code": 17,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "frontend/vite.config.ts",
+    "code": 17,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "frontend/src/components/ui/label.tsx",
+    "code": 16,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "frontend/src/components/ui/textarea.tsx",
+    "code": 15,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Componentes genéricos shadcn/ui; exclusión conservadora, puede descartar adaptaciones propias"
+  },
+  {
+    "path": "confidence.py",
+    "code": 14,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "dedupe.py",
+    "code": 14,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/index.html",
+    "code": 13,
+    "language": "HTML",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/main.tsx",
+    "code": 9,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/hooks/use-prefers-reduced-motion.ts",
+    "code": 7,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/lib/motion.ts",
+    "code": 2,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "frontend/src/lib/utils.ts",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  }
+]

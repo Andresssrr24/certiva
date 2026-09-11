@@ -27,6 +27,10 @@ Ninguna biblioteca lleva símbolos de depuración. Quitar Vulkan dejaría el APK
 
 La app se llama **Certiva** en el lanzador y usa el símbolo Enlace como icono adaptativo: fondo blanco y símbolo en el 66 % central del lienzo, el mismo margen que el icono nativo de `pilot/android-app` (PR #13, [docs/ICONO-ANDROID.md](../docs/ICONO-ANDROID.md)). Expo lo genera desde `assets/icono-adaptativo.png`; `assets/icono.png` es el icono cuadrado para iOS y lanzadores viejos, y `assets/marca.png` el símbolo de la cabecera. Los tres derivan del mismo PNG aprobado, `pilot/android-app/app/src/main/res/drawable-nodpi/certiva_launcher.png`. Dentro de la app, la cabecera lleva la firma (símbolo, «certiva» y «Tu aliado contra el fraude»), la letra es Manrope (OFL, `assets/manrope-*.ttf`, la misma del escritorio) y la paleta es la de `renderer/certiva.css`, con el azul #205094 en botones y acentos. El paquete Android sigue siendo `pa.antifraude.movil` (versión 0.2.0), así que el APK nuevo actualiza al anterior sin desinstalar. Esta app no envía notificaciones, por lo que el icono de notificación del PR #15 no aplica aquí.
 
+## Instalar en un teléfono
+
+`./instalar.sh` (o `./mobile/instalar.sh` desde la raíz) usa el APK de `dist/` o lo baja del Release `apk-v0.1`, verifica su SHA-256 contra `antifraude-release-arm64.apk.sha256`, y lo instala por USB si hay un teléfono con depuración activada (comprobando Android 10+ y arm64) o, si no, lo sirve por Wi-Fi con un QR en la terminal. `--usb` y `--wifi` fuerzan un camino; también acepta la ruta de otro APK. Las instrucciones para quien solo tiene el teléfono están en la sección «Instalar en un Android» del README principal.
+
 ## Preparar y compilar sin Android Studio
 
 Requisitos: Homebrew, Node 20 o superior, y una vez:

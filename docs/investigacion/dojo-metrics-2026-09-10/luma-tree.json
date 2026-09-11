@@ -1,0 +1,206 @@
+[
+  {
+    "path": ".gitignore",
+    "sha": "72de12dcdbed88d966cf2277d646cf04c2deee00",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "Iniciar LUMA.cmd",
+    "sha": "05f47f328a3fc9d642455e0a133827464eda370b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "732a198a52439d59f7d3266f43dc63347a57646b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/seed.json",
+    "sha": "332a9acbe02382e4e8b787c0bd312d6f754f63fe",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/voice-tests.json",
+    "sha": "09bd4e461fec92903812184b9d9649ef314ddd8b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/DEMO.md",
+    "sha": "e615da89c531a47bc8e9dd01ddc0a05b108c515c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/PLAN.md",
+    "sha": "7f38bcebedae4e031f2397b6dca57fb99ba6363b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/QA.md",
+    "sha": "741cfc7036e7cf1357a3ea84909e839c3125d62a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/design/BRIEF.md",
+    "sha": "ceb52cd8aad66c1b76c17b4e3d8ef9e9c6be411a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/design/capture-mobile.png",
+    "sha": "a1254e248e7a0fcee89f29e2165f7e3367edf3da",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/design/concept.png",
+    "sha": "d65dfb8e0d9d562c39a3bde99c50e37f889b662f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/design/desktop.png",
+    "sha": "04a434cbebca4d2356a2dbe32f9b39fd7952dcab",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/design/mobile.png",
+    "sha": "db6edbfd8d243d7c408151b585012bf79b079d87",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs/inference-results.json",
+    "sha": "f82205b6b79f7b85b252b3bb55385010127df7ca",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "index.html",
+    "sha": "a38578fd83690242e8e4652a7cb539ff1d515580",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package-lock.json",
+    "sha": "39fc981daaf55284f95430aff98a9da4bfbed7ee",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package.json",
+    "sha": "9b2d4cf750c3088f10ec06b0a393437024b2e478",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "qvac.config.mjs",
+    "sha": "c049d3e3f078d971e05c284a03fc490a282af8b4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/download-model.ps1",
+    "sha": "62870af348aad21a421510a2bc00c2247085a987",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/start.mjs",
+    "sha": "4192436e6703e519c2951b91d521f383197dde7a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/domain.mjs",
+    "sha": "704cc5aa78ebb43992ba6cafda700cfc818740c4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/index.mjs",
+    "sha": "9cda61d8ad40279979cd7b1e59944d40a0d237ce",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "server/qvac.mjs",
+    "sha": "5a205b97150526b51e27e0be34a1bbcd5e7dcb45",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/App.jsx",
+    "sha": "d5923ddfbf16c5ff6a81dbd7ce7605ceff823620",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/Capture.jsx",
+    "sha": "ee4769edfc639cd0166d4fb954b19689f7714838",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/Resolve.jsx",
+    "sha": "14be1716e48c8bff7d582004799f5cd9959a809a",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/lib.js",
+    "sha": "c6d43c2f498e7db6478b6bf6f0d9d500b250aad9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/main.jsx",
+    "sha": "65f5fcd52b7e5bb72e71c81b3a1ff590e45fded9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/styles.css",
+    "sha": "1fbed9ac436c088b2c090cda1acf16596111051b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/useDialog.js",
+    "sha": "bbe70d4304028b14fbd7b53489e526ff7c52e590",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/domain.test.mjs",
+    "sha": "2c3259847d2d6dd3a2085584c16fd99db65cf8c2",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/inference-check.mjs",
+    "sha": "8fa46ccde3446f48bda1eb88cdf36c69461c5379",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "video/README.md",
+    "sha": "c4bd68f97a1af0dc8fcb0e71418850bc9df2a291",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "video/luma-demo.html",
+    "sha": "6a40d1229e51eebaa2fc168089d232dc2d592e2a",
+    "type": "blob",
+    "mode": "100644"
+  }
+]

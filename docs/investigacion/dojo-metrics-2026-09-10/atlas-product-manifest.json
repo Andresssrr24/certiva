@@ -1,0 +1,653 @@
+[
+  {
+    "path": "mobile/App.tsx",
+    "code": 999,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "training/generate_dataset.py",
+    "code": 716,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "web/src/pages/SettingsPage.tsx",
+    "code": 596,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/forms/ObservationForm.tsx",
+    "code": 499,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/pages/InstalledBasePage.tsx",
+    "code": 356,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/pages/HelpPage.tsx",
+    "code": 324,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/pages/QueriesPage.tsx",
+    "code": 305,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/qvac/engine.ts",
+    "code": 268,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/server/main.py",
+    "code": 264,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/pages/CapturePage.tsx",
+    "code": 262,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/pages/DashboardPage.tsx",
+    "code": 205,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/lib/mappers.ts",
+    "code": 198,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/stores/useAppStore.ts",
+    "code": 196,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/repositories/observations.py",
+    "code": 188,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "training/evaluate_adapter.ts",
+    "code": 161,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "web/src/services/api.ts",
+    "code": 157,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/common/Modal.tsx",
+    "code": 153,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "training/train_lora.py",
+    "code": 144,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/atlas/infrastructure/database/sqlite.py",
+    "code": 131,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/hooks/useObservations.ts",
+    "code": 130,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/forms/SearchForm.tsx",
+    "code": 127,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/layout/Header.tsx",
+    "code": 126,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/layout/Sidebar.tsx",
+    "code": 119,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tools/download-models.js",
+    "code": 107,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "web/src/types/index.ts",
+    "code": 107,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/common/Input.tsx",
+    "code": 104,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/application/capture.py",
+    "code": 91,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/common/Card.tsx",
+    "code": 90,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/domain/equipment.py",
+    "code": 88,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/test_api.py",
+    "code": 84,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/qvac.ts",
+    "code": 83,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/main.py",
+    "code": 82,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/common/Select.tsx",
+    "code": 81,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/qvac/query.ts",
+    "code": 79,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/test_domain.py",
+    "code": 77,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/qvac/cli.ts",
+    "code": 74,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/qvac/query-normalize.ts",
+    "code": 74,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/index.css",
+    "code": 73,
+    "language": "CSS",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/domain/duplicates.py",
+    "code": 72,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/hooks/useQVAC.ts",
+    "code": 70,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/domain/confidence.py",
+    "code": 68,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/src/db.ts",
+    "code": 67,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/common/Badge.tsx",
+    "code": 65,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/audit/ledger.py",
+    "code": 64,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/qvac-normalization.test.ts",
+    "code": 63,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/atlas/application/renewal.py",
+    "code": 62,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/domain/observations.py",
+    "code": 58,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/application/search.py",
+    "code": 57,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/test_database.py",
+    "code": 54,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "tools/prepare_environment.py",
+    "code": 54,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "tests/test_data_assets.py",
+    "code": 52,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "web/src/components/common/Button.tsx",
+    "code": 52,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/pipeline.py",
+    "code": 48,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/tailwind.config.js",
+    "code": 48,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/atlas/application/follow_up.py",
+    "code": 46,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "training/qvac_finetune.ts",
+    "code": 44,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/android/app/src/main/java/com/atlas/field/MainApplication.kt",
+    "code": 43,
+    "language": "Kotlin",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/qvac/normalize.ts",
+    "code": 43,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/runtime.py",
+    "code": 40,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/qvac/types.ts",
+    "code": 39,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/android/app/src/main/java/com/atlas/field/MainActivity.kt",
+    "code": 34,
+    "language": "Kotlin",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/src/types.ts",
+    "code": 28,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/App.tsx",
+    "code": 28,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/eslint.config.js",
+    "code": 25,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "web/vite.config.ts",
+    "code": 24,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/atlas/infrastructure/storage/evidence.py",
+    "code": 20,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/p2p/outbox.py",
+    "code": 19,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/application/inventory.py",
+    "code": 17,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/index.html",
+    "code": 16,
+    "language": "HTML",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/layout/MainLayout.tsx",
+    "code": 16,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/documents.py",
+    "code": 15,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "mobile/qvac/worker.entry.mjs",
+    "code": 14,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eslint.config.js",
+    "code": 13,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "web/src/components/common/index.ts",
+    "code": 13,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/embeddings.py",
+    "code": 12,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/main.tsx",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/extraction.py",
+    "code": 11,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/qvac/metrics.ts",
+    "code": 11,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/speech.py",
+    "code": 9,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/postcss.config.js",
+    "code": 6,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "mobile/index.ts",
+    "code": 3,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/forms/index.ts",
+    "code": 2,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "web/src/components/layout/index.ts",
+    "code": 2,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/application/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/domain/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/audit/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/database/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/p2p/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/qvac/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/repositories/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/atlas/infrastructure/storage/__init__.py",
+    "code": 0,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  }
+]

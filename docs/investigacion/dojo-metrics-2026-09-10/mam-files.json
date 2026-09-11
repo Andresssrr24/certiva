@@ -1,0 +1,500 @@
+{
+  "src/renderer/src/assets/components.css": {
+    "blank": 80,
+    "comment": 197,
+    "code": 683,
+    "language": "CSS"
+  },
+  "src/renderer/src/App.tsx": {
+    "blank": 53,
+    "comment": 63,
+    "code": 513,
+    "language": "TypeScript"
+  },
+  "src/shared/query-engine.ts": {
+    "blank": 58,
+    "comment": 66,
+    "code": 356,
+    "language": "TypeScript"
+  },
+  "src/main/qvac/models.ts": {
+    "blank": 41,
+    "comment": 201,
+    "code": 344,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Sidebar.tsx": {
+    "blank": 29,
+    "comment": 54,
+    "code": 297,
+    "language": "TypeScript"
+  },
+  "src/main/reports.ts": {
+    "blank": 25,
+    "comment": 9,
+    "code": 267,
+    "language": "TypeScript"
+  },
+  "src/main/qvac/query.ts": {
+    "blank": 31,
+    "comment": 69,
+    "code": 252,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/FollowUpMode.tsx": {
+    "blank": 21,
+    "comment": 12,
+    "code": 246,
+    "language": "TypeScript"
+  },
+  "src/main/qvac/extract.ts": {
+    "blank": 20,
+    "comment": 23,
+    "code": 200,
+    "language": "TypeScript"
+  },
+  "src/main/store.ts": {
+    "blank": 24,
+    "comment": 25,
+    "code": 189,
+    "language": "TypeScript"
+  },
+  "src/main/ipc.ts": {
+    "blank": 21,
+    "comment": 17,
+    "code": 169,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/assets/themes.ts": {
+    "blank": 11,
+    "comment": 60,
+    "code": 167,
+    "language": "TypeScript"
+  },
+  "scripts/convert-philips-seed.mjs": {
+    "blank": 17,
+    "comment": 18,
+    "code": 144,
+    "language": "JavaScript"
+  },
+  "src/renderer/src/components/Review.tsx": {
+    "blank": 14,
+    "comment": 0,
+    "code": 144,
+    "language": "TypeScript"
+  },
+  "src/main/qvac/wav-split.ts": {
+    "blank": 20,
+    "comment": 41,
+    "code": 135,
+    "language": "TypeScript"
+  },
+  "scripts/check-reglas.mjs": {
+    "blank": 18,
+    "comment": 19,
+    "code": 131,
+    "language": "JavaScript"
+  },
+  "scripts/check-contrast.mjs": {
+    "blank": 12,
+    "comment": 26,
+    "code": 126,
+    "language": "JavaScript"
+  },
+  "src/renderer/src/components/FilterBar.tsx": {
+    "blank": 10,
+    "comment": 6,
+    "code": 122,
+    "language": "TypeScript"
+  },
+  "scripts/check-troceo.mjs": {
+    "blank": 16,
+    "comment": 20,
+    "code": 121,
+    "language": "JavaScript"
+  },
+  "src/renderer/src/components/QueryBar.tsx": {
+    "blank": 7,
+    "comment": 7,
+    "code": 118,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Capture.tsx": {
+    "blank": 8,
+    "comment": 5,
+    "code": 111,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/GuideSection.tsx": {
+    "blank": 9,
+    "comment": 1,
+    "code": 110,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/audio/wav-recorder.ts": {
+    "blank": 11,
+    "comment": 13,
+    "code": 107,
+    "language": "TypeScript"
+  },
+  "src/shared/transcript.ts": {
+    "blank": 16,
+    "comment": 31,
+    "code": 100,
+    "language": "TypeScript"
+  },
+  "src/shared/reports.ts": {
+    "blank": 11,
+    "comment": 16,
+    "code": 96,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/ExportBar.tsx": {
+    "blank": 8,
+    "comment": 10,
+    "code": 94,
+    "language": "TypeScript"
+  },
+  "src/shared/types.ts": {
+    "blank": 15,
+    "comment": 22,
+    "code": 93,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/ReportsSection.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 92,
+    "language": "TypeScript"
+  },
+  "src/main/qvac/dedup.ts": {
+    "blank": 10,
+    "comment": 6,
+    "code": 85,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/DataTable.tsx": {
+    "blank": 2,
+    "comment": 5,
+    "code": 84,
+    "language": "TypeScript"
+  },
+  "src/shared/glossary.ts": {
+    "blank": 4,
+    "comment": 3,
+    "code": 83,
+    "language": "TypeScript"
+  },
+  "scripts/smoke-engine.mjs": {
+    "blank": 13,
+    "comment": 7,
+    "code": 81,
+    "language": "JavaScript"
+  },
+  "src/renderer/src/components/Home.tsx": {
+    "blank": 7,
+    "comment": 12,
+    "code": 81,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/EquipmentRow.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 80,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/QueryGuide.tsx": {
+    "blank": 9,
+    "comment": 4,
+    "code": 79,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Splash.tsx": {
+    "blank": 11,
+    "comment": 19,
+    "code": 77,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/ResultCharts.tsx": {
+    "blank": 6,
+    "comment": 13,
+    "code": 75,
+    "language": "TypeScript"
+  },
+  "scripts/smoke-semaforo.mjs": {
+    "blank": 15,
+    "comment": 32,
+    "code": 72,
+    "language": "JavaScript"
+  },
+  "scripts/check-locks-qvac.mjs": {
+    "blank": 11,
+    "comment": 10,
+    "code": 71,
+    "language": "JavaScript"
+  },
+  "src/renderer/src/components/Access.tsx": {
+    "blank": 12,
+    "comment": 12,
+    "code": 70,
+    "language": "TypeScript"
+  },
+  "scripts/check-sin-red.mjs": {
+    "blank": 15,
+    "comment": 26,
+    "code": 68,
+    "language": "JavaScript"
+  },
+  "src/renderer/src/components/LogoMotion.tsx": {
+    "blank": 12,
+    "comment": 25,
+    "code": 66,
+    "language": "TypeScript"
+  },
+  "src/main/index.ts": {
+    "blank": 11,
+    "comment": 9,
+    "code": 65,
+    "language": "TypeScript"
+  },
+  "src/main/qvac/transcribe.ts": {
+    "blank": 10,
+    "comment": 23,
+    "code": 65,
+    "language": "TypeScript"
+  },
+  "src/shared/catalog.ts": {
+    "blank": 11,
+    "comment": 6,
+    "code": 62,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/InterpretChip.tsx": {
+    "blank": 6,
+    "comment": 7,
+    "code": 61,
+    "language": "TypeScript"
+  },
+  "src/shared/timings.ts": {
+    "blank": 7,
+    "comment": 4,
+    "code": 61,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/BusyOverlay.tsx": {
+    "blank": 8,
+    "comment": 29,
+    "code": 52,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Progress.tsx": {
+    "blank": 9,
+    "comment": 4,
+    "code": 52,
+    "language": "TypeScript"
+  },
+  "src/main/qvac/prompts.ts": {
+    "blank": 10,
+    "comment": 19,
+    "code": 51,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/EvidenceHighlight.tsx": {
+    "blank": 7,
+    "comment": 3,
+    "code": 51,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Charts.tsx": {
+    "blank": 4,
+    "comment": 10,
+    "code": 50,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Dashboard.tsx": {
+    "blank": 7,
+    "comment": 1,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "src/shared/columns.ts": {
+    "blank": 7,
+    "comment": 14,
+    "code": 48,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/TopBar.tsx": {
+    "blank": 5,
+    "comment": 9,
+    "code": 47,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/LocationFields.tsx": {
+    "blank": 5,
+    "comment": 5,
+    "code": 46,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/DuplicateAlert.tsx": {
+    "blank": 2,
+    "comment": 3,
+    "code": 41,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/HelpTip.tsx": {
+    "blank": 3,
+    "comment": 3,
+    "code": 39,
+    "language": "TypeScript"
+  },
+  "scripts/check-tokens.mjs": {
+    "blank": 12,
+    "comment": 18,
+    "code": 37,
+    "language": "JavaScript"
+  },
+  "src/preload/index.d.ts": {
+    "blank": 3,
+    "comment": 1,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/lib/theme.ts": {
+    "blank": 7,
+    "comment": 4,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/KpiRow.tsx": {
+    "blank": 2,
+    "comment": 5,
+    "code": 34,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/lib/transition.ts": {
+    "blank": 7,
+    "comment": 21,
+    "code": 32,
+    "language": "TypeScript"
+  },
+  "eslint.config.mjs": {
+    "blank": 1,
+    "comment": 0,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "src/renderer/src/components/FieldGuide.tsx": {
+    "blank": 2,
+    "comment": 3,
+    "code": 31,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/HistoryPanel.tsx": {
+    "blank": 1,
+    "comment": 3,
+    "code": 30,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/assets/main.css": {
+    "blank": 0,
+    "comment": 9,
+    "code": 28,
+    "language": "CSS"
+  },
+  "src/renderer/src/components/Stats.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 25,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Waveform.tsx": {
+    "blank": 4,
+    "comment": 4,
+    "code": 24,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/ModeFlash.tsx": {
+    "blank": 5,
+    "comment": 31,
+    "code": 19,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/ThemePicker.tsx": {
+    "blank": 3,
+    "comment": 6,
+    "code": 18,
+    "language": "TypeScript"
+  },
+  "src/preload/index.ts": {
+    "blank": 1,
+    "comment": 1,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/lib/flags.ts": {
+    "blank": 5,
+    "comment": 8,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "electron.vite.config.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 15,
+    "language": "TypeScript"
+  },
+  "src/renderer/index.html": {
+    "blank": 1,
+    "comment": 1,
+    "code": 15,
+    "language": "HTML"
+  },
+  "src/renderer/src/lib/filter.ts": {
+    "blank": 2,
+    "comment": 4,
+    "code": 13,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/FollowUp.tsx": {
+    "blank": 1,
+    "comment": 1,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/components/Footer.tsx": {
+    "blank": 1,
+    "comment": 2,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/main.tsx": {
+    "blank": 3,
+    "comment": 3,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/lib/api.ts": {
+    "blank": 3,
+    "comment": 2,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/lib/labels.ts": {
+    "blank": 4,
+    "comment": 5,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "src/renderer/src/assets/base.css": {
+    "blank": 0,
+    "comment": 3,
+    "code": 8,
+    "language": "CSS"
+  },
+  "src/renderer/src/env.d.ts": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "TypeScript"
+  }
+}

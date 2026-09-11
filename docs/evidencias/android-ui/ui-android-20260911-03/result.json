@@ -1,0 +1,16 @@
+{
+  "serial": "emulator-5580",
+  "startedAt": "2026-09-11T04:40:25.532Z",
+  "apkSha256": "29a28001e4d9942241468653c17a09a39e8e18be652ea00e2b9b5ee6b0f750d3",
+  "test": "local.certiva.pilot.UiFixtureFlowTest",
+  "input": "Controlled visual fixture; no inference or real WhatsApp delivery.",
+  "installedApkSha256": "29a28001e4d9942241468653c17a09a39e8e18be652ea00e2b9b5ee6b0f750d3",
+  "installedPackage": [
+    "versionCode=3 minSdk=33 targetSdk=35",
+    "versionName=0.3.0-qvac-local"
+  ],
+  "passed": false,
+  "error": "Flow test exceeded 75 seconds.",
+  "video": "android-flow.mp4",
+  "completedAt": "2026-09-11T04:41:49.595Z"
+}

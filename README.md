@@ -6,13 +6,14 @@ Proyecto del Hackatón QVAC · ISD Summit 2026. Tracks: **Desafío General**, **
 
 ## Estado del avance
 
-Corte documental: **10 de septiembre de 2026, hora de Panamá**. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
+Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
 | Escritorio Electron | Teléfono simulado, mensaje → alerta → detalle, centro de seguridad y análisis QVAC local | [Recorrido y pruebas](docs/EXPERIENCIA-Y-ALERTAS.md) · [Entorno QVAC](docs/INTERFAZ-LOCAL.md). Las medidas bancarias son solicitudes de demostración. |
 | Landing | Sitio interactivo, verificador de texto por reglas y puente opcional al QVAC del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). QVAC no se ejecuta en Vercel. |
-| Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Sin QVAC móvil ni conexión a APIs bancarias. |
+| Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Android 0.2 usa reglas; sin conexión a APIs bancarias. |
+| Android nativo 0.3 experimental | Interfaz renovada, runtime QVAC CPU, instalador de modelo y conservación del riesgo de reglas cuando falla la IA | [Código y construcción](pilot/android-qvac/README.md) · [Resultados y fallos](pilot/android-qvac/VALIDATION.md). El clasificador corregido agotó el tiempo en Android; no es una versión validada. |
 | App Android con QVAC (Expo) | [APK de 228 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre la app se llama Certiva, con el icono Enlace y la firma de marca (0.2.0, pendiente de publicar como Release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
 
@@ -62,9 +63,11 @@ La verificación QVAC real previa está descrita en las guías de escritorio y l
 
 ## Piloto bancario: SDK móvil y consola
 
+El portal analiza directamente el texto de los escenarios y muestra una advertencia inicial de reglas mientras Qwen prepara la explicación; el reporte espera al resultado final. El directorio de contactos incluye fuentes oficiales y fecha de consulta, y evita presentar teléfonos generados por IA como canales verificados. [Rendimiento y comprobaciones](docs/RENDIMIENTO-PORTAL.md) · [Contactos y límites](docs/CONTACTOS-BANCARIOS.md).
+
 La APK usa el símbolo de Certiva como icono adaptativo del lanzador, con fondo blanco y márgenes para las máscaras redonda y cuadrada de Android. Las notificaciones usan una adaptación monocroma del símbolo y el logo a color en la alerta ampliada. [Recursos de marca y verificación](docs/ICONO-ANDROID.md).
 
-El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. Android 0.2 añade protección voluntaria de notificaciones de WhatsApp, aviso nativo y apertura de detalle/reporte, además de pegar o compartir texto. Todo el análisis de esta versión usa reglas locales; QVAC en Android sigue en desarrollo. [Guía y límites](docs/ALERTAS-ANDROID.md). Estas aplicaciones no ejecutan QVAC.
+El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. Android 0.2 añade protección voluntaria de notificaciones de WhatsApp, aviso nativo y apertura de detalle/reporte, además de pegar o compartir texto. Todo el análisis de la versión 0.2 usa reglas locales. [Guía y límites](docs/ALERTAS-ANDROID.md). La fuente Android de esta rama avanza a **0.3 experimental** con QVAC; conserva por separado la evidencia y los binarios 0.2. La compilación, los iconos y las pruebas de interfaz no acreditan inferencia Android correcta.
 
 La consola usa sesiones y roles de cliente, analista y auditor, aislamiento por banco, deduplicación, control de versiones y auditoría en SQLite. El reporte contiene nueve campos de resultado y consentimiento; no incluye el mensaje, la captura, enlaces ni teléfonos. Son reportes de clientes pendientes de corroboración.
 
@@ -176,6 +179,24 @@ Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector p
 ## App móvil y APK
 
 La prueba de que el motor se embebe es una app Android con el mismo núcleo: código en `mobile/`, plan y mediciones en [docs/PLAN-APK.md](docs/PLAN-APK.md), instrucciones en [mobile/README.md](mobile/README.md). El APK está publicado en el [Release apk-v0.1](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1) ([descarga directa](https://github.com/Andresssrr24/certiva/releases/download/apk-v0.1/antifraude-release-arm64.apk)): 228 MB, arm64, Android 10 o superior, sin ningún modelo dentro, SHA-256 `6d3773c3…13b9cb` en las notas del Release; no va en el repositorio por peso. Probado en el emulador Android arm64 del MacBook: instala, arranca, y un mensaje de fraude pegado da «Es una estafa» con sus tres señales en 1 ms (capturas en `docs/img/`); la versión 0.2.0 lleva la marca Certiva (nombre, icono adaptativo Enlace, firma en la cabecera, Manrope y el azul #205094 del escritorio; capturas `docs/img/apk-certiva-*.png`), compilada y probada en el mismo emulador y pendiente de publicarse como Release apk-v0.2; VisionPsy Q8 se descargó desde la app, cargó y leyó una captura de fraude en CPU con primer token a los 23 s y total 31 s, y una legítima quedó en «Sospechoso» porque el lector cambió letras del dominio y el teléfono no tiene el OCR de contraste del escritorio. Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas en menos de un milisegundo. Leer capturas descarga VisionPsy Q8 una sola vez (546 MB, el mismo lector del escritorio: Q4 se midió sobre las 136 capturas y pierde 4,4 puntos) y corre en el teléfono; el consejo en el teléfono es texto fijo por señal, porque Qwen3 0.6B, medido, no lo mejora y Qwen3 4B no cabe. El peso del APK es casi todo runtime del SDK: backend GPU Vulkan de 86 MB y runtime Bare de 62 MB; preferimos conservar la GPU antes que bajar a unos 133 MB. Estado: compilado en el MacBook sin Android Studio y probado en emulador; la prueba en teléfono físico, con la descarga del lector y una captura real, queda para el equipo. Esta app es distinta del SDK y la consola del [piloto bancario](pilot/README.md), que usan reglas locales y OCR de Apple Vision en iOS: la app Expo de `mobile/` es la que ejecuta QVAC en Android.
+
+
+### Instalar en un Android
+
+Requisitos: Android 10 o más nuevo y procesador de 64 bits (arm64), que es lo normal desde 2017. Ningún dato sale del teléfono. El APK está firmado con la llave de depuración: Android pedirá permitir la instalación desde el navegador y Play Protect dirá que no conoce al desarrollador; se elige «Instalar de todos modos».
+
+<img src="docs/img/qr-apk.png" width="170" alt="QR al Release apk-v0.1" align="right">
+
+**Desde el teléfono.** Escanea el QR o abre el [Release apk-v0.1](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1), toca `antifraude-release-arm64.apk` (228 MB), y al terminar la descarga ábrelo desde las notificaciones. Mientras el repositorio sea privado, el teléfono tiene que tener iniciada la sesión de GitHub de alguien con acceso; en cuanto sea público, el QR funciona para cualquiera.
+
+**Desde este repositorio.** `./mobile/instalar.sh` hace todo: usa el APK de `mobile/dist/` o lo baja del Release, comprueba su SHA-256 contra `mobile/antifraude-release-arm64.apk.sha256`, y
+
+- si hay un teléfono por USB con depuración activada, verifica que sea Android 10+ y arm64, lo instala y lo abre;
+- si no hay cable, sirve el APK en la red Wi-Fi de la máquina y muestra en la terminal un QR con la dirección para bajarlo desde el teléfono (`--wifi` fuerza este camino).
+
+**Primera prueba.** Pega un texto de fraude y toca «Verificar el texto»: el veredicto sale en 1 ms sin red. «Verificar una captura» descarga VisionPsy Q8 una sola vez (546 MB, mejor con Wi-Fi) y necesita alrededor de 1 GB de RAM libre; en un teléfono de gama baja la lectura tarda más o puede no cargar, y el modo texto sigue funcionando.
+
+**Si algo falla.** «App no compatible» o «no se pudo instalar»: teléfono de 32 bits o con Android anterior a 10; no hay arreglo con este APK. Descarga que se corta: repetirla desde el mismo enlace; el script detecta un archivo incompleto por el hash. El teléfono no aparece por USB: hace falta aceptar «Permitir depuración USB» en su pantalla.
 
 ## Datos
 

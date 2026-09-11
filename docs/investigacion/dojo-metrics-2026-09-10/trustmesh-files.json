@@ -1,0 +1,92 @@
+{
+  "components/ArbitrageControls.tsx": {
+    "blank": 10,
+    "comment": 0,
+    "code": 96,
+    "language": "TypeScript"
+  },
+  "services/geminiService.ts": {
+    "blank": 17,
+    "comment": 5,
+    "code": 81,
+    "language": "TypeScript"
+  },
+  "components/ArbitrageResults.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 68,
+    "language": "TypeScript"
+  },
+  "App.tsx": {
+    "blank": 8,
+    "comment": 0,
+    "code": 67,
+    "language": "TypeScript"
+  },
+  "trustmesh-ai/app.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 43,
+    "language": "JavaScript"
+  },
+  "index.html": {
+    "blank": 1,
+    "comment": 0,
+    "code": 39,
+    "language": "HTML"
+  },
+  "components/Spinner.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 28,
+    "language": "TypeScript"
+  },
+  "types.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 24,
+    "language": "TypeScript"
+  },
+  "constants.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "vite.config.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "trustmesh-ai/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 20,
+    "language": "HTML"
+  },
+  "index.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 13,
+    "language": "TypeScript"
+  },
+  "trustmesh-ai/enterprise.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "JavaScript"
+  },
+  "cryptocompass-ai/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "HTML"
+  },
+  "trustmesh-ai/styles.css": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "CSS"
+  }
+}

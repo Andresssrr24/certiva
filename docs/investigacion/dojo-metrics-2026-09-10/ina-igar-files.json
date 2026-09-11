@@ -1,0 +1,686 @@
+{
+  "mobile/App.tsx": {
+    "blank": 47,
+    "comment": 33,
+    "code": 567,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaDocumentos.tsx": {
+    "blank": 46,
+    "comment": 7,
+    "code": 544,
+    "language": "TypeScript"
+  },
+  "mobile/src/leerDocumento.ts": {
+    "blank": 41,
+    "comment": 28,
+    "code": 498,
+    "language": "TypeScript"
+  },
+  "nodo/index.mjs": {
+    "blank": 36,
+    "comment": 16,
+    "code": 408,
+    "language": "JavaScript"
+  },
+  "mobile/src/PantallaEntrada.tsx": {
+    "blank": 30,
+    "comment": 4,
+    "code": 393,
+    "language": "TypeScript"
+  },
+  "mobile/src/sentry.ts": {
+    "blank": 27,
+    "comment": 15,
+    "code": 385,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaAlerta.tsx": {
+    "blank": 48,
+    "comment": 54,
+    "code": 384,
+    "language": "TypeScript"
+  },
+  "landing/index.html": {
+    "blank": 23,
+    "comment": 0,
+    "code": 383,
+    "language": "HTML"
+  },
+  "data/generar-usuarios.mjs": {
+    "blank": 12,
+    "comment": 28,
+    "code": 348,
+    "language": "JavaScript"
+  },
+  "mobile/src/medpsy.ts": {
+    "blank": 18,
+    "comment": 13,
+    "code": 344,
+    "language": "TypeScript"
+  },
+  "mobile/src/ui/componentes.tsx": {
+    "blank": 30,
+    "comment": 44,
+    "code": 318,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaExamen.tsx": {
+    "blank": 29,
+    "comment": 5,
+    "code": 317,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/extraccion.ts": {
+    "blank": 41,
+    "comment": 6,
+    "code": 301,
+    "language": "TypeScript"
+  },
+  "landing/pitch.html": {
+    "blank": 12,
+    "comment": 0,
+    "code": 287,
+    "language": "HTML"
+  },
+  "mobile/src/core/paquete.ts": {
+    "blank": 18,
+    "comment": 35,
+    "code": 276,
+    "language": "TypeScript"
+  },
+  "spikes/lora-medpsy/make-dataset.mjs": {
+    "blank": 37,
+    "comment": 92,
+    "code": 271,
+    "language": "JavaScript"
+  },
+  "data/generar-documentos.py": {
+    "blank": 60,
+    "comment": 37,
+    "code": 270,
+    "language": "Python"
+  },
+  "mobile/src/core/reglas.ts": {
+    "blank": 22,
+    "comment": 54,
+    "code": 256,
+    "language": "TypeScript"
+  },
+  "eval/run.mjs": {
+    "blank": 34,
+    "comment": 29,
+    "code": 243,
+    "language": "JavaScript"
+  },
+  "mobile/src/nodoUrl.ts": {
+    "blank": 28,
+    "comment": 16,
+    "code": 241,
+    "language": "TypeScript"
+  },
+  "nodo/consola.html": {
+    "blank": 8,
+    "comment": 0,
+    "code": 233,
+    "language": "HTML"
+  },
+  "mobile/src/PantallaSalud.tsx": {
+    "blank": 31,
+    "comment": 10,
+    "code": 225,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaViaMed.tsx": {
+    "blank": 14,
+    "comment": 7,
+    "code": 225,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaDatos.tsx": {
+    "blank": 19,
+    "comment": 19,
+    "code": 211,
+    "language": "TypeScript"
+  },
+  "mobile/src/envio.ts": {
+    "blank": 18,
+    "comment": 11,
+    "code": 206,
+    "language": "TypeScript"
+  },
+  "landing/admin.html": {
+    "blank": 12,
+    "comment": 0,
+    "code": 198,
+    "language": "HTML"
+  },
+  "landing/server.js": {
+    "blank": 19,
+    "comment": 2,
+    "code": 198,
+    "language": "JavaScript"
+  },
+  "data/cartera-sintetica.mjs": {
+    "blank": 21,
+    "comment": 38,
+    "code": 182,
+    "language": "JavaScript"
+  },
+  "mobile/src/core/credito/modelo.ts": {
+    "blank": 3,
+    "comment": 7,
+    "code": 179,
+    "language": "TypeScript"
+  },
+  "mobile/src/perf/logger.ts": {
+    "blank": 18,
+    "comment": 6,
+    "code": 171,
+    "language": "TypeScript"
+  },
+  "mobile/src/ConsolaDemo.tsx": {
+    "blank": 8,
+    "comment": 5,
+    "code": 170,
+    "language": "TypeScript"
+  },
+  "spikes/lora-medpsy/spike.mjs": {
+    "blank": 23,
+    "comment": 47,
+    "code": 169,
+    "language": "JavaScript"
+  },
+  "mobile/src/ui/Pictograma.tsx": {
+    "blank": 13,
+    "comment": 19,
+    "code": 166,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaEnvio.tsx": {
+    "blank": 9,
+    "comment": 6,
+    "code": 162,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaFirma.tsx": {
+    "blank": 13,
+    "comment": 7,
+    "code": 149,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/credito/motor.ts": {
+    "blank": 15,
+    "comment": 15,
+    "code": 149,
+    "language": "TypeScript"
+  },
+  "mobile/src/leerExamen.ts": {
+    "blank": 7,
+    "comment": 5,
+    "code": 135,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/alerta.ts": {
+    "blank": 13,
+    "comment": 8,
+    "code": 133,
+    "language": "TypeScript"
+  },
+  "eval/salud/alerta.test.mjs": {
+    "blank": 14,
+    "comment": 2,
+    "code": 127,
+    "language": "JavaScript"
+  },
+  "mobile/src/PantallaDesembolso.tsx": {
+    "blank": 7,
+    "comment": 5,
+    "code": 116,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/laboratorio.ts": {
+    "blank": 12,
+    "comment": 5,
+    "code": 104,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/credito/politica.ts": {
+    "blank": 5,
+    "comment": 6,
+    "code": 103,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaRevision.tsx": {
+    "blank": 11,
+    "comment": 14,
+    "code": 98,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaCredito.tsx": {
+    "blank": 14,
+    "comment": 9,
+    "code": 97,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/schemas.ts": {
+    "blank": 7,
+    "comment": 32,
+    "code": 96,
+    "language": "TypeScript"
+  },
+  "mobile/plugins/withQvacBareLink.js": {
+    "blank": 6,
+    "comment": 7,
+    "code": 94,
+    "language": "JavaScript"
+  },
+  "mobile/src/demoLog.ts": {
+    "blank": 19,
+    "comment": 7,
+    "code": 93,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaAnalizando.tsx": {
+    "blank": 7,
+    "comment": 3,
+    "code": 91,
+    "language": "TypeScript"
+  },
+  "eval/salud/laboratorio.test.mjs": {
+    "blank": 9,
+    "comment": 1,
+    "code": 87,
+    "language": "JavaScript"
+  },
+  "mobile/src/historial.ts": {
+    "blank": 12,
+    "comment": 7,
+    "code": 87,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaLeido.tsx": {
+    "blank": 9,
+    "comment": 6,
+    "code": 86,
+    "language": "TypeScript"
+  },
+  "mobile/src/PantallaCuota.tsx": {
+    "blank": 11,
+    "comment": 15,
+    "code": 85,
+    "language": "TypeScript"
+  },
+  "mobile/src/modo.ts": {
+    "blank": 12,
+    "comment": 13,
+    "code": 85,
+    "language": "TypeScript"
+  },
+  "eval/credito/cola.test.mjs": {
+    "blank": 8,
+    "comment": 5,
+    "code": 82,
+    "language": "JavaScript"
+  },
+  "mobile/src/PantallaBanco.tsx": {
+    "blank": 7,
+    "comment": 6,
+    "code": 81,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/credito/scorecard.ts": {
+    "blank": 9,
+    "comment": 6,
+    "code": 77,
+    "language": "TypeScript"
+  },
+  "scripts/harden-huellas.py": {
+    "blank": 17,
+    "comment": 3,
+    "code": 75,
+    "language": "Python"
+  },
+  "eval/credito/motor.test.mjs": {
+    "blank": 10,
+    "comment": 3,
+    "code": 71,
+    "language": "JavaScript"
+  },
+  "mobile/src/PantallaArranque.tsx": {
+    "blank": 3,
+    "comment": 5,
+    "code": 71,
+    "language": "TypeScript"
+  },
+  "eval/credito/pantalla.test.mjs": {
+    "blank": 9,
+    "comment": 9,
+    "code": 70,
+    "language": "JavaScript"
+  },
+  "mobile/src/core/marcadores.ts": {
+    "blank": 13,
+    "comment": 26,
+    "code": 64,
+    "language": "TypeScript"
+  },
+  "nodo/relay.mjs": {
+    "blank": 8,
+    "comment": 7,
+    "code": 64,
+    "language": "JavaScript"
+  },
+  "mobile/src/lora.ts": {
+    "blank": 4,
+    "comment": 12,
+    "code": 63,
+    "language": "TypeScript"
+  },
+  "nodo/probar-p2p.mjs": {
+    "blank": 8,
+    "comment": 4,
+    "code": 62,
+    "language": "JavaScript"
+  },
+  "mobile/src/PantallaRegistro.tsx": {
+    "blank": 11,
+    "comment": 11,
+    "code": 60,
+    "language": "TypeScript"
+  },
+  "nodo/consola.mjs": {
+    "blank": 9,
+    "comment": 7,
+    "code": 60,
+    "language": "JavaScript"
+  },
+  "mobile/src/p2p.ts": {
+    "blank": 13,
+    "comment": 7,
+    "code": 59,
+    "language": "TypeScript"
+  },
+  "mobile/src/cola.ts": {
+    "blank": 11,
+    "comment": 11,
+    "code": 58,
+    "language": "TypeScript"
+  },
+  "mobile/src/redactarAlerta.ts": {
+    "blank": 2,
+    "comment": 7,
+    "code": 57,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/credito/explicacion.ts": {
+    "blank": 5,
+    "comment": 10,
+    "code": 55,
+    "language": "TypeScript"
+  },
+  "spikes/lora-medpsy/remedir.mjs": {
+    "blank": 2,
+    "comment": 2,
+    "code": 54,
+    "language": "JavaScript"
+  },
+  "mobile/index.tsx": {
+    "blank": 8,
+    "comment": 5,
+    "code": 52,
+    "language": "TypeScript"
+  },
+  "mobile/src/perf/exportar.ts": {
+    "blank": 6,
+    "comment": 25,
+    "code": 52,
+    "language": "TypeScript"
+  },
+  "eval/credito/contrato.test.mjs": {
+    "blank": 6,
+    "comment": 3,
+    "code": 51,
+    "language": "JavaScript"
+  },
+  "mobile/src/envioVisual.ts": {
+    "blank": 5,
+    "comment": 10,
+    "code": 51,
+    "language": "TypeScript"
+  },
+  "eval/credito/capacidad.test.mjs": {
+    "blank": 8,
+    "comment": 2,
+    "code": 48,
+    "language": "JavaScript"
+  },
+  "nodo/inferir.mjs": {
+    "blank": 5,
+    "comment": 5,
+    "code": 48,
+    "language": "JavaScript"
+  },
+  "spikes/proveedor.mjs": {
+    "blank": 4,
+    "comment": 7,
+    "code": 48,
+    "language": "JavaScript"
+  },
+  "eval/credito/schemas.test.mjs": {
+    "blank": 5,
+    "comment": 0,
+    "code": 47,
+    "language": "JavaScript"
+  },
+  "eval/credito/scorecard.test.mjs": {
+    "blank": 6,
+    "comment": 3,
+    "code": 45,
+    "language": "JavaScript"
+  },
+  "mobile/src/core/prompts.ts": {
+    "blank": 7,
+    "comment": 7,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "mobile/src/ui/tokens.ts": {
+    "blank": 10,
+    "comment": 59,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "nodo/cartera.mjs": {
+    "blank": 4,
+    "comment": 25,
+    "code": 44,
+    "language": "JavaScript"
+  },
+  "nodo/dht.mjs": {
+    "blank": 4,
+    "comment": 8,
+    "code": 44,
+    "language": "JavaScript"
+  },
+  "nodo/probe-p2p.mjs": {
+    "blank": 6,
+    "comment": 4,
+    "code": 44,
+    "language": "JavaScript"
+  },
+  "mobile/src/core/credito/estructura.ts": {
+    "blank": 3,
+    "comment": 10,
+    "code": 40,
+    "language": "TypeScript"
+  },
+  "eval/credito/explicacion.test.mjs": {
+    "blank": 5,
+    "comment": 3,
+    "code": 38,
+    "language": "JavaScript"
+  },
+  "eval/credito/paquete-lab.test.mjs": {
+    "blank": 7,
+    "comment": 0,
+    "code": 38,
+    "language": "JavaScript"
+  },
+  "mobile/src/colaSqlite.ts": {
+    "blank": 4,
+    "comment": 4,
+    "code": 38,
+    "language": "TypeScript"
+  },
+  "eval/credito/estructura.test.mjs": {
+    "blank": 7,
+    "comment": 3,
+    "code": 36,
+    "language": "JavaScript"
+  },
+  "mobile/src/core/credito/capacidad.ts": {
+    "blank": 4,
+    "comment": 15,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "mobile/src/core/credito/precio.ts": {
+    "blank": 4,
+    "comment": 12,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "spikes/consumidor.mjs": {
+    "blank": 3,
+    "comment": 7,
+    "code": 34,
+    "language": "JavaScript"
+  },
+  "eval/credito/cartera.test.mjs": {
+    "blank": 4,
+    "comment": 0,
+    "code": 33,
+    "language": "JavaScript"
+  },
+  "eval/credito/precio.test.mjs": {
+    "blank": 5,
+    "comment": 1,
+    "code": 32,
+    "language": "JavaScript"
+  },
+  "mobile/src/lectura.ts": {
+    "blank": 3,
+    "comment": 6,
+    "code": 30,
+    "language": "TypeScript"
+  },
+  "mobile/src/usuarios.ts": {
+    "blank": 5,
+    "comment": 9,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "spikes/lora-medpsy/diag.mjs": {
+    "blank": 0,
+    "comment": 0,
+    "code": 29,
+    "language": "JavaScript"
+  },
+  "eval/credito/envio.test.mjs": {
+    "blank": 4,
+    "comment": 0,
+    "code": 28,
+    "language": "JavaScript"
+  },
+  "eval/nodo/inferir.test.mjs": {
+    "blank": 2,
+    "comment": 2,
+    "code": 24,
+    "language": "JavaScript"
+  },
+  "nodo/bootstrap-dht.mjs": {
+    "blank": 5,
+    "comment": 8,
+    "code": 23,
+    "language": "JavaScript"
+  },
+  "mobile/src/core/validaciones.ts": {
+    "blank": 1,
+    "comment": 1,
+    "code": 20,
+    "language": "TypeScript"
+  },
+  "scripts/sync-marca.sh": {
+    "blank": 0,
+    "comment": 2,
+    "code": 16,
+    "language": "Bourne Shell"
+  },
+  "eval/credito/finanzas.test.mjs": {
+    "blank": 3,
+    "comment": 1,
+    "code": 15,
+    "language": "JavaScript"
+  },
+  "nodo/credito.mjs": {
+    "blank": 5,
+    "comment": 19,
+    "code": 15,
+    "language": "JavaScript"
+  },
+  "mobile/qvac/worker.entry.mjs": {
+    "blank": 6,
+    "comment": 9,
+    "code": 14,
+    "language": "JavaScript"
+  },
+  "eval/credito/firma.test.mjs": {
+    "blank": 2,
+    "comment": 0,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "mobile/src/firmaHash.ts": {
+    "blank": 1,
+    "comment": 1,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "mobile/src/modelosMarca.ts": {
+    "blank": 1,
+    "comment": 6,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "nodo/Dockerfile": {
+    "blank": 0,
+    "comment": 2,
+    "code": 9,
+    "language": "Dockerfile"
+  },
+  "mobile/src/core/credito/finanzas.ts": {
+    "blank": 2,
+    "comment": 7,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "mobile/gguf.d.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 4,
+    "language": "TypeScript"
+  },
+  "mobile/metro.config.js": {
+    "blank": 3,
+    "comment": 1,
+    "code": 4,
+    "language": "JavaScript"
+  },
+  "mobile/src/bancoUrl.ts": {
+    "blank": 1,
+    "comment": 1,
+    "code": 4,
+    "language": "TypeScript"
+  }
+}
