@@ -8,6 +8,8 @@ Demo vigente: [Android y administración del mismo caso — video de 56 segundos
 
 ## Estado del avance
 
+Android0.5 conecta **Ingresar/Mis reportes por HTTPS** con cuenta asignada y permite borrar los reportes propios. [Cambios y evidencia](docs/android/REPORTES-HTTPS-ANDROID.md): dos pruebas nativas aprobadas en emulador API35; instalación física desde Play y QVAC siguen pendientes. El servicio remoto es independiente de la demo local.
+
 Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |

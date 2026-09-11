@@ -1,0 +1,8 @@
+{
+  "pilot/android-app/app/build.gradle": "c8b13e9587c58c90b5ad6bed59a27c129c92b0258970670f0191421573327e57",
+  "pilot/android-app/app/src/main/java/local/certiva/pilot/PilotAPI.java": "8a47da9f65789d81ccec43a8ba29e89b99a3fac3b7669d162f6f553f9638dc1a",
+  "pilot/android-app/app/src/main/java/local/certiva/pilot/MainActivity.java": "629996191475ff7e416622b50b8ec924dcca080a79aa219ec7df3bcb2e23e50c",
+  "pilot/android-app/app/src/main/res/xml/network_security_config.xml": "c18bc32d74fa29482a66e1c58c7d25a897c6e7ccabafafe5715e6cff959921e4",
+  "pilot/android-app/app/src/debug/res/xml/network_security_config.xml": "f5f06314006b3f475e0d4f93be1803c32429ca85009030408f21f30c92968bdb",
+  "pilot/android-app/app/src/androidTest/java/local/certiva/pilot/PublicReportsTest.java": "8cc40a192da914e1e2268157c6785f7ceb842aa62a4de958f57a86a6e6386e69"
+}
