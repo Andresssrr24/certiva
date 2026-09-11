@@ -1,0 +1,583 @@
+[
+  {
+    "path": "src/renderer/src/assets/components.css",
+    "code": 683,
+    "language": "CSS",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/App.tsx",
+    "code": 513,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/query-engine.ts",
+    "code": 356,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/qvac/models.ts",
+    "code": 344,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Sidebar.tsx",
+    "code": 297,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/reports.ts",
+    "code": 267,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/qvac/query.ts",
+    "code": 252,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/FollowUpMode.tsx",
+    "code": 246,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/qvac/extract.ts",
+    "code": 200,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/store.ts",
+    "code": 189,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/ipc.ts",
+    "code": 169,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/assets/themes.ts",
+    "code": 167,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/convert-philips-seed.mjs",
+    "code": 144,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/src/components/Review.tsx",
+    "code": 144,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/qvac/wav-split.ts",
+    "code": 135,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/check-reglas.mjs",
+    "code": 131,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "scripts/check-contrast.mjs",
+    "code": 126,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/src/components/FilterBar.tsx",
+    "code": 122,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/check-troceo.mjs",
+    "code": 121,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/src/components/QueryBar.tsx",
+    "code": 118,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Capture.tsx",
+    "code": 111,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/GuideSection.tsx",
+    "code": 110,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/audio/wav-recorder.ts",
+    "code": 107,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/transcript.ts",
+    "code": 100,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/reports.ts",
+    "code": 96,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/ExportBar.tsx",
+    "code": 94,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/types.ts",
+    "code": 93,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/ReportsSection.tsx",
+    "code": 92,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/qvac/dedup.ts",
+    "code": 85,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/DataTable.tsx",
+    "code": 84,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/glossary.ts",
+    "code": 83,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/smoke-engine.mjs",
+    "code": 81,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/src/components/Home.tsx",
+    "code": 81,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/EquipmentRow.tsx",
+    "code": 80,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/QueryGuide.tsx",
+    "code": 79,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Splash.tsx",
+    "code": 77,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/ResultCharts.tsx",
+    "code": 75,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/smoke-semaforo.mjs",
+    "code": 72,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "scripts/check-locks-qvac.mjs",
+    "code": 71,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/src/components/Access.tsx",
+    "code": 70,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/check-sin-red.mjs",
+    "code": 68,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/src/components/LogoMotion.tsx",
+    "code": 66,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/index.ts",
+    "code": 65,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/qvac/transcribe.ts",
+    "code": 65,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/catalog.ts",
+    "code": 62,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/InterpretChip.tsx",
+    "code": 61,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/timings.ts",
+    "code": 61,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/BusyOverlay.tsx",
+    "code": 52,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Progress.tsx",
+    "code": 52,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/main/qvac/prompts.ts",
+    "code": 51,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/EvidenceHighlight.tsx",
+    "code": 51,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Charts.tsx",
+    "code": 50,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Dashboard.tsx",
+    "code": 49,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/shared/columns.ts",
+    "code": 48,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/TopBar.tsx",
+    "code": 47,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/LocationFields.tsx",
+    "code": 46,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/DuplicateAlert.tsx",
+    "code": 41,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/HelpTip.tsx",
+    "code": 39,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/check-tokens.mjs",
+    "code": 37,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/preload/index.d.ts",
+    "code": 35,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/lib/theme.ts",
+    "code": 35,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/KpiRow.tsx",
+    "code": 34,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/lib/transition.ts",
+    "code": 32,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eslint.config.mjs",
+    "code": 31,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/src/components/FieldGuide.tsx",
+    "code": 31,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/HistoryPanel.tsx",
+    "code": 30,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/assets/main.css",
+    "code": 28,
+    "language": "CSS",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Stats.tsx",
+    "code": 25,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Waveform.tsx",
+    "code": 24,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/ModeFlash.tsx",
+    "code": 19,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/ThemePicker.tsx",
+    "code": 18,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/preload/index.ts",
+    "code": 17,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/lib/flags.ts",
+    "code": 17,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "electron.vite.config.ts",
+    "code": 15,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/renderer/index.html",
+    "code": 15,
+    "language": "HTML",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/lib/filter.ts",
+    "code": 13,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/FollowUp.tsx",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/components/Footer.tsx",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/main.tsx",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/lib/api.ts",
+    "code": 9,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/lib/labels.ts",
+    "code": 9,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/assets/base.css",
+    "code": 8,
+    "language": "CSS",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/renderer/src/env.d.ts",
+    "code": 0,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  }
+]

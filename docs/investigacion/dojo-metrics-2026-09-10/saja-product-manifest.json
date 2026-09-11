@@ -1,0 +1,191 @@
+[
+  {
+    "path": "app.py",
+    "code": 921,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/extract.py",
+    "code": 408,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/documents.py",
+    "code": 324,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/store.py",
+    "code": 264,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/qvac_engine.py",
+    "code": 243,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/nlquery.py",
+    "code": 228,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/normalize.py",
+    "code": 221,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/test_documentos.py",
+    "code": 212,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/followup.py",
+    "code": 212,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/geo.py",
+    "code": 165,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/test_acceptance.py",
+    "code": 163,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/insights.py",
+    "code": 155,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/test_extraccion.py",
+    "code": 139,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/schema.py",
+    "code": 133,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/test_audio.py",
+    "code": 99,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/conflicts.py",
+    "code": 95,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/confidence.py",
+    "code": 93,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/test_streamlit.py",
+    "code": 82,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/dedup.py",
+    "code": 71,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/audio.py",
+    "code": 56,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "scripts/verify_qvac.py",
+    "code": 49,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/capture.py",
+    "code": 48,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/test_capture.py",
+    "code": 40,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "scripts/import_excel.py",
+    "code": 35,
+    "language": "Python",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/config.py",
+    "code": 31,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/legacy_store.py",
+    "code": 27,
+    "language": "Python",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "run.sh",
+    "code": 4,
+    "language": "Bourne Shell",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  }
+]

@@ -1,0 +1,284 @@
+[
+  {
+    "path": ".gitignore",
+    "sha": "d17ce9ffbefe0e82d63709b16805b8e51457f1a0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": ".streamlit/config.toml",
+    "sha": "1b43ab67d286e021ca9c3f73ef200e2c972cb7fb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "Cambios Alicia 1.md",
+    "sha": "277f31685d8851a98ef9366348153b1113412077",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "MIREN ESTO PORFA/qvac-streamlit.log",
+    "sha": "9936ca52d1aaf34d1df93d44b4e1fb3f3fddc619",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "5e03db27c40d2e324ccd79d78e288b2d848e0b6b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "app.py",
+    "sha": "e49636547cda5cd422e8928041e54e4ee18fb1c6",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cambios mejoras_proyecto-#4.md",
+    "sha": "e2ff0c0185d4219ed7351ee010d5e1108de71af8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "cambios_mejoras_proyecto-#3.md",
+    "sha": "9fab3e0fb0f46acd73284d460322e78e5d77a58b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/agent_question_logic.json",
+    "sha": "4bdc353ce3bc6cf6e0f10349e4925cfd141a7b47",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/reference_lists.json",
+    "sha": "e6c2d55eaf35afd881081104ef92e5d564a156b4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/seed_installed_base.json",
+    "sha": "b1fe0e121d9801009207fed7302c664051dbfd0d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/voice_test_prompts.json",
+    "sha": "a077098f87bc2fada84691a80f7601b95d7d2bdb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs_prueba/acta_visita.docx",
+    "sha": "3c256acc17676f44056a917e099ebad7de1acc95",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs_prueba/escaneado.pdf",
+    "sha": "8cf201b585dd8c4b615684617519058f00251f32",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs_prueba/informe_visita.pdf",
+    "sha": "28f693a1d22d237a6c338c5bacd71dc0beb28e4d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs_prueba/informe_visita.txt",
+    "sha": "5937ca75adc65ae5cf13e6cc9f4f887c2f63763f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "docs_prueba/inventario.csv",
+    "sha": "50beecfa1f89fa79fe32c7b6b22f09d72e399c42",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "reports/qvac-smoke.json",
+    "sha": "8d640116094f04bda5657c2bd5e3c4f2735417f5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "requirements.txt",
+    "sha": "72f4cb93005dabedd9061df670e3d5c48e96143c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "run.bat",
+    "sha": "02420d99db9abf94998f0604f1d1a9b69fb84892",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "run.sh",
+    "sha": "061f46ffa22744a91e65fb14ea1fc7661a543568",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/import_excel.py",
+    "sha": "aa725f57298d4a7fb4a2f70b93edadfed3708550",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/test_audio.py",
+    "sha": "c943b8fca31cfd10fba0b6e5914d63a504a54834",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/test_documentos.py",
+    "sha": "352a875a27b6c8f80319324cb4b040e5fd29ff95",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/test_extraccion.py",
+    "sha": "4d742228e31c69138f13b852a7e121ce16ff0e6e",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "scripts/verify_qvac.py",
+    "sha": "f1f5f7f38b62dfd7ef72f9684231f23bb240a646",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/__init__.py",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/audio.py",
+    "sha": "077088bd242f5091fba04b5d19f2a7758c4972e8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/capture.py",
+    "sha": "d1040abb1847849263ba6c584f279e34936a2954",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/confidence.py",
+    "sha": "4cabe5e8d176c172e7732a490ae9f94b32d67d92",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/config.py",
+    "sha": "53ef61726767cdb3ca18ccf7aa369865dc57f081",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/conflicts.py",
+    "sha": "020d4f2d58e62801b8b7523afaf0f59f3920f1e0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/dedup.py",
+    "sha": "7e509076aa7c0569dfe74ae83dff4430d7eea981",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/documents.py",
+    "sha": "9111f332a20bc6cf82d3cc7363d8dc4303905609",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/extract.py",
+    "sha": "caa75fc0b288322662efc7fac0ba5312fae9763f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/followup.py",
+    "sha": "39a508cd9f18fd355ac0398168b43449ae1a0134",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/geo.py",
+    "sha": "4655668a152e31d890c418bdceba46b5ea32c9b5",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/insights.py",
+    "sha": "14f0aabbd5ad9d89dec7fbc0a5a5e25d230c983f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/legacy_store.py",
+    "sha": "98a562e18bcab32aa5b5c67b9401edd1d446319c",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/nlquery.py",
+    "sha": "6c933d855aadf9788176000fa77072614c56c92f",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/normalize.py",
+    "sha": "b78f565f87e9dfc36c3a0a62b57bca519e2e5a46",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/qvac_engine.py",
+    "sha": "23f8002b441db52d47b83ff2399d328c4c5abffb",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/schema.py",
+    "sha": "4122a5861a124d9e0b003ffcbb9e1a734b56d51b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/store.py",
+    "sha": "e98aa637c294c7212c91567654ee0502b60707e3",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/test_acceptance.py",
+    "sha": "18dfa4016985823b3c21a9af1e983360d4078733",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/test_capture.py",
+    "sha": "841a6ac600de5643293f02f103dfeae9835f2e28",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "tests/test_streamlit.py",
+    "sha": "7b2c2f9f03261a50967906a05b81dabb3558faa5",
+    "type": "blob",
+    "mode": "100644"
+  }
+]

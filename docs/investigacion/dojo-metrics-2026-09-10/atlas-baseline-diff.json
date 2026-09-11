@@ -1,0 +1,162 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "2.10",
+  "elapsed_seconds"    : 0.392185926437378,
+  "n_files"            : 75,
+  "n_lines"            : 8821,
+  "files_per_second"   : 191.235827050963,
+  "lines_per_second"   : 22491.8830722206},
+ "added" : {
+  "TypeScript" : {
+    "blank" : 380,
+    "comment" : 9,
+    "nFiles" : 40,
+    "code" : 6163
+  },
+  "Python" : {
+    "nFiles" : 5,
+    "comment" : 154,
+    "blank" : 291,
+    "code" : 1374
+  },
+  "CSS" : {
+    "comment" : 0,
+    "blank" : 4,
+    "nFiles" : 1,
+    "code" : 73
+  },
+  "HTML" : {
+    "nFiles" : 1,
+    "comment" : 0,
+    "blank" : 0,
+    "code" : 16
+  },
+  "JavaScript" : {
+    "code" : 14,
+    "nFiles" : 1,
+    "blank" : 6,
+    "comment" : 9
+  }
+  },
+ "same" : {
+  "TypeScript" : {
+    "blank" : 0,
+    "comment" : 0,
+    "nFiles" : 0,
+    "code" : 0
+  },
+  "Python" : {
+    "nFiles" : 8,
+    "comment" : 8,
+    "blank" : 0,
+    "code" : 4
+  },
+  "CSS" : {
+    "comment" : 0,
+    "blank" : 0,
+    "nFiles" : 0,
+    "code" : 0
+  },
+  "HTML" : {
+    "nFiles" : 0,
+    "comment" : 0,
+    "blank" : 0,
+    "code" : 0
+  },
+  "JavaScript" : {
+    "code" : 0,
+    "nFiles" : 0,
+    "blank" : 0,
+    "comment" : 0
+  }
+  },
+ "modified" : {
+  "TypeScript" : {
+    "blank" : 0,
+    "comment" : 0,
+    "nFiles" : 0,
+    "code" : 0
+  },
+  "Python" : {
+    "nFiles" : 19,
+    "comment" : 61,
+    "blank" : 0,
+    "code" : 84
+  },
+  "CSS" : {
+    "comment" : 0,
+    "blank" : 0,
+    "nFiles" : 0,
+    "code" : 0
+  },
+  "HTML" : {
+    "nFiles" : 0,
+    "comment" : 0,
+    "blank" : 0,
+    "code" : 0
+  },
+  "JavaScript" : {
+    "code" : 0,
+    "nFiles" : 0,
+    "blank" : 0,
+    "comment" : 0
+  }
+  },
+ "removed" : {
+  "TypeScript" : {
+    "blank" : 0,
+    "comment" : 0,
+    "nFiles" : 0,
+    "code" : 0
+  },
+  "Python" : {
+    "nFiles" : 0,
+    "comment" : 32,
+    "blank" : 19,
+    "code" : 120
+  },
+  "CSS" : {
+    "comment" : 0,
+    "blank" : 0,
+    "nFiles" : 0,
+    "code" : 0
+  },
+  "HTML" : {
+    "nFiles" : 0,
+    "comment" : 0,
+    "blank" : 0,
+    "code" : 0
+  },
+  "JavaScript" : {
+    "code" : 0,
+    "nFiles" : 0,
+    "blank" : 0,
+    "comment" : 0
+  }
+  },
+  "SUM" : {
+  "added" : {
+    "nFiles" : 48,
+    "comment" : 172,
+    "blank" : 681,
+    "code" : 7640
+},
+  "same" : {
+    "nFiles" : 8,
+    "comment" : 8,
+    "blank" : 0,
+    "code" : 4
+},
+  "modified" : {
+    "nFiles" : 19,
+    "comment" : 61,
+    "blank" : 0,
+    "code" : 84
+},
+  "removed" : {
+    "nFiles" : 0,
+    "comment" : 32,
+    "blank" : 19,
+    "code" : 120
+}
+} }

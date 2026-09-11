@@ -1,0 +1,86 @@
+[
+  {
+    "path": ".gitignore",
+    "sha": "119da21084774f8a9747b243512bf3f800894ae9",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sha": "35a6b261b17deb5aedc59c34699d06fcd576225d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "data/aranceles.json",
+    "sha": "fda90f08068731b7317ef1db7a004825007b73b6",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "index.js",
+    "sha": "9e85af26a76a46117593665663238dbaf21a720b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package-lock.json",
+    "sha": "9fb0485ef2c65cbd0ae9d87e85e24dcfa64054f4",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "package.json",
+    "sha": "a9c0607ca0fdb3ac31b4d9185c4a0e56079270cf",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "public/index.html",
+    "sha": "50360f0cc7312f0860501722efec5d37cb11bed0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/calculo.js",
+    "sha": "bfb8d870d7e849bb6ab62f400e1ca490f0ad2a2b",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/calculo.test.js",
+    "sha": "2b9c47e67a9453b7e73e156390b7e74a47d3265d",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/nucleo.js",
+    "sha": "303ad0c9b8734755426351233b66e69b21693172",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/nucleo.test.js",
+    "sha": "35fce89db5e18c855121f25e1866a72d9fad2ba8",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/server.js",
+    "sha": "f0ec7956027c54ece5309b17c385fe34c5092479",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/validar.js",
+    "sha": "f0fde34f01a176015f539589bd6a3f4cf83752a0",
+    "type": "blob",
+    "mode": "100644"
+  },
+  {
+    "path": "src/validar.test.js",
+    "sha": "888a9b1a392fbbc180e070d59b49aac27247906b",
+    "type": "blob",
+    "mode": "100644"
+  }
+]

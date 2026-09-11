@@ -1,0 +1,65 @@
+[
+  {
+    "path": "public/index.html",
+    "code": 415,
+    "language": "HTML",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/nucleo.js",
+    "code": 213,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/nucleo.test.js",
+    "code": 155,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "src/calculo.js",
+    "code": 70,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/server.js",
+    "code": 63,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/validar.test.js",
+    "code": 38,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "src/calculo.test.js",
+    "code": 35,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "src/validar.js",
+    "code": 31,
+    "language": "JavaScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "index.js",
+    "code": 26,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  }
+]

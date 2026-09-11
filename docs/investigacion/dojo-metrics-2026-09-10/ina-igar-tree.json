@@ -1,0 +1,2641 @@
+[
+  {
+    "path": ".ai",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8ff37154af4843a6213ad2b9ebf33dd9d7ab354a",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/8ff37154af4843a6213ad2b9ebf33dd9d7ab354a"
+  },
+  {
+    "path": ".ai/CONTEXT.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5a4221af44fa7a5d004f192eaae720ae539b1e66",
+    "size": 2227,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5a4221af44fa7a5d004f192eaae720ae539b1e66"
+  },
+  {
+    "path": ".ai/adr",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "44a9a61459345b17b406f3022c99cd68622f3d4a",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/44a9a61459345b17b406f3022c99cd68622f3d4a"
+  },
+  {
+    "path": ".ai/adr/ADR-001-fijar-sdk-0.19.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c5006dbb97fccb8b736c162fd9adaae0317207da",
+    "size": 4604,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c5006dbb97fccb8b736c162fd9adaae0317207da"
+  },
+  {
+    "path": ".ai/adr/ADR-002-un-modelo-base-medpsy-q8.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "54bf464a3a7eacaeeb64e30b5bf1d0cc39a418b8",
+    "size": 2986,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/54bf464a3a7eacaeeb64e30b5bf1d0cc39a418b8"
+  },
+  {
+    "path": ".ai/adr/ADR-003-lora-entrena-extraccion.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8aa9de2057602b793b533216c88621c52bcace0b",
+    "size": 2862,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8aa9de2057602b793b533216c88621c52bcace0b"
+  },
+  {
+    "path": ".ai/adr/ADR-004-core-dentro-de-mobile.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f5f3c3114659bd7232c35f107fa414d9e11604db",
+    "size": 2133,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f5f3c3114659bd7232c35f107fa414d9e11604db"
+  },
+  {
+    "path": ".ai/adr/ADR-005-las-reglas-deciden-el-modelo-explica.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d23a2579133ca23a403258e744b3c45555ad6bf5",
+    "size": 3046,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d23a2579133ca23a403258e744b3c45555ad6bf5"
+  },
+  {
+    "path": ".ai/adr/ADR-006-tres-modos-segun-el-telefono.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e01b64efa660cafe6841558b1df76894f899ede0",
+    "size": 2856,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e01b64efa660cafe6841558b1df76894f899ede0"
+  },
+  {
+    "path": ".ai/adr/ADR-007-descarga-medpsy-no-bloquea-onboarding.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c3f034e9cf1933e9f2c605997addb7e358a7e010",
+    "size": 2012,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c3f034e9cf1933e9f2c605997addb7e358a7e010"
+  },
+  {
+    "path": ".ai/adr/ADR-008-que-variables-vigilamos.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2939c65a7a5ae369a0462b274cf6c83f670b5c86",
+    "size": 5835,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2939c65a7a5ae369a0462b274cf6c83f670b5c86"
+  },
+  {
+    "path": ".ai/adr/ADR-009-medpsy-infiere-en-ingles.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "27dd7e502a76f0ab824833a84ce040670547323f",
+    "size": 1180,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/27dd7e502a76f0ab824833a84ce040670547323f"
+  },
+  {
+    "path": ".ai/adr/ADR-010-el-paquete-y-cuando-ofrecer-credito.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "11dd76a0459129f40b11e8e4b1be25925ba6dcbf",
+    "size": 6282,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/11dd76a0459129f40b11e8e4b1be25925ba6dcbf"
+  },
+  {
+    "path": ".ai/adr/ADR-011-el-modelo-de-credito.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2044c168ff14d24d941e1f99e933ab56a102a541",
+    "size": 9060,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2044c168ff14d24d941e1f99e933ab56a102a541"
+  },
+  {
+    "path": ".ai/adr/ADR-012-senaletica-y-el-modo-denso.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9ac6c25e82843b8b40f986248a20637a1ba98665",
+    "size": 4634,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9ac6c25e82843b8b40f986248a20637a1ba98665"
+  },
+  {
+    "path": ".ai/adr/ADR-013-quedarnos-en-sdk-0.18.2.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f34ef8c3709bf0fdfbdbced35b708042b6e16e08",
+    "size": 6300,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f34ef8c3709bf0fdfbdbced35b708042b6e16e08"
+  },
+  {
+    "path": ".ai/adr/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "96bd2e7bc6f4a2acb2ba30159b3bd583d9e9e013",
+    "size": 2014,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/96bd2e7bc6f4a2acb2ba30159b3bd583d9e9e013"
+  },
+  {
+    "path": ".ai/references",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "235e75b23b501b5f5f3d1247b212fbe22fd004b5",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/235e75b23b501b5f5f3d1247b212fbe22fd004b5"
+  },
+  {
+    "path": ".ai/references/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5c82823b747bde983765e24b765b002357266172",
+    "size": 588,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5c82823b747bde983765e24b765b002357266172"
+  },
+  {
+    "path": ".ai/references/baseline.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "63419314465955ae83934892b74906c9f3aa03e0",
+    "size": 2850,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/63419314465955ae83934892b74906c9f3aa03e0"
+  },
+  {
+    "path": ".ai/references/hackathon.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad4e03452031d3a48006c28d89bfc09120e7bf73",
+    "size": 16102,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ad4e03452031d3a48006c28d89bfc09120e7bf73"
+  },
+  {
+    "path": ".ai/references/qvac.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e2a769e1bd84511d93418ca31f5a480154c0ddb",
+    "size": 25518,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8e2a769e1bd84511d93418ca31f5a480154c0ddb"
+  },
+  {
+    "path": ".ai/references/retos.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d9c0548d983301d388201e652773b6aee09c02cd",
+    "size": 10684,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d9c0548d983301d388201e652773b6aee09c02cd"
+  },
+  {
+    "path": ".ai/references/salud.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "497698ae44e53196d657abe41ac88ea9fe086159",
+    "size": 16258,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/497698ae44e53196d657abe41ac88ea9fe086159"
+  },
+  {
+    "path": ".ai/runs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bc6c77316090504339c8d2bba93a77432b6d9721",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/bc6c77316090504339c8d2bba93a77432b6d9721"
+  },
+  {
+    "path": ".ai/runs/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "size": 1,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+  },
+  {
+    "path": ".ai/runs/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0350e6110fa083e948f4c8998ceb82a6746a8fd4",
+    "size": 274,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0350e6110fa083e948f4c8998ceb82a6746a8fd4"
+  },
+  {
+    "path": ".ai/runs/mvp-hackathon",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "89b4f7fcabc3afb35eb1fea6e58f09c82d449bbf",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/89b4f7fcabc3afb35eb1fea6e58f09c82d449bbf"
+  },
+  {
+    "path": ".ai/runs/mvp-hackathon/01-idea-validation.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7276258a404541182611fb051daecae1aa121408",
+    "size": 2801,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7276258a404541182611fb051daecae1aa121408"
+  },
+  {
+    "path": ".ai/runs/mvp-hackathon/02-stack-y-plan.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "642a77a28f88b14f3d856c6d3cf014df44c7fa9c",
+    "size": 27244,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/642a77a28f88b14f3d856c6d3cf014df44c7fa9c"
+  },
+  {
+    "path": ".ai/runs/mvp-hackathon/03-specification.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6c9635875643fe8d9592c769d06fce3b0528675d",
+    "size": 18746,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/6c9635875643fe8d9592c769d06fce3b0528675d"
+  },
+  {
+    "path": ".ai/workflow.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "edcfe4f99b3a548b8e53ebd21cedc01041153cd6",
+    "size": 1065,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/edcfe4f99b3a548b8e53ebd21cedc01041153cd6"
+  },
+  {
+    "path": ".dockerignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ba7a1d6774653e954928ac3b2b03ff35d456b14a",
+    "size": 64,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ba7a1d6774653e954928ac3b2b03ff35d456b14a"
+  },
+  {
+    "path": ".gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "48dc959122f42fb41f900d9d45b4863a667a3303",
+    "size": 615,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/48dc959122f42fb41f900d9d45b4863a667a3303"
+  },
+  {
+    "path": "LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b3d5aff1ab9596efc018c694864cf7d21bb1b2b",
+    "size": 1071,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5b3d5aff1ab9596efc018c694864cf7d21bb1b2b"
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aab4e49d8c302a00257cb7bb778ded78f9775749",
+    "size": 2950,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/aab4e49d8c302a00257cb7bb778ded78f9775749"
+  },
+  {
+    "path": "data",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "63009552284154b4289a0f3ce4df497094f02d80",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/63009552284154b4289a0f3ce4df497094f02d80"
+  },
+  {
+    "path": "data/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e4590959e7d448d078d50d3d8e1e1e91d6100af4",
+    "size": 1213,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e4590959e7d448d078d50d3d8e1e1e91d6100af4"
+  },
+  {
+    "path": "data/cartera-sintetica.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "274e97fbd15443de357493d48132ec3805961f7f",
+    "size": 9834,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/274e97fbd15443de357493d48132ec3805961f7f"
+  },
+  {
+    "path": "data/documentos",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2c29deed4d54c8b72037c71a4595133c30efa7cd",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/2c29deed4d54c8b72037c71a4595133c30efa7cd"
+  },
+  {
+    "path": "data/documentos/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b4859fbfd991a350717134f0521b71994f726e53",
+    "size": 2858,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b4859fbfd991a350717134f0521b71994f726e53"
+  },
+  {
+    "path": "data/documentos/cedula-dificil.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac3b643f7879336d25ee89cb9657967083b3a4cf",
+    "size": 31186,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ac3b643f7879336d25ee89cb9657967083b3a4cf"
+  },
+  {
+    "path": "data/documentos/cedula-nitido.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "30eb7c1061c824a1b28088ee1a9b3b36e56b310d",
+    "size": 43775,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/30eb7c1061c824a1b28088ee1a9b3b36e56b310d"
+  },
+  {
+    "path": "data/documentos/esperado.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9a55696a653731b42490b014fb1803183a88125f",
+    "size": 1592,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9a55696a653731b42490b014fb1803183a88125f"
+  },
+  {
+    "path": "data/documentos/examen-dificil.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa5641eef4666b928ccee7d9b986eee11ad962e9",
+    "size": 47161,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/fa5641eef4666b928ccee7d9b986eee11ad962e9"
+  },
+  {
+    "path": "data/documentos/examen-nitido.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5e1f5db3b7d7dcd7171403243aaa730cd08bf707",
+    "size": 65930,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5e1f5db3b7d7dcd7171403243aaa730cd08bf707"
+  },
+  {
+    "path": "data/documentos/extracto-dificil.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0494b7b1e73771feb4fb4609d1e07765e9a97e7e",
+    "size": 63104,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0494b7b1e73771feb4fb4609d1e07765e9a97e7e"
+  },
+  {
+    "path": "data/documentos/extracto-nitido.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "452ca740352d6ba6aa8ce02382a3186eec8aafa5",
+    "size": 104524,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/452ca740352d6ba6aa8ce02382a3186eec8aafa5"
+  },
+  {
+    "path": "data/documentos/ingresos-dificil.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e0321521d9f88579493a8bae25338e6dc42bde7",
+    "size": 65940,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8e0321521d9f88579493a8bae25338e6dc42bde7"
+  },
+  {
+    "path": "data/documentos/ingresos-nitido.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "df1ffe9130a2f493ae7845d4ce376cdfd0bbceb7",
+    "size": 108396,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/df1ffe9130a2f493ae7845d4ce376cdfd0bbceb7"
+  },
+  {
+    "path": "data/generar-documentos.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c40cdf468d01defabf07a665da6b6e7feceb6eae",
+    "size": 14285,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c40cdf468d01defabf07a665da6b6e7feceb6eae"
+  },
+  {
+    "path": "data/generar-usuarios.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f83cbd4c819b6c213b189d90c192f424558a6c39",
+    "size": 20846,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f83cbd4c819b6c213b189d90c192f424558a6c39"
+  },
+  {
+    "path": "data/usuarios",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ab55d34f22387b5dc47ec96408f8d233cd296710",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/ab55d34f22387b5dc47ec96408f8d233cd296710"
+  },
+  {
+    "path": "data/usuarios/diabetes.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3d68a3c8e651fbdbcd528cacd6744362bb988cd",
+    "size": 33237,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f3d68a3c8e651fbdbcd528cacd6744362bb988cd"
+  },
+  {
+    "path": "data/usuarios/glu-leve.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "69a5f195b1285090d22bbbeffaf74d7901e9bcdc",
+    "size": 26032,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/69a5f195b1285090d22bbbeffaf74d7901e9bcdc"
+  },
+  {
+    "path": "data/usuarios/hipertension.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d3bd73b430963eb785b7e70e5edfcdbb49568585",
+    "size": 32702,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d3bd73b430963eb785b7e70e5edfcdbb49568585"
+  },
+  {
+    "path": "data/usuarios/hipoglucemia.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2262712557486b782cbdb7f8a363ebebaed06d3",
+    "size": 25897,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c2262712557486b782cbdb7f8a363ebebaed06d3"
+  },
+  {
+    "path": "data/usuarios/index.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "267fb88b714175ad8d48fc7741abdc08aad16d2c",
+    "size": 2740,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/267fb88b714175ad8d48fc7741abdc08aad16d2c"
+  },
+  {
+    "path": "data/usuarios/prediabetes.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dfb01331d480109cefa248ac51563a4c58328721",
+    "size": 21610,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/dfb01331d480109cefa248ac51563a4c58328721"
+  },
+  {
+    "path": "data/usuarios/resp-grave.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aac9a1ffd580604faa5c6ff29e524b670876cd4d",
+    "size": 17624,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/aac9a1ffd580604faa5c6ff29e524b670876cd4d"
+  },
+  {
+    "path": "data/usuarios/respiratorio.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "588bde8c6f2cd592c789884a8af21a6abc1d61ee",
+    "size": 18950,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/588bde8c6f2cd592c789884a8af21a6abc1d61ee"
+  },
+  {
+    "path": "data/usuarios/sano.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "32881c2139bbe51c5ace1de19a1bc38de36319ca",
+    "size": 17198,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/32881c2139bbe51c5ace1de19a1bc38de36319ca"
+  },
+  {
+    "path": "data/usuarios/sat-critica.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b6297b290122af0404c6f51eada7bc3eda6e2163",
+    "size": 17277,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b6297b290122af0404c6f51eada7bc3eda6e2163"
+  },
+  {
+    "path": "docs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0e73a4e6dc7190ccdc80167bc394e15e679f7f10",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/0e73a4e6dc7190ccdc80167bc394e15e679f7f10"
+  },
+  {
+    "path": "docs/BRIEF.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cbb4722854f4decfc7cfa9d146b4bae776ad5d7d",
+    "size": 4155,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/cbb4722854f4decfc7cfa9d146b4bae776ad5d7d"
+  },
+  {
+    "path": "docs/CHECKLIST.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "095ad919294769d2d345b81ac608ca3a3b3e0a50",
+    "size": 8584,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/095ad919294769d2d345b81ac608ca3a3b3e0a50"
+  },
+  {
+    "path": "docs/DEMO-OBJETIVO-1.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "28accb31cbad7062aaf35a2df403586f26074d51",
+    "size": 5793,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/28accb31cbad7062aaf35a2df403586f26074d51"
+  },
+  {
+    "path": "docs/ESTADO.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8215689d4f5329b3fa806d80ca7883e391f870cf",
+    "size": 2317,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8215689d4f5329b3fa806d80ca7883e391f870cf"
+  },
+  {
+    "path": "docs/PRUEBA-NODO.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0e2b3ea46ad727e298468e37d7146305dbe5e1ea",
+    "size": 5641,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0e2b3ea46ad727e298468e37d7146305dbe5e1ea"
+  },
+  {
+    "path": "docs/PRUEBA-TELEFONO.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ba4f05b371be86b5e768fb34531a2dfd42bbe992",
+    "size": 9916,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ba4f05b371be86b5e768fb34531a2dfd42bbe992"
+  },
+  {
+    "path": "docs/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "344156d641b0f62f3efed0c3bb14baa2fc8e3641",
+    "size": 2511,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/344156d641b0f62f3efed0c3bb14baa2fc8e3641"
+  },
+  {
+    "path": "docs/Reglas_Decentralized_AI_Hackathon.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2adf071547296aa2685147791e9463fe4661709c",
+    "size": 255794,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2adf071547296aa2685147791e9463fe4661709c"
+  },
+  {
+    "path": "docs/SENTRY.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "43d2fbd280494477d658a02640e6b7fa267cbd29",
+    "size": 6177,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/43d2fbd280494477d658a02640e6b7fa267cbd29"
+  },
+  {
+    "path": "docs/VIDEO.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "163c3106c83c577c2c2c785265e1aa91b504c374",
+    "size": 11084,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/163c3106c83c577c2c2c785265e1aa91b504c374"
+  },
+  {
+    "path": "docs/_archive",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ae3af7cc97340432c346411058d71df9f8584391",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/ae3af7cc97340432c346411058d71df9f8584391"
+  },
+  {
+    "path": "docs/_archive/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa2147a7cab56c0601838a729feeb85cfd944700",
+    "size": 152,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/fa2147a7cab56c0601838a729feeb85cfd944700"
+  },
+  {
+    "path": "docs/_archive/ai-engineering-kit.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "455a9544d41384bd8b4d26d1794ea7ea8cb54c76",
+    "size": 11186,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/455a9544d41384bd8b4d26d1794ea7ea8cb54c76"
+  },
+  {
+    "path": "docs/_archive/superpowers",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "05536691a520c44804b4805e9b0ce30f88b495be",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/05536691a520c44804b4805e9b0ce30f88b495be"
+  },
+  {
+    "path": "docs/_archive/superpowers/2026-08-18-superpowers-integration-design.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "046b90218b8ad3c7df613abf53ba959c6b3d00aa",
+    "size": 4092,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/046b90218b8ad3c7df613abf53ba959c6b3d00aa"
+  },
+  {
+    "path": "docs/_archive/superpowers/2026-08-18-superpowers-integration.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f6415191757c32ed1cf397f04e3411a994f06f0",
+    "size": 5327,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0f6415191757c32ed1cf397f04e3411a994f06f0"
+  },
+  {
+    "path": "docs/_archive/superpowers/2026-08-19-design-ux-lite-design.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6e71bdca3b653a2f6804930d288a11e0bb5e6d1b",
+    "size": 7704,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/6e71bdca3b653a2f6804930d288a11e0bb5e6d1b"
+  },
+  {
+    "path": "docs/_archive/superpowers/2026-08-19-design-ux-lite.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "641184215e727037378ae79e02562f457d1d0bd1",
+    "size": 8897,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/641184215e727037378ae79e02562f457d1d0bd1"
+  },
+  {
+    "path": "docs/demo-vias.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b001633a036b49ce37ef62b5f3c45eedb2c6a469",
+    "size": 10549,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b001633a036b49ce37ef62b5f3c45eedb2c6a469"
+  },
+  {
+    "path": "docs/design",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f640e09b08c7905afd1bc648e0a39d10ff3a55a0",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/f640e09b08c7905afd1bc648e0a39d10ff3a55a0"
+  },
+  {
+    "path": "docs/design/AAlerta.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "77ab48e7320dcd8b6dc8381d5b5b22b413f22636",
+    "size": 6898,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/77ab48e7320dcd8b6dc8381d5b5b22b413f22636"
+  },
+  {
+    "path": "docs/design/ADocumentos.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c832ee6cf70bf38b75a6400212f53cb460e3a4a5",
+    "size": 7695,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c832ee6cf70bf38b75a6400212f53cb460e3a4a5"
+  },
+  {
+    "path": "docs/design/ASistema.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "73599b0414a7735aa0e0ab7fa5ca2c7ce7af7dd2",
+    "size": 12483,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/73599b0414a7735aa0e0ab7fa5ca2c7ce7af7dd2"
+  },
+  {
+    "path": "docs/design/Banco.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3d900f996996ec620bdc7c3529905e5682620f1",
+    "size": 5208,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f3d900f996996ec620bdc7c3529905e5682620f1"
+  },
+  {
+    "path": "docs/design/CAlerta.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "eed2bb63d42a324fcfb1b87f99ada12404b4c514",
+    "size": 7104,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/eed2bb63d42a324fcfb1b87f99ada12404b4c514"
+  },
+  {
+    "path": "docs/design/CDocumentos.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "de6e0cec4c7359cdab42406bdf67ecf135660711",
+    "size": 7399,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/de6e0cec4c7359cdab42406bdf67ecf135660711"
+  },
+  {
+    "path": "docs/design/CSistema.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "462a3425b34e952eba780123972810173e4e79b0",
+    "size": 11671,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/462a3425b34e952eba780123972810173e4e79b0"
+  },
+  {
+    "path": "docs/design/Documentos.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c72c81989b86ffbbd4449d49eec41c3e87bfcb96",
+    "size": 5972,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c72c81989b86ffbbd4449d49eec41c3e87bfcb96"
+  },
+  {
+    "path": "docs/design/Main.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "28bc65e332ef8324e4a5ab99db34418d61851308",
+    "size": 6012,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/28bc65e332ef8324e4a5ab99db34418d61851308"
+  },
+  {
+    "path": "docs/design/Mapa.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b98693a63851d2630b114e7af88656d063392001",
+    "size": 17348,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b98693a63851d2630b114e7af88656d063392001"
+  },
+  {
+    "path": "docs/design/Paquete.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cdbfcbf5812508a572b60cacdb7190f98ebfa0ae",
+    "size": 7862,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/cdbfcbf5812508a572b60cacdb7190f98ebfa0ae"
+  },
+  {
+    "path": "docs/design/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b6e37ab3caa387a018b2653462672367d0b3d91d",
+    "size": 488,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b6e37ab3caa387a018b2653462672367d0b3d91d"
+  },
+  {
+    "path": "docs/design/Sano.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b5a115c667d82d9aa8ab6adcb740ef04fa581ab8",
+    "size": 5991,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b5a115c667d82d9aa8ab6adcb740ef04fa581ab8"
+  },
+  {
+    "path": "docs/design/Senales.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6783cacc3ceec02ad5a22760b8d3ef2960e0e838",
+    "size": 4705,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/6783cacc3ceec02ad5a22760b8d3ef2960e0e838"
+  },
+  {
+    "path": "docs/design/Sistema.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7fcff303abf314da8f41e3fad7ccf4c62ce32607",
+    "size": 14452,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7fcff303abf314da8f41e3fad7ccf4c62ce32607"
+  },
+  {
+    "path": "docs/design/Urgencia.dc.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "97b8c2020a49ab0801f130691236f05958f34756",
+    "size": 8229,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/97b8c2020a49ab0801f130691236f05958f34756"
+  },
+  {
+    "path": "docs/design/canvas.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fce3775eb11c9d42e23f73decc17beb0b739b9e4",
+    "size": 4826,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/fce3775eb11c9d42e23f73decc17beb0b739b9e4"
+  },
+  {
+    "path": "docs/design/marca",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d0575067a60a7c290c931e4ed856e7a045a7da21",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/d0575067a60a7c290c931e4ed856e7a045a7da21"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-demo-16x9.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab9ff7f28d8724b84ea777b28d4f216a82a7a97c",
+    "size": 175635,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ab9ff7f28d8724b84ea777b28d4f216a82a7a97c"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-huellas-blanco.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2b83e7ac2046d7d1c578818db291558926b70e96",
+    "size": 350469,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2b83e7ac2046d7d1c578818db291558926b70e96"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-huellas-negro.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "118403c3251fa0b6a3091402fa5df48655ca7912",
+    "size": 351796,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/118403c3251fa0b6a3091402fa5df48655ca7912"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-icon-tinta.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e60664d047d108420bdf241fef3ade68cc658bbe",
+    "size": 702963,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e60664d047d108420bdf241fef3ade68cc658bbe"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e60664d047d108420bdf241fef3ade68cc658bbe",
+    "size": 702963,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e60664d047d108420bdf241fef3ade68cc658bbe"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-splash.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fbc7f411b86d19b58f7dfe9974c080bcd830520d",
+    "size": 284922,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/fbc7f411b86d19b58f7dfe9974c080bcd830520d"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-wordmark-blanco.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2da25c8e5c6cf45ebf384bc11960b37e34d4e672",
+    "size": 623889,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2da25c8e5c6cf45ebf384bc11960b37e34d4e672"
+  },
+  {
+    "path": "docs/design/marca/ina-igar-wordmark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7d691f6f305a08db97a72513d81cd5797bf22c20",
+    "size": 270342,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7d691f6f305a08db97a72513d81cd5797bf22c20"
+  },
+  {
+    "path": "docs/intro.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8db899dc1438b07e83deb146621a5575f235e39f",
+    "size": 705,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8db899dc1438b07e83deb146621a5575f235e39f"
+  },
+  {
+    "path": "docs/superpowers",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "454ce2855f8f0b8d1ed943cca4279ef807c0371a",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/454ce2855f8f0b8d1ed943cca4279ef807c0371a"
+  },
+  {
+    "path": "docs/superpowers/plans",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "69540f3008b762d8ce5eefbbaa59f07915f692f8",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/69540f3008b762d8ce5eefbbaa59f07915f692f8"
+  },
+  {
+    "path": "docs/superpowers/plans/2026-09-10-flujo-modos-alineacion.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2f0d3097e3a418e0b2bfda2f69f5b4b63c94b21a",
+    "size": 594,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2f0d3097e3a418e0b2bfda2f69f5b4b63c94b21a"
+  },
+  {
+    "path": "docs/superpowers/plans/2026-09-10-modelo-credito.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8124cd6b8c6cd46677b39b3feed7adbb08e84b90",
+    "size": 615,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8124cd6b8c6cd46677b39b3feed7adbb08e84b90"
+  },
+  {
+    "path": "docs/superpowers/specs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2a020e63bcefc83b51719abb75c47d888e4a851c",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/2a020e63bcefc83b51719abb75c47d888e4a851c"
+  },
+  {
+    "path": "docs/superpowers/specs/2026-09-10-flujo-modos-alineacion-design.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7fac0df7eb0d9021dcb0809d396b13547eb03fd5",
+    "size": 5778,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7fac0df7eb0d9021dcb0809d396b13547eb03fd5"
+  },
+  {
+    "path": "docs/superpowers/specs/2026-09-10-modelo-credito-design.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3e2f3d8941c2d49166bd21d5c7f3270452c61d8d",
+    "size": 17077,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/3e2f3d8941c2d49166bd21d5c7f3270452c61d8d"
+  },
+  {
+    "path": "docs/superpowers/specs/2026-09-10-usuarios-dataset-anual-design.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2670e3458d224bb694fe25c7a1cfa219472c241d",
+    "size": 1732,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2670e3458d224bb694fe25c7a1cfa219472c241d"
+  },
+  {
+    "path": "eval",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f2588b8b15c09ca729d069aa02b0db9d6ebf17b3",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/f2588b8b15c09ca729d069aa02b0db9d6ebf17b3"
+  },
+  {
+    "path": "eval/credito",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "36e1f627ed4c303453217b6b81c2d58b2b1c6b60",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/36e1f627ed4c303453217b6b81c2d58b2b1c6b60"
+  },
+  {
+    "path": "eval/credito/capacidad.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c650c8ddcf9dd4bba39a331fef8a403aa6fc9cd2",
+    "size": 2227,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c650c8ddcf9dd4bba39a331fef8a403aa6fc9cd2"
+  },
+  {
+    "path": "eval/credito/cartera.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5f863a28078fa7cfcfcd0384c6a42fa7e57a6ece",
+    "size": 1485,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5f863a28078fa7cfcfcd0384c6a42fa7e57a6ece"
+  },
+  {
+    "path": "eval/credito/cola.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "19937e6f8937f9225e44bfc81bfa1709bbb62818",
+    "size": 2848,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/19937e6f8937f9225e44bfc81bfa1709bbb62818"
+  },
+  {
+    "path": "eval/credito/contrato.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e74d391e7bfe909343a816e7b42f0e31a69c1eb6",
+    "size": 2513,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e74d391e7bfe909343a816e7b42f0e31a69c1eb6"
+  },
+  {
+    "path": "eval/credito/envio.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c850a621396b2ef5cb1f1826c2bd6c8da505096a",
+    "size": 1221,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c850a621396b2ef5cb1f1826c2bd6c8da505096a"
+  },
+  {
+    "path": "eval/credito/estructura.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "125f7de6de64e3fbce26151e05e4f40323a9cf59",
+    "size": 1639,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/125f7de6de64e3fbce26151e05e4f40323a9cf59"
+  },
+  {
+    "path": "eval/credito/explicacion.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c455c5e30bc96ed6f970b55e8759a389d545efdc",
+    "size": 2056,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c455c5e30bc96ed6f970b55e8759a389d545efdc"
+  },
+  {
+    "path": "eval/credito/finanzas.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "634ead7e2bc60b064f9a15229a3e7d0a784122d1",
+    "size": 727,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/634ead7e2bc60b064f9a15229a3e7d0a784122d1"
+  },
+  {
+    "path": "eval/credito/firma.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a29adf890d0e6a22864ff8b78658a2028ca60344",
+    "size": 553,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/a29adf890d0e6a22864ff8b78658a2028ca60344"
+  },
+  {
+    "path": "eval/credito/motor.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c63382ae3185f210cbc52b531908e6966446c919",
+    "size": 3318,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c63382ae3185f210cbc52b531908e6966446c919"
+  },
+  {
+    "path": "eval/credito/pantalla.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "35bf4e32497c72b0c82f2c2c21e584b0871191a5",
+    "size": 3814,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/35bf4e32497c72b0c82f2c2c21e584b0871191a5"
+  },
+  {
+    "path": "eval/credito/paquete-lab.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "694e03c6bab9d0e9e17268e5d211739e85aa96df",
+    "size": 1430,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/694e03c6bab9d0e9e17268e5d211739e85aa96df"
+  },
+  {
+    "path": "eval/credito/precio.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9b502a3a936da5c456b53352fe8248a2a235437e",
+    "size": 1309,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9b502a3a936da5c456b53352fe8248a2a235437e"
+  },
+  {
+    "path": "eval/credito/schemas.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dcddea25035c88232abb8be71c83e0291d81eece",
+    "size": 2163,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/dcddea25035c88232abb8be71c83e0291d81eece"
+  },
+  {
+    "path": "eval/credito/scorecard.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "94b48614124ce90c14ae62c759c22e073b550532",
+    "size": 2298,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/94b48614124ce90c14ae62c759c22e073b550532"
+  },
+  {
+    "path": "eval/nodo",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2b80dff51d3d1963495c4d3975a6fd58e7a2012e",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/2b80dff51d3d1963495c4d3975a6fd58e7a2012e"
+  },
+  {
+    "path": "eval/nodo/inferir.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a88fed621f4ead1a1f48e52431cc9491ec5dd0c9",
+    "size": 1392,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/a88fed621f4ead1a1f48e52431cc9491ec5dd0c9"
+  },
+  {
+    "path": "eval/resultados.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b57148126d362b4d3c131ac39545163e8651adb",
+    "size": 5586,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5b57148126d362b4d3c131ac39545163e8651adb"
+  },
+  {
+    "path": "eval/run.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0a136f2765e109923b344c57d45ae9ff1a4d0496",
+    "size": 13666,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0a136f2765e109923b344c57d45ae9ff1a4d0496"
+  },
+  {
+    "path": "eval/salud",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f53c1cb28ae7b42c963298038428346a0f38b64c",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/f53c1cb28ae7b42c963298038428346a0f38b64c"
+  },
+  {
+    "path": "eval/salud/alerta.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4e83545c8f40485a896337ad503fd226912ef6fc",
+    "size": 5004,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/4e83545c8f40485a896337ad503fd226912ef6fc"
+  },
+  {
+    "path": "eval/salud/laboratorio.test.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6dec17fd7c6bd9c9105848318e50bbe50c4f7b09",
+    "size": 3750,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/6dec17fd7c6bd9c9105848318e50bbe50c4f7b09"
+  },
+  {
+    "path": "landing",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "252e3b3822293158b835fadebdc9ea2a77efc772",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/252e3b3822293158b835fadebdc9ea2a77efc772"
+  },
+  {
+    "path": "landing/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f7f2f5c72ba82ce50dfe8349b8002027b53fad9",
+    "size": 391,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0f7f2f5c72ba82ce50dfe8349b8002027b53fad9"
+  },
+  {
+    "path": "landing/admin.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a0b3162e40ac625d30bfaa7082e2d29d5762f52e",
+    "size": 8481,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/a0b3162e40ac625d30bfaa7082e2d29d5762f52e"
+  },
+  {
+    "path": "landing/favicon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e872bc6e6ce190835821c9dbf56c98ec75bd830e",
+    "size": 1429,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e872bc6e6ce190835821c9dbf56c98ec75bd830e"
+  },
+  {
+    "path": "landing/huellas-blanco.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2b83e7ac2046d7d1c578818db291558926b70e96",
+    "size": 350469,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2b83e7ac2046d7d1c578818db291558926b70e96"
+  },
+  {
+    "path": "landing/huellas-mark-blanco.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b05a1e4940503121cefdff353e682248110293c",
+    "size": 70918,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5b05a1e4940503121cefdff353e682248110293c"
+  },
+  {
+    "path": "landing/huellas-mark-sm.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9275699b19bb16f20ebf7165b9d8a17d996a9e92",
+    "size": 24514,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9275699b19bb16f20ebf7165b9d8a17d996a9e92"
+  },
+  {
+    "path": "landing/huellas-mark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "223d2797d4195068a8117a98befac087afbf1f38",
+    "size": 54076,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/223d2797d4195068a8117a98befac087afbf1f38"
+  },
+  {
+    "path": "landing/huellas-negro.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "118403c3251fa0b6a3091402fa5df48655ca7912",
+    "size": 351796,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/118403c3251fa0b6a3091402fa5df48655ca7912"
+  },
+  {
+    "path": "landing/icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e60664d047d108420bdf241fef3ade68cc658bbe",
+    "size": 702963,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e60664d047d108420bdf241fef3ade68cc658bbe"
+  },
+  {
+    "path": "landing/index.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "47129912976653eedd86d99868f2dffcc63a6737",
+    "size": 16048,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/47129912976653eedd86d99868f2dffcc63a6737"
+  },
+  {
+    "path": "landing/og.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab9ff7f28d8724b84ea777b28d4f216a82a7a97c",
+    "size": 175635,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ab9ff7f28d8724b84ea777b28d4f216a82a7a97c"
+  },
+  {
+    "path": "landing/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8d19f488c75dde54fffa092688321c326be18fca",
+    "size": 264,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8d19f488c75dde54fffa092688321c326be18fca"
+  },
+  {
+    "path": "landing/pitch.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dae305bf5d7c4a3ff7f7de223b303de534394bb0",
+    "size": 15483,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/dae305bf5d7c4a3ff7f7de223b303de534394bb0"
+  },
+  {
+    "path": "landing/server.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bf501996771b41329e044851c5494066ddb6efe8",
+    "size": 6485,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/bf501996771b41329e044851c5494066ddb6efe8"
+  },
+  {
+    "path": "landing/splash.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fbc7f411b86d19b58f7dfe9974c080bcd830520d",
+    "size": 284922,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/fbc7f411b86d19b58f7dfe9974c080bcd830520d"
+  },
+  {
+    "path": "landing/wordmark-blanco.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2da25c8e5c6cf45ebf384bc11960b37e34d4e672",
+    "size": 623889,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2da25c8e5c6cf45ebf384bc11960b37e34d4e672"
+  },
+  {
+    "path": "mobile",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "73d0ade085fb4e2b5f3a8099559123ab7b365d08",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/73d0ade085fb4e2b5f3a8099559123ab7b365d08"
+  },
+  {
+    "path": "mobile/.eas",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2568aa61bac71df6ab0be678290df26a73a4450d",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/2568aa61bac71df6ab0be678290df26a73a4450d"
+  },
+  {
+    "path": "mobile/.eas/build",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "17824d45b592dffefb430e059ef7624fc2828bb0",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/17824d45b592dffefb430e059ef7624fc2828bb0"
+  },
+  {
+    "path": "mobile/.eas/build/android-preview.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4f73f6247bb40e953feb7bd45115fb39dbac7bbd",
+    "size": 1521,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/4f73f6247bb40e953feb7bd45115fb39dbac7bbd"
+  },
+  {
+    "path": "mobile/.eas/build/ios-preview.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "59ef6f459e5b214fdb1b61912329b405f1b08ad3",
+    "size": 1817,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/59ef6f459e5b214fdb1b61912329b405f1b08ad3"
+  },
+  {
+    "path": "mobile/.gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d914c328fe1d7c235283f985f1679a330b40b565",
+    "size": 440,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d914c328fe1d7c235283f985f1679a330b40b565"
+  },
+  {
+    "path": "mobile/AGENTS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "73cda463352de07b3b269ff0892ea4a24fe7c343",
+    "size": 118,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/73cda463352de07b3b269ff0892ea4a24fe7c343"
+  },
+  {
+    "path": "mobile/App.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "47666a53678a0fb11f87959e53d5a652472b51a2",
+    "size": 19685,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/47666a53678a0fb11f87959e53d5a652472b51a2"
+  },
+  {
+    "path": "mobile/CLAUDE.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+    "size": 11,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  {
+    "path": "mobile/app.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "19e806582e9975164b035568b1c1fac25cd551bb",
+    "size": 3208,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/19e806582e9975164b035568b1c1fac25cd551bb"
+  },
+  {
+    "path": "mobile/assets",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "031b8457d2f443653ee9b6d6e01b32cad066d5ee",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/031b8457d2f443653ee9b6d6e01b32cad066d5ee"
+  },
+  {
+    "path": "mobile/assets/adaptive-icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b05a1e4940503121cefdff353e682248110293c",
+    "size": 70918,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5b05a1e4940503121cefdff353e682248110293c"
+  },
+  {
+    "path": "mobile/assets/favicon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "148777edcca0051490b5d2d8c41570fbca4e223e",
+    "size": 1820,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/148777edcca0051490b5d2d8c41570fbca4e223e"
+  },
+  {
+    "path": "mobile/assets/huellas-blanco.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b05a1e4940503121cefdff353e682248110293c",
+    "size": 70918,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5b05a1e4940503121cefdff353e682248110293c"
+  },
+  {
+    "path": "mobile/assets/huellas-negro.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "223d2797d4195068a8117a98befac087afbf1f38",
+    "size": 54076,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/223d2797d4195068a8117a98befac087afbf1f38"
+  },
+  {
+    "path": "mobile/assets/icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46aac0163fcba3618ec7b9b1ce12f226387413fa",
+    "size": 154870,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/46aac0163fcba3618ec7b9b1ce12f226387413fa"
+  },
+  {
+    "path": "mobile/assets/models",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bd58e550043e6de07a6d83a18239d5ff3c1b4fde",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/bd58e550043e6de07a6d83a18239d5ff3c1b4fde"
+  },
+  {
+    "path": "mobile/assets/models/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "64c8355a601b486df35b42e11ca42e762c9022f3",
+    "size": 436,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/64c8355a601b486df35b42e11ca42e762c9022f3"
+  },
+  {
+    "path": "mobile/assets/models/lora-lab-v3.gguf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "13a5e9d98741e475f444a6c97d35c0a31cbbfd88",
+    "size": 34892032,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/13a5e9d98741e475f444a6c97d35c0a31cbbfd88"
+  },
+  {
+    "path": "mobile/assets/models/lora-lab-v3.sha256",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e41bfc15df34cd40020589fa0359d5f18bbb3cdc",
+    "size": 65,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e41bfc15df34cd40020589fa0359d5f18bbb3cdc"
+  },
+  {
+    "path": "mobile/assets/splash-icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "019a77c08b25f729ea59b04c087d0e8f64905d1d",
+    "size": 113984,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/019a77c08b25f729ea59b04c087d0e8f64905d1d"
+  },
+  {
+    "path": "mobile/eas.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "30b1c17a8f11b062159c952c27ad0c57d7f6fde3",
+    "size": 720,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/30b1c17a8f11b062159c952c27ad0c57d7f6fde3"
+  },
+  {
+    "path": "mobile/gguf.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4494e6b0091b3fdf5e2ac86d90c3e9f7678f142e",
+    "size": 75,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/4494e6b0091b3fdf5e2ac86d90c3e9f7678f142e"
+  },
+  {
+    "path": "mobile/index.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0c8dea9eed593c5a72ed0241b6e63da2da6c7dba",
+    "size": 2257,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0c8dea9eed593c5a72ed0241b6e63da2da6c7dba"
+  },
+  {
+    "path": "mobile/metro.config.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "afd001414af131347f51c03dc290d82bf7394643",
+    "size": 298,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/afd001414af131347f51c03dc290d82bf7394643"
+  },
+  {
+    "path": "mobile/package-lock.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0fd07963d0ac6bb8a12018366a2da52a9c5033c6",
+    "size": 473553,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0fd07963d0ac6bb8a12018366a2da52a9c5033c6"
+  },
+  {
+    "path": "mobile/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5e4423c50131fdc7fe8e06fea0d0e9ee4865c197",
+    "size": 1240,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5e4423c50131fdc7fe8e06fea0d0e9ee4865c197"
+  },
+  {
+    "path": "mobile/plugins",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "022125fee2ac33d41c8747b7cdf892c19199e227",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/022125fee2ac33d41c8747b7cdf892c19199e227"
+  },
+  {
+    "path": "mobile/plugins/withQvacBareLink.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "342a15f24a5d3f066fdb1244f0c9a4646629e49c",
+    "size": 2879,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/342a15f24a5d3f066fdb1244f0c9a4646629e49c"
+  },
+  {
+    "path": "mobile/qvac.config.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "12b2b06c09e26dc2e719c989fac25caa1d298453",
+    "size": 155,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/12b2b06c09e26dc2e719c989fac25caa1d298453"
+  },
+  {
+    "path": "mobile/qvac",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d4723002efc5563c81d6dc40b75477f5bdd61160",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/d4723002efc5563c81d6dc40b75477f5bdd61160"
+  },
+  {
+    "path": "mobile/qvac/addons.manifest.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b4a8c28df78980f885eb0139fc0874fcf0ddad99",
+    "size": 645,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b4a8c28df78980f885eb0139fc0874fcf0ddad99"
+  },
+  {
+    "path": "mobile/qvac/worker.bundle.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60b727262627fe61f6d320c004450d053a9ac6a7",
+    "size": 9502176,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/60b727262627fe61f6d320c004450d053a9ac6a7"
+  },
+  {
+    "path": "mobile/qvac/worker.entry.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "202e3dd6e299a9d4086b4e7c4a84b45b6bec3a8f",
+    "size": 794,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/202e3dd6e299a9d4086b4e7c4a84b45b6bec3a8f"
+  },
+  {
+    "path": "mobile/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "557e7e2b18ef564c802330b31885a9f1e914641e",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/557e7e2b18ef564c802330b31885a9f1e914641e"
+  },
+  {
+    "path": "mobile/src/ConsolaDemo.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "040acfcb006ea55531317dc99ced7399de764107",
+    "size": 4926,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/040acfcb006ea55531317dc99ced7399de764107"
+  },
+  {
+    "path": "mobile/src/PantallaAlerta.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "45b2c9dcc78a963923797aece161aea63c570cfc",
+    "size": 17511,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/45b2c9dcc78a963923797aece161aea63c570cfc"
+  },
+  {
+    "path": "mobile/src/PantallaAnalizando.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "617d89a71c2fa56f944f335e46090b346cecf7f9",
+    "size": 3040,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/617d89a71c2fa56f944f335e46090b346cecf7f9"
+  },
+  {
+    "path": "mobile/src/PantallaArranque.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "17251107ebb693ebc6f70bbc00dd64482a8fbf82",
+    "size": 1865,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/17251107ebb693ebc6f70bbc00dd64482a8fbf82"
+  },
+  {
+    "path": "mobile/src/PantallaBanco.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "753aab812e4337aedd424873917d00547356f7b8",
+    "size": 2713,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/753aab812e4337aedd424873917d00547356f7b8"
+  },
+  {
+    "path": "mobile/src/PantallaCredito.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f378941a0d240e899a11b7efb0eb2fee69613fcd",
+    "size": 5019,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f378941a0d240e899a11b7efb0eb2fee69613fcd"
+  },
+  {
+    "path": "mobile/src/PantallaCuota.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "eef6e0cddb38ba281e91dd124019f917e197b037",
+    "size": 4353,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/eef6e0cddb38ba281e91dd124019f917e197b037"
+  },
+  {
+    "path": "mobile/src/PantallaDatos.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2d30fcc58538a5a001801a53a47e9bbff5fd470",
+    "size": 9479,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c2d30fcc58538a5a001801a53a47e9bbff5fd470"
+  },
+  {
+    "path": "mobile/src/PantallaDesembolso.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "12dc72acc816dd4820442edbed290ea64f221dd4",
+    "size": 3171,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/12dc72acc816dd4820442edbed290ea64f221dd4"
+  },
+  {
+    "path": "mobile/src/PantallaDocumentos.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "90548592ae34c2f58fda78d316c1bfc2de6999be",
+    "size": 21307,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/90548592ae34c2f58fda78d316c1bfc2de6999be"
+  },
+  {
+    "path": "mobile/src/PantallaEntrada.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5c12bb4e053e0ce67d504f292c297ead15284bed",
+    "size": 15984,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5c12bb4e053e0ce67d504f292c297ead15284bed"
+  },
+  {
+    "path": "mobile/src/PantallaEnvio.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f4657798b25e5d4dd883705df43b378628fc3c19",
+    "size": 6423,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f4657798b25e5d4dd883705df43b378628fc3c19"
+  },
+  {
+    "path": "mobile/src/PantallaExamen.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e304d80e02df23fc626de9db4f987ac592566f49",
+    "size": 13007,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e304d80e02df23fc626de9db4f987ac592566f49"
+  },
+  {
+    "path": "mobile/src/PantallaFirma.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fdaaa25f56a5a5876c64568a2e6ef140c493f8b1",
+    "size": 5063,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/fdaaa25f56a5a5876c64568a2e6ef140c493f8b1"
+  },
+  {
+    "path": "mobile/src/PantallaLeido.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac0c03c54db975cdfa86b30defb2922cc7de1497",
+    "size": 3481,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ac0c03c54db975cdfa86b30defb2922cc7de1497"
+  },
+  {
+    "path": "mobile/src/PantallaRegistro.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1937d38101c2d1e9c68a5a6614d2c864c6dc1e1e",
+    "size": 3338,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/1937d38101c2d1e9c68a5a6614d2c864c6dc1e1e"
+  },
+  {
+    "path": "mobile/src/PantallaRevision.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "406ae052f3f57350fe8d239db1500964129a3be3",
+    "size": 4598,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/406ae052f3f57350fe8d239db1500964129a3be3"
+  },
+  {
+    "path": "mobile/src/PantallaSalud.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f5ab1593aa8767527abb3b93547834a9781ad0e",
+    "size": 10173,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0f5ab1593aa8767527abb3b93547834a9781ad0e"
+  },
+  {
+    "path": "mobile/src/PantallaViaMed.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a9f71ca30a7bcaa85a2792eeaeb7db5592f6e8ff",
+    "size": 8489,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/a9f71ca30a7bcaa85a2792eeaeb7db5592f6e8ff"
+  },
+  {
+    "path": "mobile/src/bancoUrl.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "983c051a1d569c01d9988bd446438de5c15b4e77",
+    "size": 279,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/983c051a1d569c01d9988bd446438de5c15b4e77"
+  },
+  {
+    "path": "mobile/src/cola.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e769c384ae0becc5b1b82b755b352b7d69c6b309",
+    "size": 2105,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/e769c384ae0becc5b1b82b755b352b7d69c6b309"
+  },
+  {
+    "path": "mobile/src/colaSqlite.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1b93836be69bff091b62e9f68037bcbdba72888b",
+    "size": 1279,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/1b93836be69bff091b62e9f68037bcbdba72888b"
+  },
+  {
+    "path": "mobile/src/core",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f3caa255ac30fb5ae93ec2f37c9c8e6b791216b4",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/f3caa255ac30fb5ae93ec2f37c9c8e6b791216b4"
+  },
+  {
+    "path": "mobile/src/core/alerta.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "70fff3d9e34e53695a34207769f98f27890892e5",
+    "size": 4902,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/70fff3d9e34e53695a34207769f98f27890892e5"
+  },
+  {
+    "path": "mobile/src/core/credito",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "91a12b5ce526a25ca29216cf5297172eecdae44d",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/91a12b5ce526a25ca29216cf5297172eecdae44d"
+  },
+  {
+    "path": "mobile/src/core/credito/capacidad.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bd31d40c064e7f8022461e23e00343745bd64108",
+    "size": 2101,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/bd31d40c064e7f8022461e23e00343745bd64108"
+  },
+  {
+    "path": "mobile/src/core/credito/estructura.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "19ba099e33370b58bfd551a851ccaa64ed1a5f41",
+    "size": 1786,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/19ba099e33370b58bfd551a851ccaa64ed1a5f41"
+  },
+  {
+    "path": "mobile/src/core/credito/explicacion.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "174a920041ec353435b081af3805e4ec69ddd0d2",
+    "size": 2625,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/174a920041ec353435b081af3805e4ec69ddd0d2"
+  },
+  {
+    "path": "mobile/src/core/credito/finanzas.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1adb0cb3524f53d79a9b70e30ecb2030af6a1271",
+    "size": 731,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/1adb0cb3524f53d79a9b70e30ecb2030af6a1271"
+  },
+  {
+    "path": "mobile/src/core/credito/modelo.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "97c62218970f9072614ea5d2d1ffcb18ca60f4f4",
+    "size": 3679,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/97c62218970f9072614ea5d2d1ffcb18ca60f4f4"
+  },
+  {
+    "path": "mobile/src/core/credito/motor.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0307f20094c9a8e667cd6d1d44a060f565bf4fa5",
+    "size": 6619,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0307f20094c9a8e667cd6d1d44a060f565bf4fa5"
+  },
+  {
+    "path": "mobile/src/core/credito/politica.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9a48a7b92636569192160226f5f6e538c179e4cf",
+    "size": 4226,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9a48a7b92636569192160226f5f6e538c179e4cf"
+  },
+  {
+    "path": "mobile/src/core/credito/precio.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f519f4bd1ef87f2c7d9b1e53b96ec687ac759ef5",
+    "size": 1878,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f519f4bd1ef87f2c7d9b1e53b96ec687ac759ef5"
+  },
+  {
+    "path": "mobile/src/core/credito/scorecard.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "89870fb1d7a80000e98d6cbb7e97852228f46789",
+    "size": 3067,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/89870fb1d7a80000e98d6cbb7e97852228f46789"
+  },
+  {
+    "path": "mobile/src/core/extraccion.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d2fef223218420cb47f2d122a5e32b764e9d45c7",
+    "size": 13156,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d2fef223218420cb47f2d122a5e32b764e9d45c7"
+  },
+  {
+    "path": "mobile/src/core/laboratorio.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3f15febb06620ccce40a2d4bb3485a3141acc7d3",
+    "size": 4157,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/3f15febb06620ccce40a2d4bb3485a3141acc7d3"
+  },
+  {
+    "path": "mobile/src/core/marcadores.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b7edff6d7c932c55f1c13233917caeca33d1aa74",
+    "size": 5721,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b7edff6d7c932c55f1c13233917caeca33d1aa74"
+  },
+  {
+    "path": "mobile/src/core/paquete.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7f4268af36ac1aa0de5522edb324a6df10f4defe",
+    "size": 15300,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7f4268af36ac1aa0de5522edb324a6df10f4defe"
+  },
+  {
+    "path": "mobile/src/core/prompts.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fefb350af4d44b2d3bed74fa5b50106548be9e97",
+    "size": 3736,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/fefb350af4d44b2d3bed74fa5b50106548be9e97"
+  },
+  {
+    "path": "mobile/src/core/reglas.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0522791e1534708671deab8041278f0b2c6f2070",
+    "size": 17546,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0522791e1534708671deab8041278f0b2c6f2070"
+  },
+  {
+    "path": "mobile/src/core/schemas.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "193b2a0a32a1005d17a93ca9dee37a4e12a8e34b",
+    "size": 6341,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/193b2a0a32a1005d17a93ca9dee37a4e12a8e34b"
+  },
+  {
+    "path": "mobile/src/core/validaciones.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9d7a6d6c9c3684852f5ab91a9c02c0ad61fbe6a9",
+    "size": 1556,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9d7a6d6c9c3684852f5ab91a9c02c0ad61fbe6a9"
+  },
+  {
+    "path": "mobile/src/datos",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ab55d34f22387b5dc47ec96408f8d233cd296710",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/ab55d34f22387b5dc47ec96408f8d233cd296710"
+  },
+  {
+    "path": "mobile/src/datos/diabetes.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3d68a3c8e651fbdbcd528cacd6744362bb988cd",
+    "size": 33237,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f3d68a3c8e651fbdbcd528cacd6744362bb988cd"
+  },
+  {
+    "path": "mobile/src/datos/glu-leve.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "69a5f195b1285090d22bbbeffaf74d7901e9bcdc",
+    "size": 26032,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/69a5f195b1285090d22bbbeffaf74d7901e9bcdc"
+  },
+  {
+    "path": "mobile/src/datos/hipertension.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d3bd73b430963eb785b7e70e5edfcdbb49568585",
+    "size": 32702,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d3bd73b430963eb785b7e70e5edfcdbb49568585"
+  },
+  {
+    "path": "mobile/src/datos/hipoglucemia.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2262712557486b782cbdb7f8a363ebebaed06d3",
+    "size": 25897,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c2262712557486b782cbdb7f8a363ebebaed06d3"
+  },
+  {
+    "path": "mobile/src/datos/index.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "267fb88b714175ad8d48fc7741abdc08aad16d2c",
+    "size": 2740,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/267fb88b714175ad8d48fc7741abdc08aad16d2c"
+  },
+  {
+    "path": "mobile/src/datos/prediabetes.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dfb01331d480109cefa248ac51563a4c58328721",
+    "size": 21610,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/dfb01331d480109cefa248ac51563a4c58328721"
+  },
+  {
+    "path": "mobile/src/datos/resp-grave.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aac9a1ffd580604faa5c6ff29e524b670876cd4d",
+    "size": 17624,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/aac9a1ffd580604faa5c6ff29e524b670876cd4d"
+  },
+  {
+    "path": "mobile/src/datos/respiratorio.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "588bde8c6f2cd592c789884a8af21a6abc1d61ee",
+    "size": 18950,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/588bde8c6f2cd592c789884a8af21a6abc1d61ee"
+  },
+  {
+    "path": "mobile/src/datos/sano.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "32881c2139bbe51c5ace1de19a1bc38de36319ca",
+    "size": 17198,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/32881c2139bbe51c5ace1de19a1bc38de36319ca"
+  },
+  {
+    "path": "mobile/src/datos/sat-critica.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b6297b290122af0404c6f51eada7bc3eda6e2163",
+    "size": 17277,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b6297b290122af0404c6f51eada7bc3eda6e2163"
+  },
+  {
+    "path": "mobile/src/demoLog.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7263407e76222037507dd8e558fd1c0b436a5dce",
+    "size": 2940,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7263407e76222037507dd8e558fd1c0b436a5dce"
+  },
+  {
+    "path": "mobile/src/envio.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58943f3889e04f6e8a0b8dd2851400fa9dd31b58",
+    "size": 7968,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/58943f3889e04f6e8a0b8dd2851400fa9dd31b58"
+  },
+  {
+    "path": "mobile/src/envioVisual.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5be092ccba5e41438125ec71f91e3d651184a3c8",
+    "size": 1881,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5be092ccba5e41438125ec71f91e3d651184a3c8"
+  },
+  {
+    "path": "mobile/src/firmaHash.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3d4aff95495607cb5cc3b3a4e82e93e378d9dcf7",
+    "size": 433,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/3d4aff95495607cb5cc3b3a4e82e93e378d9dcf7"
+  },
+  {
+    "path": "mobile/src/historial.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "50581a3e0ef9219fcd859d4243426a9e45a569c8",
+    "size": 3710,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/50581a3e0ef9219fcd859d4243426a9e45a569c8"
+  },
+  {
+    "path": "mobile/src/lectura.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3826491352be031ba410cab3ef5688641b185eaa",
+    "size": 1205,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/3826491352be031ba410cab3ef5688641b185eaa"
+  },
+  {
+    "path": "mobile/src/leerDocumento.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "848e467e4ff3effbc399ddc18735fc846bfc0023",
+    "size": 18853,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/848e467e4ff3effbc399ddc18735fc846bfc0023"
+  },
+  {
+    "path": "mobile/src/leerExamen.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e781038df05beebcaeaf0ee9a6e3f41ef2d6ae7",
+    "size": 5024,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8e781038df05beebcaeaf0ee9a6e3f41ef2d6ae7"
+  },
+  {
+    "path": "mobile/src/lora.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3b2c2c83c5aec637c5e0c021aa77056bdbefbc27",
+    "size": 2485,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/3b2c2c83c5aec637c5e0c021aa77056bdbefbc27"
+  },
+  {
+    "path": "mobile/src/medpsy.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ef043a25eb8f04e9121933e30fda3c902fd93078",
+    "size": 12527,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ef043a25eb8f04e9121933e30fda3c902fd93078"
+  },
+  {
+    "path": "mobile/src/modelosMarca.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad5e9656f60b4123c28408940666fe37678e050e",
+    "size": 524,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ad5e9656f60b4123c28408940666fe37678e050e"
+  },
+  {
+    "path": "mobile/src/modo.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7ec78d617e94d595675bf70401d73b50a102d991",
+    "size": 3337,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7ec78d617e94d595675bf70401d73b50a102d991"
+  },
+  {
+    "path": "mobile/src/nodoUrl.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a6685e1562863dc741e4c0729f1b132f02cd5287",
+    "size": 9078,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/a6685e1562863dc741e4c0729f1b132f02cd5287"
+  },
+  {
+    "path": "mobile/src/p2p.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "92f91802efe353aaf88145768a514f8ab303f7e8",
+    "size": 2281,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/92f91802efe353aaf88145768a514f8ab303f7e8"
+  },
+  {
+    "path": "mobile/src/perf",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c624f69445d98e10b7f2194c2e1181a58e12b4cf",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/c624f69445d98e10b7f2194c2e1181a58e12b4cf"
+  },
+  {
+    "path": "mobile/src/perf/exportar.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c450e048aacb7777a80203fe8ad79cbb83dcab67",
+    "size": 2863,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c450e048aacb7777a80203fe8ad79cbb83dcab67"
+  },
+  {
+    "path": "mobile/src/perf/logger.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d6012f1a574718820abc8e095cbfb65a42f35a47",
+    "size": 5537,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d6012f1a574718820abc8e095cbfb65a42f35a47"
+  },
+  {
+    "path": "mobile/src/redactarAlerta.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e8eeea9d1f9144e828fe62f62107865311e5076",
+    "size": 2267,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7e8eeea9d1f9144e828fe62f62107865311e5076"
+  },
+  {
+    "path": "mobile/src/sentry.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "62010023aa9d388847e8b096484fb3aaf2d4d04a",
+    "size": 11981,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/62010023aa9d388847e8b096484fb3aaf2d4d04a"
+  },
+  {
+    "path": "mobile/src/ui",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d1c363ec06bc7832681ae34ae91ff387667cb01d",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/d1c363ec06bc7832681ae34ae91ff387667cb01d"
+  },
+  {
+    "path": "mobile/src/ui/Pictograma.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b97985a5a08310a93c0ec81a3db400d747ff56c4",
+    "size": 7425,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b97985a5a08310a93c0ec81a3db400d747ff56c4"
+  },
+  {
+    "path": "mobile/src/ui/componentes.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4ba9bbd9af2d233d5862a3e277ffd1a2b1e515ac",
+    "size": 14514,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/4ba9bbd9af2d233d5862a3e277ffd1a2b1e515ac"
+  },
+  {
+    "path": "mobile/src/ui/tokens.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "03e379674af4a0cc26df372d40a7f6489512d1f3",
+    "size": 4347,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/03e379674af4a0cc26df372d40a7f6489512d1f3"
+  },
+  {
+    "path": "mobile/src/usuarios.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "56aea312e22e301042e7d537dcd556f85581568a",
+    "size": 1529,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/56aea312e22e301042e7d537dcd556f85581568a"
+  },
+  {
+    "path": "mobile/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3dde5555e6eb4b8e7078d5eef181594e1a8f1861",
+    "size": 550,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/3dde5555e6eb4b8e7078d5eef181594e1a8f1861"
+  },
+  {
+    "path": "nodo",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "923a2b7e330c201d5d0919c1024b508b13e572dd",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/923a2b7e330c201d5d0919c1024b508b13e572dd"
+  },
+  {
+    "path": "nodo/Dockerfile",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9a6e0c47b955fc89c255d0550873d8847a18147d",
+    "size": 414,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9a6e0c47b955fc89c255d0550873d8847a18147d"
+  },
+  {
+    "path": "nodo/Dockerfile.relay",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "abc9e0e89aa2a09b6da491705b8e973f0eb3c68f",
+    "size": 164,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/abc9e0e89aa2a09b6da491705b8e973f0eb3c68f"
+  },
+  {
+    "path": "nodo/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "da33c2df7a8da976b205dda4792e0d0e54874ef5",
+    "size": 1587,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/da33c2df7a8da976b205dda4792e0d0e54874ef5"
+  },
+  {
+    "path": "nodo/bootstrap-dht.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "390f167694743fa6498da9baa66fd1a40746a25f",
+    "size": 1206,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/390f167694743fa6498da9baa66fd1a40746a25f"
+  },
+  {
+    "path": "nodo/cartera.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "557ce25e7df45258bb70694b1bb1eb089be17b93",
+    "size": 3046,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/557ce25e7df45258bb70694b1bb1eb089be17b93"
+  },
+  {
+    "path": "nodo/consola.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f6fa729be1245612bcb500ad703d8207fffe45a6",
+    "size": 7712,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f6fa729be1245612bcb500ad703d8207fffe45a6"
+  },
+  {
+    "path": "nodo/consola.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "87e75b5f48ca1bd533dfb76d6f940e1a0b108932",
+    "size": 1919,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/87e75b5f48ca1bd533dfb76d6f940e1a0b108932"
+  },
+  {
+    "path": "nodo/credito.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d4d1f2ea8bd39aaca87170b7af4544069e5aee64",
+    "size": 1565,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d4d1f2ea8bd39aaca87170b7af4544069e5aee64"
+  },
+  {
+    "path": "nodo/dht.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b377b4c54166d999120bc62b4871e92953e50f9a",
+    "size": 1837,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b377b4c54166d999120bc62b4871e92953e50f9a"
+  },
+  {
+    "path": "nodo/fly.relay.toml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "efb8de1ea74a6c8bb3a01e03791e3e2a47e8c1ed",
+    "size": 389,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/efb8de1ea74a6c8bb3a01e03791e3e2a47e8c1ed"
+  },
+  {
+    "path": "nodo/index.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46a0a9bc800d973122af404aff90079aa40c2f33",
+    "size": 16201,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/46a0a9bc800d973122af404aff90079aa40c2f33"
+  },
+  {
+    "path": "nodo/inferir.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6761839e97931770619e24001fbcabee4d36a334",
+    "size": 1959,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/6761839e97931770619e24001fbcabee4d36a334"
+  },
+  {
+    "path": "nodo/package-lock.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7d70b8dd4ede17f5b56f9c1a5d9de0752bbc2531",
+    "size": 28120,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/7d70b8dd4ede17f5b56f9c1a5d9de0752bbc2531"
+  },
+  {
+    "path": "nodo/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bd2f96c083981ccbce784252e5fa2d2d81a3956c",
+    "size": 1023,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/bd2f96c083981ccbce784252e5fa2d2d81a3956c"
+  },
+  {
+    "path": "nodo/probar-p2p.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0a50ce952e45880cf46b73d7118560c844e9256d",
+    "size": 2020,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/0a50ce952e45880cf46b73d7118560c844e9256d"
+  },
+  {
+    "path": "nodo/probe-p2p.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6b69a8a721332b777462625506e73dae4e2395e6",
+    "size": 2215,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/6b69a8a721332b777462625506e73dae4e2395e6"
+  },
+  {
+    "path": "nodo/relay.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5071cfcf8fdb99a731a6d3257e6affcb95948a42",
+    "size": 2150,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5071cfcf8fdb99a731a6d3257e6affcb95948a42"
+  },
+  {
+    "path": "package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "38591c5e88818c8acfab59a4134363766d82287e",
+    "size": 436,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/38591c5e88818c8acfab59a4134363766d82287e"
+  },
+  {
+    "path": "perf",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "da2ad159b3d5bf7e9e1fd89884059b622d75b95a",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/da2ad159b3d5bf7e9e1fd89884059b622d75b95a"
+  },
+  {
+    "path": "perf/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ae31fbd6c0d73e483a908b02f5f0e442a76ae7f4",
+    "size": 2971,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ae31fbd6c0d73e483a908b02f5f0e442a76ae7f4"
+  },
+  {
+    "path": "scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "39812cedcaac046b11a442f7578aa86907f680a1",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/39812cedcaac046b11a442f7578aa86907f680a1"
+  },
+  {
+    "path": "scripts/harden-huellas.py",
+    "mode": "100755",
+    "type": "blob",
+    "sha": "88e024fa4a958111d9ac2eeed5c645abcd1e7d98",
+    "size": 3457,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/88e024fa4a958111d9ac2eeed5c645abcd1e7d98"
+  },
+  {
+    "path": "scripts/sync-marca.sh",
+    "mode": "100755",
+    "type": "blob",
+    "sha": "12cfb3001a8b9438023f4d6dba46e77fd0f8ebdf",
+    "size": 1007,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/12cfb3001a8b9438023f4d6dba46e77fd0f8ebdf"
+  },
+  {
+    "path": "spikes",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0f87aba7a44c0a0df5624d5923b9670ec0469fc2",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/0f87aba7a44c0a0df5624d5923b9670ec0469fc2"
+  },
+  {
+    "path": "spikes/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "973c55fded67e508a579c44d7d0bb5f99458c117",
+    "size": 691,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/973c55fded67e508a579c44d7d0bb5f99458c117"
+  },
+  {
+    "path": "spikes/consumidor.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b5ce2629506146f91db3abaf693d378ac5c92f61",
+    "size": 1662,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/b5ce2629506146f91db3abaf693d378ac5c92f61"
+  },
+  {
+    "path": "spikes/lora-medpsy",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8385f9eaa44ec4d699635608da1cff1fa83fff10",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/8385f9eaa44ec4d699635608da1cff1fa83fff10"
+  },
+  {
+    "path": "spikes/lora-medpsy/RESULTADOS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4128942da67479c8a0d0b4876b6a3d93e506a425",
+    "size": 7296,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/4128942da67479c8a0d0b4876b6a3d93e506a425"
+  },
+  {
+    "path": "spikes/lora-medpsy/diag.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d21749f0f638046ff2cca597ffa285d2c735096e",
+    "size": 2008,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d21749f0f638046ff2cca597ffa285d2c735096e"
+  },
+  {
+    "path": "spikes/lora-medpsy/eval.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9e2d31b83401cbe47d477bc9974fefbf515e84ff",
+    "size": 66734,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/9e2d31b83401cbe47d477bc9974fefbf515e84ff"
+  },
+  {
+    "path": "spikes/lora-medpsy/make-dataset.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "820fa7d81d576792203d30aa3461c70ab9c21f9e",
+    "size": 19897,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/820fa7d81d576792203d30aa3461c70ab9c21f9e"
+  },
+  {
+    "path": "spikes/lora-medpsy/remedir.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "66ad5d3b3456000e173e84656cb4f17e95ad919c",
+    "size": 3890,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/66ad5d3b3456000e173e84656cb4f17e95ad919c"
+  },
+  {
+    "path": "spikes/lora-medpsy/spike.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "86ceb933cac14bc7c363fbc934e72d9e03450e94",
+    "size": 9559,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/86ceb933cac14bc7c363fbc934e72d9e03450e94"
+  },
+  {
+    "path": "spikes/lora-medpsy/system-extraccion.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1f195a67d46919218822eef7de381831109ea3f4",
+    "size": 375,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/1f195a67d46919218822eef7de381831109ea3f4"
+  },
+  {
+    "path": "spikes/lora-medpsy/system-extracto.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bf578b8574f8f480eba90e202b2b34d45622bafe",
+    "size": 275,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/bf578b8574f8f480eba90e202b2b34d45622bafe"
+  },
+  {
+    "path": "spikes/lora-medpsy/system-ingresos.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "97dea772e2912a0423ad3d0c74c5e93b8d360043",
+    "size": 459,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/97dea772e2912a0423ad3d0c74c5e93b8d360043"
+  },
+  {
+    "path": "spikes/lora-medpsy/system-laboratorio.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dd5b5c316923b923848b9a57034c8039209a71d9",
+    "size": 654,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/dd5b5c316923b923848b9a57034c8039209a71d9"
+  },
+  {
+    "path": "spikes/lora-medpsy/train.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1a457f395b6d35c54643bfdb70afc7d397e51e42",
+    "size": 261002,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/1a457f395b6d35c54643bfdb70afc7d397e51e42"
+  },
+  {
+    "path": "spikes/package-lock.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "317ac2472996fe717a2f246f5502e94e073353a0",
+    "size": 104610,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/317ac2472996fe717a2f246f5502e94e073353a0"
+  },
+  {
+    "path": "spikes/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f4ae7af2f9171402129872ffe101ab22078d0396",
+    "size": 402,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/f4ae7af2f9171402129872ffe101ab22078d0396"
+  },
+  {
+    "path": "spikes/proveedor.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5e78efbf14ab463957681e0219b07167ea8c98ae",
+    "size": 2302,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5e78efbf14ab463957681e0219b07167ea8c98ae"
+  },
+  {
+    "path": "standards",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3451f28d47330845df3dff53160f321fba100e23",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/3451f28d47330845df3dff53160f321fba100e23"
+  },
+  {
+    "path": "standards/design-quality.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6b5969a414cb6e8d0fafb86a95b75403ab9d9bf0",
+    "size": 2299,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/6b5969a414cb6e8d0fafb86a95b75403ab9d9bf0"
+  },
+  {
+    "path": "standards/engineering-principles.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "542b385e4c0b29ca08c8e539b1572140b233ad33",
+    "size": 402,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/542b385e4c0b29ca08c8e539b1572140b233ad33"
+  },
+  {
+    "path": "standards/execution.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "59f98300a53cc5d14a3bb4e50c36b7aa020dd7f1",
+    "size": 1744,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/59f98300a53cc5d14a3bb4e50c36b7aa020dd7f1"
+  },
+  {
+    "path": "standards/observability.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8510ae3ddd0f9facf12afafd9f4dc36e60fd2ef9",
+    "size": 389,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/8510ae3ddd0f9facf12afafd9f4dc36e60fd2ef9"
+  },
+  {
+    "path": "standards/release-readiness.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46c7053c6c9112be36e77a433318ad37ef0f319f",
+    "size": 865,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/46c7053c6c9112be36e77a433318ad37ef0f319f"
+  },
+  {
+    "path": "standards/security.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "33880dae2b14f11df9fae3c0bd16aadc4e6ab39a",
+    "size": 296,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/33880dae2b14f11df9fae3c0bd16aadc4e6ab39a"
+  },
+  {
+    "path": "standards/testing.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c0877d8b99f2f2362eae0cb446083b93d7042d5e",
+    "size": 308,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/c0877d8b99f2f2362eae0cb446083b93d7042d5e"
+  },
+  {
+    "path": "templates",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2f0edfbe01ad33cfd26dce70a485b77abf0eaec2",
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/trees/2f0edfbe01ad33cfd26dce70a485b77abf0eaec2"
+  },
+  {
+    "path": "templates/adr.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "35ebf3e73ce228f87d939b4d76150c9bad2914f9",
+    "size": 172,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/35ebf3e73ce228f87d939b4d76150c9bad2914f9"
+  },
+  {
+    "path": "templates/architecture-intake.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed7b63a4a2ef252ea04ee113dc9c74889cf8ae1a",
+    "size": 268,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/ed7b63a4a2ef252ea04ee113dc9c74889cf8ae1a"
+  },
+  {
+    "path": "templates/architecture-v1.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "752eda855dcf92c0c4b1dde9f2ebf7a9796cc5e2",
+    "size": 253,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/752eda855dcf92c0c4b1dde9f2ebf7a9796cc5e2"
+  },
+  {
+    "path": "templates/design-brief.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d3bc736bc4a117b0c64dcbb30922a36bed9c8b7f",
+    "size": 2565,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/d3bc736bc4a117b0c64dcbb30922a36bed9c8b7f"
+  },
+  {
+    "path": "templates/idea-validation.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dd0fef57f08bfec94c562e34b0016c331c44b77a",
+    "size": 223,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/dd0fef57f08bfec94c562e34b0016c331c44b77a"
+  },
+  {
+    "path": "templates/implementation-plan.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "50e8af6bc1b3ec5db6595ae0d55ba1b7ca0d9ffa",
+    "size": 714,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/50e8af6bc1b3ec5db6595ae0d55ba1b7ca0d9ffa"
+  },
+  {
+    "path": "templates/incident-root-cause.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d9f8ece3a992a57a69fa29b88c1d4cd435a0603",
+    "size": 516,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/2d9f8ece3a992a57a69fa29b88c1d4cd435a0603"
+  },
+  {
+    "path": "templates/reference-pack.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "02a85a6e8b20d3d909ae2989b73cd478d3585c20",
+    "size": 1280,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/02a85a6e8b20d3d909ae2989b73cd478d3585c20"
+  },
+  {
+    "path": "templates/specification.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "048a2fd984c175758b1577d56de943459be1c0a3",
+    "size": 472,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/048a2fd984c175758b1577d56de943459be1c0a3"
+  },
+  {
+    "path": "templates/stage-contract.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "abb381cfd0988ab329457096d10bb27a7ada6ee0",
+    "size": 414,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/abb381cfd0988ab329457096d10bb27a7ada6ee0"
+  },
+  {
+    "path": "templates/verification.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5c9e3e5e3c22730e0fb780b50e6f1b2a9f363a53",
+    "size": 1212,
+    "url": "https://api.github.com/repos/0xj4an/Hackathon-ISD-2026/git/blobs/5c9e3e5e3c22730e0fb780b50e6f1b2a9f363a53"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-11",
+  "artifacts": [
+    {
+      "file": "certiva-pilot-0.1.0-debug.apk",
+      "bytes": 9720807,
+      "sha256": "cdbc727dcacc41b2c92a6db3068035717e1ba020b34ada58f838575323a4c5a5",
+      "scope": "baseline 0.1; pruebas históricas"
+    },
+    {
+      "file": "certiva-sdk-0.1.0.aar",
+      "bytes": 12468,
+      "sha256": "30e46377f111e7ea721f82bcc76e693f49089e363128d45fbbc032d42e42cea0",
+      "scope": "SDK baseline; requiere Bouncy Castle externo"
+    },
+    {
+      "file": "certiva-protection-0.2.0-debug.apk",
+      "bytes": 9819493,
+      "sha256": "e25d74d5478d14fcac8c5b47494c194483a64d4c68124290c03d4b9c81818a06",
+      "scope": "baseline 0.2; siete pruebas dirigidas históricas"
+    },
+    {
+      "file": "certiva-0.2-notification-icon.apk",
+      "bytes": 10750814,
+      "sha256": "948c3767c576030e58b4c403b74da2b6a51c5ccda9fb26b5b31a14956a4efefe",
+      "scope": "0.2 con iconos; compilación y lint aprobados"
+    },
+    {
+      "file": "certiva-0.3-qvac-experimental.apk",
+      "bytes": 71201693,
+      "sha256": "cb69b6bfd72aada2c12649870b73fc6d73dd15f26707086c518913c185234837",
+      "scope": "snapshot 0.3 experimental; prueba visual de iconos, inferencia corregida pendiente"
+    },
+    {
+      "file": "certiva-0.3-qvac-integrada-experimental.apk",
+      "bytes": 40883621,
+      "sha256": "023ebbfc083c4fda0b74990d3bc14d8dda26f990db44e69bdbdc11f2da9d6ce3",
+      "scope": "rama 4c156b9: SDK vigente, APK y lint aprobados; no probada en emulador"
+    },
+    {
+      "file": "evidencias-piloto-y-portal-20260911.zip",
+      "bytes": 13964512,
+      "sha256": "6ccab448c9958ade1e0451af5989506da8d75a988742eb632279b32ab51e9072",
+      "scope": "capturas, logs y grabaciones históricas; contiene intentos UI FALLIDOS etiquetados en result.json, no es demo final"
+    }
+  ],
+  "excluded": "Dependencias, modelos GGUF, cachés, credenciales, bases de datos y código de terceros descargado."
+}

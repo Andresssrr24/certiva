@@ -1,0 +1,308 @@
+{
+  "ui/index.html": {
+    "blank": 91,
+    "comment": 0,
+    "code": 1117,
+    "language": "HTML"
+  },
+  "pruebas/casos-de-uso.test.mjs": {
+    "blank": 129,
+    "comment": 228,
+    "code": 611,
+    "language": "JavaScript"
+  },
+  "pruebas/ui.test.mjs": {
+    "blank": 124,
+    "comment": 278,
+    "code": 585,
+    "language": "JavaScript"
+  },
+  "scripts/metricas.mjs": {
+    "blank": 62,
+    "comment": 153,
+    "code": 460,
+    "language": "JavaScript"
+  },
+  "pruebas/ledger.test.mjs": {
+    "blank": 62,
+    "comment": 61,
+    "code": 362,
+    "language": "JavaScript"
+  },
+  "core/expediente.mjs": {
+    "blank": 47,
+    "comment": 233,
+    "code": 345,
+    "language": "JavaScript"
+  },
+  "core/guardias.mjs": {
+    "blank": 67,
+    "comment": 211,
+    "code": 310,
+    "language": "JavaScript"
+  },
+  "pruebas/guardias.test.mjs": {
+    "blank": 69,
+    "comment": 80,
+    "code": 310,
+    "language": "JavaScript"
+  },
+  "ui/servidor.mjs": {
+    "blank": 37,
+    "comment": 230,
+    "code": 284,
+    "language": "JavaScript"
+  },
+  "pruebas/invariantes.test.mjs": {
+    "blank": 34,
+    "comment": 116,
+    "code": 282,
+    "language": "JavaScript"
+  },
+  "scripts/verificar-entrega.mjs": {
+    "blank": 42,
+    "comment": 212,
+    "code": 275,
+    "language": "JavaScript"
+  },
+  "scripts/verificar-invariantes.mjs": {
+    "blank": 31,
+    "comment": 86,
+    "code": 267,
+    "language": "JavaScript"
+  },
+  "cli.mjs": {
+    "blank": 51,
+    "comment": 109,
+    "code": 258,
+    "language": "JavaScript"
+  },
+  "scripts/audit-all.mjs": {
+    "blank": 48,
+    "comment": 83,
+    "code": 252,
+    "language": "JavaScript"
+  },
+  "scripts/plata.mjs": {
+    "blank": 28,
+    "comment": 95,
+    "code": 233,
+    "language": "JavaScript"
+  },
+  "pruebas/dedup-calidad.test.mjs": {
+    "blank": 32,
+    "comment": 38,
+    "code": 230,
+    "language": "JavaScript"
+  },
+  "core/proyeccion.mjs": {
+    "blank": 34,
+    "comment": 148,
+    "code": 227,
+    "language": "JavaScript"
+  },
+  "pruebas/anclaje.test.mjs": {
+    "blank": 50,
+    "comment": 82,
+    "code": 193,
+    "language": "JavaScript"
+  },
+  "instancias/banca/guardias.mjs": {
+    "blank": 34,
+    "comment": 156,
+    "code": 191,
+    "language": "JavaScript"
+  },
+  "pruebas/serie.test.mjs": {
+    "blank": 38,
+    "comment": 41,
+    "code": 180,
+    "language": "JavaScript"
+  },
+  "pruebas/guardias-banca.test.mjs": {
+    "blank": 39,
+    "comment": 43,
+    "code": 166,
+    "language": "JavaScript"
+  },
+  "ia/extraer.mjs": {
+    "blank": 25,
+    "comment": 103,
+    "code": 145,
+    "language": "JavaScript"
+  },
+  "core/anclaje.mjs": {
+    "blank": 30,
+    "comment": 248,
+    "code": 143,
+    "language": "JavaScript"
+  },
+  "core/calidad.mjs": {
+    "blank": 22,
+    "comment": 125,
+    "code": 143,
+    "language": "JavaScript"
+  },
+  "core/esquema.mjs": {
+    "blank": 26,
+    "comment": 87,
+    "code": 143,
+    "language": "JavaScript"
+  },
+  "pruebas/estado.test.mjs": {
+    "blank": 27,
+    "comment": 34,
+    "code": 129,
+    "language": "JavaScript"
+  },
+  "scripts/verificar-frontera.mjs": {
+    "blank": 25,
+    "comment": 45,
+    "code": 120,
+    "language": "JavaScript"
+  },
+  "malla/motor.mjs": {
+    "blank": 8,
+    "comment": 16,
+    "code": 112,
+    "language": "JavaScript"
+  },
+  "scripts/calidad.mjs": {
+    "blank": 29,
+    "comment": 45,
+    "code": 110,
+    "language": "JavaScript"
+  },
+  "core/ledger.mjs": {
+    "blank": 21,
+    "comment": 104,
+    "code": 107,
+    "language": "JavaScript"
+  },
+  "core/estado.mjs": {
+    "blank": 15,
+    "comment": 60,
+    "code": 105,
+    "language": "JavaScript"
+  },
+  "pruebas/esquema.test.mjs": {
+    "blank": 19,
+    "comment": 21,
+    "code": 105,
+    "language": "JavaScript"
+  },
+  "scripts/setup.mjs": {
+    "blank": 21,
+    "comment": 35,
+    "code": 105,
+    "language": "JavaScript"
+  },
+  "core/dedup.mjs": {
+    "blank": 17,
+    "comment": 61,
+    "code": 102,
+    "language": "JavaScript"
+  },
+  "scripts/casos.mjs": {
+    "blank": 20,
+    "comment": 28,
+    "code": 102,
+    "language": "JavaScript"
+  },
+  "core/serie.mjs": {
+    "blank": 14,
+    "comment": 96,
+    "code": 101,
+    "language": "JavaScript"
+  },
+  "malla/campo.mjs": {
+    "blank": 19,
+    "comment": 15,
+    "code": 97,
+    "language": "JavaScript"
+  },
+  "scripts/doctor.mjs": {
+    "blank": 13,
+    "comment": 19,
+    "code": 91,
+    "language": "JavaScript"
+  },
+  "malla/consumidor.mjs": {
+    "blank": 17,
+    "comment": 38,
+    "code": 78,
+    "language": "JavaScript"
+  },
+  "pruebas/frontera.test.mjs": {
+    "blank": 19,
+    "comment": 51,
+    "code": 72,
+    "language": "JavaScript"
+  },
+  "scripts/demo.mjs": {
+    "blank": 15,
+    "comment": 35,
+    "code": 72,
+    "language": "JavaScript"
+  },
+  "malla/proveedor.mjs": {
+    "blank": 12,
+    "comment": 54,
+    "code": 68,
+    "language": "JavaScript"
+  },
+  "scripts/smoke.mjs": {
+    "blank": 20,
+    "comment": 27,
+    "code": 68,
+    "language": "JavaScript"
+  },
+  "pruebas/prompt.test.mjs": {
+    "blank": 15,
+    "comment": 20,
+    "code": 62,
+    "language": "JavaScript"
+  },
+  "pruebas/fixtures.mjs": {
+    "blank": 6,
+    "comment": 30,
+    "code": 46,
+    "language": "JavaScript"
+  },
+  "scripts/sucursal.mjs": {
+    "blank": 10,
+    "comment": 27,
+    "code": 44,
+    "language": "JavaScript"
+  },
+  "core/prompt.mjs": {
+    "blank": 6,
+    "comment": 41,
+    "code": 42,
+    "language": "JavaScript"
+  },
+  "scripts/frontera.mjs": {
+    "blank": 10,
+    "comment": 57,
+    "code": 36,
+    "language": "JavaScript"
+  },
+  "scripts/cargar-dominio.mjs": {
+    "blank": 4,
+    "comment": 31,
+    "code": 28,
+    "language": "JavaScript"
+  },
+  "scripts/lista-negra.mjs": {
+    "blank": 2,
+    "comment": 35,
+    "code": 18,
+    "language": "JavaScript"
+  },
+  "malla/bootstrap.mjs": {
+    "blank": 7,
+    "comment": 10,
+    "code": 17,
+    "language": "JavaScript"
+  }
+}

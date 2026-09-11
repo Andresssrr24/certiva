@@ -1,0 +1,1087 @@
+[
+  {
+    "path": "dist-final/_expo/static/js/web/entry-1018499565135ff03dd035122f3c7ca7.js",
+    "code": 917,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/components/layout/ScrollArea.tsx",
+    "code": 242,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/locales/es.ts",
+    "code": 214,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/component-gallery/ComponentGalleryView.tsx",
+    "code": 170,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Galería de desarrollo"
+  },
+  {
+    "path": "src/components/layout/AppShell.tsx",
+    "code": 167,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/controllers.test.tsx",
+    "code": 130,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "tests/components.test.tsx",
+    "code": 126,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/components/forms/DatePicker.tsx",
+    "code": 123,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/TimePicker.tsx",
+    "code": 122,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/DateTimePicker.tsx",
+    "code": 111,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/storage.test.ts",
+    "code": 107,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "tests/domain.test.ts",
+    "code": 106,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/features/profile/ProfileView.tsx",
+    "code": 98,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/Button.tsx",
+    "code": 94,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/medications/components/MedicationForm.tsx",
+    "code": 91,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/providers/WorkspaceProvider.tsx",
+    "code": 88,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/_layout.tsx",
+    "code": 86,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/preparation/PreparationView.tsx",
+    "code": 86,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/components/HealthCategories.tsx",
+    "code": 83,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/domain/validation.ts",
+    "code": 82,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/nearby/NearbyView.tsx",
+    "code": 81,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/Select.tsx",
+    "code": 79,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/useRecordEditorController.ts",
+    "code": 79,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/services/adapters/simulated.ts",
+    "code": 75,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/layout/ModalSheet.tsx",
+    "code": 74,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/assistant/components/MessageComposer.tsx",
+    "code": 71,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/components/WelcomeHero.tsx",
+    "code": 71,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/scroll.test.tsx",
+    "code": 70,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/components/forms/Input.tsx",
+    "code": 66,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/services/storage/seeds.ts",
+    "code": 65,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Datos sintéticos"
+  },
+  {
+    "path": "src/domain/models.ts",
+    "code": 61,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/components/RecentHistory.tsx",
+    "code": 61,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/RecordList.tsx",
+    "code": 59,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/RecordEditorLayout.tsx",
+    "code": 58,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/components/ProfileForm.tsx",
+    "code": 57,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/services/storage/migration.ts",
+    "code": 57,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/assistant/components/MessageList.tsx",
+    "code": 56,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/recordPresentation.ts",
+    "code": 56,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "ios/ONVIA/AppDelegate.swift",
+    "code": 55,
+    "language": "Swift",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/domain/dateTime.ts",
+    "code": 55,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/nearby/components/PlaceList.tsx",
+    "code": 55,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/component-gallery/useGalleryController.ts",
+    "code": 54,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Galería de desarrollo"
+  },
+  {
+    "path": "src/features/nearby/useNearbyController.ts",
+    "code": 53,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/onboarding/OnboardingView.tsx",
+    "code": 53,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/useRecordsController.ts",
+    "code": 52,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/IconButton.tsx",
+    "code": 51,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/layout/ScreenHeader.tsx",
+    "code": 50,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/preparation/components/ModelCard.tsx",
+    "code": 49,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/Checkbox.tsx",
+    "code": 47,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/Radio.tsx",
+    "code": 47,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/useProfileEditorController.ts",
+    "code": 47,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/feedback/ConfirmDialog.tsx",
+    "code": 46,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/FormField.tsx",
+    "code": 46,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/nearby/components/PlacesMap.tsx",
+    "code": 46,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/clinical-history/components/ClinicalEntryForm.tsx",
+    "code": 45,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/RecordsView.tsx",
+    "code": 45,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/layout/Screen.tsx",
+    "code": 44,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/ProfileEditorView.tsx",
+    "code": 44,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "android/app/src/main/java/com/onvia/health/MainApplication.kt",
+    "code": 43,
+    "language": "Kotlin",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/components/forms/Toggle.tsx",
+    "code": 43,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/assistant/AssistantView.tsx",
+    "code": 43,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/RadioGroup.tsx",
+    "code": 40,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/domain/contracts.ts",
+    "code": 39,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/useTask.ts",
+    "code": 38,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/about/components/TeamCard.tsx",
+    "code": 37,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/assistant/useAssistantController.ts",
+    "code": 36,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/conditions/components/ConditionForm.tsx",
+    "code": 36,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/services/storage/WorkspaceRepository.ts",
+    "code": 36,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/nearby/components/PlaceDetails.tsx",
+    "code": 35,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "android/app/src/main/java/com/onvia/health/MainActivity.kt",
+    "code": 34,
+    "language": "Kotlin",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "dist-final/index.html",
+    "code": 33,
+    "language": "HTML",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/components/feedback/ProgressBar.tsx",
+    "code": 33,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/layout/Section.tsx",
+    "code": 33,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/architecture.test.ts",
+    "code": 33,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/components/primitives/Text.tsx",
+    "code": 30,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/preparation/usePreparationController.ts",
+    "code": 30,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/feedback/Toast.tsx",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/Badge.tsx",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/clinical-history/ClinicalEntryEditorView.tsx",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/useProfileController.ts",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/providers/ServicesProvider.tsx",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/feedback/ErrorState.tsx",
+    "code": 28,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/services/adapters/location.ts",
+    "code": 26,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/Heading.tsx",
+    "code": 25,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/theme/index.ts",
+    "code": 25,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/layout/BrandMark.tsx",
+    "code": 23,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/providers/FeedbackProvider.tsx",
+    "code": 23,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/feedback/EmptyState.tsx",
+    "code": 22,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/feedback/LoadingState.tsx",
+    "code": 22,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/about/AboutView.tsx",
+    "code": 22,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/clinical-history/useClinicalEntryEditorController.ts",
+    "code": 22,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/Card.tsx",
+    "code": 21,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/+not-found.tsx",
+    "code": 17,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/conditions/ConditionEditorView.tsx",
+    "code": 17,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/medications/MedicationEditorView.tsx",
+    "code": 17,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/(tabs)/_layout.tsx",
+    "code": 15,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/SearchInput.tsx",
+    "code": 15,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/Icon.tsx",
+    "code": 15,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "eslint.config.js",
+    "code": 13,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/providers/AppProviders.tsx",
+    "code": 13,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/index.ts",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/layout/FormLayout.tsx",
+    "code": 11,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/config/app.ts",
+    "code": 11,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/assistant/AssistantScreen.tsx",
+    "code": 11,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/locales/index.ts",
+    "code": 11,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/Divider.tsx",
+    "code": 10,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/about/useAboutController.ts",
+    "code": 9,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/ProfileScreen.tsx",
+    "code": 9,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/layout/index.ts",
+    "code": 8,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/primitives/index.ts",
+    "code": 8,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/clinical-history/ClinicalHistoryView.tsx",
+    "code": 8,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/conditions/ConditionsView.tsx",
+    "code": 8,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/medications/MedicationsView.tsx",
+    "code": 8,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "jest.config.js",
+    "code": 6,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/app/component-gallery.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/feedback/index.ts",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/about/AboutScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/clinical-history/ClinicalEntryEditorScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/clinical-history/ClinicalHistoryScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/component-gallery/ComponentGalleryScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Galería de desarrollo"
+  },
+  {
+    "path": "src/features/conditions/ConditionEditorScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/conditions/ConditionsScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/medications/MedicationEditorScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/medications/MedicationsScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/nearby/NearbyScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/onboarding/OnboardingScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/preparation/PreparationScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/profile/ProfileEditorScreen.tsx",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/components/forms/TextArea.tsx",
+    "code": 5,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/shared/navigation.ts",
+    "code": 5,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/clinical-history/useClinicalHistoryController.ts",
+    "code": 3,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/conditions/useConditionEditorController.ts",
+    "code": 3,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/medications/useMedicationEditorController.ts",
+    "code": 3,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/medications/useMedicationsController.ts",
+    "code": 3,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/conditions/useConditionsController.ts",
+    "code": 2,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/features/onboarding/useOnboardingController.ts",
+    "code": 2,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tests/setup.ts",
+    "code": 2,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "src/app/(tabs)/about.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/(tabs)/assistant.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/(tabs)/index.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/(tabs)/nearby.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/clinical-history/[id].tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/clinical-history/index.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/clinical-history/new.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/conditions/[id].tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/conditions/index.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/conditions/new.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/medications/[id].tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/medications/index.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/medications/new.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/onboarding.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/preparation.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "src/app/profile/edit.tsx",
+    "code": 1,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "expo-env.d.ts",
+    "code": 0,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "ios/ONVIA/ONVIA-Bridging-Header.h",
+    "code": 0,
+    "language": "C/C++ Header",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  }
+]

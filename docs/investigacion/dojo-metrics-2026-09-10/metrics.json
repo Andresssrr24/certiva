@@ -1,0 +1,630 @@
+{
+  "captured_at_utc": "2026-09-11T04:21:37.085026+00:00",
+  "repos": [
+    {
+      "folder": "aegis",
+      "repo": "https://github.com/BLeandro5/AEGIS_AI.git",
+      "head": "02af1af6016090d6b7078954dfebc675d6fba61c",
+      "last_commit": "2026-09-10T20:54:05-05:00 base para hacer ine tuning",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "BLeandro5/AEGIS_AI",
+      "url": "https://github.com/BLeandro5/AEGIS_AI",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "8ab5519fe12ef4c95b47f5338d8ffb7b28428f29",
+          "history": {
+            "totalCount": 33
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 2
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 2
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 1718,
+        "comment": 359,
+        "code": 30609,
+        "nFiles": 155
+      },
+      "selected_files": 165
+    },
+    {
+      "folder": "atlas",
+      "repo": "https://github.com/jlbjulio/ATLAS.git",
+      "head": "32dd32c84d595c2b01c56d706ccbd4cf83986e1f",
+      "last_commit": "2026-09-10T13:41:10-05:00 Merge pull request #2 from jlbjulio/feature/mobile-expo-android",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "jlbjulio/ATLAS",
+      "url": "https://github.com/jlbjulio/ATLAS",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "32dd32c84d595c2b01c56d706ccbd4cf83986e1f",
+          "history": {
+            "totalCount": 24
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 2
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 2
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 899,
+        "comment": 282,
+        "code": 9477,
+        "nFiles": 93
+      },
+      "selected_files": 93
+    },
+    {
+      "folder": "chen",
+      "repo": "https://github.com/pixeltabletop/Narukami---Hackathon.git",
+      "head": "7551574eb40972bd2a24f4b0d747d247bc490d25",
+      "last_commit": "2026-09-10T19:04:56-05:00 docs: el aviso de instalacion y el puerto ocupado, explicados",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "pixeltabletop/Narukami---Hackathon",
+      "url": "https://github.com/pixeltabletop/Narukami---Hackathon",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "7551574eb40972bd2a24f4b0d747d247bc490d25",
+          "history": {
+            "totalCount": 42
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 230,
+        "comment": 591,
+        "code": 8706,
+        "nFiles": 61
+      },
+      "selected_files": 61
+    },
+    {
+      "folder": "clik2trip-text",
+      "repo": "https://github.com/JVeraPTY/clik2trip-sovereign",
+      "pushed_at": "2026-09-10T21:46:56Z",
+      "tree_sha": "3cc118f68648619d3e0762bc4d0f1969d15adad3",
+      "method": "GitHub API tree and raw text files; no binary execution",
+      "nameWithOwner": "JVeraPTY/clik2trip-sovereign",
+      "url": "https://github.com/JVeraPTY/clik2trip-sovereign",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "3cc118f68648619d3e0762bc4d0f1969d15adad3",
+          "history": {
+            "totalCount": 10
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 717,
+        "comment": 452,
+        "code": 8321,
+        "nFiles": 82
+      },
+      "selected_files": 82
+    },
+    {
+      "folder": "devcors",
+      "repo": "https://github.com/HernandoSilvaLeal/expediente-local.git",
+      "head": "48bdbd2058cd32fb4123ee523ffdeea5b9b778b9",
+      "last_commit": "2026-09-10T17:19:59-05:00 ui+proyeccion: el documento resaltado se lee, y deja de se\u00f1alar el dato descartado",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "HernandoSilvaLeal/expediente-local",
+      "url": "https://github.com/HernandoSilvaLeal/expediente-local",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "48bdbd2058cd32fb4123ee523ffdeea5b9b778b9",
+          "history": {
+            "totalCount": 62
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 1643,
+        "comment": 4281,
+        "code": 9749,
+        "nFiles": 51
+      },
+      "selected_files": 51
+    },
+    {
+      "folder": "fleetsense",
+      "repo": "https://github.com/alioth-stat/phillips-installed-base-intelligence.git",
+      "head": "16355a11bf8c22e53f738235d2ba910e436796ed",
+      "last_commit": "2026-09-09T11:57:23-05:00 Bring README.es.md to parity with the judge-facing rewrite, add a switcher",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "alioth-stat/phillips-installed-base-intelligence",
+      "url": "https://github.com/alioth-stat/phillips-installed-base-intelligence",
+      "defaultBranchRef": {
+        "name": "master",
+        "target": {
+          "oid": "16355a11bf8c22e53f738235d2ba910e436796ed",
+          "history": {
+            "totalCount": 19
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 310,
+        "comment": 192,
+        "code": 2330,
+        "nFiles": 38
+      },
+      "selected_files": 38
+    },
+    {
+      "folder": "ina-igar",
+      "repo": "https://github.com/0xj4an/Hackathon-ISD-2026.git",
+      "head": "27aeb97ddb58329727b580aa20b5925f62f1e5ac",
+      "last_commit": "2026-09-10T21:20:58-05:00 fix(landing): clarify etymology CTA instead of cryptic El nombre",
+      "method": "shallow clone, static inspection",
+      "additional_copies": [
+        {
+          "folder": "ina-igar-text",
+          "repo": "https://github.com/0xj4an/Hackathon-ISD-2026",
+          "pushed_at": "2026-09-11T02:21:00Z",
+          "tree_sha": "27aeb97ddb58329727b580aa20b5925f62f1e5ac",
+          "method": "GitHub API tree and raw text files; no binary execution"
+        }
+      ],
+      "nameWithOwner": "0xj4an/Hackathon-ISD-2026",
+      "url": "https://github.com/0xj4an/Hackathon-ISD-2026",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "0729398ca3bd194b6c30bc9423567978b6119078",
+          "history": {
+            "totalCount": 177
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 1381,
+        "comment": 1294,
+        "code": 14257,
+        "nFiles": 114
+      },
+      "selected_files": 114
+    },
+    {
+      "folder": "luma",
+      "repo": "https://github.com/george888-q/luma-Inteligencia-de-Base-Instalada-de-Clientes.git",
+      "head": "2b6feeec86d33c6176d133346521f7eb7ddf2aab",
+      "last_commit": "2026-09-10T08:31:39-05:00 docs: keep delivery notes outside repository readme",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "george888-q/luma-Inteligencia-de-Base-Instalada-de-Clientes",
+      "url": "https://github.com/george888-q/luma-Inteligencia-de-Base-Instalada-de-Clientes",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "2b6feeec86d33c6176d133346521f7eb7ddf2aab",
+          "history": {
+            "totalCount": 3
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 3,
+        "comment": 3,
+        "code": 4191,
+        "nFiles": 16
+      },
+      "selected_files": 16
+    },
+    {
+      "folder": "mam",
+      "repo": "https://github.com/pixeltabletop/jajanken-hackathon.git",
+      "head": "b16e9a26c8a2c4ffaa533d5919ccda4d8e6bd590",
+      "last_commit": "2026-09-10T18:13:33-05:00 el repositorio pasa a ser la entrega, no el cuaderno de trabajo",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "pixeltabletop/jajanken-hackathon",
+      "url": "https://github.com/pixeltabletop/jajanken-hackathon",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "b16e9a26c8a2c4ffaa533d5919ccda4d8e6bd590",
+          "history": {
+            "totalCount": 43
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 927,
+        "comment": 1490,
+        "code": 7957,
+        "nFiles": 83
+      },
+      "selected_files": 83
+    },
+    {
+      "folder": "pulso-text",
+      "repo": "https://github.com/jlbjulio/PULSO",
+      "pushed_at": "2026-09-10T21:42:53Z",
+      "tree_sha": "f9b8442bf28149d56c32494ffb5e1a4672e35123",
+      "method": "GitHub API tree and raw text files; no binary execution",
+      "nameWithOwner": "jlbjulio/PULSO",
+      "url": "https://github.com/jlbjulio/PULSO",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "f9b8442bf28149d56c32494ffb5e1a4672e35123",
+          "history": {
+            "totalCount": 18
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 566,
+        "comment": 146,
+        "code": 5523,
+        "nFiles": 46
+      },
+      "selected_files": 50
+    },
+    {
+      "folder": "saja",
+      "repo": "https://github.com/jdb17-hub/SAJA_HACKATHON.git",
+      "head": "1b06e2d1ea4cd97a19ca2128dc7d57eb8d49a743",
+      "last_commit": "2026-09-10T02:08:32-05:00 Merge pull request #4 from jdb17-hub/feat-mejora_busqueda",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "jdb17-hub/SAJA_HACKATHON",
+      "url": "https://github.com/jdb17-hub/SAJA_HACKATHON",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "1b06e2d1ea4cd97a19ca2128dc7d57eb8d49a743",
+          "history": {
+            "totalCount": 17
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 4
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 4
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 957,
+        "comment": 752,
+        "code": 4518,
+        "nFiles": 27
+      },
+      "selected_files": 28
+    },
+    {
+      "folder": "salus",
+      "repo": "https://github.com/Vortecsmaster/Salus.git",
+      "head": "d8d4c0731522b39b539538a04275232eb3391137",
+      "last_commit": "2026-09-10T18:26:08-05:00 Pre clean build commit",
+      "method": "shallow clone, static inspection",
+      "canonical_repo": "https://github.com/Vortecsmaster/Onvia",
+      "additional_copies": [
+        {
+          "folder": "salus-text",
+          "repo": "https://github.com/Vortecsmaster/Onvia",
+          "pushed_at": "2026-09-10T23:26:12Z",
+          "tree_sha": "d8d4c0731522b39b539538a04275232eb3391137",
+          "method": "GitHub API tree and raw text files; no binary execution"
+        }
+      ],
+      "nameWithOwner": "Vortecsmaster/Onvia",
+      "url": "https://github.com/Vortecsmaster/Onvia",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "d8d4c0731522b39b539538a04275232eb3391137",
+          "history": {
+            "totalCount": 6
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 57,
+        "comment": 114,
+        "code": 6859,
+        "nFiles": 155
+      },
+      "selected_files": 316
+    },
+    {
+      "folder": "trustmesh",
+      "repo": "https://github.com/srbisnes/SRBISNES.git",
+      "head": "0478e60e19aa9dd2fd455cfdb9467251cd21da52",
+      "last_commit": "2026-09-10T00:27:18-03:00 Finalize TrustMesh MVP documentation",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "srbisnes/SRBISNES",
+      "url": "https://github.com/srbisnes/SRBISNES",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "0478e60e19aa9dd2fd455cfdb9467251cd21da52",
+          "history": {
+            "totalCount": 13
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 1
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 1
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 58,
+        "comment": 5,
+        "code": 533,
+        "nFiles": 15
+      },
+      "selected_files": 15,
+      "project_subdirectory_loc": {
+        "blank": 0,
+        "comment": 0,
+        "code": 72,
+        "nFiles": 4
+      }
+    },
+    {
+      "folder": "zarpe",
+      "repo": "https://github.com/Jast-2281/qvac-hackathon-panama.git",
+      "head": "f20c664bb968046af5dc9f8126742b7a6f7e17b4",
+      "last_commit": "2026-09-10T09:26:45-05:00 fix: valor declarado vacio/cero, numero hero extremo, rendimiento del modelo en el camino confirmado",
+      "method": "shallow clone, static inspection",
+      "nameWithOwner": "Jast-2281/qvac-hackathon-panama",
+      "url": "https://github.com/Jast-2281/qvac-hackathon-panama",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "f20c664bb968046af5dc9f8126742b7a6f7e17b4",
+          "history": {
+            "totalCount": 21
+          }
+        }
+      },
+      "pullRequests": {
+        "totalCount": 0
+      },
+      "open": {
+        "totalCount": 0
+      },
+      "merged": {
+        "totalCount": 0
+      },
+      "closed": {
+        "totalCount": 0
+      },
+      "loc": {
+        "blank": 154,
+        "comment": 122,
+        "code": 1046,
+        "nFiles": 9
+      },
+      "selected_files": 9
+    }
+  ],
+  "completed_at_utc": "2026-09-11T04:22:26.387802+00:00",
+  "methodology": {
+    "tool": "cloc 2.10",
+    "extensions": [
+      "R",
+      "bash",
+      "c",
+      "cc",
+      "cjs",
+      "clj",
+      "cljc",
+      "cljs",
+      "cpp",
+      "cs",
+      "css",
+      "dart",
+      "erl",
+      "ex",
+      "exs",
+      "fish",
+      "go",
+      "gql",
+      "graphql",
+      "h",
+      "hpp",
+      "hrl",
+      "htm",
+      "html",
+      "java",
+      "js",
+      "jsx",
+      "kt",
+      "kts",
+      "less",
+      "lua",
+      "m",
+      "mjs",
+      "mm",
+      "php",
+      "pl",
+      "pm",
+      "proto",
+      "py",
+      "pyw",
+      "r",
+      "rb",
+      "rs",
+      "sass",
+      "sc",
+      "scala",
+      "scss",
+      "sh",
+      "sol",
+      "sql",
+      "svelte",
+      "swift",
+      "ts",
+      "tsx",
+      "vue",
+      "zsh"
+    ],
+    "excluded_directories": [
+      ".expo",
+      ".git",
+      ".next",
+      ".venv",
+      "Pods",
+      "__pycache__",
+      "build",
+      "context",
+      "coverage",
+      "dist",
+      "docs",
+      "documentation",
+      "node_modules",
+      "out",
+      "target",
+      "vendor",
+      "venv"
+    ],
+    "code": "Nonblank, noncomment lines in source files including tests, scripts and UI. Excludes JSON/YAML/data/docs/lockfiles and listed dependency/build folders; no attribution of originality."
+  }
+}

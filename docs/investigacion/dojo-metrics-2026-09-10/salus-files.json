@@ -1,0 +1,932 @@
+{
+  "dist-final/_expo/static/js/web/entry-1018499565135ff03dd035122f3c7ca7.js": {
+    "blank": 2,
+    "comment": 68,
+    "code": 917,
+    "language": "JavaScript"
+  },
+  "src/components/layout/ScrollArea.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 242,
+    "language": "TypeScript"
+  },
+  "src/locales/es.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 214,
+    "language": "TypeScript"
+  },
+  "src/features/component-gallery/ComponentGalleryView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 170,
+    "language": "TypeScript"
+  },
+  "src/components/layout/AppShell.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 167,
+    "language": "TypeScript"
+  },
+  "tests/controllers.test.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 130,
+    "language": "TypeScript"
+  },
+  "tests/components.test.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 126,
+    "language": "TypeScript"
+  },
+  "src/components/forms/DatePicker.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 123,
+    "language": "TypeScript"
+  },
+  "src/components/forms/TimePicker.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 122,
+    "language": "TypeScript"
+  },
+  "src/components/forms/DateTimePicker.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 111,
+    "language": "TypeScript"
+  },
+  "tests/storage.test.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 107,
+    "language": "TypeScript"
+  },
+  "tests/domain.test.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 106,
+    "language": "TypeScript"
+  },
+  "src/features/profile/ProfileView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 98,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/Button.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 94,
+    "language": "TypeScript"
+  },
+  "src/features/medications/components/MedicationForm.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 91,
+    "language": "TypeScript"
+  },
+  "src/providers/WorkspaceProvider.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 88,
+    "language": "TypeScript"
+  },
+  "src/app/_layout.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 86,
+    "language": "TypeScript"
+  },
+  "src/features/preparation/PreparationView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 86,
+    "language": "TypeScript"
+  },
+  "src/features/profile/components/HealthCategories.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 83,
+    "language": "TypeScript"
+  },
+  "src/domain/validation.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 82,
+    "language": "TypeScript"
+  },
+  "src/features/nearby/NearbyView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 81,
+    "language": "TypeScript"
+  },
+  "src/components/forms/Select.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 79,
+    "language": "TypeScript"
+  },
+  "src/features/shared/useRecordEditorController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 79,
+    "language": "TypeScript"
+  },
+  "src/services/adapters/simulated.ts": {
+    "blank": 0,
+    "comment": 1,
+    "code": 75,
+    "language": "TypeScript"
+  },
+  "src/components/layout/ModalSheet.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 74,
+    "language": "TypeScript"
+  },
+  "src/features/assistant/components/MessageComposer.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 71,
+    "language": "TypeScript"
+  },
+  "src/features/profile/components/WelcomeHero.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 71,
+    "language": "TypeScript"
+  },
+  "tests/scroll.test.tsx": {
+    "blank": 6,
+    "comment": 0,
+    "code": 70,
+    "language": "TypeScript"
+  },
+  "src/components/forms/Input.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 66,
+    "language": "TypeScript"
+  },
+  "src/services/storage/seeds.ts": {
+    "blank": 0,
+    "comment": 1,
+    "code": 65,
+    "language": "TypeScript"
+  },
+  "src/domain/models.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 61,
+    "language": "TypeScript"
+  },
+  "src/features/profile/components/RecentHistory.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 61,
+    "language": "TypeScript"
+  },
+  "src/features/shared/RecordList.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 59,
+    "language": "TypeScript"
+  },
+  "src/features/shared/RecordEditorLayout.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 58,
+    "language": "TypeScript"
+  },
+  "src/features/profile/components/ProfileForm.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 57,
+    "language": "TypeScript"
+  },
+  "src/services/storage/migration.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 57,
+    "language": "TypeScript"
+  },
+  "src/features/assistant/components/MessageList.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 56,
+    "language": "TypeScript"
+  },
+  "src/features/shared/recordPresentation.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 56,
+    "language": "TypeScript"
+  },
+  "ios/ONVIA/AppDelegate.swift": {
+    "blank": 11,
+    "comment": 4,
+    "code": 55,
+    "language": "Swift"
+  },
+  "src/domain/dateTime.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 55,
+    "language": "TypeScript"
+  },
+  "src/features/nearby/components/PlaceList.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 55,
+    "language": "TypeScript"
+  },
+  "src/features/component-gallery/useGalleryController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 54,
+    "language": "TypeScript"
+  },
+  "src/features/nearby/useNearbyController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 53,
+    "language": "TypeScript"
+  },
+  "src/features/onboarding/OnboardingView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 53,
+    "language": "TypeScript"
+  },
+  "src/features/shared/useRecordsController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 52,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/IconButton.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 51,
+    "language": "TypeScript"
+  },
+  "src/components/layout/ScreenHeader.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 50,
+    "language": "TypeScript"
+  },
+  "src/features/preparation/components/ModelCard.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "src/components/forms/Checkbox.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 47,
+    "language": "TypeScript"
+  },
+  "src/components/forms/Radio.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 47,
+    "language": "TypeScript"
+  },
+  "src/features/profile/useProfileEditorController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 47,
+    "language": "TypeScript"
+  },
+  "src/components/feedback/ConfirmDialog.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 46,
+    "language": "TypeScript"
+  },
+  "src/components/forms/FormField.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 46,
+    "language": "TypeScript"
+  },
+  "src/features/nearby/components/PlacesMap.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 46,
+    "language": "TypeScript"
+  },
+  "src/features/clinical-history/components/ClinicalEntryForm.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 45,
+    "language": "TypeScript"
+  },
+  "src/features/shared/RecordsView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 45,
+    "language": "TypeScript"
+  },
+  "src/components/layout/Screen.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "src/features/profile/ProfileEditorView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "android/app/src/main/java/com/onvia/health/MainApplication.kt": {
+    "blank": 11,
+    "comment": 2,
+    "code": 43,
+    "language": "Kotlin"
+  },
+  "src/components/forms/Toggle.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 43,
+    "language": "TypeScript"
+  },
+  "src/features/assistant/AssistantView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 43,
+    "language": "TypeScript"
+  },
+  "src/components/forms/RadioGroup.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 40,
+    "language": "TypeScript"
+  },
+  "src/domain/contracts.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 39,
+    "language": "TypeScript"
+  },
+  "src/features/shared/useTask.ts": {
+    "blank": 0,
+    "comment": 1,
+    "code": 38,
+    "language": "TypeScript"
+  },
+  "src/features/about/components/TeamCard.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 37,
+    "language": "TypeScript"
+  },
+  "src/features/assistant/useAssistantController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 36,
+    "language": "TypeScript"
+  },
+  "src/features/conditions/components/ConditionForm.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 36,
+    "language": "TypeScript"
+  },
+  "src/services/storage/WorkspaceRepository.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 36,
+    "language": "TypeScript"
+  },
+  "src/features/nearby/components/PlaceDetails.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "android/app/src/main/java/com/onvia/health/MainActivity.kt": {
+    "blank": 8,
+    "comment": 19,
+    "code": 34,
+    "language": "Kotlin"
+  },
+  "dist-final/index.html": {
+    "blank": 1,
+    "comment": 3,
+    "code": 33,
+    "language": "HTML"
+  },
+  "src/components/feedback/ProgressBar.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 33,
+    "language": "TypeScript"
+  },
+  "src/components/layout/Section.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 33,
+    "language": "TypeScript"
+  },
+  "tests/architecture.test.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 33,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/Text.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 30,
+    "language": "TypeScript"
+  },
+  "src/features/preparation/usePreparationController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 30,
+    "language": "TypeScript"
+  },
+  "src/components/feedback/Toast.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/Badge.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "src/features/clinical-history/ClinicalEntryEditorView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "src/features/profile/useProfileController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "src/providers/ServicesProvider.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "src/components/feedback/ErrorState.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 28,
+    "language": "TypeScript"
+  },
+  "src/services/adapters/location.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 26,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/Heading.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 25,
+    "language": "TypeScript"
+  },
+  "src/theme/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 25,
+    "language": "TypeScript"
+  },
+  "src/components/layout/BrandMark.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 23,
+    "language": "TypeScript"
+  },
+  "src/providers/FeedbackProvider.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 23,
+    "language": "TypeScript"
+  },
+  "src/components/feedback/EmptyState.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "src/components/feedback/LoadingState.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "src/features/about/AboutView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "src/features/clinical-history/useClinicalEntryEditorController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/Card.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 21,
+    "language": "TypeScript"
+  },
+  "src/app/+not-found.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "src/features/conditions/ConditionEditorView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "src/features/medications/MedicationEditorView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "src/app/(tabs)/_layout.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 15,
+    "language": "TypeScript"
+  },
+  "src/components/forms/SearchInput.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 15,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/Icon.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 15,
+    "language": "TypeScript"
+  },
+  "eslint.config.js": {
+    "blank": 0,
+    "comment": 10,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "src/providers/AppProviders.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 13,
+    "language": "TypeScript"
+  },
+  "src/components/forms/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "src/components/layout/FormLayout.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 11,
+    "language": "TypeScript"
+  },
+  "src/config/app.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 11,
+    "language": "TypeScript"
+  },
+  "src/features/assistant/AssistantScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 11,
+    "language": "TypeScript"
+  },
+  "src/locales/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 11,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/Divider.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 10,
+    "language": "TypeScript"
+  },
+  "src/features/about/useAboutController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "src/features/profile/ProfileScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "src/components/layout/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "src/components/primitives/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "src/features/clinical-history/ClinicalHistoryView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "src/features/conditions/ConditionsView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "src/features/medications/MedicationsView.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "TypeScript"
+  },
+  "jest.config.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "JavaScript"
+  },
+  "src/app/component-gallery.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/components/feedback/index.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/about/AboutScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/clinical-history/ClinicalEntryEditorScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/clinical-history/ClinicalHistoryScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/component-gallery/ComponentGalleryScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/conditions/ConditionEditorScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/conditions/ConditionsScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/medications/MedicationEditorScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/medications/MedicationsScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/nearby/NearbyScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/onboarding/OnboardingScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/preparation/PreparationScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/features/profile/ProfileEditorScreen.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "src/components/forms/TextArea.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5,
+    "language": "TypeScript"
+  },
+  "src/features/shared/navigation.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5,
+    "language": "TypeScript"
+  },
+  "src/features/clinical-history/useClinicalHistoryController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 3,
+    "language": "TypeScript"
+  },
+  "src/features/conditions/useConditionEditorController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 3,
+    "language": "TypeScript"
+  },
+  "src/features/medications/useMedicationEditorController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 3,
+    "language": "TypeScript"
+  },
+  "src/features/medications/useMedicationsController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 3,
+    "language": "TypeScript"
+  },
+  "src/features/conditions/useConditionsController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 2,
+    "language": "TypeScript"
+  },
+  "src/features/onboarding/useOnboardingController.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 2,
+    "language": "TypeScript"
+  },
+  "tests/setup.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 2,
+    "language": "TypeScript"
+  },
+  "src/app/(tabs)/about.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/(tabs)/assistant.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/(tabs)/index.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/(tabs)/nearby.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/clinical-history/[id].tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/clinical-history/index.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/clinical-history/new.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/conditions/[id].tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/conditions/index.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/conditions/new.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/medications/[id].tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/medications/index.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/medications/new.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/onboarding.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/preparation.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "src/app/profile/edit.tsx": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  },
+  "expo-env.d.ts": {
+    "blank": 1,
+    "comment": 2,
+    "code": 0,
+    "language": "TypeScript"
+  },
+  "ios/ONVIA/ONVIA-Bridging-Header.h": {
+    "blank": 0,
+    "comment": 3,
+    "code": 0,
+    "language": "C/C++ Header"
+  }
+}

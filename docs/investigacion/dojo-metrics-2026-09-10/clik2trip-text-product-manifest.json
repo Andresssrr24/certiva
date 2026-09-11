@@ -1,0 +1,576 @@
+[
+  {
+    "path": "packages/qvac-edge/src/demo-catalog.ts",
+    "code": 1467,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Catálogo de datos de demostración, incluye pequeño envoltorio de código"
+  },
+  {
+    "path": "apps/android/src/components/CompatibilityGate.tsx",
+    "code": 556,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/components/ExperienceDetail.tsx",
+    "code": 501,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/components/SandboxSettlement.tsx",
+    "code": 476,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "services/usdt-verifier/src/index.ts",
+    "code": 318,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/components/QualityEvaluationPanel.tsx",
+    "code": 266,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Pantalla de evaluación técnica"
+  },
+  {
+    "path": "tools/build-performance-report.mjs",
+    "code": 206,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "tools/score-quality-evaluation.mjs",
+    "code": 177,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "apps/android/src/lib/demo-booking.test.ts",
+    "code": 158,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/index.ts",
+    "code": 157,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/qvac-edge/src/tourism.ts",
+    "code": 156,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/qvac-edge/src/regions.test.ts",
+    "code": 155,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/scripts/configure-native-addons.mjs",
+    "code": 146,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "packages/qvac-edge/src/regions.ts",
+    "code": 146,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/components/ExperienceCatalog.tsx",
+    "code": 142,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/qvac-edge/src/index.ts",
+    "code": 135,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/demo-booking.ts",
+    "code": 134,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/qvac-edge/src/catalog-rag.ts",
+    "code": 131,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/schemas.ts",
+    "code": 130,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/sandbox-checkout.test.ts",
+    "code": 120,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/index.test.ts",
+    "code": 119,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/components/OnboardingFooter.tsx",
+    "code": 109,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/contracts/src/index.ts",
+    "code": 108,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/policy-engine/src/index.ts",
+    "code": 107,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/experience-card.test.ts",
+    "code": 93,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "packages/policy-engine/src/index.test.ts",
+    "code": 92,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/error-messages.ts",
+    "code": 89,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/operations.ts",
+    "code": 89,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tools/build-release-metadata.mjs",
+    "code": 88,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "packages/performance-log/src/index.ts",
+    "code": 86,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "services/usdt-verifier/src/index.test.ts",
+    "code": 82,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/onboarding.test.ts",
+    "code": 74,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/sandbox-checkout.ts",
+    "code": 74,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/qvac-edge/src/tourism.test.ts",
+    "code": 66,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/components/CameraButton.tsx",
+    "code": 64,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/booking-source.ts",
+    "code": 52,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/components/ConnectivityIcon.tsx",
+    "code": 51,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/error-messages.test.ts",
+    "code": 50,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/availability-view.test.ts",
+    "code": 49,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/experience-card.ts",
+    "code": 49,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/theme/brand.ts",
+    "code": 48,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Tokens visuales preexistentes declarados"
+  },
+  {
+    "path": "apps/android/src/lib/availability-view.ts",
+    "code": 47,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/onboarding.ts",
+    "code": 47,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/components/AppHeader.tsx",
+    "code": 46,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "tools/fetch-quality-images.mjs",
+    "code": 46,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "apps/android/src/lib/use-device-region.ts",
+    "code": 44,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "packages/performance-log/src/index.test.ts",
+    "code": 43,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "packages/wdk-wallet/src/index.ts",
+    "code": 38,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/settled-ledger.test.ts",
+    "code": 36,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/catalog-format.test.ts",
+    "code": 35,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/commerce.test.ts",
+    "code": 35,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/settled-ledger.ts",
+    "code": 33,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/device-region.test.ts",
+    "code": 32,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/connectivity.test.ts",
+    "code": 30,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "eslint.config.mjs",
+    "code": 30,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "apps/android/src/components/ProgressBar.tsx",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/use-experience-catalog.ts",
+    "code": 29,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/plugins/withSovereignAndroidSigning.js",
+    "code": 27,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "apps/android/src/config/sandbox-tariff.ts",
+    "code": 26,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/use-demo-wallet.ts",
+    "code": 26,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/components/ErrorNotice.tsx",
+    "code": 24,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/network-evidence.ts",
+    "code": 23,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/use-connectivity.ts",
+    "code": 23,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/evaluation/quality-assets.ts",
+    "code": 22,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Evaluación técnica"
+  },
+  {
+    "path": "apps/android/src/lib/catalog-format.ts",
+    "code": 22,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/secure-store-key.test.ts",
+    "code": 22,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/commerce.ts",
+    "code": 21,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/network-evidence.test.ts",
+    "code": 21,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/device-region.ts",
+    "code": 19,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "wdk.config.js",
+    "code": 16,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "apps/android/src/lib/connectivity.ts",
+    "code": 15,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/App.tsx",
+    "code": 14,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/inference-phase.test.ts",
+    "code": 14,
+    "language": "TypeScript",
+    "included": false,
+    "reason": "Prueba automatizada"
+  },
+  {
+    "path": "apps/android/src/lib/use-gateway-client.ts",
+    "code": 12,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/metro.config.js",
+    "code": 11,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "packages/wdk-wallet/src/sepolia.ts",
+    "code": 11,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/inference-phase.ts",
+    "code": 10,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/babel.config.js",
+    "code": 6,
+    "language": "JavaScript",
+    "included": false,
+    "reason": "Fuera de rutas de producto: pruebas, herramientas, entrenamiento, marketing, configuración, compilados o proyectos distintos"
+  },
+  {
+    "path": "apps/android/src/config/wdk.ts",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/secure-store-key.ts",
+    "code": 6,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/lib/expo-sha256.ts",
+    "code": 4,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  },
+  {
+    "path": "apps/android/src/types/wdk-bundle.d.ts",
+    "code": 4,
+    "language": "TypeScript",
+    "included": true,
+    "reason": "Producto: lógica, interfaz, estilos e integración"
+  }
+]

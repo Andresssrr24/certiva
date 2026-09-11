@@ -1,0 +1,1603 @@
+[
+  {
+    "path": ".editorconfig",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1014ba78880c899e842b397cb89a878be4671f7d",
+    "size": 188,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/1014ba78880c899e842b397cb89a878be4671f7d"
+  },
+  {
+    "path": ".gitattributes",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3f821945005fb6cea8107f4e2d23ba31eb2c4f94",
+    "size": 13,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/3f821945005fb6cea8107f4e2d23ba31eb2c4f94"
+  },
+  {
+    "path": ".github",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0828f693e4656fc5a5aa277d0c9668d5591d7202",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/0828f693e4656fc5a5aa277d0c9668d5591d7202"
+  },
+  {
+    "path": ".github/workflows",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1f1aa5f11747fb9b05ef5c9cb4534d10271e030b",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/1f1aa5f11747fb9b05ef5c9cb4534d10271e030b"
+  },
+  {
+    "path": ".github/workflows/android-preview.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e734416ea97437254ad970d8df9b7f1323f66f3",
+    "size": 1593,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/7e734416ea97437254ad970d8df9b7f1323f66f3"
+  },
+  {
+    "path": ".github/workflows/ci.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "707a036a89a7cf215f0d47b5ba15ccbf7b9fe690",
+    "size": 637,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/707a036a89a7cf215f0d47b5ba15ccbf7b9fe690"
+  },
+  {
+    "path": ".github/workflows/release.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "74d9108f6be8d98c65ac015c1fa210b4d5800773",
+    "size": 5667,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/74d9108f6be8d98c65ac015c1fa210b4d5800773"
+  },
+  {
+    "path": ".gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8ceae2a3bafefa2d0ae384c23446930449b34b77",
+    "size": 276,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/8ceae2a3bafefa2d0ae384c23446930449b34b77"
+  },
+  {
+    "path": ".nvmrc",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a45fd52cc5891570d6299fab38643103c3955474",
+    "size": 3,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/a45fd52cc5891570d6299fab38643103c3955474"
+  },
+  {
+    "path": "AGENTS.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e6c91c149c5a9386791ac4521b79f9bf67f6947e",
+    "size": 1770,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/e6c91c149c5a9386791ac4521b79f9bf67f6947e"
+  },
+  {
+    "path": "JUDGES.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1a4ce46286767be557251296546f6e1159a8198c",
+    "size": 12850,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/1a4ce46286767be557251296546f6e1159a8198c"
+  },
+  {
+    "path": "LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60352ac69085f0de5614ea24a9b6c2f473c26cbc",
+    "size": 1066,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/60352ac69085f0de5614ea24a9b6c2f473c26cbc"
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dedffb8397c9a54cb042a5134902b350bcec2f96",
+    "size": 13499,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/dedffb8397c9a54cb042a5134902b350bcec2f96"
+  },
+  {
+    "path": "apps",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0023c266e7e69adecb4fc308dc9c9b300c305b65",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/0023c266e7e69adecb4fc308dc9c9b300c305b65"
+  },
+  {
+    "path": "apps/android",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "69c5a3c9b9c560bafedc9ef344b0706400a7fca8",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/69c5a3c9b9c560bafedc9ef344b0706400a7fca8"
+  },
+  {
+    "path": "apps/android/.env.example",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0716a5fe9f54dfc76d0aef377823baafeac41c8a",
+    "size": 641,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0716a5fe9f54dfc76d0aef377823baafeac41c8a"
+  },
+  {
+    "path": "apps/android/App.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0463b67207ed04f9307e994c11e4146657286bda",
+    "size": 542,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0463b67207ed04f9307e994c11e4146657286bda"
+  },
+  {
+    "path": "apps/android/app.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8058df4c8fff1ae8fe3e6b33704ec45616fd7941",
+    "size": 1504,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/8058df4c8fff1ae8fe3e6b33704ec45616fd7941"
+  },
+  {
+    "path": "apps/android/assets",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bbb0363b36cf88c813511db108b77e8b80497ad4",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/bbb0363b36cf88c813511db108b77e8b80497ad4"
+  },
+  {
+    "path": "apps/android/assets/adaptive-icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6fb10745aeb2e40f735e30c9e7ad8f84bf2a1f0",
+    "size": 114680,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c6fb10745aeb2e40f735e30c9e7ad8f84bf2a1f0"
+  },
+  {
+    "path": "apps/android/assets/clik2trip-mark.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5bf90ed14eb1778ff7addf146f03a2b0eda48707",
+    "size": 106384,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/5bf90ed14eb1778ff7addf146f03a2b0eda48707"
+  },
+  {
+    "path": "apps/android/assets/icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1087594609c0f3bc0940266b64306bc9bad0e6b8",
+    "size": 214803,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/1087594609c0f3bc0940266b64306bc9bad0e6b8"
+  },
+  {
+    "path": "apps/android/babel.config.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e135c946f71030808c375cdf7c6a42519de8ffae",
+    "size": 119,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/e135c946f71030808c375cdf7c6a42519de8ffae"
+  },
+  {
+    "path": "apps/android/metro.config.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "66b43d4f95d392d6b4815cb89ca3c1276851a1fc",
+    "size": 428,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/66b43d4f95d392d6b4815cb89ca3c1276851a1fc"
+  },
+  {
+    "path": "apps/android/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e675b9c97fc3a1f892c8293f666d475ff06a8ff8",
+    "size": 2104,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/e675b9c97fc3a1f892c8293f666d475ff06a8ff8"
+  },
+  {
+    "path": "apps/android/plugins",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c9f0a60b27ca0227089ad1693870eb8dec419a9d",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/c9f0a60b27ca0227089ad1693870eb8dec419a9d"
+  },
+  {
+    "path": "apps/android/plugins/withSovereignAndroidSigning.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed9f7f1455495a104f726a5508f4591f79a58a48",
+    "size": 1342,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ed9f7f1455495a104f726a5508f4591f79a58a48"
+  },
+  {
+    "path": "apps/android/qvac.config.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d957896c41b4c85b631315567e553baa59cd3b19",
+    "size": 165,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/d957896c41b4c85b631315567e553baa59cd3b19"
+  },
+  {
+    "path": "apps/android/scripts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c4399870697143049bd9eff8fdfee541f479188e",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/c4399870697143049bd9eff8fdfee541f479188e"
+  },
+  {
+    "path": "apps/android/scripts/configure-native-addons.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "efb5e4df14b86f42c7ce15986064c38261f144c1",
+    "size": 5854,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/efb5e4df14b86f42c7ce15986064c38261f144c1"
+  },
+  {
+    "path": "apps/android/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b594cea00afbcc080c4acbedc71dcc6da6d98d2a",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/b594cea00afbcc080c4acbedc71dcc6da6d98d2a"
+  },
+  {
+    "path": "apps/android/src/components",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "982a29fe5e148be4c12a3d14abf7ee6412de3c1a",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/982a29fe5e148be4c12a3d14abf7ee6412de3c1a"
+  },
+  {
+    "path": "apps/android/src/components/AppHeader.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5ac5f33d3ce3bf15954c677da08231d71ffc1b48",
+    "size": 1989,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/5ac5f33d3ce3bf15954c677da08231d71ffc1b48"
+  },
+  {
+    "path": "apps/android/src/components/CameraButton.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bab8131a4129c8494f898b9d64370c50eb0e100d",
+    "size": 1785,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/bab8131a4129c8494f898b9d64370c50eb0e100d"
+  },
+  {
+    "path": "apps/android/src/components/CompatibilityGate.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5799b841eb27098fe656a995958413199c40bf65",
+    "size": 22324,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/5799b841eb27098fe656a995958413199c40bf65"
+  },
+  {
+    "path": "apps/android/src/components/ConnectivityIcon.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d7d2ff9655c147c23e8fa4ac0df47f5f5e0c6b75",
+    "size": 1814,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/d7d2ff9655c147c23e8fa4ac0df47f5f5e0c6b75"
+  },
+  {
+    "path": "apps/android/src/components/ErrorNotice.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d4737d1858c634366d81ceb03197662c9fcac261",
+    "size": 1059,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/d4737d1858c634366d81ceb03197662c9fcac261"
+  },
+  {
+    "path": "apps/android/src/components/ExperienceCatalog.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4bc2e32a131668d92fe7a3e1b32dada6cba79fab",
+    "size": 5183,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/4bc2e32a131668d92fe7a3e1b32dada6cba79fab"
+  },
+  {
+    "path": "apps/android/src/components/ExperienceDetail.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "74210c3ef49634428f641cfa8feee7d7a138dff9",
+    "size": 18985,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/74210c3ef49634428f641cfa8feee7d7a138dff9"
+  },
+  {
+    "path": "apps/android/src/components/OnboardingFooter.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a3a0fd6b818f64626d9ee7558cde04f6070894fa",
+    "size": 3784,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/a3a0fd6b818f64626d9ee7558cde04f6070894fa"
+  },
+  {
+    "path": "apps/android/src/components/ProgressBar.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "95fb28fbd322015cafa6aab262746135b815388c",
+    "size": 964,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/95fb28fbd322015cafa6aab262746135b815388c"
+  },
+  {
+    "path": "apps/android/src/components/QualityEvaluationPanel.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6659b4acd19cb59e293cbbf649731f3e59385082",
+    "size": 10916,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/6659b4acd19cb59e293cbbf649731f3e59385082"
+  },
+  {
+    "path": "apps/android/src/components/SandboxSettlement.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e9b848aaf1e32bcfd682b6fe05a676945e6d3c4f",
+    "size": 19472,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/e9b848aaf1e32bcfd682b6fe05a676945e6d3c4f"
+  },
+  {
+    "path": "apps/android/src/config",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "33417e1a25de67fc53af93be0a6b19573594b8c3",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/33417e1a25de67fc53af93be0a6b19573594b8c3"
+  },
+  {
+    "path": "apps/android/src/config/sandbox-tariff.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "51d542c29bba26b0980101f9464c2720cc953072",
+    "size": 2158,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/51d542c29bba26b0980101f9464c2720cc953072"
+  },
+  {
+    "path": "apps/android/src/config/wdk.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "baa07e285088863b3a3237358048016dd23492e1",
+    "size": 297,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/baa07e285088863b3a3237358048016dd23492e1"
+  },
+  {
+    "path": "apps/android/src/evaluation",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "77ab60f0dfd610e8ed233dee7464c13b6ec02993",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/77ab60f0dfd610e8ed233dee7464c13b6ec02993"
+  },
+  {
+    "path": "apps/android/src/evaluation/quality-assets.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "80731435b7c0782f210d74ac89bc4988c1f62a91",
+    "size": 1733,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/80731435b7c0782f210d74ac89bc4988c1f62a91"
+  },
+  {
+    "path": "apps/android/src/lib",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9d1b6686e7b3f5a3c8267926861ef980774494fa",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/9d1b6686e7b3f5a3c8267926861ef980774494fa"
+  },
+  {
+    "path": "apps/android/src/lib/availability-view.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "728cde7170abca2f22465893b6bc50d244b0e14f",
+    "size": 2059,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/728cde7170abca2f22465893b6bc50d244b0e14f"
+  },
+  {
+    "path": "apps/android/src/lib/availability-view.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2fc12b98545771d586a182f2bfb6d58aa35214a6",
+    "size": 1718,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/2fc12b98545771d586a182f2bfb6d58aa35214a6"
+  },
+  {
+    "path": "apps/android/src/lib/booking-source.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c3a51a23c11999d7c120da0d71216bd440bb03b4",
+    "size": 2388,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c3a51a23c11999d7c120da0d71216bd440bb03b4"
+  },
+  {
+    "path": "apps/android/src/lib/catalog-format.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0fd832afe1bfb4632bc37909f91b01ad89f7d3c0",
+    "size": 1494,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0fd832afe1bfb4632bc37909f91b01ad89f7d3c0"
+  },
+  {
+    "path": "apps/android/src/lib/catalog-format.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8f4759818557abd1cd7db467d05aa79bd1c51fa8",
+    "size": 1043,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/8f4759818557abd1cd7db467d05aa79bd1c51fa8"
+  },
+  {
+    "path": "apps/android/src/lib/commerce.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7ea1f6208773c977fda9a226b9559211003d528b",
+    "size": 1109,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/7ea1f6208773c977fda9a226b9559211003d528b"
+  },
+  {
+    "path": "apps/android/src/lib/commerce.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2bf0f45a18aba8ec218e85b8e3197f5c28763bb8",
+    "size": 931,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/2bf0f45a18aba8ec218e85b8e3197f5c28763bb8"
+  },
+  {
+    "path": "apps/android/src/lib/connectivity.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bf784933b3f2b565bade668e1ac3e1a823e980dd",
+    "size": 1731,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/bf784933b3f2b565bade668e1ac3e1a823e980dd"
+  },
+  {
+    "path": "apps/android/src/lib/connectivity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0c446b808959c5b9067a631f4313dfb1d7fb8342",
+    "size": 1107,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0c446b808959c5b9067a631f4313dfb1d7fb8342"
+  },
+  {
+    "path": "apps/android/src/lib/demo-booking.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c228c971ade43f536da25cde7ae5eeee4c30a432",
+    "size": 6303,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c228c971ade43f536da25cde7ae5eeee4c30a432"
+  },
+  {
+    "path": "apps/android/src/lib/demo-booking.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "41364426e30f4cbb6d964cf0bde92e0769775d4f",
+    "size": 5586,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/41364426e30f4cbb6d964cf0bde92e0769775d4f"
+  },
+  {
+    "path": "apps/android/src/lib/device-region.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "56c6f59020d00681479d9918cc1c934542300648",
+    "size": 1375,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/56c6f59020d00681479d9918cc1c934542300648"
+  },
+  {
+    "path": "apps/android/src/lib/device-region.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "275c80bea8e2d562f6c26b2bde5efe3fb692b01e",
+    "size": 1380,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/275c80bea8e2d562f6c26b2bde5efe3fb692b01e"
+  },
+  {
+    "path": "apps/android/src/lib/error-messages.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "34b69f72a1173393af029bc21537914783d7ee54",
+    "size": 2436,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/34b69f72a1173393af029bc21537914783d7ee54"
+  },
+  {
+    "path": "apps/android/src/lib/error-messages.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "28faadc8dbb39ed204dc032150b088a3b2431699",
+    "size": 6116,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/28faadc8dbb39ed204dc032150b088a3b2431699"
+  },
+  {
+    "path": "apps/android/src/lib/experience-card.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a527d299bece1ff2b57e321109ad9f8a7e568fc6",
+    "size": 3689,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/a527d299bece1ff2b57e321109ad9f8a7e568fc6"
+  },
+  {
+    "path": "apps/android/src/lib/experience-card.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b56d683d1fdcc793cabbbd48fb0f38b866c5f8de",
+    "size": 2686,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/b56d683d1fdcc793cabbbd48fb0f38b866c5f8de"
+  },
+  {
+    "path": "apps/android/src/lib/expo-sha256.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c582784beacee7c78b515069a20309eb551a6fa4",
+    "size": 228,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c582784beacee7c78b515069a20309eb551a6fa4"
+  },
+  {
+    "path": "apps/android/src/lib/inference-phase.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f10fe25253ca277751229fb2fa04ccb86b20d4b",
+    "size": 645,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0f10fe25253ca277751229fb2fa04ccb86b20d4b"
+  },
+  {
+    "path": "apps/android/src/lib/inference-phase.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bfe32fa16c6ed7a5b8de2c1b23d46ad47368b0cb",
+    "size": 729,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/bfe32fa16c6ed7a5b8de2c1b23d46ad47368b0cb"
+  },
+  {
+    "path": "apps/android/src/lib/network-evidence.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "31bfd3c2959712eb3efbb6788e30f1d7316b7e74",
+    "size": 931,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/31bfd3c2959712eb3efbb6788e30f1d7316b7e74"
+  },
+  {
+    "path": "apps/android/src/lib/network-evidence.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0b4b62223e01275bee59d53894449a036e5255b7",
+    "size": 598,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0b4b62223e01275bee59d53894449a036e5255b7"
+  },
+  {
+    "path": "apps/android/src/lib/onboarding.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d800181d595460f77708e1e29ef69c08f5bbbbaf",
+    "size": 3137,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/d800181d595460f77708e1e29ef69c08f5bbbbaf"
+  },
+  {
+    "path": "apps/android/src/lib/onboarding.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f535d72a65b427f8a72b27b4ba71378404bde839",
+    "size": 2625,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/f535d72a65b427f8a72b27b4ba71378404bde839"
+  },
+  {
+    "path": "apps/android/src/lib/sandbox-checkout.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fee1e548b3f9b2cee5db579e714719cd402062fa",
+    "size": 4945,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/fee1e548b3f9b2cee5db579e714719cd402062fa"
+  },
+  {
+    "path": "apps/android/src/lib/sandbox-checkout.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1eb3506e761b260351999b6181b3d9869b53ef23",
+    "size": 3225,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/1eb3506e761b260351999b6181b3d9869b53ef23"
+  },
+  {
+    "path": "apps/android/src/lib/secure-store-key.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "35050fa4e60e8f3981c6e626c63432c1f823d857",
+    "size": 999,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/35050fa4e60e8f3981c6e626c63432c1f823d857"
+  },
+  {
+    "path": "apps/android/src/lib/secure-store-key.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4f22cad1743a0fe930880323375a0b209dfff04a",
+    "size": 627,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/4f22cad1743a0fe930880323375a0b209dfff04a"
+  },
+  {
+    "path": "apps/android/src/lib/settled-ledger.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6fbdd5f45341a7e077804ad324d7cf02ead19ac4",
+    "size": 1661,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/6fbdd5f45341a7e077804ad324d7cf02ead19ac4"
+  },
+  {
+    "path": "apps/android/src/lib/settled-ledger.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "06a1bf8650b1976a591b87f93b6ba56e2306fa4c",
+    "size": 1281,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/06a1bf8650b1976a591b87f93b6ba56e2306fa4c"
+  },
+  {
+    "path": "apps/android/src/lib/use-connectivity.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "47e50381dbe07a7cd57093bd04f23b05c6479fb0",
+    "size": 1010,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/47e50381dbe07a7cd57093bd04f23b05c6479fb0"
+  },
+  {
+    "path": "apps/android/src/lib/use-demo-wallet.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d2dc897c5d4b425c935c68f1abd040f170df729a",
+    "size": 1367,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/d2dc897c5d4b425c935c68f1abd040f170df729a"
+  },
+  {
+    "path": "apps/android/src/lib/use-device-region.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1cbd832340671d6a9a2ea7bb05ffdec3f4242b28",
+    "size": 2336,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/1cbd832340671d6a9a2ea7bb05ffdec3f4242b28"
+  },
+  {
+    "path": "apps/android/src/lib/use-experience-catalog.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "975f6d94ec4eb8ddce3b1f7d68958b4748714968",
+    "size": 1293,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/975f6d94ec4eb8ddce3b1f7d68958b4748714968"
+  },
+  {
+    "path": "apps/android/src/lib/use-gateway-client.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b8e2b6a437f30eabf3109c4055d7f4acd832a687",
+    "size": 472,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/b8e2b6a437f30eabf3109c4055d7f4acd832a687"
+  },
+  {
+    "path": "apps/android/src/theme",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "25c36e6fac5d171b0e475b7f9d5dd0eec0232e8c",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/25c36e6fac5d171b0e475b7f9d5dd0eec0232e8c"
+  },
+  {
+    "path": "apps/android/src/theme/brand.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce40612ed78931f2f4e86891eddfcfb3dfc99559",
+    "size": 1402,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ce40612ed78931f2f4e86891eddfcfb3dfc99559"
+  },
+  {
+    "path": "apps/android/src/types",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bd67ad33cdeb56cc6b326d1b78f53504c0349502",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/bd67ad33cdeb56cc6b326d1b78f53504c0349502"
+  },
+  {
+    "path": "apps/android/src/types/wdk-bundle.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "36f599d8b0460bf25b98804efcff3c1b43b5e768",
+    "size": 94,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/36f599d8b0460bf25b98804efcff3c1b43b5e768"
+  },
+  {
+    "path": "apps/android/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad39ccdb556b73a3096842fc714ab0fe827b1eef",
+    "size": 268,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ad39ccdb556b73a3096842fc714ab0fe827b1eef"
+  },
+  {
+    "path": "docs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ee5ae19fb076317ca568c86b267e118f7f573d79",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/ee5ae19fb076317ca568c86b267e118f7f573d79"
+  },
+  {
+    "path": "docs/ADR-001-compatibility-baseline.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6938e585b03ad405f726fe29c4ee78d2ae0a703",
+    "size": 4810,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c6938e585b03ad405f726fe29c4ee78d2ae0a703"
+  },
+  {
+    "path": "docs/assets",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "eaea444c6f6c92faaa49dae3b285ca8464438e27",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/eaea444c6f6c92faaa49dae3b285ca8464438e27"
+  },
+  {
+    "path": "docs/assets/clik2trip-sovereign-demo.mp4",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c1cfa096b95770a4f4d0a5d62d73448866580c0b",
+    "size": 59596378,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c1cfa096b95770a4f4d0a5d62d73448866580c0b"
+  },
+  {
+    "path": "docs/compatibility-gate.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2740a6a24c58ca1d0245fa98c2cdfb8fdea7e94c",
+    "size": 3148,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/2740a6a24c58ca1d0245fa98c2cdfb8fdea7e94c"
+  },
+  {
+    "path": "docs/demo-catalog.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "375f99fe1b0ed46d63ee05761bff9843a9319028",
+    "size": 8739,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/375f99fe1b0ed46d63ee05761bff9843a9319028"
+  },
+  {
+    "path": "docs/demo-video.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aa444c8cbcbebc24a44020401918bc245ace245d",
+    "size": 2293,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/aa444c8cbcbebc24a44020401918bc245ace245d"
+  },
+  {
+    "path": "docs/phase-2-evaluation.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c26da71b77671a4a8953e6c5bbb3ab0df9f07283",
+    "size": 3084,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c26da71b77671a4a8953e6c5bbb3ab0df9f07283"
+  },
+  {
+    "path": "docs/phase-3-evaluation.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c476f3d98d9170c0535e8cd3f81b319611a75b39",
+    "size": 2787,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c476f3d98d9170c0535e8cd3f81b319611a75b39"
+  },
+  {
+    "path": "docs/phase-4-evaluation.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ff40505cfa442614632673da8e16d9b3fb20ceae",
+    "size": 14901,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ff40505cfa442614632673da8e16d9b3fb20ceae"
+  },
+  {
+    "path": "docs/phase-5-evaluation.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cb56c02c70f7748272a301d823e5133be44e7cec",
+    "size": 4076,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/cb56c02c70f7748272a301d823e5133be44e7cec"
+  },
+  {
+    "path": "docs/preexisting-work.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2db25b12d5954b0312f777f34c01493e2fcd6f9e",
+    "size": 2277,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/2db25b12d5954b0312f777f34c01493e2fcd6f9e"
+  },
+  {
+    "path": "docs/security.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "490184ca252fddda479886642978637cfdfde94a",
+    "size": 1831,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/490184ca252fddda479886642978637cfdfde94a"
+  },
+  {
+    "path": "eslint.config.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3c867ae9c1f1bdb8f3867a44f38bd2cc00357eb",
+    "size": 956,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/f3c867ae9c1f1bdb8f3867a44f38bd2cc00357eb"
+  },
+  {
+    "path": "evaluation",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c23eb6b9c1e488cb98e8f416962143c5ca73f8eb",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/c23eb6b9c1e488cb98e8f416962143c5ca73f8eb"
+  },
+  {
+    "path": "evaluation/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b9d441890876f03a4f1a9add73b4e8c2933b40d5",
+    "size": 2181,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/b9d441890876f03a4f1a9add73b4e8c2933b40d5"
+  },
+  {
+    "path": "evaluation/device-runs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "98b2f5fd79c35a4e74cfdca608ae7301621c5b94",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/98b2f5fd79c35a4e74cfdca608ae7301621c5b94"
+  },
+  {
+    "path": "evaluation/device-runs/compatibility-gate-offline-2026-09-09.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dd937b59b2a585f4b2cb68fba0f0b24ee0844031",
+    "size": 623,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/dd937b59b2a585f4b2cb68fba0f0b24ee0844031"
+  },
+  {
+    "path": "evaluation/device-runs/compatibility-gate-online-2026-09-09.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f50c63e83b79ca23fab797453056c62301a6575",
+    "size": 624,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/9f50c63e83b79ca23fab797453056c62301a6575"
+  },
+  {
+    "path": "evaluation/device-runs/phase-2-offline-recommendation-2026-09-09.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1c02b14d43933f6bb73ee691771a5349d94f7655",
+    "size": 622,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/1c02b14d43933f6bb73ee691771a5349d94f7655"
+  },
+  {
+    "path": "evaluation/device-runs/phase-3-connected-hold-2026-09-09.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0efdbc766b0c91baa3e75add9c342e8d3a0b004c",
+    "size": 819,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0efdbc766b0c91baa3e75add9c342e8d3a0b004c"
+  },
+  {
+    "path": "evaluation/device-runs/phase-4-authorized-settlement-2026-09-10.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d7fc322037db4014c29aec8cc1e17f51f096cf9b",
+    "size": 1882,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/d7fc322037db4014c29aec8cc1e17f51f096cf9b"
+  },
+  {
+    "path": "evaluation/performance-runs.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "278b37596315365ef55b5dde70e6a57e62742302",
+    "size": 501,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/278b37596315365ef55b5dde70e6a57e62742302"
+  },
+  {
+    "path": "evaluation/quality",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d0a98b52dbe4555586274e89cc5d1588bb096e1a",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/d0a98b52dbe4555586274e89cc5d1588bb096e1a"
+  },
+  {
+    "path": "evaluation/quality/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b6a68558df47e34417317d989f9c662df171b9a4",
+    "size": 2852,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/b6a68558df47e34417317d989f9c662df171b9a4"
+  },
+  {
+    "path": "evaluation/quality/cases.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6480dca8fff344c7cf0c888182b49696a3edf1c",
+    "size": 24280,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c6480dca8fff344c7cf0c888182b49696a3edf1c"
+  },
+  {
+    "path": "evaluation/quality/images",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6b5c48af64c989e908550759d35a0978e2719848",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/6b5c48af64c989e908550759d35a0978e2719848"
+  },
+  {
+    "path": "evaluation/quality/images/quality-001.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "340e5b59a5761e07959bc3bed6b3bf8580ba0cc2",
+    "size": 569217,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/340e5b59a5761e07959bc3bed6b3bf8580ba0cc2"
+  },
+  {
+    "path": "evaluation/quality/images/quality-002.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "075bbb0566d53d38ca6981543d022e661b4e2bc1",
+    "size": 459248,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/075bbb0566d53d38ca6981543d022e661b4e2bc1"
+  },
+  {
+    "path": "evaluation/quality/images/quality-003.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "67b9c5458751995f9467d4d6ec8846d6180695c6",
+    "size": 394496,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/67b9c5458751995f9467d4d6ec8846d6180695c6"
+  },
+  {
+    "path": "evaluation/quality/images/quality-004.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3f0d05404cbfbc499daf8c081eaf843ca02dca8",
+    "size": 471215,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/f3f0d05404cbfbc499daf8c081eaf843ca02dca8"
+  },
+  {
+    "path": "evaluation/quality/images/quality-005.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f259cd62935db7bb16b605a833cd6d5f2ddcfa68",
+    "size": 399360,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/f259cd62935db7bb16b605a833cd6d5f2ddcfa68"
+  },
+  {
+    "path": "evaluation/quality/images/quality-006.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2bce1a56ddf84eaa304d92682a80d7032dd19fa6",
+    "size": 636430,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/2bce1a56ddf84eaa304d92682a80d7032dd19fa6"
+  },
+  {
+    "path": "evaluation/quality/images/quality-007.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3ce7dcf0f29ba1b3fff35e85f32773b5ca0c2af",
+    "size": 304738,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/f3ce7dcf0f29ba1b3fff35e85f32773b5ca0c2af"
+  },
+  {
+    "path": "evaluation/quality/images/quality-008.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "287e09603bb772e68fcddd7bf6a0f47c459266f6",
+    "size": 323336,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/287e09603bb772e68fcddd7bf6a0f47c459266f6"
+  },
+  {
+    "path": "evaluation/quality/images/quality-009.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "17695c291cff7f8313f6b289294850c3fcd3874f",
+    "size": 66749,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/17695c291cff7f8313f6b289294850c3fcd3874f"
+  },
+  {
+    "path": "evaluation/quality/images/quality-010.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fe369d54a9968d8dd4ca4a22402c2ea0759d95ed",
+    "size": 533125,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/fe369d54a9968d8dd4ca4a22402c2ea0759d95ed"
+  },
+  {
+    "path": "evaluation/quality/images/quality-011.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "48a07e9edb4fb0a3c8167c7cde7e6dcbb6457a83",
+    "size": 322720,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/48a07e9edb4fb0a3c8167c7cde7e6dcbb6457a83"
+  },
+  {
+    "path": "evaluation/quality/images/quality-012.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "43933f6a5fc8b06144c798252581ea0399e43466",
+    "size": 257586,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/43933f6a5fc8b06144c798252581ea0399e43466"
+  },
+  {
+    "path": "evaluation/quality/images/quality-013.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2729baa64b272b91f6fc62829deaa12a33bf1023",
+    "size": 179891,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/2729baa64b272b91f6fc62829deaa12a33bf1023"
+  },
+  {
+    "path": "evaluation/quality/images/quality-014.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1cc9ab335b1c61f83c84df922b484e3cd8dfa260",
+    "size": 377648,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/1cc9ab335b1c61f83c84df922b484e3cd8dfa260"
+  },
+  {
+    "path": "evaluation/quality/images/quality-015.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "87dd7f405ce4a292c41465e2d425aa6853a7eafc",
+    "size": 388069,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/87dd7f405ce4a292c41465e2d425aa6853a7eafc"
+  },
+  {
+    "path": "evaluation/quality/images/quality-016.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a3b975d107b378b363d3c178dbd1f9a33bb62a57",
+    "size": 567784,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/a3b975d107b378b363d3c178dbd1f9a33bb62a57"
+  },
+  {
+    "path": "evaluation/quality/images/quality-017.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0bebb1a3f39032aa39376ea1e252d040bdda5689",
+    "size": 526712,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0bebb1a3f39032aa39376ea1e252d040bdda5689"
+  },
+  {
+    "path": "evaluation/quality/images/quality-018.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "73876e8aa233541352482cc1090a32fd34dbbe9d",
+    "size": 856860,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/73876e8aa233541352482cc1090a32fd34dbbe9d"
+  },
+  {
+    "path": "evaluation/quality/images/quality-019.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4ccdec42d325013c1818b1da0e88cb701b806804",
+    "size": 109834,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/4ccdec42d325013c1818b1da0e88cb701b806804"
+  },
+  {
+    "path": "evaluation/quality/images/quality-020.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "da2931358c392363ddec8b4adba9f74d6bc6683e",
+    "size": 123135,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/da2931358c392363ddec8b4adba9f74d6bc6683e"
+  },
+  {
+    "path": "evaluation/quality/results.example.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "039c03bccf1a7cd54b72bfbde5800767bd7da07c",
+    "size": 969,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/039c03bccf1a7cd54b72bfbde5800767bd7da07c"
+  },
+  {
+    "path": "evaluation/quality/results.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b0a393115fa3aa235e5d75c64b84a7ee667096b5",
+    "size": 19580,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/b0a393115fa3aa235e5d75c64b84a7ee667096b5"
+  },
+  {
+    "path": "evaluation/quality/sources.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "de96823ed266ba71a79bec5ca4e96aff9ac643e2",
+    "size": 17561,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/de96823ed266ba71a79bec5ca4e96aff9ac643e2"
+  },
+  {
+    "path": "package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "51d9017a7cfec68ad4afe4c334cc2bf996fc13a2",
+    "size": 1228,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/51d9017a7cfec68ad4afe4c334cc2bf996fc13a2"
+  },
+  {
+    "path": "packages",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8f6698b1e9204bde01b2949e929d89ae68268508",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/8f6698b1e9204bde01b2949e929d89ae68268508"
+  },
+  {
+    "path": "packages/cliktotrip-client",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "395822b4924aa3d4ec593ef614e760901892b7ec",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/395822b4924aa3d4ec593ef614e760901892b7ec"
+  },
+  {
+    "path": "packages/cliktotrip-client/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c5c7855b575025a1342e804a91faca98bb0a7fac",
+    "size": 287,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c5c7855b575025a1342e804a91faca98bb0a7fac"
+  },
+  {
+    "path": "packages/cliktotrip-client/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0f53d91aa2e5fe4884396794d6c002b01e254ef1",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/0f53d91aa2e5fe4884396794d6c002b01e254ef1"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "67dc9c902f4bc65cc17c2927882dc1fd95af5729",
+    "size": 4351,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/67dc9c902f4bc65cc17c2927882dc1fd95af5729"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ee23241d225521eedd86c169f0a15c41b00ee1f9",
+    "size": 5236,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ee23241d225521eedd86c169f0a15c41b00ee1f9"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/operations.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "923d71f1239474c6a79e6ff04507fd45c6c63e3d",
+    "size": 1992,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/923d71f1239474c6a79e6ff04507fd45c6c63e3d"
+  },
+  {
+    "path": "packages/cliktotrip-client/src/schemas.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a943c2e69b4258f0d2a36e2133b187d13ec77706",
+    "size": 4903,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/a943c2e69b4258f0d2a36e2133b187d13ec77706"
+  },
+  {
+    "path": "packages/cliktotrip-client/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2",
+    "size": 121,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2"
+  },
+  {
+    "path": "packages/contracts",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0f22813a3591321f034f01647d88f3092782ba82",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/0f22813a3591321f034f01647d88f3092782ba82"
+  },
+  {
+    "path": "packages/contracts/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81aee7a2840869dcac6106d94225ead05d7b7f4e",
+    "size": 279,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/81aee7a2840869dcac6106d94225ead05d7b7f4e"
+  },
+  {
+    "path": "packages/contracts/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7379c39b1913b2fad015352dff6d71085eb130a0",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/7379c39b1913b2fad015352dff6d71085eb130a0"
+  },
+  {
+    "path": "packages/contracts/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "661ea711dc897f14c457f0d7e87122d0f46cd71b",
+    "size": 5327,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/661ea711dc897f14c457f0d7e87122d0f46cd71b"
+  },
+  {
+    "path": "packages/contracts/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2",
+    "size": 121,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2"
+  },
+  {
+    "path": "packages/performance-log",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c93f17d8a7f96f299dc717e0f882a56f03aea2ef",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/c93f17d8a7f96f299dc717e0f882a56f03aea2ef"
+  },
+  {
+    "path": "packages/performance-log/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f1d84676e98f05d499bf84c13d8e92cbd44ade0c",
+    "size": 308,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/f1d84676e98f05d499bf84c13d8e92cbd44ade0c"
+  },
+  {
+    "path": "packages/performance-log/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4e05624b4acb3a36f7bb99b0636bbf033ca8c7e8",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/4e05624b4acb3a36f7bb99b0636bbf033ca8c7e8"
+  },
+  {
+    "path": "packages/performance-log/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "660ca8b127f270320e99ba0fe7dcf4e2d53dcd98",
+    "size": 1511,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/660ca8b127f270320e99ba0fe7dcf4e2d53dcd98"
+  },
+  {
+    "path": "packages/performance-log/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4cc5e1ae9fb5dfb5dc7c1c966a646ef5c17ff8e9",
+    "size": 2634,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/4cc5e1ae9fb5dfb5dc7c1c966a646ef5c17ff8e9"
+  },
+  {
+    "path": "packages/performance-log/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2",
+    "size": 121,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2"
+  },
+  {
+    "path": "packages/policy-engine",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "259b41b6a74989d54df9e8fb8d107f7db7aa5fbc",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/259b41b6a74989d54df9e8fb8d107f7db7aa5fbc"
+  },
+  {
+    "path": "packages/policy-engine/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f102e6c387b2f4c66d1baf1d685263effb766566",
+    "size": 306,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/f102e6c387b2f4c66d1baf1d685263effb766566"
+  },
+  {
+    "path": "packages/policy-engine/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b0454dec0c868c612fb5475a2258d1c24baf9abd",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/b0454dec0c868c612fb5475a2258d1c24baf9abd"
+  },
+  {
+    "path": "packages/policy-engine/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9dd7238827fb743a25e9fea1be604b8d08ee5f5a",
+    "size": 3355,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/9dd7238827fb743a25e9fea1be604b8d08ee5f5a"
+  },
+  {
+    "path": "packages/policy-engine/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce5437f638487d721d4ea9c186b688f5df1bb2aa",
+    "size": 4055,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ce5437f638487d721d4ea9c186b688f5df1bb2aa"
+  },
+  {
+    "path": "packages/policy-engine/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2",
+    "size": 121,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2"
+  },
+  {
+    "path": "packages/qvac-edge",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "75e13222cccbab9612a76a2c80b52946e0d12193",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/75e13222cccbab9612a76a2c80b52946e0d12193"
+  },
+  {
+    "path": "packages/qvac-edge/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "22bcef16670b52b9ca07dc60da5f9e893aec9990",
+    "size": 382,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/22bcef16670b52b9ca07dc60da5f9e893aec9990"
+  },
+  {
+    "path": "packages/qvac-edge/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "03d6479a24d4abcaf794345908902dc1c5df5d4b",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/03d6479a24d4abcaf794345908902dc1c5df5d4b"
+  },
+  {
+    "path": "packages/qvac-edge/src/catalog-rag.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5a6f28e746130cc3e0e172040ccbcf9d6b2719c0",
+    "size": 5170,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/5a6f28e746130cc3e0e172040ccbcf9d6b2719c0"
+  },
+  {
+    "path": "packages/qvac-edge/src/demo-catalog.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "66c14c312b793750439e9571b1288aeac172fd0c",
+    "size": 40957,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/66c14c312b793750439e9571b1288aeac172fd0c"
+  },
+  {
+    "path": "packages/qvac-edge/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a44744ad895f1a8be4da72f5b71be40f6c602594",
+    "size": 3996,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/a44744ad895f1a8be4da72f5b71be40f6c602594"
+  },
+  {
+    "path": "packages/qvac-edge/src/regions.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c3e64e0f0162ae83d43c73e4ef4501310ac4ff56",
+    "size": 6873,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c3e64e0f0162ae83d43c73e4ef4501310ac4ff56"
+  },
+  {
+    "path": "packages/qvac-edge/src/regions.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4cddbd80decb9f461bf382bae21df7a4484e54ab",
+    "size": 5690,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/4cddbd80decb9f461bf382bae21df7a4484e54ab"
+  },
+  {
+    "path": "packages/qvac-edge/src/tourism.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dccb2d53c887a47bb992a5cb9253cc5bdbb732f0",
+    "size": 2518,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/dccb2d53c887a47bb992a5cb9253cc5bdbb732f0"
+  },
+  {
+    "path": "packages/qvac-edge/src/tourism.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac343972f71fa106b368d086301f9af9f364524f",
+    "size": 7078,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ac343972f71fa106b368d086301f9af9f364524f"
+  },
+  {
+    "path": "packages/qvac-edge/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2",
+    "size": 121,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2"
+  },
+  {
+    "path": "packages/wdk-wallet",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c998d01065c918069e44cc8c9e977bf0df5240d0",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/c998d01065c918069e44cc8c9e977bf0df5240d0"
+  },
+  {
+    "path": "packages/wdk-wallet/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ee9a1e9db02dcac266a41399f522b515cc1403f6",
+    "size": 368,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/ee9a1e9db02dcac266a41399f522b515cc1403f6"
+  },
+  {
+    "path": "packages/wdk-wallet/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d81a5512610c6dcab965e03f82b238e5ca27300e",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/d81a5512610c6dcab965e03f82b238e5ca27300e"
+  },
+  {
+    "path": "packages/wdk-wallet/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c4e1f356538ccc9994922d6f4ed58e38ca5164b2",
+    "size": 1355,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c4e1f356538ccc9994922d6f4ed58e38ca5164b2"
+  },
+  {
+    "path": "packages/wdk-wallet/src/sepolia.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "85a4d06e085dbdfc247c57157d9766c285ffe477",
+    "size": 765,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/85a4d06e085dbdfc247c57157d9766c285ffe477"
+  },
+  {
+    "path": "packages/wdk-wallet/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2",
+    "size": 121,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2"
+  },
+  {
+    "path": "patches",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1c23dacec1ef181628f2f9d8401078e991619590",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/1c23dacec1ef181628f2f9d8401078e991619590"
+  },
+  {
+    "path": "patches/@react-native__gradle-plugin@0.83.10.patch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2316e5d7a78b560cbbfb445536c63fe1c91f7fe1",
+    "size": 402,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/2316e5d7a78b560cbbfb445536c63fe1c91f7fe1"
+  },
+  {
+    "path": "patches/react-native-bare-kit@0.14.5.patch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c643e3a54a7e77dbbb10aef374bb0be6aba6db0f",
+    "size": 546,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c643e3a54a7e77dbbb10aef374bb0be6aba6db0f"
+  },
+  {
+    "path": "pnpm-lock.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4b4ab0b232506df048a9dc6704dd4f3876c9fcc4",
+    "size": 416355,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/4b4ab0b232506df048a9dc6704dd4f3876c9fcc4"
+  },
+  {
+    "path": "pnpm-workspace.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5a899b5f994da25e28ae5fc92e4ba207cad46ba1",
+    "size": 797,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/5a899b5f994da25e28ae5fc92e4ba207cad46ba1"
+  },
+  {
+    "path": "services",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4de30e5dc71992aff6aaa0898bd8980d8242487c",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/4de30e5dc71992aff6aaa0898bd8980d8242487c"
+  },
+  {
+    "path": "services/usdt-verifier",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e442c1103d7ed142c8c7baa9dba985d45d46d581",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/e442c1103d7ed142c8c7baa9dba985d45d46d581"
+  },
+  {
+    "path": "services/usdt-verifier/README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bb98952c7053b03c3b4faf534b91e8bf80d11378",
+    "size": 666,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/bb98952c7053b03c3b4faf534b91e8bf80d11378"
+  },
+  {
+    "path": "services/usdt-verifier/package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "937082431c4e8ec7322b1d029e3d7b90b1dc41ad",
+    "size": 306,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/937082431c4e8ec7322b1d029e3d7b90b1dc41ad"
+  },
+  {
+    "path": "services/usdt-verifier/src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "82171f3eec0adbf1e43fd9182f847eab7501d6b4",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/82171f3eec0adbf1e43fd9182f847eab7501d6b4"
+  },
+  {
+    "path": "services/usdt-verifier/src/index.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5523fdaca63430b61391e80637a1a046ae322cec",
+    "size": 2908,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/5523fdaca63430b61391e80637a1a046ae322cec"
+  },
+  {
+    "path": "services/usdt-verifier/src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c705a7212d2aeb503251a088ceecb5b994d8827f",
+    "size": 11957,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/c705a7212d2aeb503251a088ceecb5b994d8827f"
+  },
+  {
+    "path": "services/usdt-verifier/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2",
+    "size": 121,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0d7100cbc299c35ce5e357f2642aac5b1a0fb7f2"
+  },
+  {
+    "path": "tools",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4a5c84af38f9013e7df340f52ca495d221964ae0",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/4a5c84af38f9013e7df340f52ca495d221964ae0"
+  },
+  {
+    "path": "tools/bin",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7990a29578fe729110a716a16ea27b8db117dbaf",
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/trees/7990a29578fe729110a716a16ea27b8db117dbaf"
+  },
+  {
+    "path": "tools/bin/npx",
+    "mode": "100755",
+    "type": "blob",
+    "sha": "3f7507d2d73d7a8920ade95b94f69ac687e6655b",
+    "size": 536,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/3f7507d2d73d7a8920ade95b94f69ac687e6655b"
+  },
+  {
+    "path": "tools/build-performance-report.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "92c793e67ebe638e98d6cb6074ace4a29f1767b7",
+    "size": 7633,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/92c793e67ebe638e98d6cb6074ace4a29f1767b7"
+  },
+  {
+    "path": "tools/build-release-metadata.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0794cfe6b059f874c1f9c4e79a390172b76962f2",
+    "size": 3950,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/0794cfe6b059f874c1f9c4e79a390172b76962f2"
+  },
+  {
+    "path": "tools/fetch-quality-images.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bf147623d503ae552c2cf1e7b377420e0c2e1694",
+    "size": 2244,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/bf147623d503ae552c2cf1e7b377420e0c2e1694"
+  },
+  {
+    "path": "tools/score-quality-evaluation.mjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d22a8f188d1ff40fe9641a755f516dc0aafbfd42",
+    "size": 8191,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/d22a8f188d1ff40fe9641a755f516dc0aafbfd42"
+  },
+  {
+    "path": "tsconfig.base.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a037a0a4f4fca659381058d358e9f0376e20a9ed",
+    "size": 481,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/a037a0a4f4fca659381058d358e9f0376e20a9ed"
+  },
+  {
+    "path": "wdk.config.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa3c457e6512f3bf8ad044dedcb024ad1a32fbca",
+    "size": 431,
+    "url": "https://api.github.com/repos/JVeraPTY/clik2trip-sovereign/git/blobs/fa3c457e6512f3bf8ad044dedcb024ad1a32fbca"
+  }
+]

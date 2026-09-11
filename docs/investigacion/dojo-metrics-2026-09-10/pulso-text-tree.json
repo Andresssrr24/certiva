@@ -1,0 +1,1349 @@
+[
+  {
+    "path": ".editorconfig",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "de99aa097bbcd27d885232d5547a4bb117051cf2",
+    "size": 139,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/de99aa097bbcd27d885232d5547a4bb117051cf2"
+  },
+  {
+    "path": ".gitattributes",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f7a1ef6808b2f1bf04ac64084026e8e2dc4ee95",
+    "size": 279,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/0f7a1ef6808b2f1bf04ac64084026e8e2dc4ee95"
+  },
+  {
+    "path": ".github",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "57ee5b4bbd25d77e1d8c923be0fca92f71742145",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/57ee5b4bbd25d77e1d8c923be0fca92f71742145"
+  },
+  {
+    "path": ".github/workflows",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d399ca40512374e395f37c828876287e35c0b50c",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/d399ca40512374e395f37c828876287e35c0b50c"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3b2a1d4d7aefe88f49c1e91ef04db86038a16bc2",
+    "size": 727,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/3b2a1d4d7aefe88f49c1e91ef04db86038a16bc2"
+  },
+  {
+    "path": ".gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2c924174b11918b3ceb9d4f86315f8c6db41a410",
+    "size": 360,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/2c924174b11918b3ceb9d4f86315f8c6db41a410"
+  },
+  {
+    "path": ".prettierignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aca4db8450d62abb95ee397856a2732a6e76e90e",
+    "size": 57,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/aca4db8450d62abb95ee397856a2732a6e76e90e"
+  },
+  {
+    "path": "LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "77834bf50b8fe63f94017f343459a4fbb089e3bd",
+    "size": 1067,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/77834bf50b8fe63f94017f343459a4fbb089e3bd"
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ef4f86eeb37cc46208850282f6405a44d712735d",
+    "size": 6240,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ef4f86eeb37cc46208850282f6405a44d712735d"
+  },
+  {
+    "path": "assets",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5bfad2b3f8e483b6b173d8aaff19597e84626f15",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/5bfad2b3f8e483b6b173d8aaff19597e84626f15"
+  },
+  {
+    "path": "assets/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "size": 1,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+  },
+  {
+    "path": "benchmarks",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8824a1589f322505d1d6f565faea498e8f46f290",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/8824a1589f322505d1d6f565faea498e8f46f290"
+  },
+  {
+    "path": "benchmarks/.gitkeep",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "size": 1,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+  },
+  {
+    "path": "benchmarks/medpsy-evaluation.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "67f8cf9874334b6753f095fee00757839e2368c0",
+    "size": 254534,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/67f8cf9874334b6753f095fee00757839e2368c0"
+  },
+  {
+    "path": "config",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6596440bcb067b098fc2f85875796af968ee4b6d",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/6596440bcb067b098fc2f85875796af968ee4b6d"
+  },
+  {
+    "path": "config/models.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c3631dfa19d5f333a3c51599d7cf79535153cd1a",
+    "size": 1375,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/c3631dfa19d5f333a3c51599d7cf79535153cd1a"
+  },
+  {
+    "path": "data",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "990a16323d39213503b82c345dff57ba551f71c2",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/990a16323d39213503b82c345dff57ba551f71c2"
+  },
+  {
+    "path": "data/evaluation",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "87d46a6ef4d9200ad4d93c7cf1f33b90a253bf4a",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/87d46a6ef4d9200ad4d93c7cf1f33b90a253bf4a"
+  },
+  {
+    "path": "data/evaluation/rag-retrieval.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c9c73a6d9ca28b9afacad468f9965782effab54c",
+    "size": 7972,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/c9c73a6d9ca28b9afacad468f9965782effab54c"
+  },
+  {
+    "path": "data/finetuning",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "89578239da945379685c320f8cb88b3777e85377",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/89578239da945379685c320f8cb88b3777e85377"
+  },
+  {
+    "path": "data/finetuning/manifest.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aacc05cbcb8eef144cbb461ae5c8b10d6c9f4504",
+    "size": 1002,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/aacc05cbcb8eef144cbb461ae5c8b10d6c9f4504"
+  },
+  {
+    "path": "data/finetuning/test.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "09d6de5a38beb5dce0fc184edc8b0cc795db4202",
+    "size": 119586,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/09d6de5a38beb5dce0fc184edc8b0cc795db4202"
+  },
+  {
+    "path": "data/finetuning/train.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "487647a1c33c26d623015edb2453fa99b5a38f72",
+    "size": 69242,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/487647a1c33c26d623015edb2453fa99b5a38f72"
+  },
+  {
+    "path": "data/finetuning/validation.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b4f459a0634e958852c4392420eb4808c1e009a",
+    "size": 17479,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/5b4f459a0634e958852c4392420eb4808c1e009a"
+  },
+  {
+    "path": "data/rag",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a723b2619d05aa3d50f92f9916608d89eab36e17",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/a723b2619d05aa3d50f92f9916608d89eab36e17"
+  },
+  {
+    "path": "data/rag/index",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1243cc48f3ffed27cfadb8f81aa2ec3f14eed52f",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/1243cc48f3ffed27cfadb8f81aa2ec3f14eed52f"
+  },
+  {
+    "path": "data/rag/index/build-report.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cd162cba873b5d06f9b108c8473b240f5771d7b9",
+    "size": 2573,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/cd162cba873b5d06f9b108c8473b240f5771d7b9"
+  },
+  {
+    "path": "data/rag/index/corpus.jsonl",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "60b29bb0b4517564d4859f5af6aa87833d045032",
+    "size": 6292986,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/60b29bb0b4517564d4859f5af6aa87833d045032"
+  },
+  {
+    "path": "data/rag/manifest.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1352eaf4014142518dc47ddefeb68554d97c737c",
+    "size": 60173,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/1352eaf4014142518dc47ddefeb68554d97c737c"
+  },
+  {
+    "path": "data/rag/sources.csv",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab58ba282160e12a63f1b129ade4787efb862cab",
+    "size": 22687,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ab58ba282160e12a63f1b129ade4787efb862cab"
+  },
+  {
+    "path": "data/rag/sources",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "76a135aa6ff5d2b1ce667a12e22a478e977e9c39",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/76a135aa6ff5d2b1ce667a12e22a478e977e9c39"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c6a2a9cffd2ff78ea68c46c34e47a8c6d7418817",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/c6a2a9cffd2ff78ea68c46c34e47a8c6d7418817"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-acute-referral-form.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "03c71a85c0271570ba582579b534405f81418ea0",
+    "size": 188532,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/03c71a85c0271570ba582579b534405f81418ea0"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-acute-transfer-checklist.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2378aed9414382443a66a4b440e074f5b624b571",
+    "size": 300344,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/2378aed9414382443a66a4b440e074f5b624b571"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-basic-emergency-care-faq.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9faca3b7a75a07f94dfb3430041f50d95f311f11",
+    "size": 505594,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/9faca3b7a75a07f94dfb3430041f50d95f311f11"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-basic-emergency-care-quick-cards.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5409fa0a5caa3bee6d9245ce842dcd512bed8f20",
+    "size": 627363,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/5409fa0a5caa3bee6d9245ce842dcd512bed8f20"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-basic-emergency-care-workbook.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58cf8c6a4a4c3c2b2bbb084a61310e9594bb3136",
+    "size": 4257552,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/58cf8c6a4a4c3c2b2bbb084a61310e9594bb3136"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-bec-sbar.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81eebff24b912b7c939f00f3b550e4c67ef2b936",
+    "size": 80283,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/81eebff24b912b7c939f00f3b550e4c67ef2b936"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-counter-referral-form.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "122df4a44c8cd67aa6842cad004f6146abcf14f0",
+    "size": 152583,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/122df4a44c8cd67aa6842cad004f6146abcf14f0"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-dataset-emergency-care-2026.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "67170ea68a7de438e6d5e34727aaff4545b437ce",
+    "size": 119437,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/67170ea68a7de438e6d5e34727aaff4545b437ce"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-ect-pocket-guide.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6d9bc45333b75e5fbd7055f7d646857636851850",
+    "size": 14403893,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/6d9bc45333b75e5fbd7055f7d646857636851850"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-iitt-adult.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "59f3850890e36468072f44975bd068e329a1679e",
+    "size": 53006,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/59f3850890e36468072f44975bd068e329a1679e"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-iitt-faq.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "923e608312b3d1c095e3d21138ab9ca96de8ded4",
+    "size": 179298,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/923e608312b3d1c095e3d21138ab9ca96de8ded4"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-iitt-pediatric.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "23b91e971ed933fdc3927046bc6af5b800975023",
+    "size": 42514,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/23b91e971ed933fdc3927046bc6af5b800975023"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-iitt-reference-card.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "71ffe3b8ed7e3ed148a6bd7aa91d3b2d71989b1d",
+    "size": 83950,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/71ffe3b8ed7e3ed148a6bd7aa91d3b2d71989b1d"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mci-iitt-faq.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fbe49fdd89503810b9e7726ef7106ed14ff8cba3",
+    "size": 390713,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/fbe49fdd89503810b9e7726ef7106ed14ff8cba3"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mci-iitt-spanish.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2bdde4b254e7e4b15e19624fdc9875268ad2b391",
+    "size": 199063,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/2bdde4b254e7e4b15e19624fdc9875268ad2b391"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mci-iitt.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ee8c510abcc0ef5b36d51357f1396c42c6c6b5b7",
+    "size": 161039,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ee8c510abcc0ef5b36d51357f1396c42c6c6b5b7"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mci-triage-guidance.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6b04257d93b8ff0fdfac0763af9b0ee8f85b82b0",
+    "size": 561699,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/6b04257d93b8ff0fdfac0763af9b0ee8f85b82b0"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mcm-action-cards.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e1adf84b17f691bb4ec08338931e41160200ae8",
+    "size": 83966,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/7e1adf84b17f691bb4ec08338931e41160200ae8"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mcm-concept-note.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3c4b5eda345577c3aef16757b3a8f9899d6c723e",
+    "size": 161537,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/3c4b5eda345577c3aef16757b3a8f9899d6c723e"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mcm-kit-lists.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "12ad1da5347756b41c6910b2256d04d8881d42f4",
+    "size": 126534,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/12ad1da5347756b41c6910b2256d04d8881d42f4"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mcm-palliative-care.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "47968763a490432fecadf94630e8048ba64a7aec",
+    "size": 654535,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/47968763a490432fecadf94630e8048ba64a7aec"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mcm-patient-tracker-forms.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "213777a2fc419ba635fd434a5d3cac580c281f03",
+    "size": 160877,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/213777a2fc419ba635fd434a5d3cac580c281f03"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-mcm-preparedness-checklists.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c24cd90d1b44b80fe7eac29b6900bef551d38e06",
+    "size": 273344,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/c24cd90d1b44b80fe7eac29b6900bef551d38e06"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-medical-emergency-checklist.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8eeb22bdc3c9b6810c872f4a7eaea33048f4b821",
+    "size": 458475,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8eeb22bdc3c9b6810c872f4a7eaea33048f4b821"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-prehospital-emergency-care-2025.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8a456d21bd6b0789b5be73fbdfbceb6986d1941e",
+    "size": 6141701,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8a456d21bd6b0789b5be73fbdfbceb6986d1941e"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-resuscitation-area-faq.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "11488bb16e9cd48f58e6c7658ffffa277fa5dfe5",
+    "size": 431030,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/11488bb16e9cd48f58e6c7658ffffa277fa5dfe5"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-resuscitation-area-tool.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "eafb39cbec4e343b5c7854940a53e3797a05ef12",
+    "size": 201712,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/eafb39cbec4e343b5c7854940a53e3797a05ef12"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-resuscitation-medical-algorithm.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "50d1aa246ebfd8edb07c04f2dfc264ab613c7712",
+    "size": 367447,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/50d1aa246ebfd8edb07c04f2dfc264ab613c7712"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-resuscitation-trauma-algorithm.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8cc52ff42524c0d7a0ad2043b2f4e45ee9c7436e",
+    "size": 386221,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8cc52ff42524c0d7a0ad2043b2f4e45ee9c7436e"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-emergency-first-aid.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d9548a85c48ab6d3963ac0c3741de762fb6bfedd",
+    "size": 180781,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d9548a85c48ab6d3963ac0c3741de762fb6bfedd"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-faq.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ed8b7a96b4e9a841c620ade14040e4915b3399c",
+    "size": 446792,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/3ed8b7a96b4e9a841c620ade14040e4915b3399c"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-general-reference-card.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "57c22ff5e2df4ce9a376427f7dbf59404d9847da",
+    "size": 350911,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/57c22ff5e2df4ce9a376427f7dbf59404d9847da"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-general.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d8d19fcd38b67990e629833455e317ecf046e6a0",
+    "size": 296521,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d8d19fcd38b67990e629833455e317ecf046e6a0"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-prehospital-reference-card.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed75b1ba1aa0056ddad67e0463defc273e378c61",
+    "size": 641729,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ed75b1ba1aa0056ddad67e0463defc273e378c61"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-prehospital.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e4ed10e28c4b8ec481bfeeac431bb0b024fb3f1a",
+    "size": 2421938,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e4ed10e28c4b8ec481bfeeac431bb0b024fb3f1a"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-trauma-reference-card.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "593ea9e4dbcc82e438af85229911f6aea0429d50",
+    "size": 198455,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/593ea9e4dbcc82e438af85229911f6aea0429d50"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-scf-trauma.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c37f387b6e4c168ce30bc8d5acad7d197afae840",
+    "size": 356088,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/c37f387b6e4c168ce30bc8d5acad7d197afae840"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-triage-treatment-adult.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "624d3a1b221427a6bdf0eb7e7d84bf5cc1323f0b",
+    "size": 1457042,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/624d3a1b221427a6bdf0eb7e7d84bf5cc1323f0b"
+  },
+  {
+    "path": "data/rag/sources/pulso-emergency-ops/who-triage-treatment-pediatric.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d418a23fa0b387287defe8eafdeb71579e9425e0",
+    "size": 1467505,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d418a23fa0b387287defe8eafdeb71579e9425e0"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "493b8713ffc629d647216c4b37432ddbb629be5b",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/493b8713ffc629d647216c4b37432ddbb629be5b"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop/fhir-r4b-auditevent.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5795a832384d4ed401a84f3d0a0147cfc7264de3",
+    "size": 298170,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/5795a832384d4ed401a84f3d0a0147cfc7264de3"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop/fhir-r4b-medicationadministration.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "78662a68a763acf5e44774974377473a36d94be5",
+    "size": 219638,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/78662a68a763acf5e44774974377473a36d94be5"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop/fhir-r4b-medicationrequest.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "14d938c00fc38f870bfe87875a4468053254f04e",
+    "size": 316695,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/14d938c00fc38f870bfe87875a4468053254f04e"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop/fhir-r4b-observation.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5ca518f847f7fbf53c93cc3c847c1978a891dc41",
+    "size": 362394,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/5ca518f847f7fbf53c93cc3c847c1978a891dc41"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop/fhir-r4b-provenance.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "91c92c34dbdce12e64f81fb484e4039c4fcad2b9",
+    "size": 149068,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/91c92c34dbdce12e64f81fb484e4039c4fcad2b9"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop/fhir-r4b-servicerequest.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "711c415f23942b8ed20c21f071e17728ab292db4",
+    "size": 256607,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/711c415f23942b8ed20c21f071e17728ab292db4"
+  },
+  {
+    "path": "data/rag/sources/pulso-fhir-interop/fhir-r4b-task.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0368cc3eef810626ec77c1fee1edd56728fa01ec",
+    "size": 591194,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/0368cc3eef810626ec77c1fee1edd56728fa01ec"
+  },
+  {
+    "path": "data/rag/sources/pulso-medication-safety",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8c8465d6d67f446b77bd71c6a69a446ba7d14fb0",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/8c8465d6d67f446b77bd71c6a69a446ba7d14fb0"
+  },
+  {
+    "path": "data/rag/sources/pulso-medication-safety/who-aware-antibiotics-2025.xlsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3f8cc1253749a13dc4121d7ef65e9fde344d8afd",
+    "size": 109786,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/3f8cc1253749a13dc4121d7ef65e9fde344d8afd"
+  },
+  {
+    "path": "data/rag/sources/pulso-medication-safety/who-essential-medicines-adult-2025.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c148621f764b1b7afe53ce4c56d74f3972fae59c",
+    "size": 1364687,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/c148621f764b1b7afe53ce4c56d74f3972fae59c"
+  },
+  {
+    "path": "data/rag/sources/pulso-medication-safety/who-essential-medicines-children-2025.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1a1ed44e350ac9fc1e0b8d04ff9121a080e05bed",
+    "size": 844948,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/1a1ed44e350ac9fc1e0b8d04ff9121a080e05bed"
+  },
+  {
+    "path": "data/rag/sources/pulso-medication-safety/who-medication-safety-high-risk-2019.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e959648795311ab95effc081f74ce0b8deb0b309",
+    "size": 5668599,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e959648795311ab95effc081f74ce0b8deb0b309"
+  },
+  {
+    "path": "data/rag/sources/pulso-medication-safety/who-medication-safety-transitions-2019.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "97bde4db89fbd58f4d70620d2dbee5403b4d1a89",
+    "size": 2971254,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/97bde4db89fbd58f4d70620d2dbee5403b4d1a89"
+  },
+  {
+    "path": "data/rag/sources/pulso-medication-safety/who-medication-without-harm-2024.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7a33d2699f745c55b34ee028f3eaa0dd1cac3bf2",
+    "size": 4996384,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/7a33d2699f745c55b34ee028f3eaa0dd1cac3bf2"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "73e21ab8cdc4e7a9431401b7da914e65923c01fa",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/73e21ab8cdc4e7a9431401b7da914e65923c01fa"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical/minsa-guia-dengue.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6948229facd6244ec867646fb05ca9a3fd164e20",
+    "size": 10039222,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/6948229facd6244ec867646fb05ca9a3fd164e20"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical/minsa-guia-escorpionismo.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cc6a08b45a2c1bc1a416d5f71ca5ca0a46d231b7",
+    "size": 4156348,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/cc6a08b45a2c1bc1a416d5f71ca5ca0a46d231b7"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical/minsa-guia-influenza-iras.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "181930a372dd2d49a58e81479e7a55827ef4263c",
+    "size": 4105907,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/181930a372dd2d49a58e81479e7a55827ef4263c"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical/minsa-historia-clinica-adultos.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8b3787ed1a722df6b89ccd2618e1715caa95ea13",
+    "size": 41780470,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8b3787ed1a722df6b89ccd2618e1715caa95ea13"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical/minsa-normas-salud-adultos.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f27dac3aa14df5f70dab1e430e65bec2330446cc",
+    "size": 12285425,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/f27dac3aa14df5f70dab1e430e65bec2330446cc"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical/minsa-protocolo-crisis-hipertensiva.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b2afd84a41a9facc72a811cb618b67f5214d8738",
+    "size": 6832150,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/b2afd84a41a9facc72a811cb618b67f5214d8738"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-clinical/minsa-protocolo-ofidismo.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e7e5d0c967a3007cd23df0d191757ab02fc51407",
+    "size": 643271,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e7e5d0c967a3007cd23df0d191757ab02fc51407"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-governance",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "09cc9b9220fd810c7d2b3ea595c30d1f2b355cb9",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/09cc9b9220fd810c7d2b3ea595c30d1f2b355cb9"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-governance/panama-codigo-etica-medicina.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f340d1e350b168d422e7c81e465b3d5fbbcaaec4",
+    "size": 2332419,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/f340d1e350b168d422e7c81e465b3d5fbbcaaec4"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-governance/panama-decreto-285-2021-datos-personales.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e917089436bcd57ad8438e53e96c313c7e3f3394",
+    "size": 957789,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e917089436bcd57ad8438e53e96c313c7e3f3394"
+  },
+  {
+    "path": "data/rag/sources/pulso-panama-governance/panama-ley-81-2019-datos-personales.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "640c25b05288c22aa3b3d168ae527819cdaeef24",
+    "size": 3667322,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/640c25b05288c22aa3b3d168ae527819cdaeef24"
+  },
+  {
+    "path": "eslint.config.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2e169af5c29538e219734d1b8769e5cfeaace452",
+    "size": 678,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/2e169af5c29538e219734d1b8769e5cfeaace452"
+  },
+  {
+    "path": "models",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "96233b34ccba706a9f89dca87a9282a3cd836e0a",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/96233b34ccba706a9f89dca87a9282a3cd836e0a"
+  },
+  {
+    "path": "models/.gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+    "size": 14,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d6b7ef32c8478a48c3994dcadc86837f4371184d"
+  },
+  {
+    "path": "package-lock.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0cb12687742518b99213aa6e8ffe1247a79048b4",
+    "size": 259930,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/0cb12687742518b99213aa6e8ffe1247a79048b4"
+  },
+  {
+    "path": "package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8dae1486d967d0bef0225ee156a7a662225588d3",
+    "size": 2237,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8dae1486d967d0bef0225ee156a7a662225588d3"
+  },
+  {
+    "path": "pyproject.toml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac4317b5dd4c3f11142dae8b918ea530aa85bc63",
+    "size": 640,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ac4317b5dd4c3f11142dae8b918ea530aa85bc63"
+  },
+  {
+    "path": "python-requirements.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2c1f9748132e32369a7233ac2aa45b7911153167",
+    "size": 180,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/2c1f9748132e32369a7233ac2aa45b7911153167"
+  },
+  {
+    "path": "schemas",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "da44ecfa11149bab94ccce40ce015a3c223392e0",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/da44ecfa11149bab94ccce40ce015a3c223392e0"
+  },
+  {
+    "path": "schemas/clinical-events.schema.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6884a900f9cb6bafc05ae39f5a5ab35b3e450448",
+    "size": 3359,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/6884a900f9cb6bafc05ae39f5a5ab35b3e450448"
+  },
+  {
+    "path": "schemas/rag-verification.schema.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2c1ea9d6578181de68ffbb096e4a56df1ea2d4d5",
+    "size": 1829,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/2c1ea9d6578181de68ffbb096e4a56df1ea2d4d5"
+  },
+  {
+    "path": "src",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8eebe7374a117881cf0bc1ce041e5e2fe8935eed",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/8eebe7374a117881cf0bc1ce041e5e2fe8935eed"
+  },
+  {
+    "path": "src/app",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "18c0ca066c9fa039eb25934300208dda0d0c3dc1",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/18c0ca066c9fa039eb25934300208dda0d0c3dc1"
+  },
+  {
+    "path": "src/app/App.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e66ec50dfb0802a9b3ffb63be3ca304546a879bc",
+    "size": 33487,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e66ec50dfb0802a9b3ffb63be3ca304546a879bc"
+  },
+  {
+    "path": "src/app/electron.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "69b4f4b7e3cf61fec3a136d78f366bc5161ad6cb",
+    "size": 5198,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/69b4f4b7e3cf61fec3a136d78f366bc5161ad6cb"
+  },
+  {
+    "path": "src/app/index.html",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8f5dbe6a8a653626716cbff41a90c119cdef9ba1",
+    "size": 582,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8f5dbe6a8a653626716cbff41a90c119cdef9ba1"
+  },
+  {
+    "path": "src/app/preload.cjs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "498c971abca7f928c9e91380b4f5665b211a17e2",
+    "size": 412,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/498c971abca7f928c9e91380b4f5665b211a17e2"
+  },
+  {
+    "path": "src/app/renderer.tsx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c475b8a2b3397fdcc12676ffed6a3fa0b186aa19",
+    "size": 239,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/c475b8a2b3397fdcc12676ffed6a3fa0b186aa19"
+  },
+  {
+    "path": "src/app/styles.css",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6e602f818dd607250b97b678e0686cc180eee57",
+    "size": 22834,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/c6e602f818dd607250b97b678e0686cc180eee57"
+  },
+  {
+    "path": "src/app/tsconfig.electron.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "549d3f5186eb577e5e315593ba140e9ce49c6ce1",
+    "size": 226,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/549d3f5186eb577e5e315593ba140e9ce49c6ce1"
+  },
+  {
+    "path": "src/app/tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa8e7680ffc9e8171e9aed06467fb825c0518cee",
+    "size": 226,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/fa8e7680ffc9e8171e9aed06467fb825c0518cee"
+  },
+  {
+    "path": "src/app/types.d.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "98b5a6b2cb0a0a05f76475302336c5ab3158ed73",
+    "size": 256,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/98b5a6b2cb0a0a05f76475302336c5ab3158ed73"
+  },
+  {
+    "path": "src/pulso",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e55368ae1788ca9520763d93e93f501e1eeaa7a6",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/e55368ae1788ca9520763d93e93f501e1eeaa7a6"
+  },
+  {
+    "path": "src/pulso/__init__.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "src/pulso/ai",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2b17ee052cbb0cc3f8b1817c8be7dc48fba53f25",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/2b17ee052cbb0cc3f8b1817c8be7dc48fba53f25"
+  },
+  {
+    "path": "src/pulso/ai/__init__.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "src/pulso/ai/audio.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a316be66074c10213b8d79dad51955da3079afee",
+    "size": 400,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/a316be66074c10213b8d79dad51955da3079afee"
+  },
+  {
+    "path": "src/pulso/ai/extraction.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ec1fce0de3ebb374eda462494873f25820e00ba6",
+    "size": 1701,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ec1fce0de3ebb374eda462494873f25820e00ba6"
+  },
+  {
+    "path": "src/pulso/ai/rag.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e9252c3af0bbb55cbb2c4e9a803c47ae8f95642a",
+    "size": 619,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e9252c3af0bbb55cbb2c4e9a803c47ae8f95642a"
+  },
+  {
+    "path": "src/pulso/ai/runtime.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58b3d3dfd38035a31c694d860375c8cda053762c",
+    "size": 3284,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/58b3d3dfd38035a31c694d860375c8cda053762c"
+  },
+  {
+    "path": "src/pulso/ai/speech.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0fd657409da7256489221d9f6d1d65699f07f268",
+    "size": 488,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/0fd657409da7256489221d9f6d1d65699f07f268"
+  },
+  {
+    "path": "src/pulso/ai/translation.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5a221338bd67e25a100f73333fc8b958dadd1c5c",
+    "size": 728,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/5a221338bd67e25a100f73333fc8b958dadd1c5c"
+  },
+  {
+    "path": "src/pulso/clinical",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cc5965a6392a93eb9fc670a80990606f59b8a39e",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/cc5965a6392a93eb9fc670a80990606f59b8a39e"
+  },
+  {
+    "path": "src/pulso/clinical/__init__.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "src/pulso/clinical/documentation.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "157147200d637c049f32fb955bcbb646a86f2cac",
+    "size": 17746,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/157147200d637c049f32fb955bcbb646a86f2cac"
+  },
+  {
+    "path": "src/pulso/clinical/encounter_service.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8c3e7dfe92ca22a605363eb7ecb78c54be2a7aab",
+    "size": 17694,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8c3e7dfe92ca22a605363eb7ecb78c54be2a7aab"
+  },
+  {
+    "path": "src/pulso/clinical/encounters.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1388583ead0b470cf82dfd9e1641c32348fdc660",
+    "size": 1316,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/1388583ead0b470cf82dfd9e1641c32348fdc660"
+  },
+  {
+    "path": "src/pulso/clinical/events.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a854746dbbe980e71847c2e43d2d84a90af09812",
+    "size": 4218,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/a854746dbbe980e71847c2e43d2d84a90af09812"
+  },
+  {
+    "path": "src/pulso/clinical/fhir.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ef34b85b3a59fcd687ace366b6ed60c3d630d6a4",
+    "size": 7080,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ef34b85b3a59fcd687ace366b6ed60c3d630d6a4"
+  },
+  {
+    "path": "src/pulso/clinical/order_service.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2c95d6d36452980fec8f884834e5f99f073ac555",
+    "size": 3096,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/2c95d6d36452980fec8f884834e5f99f073ac555"
+  },
+  {
+    "path": "src/pulso/clinical/orders.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d9a87aa3254081011504363d6a2210a2f25fcf39",
+    "size": 2627,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d9a87aa3254081011504363d6a2210a2f25fcf39"
+  },
+  {
+    "path": "src/pulso/clinical/safety.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "79b8f7f07688dbeb5f8cdd4f8a86d3232549a592",
+    "size": 1396,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/79b8f7f07688dbeb5f8cdd4f8a86d3232549a592"
+  },
+  {
+    "path": "src/pulso/desktop_bridge.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "05d7d17f03b07f5ba57230dba9d9d7c4b540adcc",
+    "size": 8286,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/05d7d17f03b07f5ba57230dba9d9d7c4b540adcc"
+  },
+  {
+    "path": "src/pulso/main.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "77f5166ca32d86c952787ac6eb60d0929cf86542",
+    "size": 6608,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/77f5166ca32d86c952787ac6eb60d0929cf86542"
+  },
+  {
+    "path": "src/pulso/storage",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6f8646b83eeeafbefe924b667f3a25971c7181e7",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/6f8646b83eeeafbefe924b667f3a25971c7181e7"
+  },
+  {
+    "path": "src/pulso/storage/__init__.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "src/pulso/storage/audit.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "858ad4c29e1f59e8d4cb257b91bfeca47e062bd1",
+    "size": 2424,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/858ad4c29e1f59e8d4cb257b91bfeca47e062bd1"
+  },
+  {
+    "path": "src/pulso/storage/database.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "405c90355d56efddc022b8e6af14003356a40383",
+    "size": 4735,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/405c90355d56efddc022b8e6af14003356a40383"
+  },
+  {
+    "path": "src/pulso/storage/repository.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9d5f6e221ba9478edae0bec61366b1da24bf8ea4",
+    "size": 15306,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/9d5f6e221ba9478edae0bec61366b1da24bf8ea4"
+  },
+  {
+    "path": "src/pulso/storage/routing.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8c8ec65e9adcdedfb50593c9e71eae5a555bd4dd",
+    "size": 2728,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/8c8ec65e9adcdedfb50593c9e71eae5a555bd4dd"
+  },
+  {
+    "path": "src/qvac",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "88128637898f72e8cdda651c5956f522f115da24",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/88128637898f72e8cdda651c5956f522f115da24"
+  },
+  {
+    "path": "src/qvac/cli.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "526912501eb288f363ce5402b78ee1de0b50735c",
+    "size": 6510,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/526912501eb288f363ce5402b78ee1de0b50735c"
+  },
+  {
+    "path": "src/qvac/engine.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d9ffdf3718aa99488c1d6878ede5ff06739bcced",
+    "size": 17830,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d9ffdf3718aa99488c1d6878ede5ff06739bcced"
+  },
+  {
+    "path": "src/qvac/metrics.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0e50829afc2ca9d38f21a5c5370bd4a46ab8446d",
+    "size": 430,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/0e50829afc2ca9d38f21a5c5370bd4a46ab8446d"
+  },
+  {
+    "path": "src/qvac/normalize.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d1d314399718c0b9eb05467137b7100edf76dde6",
+    "size": 2367,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d1d314399718c0b9eb05467137b7100edf76dde6"
+  },
+  {
+    "path": "src/qvac/types.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9ff77cf0d8d6d2150591ae5f0d2ab55c2da50875",
+    "size": 818,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/9ff77cf0d8d6d2150591ae5f0d2ab55c2da50875"
+  },
+  {
+    "path": "tests",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "be012415c839d5f2d4d4f9e463c12c0ed817a3cd",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/be012415c839d5f2d4d4f9e463c12c0ed817a3cd"
+  },
+  {
+    "path": "tests/qvac-normalization.test.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "75a6ed5a6535bf275442c2173ccf923f4a73184c",
+    "size": 2396,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/75a6ed5a6535bf275442c2173ccf923f4a73184c"
+  },
+  {
+    "path": "tests/test_data_assets.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7a497a5d9d50dd42746b413370b4a6a5df4e4827",
+    "size": 6121,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/7a497a5d9d50dd42746b413370b4a6a5df4e4827"
+  },
+  {
+    "path": "tests/test_domain.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce6800a8395e9d338c7ec3913f02d8886aaa1edf",
+    "size": 2812,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ce6800a8395e9d338c7ec3913f02d8886aaa1edf"
+  },
+  {
+    "path": "tests/test_workflow.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "514fe35d6ecc49a1cc86e255a5a24620751cbe5e",
+    "size": 4984,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/514fe35d6ecc49a1cc86e255a5a24620751cbe5e"
+  },
+  {
+    "path": "tools",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2ada2b8c4674098d061a8a2f750c6f89672a7e5f",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/2ada2b8c4674098d061a8a2f750c6f89672a7e5f"
+  },
+  {
+    "path": "tools/download-models.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5fa1dc876a3e8b8d65a09a68c21f4676b53a1294",
+    "size": 6828,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/5fa1dc876a3e8b8d65a09a68c21f4676b53a1294"
+  },
+  {
+    "path": "tools/download_rag_sources.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "289b70f661fef7a3c30561a93a3218779d04807c",
+    "size": 2044,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/289b70f661fef7a3c30561a93a3218779d04807c"
+  },
+  {
+    "path": "tools/launch-desktop.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9af695b2ebadd456539db574cbc5504627a30f02",
+    "size": 344,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/9af695b2ebadd456539db574cbc5504627a30f02"
+  },
+  {
+    "path": "tools/prepare_environment.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "19ba0e0d024a8d47c2dd34f93eac3d255b9382a0",
+    "size": 3431,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/19ba0e0d024a8d47c2dd34f93eac3d255b9382a0"
+  },
+  {
+    "path": "tools/prepare_rag.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3c86ef07d289c4186cb6811ce3fc3de56d80a581",
+    "size": 5142,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/3c86ef07d289c4186cb6811ce3fc3de56d80a581"
+  },
+  {
+    "path": "training",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4dd309d6ab6845846cad488ae71d68e2f537ab10",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/4dd309d6ab6845846cad488ae71d68e2f537ab10"
+  },
+  {
+    "path": "training/evaluate_adapter.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dce4a17ba7d862488fbdb1f4d882d209424f2969",
+    "size": 5041,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/dce4a17ba7d862488fbdb1f4d882d209424f2969"
+  },
+  {
+    "path": "training/output",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "96233b34ccba706a9f89dca87a9282a3cd836e0a",
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/trees/96233b34ccba706a9f89dca87a9282a3cd836e0a"
+  },
+  {
+    "path": "training/output/.gitignore",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+    "size": 14,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/d6b7ef32c8478a48c3994dcadc86837f4371184d"
+  },
+  {
+    "path": "training/qvac_finetune.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e1c57280f58b9291ff7e52c390721eceb736f9f5",
+    "size": 1462,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/e1c57280f58b9291ff7e52c390721eceb736f9f5"
+  },
+  {
+    "path": "training/train_lora.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ba1de6b7e56bdaf5531692f4c644b1b8ac2a461d",
+    "size": 5238,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ba1de6b7e56bdaf5531692f4c644b1b8ac2a461d"
+  },
+  {
+    "path": "tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ca7f2df92e037e528ab23c3d15df022de2dfdece",
+    "size": 498,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/ca7f2df92e037e528ab23c3d15df022de2dfdece"
+  },
+  {
+    "path": "vite.config.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "93a7865f40852c29f06ccd571014e18fcdfaee7e",
+    "size": 303,
+    "url": "https://api.github.com/repos/jlbjulio/PULSO/git/blobs/93a7865f40852c29f06ccd571014e18fcdfaee7e"
+  }
+]

@@ -1,0 +1,164 @@
+{
+  "app.py": {
+    "blank": 179,
+    "comment": 86,
+    "code": 921,
+    "language": "Python"
+  },
+  "src/extract.py": {
+    "blank": 99,
+    "comment": 128,
+    "code": 408,
+    "language": "Python"
+  },
+  "src/documents.py": {
+    "blank": 100,
+    "comment": 87,
+    "code": 324,
+    "language": "Python"
+  },
+  "src/store.py": {
+    "blank": 52,
+    "comment": 38,
+    "code": 264,
+    "language": "Python"
+  },
+  "src/qvac_engine.py": {
+    "blank": 52,
+    "comment": 49,
+    "code": 243,
+    "language": "Python"
+  },
+  "src/nlquery.py": {
+    "blank": 33,
+    "comment": 32,
+    "code": 228,
+    "language": "Python"
+  },
+  "src/normalize.py": {
+    "blank": 69,
+    "comment": 51,
+    "code": 221,
+    "language": "Python"
+  },
+  "scripts/test_documentos.py": {
+    "blank": 50,
+    "comment": 26,
+    "code": 212,
+    "language": "Python"
+  },
+  "src/followup.py": {
+    "blank": 57,
+    "comment": 39,
+    "code": 212,
+    "language": "Python"
+  },
+  "src/geo.py": {
+    "blank": 21,
+    "comment": 22,
+    "code": 165,
+    "language": "Python"
+  },
+  "tests/test_acceptance.py": {
+    "blank": 8,
+    "comment": 0,
+    "code": 163,
+    "language": "Python"
+  },
+  "src/insights.py": {
+    "blank": 28,
+    "comment": 31,
+    "code": 155,
+    "language": "Python"
+  },
+  "scripts/test_extraccion.py": {
+    "blank": 28,
+    "comment": 18,
+    "code": 139,
+    "language": "Python"
+  },
+  "src/schema.py": {
+    "blank": 31,
+    "comment": 17,
+    "code": 133,
+    "language": "Python"
+  },
+  "scripts/test_audio.py": {
+    "blank": 19,
+    "comment": 9,
+    "code": 99,
+    "language": "Python"
+  },
+  "src/conflicts.py": {
+    "blank": 24,
+    "comment": 32,
+    "code": 95,
+    "language": "Python"
+  },
+  "src/confidence.py": {
+    "blank": 27,
+    "comment": 17,
+    "code": 93,
+    "language": "Python"
+  },
+  "tests/test_streamlit.py": {
+    "blank": 4,
+    "comment": 3,
+    "code": 82,
+    "language": "Python"
+  },
+  "src/dedup.py": {
+    "blank": 20,
+    "comment": 14,
+    "code": 71,
+    "language": "Python"
+  },
+  "src/audio.py": {
+    "blank": 17,
+    "comment": 23,
+    "code": 56,
+    "language": "Python"
+  },
+  "scripts/verify_qvac.py": {
+    "blank": 2,
+    "comment": 4,
+    "code": 49,
+    "language": "Python"
+  },
+  "src/capture.py": {
+    "blank": 4,
+    "comment": 2,
+    "code": 48,
+    "language": "Python"
+  },
+  "tests/test_capture.py": {
+    "blank": 2,
+    "comment": 0,
+    "code": 40,
+    "language": "Python"
+  },
+  "scripts/import_excel.py": {
+    "blank": 13,
+    "comment": 3,
+    "code": 35,
+    "language": "Python"
+  },
+  "src/config.py": {
+    "blank": 12,
+    "comment": 19,
+    "code": 31,
+    "language": "Python"
+  },
+  "src/legacy_store.py": {
+    "blank": 6,
+    "comment": 1,
+    "code": 27,
+    "language": "Python"
+  },
+  "run.sh": {
+    "blank": 0,
+    "comment": 1,
+    "code": 4,
+    "language": "Bourne Shell"
+  }
+}

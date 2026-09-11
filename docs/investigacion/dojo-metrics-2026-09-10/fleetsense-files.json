@@ -1,0 +1,230 @@
+{
+  "frontend/src/components/steps/PanelStep.tsx": {
+    "blank": 14,
+    "comment": 0,
+    "code": 201,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/steps/CaptureStep.tsx": {
+    "blank": 20,
+    "comment": 6,
+    "code": 194,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/ui/select.tsx": {
+    "blank": 11,
+    "comment": 0,
+    "code": 187,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/steps/ReviewStep.tsx": {
+    "blank": 13,
+    "comment": 0,
+    "code": 152,
+    "language": "TypeScript"
+  },
+  "app.py": {
+    "blank": 27,
+    "comment": 4,
+    "code": 142,
+    "language": "Python"
+  },
+  "qvac_client.py": {
+    "blank": 35,
+    "comment": 24,
+    "code": 130,
+    "language": "Python"
+  },
+  "frontend/src/index.css": {
+    "blank": 5,
+    "comment": 0,
+    "code": 125,
+    "language": "CSS"
+  },
+  "frontend/src/components/ui/table.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 104,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/ui/card.tsx": {
+    "blank": 8,
+    "comment": 0,
+    "code": 94,
+    "language": "TypeScript"
+  },
+  "frontend/src/App.tsx": {
+    "blank": 6,
+    "comment": 9,
+    "code": 87,
+    "language": "TypeScript"
+  },
+  "api.py": {
+    "blank": 22,
+    "comment": 7,
+    "code": 86,
+    "language": "Python"
+  },
+  "frontend/src/api.ts": {
+    "blank": 10,
+    "comment": 0,
+    "code": 67,
+    "language": "TypeScript"
+  },
+  "test_dedupe.py": {
+    "blank": 8,
+    "comment": 0,
+    "code": 58,
+    "language": "Python"
+  },
+  "frontend/src/components/ui/button.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 54,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/StepShell.tsx": {
+    "blank": 4,
+    "comment": 5,
+    "code": 53,
+    "language": "TypeScript"
+  },
+  "db.py": {
+    "blank": 19,
+    "comment": 32,
+    "code": 52,
+    "language": "Python"
+  },
+  "install.sh": {
+    "blank": 10,
+    "comment": 40,
+    "code": 49,
+    "language": "Bourne Shell"
+  },
+  "frontend/src/components/ui/badge.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 48,
+    "language": "TypeScript"
+  },
+  "test_db.py": {
+    "blank": 11,
+    "comment": 0,
+    "code": 46,
+    "language": "Python"
+  },
+  "frontend/src/components/steps/ModeStep.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 45,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/Background.tsx": {
+    "blank": 6,
+    "comment": 15,
+    "code": 43,
+    "language": "TypeScript"
+  },
+  "extract.py": {
+    "blank": 14,
+    "comment": 28,
+    "code": 40,
+    "language": "Python"
+  },
+  "test_extract.py": {
+    "blank": 11,
+    "comment": 0,
+    "code": 36,
+    "language": "Python"
+  },
+  "run.sh": {
+    "blank": 8,
+    "comment": 13,
+    "code": 33,
+    "language": "Bourne Shell"
+  },
+  "test_confidence.py": {
+    "blank": 8,
+    "comment": 0,
+    "code": 31,
+    "language": "Python"
+  },
+  "frontend/src/components/steps/LoginStep.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 30,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/GlassPanel.tsx": {
+    "blank": 2,
+    "comment": 6,
+    "code": 18,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/ui/input.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "frontend/vite.config.ts": {
+    "blank": 1,
+    "comment": 1,
+    "code": 17,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/ui/label.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 16,
+    "language": "TypeScript"
+  },
+  "frontend/src/components/ui/textarea.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 15,
+    "language": "TypeScript"
+  },
+  "confidence.py": {
+    "blank": 4,
+    "comment": 0,
+    "code": 14,
+    "language": "Python"
+  },
+  "dedupe.py": {
+    "blank": 4,
+    "comment": 0,
+    "code": 14,
+    "language": "Python"
+  },
+  "frontend/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 13,
+    "language": "HTML"
+  },
+  "frontend/src/main.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 9,
+    "language": "TypeScript"
+  },
+  "frontend/src/hooks/use-prefers-reduced-motion.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 7,
+    "language": "TypeScript"
+  },
+  "frontend/src/lib/motion.ts": {
+    "blank": 0,
+    "comment": 2,
+    "code": 2,
+    "language": "TypeScript"
+  },
+  "frontend/src/lib/utils.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "TypeScript"
+  }
+}

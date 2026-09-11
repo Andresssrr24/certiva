@@ -1,0 +1,494 @@
+{
+  "packages/qvac-edge/src/demo-catalog.ts": {
+    "blank": 14,
+    "comment": 27,
+    "code": 1467,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/CompatibilityGate.tsx": {
+    "blank": 27,
+    "comment": 20,
+    "code": 556,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/ExperienceDetail.tsx": {
+    "blank": 27,
+    "comment": 4,
+    "code": 501,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/SandboxSettlement.tsx": {
+    "blank": 14,
+    "comment": 12,
+    "code": 476,
+    "language": "TypeScript"
+  },
+  "services/usdt-verifier/src/index.ts": {
+    "blank": 21,
+    "comment": 0,
+    "code": 318,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/QualityEvaluationPanel.tsx": {
+    "blank": 17,
+    "comment": 4,
+    "code": 266,
+    "language": "TypeScript"
+  },
+  "tools/build-performance-report.mjs": {
+    "blank": 13,
+    "comment": 0,
+    "code": 206,
+    "language": "JavaScript"
+  },
+  "tools/score-quality-evaluation.mjs": {
+    "blank": 13,
+    "comment": 0,
+    "code": 177,
+    "language": "JavaScript"
+  },
+  "apps/android/src/lib/demo-booking.test.ts": {
+    "blank": 35,
+    "comment": 0,
+    "code": 158,
+    "language": "TypeScript"
+  },
+  "packages/cliktotrip-client/src/index.ts": {
+    "blank": 17,
+    "comment": 0,
+    "code": 157,
+    "language": "TypeScript"
+  },
+  "packages/qvac-edge/src/tourism.ts": {
+    "blank": 19,
+    "comment": 19,
+    "code": 156,
+    "language": "TypeScript"
+  },
+  "packages/qvac-edge/src/regions.test.ts": {
+    "blank": 25,
+    "comment": 4,
+    "code": 155,
+    "language": "TypeScript"
+  },
+  "apps/android/scripts/configure-native-addons.mjs": {
+    "blank": 29,
+    "comment": 3,
+    "code": 146,
+    "language": "JavaScript"
+  },
+  "packages/qvac-edge/src/regions.ts": {
+    "blank": 16,
+    "comment": 34,
+    "code": 146,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/ExperienceCatalog.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 142,
+    "language": "TypeScript"
+  },
+  "packages/qvac-edge/src/index.ts": {
+    "blank": 17,
+    "comment": 0,
+    "code": 135,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/demo-booking.ts": {
+    "blank": 16,
+    "comment": 24,
+    "code": 134,
+    "language": "TypeScript"
+  },
+  "packages/qvac-edge/src/catalog-rag.ts": {
+    "blank": 17,
+    "comment": 14,
+    "code": 131,
+    "language": "TypeScript"
+  },
+  "packages/cliktotrip-client/src/schemas.ts": {
+    "blank": 22,
+    "comment": 6,
+    "code": 130,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/sandbox-checkout.test.ts": {
+    "blank": 20,
+    "comment": 2,
+    "code": 120,
+    "language": "TypeScript"
+  },
+  "packages/cliktotrip-client/src/index.test.ts": {
+    "blank": 10,
+    "comment": 0,
+    "code": 119,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/OnboardingFooter.tsx": {
+    "blank": 7,
+    "comment": 5,
+    "code": 109,
+    "language": "TypeScript"
+  },
+  "packages/contracts/src/index.ts": {
+    "blank": 21,
+    "comment": 25,
+    "code": 108,
+    "language": "TypeScript"
+  },
+  "packages/policy-engine/src/index.ts": {
+    "blank": 18,
+    "comment": 0,
+    "code": 107,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/experience-card.test.ts": {
+    "blank": 15,
+    "comment": 1,
+    "code": 93,
+    "language": "TypeScript"
+  },
+  "packages/policy-engine/src/index.test.ts": {
+    "blank": 11,
+    "comment": 0,
+    "code": 92,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/error-messages.ts": {
+    "blank": 13,
+    "comment": 32,
+    "code": 89,
+    "language": "TypeScript"
+  },
+  "packages/cliktotrip-client/src/operations.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 89,
+    "language": "TypeScript"
+  },
+  "tools/build-release-metadata.mjs": {
+    "blank": 5,
+    "comment": 0,
+    "code": 88,
+    "language": "JavaScript"
+  },
+  "packages/performance-log/src/index.ts": {
+    "blank": 4,
+    "comment": 0,
+    "code": 86,
+    "language": "TypeScript"
+  },
+  "services/usdt-verifier/src/index.test.ts": {
+    "blank": 9,
+    "comment": 0,
+    "code": 82,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/onboarding.test.ts": {
+    "blank": 14,
+    "comment": 0,
+    "code": 74,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/sandbox-checkout.ts": {
+    "blank": 6,
+    "comment": 13,
+    "code": 74,
+    "language": "TypeScript"
+  },
+  "packages/qvac-edge/src/tourism.test.ts": {
+    "blank": 10,
+    "comment": 0,
+    "code": 66,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/CameraButton.tsx": {
+    "blank": 3,
+    "comment": 4,
+    "code": 64,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/booking-source.ts": {
+    "blank": 5,
+    "comment": 14,
+    "code": 52,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/ConnectivityIcon.tsx": {
+    "blank": 4,
+    "comment": 5,
+    "code": 51,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/error-messages.test.ts": {
+    "blank": 11,
+    "comment": 1,
+    "code": 50,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/availability-view.test.ts": {
+    "blank": 10,
+    "comment": 2,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/experience-card.ts": {
+    "blank": 3,
+    "comment": 18,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "apps/android/src/theme/brand.ts": {
+    "blank": 7,
+    "comment": 10,
+    "code": 48,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/availability-view.ts": {
+    "blank": 5,
+    "comment": 6,
+    "code": 47,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/onboarding.ts": {
+    "blank": 7,
+    "comment": 19,
+    "code": 47,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/AppHeader.tsx": {
+    "blank": 4,
+    "comment": 8,
+    "code": 46,
+    "language": "TypeScript"
+  },
+  "tools/fetch-quality-images.mjs": {
+    "blank": 4,
+    "comment": 0,
+    "code": 46,
+    "language": "JavaScript"
+  },
+  "apps/android/src/lib/use-device-region.ts": {
+    "blank": 7,
+    "comment": 14,
+    "code": 44,
+    "language": "TypeScript"
+  },
+  "packages/performance-log/src/index.test.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 43,
+    "language": "TypeScript"
+  },
+  "packages/wdk-wallet/src/index.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 38,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/settled-ledger.test.ts": {
+    "blank": 7,
+    "comment": 0,
+    "code": 36,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/catalog-format.test.ts": {
+    "blank": 7,
+    "comment": 0,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/commerce.test.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 35,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/settled-ledger.ts": {
+    "blank": 3,
+    "comment": 4,
+    "code": 33,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/device-region.test.ts": {
+    "blank": 7,
+    "comment": 0,
+    "code": 32,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/connectivity.test.ts": {
+    "blank": 7,
+    "comment": 2,
+    "code": 30,
+    "language": "TypeScript"
+  },
+  "eslint.config.mjs": {
+    "blank": 1,
+    "comment": 11,
+    "code": 30,
+    "language": "JavaScript"
+  },
+  "apps/android/src/components/ProgressBar.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/use-experience-catalog.ts": {
+    "blank": 4,
+    "comment": 5,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "apps/android/plugins/withSovereignAndroidSigning.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 27,
+    "language": "JavaScript"
+  },
+  "apps/android/src/config/sandbox-tariff.ts": {
+    "blank": 5,
+    "comment": 23,
+    "code": 26,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/use-demo-wallet.ts": {
+    "blank": 6,
+    "comment": 9,
+    "code": 26,
+    "language": "TypeScript"
+  },
+  "apps/android/src/components/ErrorNotice.tsx": {
+    "blank": 3,
+    "comment": 5,
+    "code": 24,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/network-evidence.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 23,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/use-connectivity.ts": {
+    "blank": 7,
+    "comment": 6,
+    "code": 23,
+    "language": "TypeScript"
+  },
+  "apps/android/src/evaluation/quality-assets.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/catalog-format.ts": {
+    "blank": 3,
+    "comment": 1,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/secure-store-key.test.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 22,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/commerce.ts": {
+    "blank": 4,
+    "comment": 0,
+    "code": 21,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/network-evidence.test.ts": {
+    "blank": 5,
+    "comment": 0,
+    "code": 21,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/device-region.ts": {
+    "blank": 3,
+    "comment": 8,
+    "code": 19,
+    "language": "TypeScript"
+  },
+  "wdk.config.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 16,
+    "language": "JavaScript"
+  },
+  "apps/android/src/lib/connectivity.ts": {
+    "blank": 3,
+    "comment": 7,
+    "code": 15,
+    "language": "TypeScript"
+  },
+  "apps/android/App.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 14,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/inference-phase.test.ts": {
+    "blank": 3,
+    "comment": 0,
+    "code": 14,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/use-gateway-client.ts": {
+    "blank": 2,
+    "comment": 1,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "apps/android/metro.config.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 11,
+    "language": "JavaScript"
+  },
+  "packages/wdk-wallet/src/sepolia.ts": {
+    "blank": 0,
+    "comment": 7,
+    "code": 11,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/inference-phase.ts": {
+    "blank": 1,
+    "comment": 5,
+    "code": 10,
+    "language": "TypeScript"
+  },
+  "apps/android/babel.config.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "JavaScript"
+  },
+  "apps/android/src/config/wdk.ts": {
+    "blank": 1,
+    "comment": 0,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/secure-store-key.ts": {
+    "blank": 1,
+    "comment": 7,
+    "code": 6,
+    "language": "TypeScript"
+  },
+  "apps/android/src/lib/expo-sha256.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 4,
+    "language": "TypeScript"
+  },
+  "apps/android/src/types/wdk-bundle.d.ts": {
+    "blank": 0,
+    "comment": 0,
+    "code": 4,
+    "language": "TypeScript"
+  }
+}
