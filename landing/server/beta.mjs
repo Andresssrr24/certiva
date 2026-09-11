@@ -30,7 +30,12 @@ export function configuration(env = process.env) {
     )
       playUrl = url.href;
   } catch {}
-  return { enabled: enabled && Boolean(playUrl), playUrl, env };
+  return {
+    enabled: enabled && Boolean(playUrl),
+    playReady: env.BETA_PLAY_READY === "true" && Boolean(playUrl),
+    playUrl,
+    env,
+  };
 }
 
 export function seal(value, secret) {
@@ -101,9 +106,12 @@ export function publicStatus(req, res, env = process.env) {
   const result = unseal(cookies(req)[RESULT_COOKIE], env.BETA_COOKIE_SECRET);
   json(res, 200, {
     enabled: cfg.enabled,
+    playReady: cfg.enabled && cfg.playReady,
     internalUrl: INTERNAL_URL,
     registered: cfg.enabled && result?.status === "registered",
-    ...(cfg.enabled && result?.status === "registered" ? { email: result.email, playUrl: cfg.playUrl } : {}),
+    ...(cfg.enabled && result?.status === "registered"
+      ? { email: result.email, ...(cfg.playReady ? { playUrl: cfg.playUrl } : {}) }
+      : {}),
   });
 }
 

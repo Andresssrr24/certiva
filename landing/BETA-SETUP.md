@@ -12,7 +12,7 @@ cuentas que ya tienen invitación; no promete acceso a visitantes nuevos.
 3. El servidor agrega únicamente el correo confirmado por Google como `MEMBER`.
 4. El servidor consulta de nuevo la membresía; una operación pendiente o fallida
    nunca muestra una confirmación de acceso.
-5. El visitante acepta la prueba cerrada en Google Play e instala la aplicación.
+5. Se confirma el registro en el grupo. Solo cuando `BETA_PLAY_READY=true` se ofrece aceptar la prueba cerrada e instalar; mientras tanto se informa que la descarga está pendiente.
 
 Las cookies son cifradas con AES-256-GCM, `HttpOnly`, `Secure` y `SameSite=Lax`.
 La sesión OAuth dura 10 minutos y el resultado privado, una hora. No se guardan
@@ -44,7 +44,8 @@ capturas, logs ni argumentos visibles de comandos:
 - `BETA_GROUP_SERVICE_ACCOUNT_EMAIL`
 - `BETA_GROUP_PRIVATE_KEY`: PEM con saltos de línea reales.
 - `BETA_PLAY_URL`: `https://play.google.com/apps/testing/local.certiva.pilot`
-- `BETA_ENABLED`: conservar `false` hasta completar las verificaciones siguientes.
+- `BETA_ENABLED`: `true` habilita el registro con Google.
+- `BETA_PLAY_READY`: `false` hasta comprobar que la prueba cerrada está publicada y accesible.
 
 ## Estado comprobado el 11 de septiembre de 2026
 
@@ -71,23 +72,32 @@ capturas, logs ni argumentos visibles de comandos:
 - Seguridad de datos guardada como borrador: descarga HTTPS del modelo y cuentas
   asignadas externamente. Faltan tipos, usos y revisión final de la declaración.
 - No se ha enviado la app a revisión; el canal cerrado **no está publicado**.
-- Las siete variables de producción ya están guardadas como sensibles en Vercel
-  mediante CLI, con autorización de Bryan. `BETA_ENABLED` permanece en `false`.
-  `/probar` muestra la invitación interna y mantiene oculto el formulario;
-  OAuth público no activa ese formulario.
-- La política Android se desplegó por la tarea propietaria en
-  `dpl_7sbtMY19XVfpbLhMchU4uPNhVoJh`; el registro permanece desactivado.
-- `npm test`: 16 pruebas aprobadas en la integración beta; build correcto.
-  La actualización de privacidad/ficha no cambia la API ni Android.
+- Registro habilitado por solicitud de Bryan para probar desde Android: `BETA_ENABLED=true`.
+- Descarga cerrada pendiente: `BETA_PLAY_READY=false`. Las ocho variables están guardadas
+  como sensibles en Vercel. OAuth público permite registrarse sin prometer instalación.
+- Pruebas de registro: 12 aprobadas (9 de backend y 3 de estados de interfaz).
+  Suite completa de integración: 19/19 aprobadas y build correcto.
+- Despliegue de la tarea propietaria: `dpl_7BiYWCnNmGCkYotp7k7tBWewbjaa`, READY.
+  GET público independiente: `enabled:true`, `playReady:false`, `registered:false`.
+- El recorrido completo de OAuth en un Android físico queda pendiente de la prueba de Bryan.
 
-## Antes de activar
+## Contrato de estado y activación de descarga
 
-1. Comprobar el despliegue con los secretos de producción ya guardados.
-2. Conservar el registro desactivado mientras Google Play no ofrezca el canal cerrado.
-3. Completar ficha, privacidad, clasificación, acceso y declaraciones de Google Play;
-   enviar la prueba cerrada a revisión y comprobar que esté disponible.
-4. Confirmar el mercado de las cuentas de prueba y ampliar países si corresponde.
-5. Activar `BETA_ENABLED=true`, desplegar y verificar OAuth → membresía → Google Play.
+`GET /api/beta/status` entrega `enabled`, `playReady`, `registered` e `internalUrl`.
+`email` solo se entrega con registro confirmado y habilitado. `playUrl` solo se entrega
+además con `BETA_PLAY_READY=true`. Respuesta privada `no-store`.
+
+Con registro abierto y descarga pendiente, la interfaz muestra el formulario y el aviso
+«Registro abierto · Descarga pendiente». Tras confirmar la membresía, muestra el correo
+añadido al grupo, conserva el aviso y no ofrece un enlace de instalación. No cambian
+el consentimiento, los scopes OAuth ni la política de privacidad del registro.
+
+Antes de cambiar `BETA_PLAY_READY` a `true`:
+
+1. Completar ficha, clasificación, acceso y declaraciones de Google Play.
+2. Enviar la prueba cerrada a revisión y comprobar que esté publicada y accesible.
+3. Confirmar el mercado de las cuentas de prueba y ampliar países si corresponde.
+4. Activar la bandera, desplegar y verificar aceptación de la prueba e instalación.
 
 La distribución por Google Play no demuestra por sí sola que la IA QVAC funcione
 en todos los dispositivos ni que desaparezcan todas las advertencias de seguridad.

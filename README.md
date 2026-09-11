@@ -19,7 +19,7 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 | App Android con QVAC (Expo) | [APK actual de 229 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre es una app con cuatro pestañas (revisar, historial, aprender, ajustes), marca Certiva e historial en el teléfono (0.3.0, publicada en la release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
 
-Registro beta: código preparado para confirmar la cuenta de Google y añadirla al grupo de pruebas, con consentimiento y verificación de membresía. El registro público permanece **desactivado**: las variables sensibles ya están configuradas, pero falta la disponibilidad del canal cerrado y verificar el recorrido completo. La prueba interna 0.4 está publicada para cuentas habilitadas. [Configuración y estado](landing/BETA-SETUP.md) · [Revisión de integración](landing/BETA-REVIEW.md). La preparación de Google Play lleva 6 de 11 tareas completas; la ficha es-419 está en borrador. [Política Android](https://certiva-landing.vercel.app/privacidad-app) · [Materiales y pendientes de la ficha](landing/play-store-assets/README.md).
+Registro beta: **habilitado con Google; descarga cerrada pendiente**. Confirma la cuenta y su membresía en el grupo con consentimiento. `BETA_ENABLED=true` permite registrarse; `BETA_PLAY_READY=false` mantiene oculto el enlace de instalación. Falta comprobar OAuth completo desde Android y completar la distribución cerrada. [Configuración y estado](landing/BETA-SETUP.md) · [Revisión de integración](landing/BETA-REVIEW.md). Google Play lleva 6 de 11 tareas completas; la ficha es-419 está en borrador. [Política Android](https://certiva-landing.vercel.app/privacidad-app) · [Materiales y pendientes](landing/play-store-assets/README.md).
 
 Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto; la preparación de Google Play continúa por separado. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
 
@@ -62,7 +62,7 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 - `npm test`: **11/11** pruebas del motor, evaluación y persistencia/transiciones de casos, con dobles de los modelos.
 - `npx electron scripts/prueba-experiencia.js`: **9/9** comprobaciones de navegación y reporte con motor controlado; ver entorno utilizado en [la guía del portal](docs/EXPERIENCIA-Y-ALERTAS.md).
 - `node eval/reglas-check.js`: **136/136** veredictos correctos sobre el texto verdadero del dataset sintético; no mide OCR ni generalización.
-- `npm --prefix landing test`: **16/16**, con reglas, contrato HTTP del puente y flujo beta con OAuth/membresía simulados.
+- `npm --prefix landing test`: **19/19**, con reglas, contrato HTTP del puente, flujo beta con OAuth/membresía simulados y estados de registro/descarga.
 - `npm --prefix landing run build`: genera el sitio estático.
 - Sintaxis de JavaScript del portal y Biome de ocho archivos modificados: sin errores, con 12 advertencias.
 

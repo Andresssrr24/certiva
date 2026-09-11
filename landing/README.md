@@ -20,13 +20,13 @@ vercel --prod
 
 La vista previa usa http://127.0.0.1:4317. Vercel sirve el contenido estático de `dist/` y las funciones `api/beta/`. El puente y los modelos siguen siendo locales. El verificador funciona en el navegador sin enviar el texto a Vercel. El informe JSON se descarga localmente y puede contener dominios y evidencias, pero no incluye el mensaje completo.
 
-## Registro beta preparado
+## Registro con Google y descarga pendiente
 
-`/probar` ofrece acceso a la prueba interna para las cuentas ya habilitadas. El registro automático permanece desactivado por defecto; necesita configuración completa y `BETA_ENABLED=true`. El código confirma la identidad con Google, usa su correo verificado para añadirlo al grupo de pruebas y comprueba la membresía antes de mostrar el acceso cerrado. Los secretos se configuran fuera de Git.
+`/probar` permite registrarse con Google: producción tiene `BETA_ENABLED=true` y `BETA_PLAY_READY=false`. El código confirma la identidad y la membresía antes de mostrar el correo añadido al grupo. Registrarse no implica poder instalar: mientras Play no esté listo, muestra «Registro abierto · Descarga pendiente» y no ofrece el enlace cerrado. Si se apaga el registro, conserva la alternativa de prueba interna para cuentas ya habilitadas. Sin configuración completa, ambas funciones fallan de forma cerrada. Los secretos se configuran fuera de Git.
 
 En esta rama, el botón abre `/probar` y el QR vuelve a la ruta estable `/apk`, que redirige a `/probar`. Este cambio sustituye el destino Expo introducido en PR #33 para que QR y botón anuncien la misma prueba nativa 0.4. La APK Expo sigue disponible en su Release. El binario nativo 0.3 continúa como artefacto histórico y requisito del build, no como destino del botón beta.
 
-Estado y requisitos: [BETA-SETUP.md](BETA-SETUP.md). Revisión independiente: [BETA-REVIEW.md](BETA-REVIEW.md). `npm run dev` sirve archivos estáticos y no emula las funciones ni el flujo OAuth; las pruebas de servidor emplean dobles y no dan de alta usuarios reales. Esta PR no acredita un despliegue, una instalación desde Play ni el recorrido completo en navegador.
+Estado y requisitos: [BETA-SETUP.md](BETA-SETUP.md). Revisión independiente: [BETA-REVIEW.md](BETA-REVIEW.md). `npm run dev` sirve archivos estáticos y no emula las funciones ni el flujo OAuth; las pruebas de servidor emplean dobles y no dan de alta usuarios reales. La API pública confirma registro habilitado y descarga pendiente; esto no acredita una instalación desde Play ni el recorrido OAuth completo en navegador.
 
 La política Android está en `/privacidad-app`, separada de la privacidad del registro web. Los [materiales de la ficha es-419](play-store-assets/README.md) se conservan como borrador y `.vercelignore` excluye esa carpeta del despliegue. No acreditan aprobación de Google Play; continúan pendientes acceso completo para revisores, declaraciones y clasificación.
 

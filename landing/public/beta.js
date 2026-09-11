@@ -16,19 +16,32 @@ async function load() {
     $("beta-status").textContent =
       messages[state] ||
       (data.registered
-        ? "Tu cuenta está lista para participar."
+        ? "Tu registro está confirmado."
         : data.enabled
-          ? "Confirma tu cuenta para activar el acceso."
+          ? "Confirma tu correo con Google para registrarte."
           : "Prueba disponible por invitación.");
     $("beta-invitation").hidden = data.enabled;
     $("beta-form").hidden = !data.enabled || data.registered;
     $("beta-success").hidden = !data.registered;
+    $("play-link").hidden = true;
+    $("play-link").removeAttribute("href");
+    $("play-help").hidden = true;
+    $("play-pending").hidden = !data.enabled || data.playReady === true;
     if (data.registered) {
-      const url = new URL(data.playUrl);
-      if (url.origin !== "https://play.google.com" || url.pathname !== "/apps/testing/local.certiva.pilot")
-        throw new Error();
       $("registered-email").textContent = data.email;
-      $("play-link").href = url.href;
+      if (data.playReady === true) {
+        const url = new URL(data.playUrl);
+        if (
+          url.origin !== "https://play.google.com" ||
+          url.pathname !== "/apps/testing/local.certiva.pilot" ||
+          url.search ||
+          url.hash
+        )
+          throw new Error();
+        $("play-link").href = url.href;
+        $("play-link").hidden = false;
+        $("play-help").hidden = false;
+      }
     }
   } catch {
     $("beta-status").textContent =
@@ -36,6 +49,7 @@ async function load() {
     $("beta-invitation").hidden = false;
     $("beta-form").hidden = true;
     $("beta-success").hidden = true;
+    $("play-pending").hidden = true;
   }
 }
 $("use-another-email").addEventListener("click", () => {
@@ -47,5 +61,10 @@ $("beta-form").addEventListener("submit", () => {
   const button = $("beta-form").querySelector("button");
   button.disabled = true;
   button.textContent = "Abriendo Google…";
+});
+window.addEventListener("pageshow", () => {
+  const button = $("beta-form").querySelector("button");
+  button.disabled = false;
+  button.textContent = "Confirmar con Google ↗";
 });
 load();

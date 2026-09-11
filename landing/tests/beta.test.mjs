@@ -141,8 +141,23 @@ test("successful membership uses only the Google verified email and returns a pr
   const data = JSON.parse(status.body);
   assert.equal(data.registered, true);
   assert.equal(data.email, added);
-  assert.equal(data.playUrl, env.BETA_PLAY_URL);
+  assert.equal(data.playReady, false);
+  assert.equal(data.playUrl, undefined);
   assert.equal(status.headers["Cache-Control"], "no-store");
+  const ready = response();
+  publicStatus(request({ headers: { cookie: resultCookie } }), ready, { ...env, BETA_PLAY_READY: "true" });
+  assert.equal(JSON.parse(ready.body).playUrl, env.BETA_PLAY_URL);
+  assert.equal(JSON.parse(ready.body).playReady, true);
+  const disabled = response();
+  publicStatus(request({ headers: { cookie: resultCookie } }), disabled, {
+    ...env,
+    BETA_ENABLED: "false",
+    BETA_PLAY_READY: "true",
+  });
+  assert.equal(JSON.parse(disabled.body).registered, false);
+  assert.equal(JSON.parse(disabled.body).playReady, false);
+  assert.equal(JSON.parse(disabled.body).email, undefined);
+  assert.equal(JSON.parse(disabled.body).playUrl, undefined);
 });
 test("membership failure does not claim access or emit a success cookie", async () => {
   const res = response();
