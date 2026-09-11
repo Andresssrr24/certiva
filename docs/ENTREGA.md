@@ -22,9 +22,9 @@ Una sola entrega por equipo, inscrita en los tracks **General**, **Caja de Ahorr
 - [x] Nombre del proyecto decidido: **Certiva**; repo renombrado a `certiva` (la URL anterior redirige) y enlaces actualizados.
 - [ ] `npm run lint` sin errores, `npm test` en verde y `node eval/reglas-check.js` en 136 de 136.
 - [ ] La última corrida en `eval/runs/<fecha>/` y sus métricas copiadas al README. Hoy el README lleva la corrida de 136 (83,1 % antes de la corrección) más la verificación por subconjuntos tras corregir la segunda lectura; si hay 25 minutos libres con el worker de QVAC desocupado, `npm run eval` y actualizar la tabla.
-- [ ] Mergear la rama `apk-movil` a `main` por PR (APK, lector Q8 en el teléfono, contraste en SMS, métricas honestas).
-- [ ] APK compartido por enlace, no por el repo: `gh release create apk-v0.1 mobile/dist/antifraude-release-arm64.apk --title "APK Android v0.1 (arm64, 228 MB)" --notes "Sin modelos dentro; VisionPsy Q8 se descarga desde la app"` y pegar el enlace en la sección «App móvil y APK» del README.
-- [ ] Etiqueta `git tag v1.0-hackathon && git push --tags`.
+- [x] Rama `apk-movil` mergeada a `main` (PR #12, 11 de septiembre).
+- [ ] APK compartido por enlace, no por el repo: `g- [x] APK publicado en el [Release apk-v0.1](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1) con SHA-256 en las notas, y el enlace en la sección «App móvil y APK» del README.
+--tags`.
 - [ ] Ningún secreto en el repo: `git log -p | grep -iE "api[_-]?key|secret|token" | head`.
 - [ ] El capitán entrega en Dojo, marca los tres tracks y guarda una captura de la confirmación.
 
