@@ -180,7 +180,9 @@ function detail(id) {
     node("p", states[item.state]),
   );
   const reasons = node("ul");
-  item.report.reasonCodes.forEach((code) => reasons.append(node("li", Certiva.REASONS[code])));
+  item.report.reasonCodes.forEach((code) => {
+    reasons.append(node("li", Certiva.REASONS[code]));
+  });
   panel.append(reasons);
   panel.append(
     node(
