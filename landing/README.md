@@ -2,7 +2,7 @@
 
 Producción: https://certiva-landing.vercel.app
 
-Último despliegue comunicado por la tarea propietaria: Vercel READY `dpl_6SeepzYMkJS8Zohh9WQUiG94ctYJ` (11 de septiembre de 2026), con la [demo web](https://certiva-landing.vercel.app/demo). Las correcciones de cuota del backend todavía no se incorporaron a ese despliegue.
+Último despliegue comunicado por la tarea propietaria: Vercel READY `dpl_GZtZF5TRFQb583yNdLbdotMxysy1` (11 de septiembre de 2026), con el enlace interno tras el registro y la [demo web](https://certiva-landing.vercel.app/demo). Las correcciones de cuota del backend todavía no se incorporaron a ese despliegue.
 
 Landing independiente con branding v5, verificador de texto local y puente optativo al motor QVAC del proyecto. No modifica la app Electron ni utiliza su política sintética como si fuera de Caja de Ahorros.
 
@@ -27,6 +27,8 @@ La vista previa usa http://127.0.0.1:4317. Vercel sirve el contenido estático d
 ## Registro con Google y descarga pendiente
 
 `/probar` permite registrarse con Google: producción tiene `BETA_ENABLED=true` y `BETA_PLAY_READY=false`. El código confirma la identidad y la membresía antes de mostrar el correo añadido al grupo. Cuando `BETA_PLAY_READY=true`, el callback redirige directamente al destino Play validado después de confirmar identidad y membresía; un fallo vuelve a la página de registro. Registrarse no implica poder instalar: mientras Play no esté listo, muestra «Registro abierto · Descarga pendiente» y no ofrece el enlace cerrado. Si se apaga el registro, conserva la alternativa de prueba interna para cuentas ya habilitadas. Sin configuración completa, ambas funciones fallan de forma cerrada. Los secretos se configuran fuera de Git.
+
+Actualización del acceso interno: el registro confirmado también muestra un enlace a la prueba interna 0.5, separado del enlace cerrado. Una sincronización programada incorpora los verificadores a su lista; depende del equipo conectado, de la ejecución correcta y del cupo. El aviso no promete acceso inmediato. [Verificación y límites](INTERNAL-ACCESS-REVIEW.md).
 
 En esta rama, el botón abre `/probar` y el QR vuelve a la ruta estable `/apk`, que redirige a `/probar`. Este cambio sustituye el destino Expo introducido en PR #33 para que QR y botón anuncien la misma prueba nativa 0.4. La APK Expo sigue disponible en su Release. El binario nativo 0.3 continúa como artefacto histórico y requisito del build, no como destino del botón beta.
 

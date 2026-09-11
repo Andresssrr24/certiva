@@ -48,4 +48,6 @@ La revisión corrigió el reinicio de cuota al borrar reportes y endureció el d
 
 Actualización posterior de la tarea de landing: prueba abierta 0.5 enviada a revisión para Colombia y Panamá, todavía sin aprobación ni descarga confirmadas. La [demo web sin instalación](https://certiva-landing.vercel.app/demo) ya está publicada; el [inventario y las comprobaciones](../landing/DEMO-REVIEW.md) identifican los cuatro archivos congelados y el alcance por reglas locales.
 
+Acceso interno posterior: la tarea propietaria confirmó cuatro integrantes guardados en Play y sincronización programada cada 5 minutos, autorizada por Bryan. El enlace interno de `/probar` se muestra tras confirmar el registro, con aviso de dependencia del equipo y cupo. [Inventario y comprobaciones](../landing/INTERNAL-ACCESS-REVIEW.md). No se publican los correos ni se afirma que cada alta tenga acceso inmediato.
+
 Se mantienen las credenciales, datos privados y AAB fuera del repositorio. El checkout compartido y las fuentes de las demás tareas se conservan.

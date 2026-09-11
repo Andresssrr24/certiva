@@ -86,6 +86,24 @@ capturas, logs ni argumentos visibles de comandos:
 - Tras la corrección del formulario, Bryan confirmó que el registro en Android
   funciona. Es una confirmación del usuario, sin traza instrumentada de esta tarea.
 
+### Acceso interno tras confirmar el registro
+
+Por autorización expresa de Bryan comunicada por la tarea propietaria, los registros
+actuales y futuros se incorporan a la lista de la prueba interna mediante sincronización
+programada cada 5 minutos. Se conserva la lista existente, con un límite de 100
+verificadores. La tarea propietaria confirmó cuatro integrantes guardados en Play;
+sus correos no se incluyen en el repositorio.
+
+`/probar` muestra el enlace interno dentro de `beta-success`, después de confirmar
+el registro del grupo. La nota explica que requiere el equipo de sincronización
+conectado, la misma cuenta de Google y cupo disponible. La página no comprueba la
+lista interna: registro confirmado no equivale a incorporación efectiva en Play.
+La programación depende del host, Chrome y una ejecución correcta; cinco minutos
+es la frecuencia prevista, no una garantía de habilitación en ese plazo.
+
+Este enlace es independiente de la prueba cerrada y no cambia `BETA_PLAY_READY=false`.
+[Entrega y alcance de la verificación](INTERNAL-ACCESS-REVIEW.md).
+
 ### Prueba abierta: actualización posterior
 
 La tarea propietaria confirmó el envío de la prueba abierta 0.5 a revisión para
@@ -101,7 +119,7 @@ además con `BETA_PLAY_READY=true`. Respuesta privada `no-store`.
 
 Con registro abierto y descarga pendiente, la interfaz muestra el formulario y el aviso
 «Registro abierto · Descarga pendiente». Tras confirmar la membresía, muestra el correo
-añadido al grupo, conserva el aviso y no ofrece un enlace de instalación. No cambian
+añadido al grupo, conserva el aviso y no ofrece el enlace de instalación de la prueba cerrada. La alternativa interna descrita arriba tiene su propia lista y condiciones de acceso. No cambian
 el consentimiento, los scopes OAuth ni la política de privacidad del registro.
 
 Antes de cambiar `BETA_PLAY_READY` a `true`:
