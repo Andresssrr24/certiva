@@ -62,6 +62,8 @@ La verificación QVAC real previa está descrita en las guías de escritorio y l
 
 ## Piloto bancario: SDK móvil y consola
 
+La APK usa el símbolo de Certiva como icono adaptativo del lanzador, con fondo blanco y márgenes para las máscaras redonda y cuadrada de Android. [Recurso de marca y verificación](docs/ICONO-ANDROID.md).
+
 El recorrido de evaluación es **verificar mensaje → confirmar reporte → revisar caso → resolver**. El SDK procesa texto localmente; iOS puede leer una captura con Apple Vision y exige confirmar la lectura. Android 0.2 añade protección voluntaria de notificaciones de WhatsApp, aviso nativo y apertura de detalle/reporte, además de pegar o compartir texto. Todo el análisis de esta versión usa reglas locales; QVAC en Android sigue en desarrollo. [Guía y límites](docs/ALERTAS-ANDROID.md). Estas aplicaciones no ejecutan QVAC.
 
 La consola usa sesiones y roles de cliente, analista y auditor, aislamiento por banco, deduplicación, control de versiones y auditoría en SQLite. El reporte contiene nueve campos de resultado y consentimiento; no incluye el mensaje, la captura, enlaces ni teléfonos. Son reportes de clientes pendientes de corroboración.
