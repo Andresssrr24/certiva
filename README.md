@@ -63,6 +63,8 @@ La verificación QVAC real previa está descrita en las guías de escritorio y l
 
 ## Piloto bancario: SDK móvil y consola
 
+La pantalla inicial Android 0.3 agrupa el estado de protección, la revisión manual y los reportes. Conserva el texto compartido y evita iniciar revisiones vacías o simultáneas. [Capturas y dos pruebas de interfaz aprobadas](docs/ANDROID-UI.md#inicio-de-la-apk-revisión-posterior); la validación de QVAC sigue pendiente.
+
 El portal analiza directamente el texto de los escenarios y muestra una advertencia inicial de reglas mientras Qwen prepara la explicación; el reporte espera al resultado final. El directorio de contactos incluye fuentes oficiales y fecha de consulta, y evita presentar teléfonos generados por IA como canales verificados. [Rendimiento y comprobaciones](docs/RENDIMIENTO-PORTAL.md) · [Contactos y límites](docs/CONTACTOS-BANCARIOS.md).
 
 La APK usa el símbolo de Certiva como icono adaptativo del lanzador, con fondo blanco y márgenes para las máscaras redonda y cuadrada de Android. Las notificaciones usan una adaptación monocroma del símbolo y el logo a color en la alerta ampliada. [Recursos de marca y verificación](docs/ICONO-ANDROID.md).
