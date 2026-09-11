@@ -14,7 +14,7 @@ El QR recupera la ruta estable `/apk` y su redirect lleva a `/probar`, igual que
 
 ## Validación
 
-- `npm test`: **19/19 PASS**, después del formato de integración. Incluye nueve pruebas de backend beta, tres de estados de interfaz y siete de reglas/puente. OAuth, membresía y render de interfaz están controlados con dobles explícitos; no se realizan altas reales desde esta suite.
+- `npm test`: **20/20 PASS**, después del formato de integración. Incluye diez pruebas de backend beta, tres de estados de interfaz y siete de reglas/puente. OAuth, membresía y render de interfaz están controlados con dobles explícitos; no se realizan altas reales desde esta suite.
 - Se comprueban registro confirmado sin enlace de descarga, bandera lista con URL exacta, destino inválido, visitantes nuevos mientras Play está pendiente y apagado sin correo/URL. Se mantienen las comprobaciones de identidad, consentimiento, cookies alteradas/caducadas y membresía exacta.
 - `npm run build`: **PASS**, con tamaño y SHA-256 del APK histórico 0.3 requeridos por el build. Después se retiraron solo la copia de APK y `dist/` de esta revisión para no duplicar espacio. Los originales se conservan.
 - Biome de los cinco archivos de código/HTML/pruebas de este corte: sin errores. El aviso previo de `[hidden] !important` en CSS no cambia.
@@ -24,7 +24,7 @@ El QR recupera la ruta estable `/apk` y su redirect lleva a `/probar`, igual que
 
 ## Producción y alcance
 
-La tarea propietaria confirmó el despliegue READY `dpl_9iv8W9NbzyVx6P1e8wvB5GpsfDUH`, con ocho variables sensibles y autorización de Bryan para probar el registro. GET público independiente de `/api/beta/status`: HTTP 200, `enabled:true`, `playReady:false`, `registered:false`. La tarea propietaria verificó el formulario visible y el aviso de descarga pendiente en la web. La tarea propietaria completó OAuth en Chrome de escritorio con una cuenta que ya pertenecía al grupo. Bryan confirmó posteriormente que el registro funciona en Android. La nueva alta externa instrumentada e instalación desde Play siguen pendientes.
+La tarea propietaria confirmó el despliegue READY `dpl_98DyQHhxBznSeP635h4mALX3aP1y`, con ocho variables sensibles y autorización de Bryan para probar el registro. GET público independiente de `/api/beta/status`: HTTP 200, `enabled:true`, `playReady:false`, `registered:false`. La tarea propietaria verificó el formulario visible y el aviso de descarga pendiente en la web. La tarea propietaria completó OAuth en Chrome de escritorio con una cuenta que ya pertenecía al grupo. Bryan confirmó posteriormente que el registro funciona en Android. La nueva alta externa instrumentada e instalación desde Play siguen pendientes.
 
 Las comprobaciones reales previas de consulta/alta autorizada del grupo están recogidas en [BETA-SETUP.md](BETA-SETUP.md). Esta revisión no repite operaciones de membresía, consulta secretos ni publica correos de verificadores. `npm run dev` solo ofrece una vista estática y no emula las funciones de Vercel.
 
@@ -43,3 +43,9 @@ Las pruebas ampliadas rechazan origen nulo, ausente, externo y dominio parecido 
 La prueba de Android falló antes del arreglo. La prueba completa posterior se hizo en Chrome de escritorio con el propietario ya miembro del grupo, conservando descarga pendiente y sin enlace de instalación. No se publican su correo, cookies, códigos ni tokens de OAuth.
 
 Confirmación posterior comunicada por la tarea propietaria: Bryan probó el arreglo y dio por listo el registro Android. Se registra como confirmación del usuario; esta tarea no obtuvo una traza OAuth de ese dispositivo. La disponibilidad de descarga continúa pendiente.
+
+## Redirección a Play preparada
+
+El callback usa HTTP 303 al destino Play exacto únicamente después de verificar la identidad, confirmar la membresía y comprobar `BETA_PLAY_READY=true`. El destino no contiene correo ni tokens y la respuesta mantiene `no-referrer`. Con la bandera apagada vuelve a la confirmación; si falla el alta vuelve al error, incluso con Play listo.
+
+Suite completa tras integrar este corte: 20/20 PASS. La prueba añadida confirma redirección, destino exacto, cabecera de privacidad y cookies; la prueba de fallo de membresía se ejecuta también con la bandera activa. Biome de backend/pruebas sin errores. La tarea propietaria informó build correcto; no se reconstruyó el sitio estático para este cambio exclusivo del callback. GET público independiente mantiene `enabled:true`, `playReady:false`, `registered:false`. No se activó descarga desde esta tarea ni se publicó el canal cerrado.

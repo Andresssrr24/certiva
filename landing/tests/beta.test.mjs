@@ -169,14 +169,36 @@ test("successful membership uses only the Google verified email and returns a pr
   assert.equal(JSON.parse(disabled.body).email, undefined);
   assert.equal(JSON.parse(disabled.body).playUrl, undefined);
 });
-test("membership failure does not claim access or emit a success cookie", async () => {
+test("published Play track redirects directly only after verified membership", async () => {
+  const readyEnv = { ...env, BETA_PLAY_READY: "true" };
   const res = response();
-  await callback(callbackReq(), res, env, {
-    oauth: oauth({ email: "test@example.com", email_verified: true, nonce: "nonce" }),
+  let confirmed = false;
+  await callback(callbackReq(), res, readyEnv, {
+    oauth: oauth({ email: "verified@example.com", email_verified: true, nonce: "nonce" }),
     async addMember() {
-      throw new Error("Unavailable");
+      confirmed = true;
     },
   });
+  assert.equal(confirmed, true);
+  assert.equal(res.statusCode, 303);
+  assert.equal(res.headers.Location, env.BETA_PLAY_URL);
+  assert.equal(res.headers["Referrer-Policy"], "no-referrer");
+  assert.ok(!res.headers.Location.includes("verified@example.com"));
+  assert.equal(res.headers["Set-Cookie"].length, 2);
+});
+test("membership failure does not claim access or emit a success cookie even when Play is ready", async () => {
+  const res = response();
+  await callback(
+    callbackReq(),
+    res,
+    { ...env, BETA_PLAY_READY: "true" },
+    {
+      oauth: oauth({ email: "test@example.com", email_verified: true, nonce: "nonce" }),
+      async addMember() {
+        throw new Error("Unavailable");
+      },
+    },
+  );
   assert.equal(res.headers.Location, "/probar?estado=reintentar");
   assert.equal(typeof res.headers["Set-Cookie"], "string");
   assert.ok(!res.headers["Set-Cookie"].includes("beta-result"));

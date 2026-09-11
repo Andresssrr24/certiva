@@ -227,7 +227,7 @@ export async function callback(req, res, env = process.env, dependencies = {}) {
         3600,
       ),
     ]);
-    return redirect(res, "/probar?estado=listo");
+    return redirect(res, cfg.playReady ? cfg.playUrl : "/probar?estado=listo");
   } catch {
     // Do not log OAuth codes, email addresses, credentials or upstream response bodies.
     return redirect(res, "/probar?estado=reintentar");

@@ -75,8 +75,8 @@ capturas, logs ni argumentos visibles de comandos:
 - Registro habilitado por solicitud de Bryan para probar desde Android: `BETA_ENABLED=true`.
 - Descarga cerrada pendiente: `BETA_PLAY_READY=false`. Las ocho variables están guardadas
   como sensibles en Vercel. OAuth público permite registrarse sin prometer instalación.
-- Pruebas de registro: 12 aprobadas (9 de backend y 3 de estados de interfaz).
-  Suite completa tras integrar la corrección: 19/19 aprobadas. Build de la tarea
+- Pruebas de registro: 13 aprobadas (10 de backend y 3 de estados de interfaz).
+  Suite completa tras integrar la corrección: 20/20 aprobadas. Build de la tarea
   propietaria correcto.
 - Tras la corrección del formulario, Bryan confirmó que el registro en Android
   funciona. Es una confirmación del usuario, sin traza instrumentada de esta tarea.
@@ -126,3 +126,19 @@ Android ni instalación física.
 Actualización comunicada por la tarea propietaria después de esa prueba: Bryan confirmó
 registro correcto en Android y pidió avanzar con la descarga. No acredita instalación
 desde Play ni una nueva alta externa instrumentada; el canal cerrado sigue pendiente.
+
+## Registro → Google Play
+
+El callback ya prepara una redirección HTTP 303 directa al destino Play exacto,
+solo después de verificar identidad y confirmar membresía, y solo cuando
+`BETA_PLAY_READY=true`. No incluye correo ni tokens en el destino y mantiene
+`Referrer-Policy: no-referrer`. Si el canal sigue pendiente se vuelve a la
+confirmación del registro. Los fallos nunca redirigen a Play.
+
+13 pruebas beta aprobadas y build correcto. La bandera de producción se conserva
+en `false`; el código preparado no equivale a publicar el canal cerrado.
+Bryan comunicó que el registro en Android ya terminó correctamente; no se ha
+comprobado una instalación física desde Play.
+
+Despliegue de este corte comunicado por la tarea propietaria:
+`dpl_98DyQHhxBznSeP635h4mALX3aP1y`, READY y asociado al alias público.
