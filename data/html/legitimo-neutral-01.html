@@ -4,28 +4,24 @@
   .status{height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 22px;font-size:15px;font-weight:600}
   .lnk{text-decoration:underline}
   
-  .wrap{background:#efe7dd;height:100%;display:flex;flex-direction:column;color:#111}
-  .top{background:#075e54;color:#fff}
-  .hdr{background:#075e54;color:#fff;display:flex;align-items:center;gap:10px;padding:6px 12px 10px}
-  .back{font-size:28px}
-  .av{width:40px;height:40px;border-radius:50%;background:#cfd8dc;color:#455a64;display:flex;align-items:center;justify-content:center;font-weight:600}
-  .name{font-size:16px;font-weight:600;line-height:1.1}
-  .sub{font-size:12px;font-weight:400;opacity:.85;margin-top:2px}
-  .ok{color:#25d366;font-size:14px}
-  .chat{flex:1;padding:12px 10px}
-  .warn{background:#fff7d6;color:#5a4b00;font-size:12px;border-radius:8px;padding:8px 10px;margin:0 20px 12px;text-align:center}
-  .bubble{position:relative;max-width:290px;background:#fff;border-radius:10px;padding:8px 12px 18px;font-size:16px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word;box-shadow:0 1px 0 rgba(0,0,0,.08)}
-  .bubble .lnk{color:#027eb5}
-  .time{position:absolute;right:10px;bottom:4px;font-size:11px;color:#8a8a8a}
-  .input{height:60px;display:flex;align-items:center;padding:0 12px;color:#8a8a8a;font-size:16px}
-  .input span{background:#fff;border-radius:22px;padding:10px 16px;flex:1}
+  .wrap{background:#fff;height:100%;display:flex;flex-direction:column;color:#000}
+  .hdr{display:flex;flex-direction:column;align-items:center;padding:4px 0 10px;border-bottom:1px solid #e5e5ea;position:relative}
+  .back{position:absolute;left:16px;top:4px;font-size:30px;color:#0a84ff}
+  .avatar{width:48px;height:48px;border-radius:50%;background:#8e8e93;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600}
+  .who{font-size:12px;margin-top:6px;color:#000}
+  .chat{flex:1;padding:14px 16px}
+  .stamp{text-align:center;font-size:12px;color:#8e8e93;margin-bottom:10px}
+  .bubble{max-width:280px;background:#e9e9eb;border-radius:18px;padding:10px 14px;font-size:17px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word}
+  .bubble .lnk{color:#0a84ff}
+  .input{height:60px;border-top:1px solid #e5e5ea;display:flex;align-items:center;padding:0 16px;color:#8e8e93;font-size:17px}
+  .input span{border:1px solid #c7c7cc;border-radius:20px;padding:8px 14px;flex:1}
 </style></head><body>
   <div class="wrap">
-    <div class="status top"><span>12:24</span><span>▲ ▮ 82%</span></div>
-    <div class="hdr"><span class="back">‹</span><div class="av">J</div><div class="name">José Castillo<div class="sub">No está en tus contactos</div></div></div>
+    <div class="status"><span>7:48</span><span>▲ ▮ 82%</span></div>
+    <div class="hdr"><div class="back">‹</div><div class="avatar">A</div><div class="who">Ana Gómez</div></div>
     <div class="chat">
-      <div class="warn">Este número no está en tus contactos. Ten cuidado con los mensajes de desconocidos.</div>
-      <div class="bubble">Hola, su paquete llegará hoy entre 2 y 5 p.m. Gracias por su compra.<span class="time">12:24</span></div>
+      <div class="stamp">Mensaje de texto · hoy 7:48</div>
+      <div class="bubble">Mami, ya llegué a casa. Te llamo más tarde.</div>
     </div>
-    <div class="input"><span>Mensaje</span></div>
+    <div class="input"><span>Mensaje de texto</span></div>
   </div></body></html>

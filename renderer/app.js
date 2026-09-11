@@ -35,7 +35,9 @@ const SENAL = {
   punycode: "El enlace usa letras disfrazadas",
   acortador: "El enlace esconde a dónde lleva",
   numero_no_oficial: "El número no es del banco",
-  pide_datos_sensibles: "Te piden tu clave o tu código",
+  pide_datos_sensibles: "Te piden tu clave, tu código o tu frase semilla",
+  envio_para_recibir: "Te piden enviar dinero para recibir más",
+  cambio_direccion: "Te piden cambiar la dirección de pago",
   urgencia: "Te meten prisa",
   pago_terceros: "Te piden mover dinero",
 };
@@ -326,6 +328,7 @@ const EJEMPLOS = [
   ["fraude-ejecutivo_whatsapp-01", "WhatsApp: «ejecutivo del banco»", "Fraude que pide el código"],
   ["legitimo-otp_legitimo-01", "SMS: código de verificación", "Legítimo"],
   ["legitimo-correo_estado_cuenta-01", "Correo: estado de cuenta", "Legítimo"],
+  ["fraude-billetera_semilla-01", "WhatsApp: «soporte de billetera»", "Fraude que pide la frase semilla"],
 ];
 async function pintaEjemplos() {
   const todas = await window.escudo.capturasDemo();

@@ -239,6 +239,53 @@ const FRAUDE = {
       senales: ["ip_literal", ...(urg ? ["urgencia"] : [])],
     };
   },
+  // Estafas de billetera de criptoactivos: mismas tácticas, mismo motor. «Billetera Demo» es ficticia.
+  billetera_semilla: () => {
+    const d = pick(["billeteradem-soporte.com", "billeteradem.com-verify.net", "soporte-billeteradem.app"]);
+    const t = pick([
+      `Soporte de Billetera Demo: detectamos un acceso no autorizado. Para recuperar su cuenta confirme sus 12 palabras de recuperación en https://${d}/recuperar`,
+      `Hola, soy ${pick(nombres)} del equipo de Billetera Demo. Para verificar que usted es el dueño necesito que me envíe su frase semilla completa.`,
+      `Billetera Demo: su billetera será suspendida. Valide su clave privada hoy mismo en https://${d}/validar`,
+    ]);
+    const enlaces = t.includes("https://") ? [t.match(/https:\/\/\S+/)[0]] : [];
+    const urg = /suspendida|hoy mismo/.test(t);
+    return {
+      canal: pick(["whatsapp", "sms", "whatsapp"]),
+      remitente: pick([movilConPrefijo(), "Soporte Billetera", movilConPrefijo()]),
+      texto: t,
+      enlaces,
+      telefonos: [],
+      montos: [],
+      pide: true,
+      urgencia: urg,
+      senales: [
+        "pide_datos_sensibles",
+        ...(enlaces.length ? ["dominio_no_oficial"] : []),
+        ...(urg ? ["urgencia"] : []),
+      ],
+    };
+  },
+  airdrop_usdt: () => {
+    const dir = `T${pick(["Qx9", "Xab", "Kp7", "Mv2"])}${digitos(6)}`;
+    const t = pick([
+      `Airdrop oficial de USDT: envíe 50 USDT a la dirección ${dir} y reciba 500 USDT en minutos. Solo hoy.`,
+      `Billetera Demo: para liberar sus fondos retenidos transfiera 20 USDT a la dirección de verificación ${dir} y le devolvemos 200.`,
+      `Actualización de Billetera Demo: su dirección de depósito cambió. Use la nueva dirección ${dir} para sus próximos envíos.`,
+    ]);
+    const tipo = /dirección de depósito/.test(t) ? "cambio_direccion" : "envio_para_recibir";
+    const urg = /solo hoy/i.test(t);
+    return {
+      canal: pick(["whatsapp", "sms"]),
+      remitente: pick([movilConPrefijo(), "AIRDROP", "Billetera Demo"]),
+      texto: t,
+      enlaces: [],
+      telefonos: [],
+      montos: [],
+      pide: false,
+      urgencia: urg,
+      senales: [tipo, ...(urg ? ["urgencia"] : [])],
+    };
+  },
 };
 
 // ---------- legítimos ----------
