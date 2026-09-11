@@ -13,7 +13,9 @@ const perf = require("./lib/perf");
 const red = require("./lib/red");
 const { fork } = require("node:child_process");
 
-app.setName("Anti-fraude QVAC");
+app.setName("Certiva");
+// Conservar los reportes existentes tras el cambio de nombre.
+app.setPath("userData", path.join(app.getPath("appData"), "Anti-fraude QVAC"));
 // Dos apps QVAC a la vez se quedan colgadas en el worker compartido de ~/.qvac. El candado es obligatorio.
 if (!app.requestSingleInstanceLock()) app.exit(0);
 
@@ -127,11 +129,12 @@ motor.onProgress = (p) => enviar("progreso-modelo", p);
 
 function crearVentana() {
   win = new BrowserWindow({
-    width: 1180,
-    height: 820,
+    width: 1380,
+    height: 920,
     minWidth: 900,
     minHeight: 620,
-    backgroundColor: "#0f1514",
+    backgroundColor: "#f4f7fc",
+    title: "Certiva · Tu aliado contra el fraude",
     titleBarStyle: process.platform === "darwin" ? "hiddenInset" : "default",
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
@@ -298,7 +301,7 @@ ipcMain.handle("demo-auto", () => ({
   llamada: process.env.DEMO_LLAMADA ? path.join(__dirname, "data", "audio", "llamada-vishing.wav") : null,
 }));
 async function demoAutomatica() {
-  if ((!process.env.DEMO_AUTO && !process.env.DEMO_LLAMADA) || !win) return;
+  if (!process.env.DEMO_CAPTURA || !win) return;
   const salida = process.env.DEMO_CAPTURA;
   if (salida) {
     await new Promise((r) => setTimeout(r, Number(process.env.DEMO_ESPERA_MS || 25000)));

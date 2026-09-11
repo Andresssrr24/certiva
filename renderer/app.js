@@ -14,7 +14,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<"
 const ICONO_AVISO =
   '<svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 6a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V9a1 1 0 0 1 1-1zm0 9.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>';
 const ETIQUETA = {
-  fraude: "Es una estafa",
+  fraude: "Señales de estafa",
   sospechoso: "Sospechoso",
   sin_senales: "Sin señales de estafa",
   no_legible: "No pude leerlo",
@@ -444,6 +444,11 @@ async function medirRed() {
   const st = await window.escudo.estado();
   $("#modelos").textContent =
     `VisionPsy Nano 460M Flash · Qwen3 4B · Parakeet TDT · SDK ${st.sdk} · ${st.hardware.cpu}, ${st.hardware.ram_gb} GB · inferencia local`;
+  if (st.sdk === "?") {
+    $("#setupNotice").hidden = false;
+    $("#setupNotice").textContent =
+      "Interfaz local lista. Falta instalar QVAC y descargar los modelos para analizar mensajes en este equipo.";
+  }
   pintaBanco(st.reportes || []);
   pintaPares(st.pares, []);
   try {
