@@ -14,7 +14,13 @@ Extraer únicamente el icono grande de la firma superior izquierda: contenedor b
 
 `ProtectionNotifications` usa `ic_certiva_notification.xml`, una adaptación vectorial monocroma del símbolo Enlace, como icono pequeño de las versiones privada y pública de la alerta. Android aplica el tinte del sistema a esta silueta. La alerta privada incluye además el PNG `certiva_launcher` como icono grande; el color de marca declarado es #205094.
 
-Este cambio sustituye el candado genérico. Conserva el texto, los permisos, la privacidad y la apertura del detalle existentes. `:app:assembleDebug :app:lintDebug` pasó sobre la rama aislada en 30 segundos. La comprobación visual de las notificaciones sigue pendiente por falta de respuesta del emulador; la captura inferior acredita únicamente el icono del lanzador.
+Este cambio sustituye el candado genérico. Conserva el texto, los permisos, la privacidad y la apertura del detalle existentes. `:app:assembleDebug :app:lintDebug` pasó sobre la rama aislada en 30 segundos.
+
+La comprobación visual en el emulador pasó: `NotificationBrandingTest`, 1 prueba en 4,028 segundos. Verificó el icono pequeño privado y público, la presencia del icono grande y el título visible; la captura revisada muestra ambas versiones de la marca. [Salida instrumentada](evidencias/notification-branding/instrumentation.txt) y [resultado con hash de APK](evidencias/notification-branding/result.json).
+
+![Iconos de Certiva en una notificación de Android](evidencias/notification-branding/notification.png)
+
+La prueba utilizó una notificación controlada en la APK de desarrollo 0.3, SHA-256 `cb69b6bfd72aada2c12649870b73fc6d73dd15f26707086c518913c185234837`: no acredita inferencia, entrega real de WhatsApp ni teléfono físico. La APK aislada de esta rama conserva la base `0.2.0-protection`, compiló correctamente y tiene SHA-256 `948c3767c576030e58b4c403b74da2b6a51c5ccda9fb26b5b31a14956a4efefe`; la prueba instrumentada citada no se ejecutó sobre ese segundo archivo.
 
 ### Lanzador
 
