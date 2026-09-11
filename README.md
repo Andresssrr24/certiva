@@ -117,6 +117,10 @@ Todo corre en el MacBook. Dos procesos de QVAC a la vez se bloquean en el worker
 
 Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector para la comparación; `SIN_RAG=1` apaga la política; `PARES=0` apaga la capa de pares; `PARES_SWARM=0` deja solo el modo directo; `PARES_PUERTO=4411` hace que la app también escuche directo.
 
+## App móvil y APK ligero
+
+La prueba de que el motor se embebe es una app Android con el mismo núcleo. El plan, con los modelos medidos y sus compuertas, está en [docs/PLAN-APK.md](docs/PLAN-APK.md); el andamiaje Expo, en `mobile/`. Principio: el APK no lleva modelos. Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas; leer capturas descarga VisionPsy Q4 una sola vez, unos 410 MB, y corre en el teléfono. Estado: andamiaje escrito y sin compilar, porque la máquina de desarrollo no tiene el toolchain de Android; la compilación va en una laptop que lo tenga, siguiendo `mobile/README.md`.
+
 ## Datos
 
 Ningún dato real. El emisor de la demo es «Banco Demo»; las estafas de billetera imitan a «Billetera Demo», también ficticia. El audio de la llamada de vishing de la demo, `data/audio/llamada-vishing.wav`, es sintético: lo genera `data/generar-llamada.js` con las voces del sistema de macOS a partir del guion de `data/llamada-vishing.md`. Nadie fue grabado. Medido en el M4: cada lote de cinco segundos se transcribe en unos 150 ms, y la llamada completa de 45 s se procesa en unos 10 s con carga del modelo incluida. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
