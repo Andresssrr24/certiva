@@ -1,6 +1,6 @@
 # Revisión de integración del registro beta
 
-11 de septiembre de 2026. Integración aislada desde `main` (`6eee9ea`) del inventario congelado de la tarea de landing. La PR permanece en borrador. Esta tarea publica código y documentación; la tarea propietaria realiza los despliegues y configura las variables autorizadas.
+11 de septiembre de 2026. Integración aislada desde `main` (`6eee9ea`) del inventario congelado de la tarea de landing. Este corte se integró en `main` mediante la PR #35. Esta tarea publica código y documentación; la tarea propietaria realiza los despliegues y configura las variables autorizadas.
 
 ## Comportamiento integrado
 
@@ -32,7 +32,7 @@ Las comprobaciones reales previas de consulta/alta autorizada del grupo están r
 
 La política `/privacidad-app` se comparó byte a byte con el archivo publicado durante su integración. Rewrite y recursos locales correctos; `play-store-assets/` queda excluido de Vercel. Icono 512×512, gráfico 1024×500 inspeccionado y capturas 1080×2400. Las capturas son idénticas a `menu-home.png` y `menu-verify.png` de la evidencia nativa 0.4 target35, no a una instalación Play.
 
-Play lleva 6 de 11 tareas completas según la tarea propietaria. La tarea propietaria confirmó después acceso de revisión guardado, IARC completado y público mayores18 guardado. Siguen pendientes declaración de recursos de IA, ficha y cierre de Seguridad de datos. La ficha no se ha enviado a revisión ni está publicado el canal cerrado. Archivar los materiales no resuelve las aprobaciones pendientes ni certifica cumplimiento. El código Android no cambia.
+Actualización posterior comunicada por la tarea propietaria: acceso de revisión, IARC, público mayores de 18 años, Seguridad de datos e ID de publicidad «No» guardados; ficha lista tras la intervención de Bryan. El borrador Alpha conserva únicamente el AAB versión 5 y se enviaron 14 cambios de **0.5.0 · Certiva · Prueba cerrada**. Console muestra «Cambios en la etapa de revisión», sin aprobación ni disponibilidad cerrada confirmadas. La publicación administrada está desactivada; Panamá y el grupo no cambiaron. `BETA_PLAY_READY=false` mantiene pendiente la descarga. Los materiales 0.4 anteriores son históricos; esta actualización documental no repite las comprobaciones de Console ni modifica Android.
 
 ## Corrección del envío del formulario
 
