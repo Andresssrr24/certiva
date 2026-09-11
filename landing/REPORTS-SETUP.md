@@ -72,8 +72,11 @@ Estado del corte: suite completa de integración30/30PASS; despliegue
 `dpl_3zFYuMHF2nCxhN75g9EypSBiH2xe` READY. Android 0.5publicado en prueba interna
 el 11 de septiembre, 07:19 de Panamá. Bryan autorizó después entregar la credencial exclusiva al revisor de Google Play;
 la tarea propietaria confirmó guardado del formulario con las instrucciones 0.5.
-No se incluye esa credencial en Git, APK ni evidencias. El canal cerrado sigue
-pendiente de los requisitos restantes.
+No se incluye esa credencial en Git, APK ni evidencias. La tarea propietaria
+confirmó después el envío de 14 cambios de 0.5.0 · Certiva · Prueba cerrada,
+con un único AAB versión 5. Play muestra «Cambios en la etapa de revisión»;
+la aprobación y disponibilidad cerrada siguen sin confirmar. `BETA_PLAY_READY=false`
+se conserva. Véase el [estado de distribución](BETA-SETUP.md).
 
 ## Correcciones de la revisión independiente
 

@@ -6,7 +6,7 @@ Corte actualizado: 11 de septiembre de 2026. El código y las evidencias se inte
 
 GitHub marca las PR #1 a #33 como fusionadas, pero ese estado no garantiza que todas entraran en `main`. La [PR #31](https://github.com/Andresssrr24/certiva/pull/31) se fusionó en la rama del menú después de que esta entrara en `main`: API36 quedó fuera. La [PR #37](https://github.com/Andresssrr24/certiva/pull/37) incorpora esos commits como base de Android0.5 directamente a `main`. La PR #36 se cerró como reemplazada; su código se conserva en #37.
 
-Las PR #34 (evidencia de notificación/menú) y #35 (registro Google) ya están integradas. Quedan abiertas [PR #37](https://github.com/Andresssrr24/certiva/pull/37), Android0.5, que también incluye API36; y [PR #38](https://github.com/Andresssrr24/certiva/pull/38), servicio HTTPS de reportes. El backend se añadió después del corte fusionado de #35, por lo que necesita su PR independiente.
+Las PR #34 (evidencia de notificación/menú), #35 (registro Google), [#37](https://github.com/Andresssrr24/certiva/pull/37) (Android0.5 y API36) y [#38](https://github.com/Andresssrr24/certiva/pull/38) (servicio HTTPS de reportes) ya están integradas en `main`, comprobado en el commit `0ca7e0f`. El backend entró por su PR independiente porque se añadió después del corte fusionado de #35.
 
 | Tarea | Resultado publicado | Estado y alcance |
 |---|---|---|
@@ -44,6 +44,6 @@ Los ZIP de evidencias conservan pruebas fallidas y sus resultados. El video fina
 
 El corte está congelado y revisado: backend en [PR #38](https://github.com/Andresssrr24/certiva/pull/38), Android0.5 en [PR #37](https://github.com/Andresssrr24/certiva/pull/37), también contra main e incluyendo API36 como base. La tarea propietaria comunicó pruebas HTTP reales de login, reportes concurrentes/idempotencia, persistencia y borrado, más dos pruebas nativas en6.242s contra HTTPS con SDK firmado. AAB firmado verificado por tamaño y SHA, sin incluirlo en Git. No hubo inferencia QVAC ni instalación física desde Play.
 
-La revisión corrigió el reinicio de cuota al borrar reportes y endureció el directorio de aprovisionamiento;30pruebas y build aprobados. Esas correcciones aún no se habían incorporado al despliegue en el último estado confirmado. La tarea propietaria publicó version5 en prueba interna y guardó el acceso de revisión tras autorización de Bryan; el canal cerrado y otros requisitos de Play continúan pendientes.
+La revisión corrigió el reinicio de cuota al borrar reportes y endureció el directorio de aprovisionamiento;30pruebas y build aprobados. Esas correcciones aún no se habían incorporado al despliegue en el último estado confirmado. La tarea propietaria publicó versión 5 en prueba interna y guardó el acceso de revisión tras autorización de Bryan. Después confirmó ficha y declaraciones completas y envió 14 cambios de **0.5.0 · Certiva · Prueba cerrada**, con un único AAB versión 5. Play muestra «Cambios en la etapa de revisión», sin aprobación ni disponibilidad cerrada confirmadas. Panamá y el grupo se conservan; publicación administrada desactivada y `BETA_PLAY_READY=false`.
 
 Se mantienen las credenciales, datos privados y AAB fuera del repositorio. El checkout compartido y las fuentes de las demás tareas se conservan.

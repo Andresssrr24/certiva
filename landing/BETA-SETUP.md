@@ -58,22 +58,25 @@ capturas, logs ni argumentos visibles de comandos:
 - Cliente OAuth web creado y estado público **En producción**, autorizado por Bryan;
   credenciales conservadas fuera del repositorio.
 - Canal cerrado Alpha configurado con el grupo y Panamá como mercado inicial.
-- Paquete 4 / `0.4.0-menu-experimental`, target 36, agregado al borrador cerrado.
-- Google Play confirma **6 de 11 tareas iniciales completas**: privacidad, anuncios,
-  apps gubernamentales, funciones financieras, salud y categoría/contacto.
+- Borrador cerrado Alpha actualizado a **0.5.0 · Certiva · Prueba cerrada**,
+  con el único AAB versión 5; reemplaza al paquete 4 del borrador anterior.
 - Política Android publicada y guardada en Play: `/privacidad-app`. Categoría
   Herramientas; correo de soporte y sitio HTTPS guardados.
-- Ficha es-419 guardada como borrador con descripción, icono 512, gráfico 1024×500
-  y dos capturas reales del menú. Falta resolver la declaración de recursos de IA.
+- Ficha marcada como lista tras la intervención de Bryan, según la tarea propietaria.
+  Los materiales archivados de la ficha 0.4 conservan su alcance histórico.
 - IARC autorizado y completado: clasificación general3+/ESRB Todos, según la
   confirmación de la tarea propietaria. Público objetivo mayores18 guardado.
 - Acceso para revisores:
   Android0.5 ya conecta Ingresar/Mis reportes por HTTPS. La tarea propietaria
   confirmó que guardó las credenciales exclusivas y las instrucciones del revisor,
   tras autorización expresa de Bryan; no se incluyen sus valores en esta documentación.
-- Seguridad de datos guardada como borrador: descarga HTTPS del modelo y cuentas
-  asignadas externamente. Faltan tipos, usos y revisión final de la declaración.
-- No se ha enviado la app a revisión; el canal cerrado **no está publicado**.
+- Seguridad de datos completada e ID de publicidad declarado como «No», según
+  la tarea propietaria.
+- **14 cambios enviados a revisión**. Console muestra «Cambios en la etapa de
+  revisión» y comprobaciones rápidas iniciales; todavía no se ha confirmado
+  aprobación ni disponibilidad de la prueba cerrada.
+- Publicación administrada desactivada; Panamá y el grupo de verificadores se
+  conservan. El envío a revisión no activa la bandera de descarga de la web.
 - Registro habilitado por solicitud de Bryan para probar desde Android: `BETA_ENABLED=true`.
 - Descarga cerrada pendiente: `BETA_PLAY_READY=false`. Las ocho variables están guardadas
   como sensibles en Vercel. OAuth público permite registrarse sin prometer instalación.
@@ -96,8 +99,8 @@ el consentimiento, los scopes OAuth ni la política de privacidad del registro.
 
 Antes de cambiar `BETA_PLAY_READY` a `true`:
 
-1. Completar ficha, clasificación, acceso y declaraciones de Google Play.
-2. Enviar la prueba cerrada a revisión y comprobar que esté publicada y accesible.
+1. Confirmar aprobación de los cambios enviados a Google Play.
+2. Comprobar que la prueba cerrada esté publicada y accesible.
 3. Confirmar el mercado de las cuentas de prueba y ampliar países si corresponde.
 4. Activar la bandera, desplegar y verificar aceptación de la prueba e instalación.
 
@@ -155,6 +158,8 @@ También guardó el acceso exclusivo de revisión, previa autorización de Bryan
 El canal cerrado sigue sin publicar. Las correcciones de cuota/provisioning aún
 necesitan incorporarse al despliegue. Registro habilitado y descarga cerrada pendiente.
 
-Actualización Play comunicada por la tarea propietaria: IARC completado y público
-objetivo mayores18 guardado. Siguen pendientes Seguridad de datos y ficha/recursos IA;
-el canal cerrado continúa sin publicar. Backend revisado en PR #38 y Android en PR #37.
+Última actualización Play comunicada por la tarea propietaria: versión 0.5 enviada
+a revisión con 14 cambios, ficha lista y declaraciones guardadas. El estado de
+revisión no confirma aprobación ni descarga cerrada. Backend revisado en PR #38
+y Android en PR #37, ambos integrados en main; las correcciones del backend
+siguen pendientes de despliegue.
