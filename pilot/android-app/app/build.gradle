@@ -1,7 +1,7 @@
 plugins { id 'com.android.application' }
 android {
     namespace 'local.certiva.pilot'
-    compileSdk 35
+    compileSdk 36
     useLibrary 'android.test.runner'
     useLibrary 'android.test.base'
     useLibrary 'android.test.mock'
@@ -9,7 +9,7 @@ android {
         applicationId 'local.certiva.pilot'
         ndk { abiFilters 'arm64-v8a' }
         minSdk 33
-        targetSdk 35
+        targetSdk 36
         versionCode 4
         versionName '0.4.0-menu-experimental'
         testInstrumentationRunner 'android.test.InstrumentationTestRunner'
