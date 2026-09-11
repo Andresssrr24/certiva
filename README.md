@@ -135,7 +135,7 @@ Ningún dato real. El emisor de la demo es «Banco Demo»; las estafas de billet
 
 **Por qué VisionPsy es central por necesidad.** La captura de pantalla permite al usuario aportar mensajes de distintas aplicaciones sin integrar cada servicio, y leerla en el teléfono exige un modelo de visión que quepa en un teléfono de gama media. VisionPsy Nano 460M Flash es el único modelo que mira la imagen en este flujo.
 
-**Resultados históricos anteriores a la segunda lectura; deben repetirse para esta rama. Calidad medida sobre el set sintético** (`npm run eval`, 120 capturas, resultados completos en `eval/results.md`, registro por llamada en `eval/perf.jsonl`):
+**Resultados históricos anteriores a la segunda lectura; deben repetirse para esta rama. Calidad medida sobre el set sintético** (`npm run eval`; la corrida reportada usó 120 capturas, y las 16 de billetera agregadas después entran en la próxima; resultados completos en `eval/results.md`, registro por llamada en `eval/perf.jsonl`):
 
 | Métrica | Valor |
 |---|---|
