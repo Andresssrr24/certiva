@@ -9,7 +9,18 @@ const verdad = require("../data/verdad.json");
   const textoKey = process.argv[2] || "qwen3-4b";
   const n = Number(process.argv[3]) || 6;
   const dir = path.join(__dirname, "..", "data", "capturas");
-  const ids = ["fraude-bloqueo_enlace-01", "fraude-pide_codigo-01", "fraude-billetera_semilla-01", "legitimo-otp_legitimo-01", "legitimo-oficial_con_urgencia-01", "legitimo-correo_estado_cuenta-01", "fraude-pago_yappy-01", "legitimo-alerta_transaccion-01"].slice(0, n).filter((id) => fs.existsSync(path.join(dir, `${id}.png`)));
+  const ids = [
+    "fraude-bloqueo_enlace-01",
+    "fraude-pide_codigo-01",
+    "fraude-billetera_semilla-01",
+    "legitimo-otp_legitimo-01",
+    "legitimo-oficial_con_urgencia-01",
+    "legitimo-correo_estado_cuenta-01",
+    "fraude-pago_yappy-01",
+    "legitimo-alerta_transaccion-01",
+  ]
+    .slice(0, n)
+    .filter((id) => fs.existsSync(path.join(dir, `${id}.png`)));
   const motor = new Motor({ textoKey });
   let ok = 0;
   const tiempos = [];
@@ -20,7 +31,9 @@ const verdad = require("../data/verdad.json");
     const bien = v.veredicto === esp;
     if (bien) ok++;
     tiempos.push(r.tiempos.veredicto_ms);
-    console.log(`\n=== ${id} · ${bien ? "✓" : "✗"} ${v.veredicto} (esperado ${esp}) · reglas ${r.veredicto_reglas} · ${r.tiempos.veredicto_ms} ms · confianza ${v.confianza}`);
+    console.log(
+      `\n=== ${id} · ${bien ? "✓" : "✗"} ${v.veredicto} (esperado ${esp}) · reglas ${r.veredicto_reglas} · ${r.tiempos.veredicto_ms} ms · confianza ${v.confianza}`,
+    );
     console.log(`  acción: ${v.accion}`);
     console.log(`  canal: ${v.canal_oficial}`);
   }
@@ -28,4 +41,7 @@ const verdad = require("../data/verdad.json");
   console.log(`\n${textoKey}: veredicto ${ok}/${ids.length} · mediana ${med} ms`);
   await motor.descargarTodo();
   process.exit(0);
-})().catch((e) => { console.error("✖", e && e.stack ? e.stack : e); process.exit(1); });
+})().catch((e) => {
+  console.error("✖", e && e.stack ? e.stack : e);
+  process.exit(1);
+});
