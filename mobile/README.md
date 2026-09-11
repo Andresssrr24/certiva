@@ -47,7 +47,7 @@ Para desarrollar con recarga en caliente en un teléfono conectado por USB: `cd 
 ## Qué corre en el teléfono
 
 - **Texto pegado:** `derivar` saca campos y `reglas.evaluar` decide, en menos de un milisegundo y sin red. Es el mismo código del escritorio.
-- **Captura de pantalla:** VisionPsy transcribe la imagen en el teléfono (descarga única desde la app) y las mismas reglas deciden sobre el texto.
+- **Captura de pantalla:** VisionPsy Q8, el mismo lector del escritorio, transcribe la imagen en el teléfono (descarga única de 546 MB desde la app) y las mismas reglas deciden sobre el texto. Q4 se midió sobre las 136 capturas y pierde 4,4 puntos, así que no entra. Como en el teléfono no hay OCR de contraste, si la única evidencia es un dominio a una o dos letras del oficial, la app dice «sospechoso» y pide comparar el enlace letra por letra, en vez de afirmar fraude por lo que pudo ser una letra mal leída.
 - **Consejo:** texto fijo por señal, tomado de la política del emisor (`src/consejos.js`). Qwen3 0.6B se midió y no mejora ese texto; Qwen3 4B, el redactor del escritorio, no cabe en un teléfono.
 - **Nada sale del teléfono.**
 

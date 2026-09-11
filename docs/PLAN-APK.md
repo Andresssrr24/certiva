@@ -14,7 +14,7 @@ Objetivo: una app Android instalable de unas decenas de megas que corra el mismo
 | Función | Teléfono | Laptop o banco |
 |---|---|---|
 | Veredicto por reglas sobre texto pegado o compartido | Sí, sin modelo | — |
-| Lectura de capturas | Sí, con VisionPsy Q4 descargado | — |
+| Lectura de capturas | Sí, con VisionPsy Q8 descargado una vez (546 MB) | — |
 | Consejo y canal oficial | Texto fijo por tipo de señal, tomado de la política del emisor | Qwen3 4B redacta y la política se recupera con RAG |
 | Modo llamada | No en esta versión | Parakeet en la laptop |
 | Pares y radar | No en esta versión: el teléfono genera los hashes y los entrega al anfitrión | Hyperswarm y radar |
@@ -24,15 +24,15 @@ Objetivo: una app Android instalable de unas decenas de megas que corra el mismo
 | Modelo | Descarga | Qué aporta | Evidencia |
 |---|---|---|---|
 | Reglas | 0 MB | El veredicto completo | 136 de 136 sobre el texto verdadero; el motor de escritorio las usa como base del veredicto |
-| VisionPsy Nano 460M Flash Q4_K_M + proyector Q8 | 303 + 109 MB | Leer la captura en el teléfono | Medido en el MacBook sobre 16 capturas (8 fraude, 8 legítimas): veredicto por reglas 15/16 con Q4 frente a 16/16 con Q8, con la misma latencia (1,2 a 1,5 s al primer token, 1,7 a 2,1 s por captura). La corrida sobre las 136 está en marcha y decide la compuerta de los 2 puntos |
-| VisionPsy Flash Q8 + proyector | 437 + 109 MB | El lector del escritorio; referencia | Medido: 16/16 en la misma muestra |
+| VisionPsy Nano 460M Flash Q4_K_M + proyector Q8 | 303 + 109 MB | Leer la captura en el teléfono | **Medido y descartado.** Sobre las 136 capturas, veredicto por reglas sobre la lectura: 123/136 (90,4 %) con Q4 frente a 129/136 (94,9 %) con Q8, con la misma latencia (1,2 a 1,5 s al primer token, 1,7 a 2,1 s por captura en el M4). Pierde 4,4 puntos y la compuerta eran 2. Sus fallos son letras cambiadas en el dominio oficial («bancodesmo», «banccodemo») y enlaces omitidos |
+| VisionPsy Flash Q8 + proyector | 437 + 109 MB | **El lector del teléfono**, el mismo del escritorio | Medido: 129/136 en la misma prueba. Descarga única de 546 MB desde la app |
 | Qwen3 0.6B | 382 MB | Redactar el consejo | **Medido y descartado.** En 8 veredictos acierta 7, pero solo porque repite la base de las reglas, que el piso de seguridad impone de todos modos; el consejo que redacta es pobre: «Cuelgue» ante un SMS, «fraude» como acción, confianza 0 en 6 de 8, mediana de 1,3 s. El texto fijo por señal de `consejos.js` es mejor y pesa 0 MB |
 | Qwen3 1.7B | 1.057 MB | Redactar mejor | Fuera por peso |
 | OCR clásico del SDK | 98 MB | Leer capturas sin modelo Psy | Descartado: 7 a 9 s en el M4, más lento en teléfono, y no es Psy |
 
 Por debajo de unos 250 MB no existe modelo de visión que lea texto; lo que hay por debajo es OCR. Ese es el piso, y hay que decirlo así.
 
-**Peso medido:** el APK de release compilado solo para arm64 pesa **219 MB** sin ningún modelo dentro. La estimación inicial de 50 a 80 MB era incorrecta. El desglose, leído del APK: backend Vulkan de ggml 86 MB, runtime Bare con V8 62 MB, paquete JavaScript en bytecode Hermes 19 MB, motor llama.cpp 10 MB, RocksDB 6 MB, clases Java 6 MB, siete variantes del backend CPU de ggml de 1,4 MB cada una, OpenCL 3 MB. Ninguna biblioteca lleva símbolos de depuración: `llvm-strip` no les quita un byte. La única palanca grande es quitar el backend Vulkan (86 MB), que el motor carga dinámicamente y sin el cual VisionPsy correría en CPU o en OpenCL sobre Adreno: el APK bajaría a unos 133 MB. Decisión del equipo: 220 MB es aceptable si los modelos que corren son buenos, así que el APK entregado conserva Vulkan. La descarga opcional del lector de capturas va aparte: unos 410 MB con Q4 o 545 MB con Q8.
+**Peso medido:** el APK de release compilado solo para arm64 pesa **219 MB** sin ningún modelo dentro. La estimación inicial de 50 a 80 MB era incorrecta. El desglose, leído del APK: backend Vulkan de ggml 86 MB, runtime Bare con V8 62 MB, paquete JavaScript en bytecode Hermes 19 MB, motor llama.cpp 10 MB, RocksDB 6 MB, clases Java 6 MB, siete variantes del backend CPU de ggml de 1,4 MB cada una, OpenCL 3 MB. Ninguna biblioteca lleva símbolos de depuración: `llvm-strip` no les quita un byte. La única palanca grande es quitar el backend Vulkan (86 MB), que el motor carga dinámicamente y sin el cual VisionPsy correría en CPU o en OpenCL sobre Adreno: el APK bajaría a unos 133 MB. Decisión del equipo: 220 MB es aceptable si los modelos que corren son buenos, así que el APK entregado conserva Vulkan. La descarga opcional del lector de capturas va aparte: 546 MB, VisionPsy Q8 y su proyector, la misma pareja que el escritorio.
 
 ## Arquitectura de la app móvil
 
@@ -56,7 +56,7 @@ Sin Android Studio. El toolchain se instala con Homebrew y `sdkmanager`, y dos s
 
 - APK sin modelos dentro. Peso medido: 219 MB, aceptado por el equipo a cambio de conservar el backend GPU.
 - Sin descargar nada, un texto de fraude pegado da veredicto en menos de un segundo.
-- Con VisionPsy Q4 descargado, una captura de la demo da veredicto en menos de 10 s en un teléfono de gama media, sin red.
+- Con VisionPsy Q8 descargado, una captura de la demo da veredicto en menos de 10 s en un teléfono de gama media, sin red.
 - Las 136 capturas dan el mismo veredicto por reglas que en el escritorio con el mismo lector.
 - Con el modo avión, todo sigue funcionando.
 
@@ -64,7 +64,7 @@ Sin Android Studio. El toolchain se instala con Homebrew y `sdkmanager`, y dos s
 
 | Paso | Dónde | Compuerta | Estado |
 |---|---|---|---|
-| Medir VisionPsy Q4 contra Q8 | MacBook | Si pierde más de 2 puntos, el teléfono usa Q8 y la descarga sube a 545 MB | 16 capturas: 15/16 frente a 16/16. Corrida sobre las 136 en marcha |
+| Medir VisionPsy Q4 contra Q8 | MacBook | Si pierde más de 2 puntos, el teléfono usa Q8 y la descarga sube a 546 MB | Hecho sobre las 136: Q4 123/136, Q8 129/136. El teléfono usa Q8 |
 | Medir Qwen3 0.6B en ocho veredictos | MacBook | Si el consejo no supera al texto fijo, no entra | Hecho: no entra |
 | Preparar el proyecto Expo con `preparar.sh` | MacBook, toolchain por Homebrew | Si el prebuild no pasa en una hora, se para | Hecho |
 | APK de release | MacBook | Se mide el peso y se decide | Hecho: 219 MB, se conserva la GPU |
