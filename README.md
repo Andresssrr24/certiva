@@ -6,6 +6,8 @@ Proyecto del Hackatón QVAC · ISD Summit 2026. Tracks: **Desafío General**, **
 
 Demo vigente: [Android y administración del mismo caso — video de 56 segundos y proyecto editable](docs/marketing/video/ENTREGA-DEMO-FINAL.md). Usa reglas locales; documenta por separado el fallo de instrumentación administrativa y la verificación independiente del caso.
 
+Demo web disponible: [probar Certiva sin instalar ni registrarse](https://certiva-landing.vercel.app/demo). Incluye teléfono interactivo y análisis de texto por reglas locales; no acredita ejecución de Android ni inferencia QVAC. [Entrega y comprobaciones](landing/DEMO-REVIEW.md).
+
 ## Estado del avance
 
 Android0.5 conecta **Ingresar/Mis reportes por HTTPS** y permite borrar reportes propios: [PR #37](https://github.com/Andresssrr24/certiva/pull/37). [Servicio y validación](landing/REPORTS-SETUP.md): dos pruebas nativas contra HTTPS aprobadas en emulador API35; no acredita instalación física desde Play ni inferencia QVAC. Las correcciones de cuota de la revisión están publicadas en código y pendientes de desplegar.

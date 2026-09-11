@@ -2,9 +2,13 @@
 
 Producción: https://certiva-landing.vercel.app
 
-Vercel READY: `dpl_2Q1DqqeRZ2bbcrmUyS5pRYDWMyZR` (11 septiembre 2026 UTC).
+Último despliegue comunicado por la tarea propietaria: Vercel READY `dpl_6SeepzYMkJS8Zohh9WQUiG94ctYJ` (11 de septiembre de 2026), con la [demo web](https://certiva-landing.vercel.app/demo). Las correcciones de cuota del backend todavía no se incorporaron a ese despliegue.
 
 Landing independiente con branding v5, verificador de texto local y puente optativo al motor QVAC del proyecto. No modifica la app Electron ni utiliza su política sintética como si fuera de Caja de Ahorros.
+
+## Demo web sin instalación
+
+`/demo` ofrece los tres ejemplos del teléfono interactivo y el formulario de texto por reglas locales. `/probar` mantiene un botón visible hacia esa ruta aunque Google Play siga pendiente. Comparte `app.js` y conserva sus IDs; la hoja específica oculta las opciones de captura, conexión QVAC y las secciones de instalación. No necesita registro ni APK. [Inventario y validación](DEMO-REVIEW.md).
 
 ## Web
 
@@ -28,7 +32,7 @@ En esta rama, el botón abre `/probar` y el QR vuelve a la ruta estable `/apk`, 
 
 Estado y requisitos: [BETA-SETUP.md](BETA-SETUP.md). Revisión independiente: [BETA-REVIEW.md](BETA-REVIEW.md). `npm run dev` sirve archivos estáticos y no emula las funciones ni el flujo OAuth; las pruebas de servidor emplean dobles y no dan de alta usuarios reales. La API pública confirma registro habilitado y descarga pendiente. La tarea propietaria verificó formulario → Google → callback con una cuenta existente en Chrome de escritorio; Bryan confirmó después el registro en Android. Siguen pendientes una nueva alta externa instrumentada y la instalación desde Play.
 
-La política Android está en `/privacidad-app`, separada de la privacidad del registro web. Los [materiales de la ficha es-419](play-store-assets/README.md) se conservan como borrador y `.vercelignore` excluye esa carpeta del despliegue. No acreditan aprobación de Google Play; continúan pendientes acceso completo para revisores, declaraciones y clasificación.
+La política Android está en `/privacidad-app`, separada de la privacidad del registro web. Los [materiales de la ficha es-419](play-store-assets/README.md) se conservan como borrador y `.vercelignore` excluye esa carpeta del despliegue. No acreditan aprobación de Google Play. La tarea propietaria confirmó posteriormente acceso de revisión y declaraciones guardadas, así como el envío de la versión 0.5 a revisión; véase el estado actualizado en BETA-SETUP.md.
 
 Los apartados de despliegue que siguen documentan revisiones anteriores y sus comprobaciones históricas.
 
