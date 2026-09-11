@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-09-11T06:02:51.770990+00:00",
+  "deployment": "dpl_2Q1DqqeRZ2bbcrmUyS5pRYDWMyZR",
+  "http": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/android-demo.js?v=android-1",
+      "status": 200
+    },
+    {
+      "path": "/android-demo.css?v=android-1",
+      "status": 200
+    },
+    {
+      "path": "/assets/android-wallpaper.svg",
+      "status": 200
+    }
+  ],
+  "nodeTestsPassed": 7,
+  "domFlowPassed": true,
+  "buildPassed": true,
+  "biomeErrors": 0,
+  "biomeCssWarnings": 5,
+  "browserScreenshotQA": false,
+  "apkChanged": false,
+  "scope": "Synthetic browser rules, not Android runtime or QVAC inference",
+  "integrationAdjustmentsAfterDeployment": true
+}
