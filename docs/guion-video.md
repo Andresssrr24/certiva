@@ -12,6 +12,6 @@
 
 3:40–4:30: Mostrar hardware real, QVAC y VisionPsy, resultados nuevos y manifiesto de evaluación. Distinguir desarrollo de evaluación externa. Contar falsos negativos y abstenciones, además de precisión y latencia.
 
-4:30–5:00: Prototipo Electron en Mac; integración móvil futura. Mismas tácticas, mismo motor: enseñar un ejemplo de billetera, «soporte» que pide la frase semilla, para mostrar que el motor sirve a bancos, cooperativas y billeteras de criptoactivos. Beneficio bancario: revisión local de mensajes y recepción de indicadores sin transmitir el mensaje. Cerrar con demo reproducible y limitaciones.
+4:30–5:00: Prototipo Electron en Mac y APK Android con el mismo núcleo (10 s: pegar un texto en el teléfono o en el emulador y ver «Es una estafa» en 1 ms; `docs/img/apk-emulador-veredicto.png` si no hay teléfono a mano). Mismas tácticas, mismo motor: enseñar un ejemplo de billetera, «soporte» que pide la frase semilla, para mostrar que el motor sirve a bancos, cooperativas y billeteras de criptoactivos. Beneficio bancario: revisión local de mensajes y recepción de indicadores sin transmitir el mensaje. Cerrar con demo reproducible y limitaciones.
 
 Pendiente: grabar la ejecución real, editar y publicar el enlace sin credenciales. Este guion no constituye evidencia de pruebas realizadas.
