@@ -13,7 +13,7 @@ Corte documental: **10 de septiembre de 2026, hora de Panamá**. Las pruebas y l
 | Escritorio Electron | Teléfono simulado, mensaje → alerta → detalle, centro de seguridad y análisis QVAC local | [Recorrido y pruebas](docs/EXPERIENCIA-Y-ALERTAS.md) · [Entorno QVAC](docs/INTERFAZ-LOCAL.md). Las medidas bancarias son solicitudes de demostración. |
 | Landing | Sitio interactivo, verificador de texto por reglas y puente opcional al QVAC del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). QVAC no se ejecuta en Vercel. |
 | Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Sin QVAC móvil ni conexión a APIs bancarias. |
-| Exploración Expo | Andamiaje previo en `mobile/`, conservado desde `main` | No acredita QVAC funcionando en un teléfono. [Guía](mobile/README.md) |
+| App Android con QVAC (Expo) | APK de 228 MB compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
 
 La app de escritorio ejecuta VisionPsy, reglas y Qwen3 localmente. La landing analiza texto con reglas en el navegador; para usar modelos requiere un puente en `127.0.0.1` y modelos descargados en el mismo equipo. Las alertas y el consejo no autentican remitentes ni garantizan que un mensaje sea legítimo.
@@ -164,16 +164,16 @@ Todo corre en el MacBook. Dos procesos de QVAC a la vez se bloquean en el worker
 
 1. **Preparar una vez**, con internet: `npm install`, `node node_modules/electron/install.js` si no bajó Electron, y `npm run modelos`. Si el registro P2P del SDK se cae a mitad de Qwen3 4B, `node scripts/importar-modelo.js QWEN3_4B_INST_Q4_K_M <archivo .gguf bajado por HTTP>` lo importa validando el checksum.
 2. **Datos de la demo:** `npm run datos` genera los 136 mensajes y sus capturas del dataset actual; `node data/generar-llamada.js` genera el audio de la llamada con las voces del sistema.
-3. **Sin interfaz, para ver el motor:** `npm run prueba` analiza una captura de punta a punta; `node scripts/prueba-llamada.js` corre la llamada; `node scripts/prueba-politica.js` muestra qué recupera el RAG; `npm run eval` evalúa el dataset actual y guarda los resultados de la corrida; `eval/results.md` conserva resultados históricos.
+3. **Sin interfaz, para ver el motor:** `npm run prueba` analiza una captura de punta a punta; `node scripts/prueba-llamada.js` corre la llamada; `node scripts/prueba-politica.js` muestra qué recupera el RAG; `npm run eval` corre las 136 capturas y escribe `eval/runs/<fecha>/results.md` (`--solo legitimo` para una clase; unos 25 minutos la corrida completa); `eval/results.md` conserva resultados históricos.
 4. **La app:** apaga el Wi-Fi y `npm start`. Pestaña «Experiencia del cliente»: toca una tarjeta y mira el teléfono: llega el mensaje, Certiva lo revisa en segundo plano y avisa con una notificación; «Ver detalle» abre el veredicto. También puedes arrastrar una captura. «Simular llamada de vishing» reproduce el audio con la transcripción sincronizada y el «Cuelga». «Reportar este mensaje» publica el hash a los pares y abre un caso en el Centro de seguridad. Pestaña «Centro de seguridad»: bandeja de incidentes e «Inteligencia de red», el radar. La barra dice cuántas conexiones TCP externas hay y cuántas a pares.
 5. **Pares en dos máquinas:** en la segunda, `node scripts/radar.js` se une al enjambre y va listando lo que llega. Si la red del lugar bloquea el DHT, modo directo: en la segunda máquina `node scripts/radar.js --puerto 4411 --sin-swarm`, y en la primera `PARES_DIRECTO=<ip de la segunda>:4411 npm start`. Para probarlo solo, en una terminal `node scripts/radar.js --puerto 4411 --sin-swarm --emitir dominio:bancodemo-pa.app` y en otra `PARES_DIRECTO=127.0.0.1:4411 PARES_SWARM=0 npm start`: al analizar la tarjeta «SMS: cuenta bloqueada» el teléfono dice que otro cliente ya reportó esa dirección.
 6. **Comprobar sin manos:** `DEMO_AUTO=fraude-bloqueo_enlace-01 DEMO_CAPTURA=/tmp/app.png DEMO_SALIR=1 DEMO_ESPERA_MS=26000 npx electron .` analiza esa captura al abrir y guarda una imagen de la ventana; `DEMO_LLAMADA=1` hace lo mismo con la llamada.
 
 Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector para la comparación; `SIN_RAG=1` apaga la política; `PARES=0` apaga la capa de pares; `PARES_SWARM=0` deja solo el modo directo; `PARES_PUERTO=4411` hace que la app también escuche directo.
 
-## Exploración móvil previa
+## App móvil y APK
 
-El andamiaje Expo de `mobile/` y [su plan de APK](docs/PLAN-APK.md) se conservan desde `main`. Plantean descargar modelos por separado del APK, pero no acreditan compilación ni inferencia QVAC en teléfonos. Esta exploración es distinta del SDK y la consola del [piloto bancario](pilot/README.md), que usan reglas locales y OCR Apple Vision en iOS.
+La prueba de que el motor se embebe es una app Android con el mismo núcleo: código en `mobile/`, plan y mediciones en [docs/PLAN-APK.md](docs/PLAN-APK.md), instrucciones en [mobile/README.md](mobile/README.md). El APK está compilado: `mobile/dist/antifraude-release-arm64.apk`, 228 MB, arm64, Android 10 o superior, sin ningún modelo dentro; se comparte por enlace, no por el repositorio. Probado en el emulador Android arm64 del MacBook: instala, arranca, y un mensaje de fraude pegado da «Es una estafa» con sus tres señales en 1 ms (capturas en `docs/img/`); VisionPsy Q8 se descargó desde la app, cargó y leyó una captura de fraude en CPU con primer token a los 23 s y total 31 s, y una legítima quedó en «Sospechoso» porque el lector cambió letras del dominio y el teléfono no tiene el OCR de contraste del escritorio. Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas en menos de un milisegundo. Leer capturas descarga VisionPsy Q8 una sola vez (546 MB, el mismo lector del escritorio: Q4 se midió sobre las 136 capturas y pierde 4,4 puntos) y corre en el teléfono; el consejo en el teléfono es texto fijo por señal, porque Qwen3 0.6B, medido, no lo mejora y Qwen3 4B no cabe. El peso del APK es casi todo runtime del SDK: backend GPU Vulkan de 86 MB y runtime Bare de 62 MB; preferimos conservar la GPU antes que bajar a unos 133 MB. Estado: compilado en el MacBook sin Android Studio y probado en emulador; la prueba en teléfono físico, con la descarga del lector y una captura real, queda para el equipo. Esta app es distinta del SDK y la consola del [piloto bancario](pilot/README.md), que usan reglas locales y OCR de Apple Vision en iOS: la app Expo de `mobile/` es la que ejecuta QVAC en Android.
 
 ## Datos
 
@@ -193,34 +193,49 @@ Ningún dato real. El emisor de la demo es «Banco Demo»; las estafas de billet
 
 **Por qué VisionPsy es central por necesidad.** La captura de pantalla permite al usuario aportar mensajes de distintas aplicaciones sin integrar cada servicio, y leerla en el teléfono exige un modelo de visión que quepa en un teléfono de gama media. VisionPsy Nano 460M Flash es el único modelo que mira la imagen en este flujo.
 
-**Resultados históricos anteriores a la segunda lectura; deben repetirse para esta rama. Calidad medida sobre el set sintético** (`npm run eval`; la corrida reportada usó 120 capturas, y las 16 de billetera agregadas después entran en la próxima; resultados completos en `eval/results.md`, registro por llamada en `eval/perf.jsonl`):
+**Calidad medida sobre el set sintético** (`npm run eval`, 136 capturas: 80 de fraude, 8 con solo presión de tiempo y 48 legítimas; cada corrida se escribe en `eval/runs/<fecha>/` con un manifiesto que registra el commit y los hashes del dataset).
+
+La corrida completa más reciente es `eval/runs/2026-09-11T03-17-51-753Z/`, sobre el commit e8c2356, ya con la segunda lectura OCR y el piso de protección que trajo el PR #1:
 
 | Métrica | Valor |
 |---|---|
-| Exactitud global del veredicto | 98,3% |
-| Precisión en fraude | 100,0% |
-| Exhaustividad en fraude | 96,9% |
-| Legítimos reconocidos sin señales | 100,0% (48/48) |
-| Mensajes con solo presión de tiempo reconocidos como sospechosos | 100,0% (8/8) |
-| Remitente correcto (VisionPsy) | 85,8% |
-| Dominios de los enlaces correctos (VisionPsy, tras el contraste) | 85,0% |
-| Teléfonos correctos (VisionPsy) | 95,0% |
-| Texto literal, 1 − CER medio (VisionPsy) | 73,9% |
+| Fraudes detectados | 100,0 % (80/80) |
+| Mensajes con solo presión de tiempo reconocidos como sospechosos | 100,0 % (8/8) |
+| Legítimos reconocidos sin señales | 52,1 % (25/48) |
+| Exactitud global del veredicto | 83,1 % |
+| Precisión en fraude | 83,3 % |
+
+Los 23 legítimos fallidos tenían una sola causa. La segunda lectura OCR, pensada para no afirmar «sin señales» con un solo lector, leía los enlaces con espacios («https://app bancodemo com pa»), el dominio quedaba en «app» y la regla de dominio parecido convertía correos y SMS oficiales en fraude; otros siete quedaban «no legible» por un umbral de acuerdo entre lectores demasiado estricto. La corrección, en los commits ec5fbb6 y siguientes: la segunda lectura solo puede sumar señales de frase (petición de datos, urgencia, pago a terceros, envío para recibir, cambio de dirección), nunca de dominio ni de número; el umbral de abstención baja de 0,65 a 0,3; los enlaces con espacios se reparan y una etiqueta suelta no se juzga como dominio; el contraste OCR se extiende a SMS y WhatsApp cuando el dominio está a una o dos letras del oficial.
+
+Verificación tras la corrección, sin repetir la corrida completa por falta de tiempo antes de la entrega:
+
+| Qué | Resultado |
+|---|---|
+| Subconjunto legítimo completo (56: 48 sin señales y 8 con presión de tiempo), `eval/runs/2026-09-11T03-45-52-660Z/` | 53/56: sin señales 46/48, sospechoso 7/8 |
+| Los 3 fallos de ese subconjunto, repetidos uno a uno con la versión final | 3/3 correctos |
+| Los 4 fraudes que en la corrida de 136 se habían detectado gracias a la segunda lectura | 4/4 siguen detectados por la lectura principal |
+| Controles de fraude (bloqueo por enlace, compra no reconocida, frase semilla) | 3/3 |
+
+Referencia histórica del lector principal, sin segunda lectura y sobre 120 capturas (`eval/results.md`): exactitud 98,3 %, precisión en fraude 100 %, exhaustividad 96,9 %, legítimos 48/48. El recorrido: 92,5 % con las reglas iniciales; 95,8 % con urgencia tolerante y política; 97,5 % con el contraste OCR; 98,3 % con la petición de datos tolerante. La transcripción de VisionPsy no es determinista entre corridas: las mismas capturas se mueven un par de puntos de una corrida a otra, y eso arrastra a las métricas de extracción.
+
+Lector del teléfono, medido sobre las 136 capturas con las reglas directamente sobre la lectura, sin contraste ni segunda lectura: VisionPsy Q8 129/136 (94,9 %) frente a VisionPsy Q4_K_M 123/136 (90,4 %). Por eso el teléfono descarga Q8.
 
 | Etapa | TTFT mediana | Total mediana | Tokens/s | Tokens de salida |
 |---|---|---|---|---|
 | VisionPsy Flash, transcripción | 1,06 s | 1,81 s | 168 | 94 |
 | Búsqueda en la política (EmbeddingGemma, vector store del SDK) | — | 29 ms | — | — |
-| Contraste con OCR, solo en correos con dominio parecido (11 de 120) | — | 7,6 s | — | — |
+| Contraste con OCR: correos con dominio parecido, y SMS o WhatsApp con dominio a una o dos letras del oficial | — | 7,6 s | — | — |
+| Segunda lectura OCR, solo cuando la lectura principal no ve señales (todos los legítimos) | — | 6,3 a 9,6 s | — | — |
 | Qwen3 4B, veredicto con esquema y política | 2,33 s | 5,46 s | 34 | 102 |
 
-Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 120 capturas. Las corridas anteriores están en el historial del repositorio: 92,5 % con las reglas iniciales; 95,8 % con urgencia tolerante y política; 97,5 % con el contraste OCR; esta, con la petición de datos tolerante. La transcripción de VisionPsy no es determinista entre corridas, así que las cifras de extracción se mueven un par de puntos de una corrida a otra.
+En total, un mensaje de fraude tarda unos 7 s y uno legítimo unos 14 s, porque la segunda lectura solo corre cuando no hay señales. Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Cero errores de ejecución en las 136 capturas.
 
 **Verificación del 10 de septiembre a las 23:00, tras corregir la segunda lectura OCR.** La corrida completa con la segunda lectura original dio 83,1 % de exactitud: los 80 fraudes bien y 23 legítimos mal, porque el OCR podía agregar señales de dominio y ensucia los enlaces. Con la segunda lectura asimétrica, que solo suma señales de frase y abstiene con 0,3 de acuerdo, los 56 legítimos dieron 53 de 56 (`eval/runs/2026-09-11T03-45-52-660Z`): quedan un «último aviso» que sube a fraude en vez de sospechoso, un recordatorio de pago y un WhatsApp oficial que se abstiene. La corrida completa de 136 con la corrección queda pendiente por tiempo. En la corrida previa, 4 de los 80 fraudes se detectaron gracias a una señal de número que la segunda lectura ya no puede aportar; re-ejecutados con la corrección, esos 4 salen «no legible», es decir, el motor se abstiene en vez de tranquilizar. Estimación combinada del estado actual: fraudes 76 de 80 detectados y 4 abstenciones, ningún fraude mostrado como «sin señales»; legítimos 53 de 56; exactitud global cercana al 95 %.
 
 **Límites y manejo de riesgo, con honestidad.**
-- La transcripción de VisionPsy tiene errores de caracteres (CER medio del 26,1 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave con tolerancia a errores, y porque un dominio dudoso en un correo se contrasta con el OCR determinista.
-- Fallos de esta corrida, 2 de 120: fraude-pide_codigo-03: esperado fraude, obtenido sin_senales; fraude-pide_codigo-05: esperado fraude, obtenido sin_senales. Son mensajes que solo piden el código, sin enlace ni número, en los que la transcripción perdió a la vez el verbo y el dato; ningún legítimo se marcó como fraude. Ahí el techo lo pone la calidad de la transcripción, no las reglas.
+- La transcripción de VisionPsy tiene errores de caracteres (CER medio del 26,1 %), pero los campos que deciden el veredicto sobreviven porque las reglas trabajan sobre dominios, números y frases clave con tolerancia a errores, y porque un dominio dudoso se contrasta con el OCR determinista.
+- Lo que sigue fallando es la lectura de dominios: VisionPsy cambia letras del dominio oficial en unos 5 de cada 100 SMS legítimos («bancodesmo», «banccodemo»). El contraste OCR lo corrige cuando el dominio está a una o dos letras del oficial; en el teléfono, sin OCR, la app lo reporta como sospechoso y pide comparar el enlace letra por letra. Un dominio de phishing real a una letra del oficial recibe el mismo trato: sospechoso, no fraude.
+- Los fraudes que solo piden el código, sin enlace ni número, dependen de que la transcripción conserve a la vez el verbo y el dato; ahí el techo lo pone la calidad de la transcripción, no las reglas.
 - La app nunca dice «seguro». Ante la duda, muestra el canal oficial y pide llamar al número impreso en la tarjeta.
 
 ## Para el desafío general
@@ -231,7 +246,7 @@ Hardware: MacBook con Apple M4, 16 GB, backend GPU (Metal), `@qvac/sdk` 0.19. Ce
 
 **Innovación.** El prototipo simula alertas durante una llamada procesada por lotes. Comparte indicadores reportados entre pares mediante Hyperswarm; su autenticidad requiere revisión y no demuestra inmunidad colectiva.
 
-**Evidencia.** Evaluación reproducible sobre 120 capturas sintéticas con verdad conocida, registro de rendimiento por llamada al modelo, y una comparación honesta de tres lectores que dejó a VisionPsy transcribiendo y a las reglas derivando los campos.
+**Evidencia.** Evaluación reproducible sobre 136 capturas sintéticas con verdad conocida y manifiesto por corrida, registro de rendimiento por llamada al modelo, y una comparación honesta de tres lectores que dejó a VisionPsy transcribiendo y a las reglas derivando los campos.
 
 ## Seguridad y límites
 

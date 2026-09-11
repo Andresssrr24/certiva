@@ -68,7 +68,7 @@ Pantalla: la barra inferior de la app («VisionPsy Nano 460M Flash · Qwen3 4B �
 
 Clics: tarjeta «WhatsApp: «soporte de billetera»» → notificación de Certiva → «Ver detalle» → veredicto (cortar la espera con rótulo). Rótulo final: enlace del repo.
 
-> Mismas tácticas, otro sector: un «soporte» de billetera que pide la frase semilla. Mismo motor, veredicto: fraude. Sirve a bancos, cooperativas y billeteras de criptoactivos. Hoy es un prototipo Electron en Mac; la integración móvil viene después. Lo que gana el banco: revisión local de mensajes y llamadas, e indicadores de fraude en tiempo real, sin recibir jamás el mensaje del cliente. Repo, guía para probarlo y límites conocidos en el README.
+> Mismas tácticas, otro sector: un «soporte» de billetera que pide la frase semilla. Mismo motor, veredicto: fraude. Sirve a bancos, cooperativas y billeteras de criptoactivos. Hoy es un prototipo Electron en Mac y un APK Android con el mismo motor, probado en emulador: pegar un texto da veredicto al instante y VisionPsy lee capturas en el teléfono (10 s de pantalla si hay teléfono a mano; si no, `docs/img/apk-emulador-veredicto.png`). Lo que gana el banco: revisión local de mensajes y llamadas, e indicadores de fraude en tiempo real, sin recibir jamás el mensaje del cliente. Repo, guía para probarlo y límites conocidos en el README.
 
 ## Reglas de honestidad
 

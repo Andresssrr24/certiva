@@ -14,8 +14,8 @@
       "!eval/*.json",
       "!eval/*.jsonl",
       "!vendor-notice",
-      "!eval/runs/**",
-      "!mobile/app/**"
+      "!eval/runs",
+      "!mobile/app"
     ]
   },
   "formatter": {

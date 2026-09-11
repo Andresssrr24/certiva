@@ -1,4 +1,7 @@
 // App móvil: la misma experiencia del teléfono de la demo, corriendo en un teléfono. Tema claro, letra grande, una acción por pantalla.
+
+import * as Clipboard from "expo-clipboard";
+import * as ImagePicker from "expo-image-picker";
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -10,10 +13,8 @@ import {
   TextInput,
   View,
 } from "react-native";
-import * as Clipboard from "expo-clipboard";
-import * as ImagePicker from "expo-image-picker";
-import { analizarCaptura, analizarTexto, descargarVision, estadoVision } from "./motor";
 import { consejoPara, SENAL } from "./consejos";
+import { analizarCaptura, analizarTexto, descargarVision, estadoVision } from "./motor";
 
 const C = {
   fondo: "#f5f7f6",

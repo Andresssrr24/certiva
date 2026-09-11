@@ -1,3 +1,5 @@
+> Corrida histórica sobre 120 capturas, anterior a la segunda lectura OCR del PR #1. Las corridas nuevas se escriben en `eval/runs/<fecha>/` con su manifiesto (commit, hashes del dataset); la de 136 capturas está en `eval/runs/2026-09-11T03-17-51-753Z/` y la del subconjunto legítimo tras la corrección en `eval/runs/2026-09-11T03-45-52-660Z/`.
+
 # Resultados sobre el set sintético
 
 Fecha: 2026-09-10T16:54:39.582Z · Capturas: 120 · Tiempo total: 989 s
