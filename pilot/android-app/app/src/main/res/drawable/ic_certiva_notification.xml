@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Flat alpha-only adaptation of Certiva's two interlocking pieces.
+     Android supplies the status-bar/notification tint; no tile background. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="900" android:viewportHeight="900">
+    <group android:translateX="-177" android:translateY="-177">
+        <path android:fillColor="#FFFFFFFF"
+            android:pathData="M767,639 C779,520 740,354 612,318 C475,279 325,380 264,527 C216,643 219,761 286,831 C344,892 438,914 519,883 C453,819 417,744 438,672 C458,605 517,540 581,506 C634,477 678,536 713,584 C733,613 748,634 767,639 Z" />
+        <path android:fillColor="#FFFFFFFF"
+            android:pathData="M720,388 C785,370 855,383 910,420 C1019,493 1055,663 991,788 C934,898 809,963 687,951 C560,939 472,831 463,727 C459,691 463,663 479,654 C531,628 590,698 634,742 C657,766 679,768 710,739 C773,680 818,614 807,551 C799,489 761,424 720,388 Z" />
+    </group>
+</vector>

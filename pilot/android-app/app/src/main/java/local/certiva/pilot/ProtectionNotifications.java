@@ -32,10 +32,12 @@ final class ProtectionNotifications {
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent intent = PendingIntent.getActivity(context, 0, open, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         String body = "Detectamos señales de riesgo en un mensaje de WhatsApp. Toca para ver el detalle.";
-        Notification publicVersion = new Notification.Builder(context, CHANNEL).setSmallIcon(android.R.drawable.ic_lock_lock)
+        Notification publicVersion = new Notification.Builder(context, CHANNEL).setSmallIcon(R.drawable.ic_certiva_notification)
+            .setColor(Color.rgb(32,80,148))
             .setContentTitle("Certiva").setContentText("Tienes una alerta de protección").build();
         Notification notification = new Notification.Builder(context, CHANNEL)
-            .setSmallIcon(android.R.drawable.ic_lock_lock).setColor(Color.rgb(32,80,148))
+            .setSmallIcon(R.drawable.ic_certiva_notification).setColor(Color.rgb(32,80,148))
+            .setLargeIcon(android.graphics.drawable.Icon.createWithResource(context,R.drawable.certiva_launcher))
             .setContentTitle("Antes de responder, revisa esto")
             .setContentText(body).setStyle(new Notification.BigTextStyle().bigText(body))
             .setContentIntent(intent).setAutoCancel(true).setCategory(Notification.CATEGORY_STATUS)

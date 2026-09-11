@@ -10,6 +10,14 @@ Extraer únicamente el icono grande de la firma superior izquierda: contenedor b
 
 ## Verificación
 
+### Notificaciones
+
+`ProtectionNotifications` usa `ic_certiva_notification.xml`, una adaptación vectorial monocroma del símbolo Enlace, como icono pequeño de las versiones privada y pública de la alerta. Android aplica el tinte del sistema a esta silueta. La alerta privada incluye además el PNG `certiva_launcher` como icono grande; el color de marca declarado es #205094.
+
+Este cambio sustituye el candado genérico. Conserva el texto, los permisos, la privacidad y la apertura del detalle existentes. `:app:assembleDebug :app:lintDebug` pasó sobre la rama aislada en 30 segundos. La comprobación visual de las notificaciones sigue pendiente por falta de respuesta del emulador; la captura inferior acredita únicamente el icono del lanzador.
+
+### Lanzador
+
 `./gradlew :app:processDebugResources --console=plain` pasó en la rama aislada del cambio: recursos y manifiesto Android compilados correctamente.
 
 La APK de desarrollo vigente compiló con `:app:assembleDebug :app:assembleDebugAndroidTest :app:lintDebug` y se instaló correctamente en `emulator-5580`. Se verificó el icono en el dock de la pantalla principal y junto al nombre «Certiva Piloto» en el cajón de aplicaciones el 10 de septiembre de 2026, a las 23:43 (Panamá).
