@@ -1,0 +1,8 @@
+
+local.certiva.pilot.NavigationScreenTest:.
+Test results for InstrumentationTestRunner=.
+Time: 24.452
+
+OK (1 test)
+
+
