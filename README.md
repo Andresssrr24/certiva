@@ -16,8 +16,10 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 | Landing | Teléfono Android interactivo con notificaciones y detalle, favicon Certiva, guía de cinco pasos y QR de descarga Android; puente QVAC opcional del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). La APK 0.3 descargable es experimental; QVAC web no se ejecuta en Vercel. |
 | Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Android 0.2 usa reglas; sin conexión a APIs bancarias. |
 | Android nativo 0.3 experimental | Interfaz renovada, runtime QVAC CPU, instalador de modelo y conservación del riesgo de reglas cuando falla la IA | [Código y construcción](pilot/android-qvac/README.md) · [Resultados y fallos](pilot/android-qvac/VALIDATION.md). El clasificador corregido agotó el tiempo en Android; no es una versión validada. |
-| App Android con QVAC (Expo) | [APK de 229 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre es una app con cuatro pestañas (revisar, historial, aprender, ajustes), marca Certiva e historial en el teléfono (0.3.0, publicada en el Release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
+| App Android con QVAC (Expo) | [APK actual de 229 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre es una app con cuatro pestañas (revisar, historial, aprender, ajustes), marca Certiva e historial en el teléfono (0.3.0, publicada en la release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
+
+Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto; la preparación de Google Play continúa por separado. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
 
 La app de escritorio ejecuta VisionPsy, reglas y Qwen3 localmente. La landing analiza texto con reglas en el navegador; para usar modelos requiere un puente en `127.0.0.1` y modelos descargados en el mismo equipo. Las alertas y el consejo no autentican remitentes ni garantizan que un mensaje sea legítimo.
 
@@ -41,7 +43,7 @@ npm run modelos
 npm start
 ```
 
-Landing sin dependencias adicionales:
+Landing: antes de construir desde un clon, descarga el APK congelado siguiendo [las instrucciones de reconstrucción](landing/README.md#reconstruir-desde-un-clon). El build comprueba su tamaño y SHA-256. Después:
 
 ```sh
 cd landing
