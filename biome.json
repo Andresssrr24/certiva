@@ -15,7 +15,13 @@
       "!eval/*.jsonl",
       "!vendor-notice",
       "!eval/runs",
-      "!mobile/app"
+      "!mobile/app",
+      "!renderer/assets",
+      "!pilot/**/certiva.js",
+      "!pilot/**/policy.json",
+      "!pilot/public/policy-key.js",
+      "!pilot/android-qvac/evidence",
+      "!pilot/ios/**/*.xcassets"
     ]
   },
   "formatter": {
