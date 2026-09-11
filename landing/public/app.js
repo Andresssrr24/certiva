@@ -1,4 +1,5 @@
-import { analyzeText, EXAMPLES, PRESENTATION } from "./analyzer.js";
+import { analyzeText, PRESENTATION } from "./analyzer.js";
+import { initAndroidDemo } from "./android-demo.js?v=android-1";
 
 const $ = (selector) => document.querySelector(selector);
 const state = { mode: "text", token: "", connected: false, busy: false, last: null };
@@ -214,6 +215,7 @@ if (document.modelContext?.registerTool) {
             if (state.busy) throw new Error("Ya hay un análisis en curso.");
             const result = analyzeText(input?.text);
             setMode("text");
+            $("#manual-workspace").open = true;
             $("#custom-message").open = true;
             $("#message").value = input.text;
             $("#counter").textContent = `${input.text.length} / 5000`;
@@ -235,8 +237,9 @@ addEventListener("pagehide", () => {
 function pairFromLink() {
   const pairing = new URLSearchParams(location.hash.slice(1)).get("qvac");
   if (!pairing || !/^[a-f0-9]{64}$/.test(pairing)) return;
-  history.replaceState(null, "", location.pathname + location.search + "#verificar");
+  history.replaceState(null, "", location.pathname + location.search + "#revisar-mensaje");
   if (state.busy) return;
+  $("#manual-workspace").open = true;
   $(".connection").open = true;
   $("#pair-token").value = pairing;
   $("#connect-form").requestSubmit();
@@ -244,50 +247,7 @@ function pairFromLink() {
 addEventListener("hashchange", pairFromLink);
 pairFromLink();
 
-const demoCases = {
-  phishing: {
-    sender: "Un SMS que dice ser del banco",
-    question: "Te piden actuar hoy y abrir un enlace. ¿El dominio pertenece realmente al banco?",
-  },
-  code: {
-    sender: "Un contacto que dice ser de seguridad",
-    question: "Dice que quiere ayudarte, pero te pide un código de verificación. ¿Qué revela esa solicitud?",
-  },
-  notice: {
-    sender: "Un aviso para revisar tu estado de cuenta",
-    question: "No pide claves ni incluye un enlace. ¿Qué significa que no aparezcan señales de alerta?",
-  },
-};
-let demoCase = "phishing";
-function selectDemo(key) {
-  if (state.busy) return;
-  demoCase = key;
-  document.querySelectorAll("[data-demo]").forEach((b) => {
-    b.setAttribute("aria-pressed", String(b.dataset.demo === key));
-  });
-  $("#demo-sender").textContent = demoCases[key].sender;
-  $("#demo-message").textContent = EXAMPLES[key];
-  $("#demo-question").textContent = demoCases[key].question;
-  $("#custom-message").open = false;
-  resetResult();
-  $("#demo-reveal").textContent = "Ver las señales ↗";
-  $("#engine-label").textContent = "DEMO · REGLAS";
-}
-document.querySelectorAll("[data-demo]").forEach((b) => {
-  b.addEventListener("click", () => selectDemo(b.dataset.demo));
-});
-$("#demo-reveal").addEventListener("click", () => {
-  if (state.busy) return;
-  renderResult(analyzeText(EXAMPLES[demoCase]));
-  $("#engine-label").textContent = "DEMO · REGLAS";
-  $("#demo-reveal").textContent = "Volver a ver las señales ↗";
-  if (matchMedia("(max-width: 760px)").matches)
-    $("#result").scrollIntoView({
-      block: "start",
-      behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
-    });
-});
-selectDemo(demoCase);
+initAndroidDemo();
 let guideStep = 0;
 const guideTabs = [...document.querySelectorAll("[data-guide-step]")];
 function showGuideStep(index, focusTab = false) {
