@@ -62,18 +62,19 @@ capturas, logs ni argumentos visibles de comandos:
   publicación ya muestra la declaración financiera actualizada; siguen pendientes
   la ficha y otros datos obligatorios de la app. No se ha enviado a revisión y el
   canal cerrado **no está publicado**.
-- Vercel todavía no tiene variables de producción. `/probar` muestra la invitación
-  interna y mantiene oculto el formulario; OAuth público no activa ese formulario.
-- La tarea propietaria desplegó la revisión de integración como
-  `dpl_73Pi3sVsLWQzNFAUfWD2YKTnV84A`, READY y aliada a la landing.
-  Consulta pública independiente de `/api/beta/status`: `enabled:false`,
-  `registered:false`, con enlace a la prueba interna.
+- Las siete variables de producción están configuradas como sensibles en Vercel
+  por la tarea propietaria, mediante CLI y con autorización de Bryan.
+  `BETA_ENABLED` permanece en `false`; el formulario público sigue oculto.
+- Despliegue comunicado por la tarea propietaria:
+  `dpl_ESYDTVEkiQY47f9eguS7vyuh1tG9`, READY y asociado al alias público.
+  Consulta pública independiente de `/api/beta/status`: HTTP 200,
+  `enabled:false`, `registered:false`, con enlace a la prueba interna.
 - `npm test`: 16 pruebas aprobadas en la integración; la tarea propietaria repitió
   las 9 pruebas beta y el build antes del despliegue, ambos correctos.
 
 ## Antes de activar
 
-1. Guardar los secretos autorizados en Vercel y desplegar.
+1. Mantener las variables sensibles configuradas y comprobar el estado del despliegue.
 2. Conservar el registro desactivado mientras Google Play no ofrezca el canal cerrado.
 3. Completar ficha, privacidad, clasificación, acceso y declaraciones de Google Play;
    enviar la prueba cerrada a revisión y comprobar que esté disponible.
