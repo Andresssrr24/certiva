@@ -46,7 +46,7 @@ node scripts/prueba-vision.js 8           # solo el lector, 8 capturas, con la v
 node scripts/prueba-llamada.js            # la llamada: lotes, avisos y resumen
 node scripts/prueba-politica.js           # qué fragmentos de la política recupera el RAG
 node eval/reglas-check.js                 # las reglas contra la verdad, sin modelos, en un segundo
-npm run eval                              # las 120 capturas -> eval/results.md y eval/perf.jsonl (unos 18 min)
+npm run eval                              # las 136 capturas -> eval/runs/<fecha>/results.md (unos 25 min); --solo legitimo para una clase
 ```
 
 ## 4. La app

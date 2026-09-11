@@ -53,6 +53,7 @@ Para desarrollar con recarga en caliente en un teléfono conectado por USB: `cd 
 
 ## Estado
 
-- Compilado el 10 de septiembre de 2026 en el MacBook, sin Android Studio.
-- Emulador Android arm64 (API 35): prueba en curso, resultado en `docs/PLAN-APK.md`.
-- Teléfono físico: pendiente del equipo. La primera prueba debe verificar la descarga de VisionPsy, `getModelInfo` para saber si el modelo quedó en caché, los permisos de galería y el tiempo al primer token.
+- Compilado el 10 de septiembre de 2026 en el MacBook, sin Android Studio. 228 MB.
+- Emulador Android arm64 (API 35) en el MacBook: instala, arranca, y el modo texto funciona: un mensaje de fraude pegado da «Es una estafa» con las tres señales (dominio que imita al banco, petición de clave, prisa), el consejo y el canal oficial, en 1 ms. Capturas en `../docs/img/`.
+- Tres arreglos hicieron falta para llegar ahí, documentados en `plugins/` y en `../docs/PLAN-APK.md`: OpenCL declarada opcional (si no, el APK no instala donde no hay `libOpenCL.so`), precarga de `libappmodules.so` con el enlazador del sistema (SoLoader no encuentra `libnativehelper.so`, que `bare-kit` necesita, y la app moría al arrancar) y R8 apagado.
+- Teléfono físico: pendiente del equipo. La primera prueba debe verificar la descarga de VisionPsy Q8, `getModelInfo` para saber si el modelo quedó en caché, los permisos de galería y el tiempo al primer token.

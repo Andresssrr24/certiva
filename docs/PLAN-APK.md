@@ -36,7 +36,8 @@ Por debajo de unos 250 MB no existe modelo de visión que lea texto; lo que hay 
 
 ## Arquitectura de la app móvil
 
-- **Expo SDK 54, JavaScript, `@qvac/sdk` con `react-native-bare-kit`.** Dispositivo físico obligatorio: el SDK no corre en emulador. Android mínimo 29.
+- **Expo SDK 54, JavaScript, `@qvac/sdk` con `react-native-bare-kit`.** Android mínimo 29. La app instala y corre en el emulador arm64 (API 35) del MacBook: el modo texto quedó verificado ahí; la inferencia con GPU exige un teléfono físico.
+- **Tres arreglos que hicieron falta para que el APK de release instale y arranque**, cada uno como plugin de Expo en `mobile/plugins/` o como propiedad de compilación, con la evidencia en el commit: (1) el plugin de QVAC declara `libOpenCL.so` como biblioteca obligatoria y el APK no instala donde no existe (emulador, teléfonos con GPU Mali): se declara opcional; (2) `libappmodules.so` enlaza `libbare-kit.so`, que necesita `libnativehelper.so`, una biblioteca pública que vive en el APEX de ART y que SoLoader no encuentra, así que descartaba los módulos nativos y la app moría al arrancar con «PlatformConstants could not be found»: se precarga con el enlazador del sistema en `MainApplication`; (3) R8 apagado en release porque el plugin de QVAC lo enciende y complicaba el diagnóstico; cuesta unos 9 MB.
 - **`mobile/preparar.sh`** crea el proyecto Expo con la plantilla oficial, instala dependencias con `npx expo install` para no adivinar versiones, copia el núcleo compartido y nuestras pantallas, y deja el proyecto listo para `prebuild`.
 - **Pantallas:** Inicio con dos acciones; Texto, donde el usuario pega el mensaje; Captura, que pide la imagen a la galería; Descarga del modelo, opcional; Resultado, el mismo veredicto del teléfono de la demo. Sin pestañas de banco: eso vive en la laptop.
 - **Motor móvil (`src/motor.js`):** con modelo, VisionPsy transcribe y `derivar` saca los campos; sin modelo, el texto pegado pasa directo a `derivar`. En ambos casos `reglas.evaluar` decide y `consejos.js` pone el texto fijo por señal. El resultado y los hashes de indicadores se muestran; enviarlos a un anfitrión queda para después.
@@ -67,8 +68,8 @@ Sin Android Studio. El toolchain se instala con Homebrew y `sdkmanager`, y dos s
 | Medir VisionPsy Q4 contra Q8 | MacBook | Si pierde más de 2 puntos, el teléfono usa Q8 y la descarga sube a 546 MB | Hecho sobre las 136: Q4 123/136, Q8 129/136. El teléfono usa Q8 |
 | Medir Qwen3 0.6B en ocho veredictos | MacBook | Si el consejo no supera al texto fijo, no entra | Hecho: no entra |
 | Preparar el proyecto Expo con `preparar.sh` | MacBook, toolchain por Homebrew | Si el prebuild no pasa en una hora, se para | Hecho |
-| APK de release | MacBook | Se mide el peso y se decide | Hecho: 219 MB, se conserva la GPU |
-| Instalar y abrir en un Android | Emulador arm64 en el MacBook; después un teléfono del equipo | Es el mínimo para decir «corre en un teléfono» | Emulador: en prueba. Teléfono físico: pendiente del equipo |
+| APK de release | MacBook | Se mide el peso y se decide | Hecho: 228 MB sin R8 (219 con R8), se conserva la GPU |
+| Instalar y abrir en un Android | Emulador arm64 en el MacBook; después un teléfono del equipo | Es el mínimo para decir «corre en un teléfono» | Emulador: instala, arranca, y un texto de fraude pegado da «Es una estafa» con tres señales en 1 ms. Teléfono físico: pendiente del equipo |
 | Descargar VisionPsy y leer una captura en el teléfono | Teléfono físico | El tiempo al primer token va al README y al video | Pendiente |
 
 **Lo que no cambia:** el video y la entrega no dependen del APK. Si el APK no llega a probarse en un teléfono físico, el proyecto se entrega igual y queda declarado como compilado y probado en emulador.
