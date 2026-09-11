@@ -2,7 +2,7 @@
 
 El portal de Electron empieza en la pantalla de inicio de un teléfono simulado. Elegir un caso entrega el mensaje fuera de Certiva, ejecuta el motor QVAC de escritorio y presenta una notificación dentro del teléfono. Tocar esa notificación abre las señales, el consejo y el botón de reporte. El indicador inferior vuelve al inicio del teléfono.
 
-Los mensajes del menú son ficticios. La inferencia del portal es real cuando los modelos están disponibles. El simulador no es un emulador Android ni recibe WhatsApp. Las alertas nativas Android 0.2 se incorporarán en una entrega separada después de su validación.
+Los mensajes del menú son ficticios. La inferencia del portal es real cuando los modelos están disponibles. El simulador no es un emulador Android ni recibe WhatsApp. Las alertas nativas Android 0.2 se describen en [su guía](ALERTAS-ANDROID.md).
 
 ## Portal
 
@@ -41,4 +41,4 @@ La prueba UI de esta rama se ejecutó con Electron 40.10.2 del runtime local de 
 
 ## Reportes del piloto móvil
 
-La app Android incluida hasta ahora corresponde a la base 0.1: entrada de texto y compartir hacia Certiva. Sus instrucciones y evidencia están en [la guía del piloto](../pilot/README.md) y [la validación de la versión base](../pilot/VALIDACION.md). La siguiente entrega de notificaciones Android 0.2 se comprueba aparte y no forma parte de este PR del portal.
+La app Android 0.2 incorpora protección voluntaria de notificaciones de WhatsApp mediante reglas locales, alertas nativas y apertura del detalle/reporte. Ver [guía de alertas](ALERTAS-ANDROID.md) y [evidencia de su versión congelada](../pilot/VALIDACION-ANDROID-0.2.md). El teléfono de Electron sigue siendo una simulación independiente. QVAC en Android aún no forma parte de esta entrega.
