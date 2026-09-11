@@ -1,0 +1,141 @@
+{
+  "assets": [
+    {
+      "bytes": 10750814,
+      "digest": "sha256:948c3767c576030e58b4c403b74da2b6a51c5ccda9fb26b5b31a14956a4efefe",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.2-notification-icon.apk",
+      "name": "certiva-0.2-notification-icon.apk"
+    },
+    {
+      "bytes": 71201693,
+      "digest": "sha256:21542a5afe71591a1327fb39878e8044adaf77dd7aaaec27d347465de7dec942",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.3-home-experimental.apk",
+      "name": "certiva-0.3-home-experimental.apk"
+    },
+    {
+      "bytes": 100,
+      "digest": "sha256:78a920983505216ad9da9b6ee70fc3d5ca3b94c01a9aa0913706ff965cebe93e",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.3-home-experimental.apk.sha256",
+      "name": "certiva-0.3-home-experimental.apk.sha256"
+    },
+    {
+      "bytes": 71201693,
+      "digest": "sha256:cb69b6bfd72aada2c12649870b73fc6d73dd15f26707086c518913c185234837",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.3-qvac-experimental.apk",
+      "name": "certiva-0.3-qvac-experimental.apk"
+    },
+    {
+      "bytes": 40883621,
+      "digest": "sha256:023ebbfc083c4fda0b74990d3bc14d8dda26f990db44e69bdbdc11f2da9d6ce3",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.3-qvac-integrada-experimental.apk",
+      "name": "certiva-0.3-qvac-integrada-experimental.apk"
+    },
+    {
+      "bytes": 41003835,
+      "digest": "sha256:8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.4-menu-experimental.apk",
+      "name": "certiva-0.4-menu-experimental.apk"
+    },
+    {
+      "bytes": 100,
+      "digest": "sha256:2bc468353dadc43329a6b7269676f46ee78f10fd359214ab59d77dfb696d56ff",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.4-menu-experimental.apk.sha256",
+      "name": "certiva-0.4-menu-experimental.apk.sha256"
+    },
+    {
+      "bytes": 1013,
+      "digest": "sha256:0b24b5b054dab81d3d10f7e5000faf7e9b41dc4f30acc59bbd343a2ed084fd26",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-0.4-menu-validation.json",
+      "name": "certiva-0.4-menu-validation.json"
+    },
+    {
+      "bytes": 4895671,
+      "digest": "sha256:78fd33e7b2d790b48b708990f465c006d99a65bc86e3834f0f02fc905cb9cbde",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-demo-editable-20260911.zip",
+      "name": "certiva-demo-editable-20260911.zip"
+    },
+    {
+      "bytes": 1845611,
+      "digest": "sha256:ded276b0d21b6c1402e83ee282b016cd1adff6da898ff487eceed9905a8235c7",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-demo-final-20260911.mp4",
+      "name": "certiva-demo-final-20260911.mp4"
+    },
+    {
+      "bytes": 199,
+      "digest": "sha256:f7e0676ba627b26f2cfd949ccf7cd92f7a8518917bfd3c722200ff852bee5cb6",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-demo-final-SHA256SUMS.txt",
+      "name": "certiva-demo-final-SHA256SUMS.txt"
+    },
+    {
+      "bytes": 2226715,
+      "digest": "sha256:e028ce8c91b29bcd4993d7231ec2f7c676cb517ae80821c29345c001fa4104ae",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-flujo-real-android-admin-20260911.zip",
+      "name": "certiva-flujo-real-android-admin-20260911.zip"
+    },
+    {
+      "bytes": 112,
+      "digest": "sha256:d3eb4378bdeff446d2bbb125448109c33805fcd0e0fd2a6c21cdd3c8accda206",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-flujo-real-android-admin-20260911.zip.sha256",
+      "name": "certiva-flujo-real-android-admin-20260911.zip.sha256"
+    },
+    {
+      "bytes": 664,
+      "digest": "sha256:2470586e5792852a975b0913f50e2c6c858c5599bd5d9bab28d96ce1b3638cbb",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-home-ui-20260911.json",
+      "name": "certiva-home-ui-20260911.json"
+    },
+    {
+      "bytes": 6599137,
+      "digest": "sha256:a20ec55b18faea5c4cf19a2d09e0dd1d5acd17b49df0ed1e44f0e5710e128127",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-notificacion-menu-20260911.zip",
+      "name": "certiva-notificacion-menu-20260911.zip"
+    },
+    {
+      "bytes": 105,
+      "digest": "sha256:d15e45daf5debbe204a76c5c61cb5773b945ed42df82a5e586fba2694d6f8f2b",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-notificacion-menu-20260911.zip.sha256",
+      "name": "certiva-notificacion-menu-20260911.zip.sha256"
+    },
+    {
+      "bytes": 9720807,
+      "digest": "sha256:cdbc727dcacc41b2c92a6db3068035717e1ba020b34ada58f838575323a4c5a5",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-pilot-0.1.0-debug.apk",
+      "name": "certiva-pilot-0.1.0-debug.apk"
+    },
+    {
+      "bytes": 9819493,
+      "digest": "sha256:e25d74d5478d14fcac8c5b47494c194483a64d4c68124290c03d4b9c81818a06",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-protection-0.2.0-debug.apk",
+      "name": "certiva-protection-0.2.0-debug.apk"
+    },
+    {
+      "bytes": 12468,
+      "digest": "sha256:30e46377f111e7ea721f82bcc76e693f49089e363128d45fbbc032d42e42cea0",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/certiva-sdk-0.1.0.aar",
+      "name": "certiva-sdk-0.1.0.aar"
+    },
+    {
+      "bytes": 13964512,
+      "digest": "sha256:6ccab448c9958ade1e0451af5989506da8d75a988742eb632279b32ab51e9072",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/evidencias-piloto-y-portal-20260911.zip",
+      "name": "evidencias-piloto-y-portal-20260911.zip"
+    },
+    {
+      "bytes": 1938,
+      "digest": "sha256:a07a55d3d8f67d8a89e5e894b8c821fd4b940ca063f898306f40320ba58cd4f8",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/MANIFIESTO-ARTEFACTOS.json",
+      "name": "MANIFIESTO-ARTEFACTOS.json"
+    },
+    {
+      "bytes": 701,
+      "digest": "sha256:67495dab004a0a10c527dd75f13d8bb835bc3e2a832003bb28c9f1538b6f536f",
+      "download_url": "https://github.com/Andresssrr24/certiva/releases/download/avances-2026-09-11/SHA256SUMS",
+      "name": "SHA256SUMS"
+    }
+  ],
+  "prerelease": true,
+  "release_url": "https://github.com/Andresssrr24/certiva/releases/tag/avances-2026-09-11",
+  "tag": "avances-2026-09-11",
+  "checked_at_utc": "2026-09-11T12:13:00.701583+00:00",
+  "verification_scope": "Metadata read from GitHub API; artifacts were not downloaded or executed again for this inventory."
+}

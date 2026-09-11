@@ -8,16 +8,29 @@ Landing independiente con branding v5, verificador de texto local y puente optat
 
 ## Web
 
-Node 22.17 o superior. No requiere instalar paquetes para construir o servir la landing.
+Node 22.17 o superior. Ejecutar `npm ci` en `landing/` para instalar la dependencia del registro beta.
 
 ```sh
+npm ci
 npm run dev
 npm test
 npm run build
 vercel --prod
 ```
 
-La vista previa usa http://127.0.0.1:4317. Vercel publica exclusivamente `dist/`. Nunca publica el puente, el repositorio del prototipo ni los modelos. El verificador funciona en el navegador sin enviar el texto a Vercel. El informe JSON se descarga localmente y puede contener dominios y evidencias, pero no incluye el mensaje completo.
+La vista previa usa http://127.0.0.1:4317. Vercel sirve el contenido estático de `dist/` y las funciones `api/beta/`. El puente y los modelos siguen siendo locales. El verificador funciona en el navegador sin enviar el texto a Vercel. El informe JSON se descarga localmente y puede contener dominios y evidencias, pero no incluye el mensaje completo.
+
+## Registro con Google y descarga pendiente
+
+`/probar` permite registrarse con Google: producción tiene `BETA_ENABLED=true` y `BETA_PLAY_READY=false`. El código confirma la identidad y la membresía antes de mostrar el correo añadido al grupo. Cuando `BETA_PLAY_READY=true`, el callback redirige directamente al destino Play validado después de confirmar identidad y membresía; un fallo vuelve a la página de registro. Registrarse no implica poder instalar: mientras Play no esté listo, muestra «Registro abierto · Descarga pendiente» y no ofrece el enlace cerrado. Si se apaga el registro, conserva la alternativa de prueba interna para cuentas ya habilitadas. Sin configuración completa, ambas funciones fallan de forma cerrada. Los secretos se configuran fuera de Git.
+
+En esta rama, el botón abre `/probar` y el QR vuelve a la ruta estable `/apk`, que redirige a `/probar`. Este cambio sustituye el destino Expo introducido en PR #33 para que QR y botón anuncien la misma prueba nativa 0.4. La APK Expo sigue disponible en su Release. El binario nativo 0.3 continúa como artefacto histórico y requisito del build, no como destino del botón beta.
+
+Estado y requisitos: [BETA-SETUP.md](BETA-SETUP.md). Revisión independiente: [BETA-REVIEW.md](BETA-REVIEW.md). `npm run dev` sirve archivos estáticos y no emula las funciones ni el flujo OAuth; las pruebas de servidor emplean dobles y no dan de alta usuarios reales. La API pública confirma registro habilitado y descarga pendiente. La tarea propietaria verificó formulario → Google → callback con una cuenta existente en Chrome de escritorio; Bryan confirmó después el registro en Android. Siguen pendientes una nueva alta externa instrumentada y la instalación desde Play.
+
+La política Android está en `/privacidad-app`, separada de la privacidad del registro web. Los [materiales de la ficha es-419](play-store-assets/README.md) se conservan como borrador y `.vercelignore` excluye esa carpeta del despliegue. No acreditan aprobación de Google Play; continúan pendientes acceso completo para revisores, declaraciones y clasificación.
+
+Los apartados de despliegue que siguen documentan revisiones anteriores y sus comprobaciones históricas.
 
 ## QVAC
 

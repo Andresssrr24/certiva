@@ -8,7 +8,7 @@ Demo vigente: [Android y administración del mismo caso — video de 56 segundos
 
 ## Estado del avance
 
-Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
+Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de todas las tareas](docs/AVANCES-HILOS-20260911.md) reúnen código, pruebas, documentación, videos e investigación, con sus PRs y artefactos. El inventario actualizado distingue PR integradas, las PR #34/#35/#36 abiertas y los 22 archivos de la prerelease, con sus hashes. API36 requiere integrar la PR #36 en `main`; su PR anterior se fusionó en otra rama. Las pruebas y limitaciones se declaran por componente; los benchmarks históricos no equivalen a una evaluación de esta versión.
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
@@ -18,6 +18,8 @@ Corte documental: **11 de septiembre de 2026, hora de Panamá**. Los [avances de
 | Android nativo 0.4 experimental | Inicio y menú en cuatro secciones, runtime QVAC CPU, instalador de modelo y conservación del riesgo de reglas cuando falla la IA | [Código y construcción](pilot/android-qvac/README.md) · [Resultados y fallos](pilot/android-qvac/VALIDATION.md). El clasificador corregido agotó el tiempo en Android; no es una versión validada. |
 | App Android con QVAC (Expo) | [APK actual de 229 MB](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2) compilado y probado en emulador arm64: texto por reglas en 1 ms; VisionPsy Q8 se descarga desde la app y leyó capturas en CPU (31 a 43 s); desde el 11 de septiembre es una app con cuatro pestañas (revisar, historial, aprender, ajustes), marca Certiva e historial en el teléfono (0.3.0, publicada en la release apk-v0.2) | [Guía](mobile/README.md) · [Plan y mediciones](docs/PLAN-APK.md). Pendiente: prueba en teléfono físico con GPU |
 | Marca | Nombre, descriptor, azul `#205094` y referencia v5 aprobados | [Memoria](MEMORIA_PROYECTO.md) · [Referencia visual](docs/marketing/brand/certiva-aplicaciones-azul-v5.png) |
+
+Registro beta: **habilitado con Google; descarga cerrada pendiente**. Confirma la cuenta y su membresía en el grupo con consentimiento. `BETA_ENABLED=true` permite registrarse; `BETA_PLAY_READY=false` mantiene oculto el enlace de instalación. Con la prueba cerrada disponible y la bandera activada, el registro confirmado redirigirá directamente a Google Play. La tarea de landing verificó OAuth completo en Chrome de escritorio con una cuenta ya perteneciente al grupo, tras corregir el fallo de origen del formulario. Bryan confirmó después que el registro en Android funciona. Siguen pendientes una nueva alta externa instrumentada y la distribución cerrada. [Configuración y estado](landing/BETA-SETUP.md) · [Revisión de integración](landing/BETA-REVIEW.md). Google Play lleva 6 de 11 tareas completas; la ficha es-419 está en borrador. [Política Android](https://certiva-landing.vercel.app/privacidad-app) · [Materiales y pendientes](landing/play-store-assets/README.md).
 
 Distribución del piloto nativo: [diagnóstico de Play Protect y borrador de revisión](docs/android/PLAY-PROTECT-REVISION.md). El bloqueo reportado no está resuelto; la preparación de Google Play continúa por separado. Este diagnóstico corresponde a `local.certiva.pilot`, distinto de la app Expo de la tabla.
 
@@ -47,6 +49,7 @@ Landing: antes de construir desde un clon, descarga el APK congelado siguiendo [
 
 ```sh
 cd landing
+npm ci
 npm test
 npm run build
 npm run dev
@@ -59,7 +62,7 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 - `npm test`: **11/11** pruebas del motor, evaluación y persistencia/transiciones de casos, con dobles de los modelos.
 - `npx electron scripts/prueba-experiencia.js`: **9/9** comprobaciones de navegación y reporte con motor controlado; ver entorno utilizado en [la guía del portal](docs/EXPERIENCIA-Y-ALERTAS.md).
 - `node eval/reglas-check.js`: **136/136** veredictos correctos sobre el texto verdadero del dataset sintético; no mide OCR ni generalización.
-- `npm --prefix landing test`: **7/7**, con reglas y contrato HTTP del puente.
+- `npm --prefix landing test`: **20/20**, con reglas, contrato HTTP del puente, flujo beta con OAuth/membresía simulados, estados de registro/descarga y redirección condicionada a Play.
 - `npm --prefix landing run build`: genera el sitio estático.
 - Sintaxis de JavaScript del portal y Biome de ocho archivos modificados: sin errores, con 12 advertencias.
 
