@@ -1,0 +1,58 @@
+{
+  "method": "SQLite read-only connection; existing case only; no mutations",
+  "caseId": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+  "assessmentId": "880ee912-881b-4190-a541-d60ea595c2fc",
+  "finalCase": {
+    "id": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+    "assessment": "880ee912-881b-4190-a541-d60ea595c2fc",
+    "report": {
+      "assessmentId": "880ee912-881b-4190-a541-d60ea595c2fc",
+      "channel": "whatsapp",
+      "consent": true,
+      "evaluatedAt": "2026-09-11T05:52:43.578Z",
+      "outcome": "riesgo",
+      "policyVersion": "ca-referencia-2026-09-v1",
+      "reasonCodes": [
+        "pide_datos_sensibles",
+        "urgencia"
+      ],
+      "sdkVersion": "0.1.0",
+      "source": "texto"
+    },
+    "state": "resuelto",
+    "assignee": "analista",
+    "resolution": "sin_evidencia",
+    "created": 1789105974425,
+    "updated": 1789106171431,
+    "version": 3
+  },
+  "auditEvents": [
+    {
+      "seq": 21,
+      "actor": "cliente",
+      "case_id": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+      "event": "reporte_recibido",
+      "created": 1789105974426,
+      "detail": "{\"consent\":true,\"provenance\":\"cliente_no_verificado\"}"
+    },
+    {
+      "seq": 26,
+      "actor": "analista",
+      "case_id": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+      "event": "caso_asignado",
+      "created": 1789106160920,
+      "detail": "{\"resolution\":null}"
+    },
+    {
+      "seq": 28,
+      "actor": "analista",
+      "case_id": "8e8c15e5-8026-42de-8e51-44f2fa278697",
+      "event": "caso_resuelto",
+      "created": 1789106171431,
+      "detail": "{\"resolution\":\"sin_evidencia\"}"
+    }
+  ],
+  "functionalEvidenceVerified": true,
+  "instrumentationPassed": false,
+  "instrumentationLimitation": "WebView evaluation timed out in final read-only fetch after all six visible UI phases."
+}

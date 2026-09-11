@@ -35,3 +35,5 @@ Se preservó todo el código y documentación nuevos identificados en los invent
 Los modelos GGUF, dependencias, cachés, directorios de compilación, credenciales, bases SQLite y clones de terceros no forman parte del código publicado. Sus fuentes y mecanismos de reconstrucción se documentan donde corresponde. Los ajustes encargados después de este corte se incorporan como avances posteriores, con su propia evidencia.
 
 - Landing: simulador web de teléfono Android con tres casos, notificaciones y detalle; navegación por accesos, inicio y Escape. Fuentes integradas sobre main tras la limpieza de Biome, siete tests y flujo DOM aprobados. La APK no cambia; la demostración usa reglas locales y no valida QVAC Android.
+
+- Video final: [56 segundos, 1080p y proyecto editable](marketing/video/ENTREGA-DEMO-FINAL.md), con grabaciones reales del formulario Android y del mismo caso en consola. SHA y ZIP verificados al archivar en release; QA visual reportada por la tarea de video, sin nuevo render. La variante AdminDemoTest con logs es posterior a la ejecución fallida.
