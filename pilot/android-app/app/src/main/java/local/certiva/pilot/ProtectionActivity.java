@@ -19,20 +19,30 @@ public final class ProtectionActivity extends Activity {
     @Override public void onCreate(Bundle state) { super.onCreate(state); ProtectionNotifications.channel(this); }
     @Override public void onResume() { super.onResume(); render(); }
     private int dp(int n){return Math.round(n*getResources().getDisplayMetrics().density);}
-    private TextView text(String value,int size,boolean bold){TextView v=new TextView(this);v.setText(value);v.setTextSize(size);v.setTextColor(Color.rgb(21,46,78));v.setPadding(0,dp(8),0,dp(8));if(bold)v.setTypeface(Typeface.DEFAULT,Typeface.BOLD);layout.addView(v);return v;}
+    private TextView text(String value,int size,boolean bold){return ProtectionStyle.text(layout,value,size,bold);}
     private Button button(String value,Runnable action){Button b=new Button(this);b.setText(value);b.setAllCaps(false);b.setTextColor(Color.rgb(32,80,148));layout.addView(b,new LinearLayout.LayoutParams(-1,dp(56)));ProtectionStyle.button(b,value.equals("Activar protección"));b.setOnClickListener(v->action.run());return b;}
     private boolean access(){return getSystemService(NotificationManager.class).isNotificationListenerAccessGranted(new ComponentName(this,CertivaNotificationListener.class));}
     private void render(){
-        ScrollView scroll=new ScrollView(this);layout=new LinearLayout(this);layout.setOrientation(LinearLayout.VERTICAL);layout.setPadding(dp(24),dp(45),dp(24),dp(30));layout.setBackgroundColor(Color.rgb(244,247,252));scroll.addView(layout);setContentView(scroll); ProtectionStyle.bars(this);
-        layout.setOnApplyWindowInsetsListener((v,i)->{v.setPadding(dp(24),Math.max(dp(36),i.getSystemWindowInsetTop()+dp(12)),dp(24),Math.max(dp(24),i.getSystemWindowInsetBottom()));return i;});
-        text("certiva",36,true);text("Protección de WhatsApp",27,true);
+        layout=ProtectionStyle.screen(this);ProtectionStyle.header(layout,"Mi protección");
+        text("Protección de WhatsApp",28,true);
+        text("Tu día sigue. Certiva está pendiente.",15,false);
         boolean enabled=ProtectionStore.enabled(this), hasAccess=access(), notifications=ProtectionNotifications.allowed(this);
         boolean connected=CertivaNotificationListener.connected;
-        text(enabled&&hasAccess&&notifications&&connected?"● Protección habilitada":"○ Revisa la configuración",18,true);
-        text("1. Tu autorización: "+(enabled?"activada":"pendiente")+"\n2. Acceso a notificaciones: "+(hasAccess?"concedido":"pendiente")+"\n3. Alertas de Certiva: "+(notifications?"permitidas":"pendientes")+"\n4. Servicio: "+(connected?"conectado":"sin conexión confirmada"),14,false);
-        text("Certiva revisa localmente el texto que Android muestra en las notificaciones de WhatsApp y WhatsApp Business. No lee el historial ni envía tus mensajes. Puedes usar otras apps mientras está habilitada.",15,false);
-        if(!enabled)button("Activar protección",()->new AlertDialog.Builder(this).setTitle("Permitir revisión de notificaciones")
-            .setMessage("Android concede acceso amplio a notificaciones. Certiva procesa únicamente WhatsApp y WhatsApp Business, en este dispositivo. Muestra los resultados de los últimos 7 días y conserva como máximo 20, sin guardar el texto, remitente, enlaces ni códigos.\n\nLa alerta se basa en reglas locales; este APK no incluye el modelo QVAC de escritorio. Puedes desactivarla aquí o revocar el permiso en Ajustes.")
+        boolean modelReady=local.certiva.qvac.QvacRuntime.available(this);
+        boolean ready=enabled&&hasAccess&&notifications&&connected&&modelReady;
+        LinearLayout page=layout;layout=ProtectionStyle.card(page,ProtectionStyle.TONAL);
+        text(ready?"Protección habilitada":"Completa tu protección",22,true);
+        text(ready?"Revisamos las notificaciones mientras usas tu teléfono.":"Prepara la IA y autoriza las alertas para empezar.",14,false);
+        layout=ProtectionStyle.card(page,android.graphics.Color.WHITE);
+        ProtectionStyle.statusRow(layout,"IA en este teléfono",modelReady);
+        ProtectionStyle.statusRow(layout,"Tu autorización",enabled);
+        ProtectionStyle.statusRow(layout,"Acceso a notificaciones",hasAccess);
+        ProtectionStyle.statusRow(layout,"Alertas de Certiva",notifications);
+        ProtectionStyle.statusRow(layout,"Servicio conectado",connected);
+        layout=page;
+        if(!modelReady)button("IA en este teléfono",()->startActivity(new Intent(this,local.certiva.qvac.ModelActivity.class)));
+        if(!enabled&&modelReady)button("Activar protección",()->new AlertDialog.Builder(this).setTitle("Permitir revisión de notificaciones")
+            .setMessage("Android concede acceso amplio a notificaciones. Certiva procesa únicamente WhatsApp y WhatsApp Business, en este dispositivo. Muestra los resultados de los últimos 7 días y conserva como máximo 20, sin guardar el texto, remitente, enlaces ni códigos.\n\nLa alerta usa QVAC con un modelo instalado en este teléfono, junto con reglas locales. El análisis no requiere conexión al Mac. Puedes desactivarla aquí o revocar el permiso en Ajustes.")
             .setNegativeButton("Ahora no",null).setPositiveButton("Activar",(d,w)->{ProtectionStore.prefs(this).edit().putBoolean("enabled",true).apply();render();requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS},200);}).show());
         if(enabled){
             if(!notifications)button("Permitir alertas de Certiva",()->{requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS},200);startActivity(new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE,getPackageName()));});
@@ -40,17 +50,17 @@ public final class ProtectionActivity extends Activity {
             if(hasAccess&&!connected)button("Reconectar protección",()->{NotificationListenerService.requestRebind(new ComponentName(this,CertivaNotificationListener.class));text("Reconexión solicitada. Vuelve a esta pantalla para comprobar el estado.",12,false);});
             button("Desactivar protección",()->{ProtectionStore.prefs(this).edit().putBoolean("enabled",false).apply();getSystemService(NotificationManager.class).cancelAll();render();});
         }
-        text("Prueba en tu teléfono",20,true);
-        text("Concede ambos permisos, vuelve al inicio del teléfono y envía un WhatsApp desde otro teléfono. Mantén WhatsApp fuera de ese chat para que publique una notificación.\n\nEjemplo: “Su cuenta será bloqueada hoy. Envíe el código de verificación para desbloquearla.”\n\nAl tocar la alerta de Certiva, se abrirán las señales y los pasos recomendados.",14,false);
-        text("Si WhatsApp oculta el contenido, el chat está abierto, las notificaciones están silenciadas o Android restringe el servicio, la detección puede no recibir el texto. No se evita ninguna restricción del sistema.",12,false);
+        ProtectionStyle.disclosure(layout,"Cómo probar las alertas","Concede ambos permisos, vuelve al inicio del teléfono y envía un WhatsApp desde otro teléfono. Mantén WhatsApp fuera de ese chat para que publique una notificación.\n\nAl tocar la alerta de Certiva, se abrirán las señales y los pasos recomendados. Si el contenido está oculto o las notificaciones están silenciadas, Certiva puede no recibir el texto.");
         long checked=ProtectionStore.prefs(this).getLong("last_checked",0);
         text(checked==0?"Todavía no se ha revisado una notificación.":"Última revisión: "+java.text.DateFormat.getDateTimeInstance().format(new java.util.Date(checked)),12,false);
         text(ProtectionStore.prefs(this).getString("last_status",""),12,false);
-        text("Alertas recientes",20,true);
+        text("Alertas recientes",22,true);
         var items=ProtectionStore.alerts(this);
-        if(items.length()==0)text("Todavía no hay alertas guardadas.",14,false);
+        if(items.length()==0){LinearLayout empty=ProtectionStyle.card(layout,android.graphics.Color.WHITE);ProtectionStyle.text(empty,"Todo en un solo lugar",16,true);ProtectionStyle.text(empty,"Las alertas que recibas aparecerán aquí.",14,false);}
         for(int i=0;i<items.length();i++){var item=items.optJSONObject(i);if(item==null)continue;String id=item.optString("id");button(item.optString("title"),()->startActivity(new Intent(this,ProtectionDetailActivity.class).putExtra("alert_id",id)));}
         if(items.length()>0)button("Borrar resultados locales",()->new AlertDialog.Builder(this).setTitle("Borrar resultados").setMessage("Se eliminarán los resultados guardados en este teléfono.").setNegativeButton("Volver",null).setPositiveButton("Borrar",(d,w)->{ProtectionStore.prefs(this).edit().remove("alerts").apply();getSystemService(NotificationManager.class).cancelAll();render();}).show());
+        if(modelReady)button("IA en este teléfono",()->startActivity(new Intent(this,local.certiva.qvac.ModelActivity.class)));
+        ProtectionStyle.disclosure(layout,"Privacidad y alcance","El análisis ocurre en este dispositivo. Certiva solo procesa el texto visible de notificaciones de WhatsApp y WhatsApp Business, sin leer su historial ni enviar tus mensajes. Conserva hasta 20 resultados por 7 días, sin el mensaje original. Puedes desactivar la protección cuando quieras.");
         button("Volver a verificación manual",this::finish);
     }
     @Override public void onRequestPermissionsResult(int code,String[] permissions,int[] grants){super.onRequestPermissionsResult(code,permissions,grants);render();}

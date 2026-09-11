@@ -8,6 +8,19 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
 public final class EngineTest extends InstrumentationTestCase {
+    public void testRuleRiskSurvivesUnavailableAI() throws Exception {
+        JSONObject base = new JSONObject().put("outcome","riesgo").put("source","texto").put("sdkVersion","0.1.0")
+            .put("reasons",new org.json.JSONArray().put(new JSONObject().put("code","pide_datos_sensibles")));
+        JSONObject retained=local.certiva.qvac.LocalAssessment.retainRuleRisk(base);
+        assertEquals("riesgo",retained.getString("outcome"));
+        assertEquals("texto",retained.getString("source"));
+        assertEquals("reglas_de_texto",retained.getString("coverage"));
+        assertEquals("unavailable",retained.getString("aiStatus"));
+        assertFalse(retained.has("aiModel"));
+        assertEquals("pide_datos_sensibles",retained.getJSONArray("reasons").getJSONObject(0).getString("code"));
+        base.put("outcome","sin_senales");
+        assertNull(local.certiva.qvac.LocalAssessment.retainRuleRisk(base));
+    }
     public void testPilotAPIRoundTrip() throws Throwable {
         PilotAPI api = new PilotAPI("http://127.0.0.1:4321");
         try {

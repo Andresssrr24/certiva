@@ -1,4 +1,6 @@
-# Certiva · piloto bancario v0.1
+# Certiva · piloto bancario
+
+**Estado de esta rama:** la app Android nativa está en **0.3 experimental**. Incorpora QVAC CPU y nuevas pantallas, pero su clasificador corregido no completó las dos repeticiones Android. [Código y preparación](android-qvac/README.md) · [Evidencia y pendientes](android-qvac/VALIDATION.md). La versión 0.2 de reglas y sus artefactos se conservan como referencia separada; sus pruebas no validan automáticamente la 0.3.
 
 Implementación para evaluación interna de **verificar mensaje → confirmar reporte → revisar caso → resolver**. Caja de Ahorros es una referencia de configuración pública, pendiente de aprobación institucional. No hay conexión al banco, acceso a cuentas, retención de pagos ni USDT.
 
@@ -7,12 +9,12 @@ Implementación para evaluación interna de **verificar mensaje → confirmar re
 | Pieza | Implementado | Límite actual |
 |---|---|---|
 | SDK de reglas compartido | JavaScript puro; resultado explicable; reporte de datos mínimos | Heurísticas de texto; no autentica remitentes ni acredita eficacia contra fraude real |
-| Android | SDK AAR y app 0.2; entrada de texto y alertas locales voluntarias de WhatsApp | Android 13+; reglas locales, sin OCR ni QVAC. [Guía de alertas](../docs/ALERTAS-ANDROID.md). |
+| Android | SDK AAR, app de reglas 0.2 y fuente experimental 0.3 con QVAC y alertas | Android 13+; 0.3 arm64, sin OCR. Inferencia corregida pendiente de validación. [Guía de alertas 0.2](../docs/ALERTAS-ANDROID.md). |
 | iOS | Swift Package, JavaScriptCore, verificación de firma y OCR Apple Vision | iOS 16+; comprobado en simulador y SDK sobre Mac, pendiente de teléfonos físicos |
 | Consola y cliente web | Login, roles, reporte, bandeja, asignación, resolución y auditoría | Local, 200 casos recientes por consulta; sin SSO, roles de configuración ni expediente con contenido |
 | Backend | SQLite, sesiones de una hora, CSRF, tenant derivado de sesión, idempotencia y control de concurrencia | Un proceso local; registro auditable pero no inmutable; no despliegue de producción |
 
-El análisis en estas apps usa reglas locales. iOS extrae texto de capturas con Apple Vision y pide que el usuario confirme la lectura. El motor QVAC de Electron permanece independiente y no se invoca desde este piloto. No se presentan estos resultados como inferencia QVAC móvil.
+El SDK, iOS y la APK 0.2 usan reglas locales. iOS extrae texto de capturas con Apple Vision y pide que el usuario confirme la lectura. Android 0.3 incorpora su propio runtime QVAC; no invoca el motor de Electron. Si falla la IA, conserva un riesgo previo de reglas con `aiStatus=unavailable` y lo indica en pantalla. No se presenta ese resultado como inferencia QVAC móvil.
 
 ## Probar la consola
 
@@ -47,6 +49,13 @@ Proyecto: `android-app/`. La biblioteca integrable está en `sdk/`; la app de ej
 Requisitos de compilación: JDK 17, Android SDK plataforma 35, Gradle 9.1.0 y Android Gradle Plugin 9.0.1. El wrapper generado permite reproducir la compilación:
 
 ```sh
+# Desde la raíz del repositorio, instalar primero las dependencias con npm ci.
+# Desde pilot/, preparar el runtime experimental antes de compilar:
+cd android-qvac
+npm ci
+node scripts/bootstrap.cjs
+node scripts/bundle.cjs
+cd ..
 cd android-app
 ./gradlew :app:assembleDebug :sdk:assembleRelease
 ```

@@ -1,0 +1,16 @@
+{
+  "serial": "emulator-5580",
+  "startedAt": "2026-09-11T04:52:12.997Z",
+  "apkSha256": "5a75e7d854cb487414c5459e4d1c6b0051575e75fd957b96193a74085c8f6217",
+  "test": "local.certiva.pilot.UiInternalFlowTest",
+  "input": "Controlled visual fixture; no inference or real WhatsApp delivery. Internal saved-alert route; no system notification test.",
+  "installedApkSha256": "5a75e7d854cb487414c5459e4d1c6b0051575e75fd957b96193a74085c8f6217",
+  "installedPackage": [
+    "versionCode=3 minSdk=33 targetSdk=35",
+    "versionName=0.3.0-qvac-local"
+  ],
+  "passed": false,
+  "error": "Native flow test failed; see instrumentation.txt.",
+  "video": "android-flow.mp4",
+  "completedAt": "2026-09-11T04:53:42.844Z"
+}

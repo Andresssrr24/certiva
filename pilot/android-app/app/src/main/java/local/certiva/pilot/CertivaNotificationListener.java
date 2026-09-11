@@ -17,7 +17,7 @@ public final class CertivaNotificationListener extends NotificationListenerServi
     private final Handler main = new Handler(Looper.getMainLooper());
     private final ArrayDeque<String> queue = new ArrayDeque<>();
     private final LinkedHashMap<String,Long> seen = new LinkedHashMap<>();
-    private CertivaEngine engine;
+    private CertivaLocalEngine engine;
     private boolean ready, processing, destroyed;
     private long generation, evaluation;
     private final android.content.SharedPreferences.OnSharedPreferenceChangeListener preferenceListener = (prefs,key) -> {
@@ -63,7 +63,7 @@ public final class CertivaNotificationListener extends NotificationListenerServi
     private void initialize() {
         long run = ++generation;
         try {
-            engine = new CertivaEngine(this, (unused,error) -> {
+            engine = new CertivaLocalEngine(this, (unused,error) -> {
                 if(destroyed || generation!=run)return;
                 if(error!=null) { failure("El motor local necesita revisión"); return; }
                 ready=true; drain();
@@ -82,7 +82,7 @@ public final class CertivaNotificationListener extends NotificationListenerServi
             if(destroyed || generation!=run)return;
             processing=false;
             if(!ProtectionStore.enabled(this)){queue.clear();return;}
-            if(error!=null){failure("No se pudo verificar una notificación");return;}
+            if(error!=null){failure(error);return;}
             ProtectionStore.prefs(this).edit().putLong("last_checked",System.currentTimeMillis()).putString("last_status",result.optString("title")).apply();
             if("riesgo".equals(result.optString("outcome")) || "revisar".equals(result.optString("outcome"))) {
                 try { ProtectionStore.save(this,result); ProtectionNotifications.post(this,result); }
@@ -90,7 +90,7 @@ public final class CertivaNotificationListener extends NotificationListenerServi
             }
             drain();
         });
-        main.postDelayed(() -> { if(!destroyed && generation==run && evaluation==request && processing)failure("La revisión tardó demasiado. Revisa la protección."); },15000);
+        main.postDelayed(() -> { if(!destroyed && generation==run && evaluation==request && processing)failure("La revisión tardó demasiado. Revisa la protección."); },250000);
     }
     private void failure(String status) {
         ProtectionStore.prefs(this).edit().putString("last_status",status).apply();
