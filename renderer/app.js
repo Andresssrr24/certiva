@@ -381,7 +381,7 @@ async function pintaEjemplos() {
   $("#ejemplos").innerHTML = EJEMPLOS.filter(([id]) => porId.has(id))
     .map(
       ([id, titulo, sub]) =>
-        `<button type="button" class="ejemplo" data-id="${esc(id)}"><span class="scenario-icon"><svg class="android-icon" aria-hidden="true"><use href="#android-${id.includes("whatsapp") ? "whatsapp" : id.includes("correo") ? "mail" : "messages"}"/></svg></span><span>${esc(titulo)}<small>${esc(sub)}</small></span></button>`,
+        `<button type="button" class="ejemplo" data-id="${esc(id)}"><span class="scenario-icon" data-channel="${id.includes("whatsapp") ? "whatsapp" : id.includes("correo") ? "correo" : "sms"}"><svg class="android-icon" aria-hidden="true"><use href="#android-${id.includes("whatsapp") ? "whatsapp" : id.includes("correo") ? "mail" : "messages"}"/></svg></span><span>${esc(titulo)}<small>${esc(sub)}</small></span></button>`,
     )
     .join("");
   for (const b of document.querySelectorAll(".ejemplo")) b.onclick = () => receiveScenario(porId.get(b.dataset.id), b);

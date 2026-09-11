@@ -30,6 +30,8 @@ function openIncoming() {
   const m = incomingMessage;
   phoneMode = "mensaje";
   $("#sourceNotification").hidden = true;
+  $("#sourceIcon").dataset.channel = m.canal;
+  $(".source-tools").hidden = m.canal !== "whatsapp";
   $("#sourceSender").textContent = m.remitente || "Mensaje entrante";
   $("#sourceChannel").textContent =
     m.canal === "whatsapp"
@@ -96,6 +98,7 @@ async function receiveScenario(example, button) {
   $("#sourceNotification").hidden = false;
   const m = incomingMessage;
   $("#arrivalApp").textContent = m.canal === "whatsapp" ? "WhatsApp" : m.canal === "correo" ? "Correo" : "Mensajes";
+  $("#arrivalIcon").dataset.channel = m.canal;
   $("#arrivalSender").textContent = m.remitente;
   $("#arrivalPreview").textContent = m.texto;
   $("#arrivalIcon").innerHTML = androidIcon(
