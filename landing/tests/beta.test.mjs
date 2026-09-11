@@ -74,9 +74,19 @@ test("registration start requires same origin and affirmative consent", async ()
     headers: { origin: "https://other.example", "content-type": "application/x-www-form-urlencoded" },
     body: { email: "test@example.com", consent: "yes" },
   });
-  let res = response();
-  await start(req, res, env);
-  assert.equal(res.statusCode, 403);
+  let res;
+  for (const origin of [
+    "https://other.example",
+    "null",
+    undefined,
+    "https://certiva-landing.vercel.app.evil.example",
+  ]) {
+    req.headers.origin = origin;
+    res = response();
+    await start(req, res, env);
+    assert.equal(res.statusCode, 403);
+    assert.equal(res.headers["Set-Cookie"], undefined);
+  }
   req.headers.origin = "https://certiva-landing.vercel.app";
   req.body.consent = "no";
   res = response();

@@ -76,10 +76,10 @@ capturas, logs ni argumentos visibles de comandos:
 - Descarga cerrada pendiente: `BETA_PLAY_READY=false`. Las ocho variables están guardadas
   como sensibles en Vercel. OAuth público permite registrarse sin prometer instalación.
 - Pruebas de registro: 12 aprobadas (9 de backend y 3 de estados de interfaz).
-  Suite completa de integración: 19/19 aprobadas y build correcto.
-- Despliegue de la tarea propietaria: `dpl_7BiYWCnNmGCkYotp7k7tBWewbjaa`, READY.
-  GET público independiente: `enabled:true`, `playReady:false`, `registered:false`.
-- El recorrido completo de OAuth en un Android físico queda pendiente de la prueba de Bryan.
+  Suite completa tras integrar la corrección: 19/19 aprobadas. Build de la tarea
+  propietaria correcto.
+- Tras la corrección del formulario, Bryan confirmó que el registro en Android
+  funciona. Es una confirmación del usuario, sin traza instrumentada de esta tarea.
 
 ## Contrato de estado y activación de descarga
 
@@ -101,3 +101,28 @@ Antes de cambiar `BETA_PLAY_READY` a `true`:
 
 La distribución por Google Play no demuestra por sí sola que la IA QVAC funcione
 en todos los dispositivos ni que desaparezcan todas las advertencias de seguridad.
+
+## Corrección del formulario en Chrome (11 de septiembre)
+
+La prueba física de Bryan encontró `error: origin` antes de OAuth. La política
+HTTP global `no-referrer` podía enviar `Origin: null` en el POST de formulario.
+`probar.html` ahora declara `<meta name="referrer" content="same-origin">`,
+aplicable solo a esa página. Se conserva la comprobación estricta del origen en
+el servidor y `no-referrer` en las respuestas OAuth; no se aceptan orígenes nulos,
+ausentes, externos ni dominios parecidos. Las 12 pruebas beta y el build pasan.
+
+Despliegue corregido: `dpl_9iv8W9NbzyVx6P1e8wvB5GpsfDUH`, READY y con alias
+principal. Se comprobó el envío desde Chrome de escritorio: abre el selector de
+cuenta de Google. La repetición de la prueba en Android físico queda pendiente.
+Referencias: [política y cabecera Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Referrer-Policy#effect_on_the_origin_header) y [algoritmo normativo de Fetch](https://fetch.spec.whatwg.org/#append-a-request-origin-header).
+
+Verificación posterior del mismo despliegue: recorrido completo en Chrome de
+escritorio aprobado (formulario → selector Google → consentimiento de correo →
+callback → «Tu registro está confirmado», con la cuenta propietaria ya existente).
+El aviso de descarga pendiente permanece visible y no aparece el enlace de
+instalación. Esto verifica membresía idempotente, no una nueva alta externa desde
+Android ni instalación física.
+
+Actualización comunicada por la tarea propietaria después de esa prueba: Bryan confirmó
+registro correcto en Android y pidió avanzar con la descarga. No acredita instalación
+desde Play ni una nueva alta externa instrumentada; el canal cerrado sigue pendiente.

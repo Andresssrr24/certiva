@@ -24,7 +24,7 @@ El QR recupera la ruta estable `/apk` y su redirect lleva a `/probar`, igual que
 
 ## Producción y alcance
 
-La tarea propietaria confirmó el despliegue READY `dpl_7BiYWCnNmGCkYotp7k7tBWewbjaa`, con ocho variables sensibles y autorización de Bryan para probar el registro. GET público independiente de `/api/beta/status`: HTTP 200, `enabled:true`, `playReady:false`, `registered:false`. La tarea propietaria verificó el formulario visible y el aviso de descarga pendiente en la web. Esto no acredita OAuth completo desde Android ni una instalación desde Play; esas pruebas siguen pendientes.
+La tarea propietaria confirmó el despliegue READY `dpl_9iv8W9NbzyVx6P1e8wvB5GpsfDUH`, con ocho variables sensibles y autorización de Bryan para probar el registro. GET público independiente de `/api/beta/status`: HTTP 200, `enabled:true`, `playReady:false`, `registered:false`. La tarea propietaria verificó el formulario visible y el aviso de descarga pendiente en la web. La tarea propietaria completó OAuth en Chrome de escritorio con una cuenta que ya pertenecía al grupo. Bryan confirmó posteriormente que el registro funciona en Android. La nueva alta externa instrumentada e instalación desde Play siguen pendientes.
 
 Las comprobaciones reales previas de consulta/alta autorizada del grupo están recogidas en [BETA-SETUP.md](BETA-SETUP.md). Esta revisión no repite operaciones de membresía, consulta secretos ni publica correos de verificadores. `npm run dev` solo ofrece una vista estática y no emula las funciones de Vercel.
 
@@ -33,3 +33,13 @@ Las comprobaciones reales previas de consulta/alta autorizada del grupo están r
 La política `/privacidad-app` se comparó byte a byte con el archivo publicado durante su integración. Rewrite y recursos locales correctos; `play-store-assets/` queda excluido de Vercel. Icono 512×512, gráfico 1024×500 inspeccionado y capturas 1080×2400. Las capturas son idénticas a `menu-home.png` y `menu-verify.png` de la evidencia nativa 0.4 target35, no a una instalación Play.
 
 Play lleva 6 de 11 tareas completas según la tarea propietaria. Siguen pendientes acceso completo para revisores, clasificación IARC, declaración de recursos de IA y cierre de Seguridad de datos. La ficha no se ha enviado a revisión ni está publicado el canal cerrado. Archivar los materiales no resuelve las aprobaciones pendientes ni certifica cumplimiento. El código Android no cambia.
+
+## Corrección del envío del formulario
+
+Bryan observó `error: origin` en Android antes de llegar a Google. El POST nativo estaba afectado por la política global `no-referrer`, que puede convertir su cabecera Origin en `null`, como recoge el [algoritmo de Fetch](https://fetch.spec.whatwg.org/#append-a-request-origin-header). La página declara ahora `same-origin` mediante un meta temprano; el backend mantiene el origen exacto requerido y las respuestas OAuth mantienen `no-referrer`.
+
+Las pruebas ampliadas rechazan origen nulo, ausente, externo y dominio parecido con HTTP 403 sin emitir cookie; el envío con origen exacto y consentimiento sigue permitido. Suite completa de integración: 19/19 PASS, Biome de los dos archivos modificados sin errores. Se confirmó el meta en la página publicada y la cabecera HTTP global sin cambios. No se repitió el build aislado de este cambio de meta; la tarea propietaria informó build correcto.
+
+La prueba de Android falló antes del arreglo. La prueba completa posterior se hizo en Chrome de escritorio con el propietario ya miembro del grupo, conservando descarga pendiente y sin enlace de instalación. No se publican su correo, cookies, códigos ni tokens de OAuth.
+
+Confirmación posterior comunicada por la tarea propietaria: Bryan probó el arreglo y dio por listo el registro Android. Se registra como confirmación del usuario; esta tarea no obtuvo una traza OAuth de ese dispositivo. La disponibilidad de descarga continúa pendiente.
