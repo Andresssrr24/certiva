@@ -1,0 +1,8 @@
+
+local.certiva.pilot.HomeScreenTest:..
+Test results for InstrumentationTestRunner=..
+Time: 14.678
+
+OK (2 tests)
+
+
