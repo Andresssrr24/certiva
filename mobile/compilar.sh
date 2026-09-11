@@ -8,7 +8,7 @@ export ANDROID_HOME="${ANDROID_HOME:-$HOME/Library/Android/sdk}"
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export PATH="$JAVA_HOME/bin:$ANDROID_HOME/platform-tools:$PATH"
 VARIANTE="${1:-release}"
-[ -d android ] || npx expo prebuild --platform android --no-install
+npx expo prebuild --platform android --no-install   # idempotente: vuelve a aplicar los plugins sobre android/
 echo "sdk.dir=$ANDROID_HOME" > android/local.properties
 # Solo arm64: el APK no carga cuatro arquitecturas.
 grep -q '^reactNativeArchitectures=' android/gradle.properties \

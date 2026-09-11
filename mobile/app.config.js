@@ -7,6 +7,11 @@ module.exports = {
     orientation: "portrait",
     platforms: ["android", "ios"],
     android: { package: "pa.antifraude.movil", permissions: [] },
-    plugins: [["expo-build-properties", { android: { minSdkVersion: 29 } }], "@qvac/sdk/expo-plugin"],
+    plugins: [
+      ["expo-build-properties", { android: { minSdkVersion: 29 } }],
+      // antes del plugin de QVAC: los mods de Expo corren del último registrado al primero, así este corrige lo que QVAC escribe
+      "./plugins/opencl-opcional.js",
+      "@qvac/sdk/expo-plugin",
+    ],
   },
 };
