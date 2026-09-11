@@ -8,16 +8,27 @@ Landing independiente con branding v5, verificador de texto local y puente optat
 
 ## Web
 
-Node 22.17 o superior. No requiere instalar paquetes para construir o servir la landing.
+Node 22.17 o superior. Ejecutar `npm ci` en `landing/` para instalar la dependencia del registro beta.
 
 ```sh
+npm ci
 npm run dev
 npm test
 npm run build
 vercel --prod
 ```
 
-La vista previa usa http://127.0.0.1:4317. Vercel publica exclusivamente `dist/`. Nunca publica el puente, el repositorio del prototipo ni los modelos. El verificador funciona en el navegador sin enviar el texto a Vercel. El informe JSON se descarga localmente y puede contener dominios y evidencias, pero no incluye el mensaje completo.
+La vista previa usa http://127.0.0.1:4317. Vercel sirve el contenido estático de `dist/` y las funciones `api/beta/`. El puente y los modelos siguen siendo locales. El verificador funciona en el navegador sin enviar el texto a Vercel. El informe JSON se descarga localmente y puede contener dominios y evidencias, pero no incluye el mensaje completo.
+
+## Registro beta preparado
+
+`/probar` ofrece acceso a la prueba interna para las cuentas ya habilitadas. El registro automático permanece desactivado por defecto; necesita configuración completa y `BETA_ENABLED=true`. El código confirma la identidad con Google, usa su correo verificado para añadirlo al grupo de pruebas y comprueba la membresía antes de mostrar el acceso cerrado. Los secretos se configuran fuera de Git.
+
+En esta rama, el botón abre `/probar` y el QR vuelve a la ruta estable `/apk`, que redirige a `/probar`. Este cambio sustituye el destino Expo introducido en PR #33 para que QR y botón anuncien la misma prueba nativa 0.4. La APK Expo sigue disponible en su Release. El binario nativo 0.3 continúa como artefacto histórico y requisito del build, no como destino del botón beta.
+
+Estado y requisitos: [BETA-SETUP.md](BETA-SETUP.md). Revisión independiente: [BETA-REVIEW.md](BETA-REVIEW.md). `npm run dev` sirve archivos estáticos y no emula las funciones ni el flujo OAuth; las pruebas de servidor emplean dobles y no dan de alta usuarios reales. Esta PR no acredita un despliegue, una instalación desde Play ni el recorrido completo en navegador.
+
+Los apartados de despliegue que siguen documentan revisiones anteriores y sus comprobaciones históricas.
 
 ## QVAC
 
