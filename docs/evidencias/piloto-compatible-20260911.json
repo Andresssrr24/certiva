@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-11T06:32:43.289151+00:00",
+  "sourceCommit": "5216166",
+  "endpoint": "http://127.0.0.1:4320",
+  "pid": 74776,
+  "testsPassed": 16,
+  "http": {
+    "/": 200,
+    "/certiva.js": 200,
+    "/policy.json": 200
+  },
+  "preserved": {
+    "users": 3,
+    "cases": 2,
+    "audit": 37,
+    "sessions": 7
+  },
+  "allRowsUnchanged": true,
+  "existingAccountsFileUnchanged": true,
+  "apkSdkAndPolicyMatch": true,
+  "apkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "liveReportSubmittedByRecovery": false
+}
