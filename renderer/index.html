@@ -3,35 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; media-src 'self' file:; style-src 'self' 'unsafe-inline'">
-  <title>Anti-fraude QVAC</title>
+  <title>Certiva · Tu aliado contra el fraude</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="certiva.css">
 </head>
 <body>
   <header class="barra">
-    <div class="marca">Anti-fraude <span>QVAC</span></div>
+    <div class="marca"><span class="brand-icon" aria-hidden="true"></span><div><strong class="wordmark">certiva</strong><small>Tu aliado contra el fraude</small></div></div>
     <div class="tabs" role="tablist" aria-label="Vistas">
-      <button type="button" class="tab activa" data-tab="cliente" role="tab" aria-selected="true">Cliente</button>
-      <button type="button" class="tab" data-tab="banco" role="tab" aria-selected="false">Modo banco</button>
+      <button type="button" class="tab activa" data-tab="cliente" role="tab" aria-selected="true">Mi protección</button>
+      <button type="button" class="tab" data-tab="banco" role="tab" aria-selected="false">Radar del banco</button>
     </div>
-    <div class="red" id="red" title="Conexiones TCP establecidas, medidas con lsof sobre el árbol de procesos"><span class="punto"></span>Nube: <b id="redNube">…</b><span class="sep">·</span>Pares: <b id="redPares" class="pares">…</b></div>
+    <div class="red" id="red" title="Conexiones TCP establecidas, medidas con lsof sobre el árbol de procesos"><span class="punto"></span>TCP externo: <b id="redNube">…</b><span class="sep">·</span>Pares: <b id="redPares" class="pares">…</b></div>
     <div class="estado" id="estado" aria-live="polite">listo</div>
   </header>
 
+  <div class="setup-notice" id="setupNotice" role="status" hidden></div>
   <main class="cuerpo cliente" id="vistaCliente">
     <section class="escenario" id="escenario" aria-label="Lo que ve el cliente en su teléfono">
-      <div class="marco" id="marco" role="img" aria-label="Simulación del teléfono del cliente">
+      <div class="marco" id="marco">
         <div class="telefono" id="telefono">
           <div class="pantalla">
             <div class="tstatus"><span>10:24</span><span>●●● ▲ ▮</span></div>
             <div class="app">
 
               <section class="p" data-p="inicio">
-                <div class="tcab"><span class="tlogo">B</span><span>Banco Demo · Protección</span></div>
-                <h1>¿Te llegó algo raro?</h1>
-                <p class="lead">Revísalo aquí antes de hacer nada. El análisis se ejecuta en este equipo. Puedes revisar el texto antes de actuar.</p>
+                <div class="welcome-brand"><span class="brand-icon" aria-hidden="true"></span><strong class="wordmark">certiva</strong><span>Tu aliado contra el fraude</span></div>
+                <div class="eyebrow">UN MOMENTO PARA VERIFICAR</div><h1>Antes de responder,<br>verifica.</h1>
+                <p class="lead">Revisa ese mensaje que te genera dudas. Entiende las señales y decide con más calma.</p>
                 <button type="button" class="tbtn" id="tVerificarMensaje">Verificar un mensaje</button>
-                <button type="button" class="tbtn sec" id="tVerificarLlamada">Verificar una llamada</button>
-                <div class="regla-oro"><b>Regla de oro.</b> El banco nunca te pide tu clave ni el código que te llega por SMS. Nunca.</div>
+                <button type="button" class="tbtn sec" id="tVerificarLlamada">Explorar una llamada de ejemplo</button>
+                <div class="regla-oro"><b>Tus códigos son solo tuyos.</b> No los compartas con quien te contacte diciendo ser del banco.</div>
               </section>
 
               <section class="p" data-p="analizando" hidden>
@@ -39,7 +42,7 @@
                 <ol class="pasos" id="tPasos">
                   <li data-paso="vision"><span class="marca-paso"></span><span>Leyendo la captura</span><em></em></li>
                   <li data-paso="reglas"><span class="marca-paso"></span><span>Buscando señales de estafa</span><em></em></li>
-                  <li data-paso="ocr" hidden><span class="marca-paso"></span><span>Confirmando la dirección web con OCR</span><em></em></li>
+                  <li data-paso="ocr" hidden><span class="marca-paso"></span><span>Contrastando la lectura</span><em></em></li>
                   <li data-paso="veredicto"><span class="marca-paso"></span><span>Preparando el consejo</span><em></em></li>
                 </ol>
                 <p class="mini">Tarda unos segundos. La inferencia se ejecuta localmente.</p>
@@ -51,13 +54,14 @@
                 <ul class="razones" id="tRazones"></ul>
                 <div class="vecinos" id="tVecinos" hidden></div>
                 <div class="consejo" id="tConsejo"></div>
-                <button type="button" class="tbtn" id="tLlamar">Llamar al banco · 800-1234</button>
+                <button type="button" class="tbtn" id="tLlamar">Cómo contactar a tu banco</button>
+                <p class="mini" id="tContacto" hidden>Busca el número impreso en tu tarjeta o entra directamente a la app de tu banco. Evita usar los datos de contacto del mensaje que estás verificando.</p>
                 <button type="button" class="tbtn sec" id="tReportar">Reportar este mensaje</button>
                 <button type="button" class="tenlace" id="tVolver">Volver al inicio</button>
               </section>
 
               <section class="p" data-p="llamada" hidden>
-                <div class="tcab"><span class="tlogo">B</span><span>Llamada en curso</span></div>
+                <div class="tcab"><span class="brand-icon small" aria-hidden="true"></span><span>Certiva · Llamada simulada</span></div>
                 <div class="tbanner" id="tBanner" hidden></div>
                 <ol class="ttranscripcion" id="tTranscripcion" aria-live="polite"></ol>
               </section>
@@ -66,7 +70,8 @@
                 <div class="tchip" id="tChipLlamada"></div>
                 <p class="tresumen" id="tResumenLlamada"></p>
                 <div class="consejo" id="tConsejoLlamada"></div>
-                <button type="button" class="tbtn" id="tLlamar2">Llamar al banco · 800-1234</button>
+                <button type="button" class="tbtn" id="tLlamar2">Cómo contactar a tu banco</button>
+                <p class="mini" id="tContacto2" hidden>Busca el número impreso en tu tarjeta o entra directamente a la app de tu banco. Evita usar los datos de contacto del mensaje que estás verificando.</p>
                 <button type="button" class="tenlace" id="tVolver2">Volver al inicio</button>
               </section>
 
@@ -80,11 +85,11 @@
           </div>
         </div>
       </div>
-      <p class="pie-escenario">Prototipo de interfaz móvil ejecutado en MacBook. No es todavía una app de teléfono.</p>
+      <p class="pie-escenario">Prototipo de escritorio · Vista móvil simulada</p>
     </section>
 
     <section class="der detras" aria-label="Detrás de escena">
-      <h3 class="rotulo">Prueba con un ejemplo</h3>
+      <div class="panel-heading"><div><span class="eyebrow">ESPACIO DE VERIFICACIÓN</span><h2>Una segunda mirada.</h2><p>Prueba con mensajes de ejemplo o revisa una captura.</p></div><span class="privacy-pill">Análisis local</span></div><h3 class="rotulo">Explora los ejemplos</h3>
       <div class="ejemplos" id="ejemplos"></div>
       <section class="zona" id="zona" aria-label="Zona para soltar una captura de pantalla">
         <p><strong>Arrastra tu propia captura</strong> o</p>
@@ -92,7 +97,7 @@
       </section>
       <audio id="audio" controls preload="auto" hidden></audio>
 
-      <h3 class="rotulo">Detrás de escena</h3>
+      <h3 class="rotulo">Cómo llegamos al resultado</h3>
       <div class="tecnico" id="tecnico"><p class="vacio">Aquí se ve lo que hacen los modelos: pasos, tiempos, señales de las reglas y el JSON completo.</p></div>
       <div class="historial" id="historial" hidden>
         <h3 class="rotulo">Analizados en esta sesión</h3>
@@ -103,7 +108,7 @@
 
   <main class="cuerpo banco" id="vistaBanco" hidden>
     <section class="der ancho">
-      <h2>Radar del equipo de fraude</h2>
+      <div class="radar-heading"><span class="brand-icon" aria-hidden="true"></span><div><span class="eyebrow">CERTIVA PARA EQUIPOS</span><h2>Señales para investigar.</h2></div></div>
       <p class="mini">Indicadores reportados por los clientes de este equipo y de los pares conectados. Solo viajan hashes del remitente, del número o del dominio: nunca el mensaje.</p>
       <div class="pares-estado" id="paresEstado"></div>
       <div class="kpis" id="kpis"></div>
