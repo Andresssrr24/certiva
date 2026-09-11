@@ -28,7 +28,7 @@ test("cada contacto tiene fuentes primarias fechadas y las fuentes solo se resue
       assert.equal(url.hostname, "www.cajadeahorros.com.pa");
     }
   }
-  for (const id of ["https://evil.example", "file:///etc/passwd", "__proto__", "seguridad/../evil"])
+  for (const id of ["https://evil.example", "file:///etc/hosts", "__proto__", "seguridad/../evil"])
     assert.equal(fuentePorId(id), null);
 });
 
