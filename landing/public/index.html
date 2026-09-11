@@ -46,16 +46,17 @@
     <aside class="download-card" id="descargar" aria-labelledby="download-title">
       <div class="download-heading"><img src="/assets/favicon-certiva.png" width="56" height="56" alt=""><span class="outline-label">0.3 · EXPERIMENTAL</span></div>
       <h3 id="download-title">Lleva Certiva contigo.</h3><p>Escanea el QR con la cámara de tu Android para descargar la APK.</p>
-      <a class="qr-link" href="/apk" aria-label="Descargar APK Certiva 0.3 experimental para Android"><img src="/assets/qr-android.svg" width="208" height="208" alt="QR de descarga de Certiva para Android" loading="lazy"></a>
-      <a class="button download-apk" href="/downloads/certiva-0.3-qvac-experimental-21542a5a.apk" download>Descargar APK <span aria-hidden="true">↓</span></a>
+      <a class="qr-link" href="https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2" rel="noopener" aria-label="Descargar la APK de Certiva 0.3 para Android"><img src="/assets/qr-android.svg" width="208" height="208" alt="QR de descarga de Certiva para Android" loading="lazy"></a>
+      <a class="button download-apk" href="https://github.com/Andresssrr24/certiva/releases/download/apk-v0.2/certiva-release-arm64.apk" rel="noopener">Descargar APK <span aria-hidden="true">↓</span></a>
       <p class="download-on-phone">¿Ya estás en tu teléfono? Usa el botón.</p>
-      <div class="apk-facts"><span>Android 13 o posterior · ARM64</span><span>Versión 0.3 · <span id="apk-size">71.2 MB</span></span><span>QVAC local · modelo adicional de 1,1 GB</span></div>
-      <p class="apk-scope">La versión más reciente incluye QVAC para Android en fase experimental. La detección completa con IA en Android aún no está validada. No analiza capturas ni llamadas.</p>
-      <details class="apk-check"><summary>Información de la descarga</summary><p>Paquete experimental firmado para depuración, fuera de Google Play. El modelo se descarga por separado desde la app. La compilación y pruebas de interfaz no validan la detección de fraude con IA. Los reportes requieren acceso al servicio del piloto.</p><a href="/downloads/manifest.json">Ver versión y huella SHA-256 ↗</a></details>
+      <div class="apk-facts"><span>Android 10 o posterior · ARM64</span><span>Versión 0.3 · <span id="apk-size">229 MB</span></span><span>QVAC local · lector de capturas de 545 MB</span></div>
+      <p class="apk-scope">Revisa el texto que pegues con las reglas del banco, sin descargar nada, y las capturas con el lector VisionPsy que corre dentro del teléfono. Verificada en un emulador Android; la prueba en un teléfono físico sigue pendiente. No vigila WhatsApp ni analiza llamadas.</p>
+      <details class="apk-check"><summary>Información de la descarga</summary><p>Paquete experimental firmado para depuración, fuera de Google Play. El lector de capturas se descarga aparte desde la app, solo si lo aceptas. Lo verificado es una corrida en emulador arm64: no hay validación en un teléfono físico.</p><a href="https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.2" rel="noopener">Ver versión y huella SHA-256 ↗</a></details>
+      <p class="apk-alt">¿Buscas las alertas de WhatsApp? Esa es otra compilación: <a href="/apk">el piloto</a> (71,2 MB · Android 13 o posterior), la que explica la guía de aquí abajo.</p>
     </aside>
     <div class="walkthrough">
-      <div class="guide-top"><span class="eyebrow">CÓMO USAR LA APP</span><span id="guide-progress" aria-live="polite">Paso 1 de 5</span></div>
-      <div class="guide-tabs" role="tablist" aria-label="Pasos para usar Certiva">
+      <div class="guide-top"><span class="eyebrow">CÓMO USAR EL PILOTO DE WHATSAPP</span><span id="guide-progress" aria-live="polite">Paso 1 de 5</span></div>
+      <div class="guide-tabs" role="tablist" aria-label="Pasos para usar el piloto de Certiva con alertas de WhatsApp">
         <button type="button" id="guide-tab-1" role="tab" aria-selected="true" aria-controls="guide-panel-1" tabindex="0" data-guide-step="0"><span>01</span>Instala</button>
         <button type="button" id="guide-tab-2" role="tab" aria-selected="false" aria-controls="guide-panel-2" tabindex="-1" data-guide-step="1"><span>02</span>Prepara IA</button>
         <button type="button" id="guide-tab-3" role="tab" aria-selected="false" aria-controls="guide-panel-3" tabindex="-1" data-guide-step="2"><span>03</span>Verifica</button>
@@ -97,7 +98,7 @@
       <div class="guide-controls"><button class="guide-back" id="guide-back" type="button" disabled>← Anterior</button><button class="button small" id="guide-next" type="button">Siguiente paso →</button></div>
     </div>
   </div>
-  <p class="guide-version-note">Guía para Certiva 0.3 experimental. La APK utiliza el motor del teléfono y descarga su modelo por separado. La demostración web usa reglas; la conexión QVAC opcional de esta web usa el motor de escritorio.</p>
+  <p class="guide-version-note">Guía del piloto con alertas de WhatsApp, la compilación de 71,2 MB. La APK del Release, la que baja el QR de arriba, revisa el texto que pegues y las capturas, y no necesita estos permisos. Las dos usan el motor del teléfono y descargan su modelo por separado. La demostración web usa reglas; la conexión QVAC opcional de esta web usa el motor de escritorio.</p>
 </section>
 
 <section class="technology" id="tecnologia"><div class="wrap technology-grid"><div><p class="eyebrow">INTELIGENCIA CERCA DE TI</p><h2>Tu privacidad<br>no tiene que viajar.</h2><p>Certiva utiliza QVAC para llevar el análisis al equipo del usuario. Los modelos leen, identifican y explican señales sin enviar el mensaje a un servicio de IA en la nube.</p><a class="light-link" href="https://docs.qvac.tether.io/" target="_blank" rel="noopener noreferrer">Conoce la tecnología QVAC ↗</a></div><div class="architecture"><div class="architecture-title"><span>TU EQUIPO</span><span>ANÁLISIS LOCAL</span></div><div class="model-row"><span class="model-index">01</span><div><strong>Una imagen, hecha texto.</strong><p>VisionPsy · Lee la captura</p></div><span aria-hidden="true">↙</span></div><div class="model-row"><span class="model-index">02</span><div><strong>Las señales, a la vista.</strong><p>Reglas · Contrastan el contenido</p></div><span aria-hidden="true">↙</span></div><div class="model-row"><span class="model-index">03</span><div><strong>Una evaluación adicional.</strong><p>Qwen3 · Contrasta el veredicto</p></div><span aria-hidden="true">✓</span></div><p class="architecture-note">Disponible al conectar el motor QVAC. En modo web, el texto se analiza con reglas dentro del navegador.</p></div></div></section>
