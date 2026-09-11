@@ -1,0 +1,60 @@
+{
+  "passed": false,
+  "reportSubmitted": false,
+  "input": "Synthetic StatusBarNotification delivered to production listener; visible input is labelled Mensaje de prueba \/ Demo en emulador",
+  "liveWhatsApp": false,
+  "physicalDevice": false,
+  "assessmentInjected": false,
+  "setupActivationValidated": false,
+  "setupNote": "Harness temporarily enables listener processing; this does not validate permission onboarding or background OS delivery",
+  "startedAt": 1789107952425,
+  "remoteVideo": "\/sdcard\/certiva-notification-menu-1789107953736.mp4",
+  "phases": [
+    {
+      "name": "01-android-home",
+      "at": 1789107954603,
+      "recordingElapsedMs": 866
+    },
+    {
+      "name": "02-visible-demo-input",
+      "at": 1789107956852,
+      "recordingElapsedMs": 3115
+    },
+    {
+      "name": "03-native-certiva-alert",
+      "at": 1789107964139,
+      "recordingElapsedMs": 10402
+    },
+    {
+      "name": "04-alert-detail",
+      "at": 1789107977023,
+      "recordingElapsedMs": 23287
+    },
+    {
+      "name": "05-new-home",
+      "at": 1789107986282,
+      "recordingElapsedMs": 32545
+    },
+    {
+      "name": "06-new-menu",
+      "at": 1789107990751,
+      "recordingElapsedMs": 37014
+    },
+    {
+      "name": "07-saved-alerts",
+      "at": 1789107993696,
+      "recordingElapsedMs": 39960
+    },
+    {
+      "name": "08-real-consent",
+      "at": 1789108000035,
+      "recordingElapsedMs": 46298
+    }
+  ],
+  "assessmentId": "aa200c86-8baf-4173-90d8-dff51f040975",
+  "outcome": "riesgo",
+  "coverage": "reglas_de_texto",
+  "aiStatus": "unavailable",
+  "failureType": "AssertionFailedError",
+  "recorderStopped": true
+}

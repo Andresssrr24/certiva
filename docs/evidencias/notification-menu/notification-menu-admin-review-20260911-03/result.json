@@ -1,0 +1,48 @@
+{
+  "caseId": "b63be9f8-f051-4873-a4a8-9823254f8711",
+  "assessmentId": "1de8045a-1df9-4433-80fe-0a9210539f8b",
+  "origin": "http://127.0.0.1:4320",
+  "phases": [
+    {
+      "name": "01-recepcion",
+      "at": 1789108737407,
+      "recordingElapsedMs": 888
+    },
+    {
+      "name": "02-detalle-del-caso",
+      "at": 1789108741036,
+      "recordingElapsedMs": 4516
+    },
+    {
+      "name": "03-decision-registrada",
+      "at": 1789108745059,
+      "recordingElapsedMs": 8540
+    },
+    {
+      "name": "04-auditoria",
+      "at": 1789108749638,
+      "recordingElapsedMs": 13118
+    }
+  ],
+  "passed": true,
+  "readOnlyCaseReview": true,
+  "viewWidth": 2400,
+  "viewHeight": 1080,
+  "remoteVideo": "/sdcard/certiva-admin-case-review-1789108736520.mp4",
+  "uiPassed": true,
+  "requiresBackendVerification": true,
+  "recorderStopped": true,
+  "apkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "installedApkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "testApkSha256": "554390ebda25b982a6f1ed310550798a659289d9abfe8253db26f0a92619c01a",
+  "hostRunError": null,
+  "extractionErrors": [],
+  "mode": "review",
+  "instrumentationPassed": true,
+  "videoValid": true,
+  "videoSha256": "45f2c105a250fea93d9f00b7fb5ec53cd860818e005efe669426ebfffef34f6f",
+  "backendVerified": true,
+  "visualQaPassed": true,
+  "readOnlyPreservedCaseAndAudit": true,
+  "visualQaNote": "Full-width landscape case details, recorded resolution and general audit page verified in video. Case-specific events verified independently in backend, not all visible in last viewport."
+}

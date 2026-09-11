@@ -1,0 +1,17 @@
+{
+  "caseId": "b63be9f8-f051-4873-a4a8-9823254f8711",
+  "assessmentId": "1de8045a-1df9-4433-80fe-0a9210539f8b",
+  "origin": "http://127.0.0.1:4320",
+  "phases": [],
+  "passed": false,
+  "recorderStopped": true,
+  "apkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "installedApkSha256": "8ee2f1d708149db3043e2de50b40df441116bf67244ed8ea654b0a63486b468f",
+  "testApkSha256": "5b01d4b15b450f3a417a6d9dcc75effc74faff512072e850fbaed1d649450d4b",
+  "hostRunError": null,
+  "extractionErrors": [],
+  "mode": "review",
+  "instrumentationPassed": false,
+  "videoValid": false,
+  "backendVerified": false
+}
