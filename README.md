@@ -177,6 +177,24 @@ Variables útiles: `LECTOR=ocr` o `LECTOR=visionpsy-esquema` cambian el lector p
 
 La prueba de que el motor se embebe es una app Android con el mismo núcleo: código en `mobile/`, plan y mediciones en [docs/PLAN-APK.md](docs/PLAN-APK.md), instrucciones en [mobile/README.md](mobile/README.md). El APK está publicado en el [Release apk-v0.1](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1) ([descarga directa](https://github.com/Andresssrr24/certiva/releases/download/apk-v0.1/antifraude-release-arm64.apk)): 228 MB, arm64, Android 10 o superior, sin ningún modelo dentro, SHA-256 `6d3773c3…13b9cb` en las notas del Release; no va en el repositorio por peso. Probado en el emulador Android arm64 del MacBook: instala, arranca, y un mensaje de fraude pegado da «Es una estafa» con sus tres señales en 1 ms (capturas en `docs/img/`); VisionPsy Q8 se descargó desde la app, cargó y leyó una captura de fraude en CPU con primer token a los 23 s y total 31 s, y una legítima quedó en «Sospechoso» porque el lector cambió letras del dominio y el teléfono no tiene el OCR de contraste del escritorio. Sin descargar nada, el usuario pega el texto de un mensaje y el veredicto sale de las reglas en menos de un milisegundo. Leer capturas descarga VisionPsy Q8 una sola vez (546 MB, el mismo lector del escritorio: Q4 se midió sobre las 136 capturas y pierde 4,4 puntos) y corre en el teléfono; el consejo en el teléfono es texto fijo por señal, porque Qwen3 0.6B, medido, no lo mejora y Qwen3 4B no cabe. El peso del APK es casi todo runtime del SDK: backend GPU Vulkan de 86 MB y runtime Bare de 62 MB; preferimos conservar la GPU antes que bajar a unos 133 MB. Estado: compilado en el MacBook sin Android Studio y probado en emulador; la prueba en teléfono físico, con la descarga del lector y una captura real, queda para el equipo. Esta app es distinta del SDK y la consola del [piloto bancario](pilot/README.md), que usan reglas locales y OCR de Apple Vision en iOS: la app Expo de `mobile/` es la que ejecuta QVAC en Android.
 
+
+### Instalar en un Android
+
+Requisitos: Android 10 o más nuevo y procesador de 64 bits (arm64), que es lo normal desde 2017. Ningún dato sale del teléfono. El APK está firmado con la llave de depuración: Android pedirá permitir la instalación desde el navegador y Play Protect dirá que no conoce al desarrollador; se elige «Instalar de todos modos».
+
+<img src="docs/img/qr-apk.png" width="170" alt="QR al Release apk-v0.1" align="right">
+
+**Desde el teléfono.** Escanea el QR o abre el [Release apk-v0.1](https://github.com/Andresssrr24/certiva/releases/tag/apk-v0.1), toca `antifraude-release-arm64.apk` (228 MB), y al terminar la descarga ábrelo desde las notificaciones. Mientras el repositorio sea privado, el teléfono tiene que tener iniciada la sesión de GitHub de alguien con acceso; en cuanto sea público, el QR funciona para cualquiera.
+
+**Desde este repositorio.** `./mobile/instalar.sh` hace todo: usa el APK de `mobile/dist/` o lo baja del Release, comprueba su SHA-256 contra `mobile/antifraude-release-arm64.apk.sha256`, y
+
+- si hay un teléfono por USB con depuración activada, verifica que sea Android 10+ y arm64, lo instala y lo abre;
+- si no hay cable, sirve el APK en la red Wi-Fi de la máquina y muestra en la terminal un QR con la dirección para bajarlo desde el teléfono (`--wifi` fuerza este camino).
+
+**Primera prueba.** Pega un texto de fraude y toca «Verificar el texto»: el veredicto sale en 1 ms sin red. «Verificar una captura» descarga VisionPsy Q8 una sola vez (546 MB, mejor con Wi-Fi) y necesita alrededor de 1 GB de RAM libre; en un teléfono de gama baja la lectura tarda más o puede no cargar, y el modo texto sigue funcionando.
+
+**Si algo falla.** «App no compatible» o «no se pudo instalar»: teléfono de 32 bits o con Android anterior a 10; no hay arreglo con este APK. Descarga que se corta: repetirla desde el mismo enlace; el script detecta un archivo incompleto por el hash. El teléfono no aparece por USB: hace falta aceptar «Permitir depuración USB» en su pantalla.
+
 ## Datos
 
 Ningún dato real. El emisor de la demo es «Banco Demo»; las estafas de billetera imitan a «Billetera Demo», también ficticia. El audio de la llamada de vishing de la demo, `data/audio/llamada-vishing.wav`, es sintético: lo genera `data/generar-llamada.js` con las voces del sistema de macOS a partir del guion de `data/llamada-vishing.md`. Nadie fue grabado. Medido en el M4: cada lote de cinco segundos se transcribe en unos 150 ms, y la llamada completa de 45 s se procesa en unos 10 s con carga del modelo incluida. `data/banco-demo.json` define un banco ficticio con sus canales oficiales y los dominios parecidos que las reglas deben atrapar. `data/generar.js` produce mensajes de fraude y legítimos en español panameño con verdad conocida, y `data/render.js` los renderiza como capturas de SMS, WhatsApp y correo. Para un banco real se reemplaza el archivo del banco.
