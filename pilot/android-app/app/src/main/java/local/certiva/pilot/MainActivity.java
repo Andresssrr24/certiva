@@ -21,7 +21,7 @@ public final class MainActivity extends Activity {
     private Spinner channel;
     private Button analyze, account;
     private TextView status;
-    private CertivaEngine engine;
+    private CertivaLocalEngine engine;
     private JSONObject assessment;
     private final PilotAPI api = new PilotAPI();
     private int revision;
@@ -35,25 +35,27 @@ public final class MainActivity extends Activity {
         content = new LinearLayout(this); content.setOrientation(LinearLayout.VERTICAL); content.setPadding(dp(24),dp(52),dp(24),dp(30)); content.setBackgroundColor(Color.rgb(244,247,251));
         scroll.addView(content); setContentView(scroll); ProtectionStyle.bars(this);
         content.setOnApplyWindowInsetsListener((view,insets) -> { view.setPadding(dp(24),Math.max(dp(32),insets.getSystemWindowInsetTop()+dp(12)),dp(24),Math.max(dp(24),insets.getSystemWindowInsetBottom())); return insets; });
-        text(content,"certiva",36,true); text(content,"Tu aliado contra el fraude · PILOTO",12,false);
+        ProtectionStyle.header(content,"Verificar mensaje");
         Button protection = button(content,"Protección de WhatsApp y alertas",true);
         protection.setOnClickListener(v -> startActivity(new android.content.Intent(this,ProtectionActivity.class)));
-        text(content,"Activa las alertas para revisar mensajes mientras usas tu teléfono.",13,false);
-        text(content,"Antes de responder, verifica.",30,true);
+        Button model = button(content,"IA en este teléfono",false);
+        model.setOnClickListener(v -> startActivity(new android.content.Intent(this,local.certiva.qvac.ModelActivity.class)));
+
+        text(content,"Antes de responder,\nverifica.",30,true);
         text(content,"Pega un mensaje o compártelo desde otra app. El análisis de texto ocurre en este dispositivo.",16,false);
         channel = new Spinner(this); channel.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item,new String[]{"WhatsApp","SMS","Correo","Otro"})); content.addView(channel);
         text(content,"Texto del mensaje",14,true);
-        message = new EditText(this); message.setHint("No ingreses contraseñas ni códigos privados"); message.setMinLines(5); message.setMaxLines(8); message.setGravity(android.view.Gravity.TOP); message.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE); message.setBackgroundColor(Color.WHITE); message.setPadding(dp(12),dp(12),dp(12),dp(12)); message.setContentDescription("Texto del mensaje"); content.addView(message);
+        message = new EditText(this); message.setHint("No ingreses contraseñas ni códigos privados"); message.setMinLines(4); message.setMaxLines(8); message.setGravity(android.view.Gravity.TOP); message.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE); message.setBackground(ProtectionStyle.shape(Color.WHITE,dp(20)));message.setTextSize(16); message.setPadding(dp(12),dp(12),dp(12),dp(12)); message.setContentDescription("Texto del mensaje"); content.addView(message);
         Button example = button(content,"Probar un mensaje de ejemplo",false); example.setOnClickListener(v -> message.setText("Su cuenta será bloqueada hoy. Envíe el código de verificación para desbloquearla."));
         analyze = button(content,"Verificar mensaje",true); analyze.setEnabled(false); analyze.setOnClickListener(v -> analyze());
         status = text(content,"Iniciando motor local…",12,false);
         resultBox = new LinearLayout(this); resultBox.setOrientation(LinearLayout.VERTICAL); content.addView(resultBox);
         account = button(content,"Ingresar para reportar",false); account.setOnClickListener(v -> { if(api.loggedIn) new AlertDialog.Builder(this).setTitle("Sesión de cliente").setMessage("¿Quieres cerrar la sesión de reportes?").setPositiveButton("Cerrar sesión",(d,w)->api.request("logout","POST",null,(r,e)-> { if(!alive)return; if(e!=null)error(e); else { account.setText("Ingresar para reportar"); message.setText(""); }})).setNegativeButton("Volver",null).show(); else login(); });
         Button reports = button(content,"Mis reportes",false); reports.setOnClickListener(v -> reports());
-        text(content,"Prueba técnica. Caja de Ahorros es referencia; no hay conexión con el banco ni intervención en pagos. Android v0.2 analiza texto y notificaciones con reglas locales; no incluye OCR ni QVAC.",12,false);
+        ProtectionStyle.disclosure(content,"Acerca del piloto","Tu aliado contra el fraude. QVAC analiza texto en este dispositivo con el modelo instalado. Este piloto no está conectado al banco y no interviene en pagos ni modifica accesos.");
         message.addTextChangedListener(new TextWatcher(){ public void beforeTextChanged(CharSequence s,int start,int count,int after){} public void onTextChanged(CharSequence s,int start,int before,int count){invalidate();} public void afterTextChanged(Editable e){} });
         channel.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener(){ public void onNothingSelected(android.widget.AdapterView<?> p){} public void onItemSelected(android.widget.AdapterView<?> p,View v,int pos,long id){invalidate();} });
-        try { engine = new CertivaEngine(this,(r,e)-> { if(!alive)return; analyze.setEnabled(e==null); status.setText(e==null ? "Reglas locales · Configuración firmada de desarrollo" : e);
+        try { engine = new CertivaLocalEngine(this,(r,e)-> { if(!alive)return; analyze.setEnabled(e==null); status.setText(e==null ? "QVAC local · Modelo disponible desde «IA en este teléfono»" : e);
             if(pendingProtectionId!=null){
                 JSONObject saved=ProtectionStore.get(this,pendingProtectionId);pendingProtectionId=null;
                 if(saved!=null){renderAssessment(saved);content.post(()->scroll.smoothScrollTo(0,resultBox.getTop()));}
@@ -64,7 +66,7 @@ public final class MainActivity extends Activity {
     }
     private void invalidate(){ if(pendingProtectionId!=null)return; revision++; assessment=null; if(resultBox!=null)resultBox.removeAllViews(); }
     private int dp(int value){return Math.round(value*getResources().getDisplayMetrics().density);}
-    private TextView text(LinearLayout parent,String value,int size,boolean bold){TextView view=new TextView(this);view.setText(value);view.setTextSize(size);view.setTextColor(ink);view.setPadding(0,dp(8),0,dp(8));if(bold)view.setTypeface(Typeface.DEFAULT,Typeface.BOLD);parent.addView(view);return view;}
+    private TextView text(LinearLayout parent,String value,int size,boolean bold){return ProtectionStyle.text(parent,value,size,bold);}
     private Button button(LinearLayout parent,String label,boolean primary){Button view=new Button(this);view.setText(label);view.setAllCaps(false);view.setTextColor(primary?Color.WHITE:blue);if(primary)view.setBackgroundTintList(android.content.res.ColorStateList.valueOf(blue));parent.addView(view,new LinearLayout.LayoutParams(-1,dp(54)));ProtectionStyle.button(view,primary);return view;}
     private void analyze(){
         if(engine==null)return; int current=revision; analyze.setEnabled(false);
@@ -77,9 +79,11 @@ public final class MainActivity extends Activity {
     private void renderAssessment(JSONObject result){
         assessment=result;resultBox.removeAllViews();
         text(resultBox,result.optString("title"),23,true);
+        if("unavailable".equals(result.optString("aiStatus")))text(resultBox,"IA no disponible. Esta alerta se basa en reglas de texto locales.",14,false);
         var reasons=result.optJSONArray("reasons"); if(reasons!=null)for(int i=0;i<reasons.length();i++)text(resultBox,"• "+reasons.optJSONObject(i).optString("title"),15,false);
         text(resultBox,result.optString("action"),16,false);
-        text(resultBox,"No autentica al remitente. Cobertura: reglas de texto.",12,false);
+        text(resultBox,"No autentica al remitente. Cobertura: "+result.optString("coverage"),12,false);
+        if(result.has("aiModel"))text(resultBox,result.optString("aiModel")+" · Android · "+result.optLong("aiElapsedMs")+" ms",12,false);
         Button report=button(resultBox,"Revisar datos y reportar",false);report.setOnClickListener(v->preview(report));
     }
     private void preview(Button report){
@@ -96,7 +100,7 @@ public final class MainActivity extends Activity {
         LinearLayout form=new LinearLayout(this);form.setOrientation(LinearLayout.VERTICAL);form.setPadding(dp(24),dp(8),dp(24),dp(8));
         EditText name=new EditText(this);name.setHint("Usuario");name.setText("cliente");name.setSingleLine(true);form.addView(name);
         EditText password=new EditText(this);password.setHint("Contraseña");password.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);form.addView(password);
-        text(form,"Usa el acceso de cliente asignado. Para conectar por USB: adb reverse tcp:4320 tcp:4320.",12,false);
+        text(form,"Usa el acceso de cliente asignado. Enviar reportes es opcional y requiere conexión al servicio del piloto; el análisis y las alertas funcionan en tu teléfono.",12,false);
         new AlertDialog.Builder(this).setTitle("Acceso al piloto local").setView(form).setNegativeButton("Volver",null).setPositiveButton("Entrar",(d,w)->{
             try { JSONObject data=new JSONObject().put("username",name.getText().toString()).put("password",password.getText().toString());password.setText("");api.request("login","POST",data,(r,e)->{if(!alive)return;if(e!=null)error(e);else{account.setText("Cliente conectado · Cerrar sesión");status.setText("Sesión lista. Revisa los datos antes de enviar tu reporte.");}}); }
             catch(Exception e){error("Revisa tus credenciales");}

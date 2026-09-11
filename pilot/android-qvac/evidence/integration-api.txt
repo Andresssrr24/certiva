@@ -1,0 +1,108 @@
+TAP version 13
+# (node:13867) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: texto sospechoso y negaciones legítimas no reciben el mismo resultado
+ok 1 - texto sospechoso y negaciones legítimas no reciben el mismo resultado
+  ---
+  duration_ms: 40.390917
+  type: 'test'
+  ...
+# Subtest: lectura vacía, OCR sin confirmar y política vencida se abstienen
+ok 2 - lectura vacía, OCR sin confirmar y política vencida se abstienen
+  ---
+  duration_ms: 0.303
+  type: 'test'
+  ...
+# Subtest: un enlace reconocido no autentica al remitente
+ok 3 - un enlace reconocido no autentica al remitente
+  ---
+  duration_ms: 9.619125
+  type: 'test'
+  ...
+# Subtest: un registro sin teléfonos aprobados no acusa a todo número de ser ajeno
+ok 4 - un registro sin teléfonos aprobados no acusa a todo número de ser ajeno
+  ---
+  duration_ms: 0.559125
+  type: 'test'
+  ...
+# Subtest: el reporte excluye texto, enlaces y números aun si se agregan al resultado
+ok 5 - el reporte excluye texto, enlaces y números aun si se agregan al resultado
+  ---
+  duration_ms: 17.689875
+  type: 'test'
+  ...
+# Subtest: el paquete ejecuta sin require, red o APIs de Node y conserva resultados
+ok 6 - el paquete ejecuta sin require, red o APIs de Node y conserva resultados
+  ---
+  duration_ms: 4.776791
+  type: 'test'
+  ...
+# Subtest: reporte → asignación → resolución, con auditoría y sin texto persistido
+ok 7 - reporte → asignación → resolución, con auditoría y sin texto persistido
+  ---
+  duration_ms: 526.055917
+  type: 'test'
+  ...
+# Subtest: reportes idempotentes, conflictos de contenido y concurrencia
+ok 8 - reportes idempotentes, conflictos de contenido y concurrencia
+  ---
+  duration_ms: 297.10825
+  type: 'test'
+  ...
+# Subtest: aislamiento de bancos, de clientes y permisos de auditor
+ok 9 - aislamiento de bancos, de clientes y permisos de auditor
+  ---
+  duration_ms: 479.366709
+  type: 'test'
+  ...
+# Subtest: rechaza contenido privado adicional, consentimiento ausente, versiones y resultados inválidos
+ok 10 - rechaza contenido privado adicional, consentimiento ausente, versiones y resultados inválidos
+  ---
+  duration_ms: 254.667
+  type: 'test'
+  ...
+# Subtest: sin sesión, CSRF, origen cruzado, host ajeno y sesión cerrada
+ok 11 - sin sesión, CSRF, origen cruzado, host ajeno y sesión cerrada
+  ---
+  duration_ms: 241.164542
+  type: 'test'
+  ...
+# Subtest: límite de reportes por usuario y cuerpo máximo
+ok 12 - límite de reportes por usuario y cuerpo máximo
+  ---
+  duration_ms: 293.486333
+  type: 'test'
+  ...
+# Subtest: los casos persisten al volver a abrir la base
+ok 13 - los casos persisten al volver a abrir la base
+  ---
+  duration_ms: 195.026583
+  type: 'test'
+  ...
+# Subtest: señales de pago conservan explicación y paridad en web, iOS y Android
+ok 14 - señales de pago conservan explicación y paridad en web, iOS y Android
+  ---
+  duration_ms: 3.916
+  type: 'test'
+  ...
+# Subtest: la consola acepta las señales de pago emitidas por el motor vigente
+ok 15 - la consola acepta las señales de pago emitidas por el motor vigente
+  ---
+  duration_ms: 280.982333
+  type: 'test'
+  ...
+# Subtest: QVAC Android conserva procedencia y minimización; rechaza pares motor/fuente incompatibles
+ok 16 - QVAC Android conserva procedencia y minimización; rechaza pares motor/fuente incompatibles
+  ---
+  duration_ms: 244.875458
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2954.105417

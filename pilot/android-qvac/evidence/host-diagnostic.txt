@@ -1,0 +1,28 @@
+Diagnostic only: native Mac CPU. Not Android acceptance evidence. Synthetic cases 0=request code, 1=ordinary message, 2=warning not to share.
+parse: load the model metadata from disk file.
+initFromConfig: load the model from disk file and apply lora adapter, if any.
+LOAD { ready: true, runtime: 'QVAC llm-llamacpp 0.49.1' }
+CASE 0 {
+  signals: [ 'pide_datos_sensibles' ],
+  uncertain: false,
+  elapsedMs: 11404,
+  backend: 'cpu',
+  model: 'Qwen3 1.7B Q4_K_M',
+  runtime: 'QVAC llm-llamacpp 0.49.1'
+}
+CASE 1 {
+  signals: [],
+  uncertain: false,
+  elapsedMs: 10213,
+  backend: 'cpu',
+  model: 'Qwen3 1.7B Q4_K_M',
+  runtime: 'QVAC llm-llamacpp 0.49.1'
+}
+CASE 2 {
+  signals: [],
+  uncertain: false,
+  elapsedMs: 12767,
+  backend: 'cpu',
+  model: 'Qwen3 1.7B Q4_K_M',
+  runtime: 'QVAC llm-llamacpp 0.49.1'
+}

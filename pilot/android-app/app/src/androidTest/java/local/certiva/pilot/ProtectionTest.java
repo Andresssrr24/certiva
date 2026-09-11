@@ -28,7 +28,7 @@ public final class ProtectionTest extends ServiceTestCase<CertivaNotificationLis
         assertEquals("latest message",NotificationContent.text(n));n.flags|=Notification.FLAG_GROUP_SUMMARY;assertEquals("",NotificationContent.text(n));
     }
     public void testNotificationToLocalAlertAndTapIntent()throws Exception{
-        var context=getContext();var prefs=ProtectionStore.prefs(context);prefs.edit().clear().putBoolean("enabled",true).commit();
+        var context=getContext();assertTrue("Install the verified QVAC model before testing",local.certiva.qvac.QvacRuntime.available(context));var prefs=ProtectionStore.prefs(context);prefs.edit().clear().putBoolean("enabled",true).commit();
         context.getSystemService(NotificationManager.class).cancelAll();
         ui(()->startService(new android.content.Intent(context,CertivaNotificationListener.class)));
         Notification risky=new Notification.Builder(context,"fixture").setSmallIcon(android.R.drawable.ic_dialog_info)
@@ -36,10 +36,13 @@ public final class ProtectionTest extends ServiceTestCase<CertivaNotificationLis
         StatusBarNotification sbn=new StatusBarNotification("com.whatsapp","com.whatsapp",41,"test",android.os.Process.myUid(),0,0,risky,android.os.Process.myUserHandle(),System.currentTimeMillis());
         try{
             ui(()->getService().onNotificationPosted(sbn));
-            long deadline=System.currentTimeMillis()+30000;
+            long deadline=System.currentTimeMillis()+180000;
             while(ProtectionStore.alerts(context).length()==0&&System.currentTimeMillis()<deadline)Thread.sleep(100);
             var alerts=ProtectionStore.alerts(context);assertEquals(1,alerts.length());JSONObject result=alerts.getJSONObject(0);
             assertEquals("riesgo",result.getString("outcome"));
+            assertEquals("qvac_y_reglas_locales",result.getString("coverage"));
+            assertEquals("qvac_texto",result.getString("source"));
+            assertEquals("Qwen3 1.7B Q4_K_M",result.getString("aiModel"));
             String saved=prefs.getString("alerts","");assertFalse(saved.contains("atacante"));assertFalse(saved.contains("Synthetic sender"));
             var manager=context.getSystemService(NotificationManager.class);
             long postedDeadline=System.currentTimeMillis()+10000;

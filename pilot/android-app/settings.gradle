@@ -2,3 +2,6 @@ pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal()
 dependencyResolutionManagement { repositories { google(); mavenCentral() } }
 rootProject.name = 'CertivaPilot'
 include ':app', ':sdk'
+
+include ':qvac'
+project(':qvac').projectDir=file('../android-qvac')

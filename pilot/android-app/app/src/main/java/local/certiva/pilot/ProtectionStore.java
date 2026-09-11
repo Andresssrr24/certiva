@@ -27,6 +27,10 @@ final class ProtectionStore {
         // Explicit projection; future SDK fields cannot accidentally persist message content.
         JSONObject item = new JSONObject();
         for (String key : new String[]{"id","outcome","title","action","channel","source","evaluatedAt","policyVersion","sdkVersion","coverage"}) item.put(key,result.optString(key));
+        if (result.has("aiStatus")) item.put("aiStatus",result.optString("aiStatus"));
+        if (result.has("aiModel")) {
+            item.put("aiModel",result.optString("aiModel")).put("aiRuntime",result.optString("aiRuntime")).put("aiElapsedMs",result.optLong("aiElapsedMs")).put("aiBackend",result.optString("aiBackend"));
+        }
         JSONArray reasons = new JSONArray();
         JSONArray original = result.optJSONArray("reasons");
         if (original != null) for (int i=0; i<original.length(); i++) {
