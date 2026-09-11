@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="certiva.css">
+  <link rel="stylesheet" href="experience.css">
 </head>
 <body>
+<svg class="android-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="android-phone" viewBox="0 0 24 24"><path d="M7 3 4 4c-2 6 10 18 16 16l1-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></symbol><symbol id="android-whatsapp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 19 2.8 21l.8-5A9 9 0 1 1 5 19Z"/><path d="m8 6-2 1c-1 4 6 11 10 10l1-2-3-2-1 1c-2-1-3-2-4-4l1-1Z"/></symbol><symbol id="android-messages" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8l-6 4V5a2 2 0 0 1 2-2Z"/><path stroke="white" stroke-width="1.6" d="M7 8h10M7 12h7"/></symbol><symbol id="android-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-camera" viewBox="0 0 24 24"><path d="M7 5 9 2h6l2 3h4a2 2 0 0 1 2 2v13H1V7a2 2 0 0 1 2-2Z"/><circle cx="12" cy="12" r="4" fill="none" stroke="#e2eaff" stroke-width="2"/></symbol><symbol id="android-chrome" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 8h9M9 14l-5-8m10 9-4 7" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M6 10v2a6 6 0 0 0 12 0v-2M12 18v4" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 0v4m0 16v4M0 12h4m16 0h4M3 3l3 3m12 12 3 3M3 21l3-3M18 6l3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol><symbol id="android-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m8 12 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol><symbol id="android-back" viewBox="0 0 24 24"><path d="m14 5-7 7 7 7M7 12h15" fill="none" stroke="currentColor" stroke-width="2"/></symbol><symbol id="android-video" viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="14" rx="3"/><path d="m17 9 6-4v14l-6-4Z"/></symbol><symbol id="android-more" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></symbol></defs></svg>
   <header class="barra">
     <div class="marca"><span class="brand-icon" aria-hidden="true"></span><div><strong class="wordmark">certiva</strong><small>Tu aliado contra el fraude</small></div></div>
     <div class="tabs" role="tablist" aria-label="Vistas">
-      <button type="button" class="tab activa" data-tab="cliente" role="tab" aria-selected="true">Mi protección</button>
-      <button type="button" class="tab" data-tab="banco" role="tab" aria-selected="false">Radar del banco</button>
+      <button type="button" class="tab activa" data-tab="cliente" role="tab" aria-selected="true">Experiencia del cliente</button>
+      <button type="button" class="tab" data-tab="banco" role="tab" aria-selected="false">Centro de seguridad</button>
     </div>
     <div class="red" id="red" title="Conexiones TCP establecidas, medidas con lsof sobre el árbol de procesos"><span class="punto"></span>TCP externo: <b id="redNube">…</b><span class="sep">·</span>Pares: <b id="redPares" class="pares">…</b></div>
     <div class="estado" id="estado" aria-live="polite">listo</div>
@@ -25,10 +27,32 @@
       <div class="marco" id="marco">
         <div class="telefono" id="telefono">
           <div class="pantalla">
-            <div class="tstatus"><span>10:24</span><span>●●● ▲ ▮</span></div>
+            <div class="tstatus"><span>10:24</span><span class="android-status-icons"><svg viewBox="0 0 56 16" aria-label="Wi-Fi, señal móvil y batería al 82 por ciento"><path d="M1 4q9-8 18 0L10 14Z"/><path d="M23 14 36 1v13Z"/><rect x="42" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M45 1h6v2h-6zM44 5h8v7h-8z"/></svg></span></div>
             <div class="app">
+              <section class="p phone-home" data-p="escritorio">
+                <div class="at-a-glance"><span class="home-date">Jue, 10 de sept.</span><span><svg class="android-icon" aria-hidden="true"><use href="#android-sun"/></svg> 28°</span></div>
+                <div class="android-clock" aria-label="10:24"><span>10</span><span>24</span></div>
+                <div class="home-bottom"><div class="app-grid">
+                  <button class="home-app" data-home-app="whatsapp"><span class="app-tile whatsapp"><svg class="android-icon" aria-hidden="true"><use href="#android-whatsapp"/></svg></span>WhatsApp</button>
+                  <button class="home-app" data-home-app="sms"><span class="app-tile messages"><svg class="android-icon" aria-hidden="true"><use href="#android-messages"/></svg></span>Mensajes</button>
+                  <button class="home-app" data-home-app="correo"><span class="app-tile mail"><svg class="android-icon" aria-hidden="true"><use href="#android-mail"/></svg></span>Correo</button>
+                  <button class="home-app" id="openCertiva"><span class="brand-icon"></span>Certiva<span id="appBadge" hidden>1</span></button>
+                </div>
+                <div class="phone-dock" aria-hidden="true"><span><svg class="android-icon" aria-hidden="true"><use href="#android-phone"/></svg></span><span><svg class="android-icon" aria-hidden="true"><use href="#android-chrome"/></svg></span><span><svg class="android-icon" aria-hidden="true"><use href="#android-camera"/></svg></span></div>
+                <div class="home-search" aria-hidden="true"><svg class="android-icon" aria-hidden="true"><use href="#android-search"/></svg><span>Buscar</span><svg class="android-icon" aria-hidden="true"><use href="#android-mic"/></svg></div></div>
+              </section>
+              <section class="p source-app" data-p="mensaje" hidden>
+                <div class="source-heading"><button class="source-back" id="sourceBack" aria-label="Volver al inicio"><svg class="android-icon" aria-hidden="true"><use href="#android-back"/></svg></button><span id="sourceIcon"><svg class="android-icon" aria-hidden="true"><use href="#android-whatsapp"/></svg></span><div><b id="sourceSender"></b><small id="sourceChannel"></small></div><span class="source-tools" aria-hidden="true"><svg class="android-icon" aria-hidden="true"><use href="#android-video"/></svg><svg class="android-icon" aria-hidden="true"><use href="#android-more"/></svg></span></div>
+                <div class="chat-day">HOY</div><p class="chat-context" id="sourceContext"></p>
+                <div class="message-bubble"><p id="sourceText"></p><small id="sourceTime"></small></div>
+                <div class="chat-compose"><span>Mensaje</span><svg class="android-icon" aria-hidden="true"><use href="#android-mic"/></svg></div>
+              </section>
+              <div class="phone-notifications" aria-live="polite">
+                <button class="phone-notification source-notification" id="sourceNotification" hidden><span class="notification-icon whatsapp" id="arrivalIcon"><svg class="android-icon" aria-hidden="true"><use href="#android-whatsapp"/></svg></span><span><small id="arrivalApp"></small><b id="arrivalSender"></b><span id="arrivalPreview"></span></span><em>ahora</em></button>
+                <button class="phone-notification certiva-notification" id="certivaNotification" hidden><span class="brand-icon small"></span><span><small>Certiva · Protección</small><b id="pushTitle"></b><span id="pushBody"></span><strong class="notification-action">Ver detalle</strong></span><em>ahora</em></button>
+              </div>
 
-              <section class="p" data-p="inicio">
+              <section class="p" data-p="inicio" hidden>
                 <div class="welcome-brand"><span class="brand-icon" aria-hidden="true"></span><strong class="wordmark">certiva</strong><span>Tu aliado contra el fraude</span></div>
                 <div class="eyebrow">UN MOMENTO PARA VERIFICAR</div><h1>Antes de responder,<br>verifica.</h1>
                 <p class="lead">Revisa ese mensaje que te genera dudas. Entiende las señales y decide con más calma.</p>
@@ -49,7 +73,7 @@
               </section>
 
               <section class="p" data-p="veredicto" hidden>
-                <div class="tchip" id="tChip"></div>
+                <div class="detail-appbar"><span class="brand-icon small"></span><span>certiva</span><span class="detail-label">Protección</span></div><div class="detail-shield"><svg class="android-icon" aria-hidden="true"><use href="#android-shield"/></svg></div><div class="tchip" id="tChip"></div>
                 <p class="tresumen" id="tResumen"></p>
                 <ul class="razones" id="tRazones"></ul>
                 <div class="vecinos" id="tVecinos" hidden></div>
@@ -82,14 +106,15 @@
               </div>
 
             </div>
+            <button class="home-indicator" id="phoneHome" aria-label="Ir al inicio del teléfono"></button>
           </div>
         </div>
       </div>
-      <p class="pie-escenario">Prototipo de escritorio · Vista móvil simulada</p>
+      <p class="pie-escenario">Android · Vista interactiva de demostración</p>
     </section>
 
     <section class="der detras" aria-label="Detrás de escena">
-      <div class="panel-heading"><div><span class="eyebrow">ESPACIO DE VERIFICACIÓN</span><h2>Una segunda mirada.</h2><p>Prueba con mensajes de ejemplo o revisa una captura.</p></div><span class="privacy-pill">Análisis local</span></div><h3 class="rotulo">Explora los ejemplos</h3>
+      <div class="panel-heading"><div><span class="eyebrow">PROTECCIÓN EN EL MOMENTO QUE IMPORTA</span><h2>Tu día sigue.<br>Certiva está pendiente.</h2><p>Elige una situación. Recibe el mensaje en el teléfono<br>y toca la alerta para entender qué ocurre.</p></div><span class="privacy-pill">● Inferencia local</span></div><ol class="journey" id="journey"><li data-step="received"><span>01</span> Llega un mensaje</li><li data-step="analysis"><span>02</span> Certiva lo revisa</li><li data-step="alert"><span>03</span> Tú decides</li></ol><div class="scenario-label"><h3 class="rotulo">PRUEBA UNA SITUACIÓN</h3><span>Casos ficticios · análisis real</span></div>
       <div class="ejemplos" id="ejemplos"></div>
       <section class="zona" id="zona" aria-label="Zona para soltar una captura de pantalla">
         <p><strong>Arrastra tu propia captura</strong> o</p>
@@ -97,8 +122,10 @@
       </section>
       <audio id="audio" controls preload="auto" hidden></audio>
 
-      <h3 class="rotulo">Cómo llegamos al resultado</h3>
+      <div class="experience-status" id="experienceStatus" role="status"><span class="status-orb"></span><div><b>Todo empieza fuera de la app.</b><small>Elige un caso para ver la protección en acción.</small></div></div>
+      <details class="analysis-details"><summary>Ver análisis y evidencia técnica</summary>
       <div class="tecnico" id="tecnico"><p class="vacio">Aquí se ve lo que hacen los modelos: pasos, tiempos, señales de las reglas y el JSON completo.</p></div>
+      </details>
       <div class="historial" id="historial" hidden>
         <h3 class="rotulo">Analizados en esta sesión</h3>
         <ul id="historialLista"></ul>
@@ -107,13 +134,24 @@
   </main>
 
   <main class="cuerpo banco" id="vistaBanco" hidden>
-    <section class="der ancho">
+    <section class="workstation">
+      <div class="desktop-topbar"><span class="desktop-dots">● ● ●</span><span>Certiva Workspace / Centro de seguridad</span><span>Entorno de prueba</span></div>
+      <div class="desktop-layout"><aside class="bank-sidebar"><span class="brand-icon"></span><b>Centro de<br>seguridad</b><span class="nav-active">▦ &nbsp; Operaciones</span><a href="#bankSignals">◉ &nbsp; Inteligencia de red</a><div class="analyst-avatar">AS <span>Analista de seguridad<small>Sesión local de prueba</small></span></div></aside>
+      <div class="bank-content">
+      <div class="bank-title"><div><span class="eyebrow">VISTA DEL EQUIPO DE SEGURIDAD</span><h1>Cada señal, una respuesta.</h1><p>Accesos, credenciales y engaños. De la detección a la revisión.</p></div><span class="privacy-pill">● Consola operativa</span></div>
+      <div class="bank-toolbar"><label>Simular evento de seguridad<select id="bankScenario"><option value="phishing">Robo de clave por enlace</option><option value="otp">Solicitud de código OTP</option><option value="login">Acceso desde un dispositivo nuevo</option><option value="attempts">Intentos de acceso repetidos</option></select></label><button class="bank-primary" id="injectBankCase">Generar caso de prueba ↗</button></div>
+      <p class="bank-disclaimer">Acciones registradas en el piloto. No hay conexión al banco: bloquear sesiones o cambiar claves requiere la integración bancaria.</p>
+      <div class="connected-pilot"><span>¿Estás probando con la APK?<small>Los reportes enviados desde Android llegan a la consola autenticada del piloto.</small></span><button type="button" id="openPilotConsole">Abrir reportes de la APK ↗</button></div>
+      <div class="case-kpis" id="caseKpis"></div>
+      <div class="case-workspace"><section><div class="case-list-heading"><h2>Bandeja de incidentes</h2><select id="caseFilter" aria-label="Filtrar incidentes"><option value="open">Abiertos</option><option value="all">Todos</option><option value="resolved">Resueltos</option></select></div><div id="caseList" class="case-list"></div></section><section id="caseDetail" class="case-detail" aria-live="polite"></section></div>
+      <details class="bank-signals" id="bankSignals"><summary>Inteligencia compartida · Indicadores de la red</summary><div class="der ancho">
       <div class="radar-heading"><span class="brand-icon" aria-hidden="true"></span><div><span class="eyebrow">CERTIVA PARA EQUIPOS</span><h2>Señales para investigar.</h2></div></div>
       <p class="mini">Indicadores reportados por los clientes de este equipo y de los pares conectados. Solo viajan hashes del remitente, del número o del dominio: nunca el mensaje.</p>
       <div class="pares-estado" id="paresEstado"></div>
       <div class="kpis" id="kpis"></div>
       <p class="mini">Reportes no verificados: no prueban fraude ni usuarios independientes. Los hashes son seudónimos, no datos anónimos. Revisar antes de actuar; nunca bloquear automáticamente.</p><div class="table-wrap"><table id="tablaReportes" aria-live="polite"><thead><tr><th>Cuándo</th><th>Tipo</th><th>Indicador (hash)</th><th>Origen</th><th>Revisión del operador</th></tr></thead><tbody></tbody></table></div>
       <details class="pares-log"><summary>Registro de la capa de pares</summary><pre id="paresLog"></pre></details>
+      </div></details></div></div>
     </section>
   </main>
 
@@ -122,5 +160,6 @@
     <span id="tiempos"></span>
   </footer>
   <script src="app.js"></script>
+  <script src="experience.js"></script>
 </body>
 </html>

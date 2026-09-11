@@ -10,7 +10,7 @@ Corte documental: **10 de septiembre de 2026, hora de Panamá**. Las pruebas y l
 
 | Componente | Disponible en este avance | Alcance y guía |
 |---|---|---|
-| Escritorio Electron | Identidad Certiva v5, análisis de capturas con QVAC, disponibilidad de modelos y evidencia separada por ejecución | Inferencia real de una captura sintética documentada; voz, RAG y pares no se volvieron a validar en esta entrega. [Guía](docs/INTERFAZ-LOCAL.md) |
+| Escritorio Electron | Teléfono simulado, mensaje → alerta → detalle, centro de seguridad y análisis QVAC local | [Recorrido y pruebas](docs/EXPERIENCIA-Y-ALERTAS.md) · [Entorno QVAC](docs/INTERFAZ-LOCAL.md). Las medidas bancarias son solicitudes de demostración. |
 | Landing | Sitio interactivo, verificador de texto por reglas y puente opcional al QVAC del propio equipo | [Web publicada](https://certiva-landing.vercel.app) · [Instalación y límites](landing/README.md). QVAC no se ejecuta en Vercel. |
 | Piloto bancario | SDK de reglas compartido, cliente/consola web, API SQLite y SDK/apps de muestra iOS y Android | [Guía del piloto](pilot/README.md) · [Oferta de evaluación](pilot/OFERTA-PILOTO.md). Sin QVAC móvil ni conexión a APIs bancarias. |
 | Exploración Expo | Andamiaje previo en `mobile/`, conservado desde `main` | No acredita QVAC funcionando en un teléfono. [Guía](mobile/README.md) |
@@ -51,11 +51,12 @@ Vista local: `http://127.0.0.1:4317`. Para conectar QVAC, seguir [landing/README
 
 ## Validación de este avance
 
-- `npm test`: **8/8** pruebas del motor y evaluación, con dobles de los modelos.
+- `npm test`: **11/11** pruebas del motor, evaluación y persistencia/transiciones de casos, con dobles de los modelos.
+- `npx electron scripts/prueba-experiencia.js`: **9/9** comprobaciones de navegación y reporte con motor controlado; ver entorno utilizado en [la guía del portal](docs/EXPERIENCIA-Y-ALERTAS.md).
 - `node eval/reglas-check.js`: **136/136** veredictos correctos sobre el texto verdadero del dataset sintético; no mide OCR ni generalización.
 - `npm --prefix landing test`: **7/7**, con reglas y contrato HTTP del puente.
 - `npm --prefix landing run build`: genera el sitio estático.
-- Sintaxis de `main.js` y `renderer/app.js`, y Biome de esos archivos y `package.json`: sin errores, con advertencias de estilo existentes.
+- Sintaxis de JavaScript del portal y Biome de ocho archivos modificados: sin errores, con 12 advertencias.
 
 La verificación QVAC real previa está descrita en las guías de escritorio y landing. No se repitió al preparar este PR para evitar interferir con el motor en uso. La conexión de la landing desde un navegador depende de sus permisos de red local y no está validada por las pruebas HTTP.
 
@@ -151,9 +152,9 @@ Una trampa que costó una hora y conviene contar: Electron recuerda el zoom por 
 
 ## Interfaz
 
-Una ventana, dos mundos. A la izquierda, **lo que ve el cliente en su teléfono**: tema claro, letra grande, una acción por pantalla, veredicto en lenguaje llano («La dirección web imita la del banco», «Te meten prisa»), un botón para llamar al banco y otro para reportar. En el modo llamada, el aviso ocupa toda la pantalla: «Cuelga». A la derecha, **detrás de escena para el jurado y el banco**: tarjetas de ejemplo, los tres pasos con su tiempo (VisionPsy, reglas, Qwen3), las señales con su nombre técnico, la transcripción con marcas de tiempo y el JSON completo. La pestaña **Modo banco** es el radar del equipo de fraude.
+La experiencia del cliente empieza fuera de Certiva, en una pantalla Android simulada: cámara circular, reloj, fondo local e iconos SVG. Las notificaciones y el detalle de Certiva mantienen esa apariencia Android. Elegir un ejemplo entrega el mensaje, solicita el análisis y muestra una alerta; tocarla abre las señales y el consejo. El usuario decide si reporta. El detalle técnico conserva los pasos, tiempos y resultado del motor.
 
-Decisiones de diseño: sin framework, fuentes del sistema para funcionar sin internet, contraste mínimo 4,5:1, foco visible, `role="alert"` en el aviso de colgar, `aria-live` en la transcripción, movimiento reducido respetado, iconos SVG en vez de emojis. Para verificar la interfaz sin manos: `DEMO_AUTO=<id de captura>` o `DEMO_LLAMADA=1` junto con `DEMO_CAPTURA=<ruta.png>` guardan una imagen de la ventana.
+El **Centro de seguridad** conserva casos locales de demostración, asignación, solicitudes de medidas y cierre con historial. No autentica analistas ni ejecuta cambios de claves, cierre de sesiones o comunicaciones bancarias. Los reportes de la APK se abren en la consola autenticada del piloto en el puerto 4320; su almacén y permisos son independientes. Ver [recorrido, límites y comprobaciones](docs/EXPERIENCIA-Y-ALERTAS.md).
 
 ## Cómo probarlo tú mismo
 
