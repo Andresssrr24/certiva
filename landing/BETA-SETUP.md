@@ -86,6 +86,13 @@ capturas, logs ni argumentos visibles de comandos:
 - Tras la corrección del formulario, Bryan confirmó que el registro en Android
   funciona. Es una confirmación del usuario, sin traza instrumentada de esta tarea.
 
+### Prueba abierta: actualización posterior
+
+La tarea propietaria confirmó el envío de la prueba abierta 0.5 a revisión para
+Colombia y Panamá. No hay aprobación ni disponibilidad de descarga confirmadas.
+Es un canal distinto de la prueba cerrada Alpha descrita arriba; este envío no
+activa por sí mismo `BETA_PLAY_READY` ni cambia el contrato de registro del grupo.
+
 ## Contrato de estado y activación de descarga
 
 `GET /api/beta/status` entrega `enabled`, `playReady`, `registered` e `internalUrl`.
