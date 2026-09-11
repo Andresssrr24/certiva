@@ -1,5 +1,7 @@
 # Dependencies
 node_modules/
+# también cuando es un enlace a las dependencias de otro worktree (la regla de arriba solo casa carpetas)
+node_modules
 
 # Environment / secrets
 .env

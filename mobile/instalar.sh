@@ -2,15 +2,15 @@
 # Instala el APK de Certiva en un Android por el camino que haya a mano:
 #   - por USB, con adb, comprobando antes Android 10+ y procesador arm64;
 #   - si no hay teléfono por cable, sirve el APK en la red Wi-Fi de esta máquina y muestra un QR para bajarlo desde el teléfono.
-# Uso: ./mobile/instalar.sh            usa mobile/dist/antifraude-release-arm64.apk o lo baja del Release apk-v0.1
+# Uso: ./mobile/instalar.sh            usa mobile/dist/certiva-release-arm64.apk o lo baja del Release apk-v0.2
 #      ./mobile/instalar.sh --wifi     fuerza el camino por Wi-Fi aunque haya un teléfono por USB
 #      ./mobile/instalar.sh --usb      solo por USB; falla si no hay teléfono
 #      ./mobile/instalar.sh ruta.apk   instala ese archivo
 set -euo pipefail
 AQUI="$(cd "$(dirname "$0")" && pwd)"
 REPO="Andresssrr24/certiva"
-TAG="apk-v0.1"
-NOMBRE="antifraude-release-arm64.apk"
+TAG="apk-v0.2"
+NOMBRE="certiva-release-arm64.apk"
 APK="$AQUI/dist/$NOMBRE"
 ADB="${ANDROID_HOME:-$HOME/Library/Android/sdk}/platform-tools/adb"
 command -v adb >/dev/null 2>&1 && ADB=adb
@@ -27,7 +27,7 @@ done
 
 # 1. Conseguir el APK: local, o del Release del repositorio.
 if [ ! -f "$APK" ]; then
-  echo "No encuentro $APK. Lo bajo del Release $TAG de $REPO (228 MB)…"
+  echo "No encuentro $APK. Lo bajo del Release $TAG de $REPO (229 MB)…"
   mkdir -p "$(dirname "$APK")"
   if command -v gh >/dev/null 2>&1; then
     gh release download "$TAG" --repo "$REPO" --pattern "$NOMBRE" --dir "$(dirname "$APK")" --clobber

@@ -49,8 +49,8 @@ Sin Android Studio. El toolchain se instala con Homebrew y `sdkmanager`, y dos s
 
 1. `brew install openjdk@17 android-commandlinetools` y `sdkmanager --sdk_root=$HOME/Library/Android/sdk "platform-tools" "platforms;android-36" "build-tools;36.0.0" "cmake;3.22.1"`. El NDK 29.0.14206865 que fija el plugin de QVAC lo baja Gradle solo en la primera compilación.
 2. `cd mobile && ./preparar.sh`: crea `app/` con la plantilla oficial de Expo SDK 54, instala `@qvac/sdk`, `react-native-bare-kit`, `bare-rpc` y `bare-pack`, y copia el núcleo compartido y las pantallas.
-3. `./compilar.sh release`: corre `expo prebuild` (el plugin de QVAC fija arm64 y el NDK, y genera el paquete del worker recortado al plugin `llamacpp-completion` que declara `qvac.config.json`) y luego `gradlew assembleRelease`. El APK queda en `mobile/dist/antifraude-release-arm64.apk`. La primera compilación tomó unos 25 minutos en el M4, casi todo descarga de Gradle y del NDK.
-4. Instalar: `adb install -r mobile/dist/antifraude-release-arm64.apk`. Firmado con la llave de depuración, que basta para un hackatón; Android 10 o superior, solo arm64.
+3. `./compilar.sh release`: corre `expo prebuild` (el plugin de QVAC fija arm64 y el NDK, y genera el paquete del worker recortado al plugin `llamacpp-completion` que declara `qvac.config.json`) y luego `gradlew assembleRelease`. El APK queda en `mobile/dist/certiva-release-arm64.apk`. La primera compilación tomó unos 25 minutos en el M4, casi todo descarga de Gradle y del NDK.
+4. Instalar: `adb install -r mobile/dist/certiva-release-arm64.apk`. Firmado con la llave de depuración, que basta para un hackatón; Android 10 o superior, solo arm64.
 5. Primera prueba en el teléfono: pegar un texto de fraude y ver el veredicto sin descargar nada. Después, descargar VisionPsy desde la app y analizar una captura de `data/capturas/` pasada al teléfono; el tiempo al primer token va al README.
 
 ## Criterios de aceptación
