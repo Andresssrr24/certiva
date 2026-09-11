@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "reportSubmitted": true,
+  "input": "Synthetic StatusBarNotification delivered to production listener; visible input is labelled Mensaje de prueba \/ Demo en emulador",
+  "liveWhatsApp": false,
+  "physicalDevice": false,
+  "assessmentInjected": false,
+  "setupActivationValidated": false,
+  "setupNote": "Harness temporarily enables listener processing; this does not validate permission onboarding or background OS delivery",
+  "startedAt": 1789108396619,
+  "remoteVideo": "\/sdcard\/certiva-notification-menu-1789108398691.mp4",
+  "phases": [
+    {
+      "name": "01-android-home",
+      "at": 1789108399574,
+      "recordingElapsedMs": 883
+    },
+    {
+      "name": "02a-incoming-banner",
+      "at": 1789108401851,
+      "recordingElapsedMs": 3160
+    },
+    {
+      "name": "02b-visible-demo-input",
+      "at": 1789108404082,
+      "recordingElapsedMs": 5390
+    },
+    {
+      "name": "03a-native-certiva-alert-banner",
+      "at": 1789108412816,
+      "recordingElapsedMs": 14125
+    },
+    {
+      "name": "03b-native-certiva-alert-shade",
+      "at": 1789108415075,
+      "recordingElapsedMs": 16383
+    },
+    {
+      "name": "04-alert-detail",
+      "at": 1789108423716,
+      "recordingElapsedMs": 25025
+    },
+    {
+      "name": "05-new-home",
+      "at": 1789108432301,
+      "recordingElapsedMs": 33610
+    },
+    {
+      "name": "06-new-menu",
+      "at": 1789108435169,
+      "recordingElapsedMs": 36477
+    },
+    {
+      "name": "07-saved-alerts",
+      "at": 1789108437993,
+      "recordingElapsedMs": 39301
+    },
+    {
+      "name": "08-real-consent",
+      "at": 1789108442727,
+      "recordingElapsedMs": 44036
+    },
+    {
+      "name": "09-server-receipt",
+      "at": 1789108445852,
+      "recordingElapsedMs": 47161
+    }
+  ],
+  "assessmentId": "1de8045a-1df9-4433-80fe-0a9210539f8b",
+  "outcome": "riesgo",
+  "coverage": "reglas_de_texto",
+  "aiStatus": "unavailable",
+  "reportMetadata": {
+    "assessmentId": "1de8045a-1df9-4433-80fe-0a9210539f8b",
+    "outcome": "riesgo",
+    "reasonCodes": [
+      "pide_datos_sensibles",
+      "urgencia"
+    ],
+    "channel": "whatsapp",
+    "source": "texto",
+    "evaluatedAt": "2026-09-11T06:33:32.404Z",
+    "policyVersion": "ca-referencia-2026-09-v1",
+    "sdkVersion": "0.1.0",
+    "consent": true
+  },
+  "caseId": "b63be9f8-f051-4873-a4a8-9823254f8711",
+  "recorderStopped": true
+}

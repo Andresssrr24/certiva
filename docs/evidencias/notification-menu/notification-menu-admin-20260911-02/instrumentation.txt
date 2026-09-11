@@ -1,0 +1,8 @@
+
+local.certiva.pilot.AdminNotificationDemoTest:.
+Test results for InstrumentationTestRunner=.
+Time: 33.163
+
+OK (1 test)
+
+
